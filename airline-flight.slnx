@@ -1,0 +1,8 @@
+<Solution>
+  <Project Path="src/Flight.Api/Flight.Api.csproj" />
+  <Project Path="src/Flight/Flight.csproj" />
+  <Project Path="tests/ContractTest/Contract.Test.csproj" />
+  <Project Path="tests/EndToEndTest/EndToEnd.Test.csproj" />
+  <Project Path="tests/IntegrationTest/Integration.Test.csproj" />
+  <Project Path="tests/UnitTest/Unit.Test.csproj" />
+</Solution>
