@@ -1,0 +1,39 @@
+{
+  "folder": "domain/Flight.Flights.Features.UpdatingFlight.V1/",
+  "what": "Domain objects by namespace: commands, events, read models, aggregates, value objects, requests and responses.",
+  "folders": [],
+  "files": [
+    {
+      "file": "FlightUpdatedDomainEvent.json",
+      "item": "FlightUpdatedDomainEvent",
+      "layer": "Domain · events",
+      "valid": 200,
+      "invalid": 21,
+      "coverage": 15
+    },
+    {
+      "file": "UpdateFlight.json",
+      "item": "UpdateFlight",
+      "layer": "Domain · commands",
+      "valid": 200,
+      "invalid": 22,
+      "coverage": 17
+    },
+    {
+      "file": "UpdateFlightMongo.json",
+      "item": "UpdateFlightMongo",
+      "layer": "Domain · commands",
+      "valid": 200,
+      "invalid": 21,
+      "coverage": 15
+    },
+    {
+      "file": "UpdateFlightRequestDto.json",
+      "item": "UpdateFlightRequestDto",
+      "layer": "Domain · requests",
+      "valid": 200,
+      "invalid": 21,
+      "coverage": 15
+    }
+  ]
+}

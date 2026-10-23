@@ -1,0 +1,39 @@
+{
+  "folder": "domain/Flight.Seats.Features.ReservingSeat.V1/",
+  "what": "Domain objects by namespace: commands, events, read models, aggregates, value objects, requests and responses.",
+  "folders": [],
+  "files": [
+    {
+      "file": "ReserveSeat.json",
+      "item": "ReserveSeat",
+      "layer": "Domain · commands",
+      "valid": 199,
+      "invalid": 4,
+      "coverage": 2
+    },
+    {
+      "file": "ReserveSeatMongo.json",
+      "item": "ReserveSeatMongo",
+      "layer": "Domain · commands",
+      "valid": 200,
+      "invalid": 10,
+      "coverage": 16
+    },
+    {
+      "file": "ReserveSeatRequestDto.json",
+      "item": "ReserveSeatRequestDto",
+      "layer": "Domain · requests",
+      "valid": 199,
+      "invalid": 3,
+      "coverage": 3
+    },
+    {
+      "file": "SeatReservedDomainEvent.json",
+      "item": "SeatReservedDomainEvent",
+      "layer": "Domain · events",
+      "valid": 200,
+      "invalid": 10,
+      "coverage": 16
+    }
+  ]
+}

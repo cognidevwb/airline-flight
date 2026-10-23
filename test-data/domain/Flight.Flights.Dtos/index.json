@@ -1,0 +1,15 @@
+{
+  "folder": "domain/Flight.Flights.Dtos/",
+  "what": "Domain objects by namespace: commands, events, read models, aggregates, value objects, requests and responses.",
+  "folders": [],
+  "files": [
+    {
+      "file": "FlightDto.json",
+      "item": "FlightDto",
+      "layer": "Domain · responses",
+      "valid": 200,
+      "invalid": 20,
+      "coverage": 15
+    }
+  ]
+}

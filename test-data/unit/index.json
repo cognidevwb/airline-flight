@@ -1,0 +1,47 @@
+{
+  "folder": "unit/",
+  "what": "Argument sets for unit tests of each method, by namespace and class. Nested objects are whole records.",
+  "folders": [
+    {
+      "folder": "Flight.Aircrafts.Features.CreatingAircraft.V1/",
+      "files": 2
+    },
+    {
+      "folder": "Flight.Airports.Features.CreatingAirport.V1/",
+      "files": 2
+    },
+    {
+      "folder": "Flight.Flights.Features.CreatingFlight.V1/",
+      "files": 2
+    },
+    {
+      "folder": "Flight.Flights.Features.DeletingFlight.V1/",
+      "files": 1
+    },
+    {
+      "folder": "Flight.Flights.Features.GettingAvailableFlights.V1/",
+      "files": 1
+    },
+    {
+      "folder": "Flight.Flights.Features.UpdatingFlight.V1/",
+      "files": 2
+    },
+    {
+      "folder": "Flight.Flights.Models/",
+      "files": 3
+    },
+    {
+      "folder": "Flight.Seats.Features.CreatingSeat.V1/",
+      "files": 3
+    },
+    {
+      "folder": "Flight.Seats.Features.ReservingSeat.V1/",
+      "files": 3
+    },
+    {
+      "folder": "Flight.Seats.Models/",
+      "files": 1
+    }
+  ],
+  "files": []
+}

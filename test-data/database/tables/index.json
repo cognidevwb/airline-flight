@@ -1,0 +1,39 @@
+{
+  "folder": "database/tables/",
+  "what": "Rows to load for each table, in load order; exports/sql holds the same rows as INSERT scripts.",
+  "folders": [],
+  "files": [
+    {
+      "file": "Aircraft.json",
+      "item": "Aircraft",
+      "layer": "Database · tables",
+      "valid": 200,
+      "invalid": 8,
+      "coverage": 10
+    },
+    {
+      "file": "Airport.json",
+      "item": "Airport",
+      "layer": "Database · tables",
+      "valid": 200,
+      "invalid": 9,
+      "coverage": 10
+    },
+    {
+      "file": "Flight.json",
+      "item": "Flight",
+      "layer": "Database · tables",
+      "valid": 200,
+      "invalid": 17,
+      "coverage": 24
+    },
+    {
+      "file": "Seat.json",
+      "item": "Seat",
+      "layer": "Database · tables",
+      "valid": 200,
+      "invalid": 10,
+      "coverage": 16
+    }
+  ]
+}

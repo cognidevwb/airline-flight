@@ -1,0 +1,31 @@
+{
+  "folder": "unit/Flight.Flights.Models/Flight/",
+  "what": "Argument sets for unit tests of each method, by namespace and class. Nested objects are whole records.",
+  "folders": [],
+  "files": [
+    {
+      "file": "Create.json",
+      "item": "Flight.Create",
+      "layer": "Unit · methods",
+      "valid": 200,
+      "invalid": 22,
+      "coverage": 13
+    },
+    {
+      "file": "Delete.json",
+      "item": "Flight.Delete",
+      "layer": "Unit · methods",
+      "valid": 200,
+      "invalid": 22,
+      "coverage": 12
+    },
+    {
+      "file": "Update.json",
+      "item": "Flight.Update",
+      "layer": "Unit · methods",
+      "valid": 200,
+      "invalid": 22,
+      "coverage": 13
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "folder": "unit/Flight.Flights.Features.GettingAvailableFlights.V1/GetAvailableFlightsHandler/",
+  "what": "Argument sets for unit tests of each method, by namespace and class. Nested objects are whole records.",
+  "folders": [],
+  "files": [
+    {
+      "file": "Handle.json",
+      "item": "GetAvailableFlightsHandler.Handle",
+      "layer": "Unit · methods",
+      "valid": 1,
+      "invalid": 1,
+      "coverage": 0
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "folder": "domain/Flight.Flights.Features.GettingAvailableFlights.V1/",
+  "what": "Domain objects by namespace: commands, events, read models, aggregates, value objects, requests and responses.",
+  "folders": [],
+  "files": [
+    {
+      "file": "GetAvailableFlights.json",
+      "item": "GetAvailableFlights",
+      "layer": "Domain · commands",
+      "valid": 6,
+      "invalid": 2,
+      "coverage": 0
+    }
+  ]
+}

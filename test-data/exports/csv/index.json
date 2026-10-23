@@ -1,0 +1,247 @@
+{
+  "folder": "exports/csv/",
+  "what": "The same rows as SQL and CSV.",
+  "folders": [],
+  "files": [
+    {
+      "file": "Aircraft.csv",
+      "item": "Aircraft"
+    },
+    {
+      "file": "AircraftCreatedDomainEvent.csv",
+      "item": "AircraftCreatedDomainEvent"
+    },
+    {
+      "file": "AircraftDto.csv",
+      "item": "AircraftDto"
+    },
+    {
+      "file": "AircraftReadModel.csv",
+      "item": "AircraftReadModel"
+    },
+    {
+      "file": "Airport.csv",
+      "item": "Airport"
+    },
+    {
+      "file": "AirportCreatedDomainEvent.csv",
+      "item": "AirportCreatedDomainEvent"
+    },
+    {
+      "file": "AirportDto.csv",
+      "item": "AirportDto"
+    },
+    {
+      "file": "AirportReadModel.csv",
+      "item": "AirportReadModel"
+    },
+    {
+      "file": "CreateAircraft.csv",
+      "item": "CreateAircraft"
+    },
+    {
+      "file": "CreateAircraftHandler-Handle.csv",
+      "item": "CreateAircraftHandler-Handle"
+    },
+    {
+      "file": "CreateAircraftMongo.csv",
+      "item": "CreateAircraftMongo"
+    },
+    {
+      "file": "CreateAircraftMongoHandler-Handle.csv",
+      "item": "CreateAircraftMongoHandler-Handle"
+    },
+    {
+      "file": "CreateAircraftRequestDto.csv",
+      "item": "CreateAircraftRequestDto"
+    },
+    {
+      "file": "CreateAirport.csv",
+      "item": "CreateAirport"
+    },
+    {
+      "file": "CreateAirportHandler-Handle.csv",
+      "item": "CreateAirportHandler-Handle"
+    },
+    {
+      "file": "CreateAirportMongo.csv",
+      "item": "CreateAirportMongo"
+    },
+    {
+      "file": "CreateAirportMongoHandler-Handle.csv",
+      "item": "CreateAirportMongoHandler-Handle"
+    },
+    {
+      "file": "CreateAirportRequestDto.csv",
+      "item": "CreateAirportRequestDto"
+    },
+    {
+      "file": "CreateFlight.csv",
+      "item": "CreateFlight"
+    },
+    {
+      "file": "CreateFlightHandler-Handle.csv",
+      "item": "CreateFlightHandler-Handle"
+    },
+    {
+      "file": "CreateFlightMongo.csv",
+      "item": "CreateFlightMongo"
+    },
+    {
+      "file": "CreateFlightMongoHandler-Handle.csv",
+      "item": "CreateFlightMongoHandler-Handle"
+    },
+    {
+      "file": "CreateFlightRequestDto.csv",
+      "item": "CreateFlightRequestDto"
+    },
+    {
+      "file": "CreateSeat.csv",
+      "item": "CreateSeat"
+    },
+    {
+      "file": "CreateSeatCommandHandler-Handle.csv",
+      "item": "CreateSeatCommandHandler-Handle"
+    },
+    {
+      "file": "CreateSeatEndpoint-CreateSeat.csv",
+      "item": "CreateSeatEndpoint-CreateSeat"
+    },
+    {
+      "file": "CreateSeatMongo.csv",
+      "item": "CreateSeatMongo"
+    },
+    {
+      "file": "CreateSeatMongoHandler-Handle.csv",
+      "item": "CreateSeatMongoHandler-Handle"
+    },
+    {
+      "file": "CreateSeatRequestDto.csv",
+      "item": "CreateSeatRequestDto"
+    },
+    {
+      "file": "DeleteFlightMongo.csv",
+      "item": "DeleteFlightMongo"
+    },
+    {
+      "file": "DeleteFlightMongoCommandHandler-Handle.csv",
+      "item": "DeleteFlightMongoCommandHandler-Handle"
+    },
+    {
+      "file": "Flight-Create.csv",
+      "item": "Flight-Create"
+    },
+    {
+      "file": "Flight-Delete.csv",
+      "item": "Flight-Delete"
+    },
+    {
+      "file": "Flight-Update.csv",
+      "item": "Flight-Update"
+    },
+    {
+      "file": "Flight.csv",
+      "item": "Flight"
+    },
+    {
+      "file": "FlightCreatedDomainEvent.csv",
+      "item": "FlightCreatedDomainEvent"
+    },
+    {
+      "file": "FlightDeletedDomainEvent.csv",
+      "item": "FlightDeletedDomainEvent"
+    },
+    {
+      "file": "FlightDto.csv",
+      "item": "FlightDto"
+    },
+    {
+      "file": "FlightReadModel.csv",
+      "item": "FlightReadModel"
+    },
+    {
+      "file": "FlightUpdatedDomainEvent.csv",
+      "item": "FlightUpdatedDomainEvent"
+    },
+    {
+      "file": "GET--.csv",
+      "item": "GET--"
+    },
+    {
+      "file": "GetAvailableFlights.csv",
+      "item": "GetAvailableFlights"
+    },
+    {
+      "file": "GetAvailableFlightsHandler-Handle.csv",
+      "item": "GetAvailableFlightsHandler-Handle"
+    },
+    {
+      "file": "ReserveSeat.csv",
+      "item": "ReserveSeat"
+    },
+    {
+      "file": "ReserveSeatCommandHandler-Handle.csv",
+      "item": "ReserveSeatCommandHandler-Handle"
+    },
+    {
+      "file": "ReserveSeatEndpoint-ReserveSeat.csv",
+      "item": "ReserveSeatEndpoint-ReserveSeat"
+    },
+    {
+      "file": "ReserveSeatMongo.csv",
+      "item": "ReserveSeatMongo"
+    },
+    {
+      "file": "ReserveSeatMongoHandler-Handle.csv",
+      "item": "ReserveSeatMongoHandler-Handle"
+    },
+    {
+      "file": "ReserveSeatRequestDto.csv",
+      "item": "ReserveSeatRequestDto"
+    },
+    {
+      "file": "Seat-Create.csv",
+      "item": "Seat-Create"
+    },
+    {
+      "file": "Seat.csv",
+      "item": "Seat"
+    },
+    {
+      "file": "SeatCreatedDomainEvent.csv",
+      "item": "SeatCreatedDomainEvent"
+    },
+    {
+      "file": "SeatDto.csv",
+      "item": "SeatDto"
+    },
+    {
+      "file": "SeatReadModel.csv",
+      "item": "SeatReadModel"
+    },
+    {
+      "file": "SeatReservedDomainEvent.csv",
+      "item": "SeatReservedDomainEvent"
+    },
+    {
+      "file": "UpdateFlight.csv",
+      "item": "UpdateFlight"
+    },
+    {
+      "file": "UpdateFlightHandler-Handle.csv",
+      "item": "UpdateFlightHandler-Handle"
+    },
+    {
+      "file": "UpdateFlightMongo.csv",
+      "item": "UpdateFlightMongo"
+    },
+    {
+      "file": "UpdateFlightMongoCommandHandler-Handle.csv",
+      "item": "UpdateFlightMongoCommandHandler-Handle"
+    },
+    {
+      "file": "UpdateFlightRequestDto.csv",
+      "item": "UpdateFlightRequestDto"
+    }
+  ]
+}

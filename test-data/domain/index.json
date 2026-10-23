@@ -1,0 +1,71 @@
+{
+  "folder": "domain/",
+  "what": "Domain objects by namespace: commands, events, read models, aggregates, value objects, requests and responses.",
+  "folders": [
+    {
+      "folder": "Flight.Aircrafts.Dtos/",
+      "files": 1
+    },
+    {
+      "folder": "Flight.Aircrafts.Features.CreatingAircraft.V1/",
+      "files": 4
+    },
+    {
+      "folder": "Flight.Aircrafts.Models/",
+      "files": 1
+    },
+    {
+      "folder": "Flight.Airports.Dtos/",
+      "files": 1
+    },
+    {
+      "folder": "Flight.Airports.Features.CreatingAirport.V1/",
+      "files": 4
+    },
+    {
+      "folder": "Flight.Airports.Models/",
+      "files": 1
+    },
+    {
+      "folder": "Flight.Flights.Dtos/",
+      "files": 1
+    },
+    {
+      "folder": "Flight.Flights.Features.CreatingFlight.V1/",
+      "files": 4
+    },
+    {
+      "folder": "Flight.Flights.Features.DeletingFlight.V1/",
+      "files": 2
+    },
+    {
+      "folder": "Flight.Flights.Features.GettingAvailableFlights.V1/",
+      "files": 1
+    },
+    {
+      "folder": "Flight.Flights.Features.UpdatingFlight.V1/",
+      "files": 4
+    },
+    {
+      "folder": "Flight.Flights.Models/",
+      "files": 1
+    },
+    {
+      "folder": "Flight.Seats.Dtos/",
+      "files": 1
+    },
+    {
+      "folder": "Flight.Seats.Features.CreatingSeat.V1/",
+      "files": 4
+    },
+    {
+      "folder": "Flight.Seats.Features.ReservingSeat.V1/",
+      "files": 4
+    },
+    {
+      "folder": "Flight.Seats.Models/",
+      "files": 1
+    }
+  ],
+  "files": []
+}

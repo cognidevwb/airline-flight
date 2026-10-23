@@ -1,0 +1,15 @@
+{
+  "folder": "unit/Flight.Aircrafts.Features.CreatingAircraft.V1/",
+  "what": "Argument sets for unit tests of each method, by namespace and class. Nested objects are whole records.",
+  "folders": [
+    {
+      "folder": "CreateAircraftHandler/",
+      "files": 1
+    },
+    {
+      "folder": "CreateAircraftMongoHandler/",
+      "files": 1
+    }
+  ],
+  "files": []
+}

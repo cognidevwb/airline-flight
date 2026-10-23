@@ -1,0 +1,84 @@
+{
+  "folder": "http/",
+  "what": "Every HTTP endpoint and gRPC call: requests that succeed, requests that must be rejected and the status each gets.",
+  "folders": [],
+  "files": [
+    {
+      "file": "get-api-v1-flight-get-available-flights.json",
+      "item": "GET api/v1/flight/get-available-flights",
+      "layer": "HTTP · endpoints",
+      "valid": 1,
+      "invalid": 0
+    },
+    {
+      "file": "get-api-v1-flight-get-available-seats-id.json",
+      "item": "GET api/v1/flight/get-available-seats/{id}",
+      "layer": "HTTP · endpoints",
+      "valid": 200,
+      "invalid": 0
+    },
+    {
+      "file": "get-api-v1-flight-id.json",
+      "item": "GET api/v1/flight/{id}",
+      "layer": "HTTP · endpoints",
+      "valid": 200,
+      "invalid": 0
+    },
+    {
+      "file": "grpc-flightgrpcservice-getavailableseats.json",
+      "item": "gRPC FlightGrpcService/GetAvailableSeats",
+      "layer": "HTTP · gRPC",
+      "valid": 200,
+      "invalid": 0
+    },
+    {
+      "file": "grpc-flightgrpcservice-getbyid.json",
+      "item": "gRPC FlightGrpcService/GetById",
+      "layer": "HTTP · gRPC",
+      "valid": 200,
+      "invalid": 0
+    },
+    {
+      "file": "grpc-flightgrpcservice-reserveseat.json",
+      "item": "gRPC FlightGrpcService/ReserveSeat",
+      "layer": "HTTP · gRPC",
+      "valid": 200,
+      "invalid": 0
+    },
+    {
+      "file": "post-api-v1-flight-aircraft.json",
+      "item": "POST api/v1/flight/aircraft",
+      "layer": "HTTP · endpoints",
+      "valid": 200,
+      "invalid": 3
+    },
+    {
+      "file": "post-api-v1-flight-airport.json",
+      "item": "POST api/v1/flight/airport",
+      "layer": "HTTP · endpoints",
+      "valid": 200,
+      "invalid": 3
+    },
+    {
+      "file": "post-api-v1-flight-reserve-seat.json",
+      "item": "POST api/v1/flight/reserve-seat",
+      "layer": "HTTP · endpoints",
+      "valid": 199,
+      "invalid": 3
+    },
+    {
+      "file": "post-api-v1-flight-seat.json",
+      "item": "POST api/v1/flight/seat",
+      "layer": "HTTP · endpoints",
+      "valid": 199,
+      "invalid": 7
+    },
+    {
+      "file": "post-api-v1-flight.json",
+      "item": "POST api/v1/flight",
+      "layer": "HTTP · endpoints",
+      "valid": 200,
+      "invalid": 18
+    }
+  ]
+}

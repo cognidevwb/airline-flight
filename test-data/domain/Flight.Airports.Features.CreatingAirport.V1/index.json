@@ -1,0 +1,39 @@
+{
+  "folder": "domain/Flight.Airports.Features.CreatingAirport.V1/",
+  "what": "Domain objects by namespace: commands, events, read models, aggregates, value objects, requests and responses.",
+  "folders": [],
+  "files": [
+    {
+      "file": "AirportCreatedDomainEvent.json",
+      "item": "AirportCreatedDomainEvent",
+      "layer": "Domain · events",
+      "valid": 200,
+      "invalid": 6,
+      "coverage": 9
+    },
+    {
+      "file": "CreateAirport.json",
+      "item": "CreateAirport",
+      "layer": "Domain · commands",
+      "valid": 200,
+      "invalid": 8,
+      "coverage": 4
+    },
+    {
+      "file": "CreateAirportMongo.json",
+      "item": "CreateAirportMongo",
+      "layer": "Domain · commands",
+      "valid": 200,
+      "invalid": 6,
+      "coverage": 9
+    },
+    {
+      "file": "CreateAirportRequestDto.json",
+      "item": "CreateAirportRequestDto",
+      "layer": "Domain · requests",
+      "valid": 200,
+      "invalid": 3,
+      "coverage": 10
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "folder": "exports/sql/",
+  "what": "The same rows as SQL and CSV.",
+  "folders": [],
+  "files": [
+    {
+      "file": "000_reset.sql",
+      "item": "000_reset"
+    },
+    {
+      "file": "010_Aircraft.sql",
+      "item": "010_Aircraft"
+    },
+    {
+      "file": "010_Aircraft_cases.sql",
+      "item": "010_Aircraft_cases"
+    },
+    {
+      "file": "010_Aircraft_invalid.sql",
+      "item": "010_Aircraft_invalid"
+    },
+    {
+      "file": "020_Airport.sql",
+      "item": "020_Airport"
+    },
+    {
+      "file": "020_Airport_cases.sql",
+      "item": "020_Airport_cases"
+    },
+    {
+      "file": "020_Airport_invalid.sql",
+      "item": "020_Airport_invalid"
+    },
+    {
+      "file": "030_Flight.sql",
+      "item": "030_Flight"
+    },
+    {
+      "file": "030_Flight_cases.sql",
+      "item": "030_Flight_cases"
+    },
+    {
+      "file": "030_Flight_invalid.sql",
+      "item": "030_Flight_invalid"
+    },
+    {
+      "file": "040_Seat.sql",
+      "item": "040_Seat"
+    },
+    {
+      "file": "040_Seat_cases.sql",
+      "item": "040_Seat_cases"
+    },
+    {
+      "file": "040_Seat_invalid.sql",
+      "item": "040_Seat_invalid"
+    }
+  ]
+}

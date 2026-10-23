@@ -1,0 +1,23 @@
+{
+  "folder": "domain/Flight.Flights.Features.DeletingFlight.V1/",
+  "what": "Domain objects by namespace: commands, events, read models, aggregates, value objects, requests and responses.",
+  "folders": [],
+  "files": [
+    {
+      "file": "DeleteFlightMongo.json",
+      "item": "DeleteFlightMongo",
+      "layer": "Domain · commands",
+      "valid": 200,
+      "invalid": 21,
+      "coverage": 15
+    },
+    {
+      "file": "FlightDeletedDomainEvent.json",
+      "item": "FlightDeletedDomainEvent",
+      "layer": "Domain · events",
+      "valid": 200,
+      "invalid": 21,
+      "coverage": 15
+    }
+  ]
+}

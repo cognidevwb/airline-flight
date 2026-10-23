@@ -1,0 +1,15 @@
+{
+  "folder": "unit/Flight.Seats.Models/Seat/",
+  "what": "Argument sets for unit tests of each method, by namespace and class. Nested objects are whole records.",
+  "folders": [],
+  "files": [
+    {
+      "file": "Create.json",
+      "item": "Seat.Create",
+      "layer": "Unit · methods",
+      "valid": 200,
+      "invalid": 11,
+      "coverage": 16
+    }
+  ]
+}

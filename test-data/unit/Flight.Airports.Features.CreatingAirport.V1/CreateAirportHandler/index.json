@@ -1,0 +1,15 @@
+{
+  "folder": "unit/Flight.Airports.Features.CreatingAirport.V1/CreateAirportHandler/",
+  "what": "Argument sets for unit tests of each method, by namespace and class. Nested objects are whole records.",
+  "folders": [],
+  "files": [
+    {
+      "file": "Handle.json",
+      "item": "CreateAirportHandler.Handle",
+      "layer": "Unit · methods",
+      "valid": 200,
+      "invalid": 1,
+      "coverage": 1
+    }
+  ]
+}

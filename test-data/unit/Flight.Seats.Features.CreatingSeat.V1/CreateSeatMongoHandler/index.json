@@ -1,0 +1,15 @@
+{
+  "folder": "unit/Flight.Seats.Features.CreatingSeat.V1/CreateSeatMongoHandler/",
+  "what": "Argument sets for unit tests of each method, by namespace and class. Nested objects are whole records.",
+  "folders": [],
+  "files": [
+    {
+      "file": "Handle.json",
+      "item": "CreateSeatMongoHandler.Handle",
+      "layer": "Unit · methods",
+      "valid": 200,
+      "invalid": 1,
+      "coverage": 1
+    }
+  ]
+}

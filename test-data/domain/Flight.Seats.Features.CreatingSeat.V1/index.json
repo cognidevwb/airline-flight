@@ -1,0 +1,39 @@
+{
+  "folder": "domain/Flight.Seats.Features.CreatingSeat.V1/",
+  "what": "Domain objects by namespace: commands, events, read models, aggregates, value objects, requests and responses.",
+  "folders": [],
+  "files": [
+    {
+      "file": "CreateSeat.json",
+      "item": "CreateSeat",
+      "layer": "Domain · commands",
+      "valid": 200,
+      "invalid": 10,
+      "coverage": 16
+    },
+    {
+      "file": "CreateSeatMongo.json",
+      "item": "CreateSeatMongo",
+      "layer": "Domain · commands",
+      "valid": 200,
+      "invalid": 10,
+      "coverage": 16
+    },
+    {
+      "file": "CreateSeatRequestDto.json",
+      "item": "CreateSeatRequestDto",
+      "layer": "Domain · requests",
+      "valid": 199,
+      "invalid": 7,
+      "coverage": 16
+    },
+    {
+      "file": "SeatCreatedDomainEvent.json",
+      "item": "SeatCreatedDomainEvent",
+      "layer": "Domain · events",
+      "valid": 200,
+      "invalid": 10,
+      "coverage": 16
+    }
+  ]
+}

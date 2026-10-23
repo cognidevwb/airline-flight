@@ -1,0 +1,15 @@
+{
+  "folder": "domain/Flight.Airports.Models/",
+  "what": "Domain objects by namespace: commands, events, read models, aggregates, value objects, requests and responses.",
+  "folders": [],
+  "files": [
+    {
+      "file": "AirportReadModel.json",
+      "item": "AirportReadModel",
+      "layer": "Domain · read models",
+      "valid": 200,
+      "invalid": 8,
+      "coverage": 9
+    }
+  ]
+}

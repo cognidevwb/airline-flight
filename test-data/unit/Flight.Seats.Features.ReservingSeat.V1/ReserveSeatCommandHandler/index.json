@@ -1,0 +1,15 @@
+{
+  "folder": "unit/Flight.Seats.Features.ReservingSeat.V1/ReserveSeatCommandHandler/",
+  "what": "Argument sets for unit tests of each method, by namespace and class. Nested objects are whole records.",
+  "folders": [],
+  "files": [
+    {
+      "file": "Handle.json",
+      "item": "ReserveSeatCommandHandler.Handle",
+      "layer": "Unit · methods",
+      "valid": 199,
+      "invalid": 1,
+      "coverage": 1
+    }
+  ]
+}

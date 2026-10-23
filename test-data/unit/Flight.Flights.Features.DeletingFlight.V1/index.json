@@ -1,0 +1,11 @@
+{
+  "folder": "unit/Flight.Flights.Features.DeletingFlight.V1/",
+  "what": "Argument sets for unit tests of each method, by namespace and class. Nested objects are whole records.",
+  "folders": [
+    {
+      "folder": "DeleteFlightMongoCommandHandler/",
+      "files": 1
+    }
+  ],
+  "files": []
+}

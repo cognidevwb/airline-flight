@@ -1,0 +1,39 @@
+{
+  "folder": "domain/Flight.Aircrafts.Features.CreatingAircraft.V1/",
+  "what": "Domain objects by namespace: commands, events, read models, aggregates, value objects, requests and responses.",
+  "folders": [],
+  "files": [
+    {
+      "file": "AircraftCreatedDomainEvent.json",
+      "item": "AircraftCreatedDomainEvent",
+      "layer": "Domain · events",
+      "valid": 200,
+      "invalid": 6,
+      "coverage": 9
+    },
+    {
+      "file": "CreateAircraft.json",
+      "item": "CreateAircraft",
+      "layer": "Domain · commands",
+      "valid": 200,
+      "invalid": 7,
+      "coverage": 4
+    },
+    {
+      "file": "CreateAircraftMongo.json",
+      "item": "CreateAircraftMongo",
+      "layer": "Domain · commands",
+      "valid": 200,
+      "invalid": 6,
+      "coverage": 9
+    },
+    {
+      "file": "CreateAircraftRequestDto.json",
+      "item": "CreateAircraftRequestDto",
+      "layer": "Domain · requests",
+      "valid": 200,
+      "invalid": 3,
+      "coverage": 9
+    }
+  ]
+}

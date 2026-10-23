@@ -1,0 +1,199 @@
+{
+  "folder": "errors/",
+  "what": "Every exception the code throws: where, the call that triggers it, the status the API answers.",
+  "folders": [],
+  "files": [
+    {
+      "file": "aircraftalreadyexistexception-createaircraft.json",
+      "item": "AircraftAlreadyExistException",
+      "layer": "Errors",
+      "status": 400
+    },
+    {
+      "file": "aircraftalreadyexistexception-createaircraftmongo.json",
+      "item": "AircraftAlreadyExistException",
+      "layer": "Errors",
+      "status": 400
+    },
+    {
+      "file": "airportalreadyexistexception-createairport.json",
+      "item": "AirportAlreadyExistException",
+      "layer": "Errors",
+      "status": 400
+    },
+    {
+      "file": "airportalreadyexistexception-createairportmongo.json",
+      "item": "AirportAlreadyExistException",
+      "layer": "Errors",
+      "status": 400
+    },
+    {
+      "file": "allseatsfullexception-getavailableseats.json",
+      "item": "AllSeatsFullException",
+      "layer": "Errors",
+      "status": 400
+    },
+    {
+      "file": "flightalreadyexistexception-createflight.json",
+      "item": "FlightAlreadyExistException",
+      "layer": "Errors",
+      "status": 400
+    },
+    {
+      "file": "flightalreadyexistexception-createflightmongo.json",
+      "item": "FlightAlreadyExistException",
+      "layer": "Errors",
+      "status": 400
+    },
+    {
+      "file": "flightnotfountexception-deleteflight.json",
+      "item": "FlightNotFountException",
+      "layer": "Errors",
+      "status": 400
+    },
+    {
+      "file": "flightnotfountexception-deleteflightmongo.json",
+      "item": "FlightNotFountException",
+      "layer": "Errors",
+      "status": 400
+    },
+    {
+      "file": "flightnotfountexception-getavailableflights.json",
+      "item": "FlightNotFountException",
+      "layer": "Errors",
+      "status": 400
+    },
+    {
+      "file": "flightnotfountexception-getflightbyid.json",
+      "item": "FlightNotFountException",
+      "layer": "Errors",
+      "status": 400
+    },
+    {
+      "file": "flightnotfountexception-updateflight.json",
+      "item": "FlightNotFountException",
+      "layer": "Errors",
+      "status": 400
+    },
+    {
+      "file": "flightnotfountexception-updateflightmongo.json",
+      "item": "FlightNotFountException",
+      "layer": "Errors",
+      "status": 400
+    },
+    {
+      "file": "invalidaddressexception-address.json",
+      "item": "InvalidAddressException",
+      "layer": "Errors",
+      "status": 500
+    },
+    {
+      "file": "invalidaircraftidexception-aircraftid.json",
+      "item": "InvalidAircraftIdException",
+      "layer": "Errors",
+      "status": 500
+    },
+    {
+      "file": "invalidairportidexception-airportid.json",
+      "item": "InvalidAirportIdException",
+      "layer": "Errors",
+      "status": 500
+    },
+    {
+      "file": "invalidarrivedateexception-arrivedate.json",
+      "item": "InvalidArriveDateException",
+      "layer": "Errors",
+      "status": 500
+    },
+    {
+      "file": "invalidcodeexception-code.json",
+      "item": "InvalidCodeException",
+      "layer": "Errors",
+      "status": 500
+    },
+    {
+      "file": "invaliddeparturedateexception-departuredate.json",
+      "item": "InvalidDepartureDateException",
+      "layer": "Errors",
+      "status": 500
+    },
+    {
+      "file": "invaliddurationexception-durationminutes.json",
+      "item": "InvalidDurationException",
+      "layer": "Errors",
+      "status": 500
+    },
+    {
+      "file": "invalidflightdateexception-flightdate.json",
+      "item": "InvalidFlightDateException",
+      "layer": "Errors",
+      "status": 500
+    },
+    {
+      "file": "invalidflightidexception-flightid.json",
+      "item": "InvalidFlightIdException",
+      "layer": "Errors",
+      "status": 500
+    },
+    {
+      "file": "invalidflightnumberexception-flightnumber.json",
+      "item": "InvalidFlightNumberException",
+      "layer": "Errors",
+      "status": 500
+    },
+    {
+      "file": "invalidmanufacturingyearexception-manufacturingyear.json",
+      "item": "InvalidManufacturingYearException",
+      "layer": "Errors",
+      "status": 500
+    },
+    {
+      "file": "invalidmodelexception-model.json",
+      "item": "InvalidModelException",
+      "layer": "Errors",
+      "status": 500
+    },
+    {
+      "file": "invalidnameexception-name.json",
+      "item": "InvalidNameException",
+      "layer": "Errors",
+      "status": 500
+    },
+    {
+      "file": "invalidpriceexception-price.json",
+      "item": "InvalidPriceException",
+      "layer": "Errors",
+      "status": 500
+    },
+    {
+      "file": "invalidseatidexception-seatid.json",
+      "item": "InvalidSeatIdException",
+      "layer": "Errors",
+      "status": 500
+    },
+    {
+      "file": "invalidseatnumberexception-seatnumber.json",
+      "item": "InvalidSeatNumberException",
+      "layer": "Errors",
+      "status": 500
+    },
+    {
+      "file": "seatalreadyexistexception-createseat.json",
+      "item": "SeatAlreadyExistException",
+      "layer": "Errors",
+      "status": 400
+    },
+    {
+      "file": "seatalreadyexistexception-createseatmongo.json",
+      "item": "SeatAlreadyExistException",
+      "layer": "Errors",
+      "status": 400
+    },
+    {
+      "file": "seatnumberincorrectexception-reserveseat.json",
+      "item": "SeatNumberIncorrectException",
+      "layer": "Errors",
+      "status": 400
+    }
+  ]
+}
