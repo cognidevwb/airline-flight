@@ -4,6 +4,12 @@
   "handler": "src/Flight/Flights/Features/GettingAvailableFlights/V1/GetAvailableFlights.cs:40",
   "request": null,
   "response": "GetAvailableFlightsResponseDto",
-  "valid": [],
+  "valid": [
+    {
+      "ref": "api-v1-flight-get-available-flights-1",
+      "params": {},
+      "note": "takes no parameters"
+    }
+  ],
   "invalid": []
 }

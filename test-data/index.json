@@ -11,21 +11,21 @@
       "layer": "HTTP · endpoints",
       "item": "GET api/v1/flight/get-available-flights",
       "file": "http/get-api-v1-flight-get-available-flights.json",
-      "valid": 0,
+      "valid": 1,
       "invalid": 0
     },
     {
       "layer": "HTTP · endpoints",
-      "item": "GET api/v1/flight/get-available-seats/{{id}}",
+      "item": "GET api/v1/flight/get-available-seats/{id}",
       "file": "http/get-api-v1-flight-get-available-seats-id.json",
-      "valid": 4,
+      "valid": 200,
       "invalid": 0
     },
     {
       "layer": "HTTP · endpoints",
-      "item": "GET api/v1/flight/{{id}}",
+      "item": "GET api/v1/flight/{id}",
       "file": "http/get-api-v1-flight-id.json",
-      "valid": 4,
+      "valid": 200,
       "invalid": 0
     },
     {
@@ -67,21 +67,21 @@
       "layer": "HTTP · gRPC",
       "item": "gRPC FlightGrpcService/GetAvailableSeats",
       "file": "http/grpc-flightgrpcservice-getavailableseats.json",
-      "valid": 0,
+      "valid": 200,
       "invalid": 0
     },
     {
       "layer": "HTTP · gRPC",
       "item": "gRPC FlightGrpcService/GetById",
       "file": "http/grpc-flightgrpcservice-getbyid.json",
-      "valid": 0,
+      "valid": 200,
       "invalid": 0
     },
     {
       "layer": "HTTP · gRPC",
       "item": "gRPC FlightGrpcService/ReserveSeat",
       "file": "http/grpc-flightgrpcservice-reserveseat.json",
-      "valid": 0,
+      "valid": 200,
       "invalid": 0
     },
     {
