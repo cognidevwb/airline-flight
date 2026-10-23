@@ -1,0 +1,25 @@
+{
+  "id": "invalidseatnumberexception-seatnumber",
+  "title": "SeatNumber that the code refuses",
+  "kind": "invalid value",
+  "exception": "InvalidSeatNumberException",
+  "base": "DomainException",
+  "thrownAt": "src/Flight/Seats/ValueObjects/SeatNumber.cs:18",
+  "condition": "if (string.IsNullOrWhiteSpace(value))",
+  "field": "SeatNumber",
+  "expect": {
+    "status": 500,
+    "error": "InvalidSeatNumberException",
+    "note": "DomainException is not one of the exception types the problem-details handler maps, so the API answers 500"
+  },
+  "trigger": {
+    "call": "POST api/v1/flight/seat",
+    "body": {
+      "class": "FirstClass",
+      "flightId": "2f5ff8e3-0000-4000-8000-000000001024",
+      "seatNumber": null,
+      "type": "Window"
+    },
+    "from": "createseatrequestdto-1"
+  }
+}

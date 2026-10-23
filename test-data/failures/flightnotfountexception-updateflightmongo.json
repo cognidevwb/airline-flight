@@ -1,0 +1,15 @@
+{
+  "id": "flightnotfountexception-updateflightmongo",
+  "title": "UpdateFlightMongo: the record does not exist",
+  "kind": "not found",
+  "exception": "FlightNotFountException",
+  "base": "AppException",
+  "thrownAt": "src/Flight/Flights/Features/UpdatingFlight/V1/UpdateFlightMongo.cs:46",
+  "condition": "if (flight is null)",
+  "field": null,
+  "expect": {
+    "status": 400,
+    "error": "FlightNotFountException",
+    "note": null
+  }
+}

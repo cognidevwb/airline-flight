@@ -1,0 +1,185 @@
+{
+  "digest": "f7909c2419e0ce18",
+  "domain": "Airline reservations: aircraft, airports, flights and seats, passengers with passports, and bookings that reserve a seat",
+  "entity": "Aircraft",
+  "personal": {},
+  "records": [
+    {
+      "CreatedAt": "2023-02-14T09:12:30Z",
+      "CreatedBy": 1012,
+      "IsDeleted": false,
+      "LastModified": "2026-03-18T14:05:11Z",
+      "LastModifiedBy": 1044,
+      "ManufacturingYear": 2014,
+      "Model": "Boeing 737-800",
+      "Name": "Thames Voyager",
+      "Version": 4
+    },
+    {
+      "CreatedAt": "2023-05-02T08:40:00Z",
+      "CreatedBy": 1007,
+      "IsDeleted": false,
+      "LastModified": "2026-01-27T11:22:45Z",
+      "LastModifiedBy": 1019,
+      "ManufacturingYear": 2019,
+      "Model": "Airbus A320neo",
+      "Name": "Atlantic Dawn",
+      "Version": 3
+    },
+    {
+      "CreatedAt": "2022-11-21T13:25:10Z",
+      "CreatedBy": 1003,
+      "IsDeleted": false,
+      "LastModified": "2026-08-09T16:48:02Z",
+      "LastModifiedBy": 1031,
+      "ManufacturingYear": 2018,
+      "Model": "Boeing 787-9",
+      "Name": "Desert Falcon",
+      "Version": 6
+    },
+    {
+      "CreatedAt": "2024-01-15T10:05:55Z",
+      "CreatedBy": 1025,
+      "IsDeleted": false,
+      "LastModified": "2025-09-30T07:31:20Z",
+      "LastModifiedBy": 1025,
+      "ManufacturingYear": 2021,
+      "Model": "Airbus A321neo",
+      "Name": "Highland Star",
+      "Version": 2
+    },
+    {
+      "CreatedAt": "2021-07-08T15:50:42Z",
+      "CreatedBy": 1001,
+      "IsDeleted": false,
+      "LastModified": "2026-05-12T12:14:33Z",
+      "LastModifiedBy": 1052,
+      "ManufacturingYear": 2012,
+      "Model": "Boeing 777-300ER",
+      "Name": "Golden Gate Spirit",
+      "Version": 8
+    },
+    {
+      "CreatedAt": "2025-03-03T09:00:00Z",
+      "CreatedBy": 1038,
+      "IsDeleted": false,
+      "LastModified": null,
+      "LastModifiedBy": null,
+      "ManufacturingYear": 2020,
+      "Model": "Airbus A220-300",
+      "Name": "Nordic Breeze",
+      "Version": 1
+    },
+    {
+      "CreatedAt": "2023-09-19T14:30:25Z",
+      "CreatedBy": 1016,
+      "IsDeleted": false,
+      "LastModified": "2026-09-04T10:09:17Z",
+      "LastModifiedBy": 1062,
+      "ManufacturingYear": 2022,
+      "Model": "Airbus A350-900",
+      "Name": "Silver Meridian",
+      "Version": 5
+    },
+    {
+      "CreatedAt": "2022-04-26T11:18:09Z",
+      "CreatedBy": 1022,
+      "IsDeleted": false,
+      "LastModified": "2026-06-21T13:37:58Z",
+      "LastModifiedBy": 1009,
+      "ManufacturingYear": 2018,
+      "Model": "Boeing 737 MAX 8",
+      "Name": "Emerald Isle",
+      "Version": 7
+    },
+    {
+      "CreatedAt": "2020-10-12T07:45:30Z",
+      "CreatedBy": 1005,
+      "IsDeleted": false,
+      "LastModified": "2026-02-11T09:26:40Z",
+      "LastModifiedBy": 1047,
+      "ManufacturingYear": 2011,
+      "Model": "Airbus A330-300",
+      "Name": "Sahara Crown",
+      "Version": 9
+    },
+    {
+      "CreatedAt": "2021-03-29T16:02:14Z",
+      "CreatedBy": 1014,
+      "IsDeleted": false,
+      "LastModified": "2026-07-17T15:55:06Z",
+      "LastModifiedBy": 1028,
+      "ManufacturingYear": 2015,
+      "Model": "Boeing 787-8",
+      "Name": "Pacific Horizon",
+      "Version": 10
+    },
+    {
+      "CreatedAt": "2020-06-05T12:20:48Z",
+      "CreatedBy": 1030,
+      "IsDeleted": false,
+      "LastModified": "2026-04-02T08:12:19Z",
+      "LastModifiedBy": 1071,
+      "ManufacturingYear": 2009,
+      "Model": "Embraer E190",
+      "Name": "Alpine Lark",
+      "Version": 11
+    },
+    {
+      "CreatedAt": "2020-01-20T10:35:00Z",
+      "CreatedBy": 1002,
+      "IsDeleted": true,
+      "LastModified": "2026-10-01T17:44:27Z",
+      "LastModifiedBy": 1058,
+      "ManufacturingYear": 2013,
+      "Model": "Airbus A380-800",
+      "Name": "Royal Albatross",
+      "Version": 12
+    },
+    {
+      "CreatedAt": "2019-08-14T13:10:36Z",
+      "CreatedBy": 1018,
+      "IsDeleted": false,
+      "LastModified": "2026-03-30T06:58:51Z",
+      "LastModifiedBy": 1036,
+      "ManufacturingYear": 2006,
+      "Model": "Boeing 767-300ER",
+      "Name": "Cape Mariner",
+      "Version": 13
+    },
+    {
+      "CreatedAt": "2019-11-07T09:55:12Z",
+      "CreatedBy": 1041,
+      "IsDeleted": false,
+      "LastModified": "2026-08-25T14:21:09Z",
+      "LastModifiedBy": 1015,
+      "ManufacturingYear": 2008,
+      "Model": "Airbus A319-100",
+      "Name": "Baltic Swift",
+      "Version": 14
+    },
+    {
+      "CreatedAt": "2026-09-10T08:15:45Z",
+      "CreatedBy": 1049,
+      "IsDeleted": false,
+      "LastModified": null,
+      "LastModifiedBy": null,
+      "ManufacturingYear": 2016,
+      "Model": "Boeing 747-8",
+      "Name": "Evening Heron",
+      "Version": 1
+    },
+    {
+      "CreatedAt": "2018-05-22T11:40:20Z",
+      "CreatedBy": 1008,
+      "IsDeleted": true,
+      "LastModified": "2025-12-15T10:03:34Z",
+      "LastModifiedBy": 1066,
+      "ManufacturingYear": 2001,
+      "Model": "Boeing 757-200",
+      "Name": "Old Faithful",
+      "Version": 15
+    }
+  ],
+  "source": "model, from the column names and constraints only"
+}

@@ -1,0 +1,319 @@
+{
+  "shape": "CreateAircraft",
+  "role": "command",
+  "source": "src/Flight/Aircrafts/Features/CreatingAircraft/V1/CreateAircraft.cs:25",
+  "columns": [
+    "Name",
+    "Model",
+    "ManufacturingYear",
+    "Id"
+  ],
+  "records": [
+    {
+      "ref": "aircraft-thames-voyager-5",
+      "kind": "record",
+      "data": {
+        "Id": "f057fe93-0000-4000-8000-000000001010",
+        "ManufacturingYear": 2014,
+        "Model": "Boeing 737-800",
+        "Name": "Thames Voyager"
+      }
+    },
+    {
+      "ref": "aircraft-atlantic-dawn-5",
+      "kind": "record",
+      "data": {
+        "Id": "f057fe93-0000-4000-8000-000000001011",
+        "ManufacturingYear": 2019,
+        "Model": "Airbus A320neo",
+        "Name": "Atlantic Dawn"
+      }
+    },
+    {
+      "ref": "aircraft-desert-falcon-5",
+      "kind": "record",
+      "data": {
+        "Id": "f057fe93-0000-4000-8000-000000001012",
+        "ManufacturingYear": 2018,
+        "Model": "Boeing 787-9",
+        "Name": "Desert Falcon"
+      }
+    },
+    {
+      "ref": "aircraft-highland-star-5",
+      "kind": "record",
+      "data": {
+        "Id": "f057fe93-0000-4000-8000-000000001013",
+        "ManufacturingYear": 2021,
+        "Model": "Airbus A321neo",
+        "Name": "Highland Star"
+      }
+    },
+    {
+      "ref": "aircraft-golden-gate-spirit-5",
+      "kind": "record",
+      "data": {
+        "Id": "f057fe93-0000-4000-8000-000000001014",
+        "ManufacturingYear": 2012,
+        "Model": "Boeing 777-300ER",
+        "Name": "Golden Gate Spirit"
+      }
+    },
+    {
+      "ref": "aircraft-nordic-breeze-5",
+      "kind": "record",
+      "data": {
+        "Id": "f057fe93-0000-4000-8000-000000001015",
+        "ManufacturingYear": 2020,
+        "Model": "Airbus A220-300",
+        "Name": "Nordic Breeze"
+      }
+    },
+    {
+      "ref": "aircraft-silver-meridian-5",
+      "kind": "record",
+      "data": {
+        "Id": "f057fe93-0000-4000-8000-000000001016",
+        "ManufacturingYear": 2022,
+        "Model": "Airbus A350-900",
+        "Name": "Silver Meridian"
+      }
+    },
+    {
+      "ref": "aircraft-emerald-isle-5",
+      "kind": "record",
+      "data": {
+        "Id": "f057fe93-0000-4000-8000-000000001017",
+        "ManufacturingYear": 2018,
+        "Model": "Boeing 737 MAX 8",
+        "Name": "Emerald Isle"
+      }
+    },
+    {
+      "ref": "aircraft-sahara-crown-5",
+      "kind": "record",
+      "data": {
+        "Id": "f057fe93-0000-4000-8000-000000001018",
+        "ManufacturingYear": 2011,
+        "Model": "Airbus A330-300",
+        "Name": "Sahara Crown"
+      }
+    },
+    {
+      "ref": "aircraft-pacific-horizon-5",
+      "kind": "record",
+      "data": {
+        "Id": "f057fe93-0000-4000-8000-000000001019",
+        "ManufacturingYear": 2015,
+        "Model": "Boeing 787-8",
+        "Name": "Pacific Horizon"
+      }
+    },
+    {
+      "ref": "aircraft-alpine-lark-5",
+      "kind": "record",
+      "data": {
+        "Id": "f057fe93-0000-4000-8000-000000001020",
+        "ManufacturingYear": 2009,
+        "Model": "Embraer E190",
+        "Name": "Alpine Lark"
+      }
+    },
+    {
+      "ref": "aircraft-royal-albatross-5",
+      "kind": "record",
+      "data": {
+        "Id": "f057fe93-0000-4000-8000-000000001021",
+        "ManufacturingYear": 2013,
+        "Model": "Airbus A380-800",
+        "Name": "Royal Albatross"
+      }
+    },
+    {
+      "ref": "aircraft-cape-mariner-5",
+      "kind": "record",
+      "data": {
+        "Id": "f057fe93-0000-4000-8000-000000001022",
+        "ManufacturingYear": 2006,
+        "Model": "Boeing 767-300ER",
+        "Name": "Cape Mariner"
+      }
+    },
+    {
+      "ref": "aircraft-baltic-swift-5",
+      "kind": "record",
+      "data": {
+        "Id": "f057fe93-0000-4000-8000-000000001023",
+        "ManufacturingYear": 2008,
+        "Model": "Airbus A319-100",
+        "Name": "Baltic Swift"
+      }
+    },
+    {
+      "ref": "aircraft-evening-heron-5",
+      "kind": "record",
+      "data": {
+        "Id": "f057fe93-0000-4000-8000-000000001024",
+        "ManufacturingYear": 2016,
+        "Model": "Boeing 747-8",
+        "Name": "Evening Heron"
+      }
+    },
+    {
+      "ref": "aircraft-old-faithful-5",
+      "kind": "record",
+      "data": {
+        "Id": "f057fe93-0000-4000-8000-000000001025",
+        "ManufacturingYear": 2001,
+        "Model": "Boeing 757-200",
+        "Name": "Old Faithful"
+      }
+    }
+  ],
+  "cases": [
+    {
+      "ref": "createaircraft-case-1",
+      "kind": "case",
+      "data": {
+        "Id": "f057fe93-0000-4000-8000-000000001002",
+        "ManufacturingYear": 1,
+        "Model": "text",
+        "Name": "text"
+      },
+      "case": "covering-0001"
+    },
+    {
+      "ref": "createaircraft-case-2",
+      "kind": "case",
+      "data": {
+        "Id": "f057fe93-0000-4000-8000-000000001002",
+        "ManufacturingYear": 2022,
+        "Model": "STR_0001",
+        "Name": "text"
+      },
+      "case": "covering-0002"
+    },
+    {
+      "ref": "createaircraft-case-3",
+      "kind": "case",
+      "data": {
+        "Id": "f057fe93-0000-4000-8000-000000001004",
+        "ManufacturingYear": 2022,
+        "Model": "text",
+        "Name": "Alice Whitfield"
+      },
+      "case": "covering-0003"
+    },
+    {
+      "ref": "createaircraft-case-4",
+      "kind": "case",
+      "data": {
+        "Id": "f057fe93-0000-4000-8000-000000001004",
+        "ManufacturingYear": 1,
+        "Model": "STR_0001",
+        "Name": "Alice Whitfield"
+      },
+      "case": "covering-0004"
+    }
+  ],
+  "rejections": [
+    {
+      "ref": "createaircraft-rejection-1",
+      "kind": "rejection",
+      "data": {
+        "Id": "00000000-0000-4000-8000-000000000000",
+        "ManufacturingYear": 1,
+        "Model": "text",
+        "Name": null
+      },
+      "violates": {
+        "field": "Name",
+        "rule": "`Name` is declared NOT NULL"
+      }
+    },
+    {
+      "ref": "createaircraft-rejection-2",
+      "kind": "rejection",
+      "data": {
+        "Id": "00000000-0000-4000-8000-000000000000",
+        "ManufacturingYear": 1,
+        "Model": "text",
+        "Name": ""
+      },
+      "violates": {
+        "field": "Name",
+        "rule": "violates a declared constraint on `Name`"
+      }
+    },
+    {
+      "ref": "createaircraft-rejection-3",
+      "kind": "rejection",
+      "data": {
+        "Id": "00000000-0000-4000-8000-000000000000",
+        "ManufacturingYear": 1,
+        "Model": null,
+        "Name": "text"
+      },
+      "violates": {
+        "field": "Model",
+        "rule": "`Model` is declared NOT NULL"
+      }
+    },
+    {
+      "ref": "createaircraft-rejection-4",
+      "kind": "rejection",
+      "data": {
+        "Id": "00000000-0000-4000-8000-000000000000",
+        "ManufacturingYear": 1,
+        "Model": "",
+        "Name": "text"
+      },
+      "violates": {
+        "field": "Model",
+        "rule": "violates a declared constraint on `Model`"
+      }
+    },
+    {
+      "ref": "createaircraft-rejection-5",
+      "kind": "rejection",
+      "data": {
+        "Id": "00000000-0000-4000-8000-000000000000",
+        "ManufacturingYear": null,
+        "Model": "text",
+        "Name": "text"
+      },
+      "violates": {
+        "field": "ManufacturingYear",
+        "rule": "`ManufacturingYear` is declared NOT NULL"
+      }
+    },
+    {
+      "ref": "createaircraft-rejection-6",
+      "kind": "rejection",
+      "data": {
+        "Id": null,
+        "ManufacturingYear": 1,
+        "Model": "text",
+        "Name": "text"
+      },
+      "violates": {
+        "field": "Id",
+        "rule": "`Id` is declared NOT NULL"
+      }
+    },
+    {
+      "ref": "createaircraft-rejection-7",
+      "kind": "rejection",
+      "data": {
+        "Id": "not-a-uuid",
+        "ManufacturingYear": 1,
+        "Model": "text",
+        "Name": "text"
+      },
+      "violates": {
+        "field": "Id",
+        "rule": "violates a declared constraint on `Id`"
+      }
+    }
+  ]
+}

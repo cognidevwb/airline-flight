@@ -1,0 +1,15 @@
+{
+  "shape": "GET /",
+  "role": "shape",
+  "source": "src/Flight/Extensions/Infrastructure/InfrastructureExtensions.cs:91",
+  "columns": [],
+  "records": [
+    {
+      "ref": "flight-1",
+      "kind": "record",
+      "data": {}
+    }
+  ],
+  "cases": [],
+  "rejections": []
+}

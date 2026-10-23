@@ -1,0 +1,16 @@
+{
+  "id": "createaircrafttests-should-create-new-ai",
+  "title": "should create new aircraft to db and publish message to broker",
+  "source": "repository test",
+  "file": "tests/IntegrationTest/Aircraft/Features/CreateAircraftTests.cs:19",
+  "steps": [
+    {
+      "n": 1,
+      "does": "var response = await Fixture.SendAsync(command)"
+    }
+  ],
+  "expect": [
+    "response?.Id.Value.Should().Be(command.Id)",
+    "(await Fixture.WaitForPublishing<AircraftCreated>()).Should().Be(true)"
+  ]
+}

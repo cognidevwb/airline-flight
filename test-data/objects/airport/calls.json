@@ -1,0 +1,113 @@
+{
+  "object": "Airport",
+  "calls": [
+    {
+      "operation": "POST api/v1/flight/airport",
+      "kind": "http",
+      "file": "src/Flight/Airports/Features/CreatingAirport/V1/CreateAirport.cs:41",
+      "request": "CreateAirportRequestDto",
+      "response": "CreateAirportResponseDto",
+      "valid": [
+        {
+          "ref": "createairportrequestdto-1",
+          "body": {
+            "address": "Longford TW6, Hounslow, London, UK",
+            "code": "LHR",
+            "name": "London Heathrow Airport"
+          }
+        },
+        {
+          "ref": "createairportrequestdto-2",
+          "body": {
+            "address": "Queens, New York, NY 11430, USA",
+            "code": "JFK",
+            "name": "John F. Kennedy International Airport"
+          }
+        },
+        {
+          "ref": "createairportrequestdto-3",
+          "body": {
+            "address": "Airport Rd, Al Garhoud, Dubai, UAE",
+            "code": "DXB",
+            "name": "Dubai International Airport"
+          }
+        },
+        {
+          "ref": "createairportrequestdto-4",
+          "body": {
+            "address": "60547 Frankfurt am Main, Germany",
+            "code": "FRA",
+            "name": "Frankfurt Airport"
+          }
+        },
+        {
+          "ref": "createairportrequestdto-5",
+          "body": {
+            "address": "95700 Roissy-en-France, France",
+            "code": "CDG",
+            "name": "Paris Charles de Gaulle Airport"
+          }
+        },
+        {
+          "ref": "createairportrequestdto-6",
+          "body": {
+            "address": "Airport Blvd, Singapore 819642",
+            "code": "SIN",
+            "name": "Singapore Changi Airport"
+          }
+        }
+      ],
+      "rejections": [
+        {
+          "ref": "createairportrequestdto-rejection-1",
+          "body": {
+            "address": "",
+            "code": "",
+            "name": null
+          },
+          "violates": {
+            "field": "Name",
+            "rule": "`Name` is declared NOT NULL"
+          },
+          "expect": {
+            "status": 400,
+            "why": "the validator in this file has a rule on Name"
+          }
+        },
+        {
+          "ref": "createairportrequestdto-rejection-2",
+          "body": {
+            "address": null,
+            "code": "",
+            "name": ""
+          },
+          "violates": {
+            "field": "Address",
+            "rule": "`Address` is declared NOT NULL"
+          },
+          "expect": {
+            "status": 400,
+            "why": "the validator in this file has a rule on Address"
+          }
+        },
+        {
+          "ref": "createairportrequestdto-rejection-3",
+          "body": {
+            "address": "",
+            "code": null,
+            "name": ""
+          },
+          "violates": {
+            "field": "Code",
+            "rule": "`Code` is declared NOT NULL"
+          },
+          "expect": {
+            "status": 400,
+            "why": "the validator in this file has a rule on Code"
+          }
+        }
+      ],
+      "object": "Airport"
+    }
+  ]
+}

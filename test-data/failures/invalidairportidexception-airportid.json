@@ -1,0 +1,15 @@
+{
+  "id": "invalidairportidexception-airportid",
+  "title": "AirportId that the code refuses",
+  "kind": "invalid value",
+  "exception": "InvalidAirportIdException",
+  "base": "DomainException",
+  "thrownAt": "src/Flight/Airports/ValueObjects/AirportId.cs:19",
+  "condition": "if (value == Guid.Empty)",
+  "field": "AirportId",
+  "expect": {
+    "status": 500,
+    "error": "InvalidAirportIdException",
+    "note": "DomainException is not one of the exception types the problem-details handler maps, so the API answers 500"
+  }
+}

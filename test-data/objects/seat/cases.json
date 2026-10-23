@@ -1,0 +1,308 @@
+{
+  "object": "Seat",
+  "table": "Seat",
+  "source": "src/Flight/Seats/Models/Seat.cs:11",
+  "columns": [
+    "Id",
+    "SeatNumber",
+    "Type",
+    "Class",
+    "FlightId",
+    "Version",
+    "CreatedAt",
+    "CreatedBy",
+    "IsDeleted",
+    "LastModified",
+    "LastModifiedBy"
+  ],
+  "cases": [
+    {
+      "ref": "seat-case-1",
+      "kind": "case",
+      "data": {
+        "Class": "Unknown",
+        "CreatedAt": "2026-03-01T06:00:00Z",
+        "CreatedBy": 1,
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001000",
+        "Id": "f07cc888-0000-4000-8000-000000001000",
+        "IsDeleted": true,
+        "LastModified": "2026-03-01T06:00:00Z",
+        "LastModifiedBy": 1,
+        "SeatNumber": "",
+        "Type": "Unknown",
+        "Version": 1
+      },
+      "case": "covering-0001"
+    },
+    {
+      "ref": "seat-case-2",
+      "kind": "case",
+      "data": {
+        "Class": "FirstClass",
+        "CreatedAt": "2026-03-01T06:45:00Z",
+        "CreatedBy": 100,
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001006",
+        "Id": "f07cc888-0000-4000-8000-000000001001",
+        "IsDeleted": true,
+        "LastModified": "2026-03-01T06:45:00Z",
+        "LastModifiedBy": 100,
+        "SeatNumber": "",
+        "Type": "Window",
+        "Version": 100
+      },
+      "case": "covering-0002"
+    },
+    {
+      "ref": "seat-case-3",
+      "kind": "case",
+      "data": {
+        "Class": "Business",
+        "CreatedAt": "2026-03-01T06:45:00Z",
+        "CreatedBy": 1,
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001012",
+        "Id": "f07cc888-0000-4000-8000-000000001002",
+        "IsDeleted": true,
+        "LastModified": "2026-03-01T06:45:00Z",
+        "LastModifiedBy": 1,
+        "SeatNumber": "",
+        "Type": "Middle",
+        "Version": 1
+      },
+      "case": "covering-0003"
+    },
+    {
+      "ref": "seat-case-4",
+      "kind": "case",
+      "data": {
+        "Class": "Economy",
+        "CreatedAt": "2026-03-01T06:00:00Z",
+        "CreatedBy": 100,
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001018",
+        "Id": "f07cc888-0000-4000-8000-000000001003",
+        "IsDeleted": true,
+        "LastModified": "2026-03-01T06:00:00Z",
+        "LastModifiedBy": 100,
+        "SeatNumber": "",
+        "Type": "Aisle",
+        "Version": 1
+      },
+      "case": "covering-0004"
+    },
+    {
+      "ref": "seat-case-5",
+      "kind": "case",
+      "data": {
+        "Class": "FirstClass",
+        "CreatedAt": "2026-03-01T06:00:00Z",
+        "CreatedBy": 1,
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001012",
+        "Id": "f07cc888-0000-4000-8000-000000001004",
+        "IsDeleted": true,
+        "LastModified": "2026-03-01T06:00:00Z",
+        "LastModifiedBy": 100,
+        "SeatNumber": "23A",
+        "Type": "Unknown",
+        "Version": 100
+      },
+      "case": "covering-0005"
+    },
+    {
+      "ref": "seat-case-6",
+      "kind": "case",
+      "data": {
+        "Class": "Unknown",
+        "CreatedAt": "2026-03-01T06:45:00Z",
+        "CreatedBy": 1,
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001018",
+        "Id": "f07cc888-0000-4000-8000-000000001005",
+        "IsDeleted": true,
+        "LastModified": "2026-03-01T06:45:00Z",
+        "LastModifiedBy": 1,
+        "SeatNumber": "23A",
+        "Type": "Window",
+        "Version": 1
+      },
+      "case": "covering-0006"
+    },
+    {
+      "ref": "seat-case-7",
+      "kind": "case",
+      "data": {
+        "Class": "Economy",
+        "CreatedAt": "2026-03-01T06:45:00Z",
+        "CreatedBy": 100,
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001000",
+        "Id": "f07cc888-0000-4000-8000-000000001006",
+        "IsDeleted": true,
+        "LastModified": "2026-03-01T06:00:00Z",
+        "LastModifiedBy": 1,
+        "SeatNumber": "23A",
+        "Type": "Middle",
+        "Version": 100
+      },
+      "case": "covering-0007"
+    },
+    {
+      "ref": "seat-case-8",
+      "kind": "case",
+      "data": {
+        "Class": "Business",
+        "CreatedAt": "2026-03-01T06:00:00Z",
+        "CreatedBy": 1,
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001006",
+        "Id": "f07cc888-0000-4000-8000-000000001007",
+        "IsDeleted": true,
+        "LastModified": "2026-03-01T06:00:00Z",
+        "LastModifiedBy": 1,
+        "SeatNumber": "23A",
+        "Type": "Aisle",
+        "Version": 100
+      },
+      "case": "covering-0008"
+    },
+    {
+      "ref": "seat-case-9",
+      "kind": "case",
+      "data": {
+        "Class": "Business",
+        "CreatedAt": "2026-03-01T06:45:00Z",
+        "CreatedBy": 100,
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001018",
+        "Id": "f07cc888-0000-4000-8000-000000001008",
+        "IsDeleted": true,
+        "LastModified": "2026-03-01T06:45:00Z",
+        "LastModifiedBy": 100,
+        "SeatNumber": "",
+        "Type": "Unknown",
+        "Version": 100
+      },
+      "case": "covering-0009"
+    },
+    {
+      "ref": "seat-case-10",
+      "kind": "case",
+      "data": {
+        "Class": "Economy",
+        "CreatedAt": "2026-03-01T06:00:00Z",
+        "CreatedBy": 1,
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001006",
+        "Id": "f07cc888-0000-4000-8000-000000001009",
+        "IsDeleted": true,
+        "LastModified": "2026-03-01T06:45:00Z",
+        "LastModifiedBy": 1,
+        "SeatNumber": "",
+        "Type": "Unknown",
+        "Version": 1
+      },
+      "case": "covering-0010"
+    },
+    {
+      "ref": "seat-case-11",
+      "kind": "case",
+      "data": {
+        "Class": "Business",
+        "CreatedAt": "2026-03-01T06:00:00Z",
+        "CreatedBy": 1,
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001000",
+        "Id": "f07cc888-0000-4000-8000-000000001010",
+        "IsDeleted": true,
+        "LastModified": "2026-03-01T06:00:00Z",
+        "LastModifiedBy": 100,
+        "SeatNumber": "",
+        "Type": "Window",
+        "Version": 1
+      },
+      "case": "covering-0011"
+    },
+    {
+      "ref": "seat-case-12",
+      "kind": "case",
+      "data": {
+        "Class": "Economy",
+        "CreatedAt": "2026-03-01T06:00:00Z",
+        "CreatedBy": 100,
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001012",
+        "Id": "f07cc888-0000-4000-8000-000000001011",
+        "IsDeleted": true,
+        "LastModified": "2026-03-01T06:00:00Z",
+        "LastModifiedBy": 1,
+        "SeatNumber": "",
+        "Type": "Window",
+        "Version": 1
+      },
+      "case": "covering-0012"
+    },
+    {
+      "ref": "seat-case-13",
+      "kind": "case",
+      "data": {
+        "Class": "Unknown",
+        "CreatedAt": "2026-03-01T06:00:00Z",
+        "CreatedBy": 100,
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001006",
+        "Id": "f07cc888-0000-4000-8000-000000001012",
+        "IsDeleted": true,
+        "LastModified": "2026-03-01T06:00:00Z",
+        "LastModifiedBy": 100,
+        "SeatNumber": "",
+        "Type": "Middle",
+        "Version": 100
+      },
+      "case": "covering-0013"
+    },
+    {
+      "ref": "seat-case-14",
+      "kind": "case",
+      "data": {
+        "Class": "FirstClass",
+        "CreatedAt": "2026-03-01T06:00:00Z",
+        "CreatedBy": 1,
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001018",
+        "Id": "f07cc888-0000-4000-8000-000000001013",
+        "IsDeleted": true,
+        "LastModified": "2026-03-01T06:00:00Z",
+        "LastModifiedBy": 1,
+        "SeatNumber": "",
+        "Type": "Middle",
+        "Version": 1
+      },
+      "case": "covering-0014"
+    },
+    {
+      "ref": "seat-case-15",
+      "kind": "case",
+      "data": {
+        "Class": "Unknown",
+        "CreatedAt": "2026-03-01T06:45:00Z",
+        "CreatedBy": 1,
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001012",
+        "Id": "f07cc888-0000-4000-8000-000000001014",
+        "IsDeleted": true,
+        "LastModified": "2026-03-01T06:45:00Z",
+        "LastModifiedBy": 1,
+        "SeatNumber": "",
+        "Type": "Aisle",
+        "Version": 1
+      },
+      "case": "covering-0015"
+    },
+    {
+      "ref": "seat-case-16",
+      "kind": "case",
+      "data": {
+        "Class": "FirstClass",
+        "CreatedAt": "2026-03-01T06:00:00Z",
+        "CreatedBy": 1,
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001000",
+        "Id": "f07cc888-0000-4000-8000-000000001015",
+        "IsDeleted": true,
+        "LastModified": "2026-03-01T06:45:00Z",
+        "LastModifiedBy": 1,
+        "SeatNumber": "",
+        "Type": "Aisle",
+        "Version": 1
+      },
+      "case": "covering-0016"
+    }
+  ]
+}

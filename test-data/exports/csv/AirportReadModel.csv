@@ -1,0 +1,17 @@
+Id,AirportId,Name,Address,Code,IsDeleted
+,,London Heathrow Airport,"Longford TW6, Hounslow, London, UK",LHR,0
+,,John F. Kennedy International Airport,"Queens, New York, NY 11430, USA",JFK,0
+,,Dubai International Airport,"Airport Rd, Al Garhoud, Dubai, UAE",DXB,0
+,,Frankfurt Airport,"60547 Frankfurt am Main, Germany",FRA,0
+,,Paris Charles de Gaulle Airport,"95700 Roissy-en-France, France",CDG,0
+,,Singapore Changi Airport,"Airport Blvd, Singapore 819642",SIN,0
+,,Los Angeles International Airport,"1 World Way, Los Angeles, CA 90045, USA",LAX,0
+,,Amsterdam Airport Schiphol,"Evert van de Beekstraat 202, 1118 CP Schiphol",AMS,0
+,,Hong Kong International Airport,"1 Sky Plaza Rd, Chek Lap Kok, Hong Kong",HKG,0
+,,Istanbul Airport,"Tayakadın, Nuri Demirağ Cd, 34283 Arnavutköy",IST,0
+,,Sydney Kingsford Smith Airport,"Airport Dr, Mascot NSW 2020, Australia",SYD,0
+,,Toronto Pearson International Airport,"6301 Silver Dart Dr, Mississauga, ON L5P 1B2",YYZ,0
+,,Madrid-Barajas Airport,"Av de la Hispanidad, 28042 Madrid, Spain",MAD,0
+,,Tokyo Narita International Airport,"1-1 Furugome, Narita, Chiba 282-0004, Japan",NRT,1
+,,Hamad International Airport,"Airport Rd, Doha, Qatar",DOH,0
+,,Chicago O'Hare International Airport,"10000 W O'Hare Ave, Chicago, IL 60666, USA",ORD,1

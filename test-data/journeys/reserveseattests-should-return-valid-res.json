@@ -1,0 +1,24 @@
+{
+  "id": "reserveseattests-should-return-valid-res",
+  "title": "should return valid reserve seat from grpc service",
+  "source": "repository test",
+  "file": "tests/IntegrationTest/Seat/Features/ReserveSeatTests.cs:19",
+  "steps": [
+    {
+      "n": 1,
+      "does": "await Fixture.SendAsync(flightCommand)"
+    },
+    {
+      "n": 2,
+      "does": "await Fixture.SendAsync(seatCommand)"
+    },
+    {
+      "n": 3,
+      "does": "var response = await flightGrpcClient.ReserveSeatAsync(new ReserveSeatRequest()"
+    }
+  ],
+  "expect": [
+    "response?.Should().NotBeNull()",
+    "response?.Id.Should().Be(seatCommand?.Id.ToString())"
+  ]
+}

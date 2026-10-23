@@ -1,0 +1,15 @@
+{
+  "id": "flightnotfountexception-updateflight",
+  "title": "UpdateFlight: the record does not exist",
+  "kind": "not found",
+  "exception": "FlightNotFountException",
+  "base": "AppException",
+  "thrownAt": "src/Flight/Flights/Features/UpdatingFlight/V1/UpdateFlight.cs:112",
+  "condition": "if (flight is null)",
+  "field": null,
+  "expect": {
+    "status": 400,
+    "error": "FlightNotFountException",
+    "note": null
+  }
+}

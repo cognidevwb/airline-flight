@@ -1,0 +1,20 @@
+{
+  "id": "deleteflighttests-should-delete-flight-f",
+  "title": "should delete flight from db",
+  "source": "repository test",
+  "file": "tests/IntegrationTest/Flight/Features/DeleteFlightTests.cs:25",
+  "steps": [
+    {
+      "n": 1,
+      "does": "await Fixture.SendAsync(command)"
+    },
+    {
+      "n": 2,
+      "does": "var deletedFlight = (await Fixture.ExecuteDbContextAsync(db => db.Flights"
+    }
+  ],
+  "expect": [
+    "deletedFlight?.IsDeleted.Should().BeTrue()",
+    "(await Fixture.WaitForPublishing<FlightDeleted>()).Should().Be(true)"
+  ]
+}

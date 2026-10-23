@@ -1,0 +1,17 @@
+Id,Name,Address,Code
+1000,London Heathrow Airport,"Longford TW6, Hounslow, London, UK",LHR
+1001,John F. Kennedy International Airport,"Queens, New York, NY 11430, USA",JFK
+1002,Dubai International Airport,"Airport Rd, Al Garhoud, Dubai, UAE",DXB
+1003,Frankfurt Airport,"60547 Frankfurt am Main, Germany",FRA
+1004,Paris Charles de Gaulle Airport,"95700 Roissy-en-France, France",CDG
+1005,Singapore Changi Airport,"Airport Blvd, Singapore 819642",SIN
+1006,Los Angeles International Airport,"1 World Way, Los Angeles, CA 90045, USA",LAX
+1007,Amsterdam Airport Schiphol,"Evert van de Beekstraat 202, 1118 CP Schiphol",AMS
+1008,Hong Kong International Airport,"1 Sky Plaza Rd, Chek Lap Kok, Hong Kong",HKG
+1009,Istanbul Airport,"Tayakadın, Nuri Demirağ Cd, 34283 Arnavutköy",IST
+1010,Sydney Kingsford Smith Airport,"Airport Dr, Mascot NSW 2020, Australia",SYD
+1011,Toronto Pearson International Airport,"6301 Silver Dart Dr, Mississauga, ON L5P 1B2",YYZ
+1012,Madrid-Barajas Airport,"Av de la Hispanidad, 28042 Madrid, Spain",MAD
+1013,Tokyo Narita International Airport,"1-1 Furugome, Narita, Chiba 282-0004, Japan",NRT
+1014,Hamad International Airport,"Airport Rd, Doha, Qatar",DOH
+1015,Chicago O'Hare International Airport,"10000 W O'Hare Ave, Chicago, IL 60666, USA",ORD

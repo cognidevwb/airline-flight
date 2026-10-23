@@ -1,0 +1,132 @@
+{
+  "id": "canceled-flight",
+  "title": "Canceled flight",
+  "source": "staged scenario",
+  "why": "Reveals whether canceling a flight leaves orphaned seats that remain visible or bookable.",
+  "setup": [
+    {
+      "ref": "aircraft-1",
+      "table": "Aircraft",
+      "values": {
+        "CreatedAt": "2026-01-10T08:00:00Z",
+        "CreatedBy": 1,
+        "IsDeleted": false,
+        "LastModified": "2026-01-10T08:00:00Z",
+        "LastModifiedBy": 1,
+        "ManufacturingYear": 2015,
+        "Model": "Airbus A320",
+        "Name": "City of Paris",
+        "Version": 1
+      }
+    },
+    {
+      "ref": "airport-dep",
+      "table": "Airport",
+      "values": {
+        "Address": "Roissy-en-France",
+        "Code": "CDG",
+        "CreatedAt": "2026-01-10T08:00:00Z",
+        "CreatedBy": 1,
+        "IsDeleted": false,
+        "LastModified": "2026-01-10T08:00:00Z",
+        "LastModifiedBy": 1,
+        "Name": "Charles de Gaulle Airport",
+        "Version": 1
+      }
+    },
+    {
+      "ref": "airport-arr",
+      "table": "Airport",
+      "values": {
+        "Address": "Madrid",
+        "Code": "MAD",
+        "CreatedAt": "2026-01-10T08:00:00Z",
+        "CreatedBy": 1,
+        "IsDeleted": false,
+        "LastModified": "2026-01-10T08:00:00Z",
+        "LastModifiedBy": 1,
+        "Name": "Madrid Barajas Airport",
+        "Version": 1
+      }
+    },
+    {
+      "ref": "flight-1",
+      "table": "Flight",
+      "values": {
+        "AircraftId": "aircraft-1",
+        "ArriveAirportId": "airport-arr",
+        "ArriveDate": "2026-11-12T09:20:00Z",
+        "CreatedAt": "2026-01-15T08:00:00Z",
+        "CreatedBy": 1,
+        "DepartureAirportId": "airport-dep",
+        "DepartureDate": "2026-11-12T07:15:00Z",
+        "DurationMinutes": 125,
+        "FlightDate": "2026-11-12T00:00:00Z",
+        "FlightNumber": "AF1300",
+        "IsDeleted": false,
+        "LastModified": "2026-11-10T10:00:00Z",
+        "LastModifiedBy": 2,
+        "Price": 180,
+        "Status": "Canceled",
+        "Version": 3
+      }
+    },
+    {
+      "ref": "seat-1",
+      "table": "Seat",
+      "values": {
+        "Class": "Business",
+        "CreatedAt": "2026-01-15T08:00:00Z",
+        "CreatedBy": 1,
+        "FlightId": "flight-1",
+        "IsDeleted": false,
+        "LastModified": "2026-01-15T08:00:00Z",
+        "LastModifiedBy": 1,
+        "SeatNumber": "3A",
+        "Type": "Window",
+        "Version": 1
+      }
+    },
+    {
+      "ref": "seat-2",
+      "table": "Seat",
+      "values": {
+        "Class": "Business",
+        "CreatedAt": "2026-01-15T08:00:00Z",
+        "CreatedBy": 1,
+        "FlightId": "flight-1",
+        "IsDeleted": false,
+        "LastModified": "2026-01-15T08:00:00Z",
+        "LastModifiedBy": 1,
+        "SeatNumber": "3C",
+        "Type": "Aisle",
+        "Version": 1
+      }
+    },
+    {
+      "ref": "seat-3",
+      "table": "Seat",
+      "values": {
+        "Class": "Economy",
+        "CreatedAt": "2026-01-15T08:00:00Z",
+        "CreatedBy": 1,
+        "FlightId": "flight-1",
+        "IsDeleted": false,
+        "LastModified": "2026-01-15T08:00:00Z",
+        "LastModifiedBy": 1,
+        "SeatNumber": "18B",
+        "Type": "Middle",
+        "Version": 1
+      }
+    }
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "does": "Search for available seats on flight AF1300, then try to reserve seat 18B."
+    }
+  ],
+  "expect": [
+    "Because the flight is Canceled, the code should not offer its seats as available and should reject the reservation with a clear error. The three seats still exist in the data and must not cause a crash or a successful booking."
+  ]
+}

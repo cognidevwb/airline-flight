@@ -1,0 +1,289 @@
+{
+  "shape": "CreateAircraftRequestDto",
+  "role": "request",
+  "source": "src/Flight/Aircrafts/Features/CreatingAircraft/V1/CreateAircraft.cs:36",
+  "columns": [
+    "Name",
+    "Model",
+    "ManufacturingYear"
+  ],
+  "records": [
+    {
+      "ref": "aircraft-thames-voyager-7",
+      "kind": "record",
+      "data": {
+        "ManufacturingYear": 2014,
+        "Model": "Boeing 737-800",
+        "Name": "Thames Voyager"
+      }
+    },
+    {
+      "ref": "aircraft-atlantic-dawn-7",
+      "kind": "record",
+      "data": {
+        "ManufacturingYear": 2019,
+        "Model": "Airbus A320neo",
+        "Name": "Atlantic Dawn"
+      }
+    },
+    {
+      "ref": "aircraft-desert-falcon-7",
+      "kind": "record",
+      "data": {
+        "ManufacturingYear": 2018,
+        "Model": "Boeing 787-9",
+        "Name": "Desert Falcon"
+      }
+    },
+    {
+      "ref": "aircraft-highland-star-7",
+      "kind": "record",
+      "data": {
+        "ManufacturingYear": 2021,
+        "Model": "Airbus A321neo",
+        "Name": "Highland Star"
+      }
+    },
+    {
+      "ref": "aircraft-golden-gate-spirit-7",
+      "kind": "record",
+      "data": {
+        "ManufacturingYear": 2012,
+        "Model": "Boeing 777-300ER",
+        "Name": "Golden Gate Spirit"
+      }
+    },
+    {
+      "ref": "aircraft-nordic-breeze-7",
+      "kind": "record",
+      "data": {
+        "ManufacturingYear": 2020,
+        "Model": "Airbus A220-300",
+        "Name": "Nordic Breeze"
+      }
+    },
+    {
+      "ref": "aircraft-silver-meridian-7",
+      "kind": "record",
+      "data": {
+        "ManufacturingYear": 2022,
+        "Model": "Airbus A350-900",
+        "Name": "Silver Meridian"
+      }
+    },
+    {
+      "ref": "aircraft-emerald-isle-7",
+      "kind": "record",
+      "data": {
+        "ManufacturingYear": 2018,
+        "Model": "Boeing 737 MAX 8",
+        "Name": "Emerald Isle"
+      }
+    },
+    {
+      "ref": "aircraft-sahara-crown-7",
+      "kind": "record",
+      "data": {
+        "ManufacturingYear": 2011,
+        "Model": "Airbus A330-300",
+        "Name": "Sahara Crown"
+      }
+    },
+    {
+      "ref": "aircraft-pacific-horizon-7",
+      "kind": "record",
+      "data": {
+        "ManufacturingYear": 2015,
+        "Model": "Boeing 787-8",
+        "Name": "Pacific Horizon"
+      }
+    },
+    {
+      "ref": "aircraft-alpine-lark-7",
+      "kind": "record",
+      "data": {
+        "ManufacturingYear": 2009,
+        "Model": "Embraer E190",
+        "Name": "Alpine Lark"
+      }
+    },
+    {
+      "ref": "aircraft-royal-albatross-7",
+      "kind": "record",
+      "data": {
+        "ManufacturingYear": 2013,
+        "Model": "Airbus A380-800",
+        "Name": "Royal Albatross"
+      }
+    },
+    {
+      "ref": "aircraft-cape-mariner-7",
+      "kind": "record",
+      "data": {
+        "ManufacturingYear": 2006,
+        "Model": "Boeing 767-300ER",
+        "Name": "Cape Mariner"
+      }
+    },
+    {
+      "ref": "aircraft-baltic-swift-7",
+      "kind": "record",
+      "data": {
+        "ManufacturingYear": 2008,
+        "Model": "Airbus A319-100",
+        "Name": "Baltic Swift"
+      }
+    },
+    {
+      "ref": "aircraft-evening-heron-7",
+      "kind": "record",
+      "data": {
+        "ManufacturingYear": 2016,
+        "Model": "Boeing 747-8",
+        "Name": "Evening Heron"
+      }
+    },
+    {
+      "ref": "aircraft-old-faithful-7",
+      "kind": "record",
+      "data": {
+        "ManufacturingYear": 2001,
+        "Model": "Boeing 757-200",
+        "Name": "Old Faithful"
+      }
+    }
+  ],
+  "cases": [
+    {
+      "ref": "createaircraftrequestdto-case-1",
+      "kind": "case",
+      "data": {
+        "ManufacturingYear": 1,
+        "Model": "",
+        "Name": ""
+      },
+      "case": "covering-0001"
+    },
+    {
+      "ref": "createaircraftrequestdto-case-2",
+      "kind": "case",
+      "data": {
+        "ManufacturingYear": 2022,
+        "Model": "text",
+        "Name": ""
+      },
+      "case": "covering-0002"
+    },
+    {
+      "ref": "createaircraftrequestdto-case-3",
+      "kind": "case",
+      "data": {
+        "ManufacturingYear": 1,
+        "Model": "STR_0001",
+        "Name": ""
+      },
+      "case": "covering-0003"
+    },
+    {
+      "ref": "createaircraftrequestdto-case-4",
+      "kind": "case",
+      "data": {
+        "ManufacturingYear": 2022,
+        "Model": "",
+        "Name": "text"
+      },
+      "case": "covering-0004"
+    },
+    {
+      "ref": "createaircraftrequestdto-case-5",
+      "kind": "case",
+      "data": {
+        "ManufacturingYear": 1,
+        "Model": "text",
+        "Name": "text"
+      },
+      "case": "covering-0005"
+    },
+    {
+      "ref": "createaircraftrequestdto-case-6",
+      "kind": "case",
+      "data": {
+        "ManufacturingYear": 2022,
+        "Model": "STR_0001",
+        "Name": "text"
+      },
+      "case": "covering-0006"
+    },
+    {
+      "ref": "createaircraftrequestdto-case-7",
+      "kind": "case",
+      "data": {
+        "ManufacturingYear": 1,
+        "Model": "",
+        "Name": "Alice Whitfield"
+      },
+      "case": "covering-0007"
+    },
+    {
+      "ref": "createaircraftrequestdto-case-8",
+      "kind": "case",
+      "data": {
+        "ManufacturingYear": 2022,
+        "Model": "text",
+        "Name": "Alice Whitfield"
+      },
+      "case": "covering-0008"
+    },
+    {
+      "ref": "createaircraftrequestdto-case-9",
+      "kind": "case",
+      "data": {
+        "ManufacturingYear": 1,
+        "Model": "STR_0001",
+        "Name": "Alice Whitfield"
+      },
+      "case": "covering-0009"
+    }
+  ],
+  "rejections": [
+    {
+      "ref": "createaircraftrequestdto-rejection-1",
+      "kind": "rejection",
+      "data": {
+        "ManufacturingYear": 1,
+        "Model": "",
+        "Name": null
+      },
+      "violates": {
+        "field": "Name",
+        "rule": "`Name` is declared NOT NULL"
+      }
+    },
+    {
+      "ref": "createaircraftrequestdto-rejection-2",
+      "kind": "rejection",
+      "data": {
+        "ManufacturingYear": 1,
+        "Model": null,
+        "Name": ""
+      },
+      "violates": {
+        "field": "Model",
+        "rule": "`Model` is declared NOT NULL"
+      }
+    },
+    {
+      "ref": "createaircraftrequestdto-rejection-3",
+      "kind": "rejection",
+      "data": {
+        "ManufacturingYear": null,
+        "Model": "",
+        "Name": ""
+      },
+      "violates": {
+        "field": "ManufacturingYear",
+        "rule": "`ManufacturingYear` is declared NOT NULL"
+      }
+    }
+  ]
+}

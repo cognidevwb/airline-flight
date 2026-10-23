@@ -1,0 +1,1140 @@
+{
+  "shape": "UpdateFlightRequestDto",
+  "role": "request",
+  "source": "src/Flight/Flights/Features/UpdatingFlight/V1/UpdateFlight.cs:40",
+  "columns": [
+    "Id",
+    "FlightNumber",
+    "AircraftId",
+    "DepartureAirportId",
+    "DepartureDate",
+    "ArriveDate",
+    "ArriveAirportId",
+    "DurationMinutes",
+    "FlightDate",
+    "Status",
+    "Price",
+    "IsDeleted"
+  ],
+  "records": [
+    {
+      "ref": "flight-ba117-13",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001014",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001011",
+        "ArriveDate": "2026-10-20T18:15:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001010",
+        "DepartureDate": "2026-10-20T10:30:00Z",
+        "DurationMinutes": 465.0,
+        "FlightDate": "2026-10-20T00:00:00Z",
+        "FlightNumber": "BA117",
+        "Id": "2f5ff8e3-0000-4000-8000-000000001024",
+        "IsDeleted": false,
+        "Price": 1200.0,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-golden-gate-spirit",
+        "ArriveAirportId": "airport-jfk",
+        "DepartureAirportId": "airport-lhr"
+      }
+    },
+    {
+      "ref": "flight-lh441-13",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001021",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001016",
+        "ArriveDate": "2026-10-21T20:45:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001013",
+        "DepartureDate": "2026-10-21T09:05:00Z",
+        "DurationMinutes": 700.0,
+        "FlightDate": "2026-10-21T00:00:00Z",
+        "FlightNumber": "LH441",
+        "Id": "2f5ff8e3-0000-4000-8000-000000001025",
+        "IsDeleted": false,
+        "Price": 849.0,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-royal-albatross",
+        "ArriveAirportId": "airport-lax",
+        "DepartureAirportId": "airport-fra"
+      }
+    },
+    {
+      "ref": "flight-ek202-13",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001016",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001017",
+        "ArriveDate": "2026-10-23T15:10:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001012",
+        "DepartureDate": "2026-10-23T08:20:00Z",
+        "DurationMinutes": 410.0,
+        "FlightDate": "2026-10-23T00:00:00Z",
+        "FlightNumber": "EK202",
+        "Id": "2f5ff8e3-0000-4000-8000-000000001026",
+        "IsDeleted": false,
+        "Price": 455.5,
+        "Status": "Flying"
+      },
+      "links": {
+        "AircraftId": "aircraft-silver-meridian",
+        "ArriveAirportId": "airport-ams",
+        "DepartureAirportId": "airport-dxb"
+      }
+    },
+    {
+      "ref": "flight-aa100-13",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001019",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001014",
+        "ArriveDate": "2026-10-24T07:05:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001011",
+        "DepartureDate": "2026-10-23T23:45:00Z",
+        "DurationMinutes": 440.0,
+        "FlightDate": "2026-10-23T00:00:00Z",
+        "FlightNumber": "AA100",
+        "Id": "2f5ff8e3-0000-4000-8000-000000001027",
+        "IsDeleted": false,
+        "Price": 612.75,
+        "Status": "Delay"
+      },
+      "links": {
+        "AircraftId": "aircraft-pacific-horizon",
+        "ArriveAirportId": "airport-cdg",
+        "DepartureAirportId": "airport-jfk"
+      }
+    },
+    {
+      "ref": "flight-sq322-13",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001012",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001023",
+        "ArriveDate": "2026-10-25T07:50:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001015",
+        "DepartureDate": "2026-10-25T01:10:00Z",
+        "DurationMinutes": 400.0,
+        "FlightDate": "2026-10-25T00:00:00Z",
+        "FlightNumber": "SQ322",
+        "Id": "2f5ff8e3-0000-4000-8000-000000001028",
+        "IsDeleted": false,
+        "Price": 389.0,
+        "Status": "Unknown"
+      },
+      "links": {
+        "AircraftId": "aircraft-desert-falcon",
+        "ArriveAirportId": "airport-nrt",
+        "DepartureAirportId": "airport-sin"
+      }
+    },
+    {
+      "ref": "flight-af1381-13",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001023",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001022",
+        "ArriveDate": "2026-10-22T08:50:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001014",
+        "DepartureDate": "2026-10-22T06:45:00Z",
+        "DurationMinutes": 125.0,
+        "FlightDate": "2026-10-22T00:00:00Z",
+        "FlightNumber": "AF1381",
+        "Id": "2f5ff8e3-0000-4000-8000-000000001029",
+        "IsDeleted": true,
+        "Price": 89.99,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-baltic-swift",
+        "ArriveAirportId": "airport-mad",
+        "DepartureAirportId": "airport-cdg"
+      }
+    },
+    {
+      "ref": "flight-tk80-13",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001018",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001024",
+        "ArriveDate": "2026-10-26T15:15:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001019",
+        "DepartureDate": "2026-10-26T11:00:00Z",
+        "DurationMinutes": 255.0,
+        "FlightDate": "2026-10-26T00:00:00Z",
+        "FlightNumber": "TK80",
+        "Id": "2f5ff8e3-0000-4000-8000-000000001030",
+        "IsDeleted": false,
+        "Price": 330.0,
+        "Status": "Canceled"
+      },
+      "links": {
+        "AircraftId": "aircraft-sahara-crown",
+        "ArriveAirportId": "airport-doh",
+        "DepartureAirportId": "airport-ist"
+      }
+    },
+    {
+      "ref": "flight-qr701-13",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001022",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001020",
+        "ArriveDate": "2026-10-19T16:15:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001024",
+        "DepartureDate": "2026-10-19T02:15:00Z",
+        "DurationMinutes": 840.0,
+        "FlightDate": "2026-10-19T00:00:00Z",
+        "FlightNumber": "QR701",
+        "Id": "2f5ff8e3-0000-4000-8000-000000001031",
+        "IsDeleted": false,
+        "Price": 1045.25,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-cape-mariner",
+        "ArriveAirportId": "airport-syd",
+        "DepartureAirportId": "airport-doh"
+      }
+    },
+    {
+      "ref": "flight-ac849-13",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001013",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001025",
+        "ArriveDate": "2026-10-22T16:05:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001021",
+        "DepartureDate": "2026-10-22T14:30:00Z",
+        "DurationMinutes": 95.0,
+        "FlightDate": "2026-10-22T00:00:00Z",
+        "FlightNumber": "AC849",
+        "Id": "2f5ff8e3-0000-4000-8000-000000001032",
+        "IsDeleted": false,
+        "Price": 129.0,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-highland-star",
+        "ArriveAirportId": "airport-ord",
+        "DepartureAirportId": "airport-yyz"
+      }
+    },
+    {
+      "ref": "flight-kl1007-13",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001020",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001013",
+        "ArriveDate": "2026-10-22T17:50:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001017",
+        "DepartureDate": "2026-10-22T16:40:00Z",
+        "DurationMinutes": 70.0,
+        "FlightDate": "2026-10-22T00:00:00Z",
+        "FlightNumber": "KL1007",
+        "Id": "2f5ff8e3-0000-4000-8000-000000001033",
+        "IsDeleted": false,
+        "Price": 74.5,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-alpine-lark",
+        "ArriveAirportId": "airport-fra",
+        "DepartureAirportId": "airport-ams"
+      }
+    },
+    {
+      "ref": "flight-cx880-13",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001010",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001015",
+        "ArriveDate": "2026-10-24T07:05:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001018",
+        "DepartureDate": "2026-10-24T03:00:00Z",
+        "DurationMinutes": 245.0,
+        "FlightDate": "2026-10-24T00:00:00Z",
+        "FlightNumber": "CX880",
+        "Id": "2f5ff8e3-0000-4000-8000-000000001034",
+        "IsDeleted": false,
+        "Price": 215.0,
+        "Status": "Delay"
+      },
+      "links": {
+        "AircraftId": "aircraft-thames-voyager",
+        "ArriveAirportId": "airport-sin",
+        "DepartureAirportId": "airport-hkg"
+      }
+    },
+    {
+      "ref": "flight-ib3208-13",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001011",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001019",
+        "ArriveDate": "2026-10-21T15:35:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001022",
+        "DepartureDate": "2026-10-21T12:00:00Z",
+        "DurationMinutes": 215.0,
+        "FlightDate": "2026-10-21T00:00:00Z",
+        "FlightNumber": "IB3208",
+        "Id": "2f5ff8e3-0000-4000-8000-000000001035",
+        "IsDeleted": false,
+        "Price": 142.25,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-atlantic-dawn",
+        "ArriveAirportId": "airport-ist",
+        "DepartureAirportId": "airport-mad"
+      }
+    },
+    {
+      "ref": "flight-ua926-13",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001025",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001010",
+        "ArriveDate": "2026-10-23T16:15:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001025",
+        "DepartureDate": "2026-10-23T08:00:00Z",
+        "DurationMinutes": 495.0,
+        "FlightDate": "2026-10-23T00:00:00Z",
+        "FlightNumber": "UA926",
+        "Id": "2f5ff8e3-0000-4000-8000-000000001036",
+        "IsDeleted": false,
+        "Price": 520.0,
+        "Status": "Flying"
+      },
+      "links": {
+        "AircraftId": "aircraft-old-faithful",
+        "ArriveAirportId": "airport-lhr",
+        "DepartureAirportId": "airport-ord"
+      }
+    },
+    {
+      "ref": "flight-ac795-13",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001015",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001021",
+        "ArriveDate": "2026-10-24T19:40:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001016",
+        "DepartureDate": "2026-10-24T15:30:00Z",
+        "DurationMinutes": 250.0,
+        "FlightDate": "2026-10-24T00:00:00Z",
+        "FlightNumber": "AC795",
+        "Id": "2f5ff8e3-0000-4000-8000-000000001037",
+        "IsDeleted": false,
+        "Price": 249.5,
+        "Status": "Delay"
+      },
+      "links": {
+        "AircraftId": "aircraft-nordic-breeze",
+        "ArriveAirportId": "airport-yyz",
+        "DepartureAirportId": "airport-lax"
+      }
+    },
+    {
+      "ref": "flight-jl29-13",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001017",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001018",
+        "ArriveDate": "2026-10-22T05:00:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001023",
+        "DepartureDate": "2026-10-22T00:30:00Z",
+        "DurationMinutes": 270.0,
+        "FlightDate": "2026-10-22T00:00:00Z",
+        "FlightNumber": "JL29",
+        "Id": "2f5ff8e3-0000-4000-8000-000000001038",
+        "IsDeleted": false,
+        "Price": 310.0,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-emerald-isle",
+        "ArriveAirportId": "airport-hkg",
+        "DepartureAirportId": "airport-nrt"
+      }
+    },
+    {
+      "ref": "flight-qf11-13",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001024",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001012",
+        "ArriveDate": "2026-10-30T11:00:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001020",
+        "DepartureDate": "2026-10-29T21:30:00Z",
+        "DurationMinutes": 810.0,
+        "FlightDate": "2026-10-29T00:00:00Z",
+        "FlightNumber": "QF11",
+        "Id": "2f5ff8e3-0000-4000-8000-000000001039",
+        "IsDeleted": false,
+        "Price": 1475.0,
+        "Status": "Canceled"
+      },
+      "links": {
+        "AircraftId": "aircraft-evening-heron",
+        "ArriveAirportId": "airport-dxb",
+        "DepartureAirportId": "airport-syd"
+      }
+    }
+  ],
+  "cases": [
+    {
+      "ref": "updateflightrequestdto-case-1",
+      "kind": "case",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001000",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001005",
+        "ArriveDate": "2026-03-01T07:30:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001000",
+        "DepartureDate": "2026-03-01T06:00:00Z",
+        "DurationMinutes": 1.0,
+        "FlightDate": "2026-03-01T09:00:00Z",
+        "FlightNumber": "",
+        "Id": "2f5ff8e3-0000-4000-8000-000000001000",
+        "IsDeleted": true,
+        "Price": 100.0,
+        "Status": "Unknown"
+      },
+      "case": "covering-0001"
+    },
+    {
+      "ref": "updateflightrequestdto-case-2",
+      "kind": "case",
+      "data": {
+        "AircraftId": "00000000-0000-4000-8000-000000000000",
+        "ArriveAirportId": "00000000-0000-4000-8000-000000000000",
+        "ArriveDate": "2026-03-01T08:15:00Z",
+        "DepartureAirportId": "00000000-0000-4000-8000-000000000000",
+        "DepartureDate": "2026-03-01T06:45:00Z",
+        "DurationMinutes": 12.5,
+        "FlightDate": "2026-03-01T09:45:00Z",
+        "FlightNumber": "text",
+        "Id": "f057fe93-0000-4000-8000-000000001002",
+        "IsDeleted": true,
+        "Price": 12.5,
+        "Status": "Flying"
+      },
+      "case": "covering-0002"
+    },
+    {
+      "ref": "updateflightrequestdto-case-3",
+      "kind": "case",
+      "data": {
+        "AircraftId": "00000000-0000-4000-8000-000000000000",
+        "ArriveAirportId": "00000000-0000-4000-8000-000000000000",
+        "ArriveDate": "2026-03-01T08:15:00Z",
+        "DepartureAirportId": "00000000-0000-4000-8000-000000000000",
+        "DepartureDate": "2026-03-01T06:00:00Z",
+        "DurationMinutes": 1.0,
+        "FlightDate": "2026-03-01T09:45:00Z",
+        "FlightNumber": "STR_0001",
+        "Id": "f057fe93-0000-4000-8000-000000001001",
+        "IsDeleted": true,
+        "Price": 100.0,
+        "Status": "Delay"
+      },
+      "case": "covering-0003"
+    },
+    {
+      "ref": "updateflightrequestdto-case-4",
+      "kind": "case",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001000",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001005",
+        "ArriveDate": "2026-03-01T07:30:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001000",
+        "DepartureDate": "2026-03-01T06:45:00Z",
+        "DurationMinutes": 12.5,
+        "FlightDate": "2026-03-01T09:00:00Z",
+        "FlightNumber": "",
+        "Id": "2f5ff8e3-0000-4000-8000-000000001000",
+        "IsDeleted": true,
+        "Price": 12.5,
+        "Status": "Canceled"
+      },
+      "case": "covering-0004"
+    },
+    {
+      "ref": "updateflightrequestdto-case-5",
+      "kind": "case",
+      "data": {
+        "AircraftId": "00000000-0000-4000-8000-000000000000",
+        "ArriveAirportId": "00000000-0000-4000-8000-000000000000",
+        "ArriveDate": "2026-03-01T07:30:00Z",
+        "DepartureAirportId": "00000000-0000-4000-8000-000000000000",
+        "DepartureDate": "2026-03-01T06:00:00Z",
+        "DurationMinutes": 1.0,
+        "FlightDate": "2026-03-01T09:00:00Z",
+        "FlightNumber": "text",
+        "Id": "f057fe93-0000-4000-8000-000000001002",
+        "IsDeleted": true,
+        "Price": 12.5,
+        "Status": "Completed"
+      },
+      "case": "covering-0005"
+    },
+    {
+      "ref": "updateflightrequestdto-case-6",
+      "kind": "case",
+      "data": {
+        "AircraftId": "00000000-0000-4000-8000-000000000000",
+        "ArriveAirportId": "00000000-0000-4000-8000-000000000000",
+        "ArriveDate": "2026-03-01T07:30:00Z",
+        "DepartureAirportId": "00000000-0000-4000-8000-000000000000",
+        "DepartureDate": "2026-03-01T06:45:00Z",
+        "DurationMinutes": 1.0,
+        "FlightDate": "2026-03-01T09:00:00Z",
+        "FlightNumber": "STR_0001",
+        "Id": "f057fe93-0000-4000-8000-000000001001",
+        "IsDeleted": true,
+        "Price": 100.0,
+        "Status": "Flying"
+      },
+      "case": "covering-0006"
+    },
+    {
+      "ref": "updateflightrequestdto-case-7",
+      "kind": "case",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001002",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001007",
+        "ArriveDate": "2026-03-01T08:15:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001002",
+        "DepartureDate": "2026-03-01T06:45:00Z",
+        "DurationMinutes": 1.0,
+        "FlightDate": "2026-03-01T09:00:00Z",
+        "FlightNumber": "",
+        "Id": "2f5ff8e3-0000-4000-8000-000000001001",
+        "IsDeleted": true,
+        "Price": 12.5,
+        "Status": "Delay"
+      },
+      "case": "covering-0007"
+    },
+    {
+      "ref": "updateflightrequestdto-case-8",
+      "kind": "case",
+      "data": {
+        "AircraftId": "00000000-0000-4000-8000-000000000000",
+        "ArriveAirportId": "00000000-0000-4000-8000-000000000000",
+        "ArriveDate": "2026-03-01T08:15:00Z",
+        "DepartureAirportId": "00000000-0000-4000-8000-000000000000",
+        "DepartureDate": "2026-03-01T06:00:00Z",
+        "DurationMinutes": 12.5,
+        "FlightDate": "2026-03-01T09:00:00Z",
+        "FlightNumber": "STR_0001",
+        "Id": "f057fe93-0000-4000-8000-000000001001",
+        "IsDeleted": true,
+        "Price": 12.5,
+        "Status": "Unknown"
+      },
+      "case": "covering-0008"
+    },
+    {
+      "ref": "updateflightrequestdto-case-9",
+      "kind": "case",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001000",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001005",
+        "ArriveDate": "2026-03-01T07:30:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001000",
+        "DepartureDate": "2026-03-01T06:45:00Z",
+        "DurationMinutes": 12.5,
+        "FlightDate": "2026-03-01T09:45:00Z",
+        "FlightNumber": "",
+        "Id": "2f5ff8e3-0000-4000-8000-000000001000",
+        "IsDeleted": true,
+        "Price": 100.0,
+        "Status": "Completed"
+      },
+      "case": "covering-0009"
+    },
+    {
+      "ref": "updateflightrequestdto-case-10",
+      "kind": "case",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001000",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001005",
+        "ArriveDate": "2026-03-01T07:30:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001000",
+        "DepartureDate": "2026-03-01T06:00:00Z",
+        "DurationMinutes": 1.0,
+        "FlightDate": "2026-03-01T09:00:00Z",
+        "FlightNumber": "",
+        "Id": "2f5ff8e3-0000-4000-8000-000000001000",
+        "IsDeleted": true,
+        "Price": 100.0,
+        "Status": "Flying"
+      },
+      "case": "covering-0010"
+    },
+    {
+      "ref": "updateflightrequestdto-case-11",
+      "kind": "case",
+      "data": {
+        "AircraftId": "00000000-0000-4000-8000-000000000000",
+        "ArriveAirportId": "00000000-0000-4000-8000-000000000000",
+        "ArriveDate": "2026-03-01T07:30:00Z",
+        "DepartureAirportId": "00000000-0000-4000-8000-000000000000",
+        "DepartureDate": "2026-03-01T06:45:00Z",
+        "DurationMinutes": 1.0,
+        "FlightDate": "2026-03-01T09:45:00Z",
+        "FlightNumber": "text",
+        "Id": "f057fe93-0000-4000-8000-000000001002",
+        "IsDeleted": true,
+        "Price": 100.0,
+        "Status": "Unknown"
+      },
+      "case": "covering-0011"
+    },
+    {
+      "ref": "updateflightrequestdto-case-12",
+      "kind": "case",
+      "data": {
+        "AircraftId": "00000000-0000-4000-8000-000000000000",
+        "ArriveAirportId": "00000000-0000-4000-8000-000000000000",
+        "ArriveDate": "2026-03-01T07:30:00Z",
+        "DepartureAirportId": "00000000-0000-4000-8000-000000000000",
+        "DepartureDate": "2026-03-01T06:00:00Z",
+        "DurationMinutes": 12.5,
+        "FlightDate": "2026-03-01T09:00:00Z",
+        "FlightNumber": "text",
+        "Id": "f057fe93-0000-4000-8000-000000001002",
+        "IsDeleted": true,
+        "Price": 100.0,
+        "Status": "Delay"
+      },
+      "case": "covering-0012"
+    },
+    {
+      "ref": "updateflightrequestdto-case-13",
+      "kind": "case",
+      "data": {
+        "AircraftId": "00000000-0000-4000-8000-000000000000",
+        "ArriveAirportId": "00000000-0000-4000-8000-000000000000",
+        "ArriveDate": "2026-03-01T08:15:00Z",
+        "DepartureAirportId": "00000000-0000-4000-8000-000000000000",
+        "DepartureDate": "2026-03-01T06:00:00Z",
+        "DurationMinutes": 1.0,
+        "FlightDate": "2026-03-01T09:45:00Z",
+        "FlightNumber": "text",
+        "Id": "f057fe93-0000-4000-8000-000000001002",
+        "IsDeleted": true,
+        "Price": 100.0,
+        "Status": "Canceled"
+      },
+      "case": "covering-0013"
+    },
+    {
+      "ref": "updateflightrequestdto-case-14",
+      "kind": "case",
+      "data": {
+        "AircraftId": "00000000-0000-4000-8000-000000000000",
+        "ArriveAirportId": "00000000-0000-4000-8000-000000000000",
+        "ArriveDate": "2026-03-01T07:30:00Z",
+        "DepartureAirportId": "00000000-0000-4000-8000-000000000000",
+        "DepartureDate": "2026-03-01T06:00:00Z",
+        "DurationMinutes": 1.0,
+        "FlightDate": "2026-03-01T09:00:00Z",
+        "FlightNumber": "STR_0001",
+        "Id": "f057fe93-0000-4000-8000-000000001001",
+        "IsDeleted": true,
+        "Price": 100.0,
+        "Status": "Canceled"
+      },
+      "case": "covering-0014"
+    },
+    {
+      "ref": "updateflightrequestdto-case-15",
+      "kind": "case",
+      "data": {
+        "AircraftId": "00000000-0000-4000-8000-000000000000",
+        "ArriveAirportId": "00000000-0000-4000-8000-000000000000",
+        "ArriveDate": "2026-03-01T08:15:00Z",
+        "DepartureAirportId": "00000000-0000-4000-8000-000000000000",
+        "DepartureDate": "2026-03-01T06:00:00Z",
+        "DurationMinutes": 1.0,
+        "FlightDate": "2026-03-01T09:00:00Z",
+        "FlightNumber": "STR_0001",
+        "Id": "f057fe93-0000-4000-8000-000000001001",
+        "IsDeleted": true,
+        "Price": 100.0,
+        "Status": "Completed"
+      },
+      "case": "covering-0015"
+    }
+  ],
+  "rejections": [
+    {
+      "ref": "updateflightrequestdto-rejection-1",
+      "kind": "rejection",
+      "data": {
+        "AircraftId": "00000000-0000-4000-8000-000000000000",
+        "ArriveAirportId": "00000000-0000-4000-8000-000000000000",
+        "ArriveDate": "2026-03-01T07:30:00Z",
+        "DepartureAirportId": "00000000-0000-4000-8000-000000000000",
+        "DepartureDate": "2026-03-01T06:00:00Z",
+        "DurationMinutes": 1.0,
+        "FlightDate": "2026-03-01T09:00:00Z",
+        "FlightNumber": "",
+        "Id": null,
+        "IsDeleted": true,
+        "Price": 100.0,
+        "Status": "Unknown"
+      },
+      "violates": {
+        "field": "Id",
+        "rule": "`Id` is declared NOT NULL"
+      }
+    },
+    {
+      "ref": "updateflightrequestdto-rejection-2",
+      "kind": "rejection",
+      "data": {
+        "AircraftId": "00000000-0000-4000-8000-000000000000",
+        "ArriveAirportId": "00000000-0000-4000-8000-000000000000",
+        "ArriveDate": "2026-03-01T07:30:00Z",
+        "DepartureAirportId": "00000000-0000-4000-8000-000000000000",
+        "DepartureDate": "2026-03-01T06:00:00Z",
+        "DurationMinutes": 1.0,
+        "FlightDate": "2026-03-01T09:00:00Z",
+        "FlightNumber": "",
+        "Id": "not-a-uuid",
+        "IsDeleted": true,
+        "Price": 100.0,
+        "Status": "Unknown"
+      },
+      "violates": {
+        "field": "Id",
+        "rule": "violates a declared constraint on `Id`"
+      }
+    },
+    {
+      "ref": "updateflightrequestdto-rejection-3",
+      "kind": "rejection",
+      "data": {
+        "AircraftId": "00000000-0000-4000-8000-000000000000",
+        "ArriveAirportId": "00000000-0000-4000-8000-000000000000",
+        "ArriveDate": "2026-03-01T07:30:00Z",
+        "DepartureAirportId": "00000000-0000-4000-8000-000000000000",
+        "DepartureDate": "2026-03-01T06:00:00Z",
+        "DurationMinutes": 1.0,
+        "FlightDate": "2026-03-01T09:00:00Z",
+        "FlightNumber": null,
+        "Id": "00000000-0000-4000-8000-000000000000",
+        "IsDeleted": true,
+        "Price": 100.0,
+        "Status": "Unknown"
+      },
+      "violates": {
+        "field": "FlightNumber",
+        "rule": "`FlightNumber` is declared NOT NULL"
+      }
+    },
+    {
+      "ref": "updateflightrequestdto-rejection-4",
+      "kind": "rejection",
+      "data": {
+        "AircraftId": null,
+        "ArriveAirportId": "00000000-0000-4000-8000-000000000000",
+        "ArriveDate": "2026-03-01T07:30:00Z",
+        "DepartureAirportId": "00000000-0000-4000-8000-000000000000",
+        "DepartureDate": "2026-03-01T06:00:00Z",
+        "DurationMinutes": 1.0,
+        "FlightDate": "2026-03-01T09:00:00Z",
+        "FlightNumber": "",
+        "Id": "00000000-0000-4000-8000-000000000000",
+        "IsDeleted": true,
+        "Price": 100.0,
+        "Status": "Unknown"
+      },
+      "violates": {
+        "field": "AircraftId",
+        "rule": "`AircraftId` is declared NOT NULL"
+      }
+    },
+    {
+      "ref": "updateflightrequestdto-rejection-5",
+      "kind": "rejection",
+      "data": {
+        "AircraftId": "not-a-uuid",
+        "ArriveAirportId": "00000000-0000-4000-8000-000000000000",
+        "ArriveDate": "2026-03-01T07:30:00Z",
+        "DepartureAirportId": "00000000-0000-4000-8000-000000000000",
+        "DepartureDate": "2026-03-01T06:00:00Z",
+        "DurationMinutes": 1.0,
+        "FlightDate": "2026-03-01T09:00:00Z",
+        "FlightNumber": "",
+        "Id": "00000000-0000-4000-8000-000000000000",
+        "IsDeleted": true,
+        "Price": 100.0,
+        "Status": "Unknown"
+      },
+      "violates": {
+        "field": "AircraftId",
+        "rule": "violates a declared constraint on `AircraftId`"
+      }
+    },
+    {
+      "ref": "updateflightrequestdto-rejection-6",
+      "kind": "rejection",
+      "data": {
+        "AircraftId": "00000000-0000-4000-8000-000000000000",
+        "ArriveAirportId": "00000000-0000-4000-8000-000000000000",
+        "ArriveDate": "2026-03-01T07:30:00Z",
+        "DepartureAirportId": null,
+        "DepartureDate": "2026-03-01T06:00:00Z",
+        "DurationMinutes": 1.0,
+        "FlightDate": "2026-03-01T09:00:00Z",
+        "FlightNumber": "",
+        "Id": "00000000-0000-4000-8000-000000000000",
+        "IsDeleted": true,
+        "Price": 100.0,
+        "Status": "Unknown"
+      },
+      "violates": {
+        "field": "DepartureAirportId",
+        "rule": "`DepartureAirportId` is declared NOT NULL"
+      }
+    },
+    {
+      "ref": "updateflightrequestdto-rejection-7",
+      "kind": "rejection",
+      "data": {
+        "AircraftId": "00000000-0000-4000-8000-000000000000",
+        "ArriveAirportId": "00000000-0000-4000-8000-000000000000",
+        "ArriveDate": "2026-03-01T07:30:00Z",
+        "DepartureAirportId": "not-a-uuid",
+        "DepartureDate": "2026-03-01T06:00:00Z",
+        "DurationMinutes": 1.0,
+        "FlightDate": "2026-03-01T09:00:00Z",
+        "FlightNumber": "",
+        "Id": "00000000-0000-4000-8000-000000000000",
+        "IsDeleted": true,
+        "Price": 100.0,
+        "Status": "Unknown"
+      },
+      "violates": {
+        "field": "DepartureAirportId",
+        "rule": "violates a declared constraint on `DepartureAirportId`"
+      }
+    },
+    {
+      "ref": "updateflightrequestdto-rejection-8",
+      "kind": "rejection",
+      "data": {
+        "AircraftId": "00000000-0000-4000-8000-000000000000",
+        "ArriveAirportId": "00000000-0000-4000-8000-000000000000",
+        "ArriveDate": "2026-03-01T07:30:00Z",
+        "DepartureAirportId": "00000000-0000-4000-8000-000000000000",
+        "DepartureDate": null,
+        "DurationMinutes": 1.0,
+        "FlightDate": "2026-03-01T09:00:00Z",
+        "FlightNumber": "",
+        "Id": "00000000-0000-4000-8000-000000000000",
+        "IsDeleted": true,
+        "Price": 100.0,
+        "Status": "Unknown"
+      },
+      "violates": {
+        "field": "DepartureDate",
+        "rule": "`DepartureDate` is declared NOT NULL"
+      }
+    },
+    {
+      "ref": "updateflightrequestdto-rejection-9",
+      "kind": "rejection",
+      "data": {
+        "AircraftId": "00000000-0000-4000-8000-000000000000",
+        "ArriveAirportId": "00000000-0000-4000-8000-000000000000",
+        "ArriveDate": "2026-03-01T07:30:00Z",
+        "DepartureAirportId": "00000000-0000-4000-8000-000000000000",
+        "DepartureDate": "not-a-date",
+        "DurationMinutes": 1.0,
+        "FlightDate": "2026-03-01T09:00:00Z",
+        "FlightNumber": "",
+        "Id": "00000000-0000-4000-8000-000000000000",
+        "IsDeleted": true,
+        "Price": 100.0,
+        "Status": "Unknown"
+      },
+      "violates": {
+        "field": "DepartureDate",
+        "rule": "not a value `DateTime` accepts"
+      }
+    },
+    {
+      "ref": "updateflightrequestdto-rejection-10",
+      "kind": "rejection",
+      "data": {
+        "AircraftId": "00000000-0000-4000-8000-000000000000",
+        "ArriveAirportId": "00000000-0000-4000-8000-000000000000",
+        "ArriveDate": null,
+        "DepartureAirportId": "00000000-0000-4000-8000-000000000000",
+        "DepartureDate": "2026-03-01T06:00:00Z",
+        "DurationMinutes": 1.0,
+        "FlightDate": "2026-03-01T09:00:00Z",
+        "FlightNumber": "",
+        "Id": "00000000-0000-4000-8000-000000000000",
+        "IsDeleted": true,
+        "Price": 100.0,
+        "Status": "Unknown"
+      },
+      "violates": {
+        "field": "ArriveDate",
+        "rule": "`ArriveDate` is declared NOT NULL"
+      }
+    },
+    {
+      "ref": "updateflightrequestdto-rejection-11",
+      "kind": "rejection",
+      "data": {
+        "AircraftId": "00000000-0000-4000-8000-000000000000",
+        "ArriveAirportId": "00000000-0000-4000-8000-000000000000",
+        "ArriveDate": "not-a-date",
+        "DepartureAirportId": "00000000-0000-4000-8000-000000000000",
+        "DepartureDate": "2026-03-01T06:00:00Z",
+        "DurationMinutes": 1.0,
+        "FlightDate": "2026-03-01T09:00:00Z",
+        "FlightNumber": "",
+        "Id": "00000000-0000-4000-8000-000000000000",
+        "IsDeleted": true,
+        "Price": 100.0,
+        "Status": "Unknown"
+      },
+      "violates": {
+        "field": "ArriveDate",
+        "rule": "not a value `DateTime` accepts"
+      }
+    },
+    {
+      "ref": "updateflightrequestdto-rejection-12",
+      "kind": "rejection",
+      "data": {
+        "AircraftId": "00000000-0000-4000-8000-000000000000",
+        "ArriveAirportId": null,
+        "ArriveDate": "2026-03-01T07:30:00Z",
+        "DepartureAirportId": "00000000-0000-4000-8000-000000000000",
+        "DepartureDate": "2026-03-01T06:00:00Z",
+        "DurationMinutes": 1.0,
+        "FlightDate": "2026-03-01T09:00:00Z",
+        "FlightNumber": "",
+        "Id": "00000000-0000-4000-8000-000000000000",
+        "IsDeleted": true,
+        "Price": 100.0,
+        "Status": "Unknown"
+      },
+      "violates": {
+        "field": "ArriveAirportId",
+        "rule": "`ArriveAirportId` is declared NOT NULL"
+      }
+    },
+    {
+      "ref": "updateflightrequestdto-rejection-13",
+      "kind": "rejection",
+      "data": {
+        "AircraftId": "00000000-0000-4000-8000-000000000000",
+        "ArriveAirportId": "not-a-uuid",
+        "ArriveDate": "2026-03-01T07:30:00Z",
+        "DepartureAirportId": "00000000-0000-4000-8000-000000000000",
+        "DepartureDate": "2026-03-01T06:00:00Z",
+        "DurationMinutes": 1.0,
+        "FlightDate": "2026-03-01T09:00:00Z",
+        "FlightNumber": "",
+        "Id": "00000000-0000-4000-8000-000000000000",
+        "IsDeleted": true,
+        "Price": 100.0,
+        "Status": "Unknown"
+      },
+      "violates": {
+        "field": "ArriveAirportId",
+        "rule": "violates a declared constraint on `ArriveAirportId`"
+      }
+    },
+    {
+      "ref": "updateflightrequestdto-rejection-14",
+      "kind": "rejection",
+      "data": {
+        "AircraftId": "00000000-0000-4000-8000-000000000000",
+        "ArriveAirportId": "00000000-0000-4000-8000-000000000000",
+        "ArriveDate": "2026-03-01T07:30:00Z",
+        "DepartureAirportId": "00000000-0000-4000-8000-000000000000",
+        "DepartureDate": "2026-03-01T06:00:00Z",
+        "DurationMinutes": null,
+        "FlightDate": "2026-03-01T09:00:00Z",
+        "FlightNumber": "",
+        "Id": "00000000-0000-4000-8000-000000000000",
+        "IsDeleted": true,
+        "Price": 100.0,
+        "Status": "Unknown"
+      },
+      "violates": {
+        "field": "DurationMinutes",
+        "rule": "`DurationMinutes` is declared NOT NULL"
+      }
+    },
+    {
+      "ref": "updateflightrequestdto-rejection-15",
+      "kind": "rejection",
+      "data": {
+        "AircraftId": "00000000-0000-4000-8000-000000000000",
+        "ArriveAirportId": "00000000-0000-4000-8000-000000000000",
+        "ArriveDate": "2026-03-01T07:30:00Z",
+        "DepartureAirportId": "00000000-0000-4000-8000-000000000000",
+        "DepartureDate": "2026-03-01T06:00:00Z",
+        "DurationMinutes": 1.0,
+        "FlightDate": null,
+        "FlightNumber": "",
+        "Id": "00000000-0000-4000-8000-000000000000",
+        "IsDeleted": true,
+        "Price": 100.0,
+        "Status": "Unknown"
+      },
+      "violates": {
+        "field": "FlightDate",
+        "rule": "`FlightDate` is declared NOT NULL"
+      }
+    },
+    {
+      "ref": "updateflightrequestdto-rejection-16",
+      "kind": "rejection",
+      "data": {
+        "AircraftId": "00000000-0000-4000-8000-000000000000",
+        "ArriveAirportId": "00000000-0000-4000-8000-000000000000",
+        "ArriveDate": "2026-03-01T07:30:00Z",
+        "DepartureAirportId": "00000000-0000-4000-8000-000000000000",
+        "DepartureDate": "2026-03-01T06:00:00Z",
+        "DurationMinutes": 1.0,
+        "FlightDate": "not-a-date",
+        "FlightNumber": "",
+        "Id": "00000000-0000-4000-8000-000000000000",
+        "IsDeleted": true,
+        "Price": 100.0,
+        "Status": "Unknown"
+      },
+      "violates": {
+        "field": "FlightDate",
+        "rule": "not a value `DateTime` accepts"
+      }
+    },
+    {
+      "ref": "updateflightrequestdto-rejection-17",
+      "kind": "rejection",
+      "data": {
+        "AircraftId": "00000000-0000-4000-8000-000000000000",
+        "ArriveAirportId": "00000000-0000-4000-8000-000000000000",
+        "ArriveDate": "2026-03-01T07:30:00Z",
+        "DepartureAirportId": "00000000-0000-4000-8000-000000000000",
+        "DepartureDate": "2026-03-01T06:00:00Z",
+        "DurationMinutes": 1.0,
+        "FlightDate": "2026-03-01T09:00:00Z",
+        "FlightNumber": "",
+        "Id": "00000000-0000-4000-8000-000000000000",
+        "IsDeleted": true,
+        "Price": 100.0,
+        "Status": null
+      },
+      "violates": {
+        "field": "Status",
+        "rule": "`Status` is declared NOT NULL"
+      }
+    },
+    {
+      "ref": "updateflightrequestdto-rejection-18",
+      "kind": "rejection",
+      "data": {
+        "AircraftId": "00000000-0000-4000-8000-000000000000",
+        "ArriveAirportId": "00000000-0000-4000-8000-000000000000",
+        "ArriveDate": "2026-03-01T07:30:00Z",
+        "DepartureAirportId": "00000000-0000-4000-8000-000000000000",
+        "DepartureDate": "2026-03-01T06:00:00Z",
+        "DurationMinutes": 1.0,
+        "FlightDate": "2026-03-01T09:00:00Z",
+        "FlightNumber": "",
+        "Id": "00000000-0000-4000-8000-000000000000",
+        "IsDeleted": true,
+        "Price": 100.0,
+        "Status": "__INVALID__"
+      },
+      "violates": {
+        "field": "Status",
+        "rule": "violates a declared constraint on `Status`"
+      }
+    },
+    {
+      "ref": "updateflightrequestdto-rejection-19",
+      "kind": "rejection",
+      "data": {
+        "AircraftId": "00000000-0000-4000-8000-000000000000",
+        "ArriveAirportId": "00000000-0000-4000-8000-000000000000",
+        "ArriveDate": "2026-03-01T07:30:00Z",
+        "DepartureAirportId": "00000000-0000-4000-8000-000000000000",
+        "DepartureDate": "2026-03-01T06:00:00Z",
+        "DurationMinutes": 1.0,
+        "FlightDate": "2026-03-01T09:00:00Z",
+        "FlightNumber": "",
+        "Id": "00000000-0000-4000-8000-000000000000",
+        "IsDeleted": true,
+        "Price": null,
+        "Status": "Unknown"
+      },
+      "violates": {
+        "field": "Price",
+        "rule": "`Price` is declared NOT NULL"
+      }
+    },
+    {
+      "ref": "updateflightrequestdto-rejection-20",
+      "kind": "rejection",
+      "data": {
+        "AircraftId": "00000000-0000-4000-8000-000000000000",
+        "ArriveAirportId": "00000000-0000-4000-8000-000000000000",
+        "ArriveDate": "2026-03-01T07:30:00Z",
+        "DepartureAirportId": "00000000-0000-4000-8000-000000000000",
+        "DepartureDate": "2026-03-01T06:00:00Z",
+        "DurationMinutes": 1.0,
+        "FlightDate": "2026-03-01T09:00:00Z",
+        "FlightNumber": "",
+        "Id": "00000000-0000-4000-8000-000000000000",
+        "IsDeleted": true,
+        "Price": -0.01,
+        "Status": "Unknown"
+      },
+      "violates": {
+        "field": "Price",
+        "rule": "outside the range `decimal` accepts"
+      }
+    },
+    {
+      "ref": "updateflightrequestdto-rejection-21",
+      "kind": "rejection",
+      "data": {
+        "AircraftId": "00000000-0000-4000-8000-000000000000",
+        "ArriveAirportId": "00000000-0000-4000-8000-000000000000",
+        "ArriveDate": "2026-03-01T07:30:00Z",
+        "DepartureAirportId": "00000000-0000-4000-8000-000000000000",
+        "DepartureDate": "2026-03-01T06:00:00Z",
+        "DurationMinutes": 1.0,
+        "FlightDate": "2026-03-01T09:00:00Z",
+        "FlightNumber": "",
+        "Id": "00000000-0000-4000-8000-000000000000",
+        "IsDeleted": null,
+        "Price": 100.0,
+        "Status": "Unknown"
+      },
+      "violates": {
+        "field": "IsDeleted",
+        "rule": "`IsDeleted` is declared NOT NULL"
+      }
+    }
+  ]
+}

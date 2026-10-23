@@ -1,0 +1,15 @@
+{
+  "id": "flightnotfountexception-deleteflight",
+  "title": "DeleteFlight: the record does not exist",
+  "kind": "not found",
+  "exception": "FlightNotFountException",
+  "base": "AppException",
+  "thrownAt": "src/Flight/Flights/Features/DeletingFlight/V1/DeleteFlight.cs:90",
+  "condition": "if (flight is null)",
+  "field": null,
+  "expect": {
+    "status": 400,
+    "error": "FlightNotFountException",
+    "note": null
+  }
+}

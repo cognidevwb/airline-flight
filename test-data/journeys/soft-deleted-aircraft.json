@@ -1,0 +1,84 @@
+{
+  "id": "soft-deleted-aircraft",
+  "title": "Retired aircraft",
+  "source": "staged scenario",
+  "why": "Checks that history survives retiring an aircraft: soft-deleted rows must still resolve for completed flights but must not be offered for new ones.",
+  "setup": [
+    {
+      "ref": "aircraft-old",
+      "table": "Aircraft",
+      "values": {
+        "CreatedAt": "2020-03-01T08:00:00Z",
+        "CreatedBy": 1,
+        "IsDeleted": true,
+        "LastModified": "2026-06-30T12:00:00Z",
+        "LastModifiedBy": 3,
+        "ManufacturingYear": 1996,
+        "Model": "Boeing 737-300",
+        "Name": "Old Faithful",
+        "Version": 4
+      }
+    },
+    {
+      "ref": "airport-dep",
+      "table": "Airport",
+      "values": {
+        "Address": "Collinstown, Dublin",
+        "Code": "DUB",
+        "CreatedAt": "2020-03-01T08:00:00Z",
+        "CreatedBy": 1,
+        "IsDeleted": false,
+        "LastModified": "2020-03-01T08:00:00Z",
+        "LastModifiedBy": 1,
+        "Name": "Dublin Airport",
+        "Version": 1
+      }
+    },
+    {
+      "ref": "airport-arr",
+      "table": "Airport",
+      "values": {
+        "Address": "Ingliston, Edinburgh",
+        "Code": "EDI",
+        "CreatedAt": "2020-03-01T08:00:00Z",
+        "CreatedBy": 1,
+        "IsDeleted": false,
+        "LastModified": "2020-03-01T08:00:00Z",
+        "LastModifiedBy": 1,
+        "Name": "Edinburgh Airport",
+        "Version": 1
+      }
+    },
+    {
+      "ref": "flight-1",
+      "table": "Flight",
+      "values": {
+        "AircraftId": "aircraft-old",
+        "ArriveAirportId": "airport-arr",
+        "ArriveDate": "2026-05-20T11:05:00Z",
+        "CreatedAt": "2026-01-05T08:00:00Z",
+        "CreatedBy": 1,
+        "DepartureAirportId": "airport-dep",
+        "DepartureDate": "2026-05-20T10:00:00Z",
+        "DurationMinutes": 65,
+        "FlightDate": "2026-05-20T00:00:00Z",
+        "FlightNumber": "EI3190",
+        "IsDeleted": false,
+        "LastModified": "2026-05-20T11:10:00Z",
+        "LastModifiedBy": 2,
+        "Price": 95,
+        "Status": "Completed",
+        "Version": 5
+      }
+    }
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "does": "Fetch completed flight EI3190 with its aircraft details, then list aircraft available for assignment to new flights."
+    }
+  ],
+  "expect": [
+    "The flight loads with its aircraft Old Faithful resolved, even though the aircraft has IsDeleted true. The list of assignable aircraft excludes Old Faithful."
+  ]
+}

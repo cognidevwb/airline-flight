@@ -1,0 +1,17 @@
+SeatNumber,Type,Class,FlightId
+1A,Window,FirstClass,0
+2C,Aisle,FirstClass,1
+7D,Aisle,Business,2
+9F,Window,Business,3
+12C,Aisle,Economy,4
+14B,Middle,Economy,5
+17A,Window,Economy,6
+19E,Middle,Economy,7
+21D,Aisle,Economy,8
+23A,Window,Economy,9
+27F,Window,Economy,10
+30C,Aisle,Economy,11
+31E,Middle,Economy,12
+34A,Window,Economy,13
+36D,Aisle,Economy,14
+38B,Middle,Economy,15

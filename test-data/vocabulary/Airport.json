@@ -1,0 +1,185 @@
+{
+  "digest": "4b177f0bc107ddc0",
+  "domain": "Airline reservations: aircraft, airports, flights and seats, passengers with passports, and bookings that reserve a seat",
+  "entity": "Airport",
+  "personal": {},
+  "records": [
+    {
+      "Address": "Longford TW6, Hounslow, London, UK",
+      "Code": "LHR",
+      "CreatedAt": "2024-01-08T09:15:00Z",
+      "CreatedBy": 101,
+      "IsDeleted": false,
+      "LastModified": "2025-03-14T11:42:00Z",
+      "LastModifiedBy": 104,
+      "Name": "London Heathrow Airport",
+      "Version": 3
+    },
+    {
+      "Address": "Queens, New York, NY 11430, USA",
+      "Code": "JFK",
+      "CreatedAt": "2024-01-08T09:22:00Z",
+      "CreatedBy": 102,
+      "IsDeleted": false,
+      "LastModified": "2025-06-02T14:05:00Z",
+      "LastModifiedBy": 101,
+      "Name": "John F. Kennedy International Airport",
+      "Version": 5
+    },
+    {
+      "Address": "Airport Rd, Al Garhoud, Dubai, UAE",
+      "Code": "DXB",
+      "CreatedAt": "2024-01-09T08:40:00Z",
+      "CreatedBy": 103,
+      "IsDeleted": false,
+      "LastModified": "2024-11-21T07:30:00Z",
+      "LastModifiedBy": 103,
+      "Name": "Dubai International Airport",
+      "Version": 2
+    },
+    {
+      "Address": "60547 Frankfurt am Main, Germany",
+      "Code": "FRA",
+      "CreatedAt": "2024-01-10T10:05:00Z",
+      "CreatedBy": 101,
+      "IsDeleted": false,
+      "LastModified": "2025-02-18T16:20:00Z",
+      "LastModifiedBy": 105,
+      "Name": "Frankfurt Airport",
+      "Version": 4
+    },
+    {
+      "Address": "95700 Roissy-en-France, France",
+      "Code": "CDG",
+      "CreatedAt": "2024-02-05T13:50:00Z",
+      "CreatedBy": 104,
+      "IsDeleted": false,
+      "LastModified": null,
+      "LastModifiedBy": null,
+      "Name": "Paris Charles de Gaulle Airport",
+      "Version": 1
+    },
+    {
+      "Address": "Airport Blvd, Singapore 819642",
+      "Code": "SIN",
+      "CreatedAt": "2024-02-12T06:30:00Z",
+      "CreatedBy": 102,
+      "IsDeleted": false,
+      "LastModified": "2025-08-09T09:12:00Z",
+      "LastModifiedBy": 106,
+      "Name": "Singapore Changi Airport",
+      "Version": 6
+    },
+    {
+      "Address": "1 World Way, Los Angeles, CA 90045, USA",
+      "Code": "LAX",
+      "CreatedAt": "2024-03-01T15:10:00Z",
+      "CreatedBy": 105,
+      "IsDeleted": false,
+      "LastModified": "2025-09-30T18:45:00Z",
+      "LastModifiedBy": 102,
+      "Name": "Los Angeles International Airport",
+      "Version": 7
+    },
+    {
+      "Address": "Evert van de Beekstraat 202, 1118 CP Schiphol",
+      "Code": "AMS",
+      "CreatedAt": "2024-03-18T08:00:00Z",
+      "CreatedBy": 103,
+      "IsDeleted": false,
+      "LastModified": "2025-04-22T12:33:00Z",
+      "LastModifiedBy": 107,
+      "Name": "Amsterdam Airport Schiphol",
+      "Version": 8
+    },
+    {
+      "Address": "1 Sky Plaza Rd, Chek Lap Kok, Hong Kong",
+      "Code": "HKG",
+      "CreatedAt": "2024-04-04T07:25:00Z",
+      "CreatedBy": 106,
+      "IsDeleted": false,
+      "LastModified": "2025-10-01T10:08:00Z",
+      "LastModifiedBy": 104,
+      "Name": "Hong Kong International Airport",
+      "Version": 9
+    },
+    {
+      "Address": "Tayakadın, Nuri Demirağ Cd, 34283 Arnavutköy",
+      "Code": "IST",
+      "CreatedAt": "2024-04-22T11:35:00Z",
+      "CreatedBy": 104,
+      "IsDeleted": false,
+      "LastModified": "2025-07-15T13:55:00Z",
+      "LastModifiedBy": 108,
+      "Name": "Istanbul Airport",
+      "Version": 10
+    },
+    {
+      "Address": "Airport Dr, Mascot NSW 2020, Australia",
+      "Code": "SYD",
+      "CreatedAt": "2024-05-13T04:45:00Z",
+      "CreatedBy": 107,
+      "IsDeleted": false,
+      "LastModified": "2025-05-27T05:18:00Z",
+      "LastModifiedBy": 103,
+      "Name": "Sydney Kingsford Smith Airport",
+      "Version": 11
+    },
+    {
+      "Address": "6301 Silver Dart Dr, Mississauga, ON L5P 1B2",
+      "Code": "YYZ",
+      "CreatedAt": "2024-06-03T14:20:00Z",
+      "CreatedBy": 108,
+      "IsDeleted": false,
+      "LastModified": "2025-12-04T15:40:00Z",
+      "LastModifiedBy": 109,
+      "Name": "Toronto Pearson International Airport",
+      "Version": 12
+    },
+    {
+      "Address": "Av de la Hispanidad, 28042 Madrid, Spain",
+      "Code": "MAD",
+      "CreatedAt": "2024-07-16T09:55:00Z",
+      "CreatedBy": 105,
+      "IsDeleted": false,
+      "LastModified": null,
+      "LastModifiedBy": null,
+      "Name": "Madrid-Barajas Airport",
+      "Version": 13
+    },
+    {
+      "Address": "1-1 Furugome, Narita, Chiba 282-0004, Japan",
+      "Code": "NRT",
+      "CreatedAt": "2024-08-27T02:10:00Z",
+      "CreatedBy": 109,
+      "IsDeleted": true,
+      "LastModified": "2026-01-19T08:27:00Z",
+      "LastModifiedBy": 105,
+      "Name": "Tokyo Narita International Airport",
+      "Version": 14
+    },
+    {
+      "Address": "Airport Rd, Doha, Qatar",
+      "Code": "DOH",
+      "CreatedAt": "2024-09-30T12:00:00Z",
+      "CreatedBy": 110,
+      "IsDeleted": false,
+      "LastModified": "2026-03-11T17:14:00Z",
+      "LastModifiedBy": 110,
+      "Name": "Hamad International Airport",
+      "Version": 15
+    },
+    {
+      "Address": "10000 W O'Hare Ave, Chicago, IL 60666, USA",
+      "Code": "ORD",
+      "CreatedAt": "2024-11-12T16:35:00Z",
+      "CreatedBy": 111,
+      "IsDeleted": true,
+      "LastModified": "2026-05-06T19:50:00Z",
+      "LastModifiedBy": 111,
+      "Name": "Chicago O'Hare International Airport",
+      "Version": 16
+    }
+  ],
+  "source": "model, from the column names and constraints only"
+}

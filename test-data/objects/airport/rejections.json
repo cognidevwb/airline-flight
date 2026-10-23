@@ -1,0 +1,199 @@
+{
+  "object": "Airport",
+  "table": "Airport",
+  "source": "src/Flight/Airports/Models/Airport.cs:8",
+  "columns": [
+    "Id",
+    "Name",
+    "Address",
+    "Code",
+    "Version",
+    "CreatedAt",
+    "CreatedBy",
+    "IsDeleted",
+    "LastModified",
+    "LastModifiedBy"
+  ],
+  "rejections": [
+    {
+      "ref": "airport-rejection-1",
+      "kind": "rejection",
+      "data": {
+        "Address": "",
+        "Code": "",
+        "CreatedAt": "2026-03-01T06:00:00Z",
+        "CreatedBy": 1,
+        "Id": "c9bc0450-0000-4000-8000-000000001026",
+        "IsDeleted": true,
+        "LastModified": "2026-03-01T06:00:00Z",
+        "LastModifiedBy": 1,
+        "Name": null,
+        "Version": 1
+      },
+      "violates": {
+        "field": "Name",
+        "rule": "`Name` is declared NOT NULL"
+      }
+    },
+    {
+      "ref": "airport-rejection-2",
+      "kind": "rejection",
+      "data": {
+        "Address": null,
+        "Code": "",
+        "CreatedAt": "2026-03-01T06:00:00Z",
+        "CreatedBy": 1,
+        "Id": "c9bc0450-0000-4000-8000-000000001027",
+        "IsDeleted": true,
+        "LastModified": "2026-03-01T06:00:00Z",
+        "LastModifiedBy": 1,
+        "Name": "",
+        "Version": 1
+      },
+      "violates": {
+        "field": "Address",
+        "rule": "`Address` is declared NOT NULL"
+      }
+    },
+    {
+      "ref": "airport-rejection-3",
+      "kind": "rejection",
+      "data": {
+        "Address": "alder-birch-cedar-dogwood-elm-fir-gum-hazel-ilex-ju",
+        "Code": "",
+        "CreatedAt": "2026-03-01T06:00:00Z",
+        "CreatedBy": 1,
+        "Id": "c9bc0450-0000-4000-8000-000000001028",
+        "IsDeleted": true,
+        "LastModified": "2026-03-01T06:00:00Z",
+        "LastModifiedBy": 1,
+        "Name": "",
+        "Version": 1
+      },
+      "violates": {
+        "field": "Address",
+        "rule": "51 characters, and `Address` declares 50"
+      }
+    },
+    {
+      "ref": "airport-rejection-4",
+      "kind": "rejection",
+      "data": {
+        "Address": "",
+        "Code": null,
+        "CreatedAt": "2026-03-01T06:00:00Z",
+        "CreatedBy": 1,
+        "Id": "c9bc0450-0000-4000-8000-000000001029",
+        "IsDeleted": true,
+        "LastModified": "2026-03-01T06:00:00Z",
+        "LastModifiedBy": 1,
+        "Name": "",
+        "Version": 1
+      },
+      "violates": {
+        "field": "Code",
+        "rule": "`Code` is declared NOT NULL"
+      }
+    },
+    {
+      "ref": "airport-rejection-5",
+      "kind": "rejection",
+      "data": {
+        "Address": "",
+        "Code": "alder-birch-cedar-dogwood-elm-fir-gum-hazel-ilex-ju",
+        "CreatedAt": "2026-03-01T06:00:00Z",
+        "CreatedBy": 1,
+        "Id": "c9bc0450-0000-4000-8000-000000001030",
+        "IsDeleted": true,
+        "LastModified": "2026-03-01T06:00:00Z",
+        "LastModifiedBy": 1,
+        "Name": "",
+        "Version": 1
+      },
+      "violates": {
+        "field": "Code",
+        "rule": "51 characters, and `Code` declares 50"
+      }
+    },
+    {
+      "ref": "airport-rejection-6",
+      "kind": "rejection",
+      "data": {
+        "Address": "",
+        "Code": "",
+        "CreatedAt": "2026-03-01T06:00:00Z",
+        "CreatedBy": 1,
+        "Id": "c9bc0450-0000-4000-8000-000000001031",
+        "IsDeleted": true,
+        "LastModified": "2026-03-01T06:00:00Z",
+        "LastModifiedBy": 1,
+        "Name": "",
+        "Version": null
+      },
+      "violates": {
+        "field": "Version",
+        "rule": "`Version` is declared NOT NULL"
+      }
+    },
+    {
+      "ref": "airport-rejection-7",
+      "kind": "rejection",
+      "data": {
+        "Address": "",
+        "Code": "",
+        "CreatedAt": "not-a-date",
+        "CreatedBy": 1,
+        "Id": "c9bc0450-0000-4000-8000-000000001032",
+        "IsDeleted": true,
+        "LastModified": "2026-03-01T06:00:00Z",
+        "LastModifiedBy": 1,
+        "Name": "",
+        "Version": 1
+      },
+      "violates": {
+        "field": "CreatedAt",
+        "rule": "not a value `DateTime?` accepts"
+      }
+    },
+    {
+      "ref": "airport-rejection-8",
+      "kind": "rejection",
+      "data": {
+        "Address": "",
+        "Code": "",
+        "CreatedAt": "2026-03-01T06:00:00Z",
+        "CreatedBy": 1,
+        "Id": "c9bc0450-0000-4000-8000-000000001033",
+        "IsDeleted": null,
+        "LastModified": "2026-03-01T06:00:00Z",
+        "LastModifiedBy": 1,
+        "Name": "",
+        "Version": 1
+      },
+      "violates": {
+        "field": "IsDeleted",
+        "rule": "`IsDeleted` is declared NOT NULL"
+      }
+    },
+    {
+      "ref": "airport-rejection-9",
+      "kind": "rejection",
+      "data": {
+        "Address": "",
+        "Code": "",
+        "CreatedAt": "2026-03-01T06:00:00Z",
+        "CreatedBy": 1,
+        "Id": "c9bc0450-0000-4000-8000-000000001034",
+        "IsDeleted": true,
+        "LastModified": "not-a-date",
+        "LastModifiedBy": 1,
+        "Name": "",
+        "Version": 1
+      },
+      "violates": {
+        "field": "LastModified",
+        "rule": "not a value `DateTime?` accepts"
+      }
+    }
+  ]
+}

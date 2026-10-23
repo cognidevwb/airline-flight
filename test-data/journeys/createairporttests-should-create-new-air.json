@@ -1,0 +1,16 @@
+{
+  "id": "createairporttests-should-create-new-air",
+  "title": "should create new airport to db and publish message to broker",
+  "source": "repository test",
+  "file": "tests/IntegrationTest/Airport/Features/CreateAirportTests.cs:19",
+  "steps": [
+    {
+      "n": 1,
+      "does": "var response = await Fixture.SendAsync(command)"
+    }
+  ],
+  "expect": [
+    "response?.Id.Should().Be(command.Id)",
+    "(await Fixture.WaitForPublishing<AirportCreated>()).Should().Be(true)"
+  ]
+}

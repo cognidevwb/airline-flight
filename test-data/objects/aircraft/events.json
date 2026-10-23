@@ -1,0 +1,55 @@
+{
+  "object": "Aircraft",
+  "events": [
+    {
+      "event": "AircraftCreatedDomainEvent",
+      "payload": [
+        {
+          "ref": "aircraft-thames-voyager-2",
+          "kind": "record",
+          "data": {
+            "Id": "f057fe93-0000-4000-8000-000000001010",
+            "IsDeleted": false,
+            "ManufacturingYear": 2014,
+            "Model": "Boeing 737-800",
+            "Name": "Thames Voyager"
+          }
+        },
+        {
+          "ref": "aircraft-atlantic-dawn-2",
+          "kind": "record",
+          "data": {
+            "Id": "f057fe93-0000-4000-8000-000000001011",
+            "IsDeleted": false,
+            "ManufacturingYear": 2019,
+            "Model": "Airbus A320neo",
+            "Name": "Atlantic Dawn"
+          }
+        },
+        {
+          "ref": "aircraft-desert-falcon-2",
+          "kind": "record",
+          "data": {
+            "Id": "f057fe93-0000-4000-8000-000000001012",
+            "IsDeleted": false,
+            "ManufacturingYear": 2018,
+            "Model": "Boeing 787-9",
+            "Name": "Desert Falcon"
+          }
+        },
+        {
+          "ref": "aircraft-highland-star-2",
+          "kind": "record",
+          "data": {
+            "Id": "f057fe93-0000-4000-8000-000000001013",
+            "IsDeleted": false,
+            "ManufacturingYear": 2021,
+            "Model": "Airbus A321neo",
+            "Name": "Highland Star"
+          }
+        }
+      ],
+      "consumedBy": []
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+Id,AircraftId,Name,Model,ManufacturingYear,IsDeleted
+,,Thames Voyager,Boeing 737-800,2014,0
+,,Atlantic Dawn,Airbus A320neo,2019,0
+,,Desert Falcon,Boeing 787-9,2018,0
+,,Highland Star,Airbus A321neo,2021,0
+,,Golden Gate Spirit,Boeing 777-300ER,2012,0
+,,Nordic Breeze,Airbus A220-300,2020,0
+,,Silver Meridian,Airbus A350-900,2022,0
+,,Emerald Isle,Boeing 737 MAX 8,2018,0
+,,Sahara Crown,Airbus A330-300,2011,0
+,,Pacific Horizon,Boeing 787-8,2015,0
+,,Alpine Lark,Embraer E190,2009,0
+,,Royal Albatross,Airbus A380-800,2013,1
+,,Cape Mariner,Boeing 767-300ER,2006,0
+,,Baltic Swift,Airbus A319-100,2008,0
+,,Evening Heron,Boeing 747-8,2016,0
+,,Old Faithful,Boeing 757-200,2001,1

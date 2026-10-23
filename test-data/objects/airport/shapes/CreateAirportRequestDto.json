@@ -1,0 +1,299 @@
+{
+  "shape": "CreateAirportRequestDto",
+  "role": "request",
+  "source": "src/Flight/Airports/Features/CreatingAirport/V1/CreateAirport.cs:33",
+  "columns": [
+    "Name",
+    "Address",
+    "Code"
+  ],
+  "records": [
+    {
+      "ref": "airport-lhr-7",
+      "kind": "record",
+      "data": {
+        "Address": "Longford TW6, Hounslow, London, UK",
+        "Code": "LHR",
+        "Name": "London Heathrow Airport"
+      }
+    },
+    {
+      "ref": "airport-jfk-7",
+      "kind": "record",
+      "data": {
+        "Address": "Queens, New York, NY 11430, USA",
+        "Code": "JFK",
+        "Name": "John F. Kennedy International Airport"
+      }
+    },
+    {
+      "ref": "airport-dxb-7",
+      "kind": "record",
+      "data": {
+        "Address": "Airport Rd, Al Garhoud, Dubai, UAE",
+        "Code": "DXB",
+        "Name": "Dubai International Airport"
+      }
+    },
+    {
+      "ref": "airport-fra-7",
+      "kind": "record",
+      "data": {
+        "Address": "60547 Frankfurt am Main, Germany",
+        "Code": "FRA",
+        "Name": "Frankfurt Airport"
+      }
+    },
+    {
+      "ref": "airport-cdg-7",
+      "kind": "record",
+      "data": {
+        "Address": "95700 Roissy-en-France, France",
+        "Code": "CDG",
+        "Name": "Paris Charles de Gaulle Airport"
+      }
+    },
+    {
+      "ref": "airport-sin-7",
+      "kind": "record",
+      "data": {
+        "Address": "Airport Blvd, Singapore 819642",
+        "Code": "SIN",
+        "Name": "Singapore Changi Airport"
+      }
+    },
+    {
+      "ref": "airport-lax-7",
+      "kind": "record",
+      "data": {
+        "Address": "1 World Way, Los Angeles, CA 90045, USA",
+        "Code": "LAX",
+        "Name": "Los Angeles International Airport"
+      }
+    },
+    {
+      "ref": "airport-ams-7",
+      "kind": "record",
+      "data": {
+        "Address": "Evert van de Beekstraat 202, 1118 CP Schiphol",
+        "Code": "AMS",
+        "Name": "Amsterdam Airport Schiphol"
+      }
+    },
+    {
+      "ref": "airport-hkg-7",
+      "kind": "record",
+      "data": {
+        "Address": "1 Sky Plaza Rd, Chek Lap Kok, Hong Kong",
+        "Code": "HKG",
+        "Name": "Hong Kong International Airport"
+      }
+    },
+    {
+      "ref": "airport-ist-7",
+      "kind": "record",
+      "data": {
+        "Address": "Tayakadın, Nuri Demirağ Cd, 34283 Arnavutköy",
+        "Code": "IST",
+        "Name": "Istanbul Airport"
+      }
+    },
+    {
+      "ref": "airport-syd-7",
+      "kind": "record",
+      "data": {
+        "Address": "Airport Dr, Mascot NSW 2020, Australia",
+        "Code": "SYD",
+        "Name": "Sydney Kingsford Smith Airport"
+      }
+    },
+    {
+      "ref": "airport-yyz-7",
+      "kind": "record",
+      "data": {
+        "Address": "6301 Silver Dart Dr, Mississauga, ON L5P 1B2",
+        "Code": "YYZ",
+        "Name": "Toronto Pearson International Airport"
+      }
+    },
+    {
+      "ref": "airport-mad-7",
+      "kind": "record",
+      "data": {
+        "Address": "Av de la Hispanidad, 28042 Madrid, Spain",
+        "Code": "MAD",
+        "Name": "Madrid-Barajas Airport"
+      }
+    },
+    {
+      "ref": "airport-nrt-7",
+      "kind": "record",
+      "data": {
+        "Address": "1-1 Furugome, Narita, Chiba 282-0004, Japan",
+        "Code": "NRT",
+        "Name": "Tokyo Narita International Airport"
+      }
+    },
+    {
+      "ref": "airport-doh-7",
+      "kind": "record",
+      "data": {
+        "Address": "Airport Rd, Doha, Qatar",
+        "Code": "DOH",
+        "Name": "Hamad International Airport"
+      }
+    },
+    {
+      "ref": "airport-ord-7",
+      "kind": "record",
+      "data": {
+        "Address": "10000 W O'Hare Ave, Chicago, IL 60666, USA",
+        "Code": "ORD",
+        "Name": "Chicago O'Hare International Airport"
+      }
+    }
+  ],
+  "cases": [
+    {
+      "ref": "createairportrequestdto-case-1",
+      "kind": "case",
+      "data": {
+        "Address": "",
+        "Code": "",
+        "Name": ""
+      },
+      "case": "covering-0001"
+    },
+    {
+      "ref": "createairportrequestdto-case-2",
+      "kind": "case",
+      "data": {
+        "Address": "text",
+        "Code": "text",
+        "Name": ""
+      },
+      "case": "covering-0002"
+    },
+    {
+      "ref": "createairportrequestdto-case-3",
+      "kind": "case",
+      "data": {
+        "Address": "1 Manchester Street",
+        "Code": "SKU-01000",
+        "Name": ""
+      },
+      "case": "covering-0003"
+    },
+    {
+      "ref": "createairportrequestdto-case-4",
+      "kind": "case",
+      "data": {
+        "Address": "",
+        "Code": "text",
+        "Name": "text"
+      },
+      "case": "covering-0004"
+    },
+    {
+      "ref": "createairportrequestdto-case-5",
+      "kind": "case",
+      "data": {
+        "Address": "text",
+        "Code": "",
+        "Name": "text"
+      },
+      "case": "covering-0005"
+    },
+    {
+      "ref": "createairportrequestdto-case-6",
+      "kind": "case",
+      "data": {
+        "Address": "1 Manchester Street",
+        "Code": "",
+        "Name": "text"
+      },
+      "case": "covering-0006"
+    },
+    {
+      "ref": "createairportrequestdto-case-7",
+      "kind": "case",
+      "data": {
+        "Address": "",
+        "Code": "SKU-01000",
+        "Name": "Alice Whitfield"
+      },
+      "case": "covering-0007"
+    },
+    {
+      "ref": "createairportrequestdto-case-8",
+      "kind": "case",
+      "data": {
+        "Address": "text",
+        "Code": "",
+        "Name": "Alice Whitfield"
+      },
+      "case": "covering-0008"
+    },
+    {
+      "ref": "createairportrequestdto-case-9",
+      "kind": "case",
+      "data": {
+        "Address": "1 Manchester Street",
+        "Code": "text",
+        "Name": "Alice Whitfield"
+      },
+      "case": "covering-0009"
+    },
+    {
+      "ref": "createairportrequestdto-case-10",
+      "kind": "case",
+      "data": {
+        "Address": "text",
+        "Code": "SKU-01000",
+        "Name": "text"
+      },
+      "case": "covering-0010"
+    }
+  ],
+  "rejections": [
+    {
+      "ref": "createairportrequestdto-rejection-1",
+      "kind": "rejection",
+      "data": {
+        "Address": "",
+        "Code": "",
+        "Name": null
+      },
+      "violates": {
+        "field": "Name",
+        "rule": "`Name` is declared NOT NULL"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-rejection-2",
+      "kind": "rejection",
+      "data": {
+        "Address": null,
+        "Code": "",
+        "Name": ""
+      },
+      "violates": {
+        "field": "Address",
+        "rule": "`Address` is declared NOT NULL"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-rejection-3",
+      "kind": "rejection",
+      "data": {
+        "Address": "",
+        "Code": null,
+        "Name": ""
+      },
+      "violates": {
+        "field": "Code",
+        "rule": "`Code` is declared NOT NULL"
+      }
+    }
+  ]
+}

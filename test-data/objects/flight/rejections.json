@@ -1,0 +1,485 @@
+{
+  "object": "Flight",
+  "table": "Flight",
+  "source": "src/Flight/Flights/Models/Flight.cs:12",
+  "columns": [
+    "Id",
+    "FlightNumber",
+    "AircraftId",
+    "DepartureAirportId",
+    "ArriveAirportId",
+    "DurationMinutes",
+    "Status",
+    "Price",
+    "ArriveDate",
+    "DepartureDate",
+    "FlightDate",
+    "CreatedAt",
+    "CreatedBy",
+    "IsDeleted",
+    "LastModified",
+    "LastModifiedBy",
+    "Version"
+  ],
+  "rejections": [
+    {
+      "ref": "flight-rejection-1",
+      "kind": "rejection",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001000",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001005",
+        "ArriveDate": "2026-03-01T07:30:00Z",
+        "CreatedAt": "2026-03-01T06:00:00Z",
+        "CreatedBy": 1,
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001000",
+        "DepartureDate": "2026-03-01T06:00:00Z",
+        "DurationMinutes": 1.0,
+        "FlightDate": "2026-03-01T09:00:00Z",
+        "FlightNumber": null,
+        "Id": "2f5ff8e3-0000-4000-8000-000000001040",
+        "IsDeleted": true,
+        "LastModified": "2026-03-01T06:00:00Z",
+        "LastModifiedBy": 1,
+        "Price": 100.0,
+        "Status": "Unknown",
+        "Version": 1
+      },
+      "violates": {
+        "field": "FlightNumber",
+        "rule": "`FlightNumber` is declared NOT NULL"
+      }
+    },
+    {
+      "ref": "flight-rejection-2",
+      "kind": "rejection",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001000",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001005",
+        "ArriveDate": "2026-03-01T07:30:00Z",
+        "CreatedAt": "2026-03-01T06:00:00Z",
+        "CreatedBy": 1,
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001000",
+        "DepartureDate": "2026-03-01T06:00:00Z",
+        "DurationMinutes": 1.0,
+        "FlightDate": "2026-03-01T09:00:00Z",
+        "FlightNumber": "alder-birch-cedar-dogwood-elm-fir-gum-hazel-ilex-ju",
+        "Id": "2f5ff8e3-0000-4000-8000-000000001041",
+        "IsDeleted": true,
+        "LastModified": "2026-03-01T06:00:00Z",
+        "LastModifiedBy": 1,
+        "Price": 100.0,
+        "Status": "Unknown",
+        "Version": 1
+      },
+      "violates": {
+        "field": "FlightNumber",
+        "rule": "51 characters, and `FlightNumber` declares 50"
+      }
+    },
+    {
+      "ref": "flight-rejection-3",
+      "kind": "rejection",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001000",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001005",
+        "ArriveDate": "2026-03-01T07:30:00Z",
+        "CreatedAt": "2026-03-01T06:00:00Z",
+        "CreatedBy": 1,
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001000",
+        "DepartureDate": "2026-03-01T06:00:00Z",
+        "DurationMinutes": null,
+        "FlightDate": "2026-03-01T09:00:00Z",
+        "FlightNumber": "",
+        "Id": "2f5ff8e3-0000-4000-8000-000000001042",
+        "IsDeleted": true,
+        "LastModified": "2026-03-01T06:00:00Z",
+        "LastModifiedBy": 1,
+        "Price": 100.0,
+        "Status": "Unknown",
+        "Version": 1
+      },
+      "violates": {
+        "field": "DurationMinutes",
+        "rule": "`DurationMinutes` is declared NOT NULL"
+      }
+    },
+    {
+      "ref": "flight-rejection-4",
+      "kind": "rejection",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001000",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001005",
+        "ArriveDate": "2026-03-01T07:30:00Z",
+        "CreatedAt": "2026-03-01T06:00:00Z",
+        "CreatedBy": 1,
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001000",
+        "DepartureDate": "2026-03-01T06:00:00Z",
+        "DurationMinutes": 1.0,
+        "FlightDate": "2026-03-01T09:00:00Z",
+        "FlightNumber": "",
+        "Id": "2f5ff8e3-0000-4000-8000-000000001043",
+        "IsDeleted": true,
+        "LastModified": "2026-03-01T06:00:00Z",
+        "LastModifiedBy": 1,
+        "Price": 100.0,
+        "Status": null,
+        "Version": 1
+      },
+      "violates": {
+        "field": "Status",
+        "rule": "`Status` is declared NOT NULL"
+      }
+    },
+    {
+      "ref": "flight-rejection-5",
+      "kind": "rejection",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001000",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001005",
+        "ArriveDate": "2026-03-01T07:30:00Z",
+        "CreatedAt": "2026-03-01T06:00:00Z",
+        "CreatedBy": 1,
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001000",
+        "DepartureDate": "2026-03-01T06:00:00Z",
+        "DurationMinutes": 1.0,
+        "FlightDate": "2026-03-01T09:00:00Z",
+        "FlightNumber": "",
+        "Id": "2f5ff8e3-0000-4000-8000-000000001044",
+        "IsDeleted": true,
+        "LastModified": "2026-03-01T06:00:00Z",
+        "LastModifiedBy": 1,
+        "Price": 100.0,
+        "Status": "__INVALID__",
+        "Version": 1
+      },
+      "violates": {
+        "field": "Status",
+        "rule": "violates a declared constraint on `Status`"
+      }
+    },
+    {
+      "ref": "flight-rejection-6",
+      "kind": "rejection",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001000",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001005",
+        "ArriveDate": "2026-03-01T07:30:00Z",
+        "CreatedAt": "2026-03-01T06:00:00Z",
+        "CreatedBy": 1,
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001000",
+        "DepartureDate": "2026-03-01T06:00:00Z",
+        "DurationMinutes": 1.0,
+        "FlightDate": "2026-03-01T09:00:00Z",
+        "FlightNumber": "",
+        "Id": "2f5ff8e3-0000-4000-8000-000000001045",
+        "IsDeleted": true,
+        "LastModified": "2026-03-01T06:00:00Z",
+        "LastModifiedBy": 1,
+        "Price": null,
+        "Status": "Unknown",
+        "Version": 1
+      },
+      "violates": {
+        "field": "Price",
+        "rule": "`Price` is declared NOT NULL"
+      }
+    },
+    {
+      "ref": "flight-rejection-7",
+      "kind": "rejection",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001000",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001005",
+        "ArriveDate": "2026-03-01T07:30:00Z",
+        "CreatedAt": "2026-03-01T06:00:00Z",
+        "CreatedBy": 1,
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001000",
+        "DepartureDate": "2026-03-01T06:00:00Z",
+        "DurationMinutes": 1.0,
+        "FlightDate": "2026-03-01T09:00:00Z",
+        "FlightNumber": "",
+        "Id": "2f5ff8e3-0000-4000-8000-000000001046",
+        "IsDeleted": true,
+        "LastModified": "2026-03-01T06:00:00Z",
+        "LastModifiedBy": 1,
+        "Price": -0.01,
+        "Status": "Unknown",
+        "Version": 1
+      },
+      "violates": {
+        "field": "Price",
+        "rule": "outside the range `Price` accepts"
+      }
+    },
+    {
+      "ref": "flight-rejection-8",
+      "kind": "rejection",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001000",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001005",
+        "ArriveDate": null,
+        "CreatedAt": "2026-03-01T06:00:00Z",
+        "CreatedBy": 1,
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001000",
+        "DepartureDate": "2026-03-01T06:00:00Z",
+        "DurationMinutes": 1.0,
+        "FlightDate": "2026-03-01T09:00:00Z",
+        "FlightNumber": "",
+        "Id": "2f5ff8e3-0000-4000-8000-000000001047",
+        "IsDeleted": true,
+        "LastModified": "2026-03-01T06:00:00Z",
+        "LastModifiedBy": 1,
+        "Price": 100.0,
+        "Status": "Unknown",
+        "Version": 1
+      },
+      "violates": {
+        "field": "ArriveDate",
+        "rule": "`ArriveDate` is declared NOT NULL"
+      }
+    },
+    {
+      "ref": "flight-rejection-9",
+      "kind": "rejection",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001000",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001005",
+        "ArriveDate": "not-a-date",
+        "CreatedAt": "2026-03-01T06:00:00Z",
+        "CreatedBy": 1,
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001000",
+        "DepartureDate": "2026-03-01T06:00:00Z",
+        "DurationMinutes": 1.0,
+        "FlightDate": "2026-03-01T09:00:00Z",
+        "FlightNumber": "",
+        "Id": "2f5ff8e3-0000-4000-8000-000000001048",
+        "IsDeleted": true,
+        "LastModified": "2026-03-01T06:00:00Z",
+        "LastModifiedBy": 1,
+        "Price": 100.0,
+        "Status": "Unknown",
+        "Version": 1
+      },
+      "violates": {
+        "field": "ArriveDate",
+        "rule": "not a value `ArriveDate` accepts"
+      }
+    },
+    {
+      "ref": "flight-rejection-10",
+      "kind": "rejection",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001000",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001005",
+        "ArriveDate": "2026-03-01T07:30:00Z",
+        "CreatedAt": "2026-03-01T06:00:00Z",
+        "CreatedBy": 1,
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001000",
+        "DepartureDate": null,
+        "DurationMinutes": 1.0,
+        "FlightDate": "2026-03-01T09:00:00Z",
+        "FlightNumber": "",
+        "Id": "2f5ff8e3-0000-4000-8000-000000001049",
+        "IsDeleted": true,
+        "LastModified": "2026-03-01T06:00:00Z",
+        "LastModifiedBy": 1,
+        "Price": 100.0,
+        "Status": "Unknown",
+        "Version": 1
+      },
+      "violates": {
+        "field": "DepartureDate",
+        "rule": "`DepartureDate` is declared NOT NULL"
+      }
+    },
+    {
+      "ref": "flight-rejection-11",
+      "kind": "rejection",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001000",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001005",
+        "ArriveDate": "2026-03-01T07:30:00Z",
+        "CreatedAt": "2026-03-01T06:00:00Z",
+        "CreatedBy": 1,
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001000",
+        "DepartureDate": "not-a-date",
+        "DurationMinutes": 1.0,
+        "FlightDate": "2026-03-01T09:00:00Z",
+        "FlightNumber": "",
+        "Id": "2f5ff8e3-0000-4000-8000-000000001050",
+        "IsDeleted": true,
+        "LastModified": "2026-03-01T06:00:00Z",
+        "LastModifiedBy": 1,
+        "Price": 100.0,
+        "Status": "Unknown",
+        "Version": 1
+      },
+      "violates": {
+        "field": "DepartureDate",
+        "rule": "not a value `DepartureDate` accepts"
+      }
+    },
+    {
+      "ref": "flight-rejection-12",
+      "kind": "rejection",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001000",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001005",
+        "ArriveDate": "2026-03-01T07:30:00Z",
+        "CreatedAt": "2026-03-01T06:00:00Z",
+        "CreatedBy": 1,
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001000",
+        "DepartureDate": "2026-03-01T06:00:00Z",
+        "DurationMinutes": 1.0,
+        "FlightDate": null,
+        "FlightNumber": "",
+        "Id": "2f5ff8e3-0000-4000-8000-000000001051",
+        "IsDeleted": true,
+        "LastModified": "2026-03-01T06:00:00Z",
+        "LastModifiedBy": 1,
+        "Price": 100.0,
+        "Status": "Unknown",
+        "Version": 1
+      },
+      "violates": {
+        "field": "FlightDate",
+        "rule": "`FlightDate` is declared NOT NULL"
+      }
+    },
+    {
+      "ref": "flight-rejection-13",
+      "kind": "rejection",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001000",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001005",
+        "ArriveDate": "2026-03-01T07:30:00Z",
+        "CreatedAt": "2026-03-01T06:00:00Z",
+        "CreatedBy": 1,
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001000",
+        "DepartureDate": "2026-03-01T06:00:00Z",
+        "DurationMinutes": 1.0,
+        "FlightDate": "not-a-date",
+        "FlightNumber": "",
+        "Id": "2f5ff8e3-0000-4000-8000-000000001052",
+        "IsDeleted": true,
+        "LastModified": "2026-03-01T06:00:00Z",
+        "LastModifiedBy": 1,
+        "Price": 100.0,
+        "Status": "Unknown",
+        "Version": 1
+      },
+      "violates": {
+        "field": "FlightDate",
+        "rule": "not a value `FlightDate` accepts"
+      }
+    },
+    {
+      "ref": "flight-rejection-14",
+      "kind": "rejection",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001000",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001005",
+        "ArriveDate": "2026-03-01T07:30:00Z",
+        "CreatedAt": "not-a-date",
+        "CreatedBy": 1,
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001000",
+        "DepartureDate": "2026-03-01T06:00:00Z",
+        "DurationMinutes": 1.0,
+        "FlightDate": "2026-03-01T09:00:00Z",
+        "FlightNumber": "",
+        "Id": "2f5ff8e3-0000-4000-8000-000000001053",
+        "IsDeleted": true,
+        "LastModified": "2026-03-01T06:00:00Z",
+        "LastModifiedBy": 1,
+        "Price": 100.0,
+        "Status": "Unknown",
+        "Version": 1
+      },
+      "violates": {
+        "field": "CreatedAt",
+        "rule": "not a value `DateTime?` accepts"
+      }
+    },
+    {
+      "ref": "flight-rejection-15",
+      "kind": "rejection",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001000",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001005",
+        "ArriveDate": "2026-03-01T07:30:00Z",
+        "CreatedAt": "2026-03-01T06:00:00Z",
+        "CreatedBy": 1,
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001000",
+        "DepartureDate": "2026-03-01T06:00:00Z",
+        "DurationMinutes": 1.0,
+        "FlightDate": "2026-03-01T09:00:00Z",
+        "FlightNumber": "",
+        "Id": "2f5ff8e3-0000-4000-8000-000000001054",
+        "IsDeleted": null,
+        "LastModified": "2026-03-01T06:00:00Z",
+        "LastModifiedBy": 1,
+        "Price": 100.0,
+        "Status": "Unknown",
+        "Version": 1
+      },
+      "violates": {
+        "field": "IsDeleted",
+        "rule": "`IsDeleted` is declared NOT NULL"
+      }
+    },
+    {
+      "ref": "flight-rejection-16",
+      "kind": "rejection",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001000",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001005",
+        "ArriveDate": "2026-03-01T07:30:00Z",
+        "CreatedAt": "2026-03-01T06:00:00Z",
+        "CreatedBy": 1,
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001000",
+        "DepartureDate": "2026-03-01T06:00:00Z",
+        "DurationMinutes": 1.0,
+        "FlightDate": "2026-03-01T09:00:00Z",
+        "FlightNumber": "",
+        "Id": "2f5ff8e3-0000-4000-8000-000000001055",
+        "IsDeleted": true,
+        "LastModified": "not-a-date",
+        "LastModifiedBy": 1,
+        "Price": 100.0,
+        "Status": "Unknown",
+        "Version": 1
+      },
+      "violates": {
+        "field": "LastModified",
+        "rule": "not a value `DateTime?` accepts"
+      }
+    },
+    {
+      "ref": "flight-rejection-17",
+      "kind": "rejection",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001000",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001005",
+        "ArriveDate": "2026-03-01T07:30:00Z",
+        "CreatedAt": "2026-03-01T06:00:00Z",
+        "CreatedBy": 1,
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001000",
+        "DepartureDate": "2026-03-01T06:00:00Z",
+        "DurationMinutes": 1.0,
+        "FlightDate": "2026-03-01T09:00:00Z",
+        "FlightNumber": "",
+        "Id": "2f5ff8e3-0000-4000-8000-000000001056",
+        "IsDeleted": true,
+        "LastModified": "2026-03-01T06:00:00Z",
+        "LastModifiedBy": 1,
+        "Price": 100.0,
+        "Status": "Unknown",
+        "Version": null
+      },
+      "violates": {
+        "field": "Version",
+        "rule": "`Version` is declared NOT NULL"
+      }
+    }
+  ]
+}

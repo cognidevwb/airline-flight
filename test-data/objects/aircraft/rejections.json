@@ -1,0 +1,179 @@
+{
+  "object": "Aircraft",
+  "table": "Aircraft",
+  "source": "src/Flight/Aircrafts/Models/Aircraft.cs:8",
+  "columns": [
+    "Id",
+    "Name",
+    "Model",
+    "ManufacturingYear",
+    "Version",
+    "CreatedAt",
+    "CreatedBy",
+    "IsDeleted",
+    "LastModified",
+    "LastModifiedBy"
+  ],
+  "rejections": [
+    {
+      "ref": "aircraft-rejection-1",
+      "kind": "rejection",
+      "data": {
+        "CreatedAt": "2026-03-01T06:00:00Z",
+        "CreatedBy": 1,
+        "Id": "f057fe93-0000-4000-8000-000000001026",
+        "IsDeleted": true,
+        "LastModified": "2026-03-01T06:00:00Z",
+        "LastModifiedBy": 1,
+        "ManufacturingYear": 1,
+        "Model": "",
+        "Name": null,
+        "Version": 1
+      },
+      "violates": {
+        "field": "Name",
+        "rule": "`Name` is declared NOT NULL"
+      }
+    },
+    {
+      "ref": "aircraft-rejection-2",
+      "kind": "rejection",
+      "data": {
+        "CreatedAt": "2026-03-01T06:00:00Z",
+        "CreatedBy": 1,
+        "Id": "f057fe93-0000-4000-8000-000000001027",
+        "IsDeleted": true,
+        "LastModified": "2026-03-01T06:00:00Z",
+        "LastModifiedBy": 1,
+        "ManufacturingYear": 1,
+        "Model": null,
+        "Name": "",
+        "Version": 1
+      },
+      "violates": {
+        "field": "Model",
+        "rule": "`Model` is declared NOT NULL"
+      }
+    },
+    {
+      "ref": "aircraft-rejection-3",
+      "kind": "rejection",
+      "data": {
+        "CreatedAt": "2026-03-01T06:00:00Z",
+        "CreatedBy": 1,
+        "Id": "f057fe93-0000-4000-8000-000000001028",
+        "IsDeleted": true,
+        "LastModified": "2026-03-01T06:00:00Z",
+        "LastModifiedBy": 1,
+        "ManufacturingYear": 1,
+        "Model": "alder-birch-cedar-dogwood-elm-fir-gum-hazel-ilex-ju",
+        "Name": "",
+        "Version": 1
+      },
+      "violates": {
+        "field": "Model",
+        "rule": "51 characters, and `Model` declares 50"
+      }
+    },
+    {
+      "ref": "aircraft-rejection-4",
+      "kind": "rejection",
+      "data": {
+        "CreatedAt": "2026-03-01T06:00:00Z",
+        "CreatedBy": 1,
+        "Id": "f057fe93-0000-4000-8000-000000001029",
+        "IsDeleted": true,
+        "LastModified": "2026-03-01T06:00:00Z",
+        "LastModifiedBy": 1,
+        "ManufacturingYear": null,
+        "Model": "",
+        "Name": "",
+        "Version": 1
+      },
+      "violates": {
+        "field": "ManufacturingYear",
+        "rule": "`ManufacturingYear` is declared NOT NULL"
+      }
+    },
+    {
+      "ref": "aircraft-rejection-5",
+      "kind": "rejection",
+      "data": {
+        "CreatedAt": "2026-03-01T06:00:00Z",
+        "CreatedBy": 1,
+        "Id": "f057fe93-0000-4000-8000-000000001030",
+        "IsDeleted": true,
+        "LastModified": "2026-03-01T06:00:00Z",
+        "LastModifiedBy": 1,
+        "ManufacturingYear": 1,
+        "Model": "",
+        "Name": "",
+        "Version": null
+      },
+      "violates": {
+        "field": "Version",
+        "rule": "`Version` is declared NOT NULL"
+      }
+    },
+    {
+      "ref": "aircraft-rejection-6",
+      "kind": "rejection",
+      "data": {
+        "CreatedAt": "not-a-date",
+        "CreatedBy": 1,
+        "Id": "f057fe93-0000-4000-8000-000000001031",
+        "IsDeleted": true,
+        "LastModified": "2026-03-01T06:00:00Z",
+        "LastModifiedBy": 1,
+        "ManufacturingYear": 1,
+        "Model": "",
+        "Name": "",
+        "Version": 1
+      },
+      "violates": {
+        "field": "CreatedAt",
+        "rule": "not a value `DateTime?` accepts"
+      }
+    },
+    {
+      "ref": "aircraft-rejection-7",
+      "kind": "rejection",
+      "data": {
+        "CreatedAt": "2026-03-01T06:00:00Z",
+        "CreatedBy": 1,
+        "Id": "f057fe93-0000-4000-8000-000000001032",
+        "IsDeleted": null,
+        "LastModified": "2026-03-01T06:00:00Z",
+        "LastModifiedBy": 1,
+        "ManufacturingYear": 1,
+        "Model": "",
+        "Name": "",
+        "Version": 1
+      },
+      "violates": {
+        "field": "IsDeleted",
+        "rule": "`IsDeleted` is declared NOT NULL"
+      }
+    },
+    {
+      "ref": "aircraft-rejection-8",
+      "kind": "rejection",
+      "data": {
+        "CreatedAt": "2026-03-01T06:00:00Z",
+        "CreatedBy": 1,
+        "Id": "f057fe93-0000-4000-8000-000000001033",
+        "IsDeleted": true,
+        "LastModified": "not-a-date",
+        "LastModifiedBy": 1,
+        "ManufacturingYear": 1,
+        "Model": "",
+        "Name": "",
+        "Version": 1
+      },
+      "violates": {
+        "field": "LastModified",
+        "rule": "not a value `DateTime?` accepts"
+      }
+    }
+  ]
+}

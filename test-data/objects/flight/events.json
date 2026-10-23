@@ -1,0 +1,299 @@
+{
+  "object": "Flight",
+  "events": [
+    {
+      "event": "FlightCreatedDomainEvent",
+      "payload": [
+        {
+          "ref": "flight-ba117-6",
+          "kind": "record",
+          "data": {
+            "AircraftId": "f057fe93-0000-4000-8000-000000001014",
+            "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001011",
+            "ArriveDate": "2026-10-20T18:15:00Z",
+            "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001010",
+            "DepartureDate": "2026-10-20T10:30:00Z",
+            "DurationMinutes": 465.0,
+            "FlightDate": "2026-10-20T00:00:00Z",
+            "FlightNumber": "BA117",
+            "Id": "2f5ff8e3-0000-4000-8000-000000001024",
+            "IsDeleted": false,
+            "Price": 1200.0,
+            "Status": "Completed"
+          },
+          "links": {
+            "AircraftId": "aircraft-golden-gate-spirit",
+            "ArriveAirportId": "airport-jfk",
+            "DepartureAirportId": "airport-lhr"
+          }
+        },
+        {
+          "ref": "flight-lh441-6",
+          "kind": "record",
+          "data": {
+            "AircraftId": "f057fe93-0000-4000-8000-000000001021",
+            "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001016",
+            "ArriveDate": "2026-10-21T20:45:00Z",
+            "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001013",
+            "DepartureDate": "2026-10-21T09:05:00Z",
+            "DurationMinutes": 700.0,
+            "FlightDate": "2026-10-21T00:00:00Z",
+            "FlightNumber": "LH441",
+            "Id": "2f5ff8e3-0000-4000-8000-000000001025",
+            "IsDeleted": false,
+            "Price": 849.0,
+            "Status": "Completed"
+          },
+          "links": {
+            "AircraftId": "aircraft-royal-albatross",
+            "ArriveAirportId": "airport-lax",
+            "DepartureAirportId": "airport-fra"
+          }
+        },
+        {
+          "ref": "flight-ek202-6",
+          "kind": "record",
+          "data": {
+            "AircraftId": "f057fe93-0000-4000-8000-000000001016",
+            "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001017",
+            "ArriveDate": "2026-10-23T15:10:00Z",
+            "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001012",
+            "DepartureDate": "2026-10-23T08:20:00Z",
+            "DurationMinutes": 410.0,
+            "FlightDate": "2026-10-23T00:00:00Z",
+            "FlightNumber": "EK202",
+            "Id": "2f5ff8e3-0000-4000-8000-000000001026",
+            "IsDeleted": false,
+            "Price": 455.5,
+            "Status": "Flying"
+          },
+          "links": {
+            "AircraftId": "aircraft-silver-meridian",
+            "ArriveAirportId": "airport-ams",
+            "DepartureAirportId": "airport-dxb"
+          }
+        },
+        {
+          "ref": "flight-aa100-6",
+          "kind": "record",
+          "data": {
+            "AircraftId": "f057fe93-0000-4000-8000-000000001019",
+            "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001014",
+            "ArriveDate": "2026-10-24T07:05:00Z",
+            "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001011",
+            "DepartureDate": "2026-10-23T23:45:00Z",
+            "DurationMinutes": 440.0,
+            "FlightDate": "2026-10-23T00:00:00Z",
+            "FlightNumber": "AA100",
+            "Id": "2f5ff8e3-0000-4000-8000-000000001027",
+            "IsDeleted": false,
+            "Price": 612.75,
+            "Status": "Delay"
+          },
+          "links": {
+            "AircraftId": "aircraft-pacific-horizon",
+            "ArriveAirportId": "airport-cdg",
+            "DepartureAirportId": "airport-jfk"
+          }
+        }
+      ],
+      "consumedBy": []
+    },
+    {
+      "event": "FlightDeletedDomainEvent",
+      "payload": [
+        {
+          "ref": "flight-ba117-7",
+          "kind": "record",
+          "data": {
+            "AircraftId": "f057fe93-0000-4000-8000-000000001014",
+            "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001011",
+            "ArriveDate": "2026-10-20T18:15:00Z",
+            "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001010",
+            "DepartureDate": "2026-10-20T10:30:00Z",
+            "DurationMinutes": 465.0,
+            "FlightDate": "2026-10-20T00:00:00Z",
+            "FlightNumber": "BA117",
+            "Id": "2f5ff8e3-0000-4000-8000-000000001024",
+            "IsDeleted": false,
+            "Price": 1200.0,
+            "Status": "Completed"
+          },
+          "links": {
+            "AircraftId": "aircraft-golden-gate-spirit",
+            "ArriveAirportId": "airport-jfk",
+            "DepartureAirportId": "airport-lhr"
+          }
+        },
+        {
+          "ref": "flight-lh441-7",
+          "kind": "record",
+          "data": {
+            "AircraftId": "f057fe93-0000-4000-8000-000000001021",
+            "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001016",
+            "ArriveDate": "2026-10-21T20:45:00Z",
+            "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001013",
+            "DepartureDate": "2026-10-21T09:05:00Z",
+            "DurationMinutes": 700.0,
+            "FlightDate": "2026-10-21T00:00:00Z",
+            "FlightNumber": "LH441",
+            "Id": "2f5ff8e3-0000-4000-8000-000000001025",
+            "IsDeleted": false,
+            "Price": 849.0,
+            "Status": "Completed"
+          },
+          "links": {
+            "AircraftId": "aircraft-royal-albatross",
+            "ArriveAirportId": "airport-lax",
+            "DepartureAirportId": "airport-fra"
+          }
+        },
+        {
+          "ref": "flight-ek202-7",
+          "kind": "record",
+          "data": {
+            "AircraftId": "f057fe93-0000-4000-8000-000000001016",
+            "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001017",
+            "ArriveDate": "2026-10-23T15:10:00Z",
+            "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001012",
+            "DepartureDate": "2026-10-23T08:20:00Z",
+            "DurationMinutes": 410.0,
+            "FlightDate": "2026-10-23T00:00:00Z",
+            "FlightNumber": "EK202",
+            "Id": "2f5ff8e3-0000-4000-8000-000000001026",
+            "IsDeleted": false,
+            "Price": 455.5,
+            "Status": "Flying"
+          },
+          "links": {
+            "AircraftId": "aircraft-silver-meridian",
+            "ArriveAirportId": "airport-ams",
+            "DepartureAirportId": "airport-dxb"
+          }
+        },
+        {
+          "ref": "flight-aa100-7",
+          "kind": "record",
+          "data": {
+            "AircraftId": "f057fe93-0000-4000-8000-000000001019",
+            "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001014",
+            "ArriveDate": "2026-10-24T07:05:00Z",
+            "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001011",
+            "DepartureDate": "2026-10-23T23:45:00Z",
+            "DurationMinutes": 440.0,
+            "FlightDate": "2026-10-23T00:00:00Z",
+            "FlightNumber": "AA100",
+            "Id": "2f5ff8e3-0000-4000-8000-000000001027",
+            "IsDeleted": false,
+            "Price": 612.75,
+            "Status": "Delay"
+          },
+          "links": {
+            "AircraftId": "aircraft-pacific-horizon",
+            "ArriveAirportId": "airport-cdg",
+            "DepartureAirportId": "airport-jfk"
+          }
+        }
+      ],
+      "consumedBy": []
+    },
+    {
+      "event": "FlightUpdatedDomainEvent",
+      "payload": [
+        {
+          "ref": "flight-ba117-10",
+          "kind": "record",
+          "data": {
+            "AircraftId": "f057fe93-0000-4000-8000-000000001014",
+            "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001011",
+            "ArriveDate": "2026-10-20T18:15:00Z",
+            "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001010",
+            "DepartureDate": "2026-10-20T10:30:00Z",
+            "DurationMinutes": 465.0,
+            "FlightDate": "2026-10-20T00:00:00Z",
+            "FlightNumber": "BA117",
+            "Id": "2f5ff8e3-0000-4000-8000-000000001024",
+            "IsDeleted": false,
+            "Price": 1200.0,
+            "Status": "Completed"
+          },
+          "links": {
+            "AircraftId": "aircraft-golden-gate-spirit",
+            "ArriveAirportId": "airport-jfk",
+            "DepartureAirportId": "airport-lhr"
+          }
+        },
+        {
+          "ref": "flight-lh441-10",
+          "kind": "record",
+          "data": {
+            "AircraftId": "f057fe93-0000-4000-8000-000000001021",
+            "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001016",
+            "ArriveDate": "2026-10-21T20:45:00Z",
+            "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001013",
+            "DepartureDate": "2026-10-21T09:05:00Z",
+            "DurationMinutes": 700.0,
+            "FlightDate": "2026-10-21T00:00:00Z",
+            "FlightNumber": "LH441",
+            "Id": "2f5ff8e3-0000-4000-8000-000000001025",
+            "IsDeleted": false,
+            "Price": 849.0,
+            "Status": "Completed"
+          },
+          "links": {
+            "AircraftId": "aircraft-royal-albatross",
+            "ArriveAirportId": "airport-lax",
+            "DepartureAirportId": "airport-fra"
+          }
+        },
+        {
+          "ref": "flight-ek202-10",
+          "kind": "record",
+          "data": {
+            "AircraftId": "f057fe93-0000-4000-8000-000000001016",
+            "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001017",
+            "ArriveDate": "2026-10-23T15:10:00Z",
+            "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001012",
+            "DepartureDate": "2026-10-23T08:20:00Z",
+            "DurationMinutes": 410.0,
+            "FlightDate": "2026-10-23T00:00:00Z",
+            "FlightNumber": "EK202",
+            "Id": "2f5ff8e3-0000-4000-8000-000000001026",
+            "IsDeleted": false,
+            "Price": 455.5,
+            "Status": "Flying"
+          },
+          "links": {
+            "AircraftId": "aircraft-silver-meridian",
+            "ArriveAirportId": "airport-ams",
+            "DepartureAirportId": "airport-dxb"
+          }
+        },
+        {
+          "ref": "flight-aa100-10",
+          "kind": "record",
+          "data": {
+            "AircraftId": "f057fe93-0000-4000-8000-000000001019",
+            "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001014",
+            "ArriveDate": "2026-10-24T07:05:00Z",
+            "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001011",
+            "DepartureDate": "2026-10-23T23:45:00Z",
+            "DurationMinutes": 440.0,
+            "FlightDate": "2026-10-23T00:00:00Z",
+            "FlightNumber": "AA100",
+            "Id": "2f5ff8e3-0000-4000-8000-000000001027",
+            "IsDeleted": false,
+            "Price": 612.75,
+            "Status": "Delay"
+          },
+          "links": {
+            "AircraftId": "aircraft-pacific-horizon",
+            "ArriveAirportId": "airport-cdg",
+            "DepartureAirportId": "airport-jfk"
+          }
+        }
+      ],
+      "consumedBy": []
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "seatnumberincorrectexception-reserveseat",
+  "title": "ReserveSeat: SeatNumberIncorrectException",
+  "kind": "rule broken",
+  "exception": "SeatNumberIncorrectException",
+  "base": "AppException",
+  "thrownAt": "src/Flight/Seats/Features/ReservingSeat/V1/ReserveSeat.cs:92",
+  "condition": "if (seat is null)",
+  "field": null,
+  "expect": {
+    "status": 400,
+    "error": "SeatNumberIncorrectException",
+    "note": null
+  }
+}

@@ -1,0 +1,17 @@
+Id,SeatId,SeatNumber,Type,Class,FlightId,IsDeleted
+,,1A,Window,FirstClass,0,0
+,,2C,Aisle,FirstClass,1,0
+,,7D,Aisle,Business,2,0
+,,9F,Window,Business,3,0
+,,12C,Aisle,Economy,4,0
+,,14B,Middle,Economy,5,0
+,,17A,Window,Economy,6,1
+,,19E,Middle,Economy,7,0
+,,21D,Aisle,Economy,8,0
+,,23A,Window,Economy,9,0
+,,27F,Window,Economy,10,0
+,,30C,Aisle,Economy,11,0
+,,31E,Middle,Economy,12,0
+,,34A,Window,Economy,13,1
+,,36D,Aisle,Economy,14,0
+,,38B,Middle,Economy,15,0

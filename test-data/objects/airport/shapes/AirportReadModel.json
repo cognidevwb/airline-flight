@@ -1,0 +1,456 @@
+{
+  "shape": "AirportReadModel",
+  "role": "read model",
+  "source": "src/Flight/Airports/Models/AirportReadModel.cs:5",
+  "columns": [
+    "Id",
+    "AirportId",
+    "Name",
+    "Address",
+    "Code",
+    "IsDeleted"
+  ],
+  "records": [
+    {
+      "ref": "airport-lhr-4",
+      "kind": "record",
+      "data": {
+        "Address": "Longford TW6, Hounslow, London, UK",
+        "AirportId": null,
+        "Code": "LHR",
+        "Id": "c9bc0450-0000-4000-8000-000000001010",
+        "IsDeleted": false,
+        "Name": "London Heathrow Airport"
+      }
+    },
+    {
+      "ref": "airport-jfk-4",
+      "kind": "record",
+      "data": {
+        "Address": "Queens, New York, NY 11430, USA",
+        "AirportId": null,
+        "Code": "JFK",
+        "Id": "c9bc0450-0000-4000-8000-000000001011",
+        "IsDeleted": false,
+        "Name": "John F. Kennedy International Airport"
+      }
+    },
+    {
+      "ref": "airport-dxb-4",
+      "kind": "record",
+      "data": {
+        "Address": "Airport Rd, Al Garhoud, Dubai, UAE",
+        "AirportId": null,
+        "Code": "DXB",
+        "Id": "c9bc0450-0000-4000-8000-000000001012",
+        "IsDeleted": false,
+        "Name": "Dubai International Airport"
+      }
+    },
+    {
+      "ref": "airport-fra-4",
+      "kind": "record",
+      "data": {
+        "Address": "60547 Frankfurt am Main, Germany",
+        "AirportId": null,
+        "Code": "FRA",
+        "Id": "c9bc0450-0000-4000-8000-000000001013",
+        "IsDeleted": false,
+        "Name": "Frankfurt Airport"
+      }
+    },
+    {
+      "ref": "airport-cdg-4",
+      "kind": "record",
+      "data": {
+        "Address": "95700 Roissy-en-France, France",
+        "AirportId": null,
+        "Code": "CDG",
+        "Id": "c9bc0450-0000-4000-8000-000000001014",
+        "IsDeleted": false,
+        "Name": "Paris Charles de Gaulle Airport"
+      }
+    },
+    {
+      "ref": "airport-sin-4",
+      "kind": "record",
+      "data": {
+        "Address": "Airport Blvd, Singapore 819642",
+        "AirportId": null,
+        "Code": "SIN",
+        "Id": "c9bc0450-0000-4000-8000-000000001015",
+        "IsDeleted": false,
+        "Name": "Singapore Changi Airport"
+      }
+    },
+    {
+      "ref": "airport-lax-4",
+      "kind": "record",
+      "data": {
+        "Address": "1 World Way, Los Angeles, CA 90045, USA",
+        "AirportId": null,
+        "Code": "LAX",
+        "Id": "c9bc0450-0000-4000-8000-000000001016",
+        "IsDeleted": false,
+        "Name": "Los Angeles International Airport"
+      }
+    },
+    {
+      "ref": "airport-ams-4",
+      "kind": "record",
+      "data": {
+        "Address": "Evert van de Beekstraat 202, 1118 CP Schiphol",
+        "AirportId": null,
+        "Code": "AMS",
+        "Id": "c9bc0450-0000-4000-8000-000000001017",
+        "IsDeleted": false,
+        "Name": "Amsterdam Airport Schiphol"
+      }
+    },
+    {
+      "ref": "airport-hkg-4",
+      "kind": "record",
+      "data": {
+        "Address": "1 Sky Plaza Rd, Chek Lap Kok, Hong Kong",
+        "AirportId": null,
+        "Code": "HKG",
+        "Id": "c9bc0450-0000-4000-8000-000000001018",
+        "IsDeleted": false,
+        "Name": "Hong Kong International Airport"
+      }
+    },
+    {
+      "ref": "airport-ist-4",
+      "kind": "record",
+      "data": {
+        "Address": "Tayakadın, Nuri Demirağ Cd, 34283 Arnavutköy",
+        "AirportId": null,
+        "Code": "IST",
+        "Id": "c9bc0450-0000-4000-8000-000000001019",
+        "IsDeleted": false,
+        "Name": "Istanbul Airport"
+      }
+    },
+    {
+      "ref": "airport-syd-4",
+      "kind": "record",
+      "data": {
+        "Address": "Airport Dr, Mascot NSW 2020, Australia",
+        "AirportId": null,
+        "Code": "SYD",
+        "Id": "c9bc0450-0000-4000-8000-000000001020",
+        "IsDeleted": false,
+        "Name": "Sydney Kingsford Smith Airport"
+      }
+    },
+    {
+      "ref": "airport-yyz-4",
+      "kind": "record",
+      "data": {
+        "Address": "6301 Silver Dart Dr, Mississauga, ON L5P 1B2",
+        "AirportId": null,
+        "Code": "YYZ",
+        "Id": "c9bc0450-0000-4000-8000-000000001021",
+        "IsDeleted": false,
+        "Name": "Toronto Pearson International Airport"
+      }
+    },
+    {
+      "ref": "airport-mad-4",
+      "kind": "record",
+      "data": {
+        "Address": "Av de la Hispanidad, 28042 Madrid, Spain",
+        "AirportId": null,
+        "Code": "MAD",
+        "Id": "c9bc0450-0000-4000-8000-000000001022",
+        "IsDeleted": false,
+        "Name": "Madrid-Barajas Airport"
+      }
+    },
+    {
+      "ref": "airport-nrt-4",
+      "kind": "record",
+      "data": {
+        "Address": "1-1 Furugome, Narita, Chiba 282-0004, Japan",
+        "AirportId": null,
+        "Code": "NRT",
+        "Id": "c9bc0450-0000-4000-8000-000000001023",
+        "IsDeleted": true,
+        "Name": "Tokyo Narita International Airport"
+      }
+    },
+    {
+      "ref": "airport-doh-4",
+      "kind": "record",
+      "data": {
+        "Address": "Airport Rd, Doha, Qatar",
+        "AirportId": null,
+        "Code": "DOH",
+        "Id": "c9bc0450-0000-4000-8000-000000001024",
+        "IsDeleted": false,
+        "Name": "Hamad International Airport"
+      }
+    },
+    {
+      "ref": "airport-ord-4",
+      "kind": "record",
+      "data": {
+        "Address": "10000 W O'Hare Ave, Chicago, IL 60666, USA",
+        "AirportId": null,
+        "Code": "ORD",
+        "Id": "c9bc0450-0000-4000-8000-000000001025",
+        "IsDeleted": true,
+        "Name": "Chicago O'Hare International Airport"
+      }
+    }
+  ],
+  "cases": [
+    {
+      "ref": "airportreadmodel-case-1",
+      "kind": "case",
+      "data": {
+        "Address": "",
+        "AirportId": "00000000-0000-4000-8000-000000000000",
+        "Code": "",
+        "Id": "00000000-0000-4000-8000-000000000000",
+        "IsDeleted": true,
+        "Name": ""
+      },
+      "case": "covering-0001"
+    },
+    {
+      "ref": "airportreadmodel-case-2",
+      "kind": "case",
+      "data": {
+        "Address": "text",
+        "AirportId": "00000000-0000-4000-8000-000000000000",
+        "Code": "text",
+        "Id": "f057fe93-0000-4000-8000-000000001002",
+        "IsDeleted": true,
+        "Name": "text"
+      },
+      "case": "covering-0002"
+    },
+    {
+      "ref": "airportreadmodel-case-3",
+      "kind": "case",
+      "data": {
+        "Address": "1 Manchester Street",
+        "AirportId": "00000000-0000-4000-8000-000000000000",
+        "Code": "SKU-01000",
+        "Id": "c9bc0450-0000-4000-8000-000000001001",
+        "IsDeleted": true,
+        "Name": "Alice Whitfield"
+      },
+      "case": "covering-0003"
+    },
+    {
+      "ref": "airportreadmodel-case-4",
+      "kind": "case",
+      "data": {
+        "Address": "text",
+        "AirportId": "00000000-0000-4000-8000-000000000000",
+        "Code": "SKU-01000",
+        "Id": "c9bc0450-0000-4000-8000-000000001001",
+        "IsDeleted": true,
+        "Name": ""
+      },
+      "case": "covering-0004"
+    },
+    {
+      "ref": "airportreadmodel-case-5",
+      "kind": "case",
+      "data": {
+        "Address": "1 Manchester Street",
+        "AirportId": "00000000-0000-4000-8000-000000000000",
+        "Code": "text",
+        "Id": "f057fe93-0000-4000-8000-000000001002",
+        "IsDeleted": true,
+        "Name": ""
+      },
+      "case": "covering-0005"
+    },
+    {
+      "ref": "airportreadmodel-case-6",
+      "kind": "case",
+      "data": {
+        "Address": "",
+        "AirportId": "00000000-0000-4000-8000-000000000000",
+        "Code": "SKU-01000",
+        "Id": "c9bc0450-0000-4000-8000-000000001001",
+        "IsDeleted": true,
+        "Name": "text"
+      },
+      "case": "covering-0006"
+    },
+    {
+      "ref": "airportreadmodel-case-7",
+      "kind": "case",
+      "data": {
+        "Address": "1 Manchester Street",
+        "AirportId": "00000000-0000-4000-8000-000000000000",
+        "Code": "",
+        "Id": "f057fe93-0000-4000-8000-000000001002",
+        "IsDeleted": true,
+        "Name": "text"
+      },
+      "case": "covering-0007"
+    },
+    {
+      "ref": "airportreadmodel-case-8",
+      "kind": "case",
+      "data": {
+        "Address": "",
+        "AirportId": "00000000-0000-4000-8000-000000000000",
+        "Code": "text",
+        "Id": "f057fe93-0000-4000-8000-000000001002",
+        "IsDeleted": true,
+        "Name": "Alice Whitfield"
+      },
+      "case": "covering-0008"
+    },
+    {
+      "ref": "airportreadmodel-case-9",
+      "kind": "case",
+      "data": {
+        "Address": "text",
+        "AirportId": "00000000-0000-4000-8000-000000000000",
+        "Code": "",
+        "Id": "f057fe93-0000-4000-8000-000000001004",
+        "IsDeleted": true,
+        "Name": "Alice Whitfield"
+      },
+      "case": "covering-0009"
+    }
+  ],
+  "rejections": [
+    {
+      "ref": "airportreadmodel-rejection-1",
+      "kind": "rejection",
+      "data": {
+        "Address": "",
+        "AirportId": "00000000-0000-4000-8000-000000000000",
+        "Code": "",
+        "Id": null,
+        "IsDeleted": true,
+        "Name": ""
+      },
+      "violates": {
+        "field": "Id",
+        "rule": "`Id` is declared NOT NULL"
+      }
+    },
+    {
+      "ref": "airportreadmodel-rejection-2",
+      "kind": "rejection",
+      "data": {
+        "Address": "",
+        "AirportId": "00000000-0000-4000-8000-000000000000",
+        "Code": "",
+        "Id": "not-a-uuid",
+        "IsDeleted": true,
+        "Name": ""
+      },
+      "violates": {
+        "field": "Id",
+        "rule": "violates a declared constraint on `Id`"
+      }
+    },
+    {
+      "ref": "airportreadmodel-rejection-3",
+      "kind": "rejection",
+      "data": {
+        "Address": "",
+        "AirportId": null,
+        "Code": "",
+        "Id": "00000000-0000-4000-8000-000000000000",
+        "IsDeleted": true,
+        "Name": ""
+      },
+      "violates": {
+        "field": "AirportId",
+        "rule": "`AirportId` is declared NOT NULL"
+      }
+    },
+    {
+      "ref": "airportreadmodel-rejection-4",
+      "kind": "rejection",
+      "data": {
+        "Address": "",
+        "AirportId": "not-a-uuid",
+        "Code": "",
+        "Id": "00000000-0000-4000-8000-000000000000",
+        "IsDeleted": true,
+        "Name": ""
+      },
+      "violates": {
+        "field": "AirportId",
+        "rule": "violates a declared constraint on `AirportId`"
+      }
+    },
+    {
+      "ref": "airportreadmodel-rejection-5",
+      "kind": "rejection",
+      "data": {
+        "Address": "",
+        "AirportId": "00000000-0000-4000-8000-000000000000",
+        "Code": "",
+        "Id": "00000000-0000-4000-8000-000000000000",
+        "IsDeleted": true,
+        "Name": null
+      },
+      "violates": {
+        "field": "Name",
+        "rule": "`Name` is declared NOT NULL"
+      }
+    },
+    {
+      "ref": "airportreadmodel-rejection-6",
+      "kind": "rejection",
+      "data": {
+        "Address": null,
+        "AirportId": "00000000-0000-4000-8000-000000000000",
+        "Code": "",
+        "Id": "00000000-0000-4000-8000-000000000000",
+        "IsDeleted": true,
+        "Name": ""
+      },
+      "violates": {
+        "field": "Address",
+        "rule": "`Address` is declared NOT NULL"
+      }
+    },
+    {
+      "ref": "airportreadmodel-rejection-7",
+      "kind": "rejection",
+      "data": {
+        "Address": "",
+        "AirportId": "00000000-0000-4000-8000-000000000000",
+        "Code": null,
+        "Id": "00000000-0000-4000-8000-000000000000",
+        "IsDeleted": true,
+        "Name": ""
+      },
+      "violates": {
+        "field": "Code",
+        "rule": "`Code` is declared NOT NULL"
+      }
+    },
+    {
+      "ref": "airportreadmodel-rejection-8",
+      "kind": "rejection",
+      "data": {
+        "Address": "",
+        "AirportId": "00000000-0000-4000-8000-000000000000",
+        "Code": "",
+        "Id": "00000000-0000-4000-8000-000000000000",
+        "IsDeleted": null,
+        "Name": ""
+      },
+      "violates": {
+        "field": "IsDeleted",
+        "rule": "`IsDeleted` is declared NOT NULL"
+      }
+    }
+  ]
+}

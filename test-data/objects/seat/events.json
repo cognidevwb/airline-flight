@@ -1,0 +1,137 @@
+{
+  "object": "Seat",
+  "events": [
+    {
+      "event": "SeatCreatedDomainEvent",
+      "payload": [
+        {
+          "ref": "seat-1a-8",
+          "kind": "record",
+          "data": {
+            "Class": "FirstClass",
+            "FlightId": "2f5ff8e3-0000-4000-8000-000000001024",
+            "Id": "f07cc888-0000-4000-8000-000000001016",
+            "IsDeleted": false,
+            "SeatNumber": "1A",
+            "Type": "Window"
+          },
+          "links": {
+            "FlightId": "flight-ba117"
+          }
+        },
+        {
+          "ref": "seat-2c-8",
+          "kind": "record",
+          "data": {
+            "Class": "FirstClass",
+            "FlightId": "2f5ff8e3-0000-4000-8000-000000001025",
+            "Id": "f07cc888-0000-4000-8000-000000001017",
+            "IsDeleted": false,
+            "SeatNumber": "2C",
+            "Type": "Aisle"
+          },
+          "links": {
+            "FlightId": "flight-lh441"
+          }
+        },
+        {
+          "ref": "seat-7d-8",
+          "kind": "record",
+          "data": {
+            "Class": "Business",
+            "FlightId": "2f5ff8e3-0000-4000-8000-000000001026",
+            "Id": "f07cc888-0000-4000-8000-000000001018",
+            "IsDeleted": false,
+            "SeatNumber": "7D",
+            "Type": "Aisle"
+          },
+          "links": {
+            "FlightId": "flight-ek202"
+          }
+        },
+        {
+          "ref": "seat-9f-8",
+          "kind": "record",
+          "data": {
+            "Class": "Business",
+            "FlightId": "2f5ff8e3-0000-4000-8000-000000001027",
+            "Id": "f07cc888-0000-4000-8000-000000001019",
+            "IsDeleted": false,
+            "SeatNumber": "9F",
+            "Type": "Window"
+          },
+          "links": {
+            "FlightId": "flight-aa100"
+          }
+        }
+      ],
+      "consumedBy": []
+    },
+    {
+      "event": "SeatReservedDomainEvent",
+      "payload": [
+        {
+          "ref": "seat-1a-11",
+          "kind": "record",
+          "data": {
+            "Class": "FirstClass",
+            "FlightId": "2f5ff8e3-0000-4000-8000-000000001024",
+            "Id": "f07cc888-0000-4000-8000-000000001016",
+            "IsDeleted": false,
+            "SeatNumber": "1A",
+            "Type": "Window"
+          },
+          "links": {
+            "FlightId": "flight-ba117"
+          }
+        },
+        {
+          "ref": "seat-2c-11",
+          "kind": "record",
+          "data": {
+            "Class": "FirstClass",
+            "FlightId": "2f5ff8e3-0000-4000-8000-000000001025",
+            "Id": "f07cc888-0000-4000-8000-000000001017",
+            "IsDeleted": false,
+            "SeatNumber": "2C",
+            "Type": "Aisle"
+          },
+          "links": {
+            "FlightId": "flight-lh441"
+          }
+        },
+        {
+          "ref": "seat-7d-11",
+          "kind": "record",
+          "data": {
+            "Class": "Business",
+            "FlightId": "2f5ff8e3-0000-4000-8000-000000001026",
+            "Id": "f07cc888-0000-4000-8000-000000001018",
+            "IsDeleted": false,
+            "SeatNumber": "7D",
+            "Type": "Aisle"
+          },
+          "links": {
+            "FlightId": "flight-ek202"
+          }
+        },
+        {
+          "ref": "seat-9f-11",
+          "kind": "record",
+          "data": {
+            "Class": "Business",
+            "FlightId": "2f5ff8e3-0000-4000-8000-000000001027",
+            "Id": "f07cc888-0000-4000-8000-000000001019",
+            "IsDeleted": false,
+            "SeatNumber": "9F",
+            "Type": "Window"
+          },
+          "links": {
+            "FlightId": "flight-aa100"
+          }
+        }
+      ],
+      "consumedBy": []
+    }
+  ]
+}

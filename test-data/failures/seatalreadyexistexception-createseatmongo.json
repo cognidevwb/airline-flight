@@ -1,0 +1,15 @@
+{
+  "id": "seatalreadyexistexception-createseatmongo",
+  "title": "CreateSeatMongo: the record already exists",
+  "kind": "duplicate",
+  "exception": "SeatAlreadyExistException",
+  "base": "AppException",
+  "thrownAt": "src/Flight/Seats/Features/CreatingSeat/V1/CreateSeatMongo.cs:45",
+  "condition": "if (seat is not null)",
+  "field": null,
+  "expect": {
+    "status": 400,
+    "error": "SeatAlreadyExistException",
+    "note": null
+  }
+}

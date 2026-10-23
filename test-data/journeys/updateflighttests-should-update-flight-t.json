@@ -1,0 +1,17 @@
+{
+  "id": "updateflighttests-should-update-flight-t",
+  "title": "should update flight to db and publish message to broker",
+  "source": "repository test",
+  "file": "tests/IntegrationTest/Flight/Features/UpdateFlightTests.cs:24",
+  "steps": [
+    {
+      "n": 1,
+      "does": "var response = await Fixture.SendAsync(command)"
+    }
+  ],
+  "expect": [
+    "response.Should().NotBeNull()",
+    "response?.Id.Should().Be(flightEntity.Id)",
+    "(await Fixture.WaitForPublishing<FlightUpdated>()).Should().Be(true)"
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "repository": "airline-flight",
+  "domain": "Airline flight operations management",
+  "report": {
+    "rows": 1541,
+    "entities": 40,
+    "coverage": "pairwise"
+  },
+  "reconciled": {
+    "rows": 1541,
+    "matches_report": true
+  },
+  "objects": [
+    {
+      "object": "Aircraft",
+      "table": "Aircraft",
+      "records": 16,
+      "cases": 10,
+      "rejections": 8,
+      "calls": 1,
+      "events": 1,
+      "shapes": [
+        "AircraftCreatedDomainEvent",
+        "AircraftDto",
+        "AircraftReadModel",
+        "CreateAircraft",
+        "CreateAircraftMongo",
+        "CreateAircraftRequestDto"
+      ]
+    },
+    {
+      "object": "Airport",
+      "table": "Airport",
+      "records": 16,
+      "cases": 10,
+      "rejections": 9,
+      "calls": 1,
+      "events": 1,
+      "shapes": [
+        "AirportCreatedDomainEvent",
+        "AirportDto",
+        "AirportReadModel",
+        "CreateAirport",
+        "CreateAirportMongo",
+        "CreateAirportRequestDto"
+      ]
+    },
+    {
+      "object": "Flight",
+      "table": "Flight",
+      "records": 16,
+      "cases": 24,
+      "rejections": 17,
+      "calls": 4,
+      "events": 3,
+      "shapes": [
+        "CreateFlight",
+        "CreateFlightMongo",
+        "CreateFlightRequestDto",
+        "DeleteFlightMongo",
+        "FlightCreatedDomainEvent",
+        "FlightDeletedDomainEvent",
+        "FlightDto",
+        "FlightReadModel",
+        "FlightUpdatedDomainEvent",
+        "GET /",
+        "GetAvailableFlights",
+        "UpdateFlight",
+        "UpdateFlightMongo",
+        "UpdateFlightRequestDto"
+      ]
+    },
+    {
+      "object": "Seat",
+      "table": "Seat",
+      "records": 16,
+      "cases": 16,
+      "rejections": 10,
+      "calls": 5,
+      "events": 2,
+      "shapes": [
+        "CreateSeat",
+        "CreateSeatMongo",
+        "CreateSeatRequestDto",
+        "ReserveSeat",
+        "ReserveSeatMongo",
+        "ReserveSeatRequestDto",
+        "SeatCreatedDomainEvent",
+        "SeatDto",
+        "SeatReadModel",
+        "SeatReservedDomainEvent"
+      ]
+    }
+  ],
+  "calls": 11,
+  "journeys": 17,
+  "failures": 32,
+  "personal": "values that cannot belong to a person: example.com, reserved phone ranges, passport and card numbers that cannot be issued"
+}

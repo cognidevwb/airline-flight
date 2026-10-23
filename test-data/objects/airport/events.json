@@ -1,0 +1,55 @@
+{
+  "object": "Airport",
+  "events": [
+    {
+      "event": "AirportCreatedDomainEvent",
+      "payload": [
+        {
+          "ref": "airport-lhr-2",
+          "kind": "record",
+          "data": {
+            "Address": "Longford TW6, Hounslow, London, UK",
+            "Code": "LHR",
+            "Id": "c9bc0450-0000-4000-8000-000000001010",
+            "IsDeleted": false,
+            "Name": "London Heathrow Airport"
+          }
+        },
+        {
+          "ref": "airport-jfk-2",
+          "kind": "record",
+          "data": {
+            "Address": "Queens, New York, NY 11430, USA",
+            "Code": "JFK",
+            "Id": "c9bc0450-0000-4000-8000-000000001011",
+            "IsDeleted": false,
+            "Name": "John F. Kennedy International Airport"
+          }
+        },
+        {
+          "ref": "airport-dxb-2",
+          "kind": "record",
+          "data": {
+            "Address": "Airport Rd, Al Garhoud, Dubai, UAE",
+            "Code": "DXB",
+            "Id": "c9bc0450-0000-4000-8000-000000001012",
+            "IsDeleted": false,
+            "Name": "Dubai International Airport"
+          }
+        },
+        {
+          "ref": "airport-fra-2",
+          "kind": "record",
+          "data": {
+            "Address": "60547 Frankfurt am Main, Germany",
+            "Code": "FRA",
+            "Id": "c9bc0450-0000-4000-8000-000000001013",
+            "IsDeleted": false,
+            "Name": "Frankfurt Airport"
+          }
+        }
+      ],
+      "consumedBy": []
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "object": "Aircraft",
+  "calls": [
+    {
+      "operation": "POST api/v1/flight/aircraft",
+      "kind": "http",
+      "file": "src/Flight/Aircrafts/Features/CreatingAircraft/V1/CreateAircraft.cs:44",
+      "request": "CreateAircraftRequestDto",
+      "response": "CreateAircraftResponseDto",
+      "valid": [
+        {
+          "ref": "createaircraftrequestdto-1",
+          "body": {
+            "manufacturingYear": 2014,
+            "model": "Boeing 737-800",
+            "name": "Thames Voyager"
+          }
+        },
+        {
+          "ref": "createaircraftrequestdto-2",
+          "body": {
+            "manufacturingYear": 2019,
+            "model": "Airbus A320neo",
+            "name": "Atlantic Dawn"
+          }
+        },
+        {
+          "ref": "createaircraftrequestdto-3",
+          "body": {
+            "manufacturingYear": 2018,
+            "model": "Boeing 787-9",
+            "name": "Desert Falcon"
+          }
+        },
+        {
+          "ref": "createaircraftrequestdto-4",
+          "body": {
+            "manufacturingYear": 2021,
+            "model": "Airbus A321neo",
+            "name": "Highland Star"
+          }
+        },
+        {
+          "ref": "createaircraftrequestdto-5",
+          "body": {
+            "manufacturingYear": 2012,
+            "model": "Boeing 777-300ER",
+            "name": "Golden Gate Spirit"
+          }
+        },
+        {
+          "ref": "createaircraftrequestdto-6",
+          "body": {
+            "manufacturingYear": 2020,
+            "model": "Airbus A220-300",
+            "name": "Nordic Breeze"
+          }
+        }
+      ],
+      "rejections": [
+        {
+          "ref": "createaircraftrequestdto-rejection-1",
+          "body": {
+            "manufacturingYear": 1,
+            "model": "",
+            "name": null
+          },
+          "violates": {
+            "field": "Name",
+            "rule": "`Name` is declared NOT NULL"
+          },
+          "expect": {
+            "status": 400,
+            "why": "the validator in this file has a rule on Name"
+          }
+        },
+        {
+          "ref": "createaircraftrequestdto-rejection-2",
+          "body": {
+            "manufacturingYear": 1,
+            "model": null,
+            "name": ""
+          },
+          "violates": {
+            "field": "Model",
+            "rule": "`Model` is declared NOT NULL"
+          },
+          "expect": {
+            "status": 400,
+            "why": "the validator in this file has a rule on Model"
+          }
+        },
+        {
+          "ref": "createaircraftrequestdto-rejection-3",
+          "body": {
+            "manufacturingYear": null,
+            "model": "",
+            "name": ""
+          },
+          "violates": {
+            "field": "ManufacturingYear",
+            "rule": "`ManufacturingYear` is declared NOT NULL"
+          },
+          "expect": {
+            "status": 400,
+            "why": "the validator in this file has a rule on ManufacturingYear"
+          }
+        }
+      ],
+      "object": "Aircraft"
+    }
+  ]
+}

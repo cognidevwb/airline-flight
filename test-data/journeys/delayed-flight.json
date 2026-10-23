@@ -1,0 +1,116 @@
+{
+  "id": "delayed-flight",
+  "title": "Delayed flight",
+  "source": "staged scenario",
+  "why": "Shows how code handles a flight whose actual arrival has slipped past its schedule while its seats stay bookable and attached.",
+  "setup": [
+    {
+      "ref": "aircraft-1",
+      "table": "Aircraft",
+      "values": {
+        "CreatedAt": "2026-01-10T08:00:00Z",
+        "CreatedBy": 1,
+        "IsDeleted": false,
+        "LastModified": "2026-01-10T08:00:00Z",
+        "LastModifiedBy": 1,
+        "ManufacturingYear": 2018,
+        "Model": "Boeing 787-9",
+        "Name": "Spirit of London",
+        "Version": 1
+      }
+    },
+    {
+      "ref": "airport-dep",
+      "table": "Airport",
+      "values": {
+        "Address": "Longford TW6, London",
+        "Code": "LHR",
+        "CreatedAt": "2026-01-10T08:00:00Z",
+        "CreatedBy": 1,
+        "IsDeleted": false,
+        "LastModified": "2026-01-10T08:00:00Z",
+        "LastModifiedBy": 1,
+        "Name": "Heathrow Airport",
+        "Version": 1
+      }
+    },
+    {
+      "ref": "airport-arr",
+      "table": "Airport",
+      "values": {
+        "Address": "Queens, New York",
+        "Code": "JFK",
+        "CreatedAt": "2026-01-10T08:00:00Z",
+        "CreatedBy": 1,
+        "IsDeleted": false,
+        "LastModified": "2026-01-10T08:00:00Z",
+        "LastModifiedBy": 1,
+        "Name": "John F. Kennedy International",
+        "Version": 1
+      }
+    },
+    {
+      "ref": "flight-1",
+      "table": "Flight",
+      "values": {
+        "AircraftId": "aircraft-1",
+        "ArriveAirportId": "airport-arr",
+        "ArriveDate": "2026-11-05T13:30:00Z",
+        "CreatedAt": "2026-01-15T08:00:00Z",
+        "CreatedBy": 1,
+        "DepartureAirportId": "airport-dep",
+        "DepartureDate": "2026-11-05T09:00:00Z",
+        "DurationMinutes": 120,
+        "FlightDate": "2026-11-05T00:00:00Z",
+        "FlightNumber": "BA117",
+        "IsDeleted": false,
+        "LastModified": "2026-11-05T08:30:00Z",
+        "LastModifiedBy": 2,
+        "Price": 450.5,
+        "Status": "Delay",
+        "Version": 2
+      }
+    },
+    {
+      "ref": "seat-1",
+      "table": "Seat",
+      "values": {
+        "Class": "Economy",
+        "CreatedAt": "2026-01-15T08:00:00Z",
+        "CreatedBy": 1,
+        "FlightId": "flight-1",
+        "IsDeleted": false,
+        "LastModified": "2026-01-15T08:00:00Z",
+        "LastModifiedBy": 1,
+        "SeatNumber": "12A",
+        "Type": "Window",
+        "Version": 1
+      }
+    },
+    {
+      "ref": "seat-2",
+      "table": "Seat",
+      "values": {
+        "Class": "Economy",
+        "CreatedAt": "2026-01-15T08:00:00Z",
+        "CreatedBy": 1,
+        "FlightId": "flight-1",
+        "IsDeleted": false,
+        "LastModified": "2026-01-15T08:00:00Z",
+        "LastModifiedBy": 1,
+        "SeatNumber": "12B",
+        "Type": "Middle",
+        "Version": 1
+      }
+    }
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "does": "Fetch flight BA117 by id and list its seats."
+    }
+  ],
+  "expect": [
+    "The flight is returned with Status Delay and ArriveDate 2026-11-05T13:30Z, which is later than DepartureDate plus DurationMinutes (11:00Z). Both seats 12A and 12B are returned as still attached to the flight."
+  ]
+}

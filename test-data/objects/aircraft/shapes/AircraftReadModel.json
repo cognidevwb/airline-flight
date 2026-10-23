@@ -1,0 +1,456 @@
+{
+  "shape": "AircraftReadModel",
+  "role": "read model",
+  "source": "src/Flight/Aircrafts/Models/AircraftReadModel.cs:5",
+  "columns": [
+    "Id",
+    "AircraftId",
+    "Name",
+    "Model",
+    "ManufacturingYear",
+    "IsDeleted"
+  ],
+  "records": [
+    {
+      "ref": "aircraft-thames-voyager-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": null,
+        "Id": "f057fe93-0000-4000-8000-000000001010",
+        "IsDeleted": false,
+        "ManufacturingYear": 2014,
+        "Model": "Boeing 737-800",
+        "Name": "Thames Voyager"
+      }
+    },
+    {
+      "ref": "aircraft-atlantic-dawn-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": null,
+        "Id": "f057fe93-0000-4000-8000-000000001011",
+        "IsDeleted": false,
+        "ManufacturingYear": 2019,
+        "Model": "Airbus A320neo",
+        "Name": "Atlantic Dawn"
+      }
+    },
+    {
+      "ref": "aircraft-desert-falcon-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": null,
+        "Id": "f057fe93-0000-4000-8000-000000001012",
+        "IsDeleted": false,
+        "ManufacturingYear": 2018,
+        "Model": "Boeing 787-9",
+        "Name": "Desert Falcon"
+      }
+    },
+    {
+      "ref": "aircraft-highland-star-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": null,
+        "Id": "f057fe93-0000-4000-8000-000000001013",
+        "IsDeleted": false,
+        "ManufacturingYear": 2021,
+        "Model": "Airbus A321neo",
+        "Name": "Highland Star"
+      }
+    },
+    {
+      "ref": "aircraft-golden-gate-spirit-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": null,
+        "Id": "f057fe93-0000-4000-8000-000000001014",
+        "IsDeleted": false,
+        "ManufacturingYear": 2012,
+        "Model": "Boeing 777-300ER",
+        "Name": "Golden Gate Spirit"
+      }
+    },
+    {
+      "ref": "aircraft-nordic-breeze-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": null,
+        "Id": "f057fe93-0000-4000-8000-000000001015",
+        "IsDeleted": false,
+        "ManufacturingYear": 2020,
+        "Model": "Airbus A220-300",
+        "Name": "Nordic Breeze"
+      }
+    },
+    {
+      "ref": "aircraft-silver-meridian-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": null,
+        "Id": "f057fe93-0000-4000-8000-000000001016",
+        "IsDeleted": false,
+        "ManufacturingYear": 2022,
+        "Model": "Airbus A350-900",
+        "Name": "Silver Meridian"
+      }
+    },
+    {
+      "ref": "aircraft-emerald-isle-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": null,
+        "Id": "f057fe93-0000-4000-8000-000000001017",
+        "IsDeleted": false,
+        "ManufacturingYear": 2018,
+        "Model": "Boeing 737 MAX 8",
+        "Name": "Emerald Isle"
+      }
+    },
+    {
+      "ref": "aircraft-sahara-crown-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": null,
+        "Id": "f057fe93-0000-4000-8000-000000001018",
+        "IsDeleted": false,
+        "ManufacturingYear": 2011,
+        "Model": "Airbus A330-300",
+        "Name": "Sahara Crown"
+      }
+    },
+    {
+      "ref": "aircraft-pacific-horizon-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": null,
+        "Id": "f057fe93-0000-4000-8000-000000001019",
+        "IsDeleted": false,
+        "ManufacturingYear": 2015,
+        "Model": "Boeing 787-8",
+        "Name": "Pacific Horizon"
+      }
+    },
+    {
+      "ref": "aircraft-alpine-lark-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": null,
+        "Id": "f057fe93-0000-4000-8000-000000001020",
+        "IsDeleted": false,
+        "ManufacturingYear": 2009,
+        "Model": "Embraer E190",
+        "Name": "Alpine Lark"
+      }
+    },
+    {
+      "ref": "aircraft-royal-albatross-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": null,
+        "Id": "f057fe93-0000-4000-8000-000000001021",
+        "IsDeleted": true,
+        "ManufacturingYear": 2013,
+        "Model": "Airbus A380-800",
+        "Name": "Royal Albatross"
+      }
+    },
+    {
+      "ref": "aircraft-cape-mariner-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": null,
+        "Id": "f057fe93-0000-4000-8000-000000001022",
+        "IsDeleted": false,
+        "ManufacturingYear": 2006,
+        "Model": "Boeing 767-300ER",
+        "Name": "Cape Mariner"
+      }
+    },
+    {
+      "ref": "aircraft-baltic-swift-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": null,
+        "Id": "f057fe93-0000-4000-8000-000000001023",
+        "IsDeleted": false,
+        "ManufacturingYear": 2008,
+        "Model": "Airbus A319-100",
+        "Name": "Baltic Swift"
+      }
+    },
+    {
+      "ref": "aircraft-evening-heron-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": null,
+        "Id": "f057fe93-0000-4000-8000-000000001024",
+        "IsDeleted": false,
+        "ManufacturingYear": 2016,
+        "Model": "Boeing 747-8",
+        "Name": "Evening Heron"
+      }
+    },
+    {
+      "ref": "aircraft-old-faithful-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": null,
+        "Id": "f057fe93-0000-4000-8000-000000001025",
+        "IsDeleted": true,
+        "ManufacturingYear": 2001,
+        "Model": "Boeing 757-200",
+        "Name": "Old Faithful"
+      }
+    }
+  ],
+  "cases": [
+    {
+      "ref": "aircraftreadmodel-case-1",
+      "kind": "case",
+      "data": {
+        "AircraftId": "00000000-0000-4000-8000-000000000000",
+        "Id": "00000000-0000-4000-8000-000000000000",
+        "IsDeleted": true,
+        "ManufacturingYear": 1,
+        "Model": "",
+        "Name": ""
+      },
+      "case": "covering-0001"
+    },
+    {
+      "ref": "aircraftreadmodel-case-2",
+      "kind": "case",
+      "data": {
+        "AircraftId": "00000000-0000-4000-8000-000000000000",
+        "Id": "f057fe93-0000-4000-8000-000000001002",
+        "IsDeleted": true,
+        "ManufacturingYear": 2022,
+        "Model": "text",
+        "Name": "text"
+      },
+      "case": "covering-0002"
+    },
+    {
+      "ref": "aircraftreadmodel-case-3",
+      "kind": "case",
+      "data": {
+        "AircraftId": "00000000-0000-4000-8000-000000000000",
+        "Id": "f057fe93-0000-4000-8000-000000001004",
+        "IsDeleted": true,
+        "ManufacturingYear": 1,
+        "Model": "STR_0001",
+        "Name": "Alice Whitfield"
+      },
+      "case": "covering-0003"
+    },
+    {
+      "ref": "aircraftreadmodel-case-4",
+      "kind": "case",
+      "data": {
+        "AircraftId": "00000000-0000-4000-8000-000000000000",
+        "Id": "f057fe93-0000-4000-8000-000000001002",
+        "IsDeleted": true,
+        "ManufacturingYear": 1,
+        "Model": "text",
+        "Name": ""
+      },
+      "case": "covering-0004"
+    },
+    {
+      "ref": "aircraftreadmodel-case-5",
+      "kind": "case",
+      "data": {
+        "AircraftId": "00000000-0000-4000-8000-000000000000",
+        "Id": "f057fe93-0000-4000-8000-000000001001",
+        "IsDeleted": true,
+        "ManufacturingYear": 2022,
+        "Model": "STR_0001",
+        "Name": ""
+      },
+      "case": "covering-0005"
+    },
+    {
+      "ref": "aircraftreadmodel-case-6",
+      "kind": "case",
+      "data": {
+        "AircraftId": "00000000-0000-4000-8000-000000000000",
+        "Id": "f057fe93-0000-4000-8000-000000001002",
+        "IsDeleted": true,
+        "ManufacturingYear": 1,
+        "Model": "",
+        "Name": "text"
+      },
+      "case": "covering-0006"
+    },
+    {
+      "ref": "aircraftreadmodel-case-7",
+      "kind": "case",
+      "data": {
+        "AircraftId": "00000000-0000-4000-8000-000000000000",
+        "Id": "f057fe93-0000-4000-8000-000000001002",
+        "IsDeleted": true,
+        "ManufacturingYear": 1,
+        "Model": "STR_0001",
+        "Name": "text"
+      },
+      "case": "covering-0007"
+    },
+    {
+      "ref": "aircraftreadmodel-case-8",
+      "kind": "case",
+      "data": {
+        "AircraftId": "00000000-0000-4000-8000-000000000000",
+        "Id": "f057fe93-0000-4000-8000-000000001004",
+        "IsDeleted": true,
+        "ManufacturingYear": 2022,
+        "Model": "",
+        "Name": "Alice Whitfield"
+      },
+      "case": "covering-0008"
+    },
+    {
+      "ref": "aircraftreadmodel-case-9",
+      "kind": "case",
+      "data": {
+        "AircraftId": "00000000-0000-4000-8000-000000000000",
+        "Id": "f057fe93-0000-4000-8000-000000001004",
+        "IsDeleted": true,
+        "ManufacturingYear": 1,
+        "Model": "text",
+        "Name": "Alice Whitfield"
+      },
+      "case": "covering-0009"
+    }
+  ],
+  "rejections": [
+    {
+      "ref": "aircraftreadmodel-rejection-1",
+      "kind": "rejection",
+      "data": {
+        "AircraftId": "00000000-0000-4000-8000-000000000000",
+        "Id": null,
+        "IsDeleted": true,
+        "ManufacturingYear": 1,
+        "Model": "",
+        "Name": ""
+      },
+      "violates": {
+        "field": "Id",
+        "rule": "`Id` is declared NOT NULL"
+      }
+    },
+    {
+      "ref": "aircraftreadmodel-rejection-2",
+      "kind": "rejection",
+      "data": {
+        "AircraftId": "00000000-0000-4000-8000-000000000000",
+        "Id": "not-a-uuid",
+        "IsDeleted": true,
+        "ManufacturingYear": 1,
+        "Model": "",
+        "Name": ""
+      },
+      "violates": {
+        "field": "Id",
+        "rule": "violates a declared constraint on `Id`"
+      }
+    },
+    {
+      "ref": "aircraftreadmodel-rejection-3",
+      "kind": "rejection",
+      "data": {
+        "AircraftId": null,
+        "Id": "00000000-0000-4000-8000-000000000000",
+        "IsDeleted": true,
+        "ManufacturingYear": 1,
+        "Model": "",
+        "Name": ""
+      },
+      "violates": {
+        "field": "AircraftId",
+        "rule": "`AircraftId` is declared NOT NULL"
+      }
+    },
+    {
+      "ref": "aircraftreadmodel-rejection-4",
+      "kind": "rejection",
+      "data": {
+        "AircraftId": "not-a-uuid",
+        "Id": "00000000-0000-4000-8000-000000000000",
+        "IsDeleted": true,
+        "ManufacturingYear": 1,
+        "Model": "",
+        "Name": ""
+      },
+      "violates": {
+        "field": "AircraftId",
+        "rule": "violates a declared constraint on `AircraftId`"
+      }
+    },
+    {
+      "ref": "aircraftreadmodel-rejection-5",
+      "kind": "rejection",
+      "data": {
+        "AircraftId": "00000000-0000-4000-8000-000000000000",
+        "Id": "00000000-0000-4000-8000-000000000000",
+        "IsDeleted": true,
+        "ManufacturingYear": 1,
+        "Model": "",
+        "Name": null
+      },
+      "violates": {
+        "field": "Name",
+        "rule": "`Name` is declared NOT NULL"
+      }
+    },
+    {
+      "ref": "aircraftreadmodel-rejection-6",
+      "kind": "rejection",
+      "data": {
+        "AircraftId": "00000000-0000-4000-8000-000000000000",
+        "Id": "00000000-0000-4000-8000-000000000000",
+        "IsDeleted": true,
+        "ManufacturingYear": 1,
+        "Model": null,
+        "Name": ""
+      },
+      "violates": {
+        "field": "Model",
+        "rule": "`Model` is declared NOT NULL"
+      }
+    },
+    {
+      "ref": "aircraftreadmodel-rejection-7",
+      "kind": "rejection",
+      "data": {
+        "AircraftId": "00000000-0000-4000-8000-000000000000",
+        "Id": "00000000-0000-4000-8000-000000000000",
+        "IsDeleted": true,
+        "ManufacturingYear": null,
+        "Model": "",
+        "Name": ""
+      },
+      "violates": {
+        "field": "ManufacturingYear",
+        "rule": "`ManufacturingYear` is declared NOT NULL"
+      }
+    },
+    {
+      "ref": "aircraftreadmodel-rejection-8",
+      "kind": "rejection",
+      "data": {
+        "AircraftId": "00000000-0000-4000-8000-000000000000",
+        "Id": "00000000-0000-4000-8000-000000000000",
+        "IsDeleted": null,
+        "ManufacturingYear": 1,
+        "Model": "",
+        "Name": ""
+      },
+      "violates": {
+        "field": "IsDeleted",
+        "rule": "`IsDeleted` is declared NOT NULL"
+      }
+    }
+  ]
+}

@@ -1,0 +1,575 @@
+{
+  "object": "Flight",
+  "calls": [
+    {
+      "operation": "gRPC FlightGrpcService/GetById",
+      "kind": "grpc",
+      "file": "src/Flight/GrpcServer/Protos/flight.proto:8",
+      "request": "GetByIdRequest",
+      "requestFields": [
+        "Id"
+      ],
+      "response": "GetFlightByIdResult",
+      "object": "Flight"
+    },
+    {
+      "operation": "POST api/v1/flight",
+      "kind": "http",
+      "file": "src/Flight/Flights/Features/CreatingFlight/V1/CreateFlight.cs:49",
+      "request": "CreateFlightRequestDto",
+      "response": "CreateFlightResponseDto",
+      "valid": [
+        {
+          "ref": "createflightrequestdto-1",
+          "body": {
+            "aircraftId": "f057fe93-0000-4000-8000-000000001014",
+            "arriveAirportId": "c9bc0450-0000-4000-8000-000000001011",
+            "arriveDate": "2026-10-20T18:15:00Z",
+            "departureAirportId": "c9bc0450-0000-4000-8000-000000001010",
+            "departureDate": "2026-10-20T10:30:00Z",
+            "durationMinutes": 465.0,
+            "flightDate": "2026-10-20T00:00:00Z",
+            "flightNumber": "BA117",
+            "price": 1200.0,
+            "status": "Completed"
+          }
+        },
+        {
+          "ref": "createflightrequestdto-2",
+          "body": {
+            "aircraftId": "f057fe93-0000-4000-8000-000000001021",
+            "arriveAirportId": "c9bc0450-0000-4000-8000-000000001016",
+            "arriveDate": "2026-10-21T20:45:00Z",
+            "departureAirportId": "c9bc0450-0000-4000-8000-000000001013",
+            "departureDate": "2026-10-21T09:05:00Z",
+            "durationMinutes": 700.0,
+            "flightDate": "2026-10-21T00:00:00Z",
+            "flightNumber": "LH441",
+            "price": 849.0,
+            "status": "Completed"
+          }
+        },
+        {
+          "ref": "createflightrequestdto-3",
+          "body": {
+            "aircraftId": "f057fe93-0000-4000-8000-000000001016",
+            "arriveAirportId": "c9bc0450-0000-4000-8000-000000001017",
+            "arriveDate": "2026-10-23T15:10:00Z",
+            "departureAirportId": "c9bc0450-0000-4000-8000-000000001012",
+            "departureDate": "2026-10-23T08:20:00Z",
+            "durationMinutes": 410.0,
+            "flightDate": "2026-10-23T00:00:00Z",
+            "flightNumber": "EK202",
+            "price": 455.5,
+            "status": "Flying"
+          }
+        },
+        {
+          "ref": "createflightrequestdto-4",
+          "body": {
+            "aircraftId": "f057fe93-0000-4000-8000-000000001019",
+            "arriveAirportId": "c9bc0450-0000-4000-8000-000000001014",
+            "arriveDate": "2026-10-24T07:05:00Z",
+            "departureAirportId": "c9bc0450-0000-4000-8000-000000001011",
+            "departureDate": "2026-10-23T23:45:00Z",
+            "durationMinutes": 440.0,
+            "flightDate": "2026-10-23T00:00:00Z",
+            "flightNumber": "AA100",
+            "price": 612.75,
+            "status": "Delay"
+          }
+        },
+        {
+          "ref": "createflightrequestdto-5",
+          "body": {
+            "aircraftId": "f057fe93-0000-4000-8000-000000001012",
+            "arriveAirportId": "c9bc0450-0000-4000-8000-000000001023",
+            "arriveDate": "2026-10-25T07:50:00Z",
+            "departureAirportId": "c9bc0450-0000-4000-8000-000000001015",
+            "departureDate": "2026-10-25T01:10:00Z",
+            "durationMinutes": 400.0,
+            "flightDate": "2026-10-25T00:00:00Z",
+            "flightNumber": "SQ322",
+            "price": 389.0,
+            "status": "Unknown"
+          }
+        },
+        {
+          "ref": "createflightrequestdto-6",
+          "body": {
+            "aircraftId": "f057fe93-0000-4000-8000-000000001023",
+            "arriveAirportId": "c9bc0450-0000-4000-8000-000000001022",
+            "arriveDate": "2026-10-22T08:50:00Z",
+            "departureAirportId": "c9bc0450-0000-4000-8000-000000001014",
+            "departureDate": "2026-10-22T06:45:00Z",
+            "durationMinutes": 125.0,
+            "flightDate": "2026-10-22T00:00:00Z",
+            "flightNumber": "AF1381",
+            "price": 89.99,
+            "status": "Completed"
+          }
+        }
+      ],
+      "rejections": [
+        {
+          "ref": "createflightrequestdto-rejection-1",
+          "body": {
+            "aircraftId": "f057fe93-0000-4000-8000-000000001000",
+            "arriveAirportId": "c9bc0450-0000-4000-8000-000000001005",
+            "arriveDate": "2026-03-01T07:30:00Z",
+            "departureAirportId": "c9bc0450-0000-4000-8000-000000001000",
+            "departureDate": "2026-03-01T06:00:00Z",
+            "durationMinutes": 1.0,
+            "flightDate": "2026-03-01T09:00:00Z",
+            "flightNumber": null,
+            "price": 100.0,
+            "status": "Unknown"
+          },
+          "violates": {
+            "field": "FlightNumber",
+            "rule": "`FlightNumber` is declared NOT NULL"
+          },
+          "expect": {
+            "status": 500,
+            "why": "InvalidFlightNumberException from src/Flight/Flights/ValueObjects/FlightNumber.cs:18 (not mapped to a 4xx)"
+          }
+        },
+        {
+          "ref": "createflightrequestdto-rejection-2",
+          "body": {
+            "aircraftId": "f057fe93-0000-4000-8000-000000001000",
+            "arriveAirportId": "c9bc0450-0000-4000-8000-000000001005",
+            "arriveDate": "2026-03-01T07:30:00Z",
+            "departureAirportId": "c9bc0450-0000-4000-8000-000000001000",
+            "departureDate": "2026-03-01T06:00:00Z",
+            "durationMinutes": 1.0,
+            "flightDate": "2026-03-01T09:00:00Z",
+            "flightNumber": "",
+            "price": 100.0,
+            "status": "Unknown"
+          },
+          "violates": {
+            "field": "AircraftId",
+            "rule": "`AircraftId` is declared NOT NULL"
+          },
+          "expect": {
+            "status": 400,
+            "why": "the validator in this file has a rule on AircraftId"
+          }
+        },
+        {
+          "ref": "createflightrequestdto-rejection-3",
+          "body": {
+            "aircraftId": "not-a-uuid",
+            "arriveAirportId": "00000000-0000-4000-8000-000000000000",
+            "arriveDate": "2026-03-01T07:30:00Z",
+            "departureAirportId": "00000000-0000-4000-8000-000000000000",
+            "departureDate": "2026-03-01T06:00:00Z",
+            "durationMinutes": 1.0,
+            "flightDate": "2026-03-01T09:00:00Z",
+            "flightNumber": "",
+            "price": 100.0,
+            "status": "Unknown"
+          },
+          "violates": {
+            "field": "AircraftId",
+            "rule": "violates a declared constraint on `AircraftId`"
+          },
+          "expect": {
+            "status": 400,
+            "why": "the validator in this file has a rule on AircraftId"
+          }
+        },
+        {
+          "ref": "createflightrequestdto-rejection-4",
+          "body": {
+            "aircraftId": "f057fe93-0000-4000-8000-000000001000",
+            "arriveAirportId": "c9bc0450-0000-4000-8000-000000001005",
+            "arriveDate": "2026-03-01T07:30:00Z",
+            "departureAirportId": "c9bc0450-0000-4000-8000-000000001000",
+            "departureDate": "2026-03-01T06:00:00Z",
+            "durationMinutes": 1.0,
+            "flightDate": "2026-03-01T09:00:00Z",
+            "flightNumber": "",
+            "price": 100.0,
+            "status": "Unknown"
+          },
+          "violates": {
+            "field": "DepartureAirportId",
+            "rule": "`DepartureAirportId` is declared NOT NULL"
+          },
+          "expect": {
+            "status": 400,
+            "why": "the validator in this file has a rule on DepartureAirportId"
+          }
+        },
+        {
+          "ref": "createflightrequestdto-rejection-5",
+          "body": {
+            "aircraftId": "f057fe93-0000-4000-8000-000000001000",
+            "arriveAirportId": "c9bc0450-0000-4000-8000-000000001005",
+            "arriveDate": "2026-03-01T07:30:00Z",
+            "departureAirportId": "c9bc0450-0000-4000-8000-000000001000",
+            "departureDate": "2026-03-01T06:00:00Z",
+            "durationMinutes": 1.0,
+            "flightDate": "2026-03-01T09:00:00Z",
+            "flightNumber": "",
+            "price": 100.0,
+            "status": "Unknown"
+          },
+          "violates": {
+            "field": "DepartureAirportId",
+            "rule": "violates a declared constraint on `DepartureAirportId`"
+          },
+          "expect": {
+            "status": 400,
+            "why": "the validator in this file has a rule on DepartureAirportId"
+          }
+        },
+        {
+          "ref": "createflightrequestdto-rejection-6",
+          "body": {
+            "aircraftId": "f057fe93-0000-4000-8000-000000001000",
+            "arriveAirportId": "c9bc0450-0000-4000-8000-000000001005",
+            "arriveDate": "2026-03-01T07:30:00Z",
+            "departureAirportId": "c9bc0450-0000-4000-8000-000000001000",
+            "departureDate": null,
+            "durationMinutes": 1.0,
+            "flightDate": "2026-03-01T09:00:00Z",
+            "flightNumber": "",
+            "price": 100.0,
+            "status": "Unknown"
+          },
+          "violates": {
+            "field": "DepartureDate",
+            "rule": "`DepartureDate` is declared NOT NULL"
+          },
+          "expect": {
+            "status": 500,
+            "why": "InvalidDepartureDateException from src/Flight/Flights/ValueObjects/DepartureDate.cs:20 (not mapped to a 4xx)"
+          }
+        },
+        {
+          "ref": "createflightrequestdto-rejection-7",
+          "body": {
+            "aircraftId": "f057fe93-0000-4000-8000-000000001000",
+            "arriveAirportId": "c9bc0450-0000-4000-8000-000000001005",
+            "arriveDate": "2026-03-01T07:30:00Z",
+            "departureAirportId": "c9bc0450-0000-4000-8000-000000001000",
+            "departureDate": "not-a-date",
+            "durationMinutes": 1.0,
+            "flightDate": "2026-03-01T09:00:00Z",
+            "flightNumber": "",
+            "price": 100.0,
+            "status": "Unknown"
+          },
+          "violates": {
+            "field": "DepartureDate",
+            "rule": "not a value `DateTime` accepts"
+          },
+          "expect": {
+            "status": 500,
+            "why": "InvalidDepartureDateException from src/Flight/Flights/ValueObjects/DepartureDate.cs:20 (not mapped to a 4xx)"
+          }
+        },
+        {
+          "ref": "createflightrequestdto-rejection-8",
+          "body": {
+            "aircraftId": "f057fe93-0000-4000-8000-000000001000",
+            "arriveAirportId": "c9bc0450-0000-4000-8000-000000001005",
+            "arriveDate": null,
+            "departureAirportId": "c9bc0450-0000-4000-8000-000000001000",
+            "departureDate": "2026-03-01T06:00:00Z",
+            "durationMinutes": 1.0,
+            "flightDate": "2026-03-01T09:00:00Z",
+            "flightNumber": "",
+            "price": 100.0,
+            "status": "Unknown"
+          },
+          "violates": {
+            "field": "ArriveDate",
+            "rule": "`ArriveDate` is declared NOT NULL"
+          },
+          "expect": {
+            "status": 500,
+            "why": "InvalidArriveDateException from src/Flight/Flights/ValueObjects/ArriveDate.cs:19 (not mapped to a 4xx)"
+          }
+        },
+        {
+          "ref": "createflightrequestdto-rejection-9",
+          "body": {
+            "aircraftId": "f057fe93-0000-4000-8000-000000001000",
+            "arriveAirportId": "c9bc0450-0000-4000-8000-000000001005",
+            "arriveDate": "not-a-date",
+            "departureAirportId": "c9bc0450-0000-4000-8000-000000001000",
+            "departureDate": "2026-03-01T06:00:00Z",
+            "durationMinutes": 1.0,
+            "flightDate": "2026-03-01T09:00:00Z",
+            "flightNumber": "",
+            "price": 100.0,
+            "status": "Unknown"
+          },
+          "violates": {
+            "field": "ArriveDate",
+            "rule": "not a value `DateTime` accepts"
+          },
+          "expect": {
+            "status": 500,
+            "why": "InvalidArriveDateException from src/Flight/Flights/ValueObjects/ArriveDate.cs:19 (not mapped to a 4xx)"
+          }
+        },
+        {
+          "ref": "createflightrequestdto-rejection-10",
+          "body": {
+            "aircraftId": "f057fe93-0000-4000-8000-000000001000",
+            "arriveAirportId": "c9bc0450-0000-4000-8000-000000001005",
+            "arriveDate": "2026-03-01T07:30:00Z",
+            "departureAirportId": "c9bc0450-0000-4000-8000-000000001000",
+            "departureDate": "2026-03-01T06:00:00Z",
+            "durationMinutes": 1.0,
+            "flightDate": "2026-03-01T09:00:00Z",
+            "flightNumber": "",
+            "price": 100.0,
+            "status": "Unknown"
+          },
+          "violates": {
+            "field": "ArriveAirportId",
+            "rule": "`ArriveAirportId` is declared NOT NULL"
+          },
+          "expect": {
+            "status": 400,
+            "why": "the validator in this file has a rule on ArriveAirportId"
+          }
+        },
+        {
+          "ref": "createflightrequestdto-rejection-11",
+          "body": {
+            "aircraftId": "00000000-0000-4000-8000-000000000000",
+            "arriveAirportId": "not-a-uuid",
+            "arriveDate": "2026-03-01T07:30:00Z",
+            "departureAirportId": "00000000-0000-4000-8000-000000000000",
+            "departureDate": "2026-03-01T06:00:00Z",
+            "durationMinutes": 1.0,
+            "flightDate": "2026-03-01T09:00:00Z",
+            "flightNumber": "",
+            "price": 100.0,
+            "status": "Unknown"
+          },
+          "violates": {
+            "field": "ArriveAirportId",
+            "rule": "violates a declared constraint on `ArriveAirportId`"
+          },
+          "expect": {
+            "status": 400,
+            "why": "the validator in this file has a rule on ArriveAirportId"
+          }
+        },
+        {
+          "ref": "createflightrequestdto-rejection-12",
+          "body": {
+            "aircraftId": "f057fe93-0000-4000-8000-000000001000",
+            "arriveAirportId": "c9bc0450-0000-4000-8000-000000001005",
+            "arriveDate": "2026-03-01T07:30:00Z",
+            "departureAirportId": "c9bc0450-0000-4000-8000-000000001000",
+            "departureDate": "2026-03-01T06:00:00Z",
+            "durationMinutes": null,
+            "flightDate": "2026-03-01T09:00:00Z",
+            "flightNumber": "",
+            "price": 100.0,
+            "status": "Unknown"
+          },
+          "violates": {
+            "field": "DurationMinutes",
+            "rule": "`DurationMinutes` is declared NOT NULL"
+          },
+          "expect": {
+            "status": 400,
+            "why": "the validator in this file has a rule on DurationMinutes"
+          }
+        },
+        {
+          "ref": "createflightrequestdto-rejection-13",
+          "body": {
+            "aircraftId": "f057fe93-0000-4000-8000-000000001000",
+            "arriveAirportId": "c9bc0450-0000-4000-8000-000000001005",
+            "arriveDate": "2026-03-01T07:30:00Z",
+            "departureAirportId": "c9bc0450-0000-4000-8000-000000001000",
+            "departureDate": "2026-03-01T06:00:00Z",
+            "durationMinutes": 1.0,
+            "flightDate": null,
+            "flightNumber": "",
+            "price": 100.0,
+            "status": "Unknown"
+          },
+          "violates": {
+            "field": "FlightDate",
+            "rule": "`FlightDate` is declared NOT NULL"
+          },
+          "expect": {
+            "status": 400,
+            "why": "the validator in this file has a rule on FlightDate"
+          }
+        },
+        {
+          "ref": "createflightrequestdto-rejection-14",
+          "body": {
+            "aircraftId": "f057fe93-0000-4000-8000-000000001000",
+            "arriveAirportId": "c9bc0450-0000-4000-8000-000000001005",
+            "arriveDate": "2026-03-01T07:30:00Z",
+            "departureAirportId": "c9bc0450-0000-4000-8000-000000001000",
+            "departureDate": "2026-03-01T06:00:00Z",
+            "durationMinutes": 1.0,
+            "flightDate": "not-a-date",
+            "flightNumber": "",
+            "price": 100.0,
+            "status": "Unknown"
+          },
+          "violates": {
+            "field": "FlightDate",
+            "rule": "not a value `DateTime` accepts"
+          },
+          "expect": {
+            "status": 400,
+            "why": "the validator in this file has a rule on FlightDate"
+          }
+        },
+        {
+          "ref": "createflightrequestdto-rejection-15",
+          "body": {
+            "aircraftId": "f057fe93-0000-4000-8000-000000001000",
+            "arriveAirportId": "c9bc0450-0000-4000-8000-000000001005",
+            "arriveDate": "2026-03-01T07:30:00Z",
+            "departureAirportId": "c9bc0450-0000-4000-8000-000000001000",
+            "departureDate": "2026-03-01T06:00:00Z",
+            "durationMinutes": 1.0,
+            "flightDate": "2026-03-01T09:00:00Z",
+            "flightNumber": "",
+            "price": 100.0,
+            "status": null
+          },
+          "violates": {
+            "field": "Status",
+            "rule": "`Status` is declared NOT NULL"
+          },
+          "expect": {
+            "status": 400,
+            "why": "the validator in this file has a rule on Status"
+          }
+        },
+        {
+          "ref": "createflightrequestdto-rejection-16",
+          "body": {
+            "aircraftId": "f057fe93-0000-4000-8000-000000001000",
+            "arriveAirportId": "c9bc0450-0000-4000-8000-000000001005",
+            "arriveDate": "2026-03-01T07:30:00Z",
+            "departureAirportId": "c9bc0450-0000-4000-8000-000000001000",
+            "departureDate": "2026-03-01T06:00:00Z",
+            "durationMinutes": 1.0,
+            "flightDate": "2026-03-01T09:00:00Z",
+            "flightNumber": "",
+            "price": 100.0,
+            "status": "__INVALID__"
+          },
+          "violates": {
+            "field": "Status",
+            "rule": "violates a declared constraint on `Status`"
+          },
+          "expect": {
+            "status": 400,
+            "why": "the validator in this file has a rule on Status"
+          }
+        },
+        {
+          "ref": "createflightrequestdto-rejection-17",
+          "body": {
+            "aircraftId": "f057fe93-0000-4000-8000-000000001000",
+            "arriveAirportId": "c9bc0450-0000-4000-8000-000000001005",
+            "arriveDate": "2026-03-01T07:30:00Z",
+            "departureAirportId": "c9bc0450-0000-4000-8000-000000001000",
+            "departureDate": "2026-03-01T06:00:00Z",
+            "durationMinutes": 1.0,
+            "flightDate": "2026-03-01T09:00:00Z",
+            "flightNumber": "",
+            "price": null,
+            "status": "Unknown"
+          },
+          "violates": {
+            "field": "Price",
+            "rule": "`Price` is declared NOT NULL"
+          },
+          "expect": {
+            "status": 400,
+            "why": "the validator in this file has a rule on Price"
+          }
+        },
+        {
+          "ref": "createflightrequestdto-rejection-18",
+          "body": {
+            "aircraftId": "f057fe93-0000-4000-8000-000000001000",
+            "arriveAirportId": "c9bc0450-0000-4000-8000-000000001005",
+            "arriveDate": "2026-03-01T07:30:00Z",
+            "departureAirportId": "c9bc0450-0000-4000-8000-000000001000",
+            "departureDate": "2026-03-01T06:00:00Z",
+            "durationMinutes": 1.0,
+            "flightDate": "2026-03-01T09:00:00Z",
+            "flightNumber": "",
+            "price": -0.01,
+            "status": "Unknown"
+          },
+          "violates": {
+            "field": "Price",
+            "rule": "outside the range `decimal` accepts"
+          },
+          "expect": {
+            "status": 400,
+            "why": "the validator in this file has a rule on Price"
+          }
+        }
+      ],
+      "object": "Flight"
+    },
+    {
+      "operation": "GET api/v1/flight/get-available-flights",
+      "kind": "http",
+      "file": "src/Flight/Flights/Features/GettingAvailableFlights/V1/GetAvailableFlights.cs:40",
+      "request": null,
+      "response": "GetAvailableFlightsResponseDto",
+      "object": "Flight"
+    },
+    {
+      "operation": "GET api/v1/flight/{{id}}",
+      "kind": "http",
+      "file": "src/Flight/Flights/Features/GettingFlightById/V1/GetFlightById.cs:33",
+      "request": null,
+      "response": "GetFlightByIdResponseDto",
+      "path": "api/v1/flight/{id}",
+      "valid": [
+        {
+          "ref": "flight-ba117",
+          "params": {
+            "id": "2f5ff8e3-0000-4000-8000-000000001024"
+          }
+        },
+        {
+          "ref": "flight-lh441",
+          "params": {
+            "id": "2f5ff8e3-0000-4000-8000-000000001025"
+          }
+        },
+        {
+          "ref": "flight-ek202",
+          "params": {
+            "id": "2f5ff8e3-0000-4000-8000-000000001026"
+          }
+        },
+        {
+          "ref": "flight-aa100",
+          "params": {
+            "id": "2f5ff8e3-0000-4000-8000-000000001027"
+          }
+        }
+      ],
+      "object": "Flight"
+    }
+  ]
+}

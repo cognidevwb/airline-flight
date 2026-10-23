@@ -1,0 +1,15 @@
+{
+  "id": "flightalreadyexistexception-createflightmongo",
+  "title": "CreateFlightMongo: the record already exists",
+  "kind": "duplicate",
+  "exception": "FlightAlreadyExistException",
+  "base": "AppException",
+  "thrownAt": "src/Flight/Flights/Features/CreatingFlight/V1/CreateFlightMongo.cs:45",
+  "condition": "if (flight is not null)",
+  "field": null,
+  "expect": {
+    "status": 400,
+    "error": "FlightAlreadyExistException",
+    "note": null
+  }
+}

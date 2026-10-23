@@ -1,0 +1,17 @@
+{
+  "id": "createflighttests-should-create-new-flig",
+  "title": "should create new flight to db and publish message to broker",
+  "source": "repository test",
+  "file": "tests/IntegrationTest/Flight/Features/CreateFlightTests.cs:18",
+  "steps": [
+    {
+      "n": 1,
+      "does": "var response = await Fixture.SendAsync(command)"
+    }
+  ],
+  "expect": [
+    "response.Should().NotBeNull()",
+    "response?.Id.Should().Be(command.Id)",
+    "(await Fixture.WaitForPublishing<FlightCreated>()).Should().Be(true)"
+  ]
+}

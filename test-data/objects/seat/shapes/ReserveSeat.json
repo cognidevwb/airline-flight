@@ -1,0 +1,260 @@
+{
+  "shape": "ReserveSeat",
+  "role": "command",
+  "source": "src/Flight/Seats/Features/ReservingSeat/V1/ReserveSeat.cs:22",
+  "columns": [
+    "FlightId",
+    "SeatNumber"
+  ],
+  "records": [
+    {
+      "ref": "seat-1a-5",
+      "kind": "record",
+      "data": {
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001024",
+        "SeatNumber": "1A"
+      },
+      "links": {
+        "FlightId": "flight-ba117"
+      }
+    },
+    {
+      "ref": "seat-2c-5",
+      "kind": "record",
+      "data": {
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001025",
+        "SeatNumber": "2C"
+      },
+      "links": {
+        "FlightId": "flight-lh441"
+      }
+    },
+    {
+      "ref": "seat-7d-5",
+      "kind": "record",
+      "data": {
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001026",
+        "SeatNumber": "7D"
+      },
+      "links": {
+        "FlightId": "flight-ek202"
+      }
+    },
+    {
+      "ref": "seat-9f-5",
+      "kind": "record",
+      "data": {
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001027",
+        "SeatNumber": "9F"
+      },
+      "links": {
+        "FlightId": "flight-aa100"
+      }
+    },
+    {
+      "ref": "seat-12c-5",
+      "kind": "record",
+      "data": {
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001028",
+        "SeatNumber": "12C"
+      },
+      "links": {
+        "FlightId": "flight-sq322"
+      }
+    },
+    {
+      "ref": "seat-14b-5",
+      "kind": "record",
+      "data": {
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001029",
+        "SeatNumber": "14B"
+      },
+      "links": {
+        "FlightId": "flight-af1381"
+      }
+    },
+    {
+      "ref": "seat-17a-5",
+      "kind": "record",
+      "data": {
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001030",
+        "SeatNumber": "17A"
+      },
+      "links": {
+        "FlightId": "flight-tk80"
+      }
+    },
+    {
+      "ref": "seat-19e-5",
+      "kind": "record",
+      "data": {
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001031",
+        "SeatNumber": "19E"
+      },
+      "links": {
+        "FlightId": "flight-qr701"
+      }
+    },
+    {
+      "ref": "seat-21d-5",
+      "kind": "record",
+      "data": {
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001032",
+        "SeatNumber": "21D"
+      },
+      "links": {
+        "FlightId": "flight-ac849"
+      }
+    },
+    {
+      "ref": "seat-23a-5",
+      "kind": "record",
+      "data": {
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001033",
+        "SeatNumber": "23A"
+      },
+      "links": {
+        "FlightId": "flight-kl1007"
+      }
+    },
+    {
+      "ref": "seat-27f-5",
+      "kind": "record",
+      "data": {
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001034",
+        "SeatNumber": "27F"
+      },
+      "links": {
+        "FlightId": "flight-cx880"
+      }
+    },
+    {
+      "ref": "seat-30c-5",
+      "kind": "record",
+      "data": {
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001035",
+        "SeatNumber": "30C"
+      },
+      "links": {
+        "FlightId": "flight-ib3208"
+      }
+    },
+    {
+      "ref": "seat-31e-5",
+      "kind": "record",
+      "data": {
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001036",
+        "SeatNumber": "31E"
+      },
+      "links": {
+        "FlightId": "flight-ua926"
+      }
+    },
+    {
+      "ref": "seat-34a-5",
+      "kind": "record",
+      "data": {
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001037",
+        "SeatNumber": "34A"
+      },
+      "links": {
+        "FlightId": "flight-ac795"
+      }
+    },
+    {
+      "ref": "seat-36d-5",
+      "kind": "record",
+      "data": {
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001038",
+        "SeatNumber": "36D"
+      },
+      "links": {
+        "FlightId": "flight-jl29"
+      }
+    },
+    {
+      "ref": "seat-38b-5",
+      "kind": "record",
+      "data": {
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001039",
+        "SeatNumber": "38B"
+      },
+      "links": {
+        "FlightId": "flight-qf11"
+      }
+    }
+  ],
+  "cases": [
+    {
+      "ref": "reserveseat-case-1",
+      "kind": "case",
+      "data": {
+        "FlightId": "00000000-0000-4000-8000-000000000000",
+        "SeatNumber": "text"
+      },
+      "case": "covering-0001"
+    },
+    {
+      "ref": "reserveseat-case-2",
+      "kind": "case",
+      "data": {
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001033",
+        "SeatNumber": "23A"
+      },
+      "case": "covering-0002",
+      "links": {
+        "FlightId": "flight-kl1007"
+      }
+    }
+  ],
+  "rejections": [
+    {
+      "ref": "reserveseat-rejection-1",
+      "kind": "rejection",
+      "data": {
+        "FlightId": null,
+        "SeatNumber": "text"
+      },
+      "violates": {
+        "field": "FlightId",
+        "rule": "`FlightId` is declared NOT NULL"
+      }
+    },
+    {
+      "ref": "reserveseat-rejection-2",
+      "kind": "rejection",
+      "data": {
+        "FlightId": "not-a-uuid",
+        "SeatNumber": "text"
+      },
+      "violates": {
+        "field": "FlightId",
+        "rule": "violates a declared constraint on `FlightId`"
+      }
+    },
+    {
+      "ref": "reserveseat-rejection-3",
+      "kind": "rejection",
+      "data": {
+        "FlightId": "00000000-0000-4000-8000-000000000000",
+        "SeatNumber": null
+      },
+      "violates": {
+        "field": "SeatNumber",
+        "rule": "`SeatNumber` is declared NOT NULL"
+      }
+    },
+    {
+      "ref": "reserveseat-rejection-4",
+      "kind": "rejection",
+      "data": {
+        "FlightId": "00000000-0000-4000-8000-000000000000",
+        "SeatNumber": ""
+      },
+      "violates": {
+        "field": "SeatNumber",
+        "rule": "violates a declared constraint on `SeatNumber`"
+      }
+    }
+  ]
+}

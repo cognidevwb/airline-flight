@@ -1,0 +1,347 @@
+{
+  "object": "Seat",
+  "calls": [
+    {
+      "operation": "gRPC FlightGrpcService/GetAvailableSeats",
+      "kind": "grpc",
+      "file": "src/Flight/GrpcServer/Protos/flight.proto:9",
+      "request": "GetAvailableSeatsRequest",
+      "requestFields": [
+        "FlightId"
+      ],
+      "response": "GetAvailableSeatsResult",
+      "object": "Seat"
+    },
+    {
+      "operation": "gRPC FlightGrpcService/ReserveSeat",
+      "kind": "grpc",
+      "file": "src/Flight/GrpcServer/Protos/flight.proto:10",
+      "request": "ReserveSeatRequest",
+      "requestFields": [
+        "FlightId",
+        "SeatNumber"
+      ],
+      "response": "ReserveSeatResult",
+      "object": "Seat"
+    },
+    {
+      "operation": "POST api/v1/flight/seat",
+      "kind": "http",
+      "file": "src/Flight/Seats/Features/CreatingSeat/V1/CreateSeat.cs:45",
+      "request": "CreateSeatRequestDto",
+      "response": "CreateSeatResponseDto",
+      "valid": [
+        {
+          "ref": "createseatrequestdto-1",
+          "body": {
+            "class": "FirstClass",
+            "flightId": "2f5ff8e3-0000-4000-8000-000000001024",
+            "seatNumber": "1A",
+            "type": "Window"
+          }
+        },
+        {
+          "ref": "createseatrequestdto-2",
+          "body": {
+            "class": "FirstClass",
+            "flightId": "2f5ff8e3-0000-4000-8000-000000001025",
+            "seatNumber": "2C",
+            "type": "Aisle"
+          }
+        },
+        {
+          "ref": "createseatrequestdto-3",
+          "body": {
+            "class": "Business",
+            "flightId": "2f5ff8e3-0000-4000-8000-000000001026",
+            "seatNumber": "7D",
+            "type": "Aisle"
+          }
+        },
+        {
+          "ref": "createseatrequestdto-4",
+          "body": {
+            "class": "Business",
+            "flightId": "2f5ff8e3-0000-4000-8000-000000001027",
+            "seatNumber": "9F",
+            "type": "Window"
+          }
+        },
+        {
+          "ref": "createseatrequestdto-5",
+          "body": {
+            "class": "Economy",
+            "flightId": "2f5ff8e3-0000-4000-8000-000000001028",
+            "seatNumber": "12C",
+            "type": "Aisle"
+          }
+        },
+        {
+          "ref": "createseatrequestdto-6",
+          "body": {
+            "class": "Economy",
+            "flightId": "2f5ff8e3-0000-4000-8000-000000001029",
+            "seatNumber": "14B",
+            "type": "Middle"
+          }
+        }
+      ],
+      "rejections": [
+        {
+          "ref": "createseatrequestdto-rejection-1",
+          "body": {
+            "class": "Unknown",
+            "flightId": "2f5ff8e3-0000-4000-8000-000000001000",
+            "seatNumber": null,
+            "type": "Unknown"
+          },
+          "violates": {
+            "field": "SeatNumber",
+            "rule": "`SeatNumber` is declared NOT NULL"
+          },
+          "expect": {
+            "status": 400,
+            "why": "the validator in this file has a rule on SeatNumber"
+          }
+        },
+        {
+          "ref": "createseatrequestdto-rejection-2",
+          "body": {
+            "class": "Unknown",
+            "flightId": "2f5ff8e3-0000-4000-8000-000000001000",
+            "seatNumber": "",
+            "type": null
+          },
+          "violates": {
+            "field": "Type",
+            "rule": "`Type` is declared NOT NULL"
+          },
+          "expect": {
+            "status": 400,
+            "why": "rejected by model binding"
+          }
+        },
+        {
+          "ref": "createseatrequestdto-rejection-3",
+          "body": {
+            "class": "Unknown",
+            "flightId": "2f5ff8e3-0000-4000-8000-000000001000",
+            "seatNumber": "",
+            "type": "__INVALID__"
+          },
+          "violates": {
+            "field": "Type",
+            "rule": "violates a declared constraint on `Type`"
+          },
+          "expect": {
+            "status": 400,
+            "why": "rejected by model binding"
+          }
+        },
+        {
+          "ref": "createseatrequestdto-rejection-4",
+          "body": {
+            "class": null,
+            "flightId": "00000000-0000-4000-8000-000000000000",
+            "seatNumber": "",
+            "type": "Unknown"
+          },
+          "violates": {
+            "field": "Class",
+            "rule": "`Class` is declared NOT NULL"
+          },
+          "expect": {
+            "status": 400,
+            "why": "the validator in this file has a rule on Class"
+          }
+        },
+        {
+          "ref": "createseatrequestdto-rejection-5",
+          "body": {
+            "class": "__INVALID__",
+            "flightId": "2f5ff8e3-0000-4000-8000-000000001000",
+            "seatNumber": "",
+            "type": "Unknown"
+          },
+          "violates": {
+            "field": "Class",
+            "rule": "violates a declared constraint on `Class`"
+          },
+          "expect": {
+            "status": 400,
+            "why": "the validator in this file has a rule on Class"
+          }
+        },
+        {
+          "ref": "createseatrequestdto-rejection-6",
+          "body": {
+            "class": "Unknown",
+            "flightId": "2f5ff8e3-0000-4000-8000-000000001000",
+            "seatNumber": "",
+            "type": "Unknown"
+          },
+          "violates": {
+            "field": "FlightId",
+            "rule": "`FlightId` is declared NOT NULL"
+          },
+          "expect": {
+            "status": 400,
+            "why": "the validator in this file has a rule on FlightId"
+          }
+        },
+        {
+          "ref": "createseatrequestdto-rejection-7",
+          "body": {
+            "class": "Unknown",
+            "flightId": "2f5ff8e3-0000-4000-8000-000000001000",
+            "seatNumber": "",
+            "type": "Unknown"
+          },
+          "violates": {
+            "field": "FlightId",
+            "rule": "violates a declared constraint on `FlightId`"
+          },
+          "expect": {
+            "status": 400,
+            "why": "the validator in this file has a rule on FlightId"
+          }
+        }
+      ],
+      "object": "Seat"
+    },
+    {
+      "operation": "GET api/v1/flight/get-available-seats/{{id}}",
+      "kind": "http",
+      "file": "src/Flight/Seats/Features/GettingAvailableSeats/V1/GetAvailableSeats.cs:36",
+      "request": null,
+      "response": "GetAvailableSeatsResponseDto",
+      "path": "api/v1/flight/get-available-seats/{id}",
+      "valid": [
+        {
+          "ref": "flight-ba117",
+          "params": {
+            "id": "2f5ff8e3-0000-4000-8000-000000001024"
+          }
+        },
+        {
+          "ref": "flight-lh441",
+          "params": {
+            "id": "2f5ff8e3-0000-4000-8000-000000001025"
+          }
+        },
+        {
+          "ref": "flight-ek202",
+          "params": {
+            "id": "2f5ff8e3-0000-4000-8000-000000001026"
+          }
+        },
+        {
+          "ref": "flight-aa100",
+          "params": {
+            "id": "2f5ff8e3-0000-4000-8000-000000001027"
+          }
+        }
+      ],
+      "object": "Seat"
+    },
+    {
+      "operation": "POST api/v1/flight/reserve-seat",
+      "kind": "http",
+      "file": "src/Flight/Seats/Features/ReservingSeat/V1/ReserveSeat.cs:37",
+      "request": "ReserveSeatRequestDto",
+      "response": "ReserveSeatResponseDto",
+      "valid": [
+        {
+          "ref": "reserveseatrequestdto-1",
+          "body": {
+            "flightId": "2f5ff8e3-0000-4000-8000-000000001024",
+            "seatNumber": "1A"
+          }
+        },
+        {
+          "ref": "reserveseatrequestdto-2",
+          "body": {
+            "flightId": "2f5ff8e3-0000-4000-8000-000000001025",
+            "seatNumber": "2C"
+          }
+        },
+        {
+          "ref": "reserveseatrequestdto-3",
+          "body": {
+            "flightId": "2f5ff8e3-0000-4000-8000-000000001026",
+            "seatNumber": "7D"
+          }
+        },
+        {
+          "ref": "reserveseatrequestdto-4",
+          "body": {
+            "flightId": "2f5ff8e3-0000-4000-8000-000000001027",
+            "seatNumber": "9F"
+          }
+        },
+        {
+          "ref": "reserveseatrequestdto-5",
+          "body": {
+            "flightId": "2f5ff8e3-0000-4000-8000-000000001028",
+            "seatNumber": "12C"
+          }
+        },
+        {
+          "ref": "reserveseatrequestdto-6",
+          "body": {
+            "flightId": "2f5ff8e3-0000-4000-8000-000000001029",
+            "seatNumber": "14B"
+          }
+        }
+      ],
+      "rejections": [
+        {
+          "ref": "reserveseatrequestdto-rejection-1",
+          "body": {
+            "flightId": null,
+            "seatNumber": ""
+          },
+          "violates": {
+            "field": "FlightId",
+            "rule": "`FlightId` is declared NOT NULL"
+          },
+          "expect": {
+            "status": 400,
+            "why": "the validator in this file has a rule on FlightId"
+          }
+        },
+        {
+          "ref": "reserveseatrequestdto-rejection-2",
+          "body": {
+            "flightId": "not-a-uuid",
+            "seatNumber": ""
+          },
+          "violates": {
+            "field": "FlightId",
+            "rule": "violates a declared constraint on `FlightId`"
+          },
+          "expect": {
+            "status": 400,
+            "why": "the validator in this file has a rule on FlightId"
+          }
+        },
+        {
+          "ref": "reserveseatrequestdto-rejection-3",
+          "body": {
+            "flightId": "00000000-0000-4000-8000-000000000000",
+            "seatNumber": null
+          },
+          "violates": {
+            "field": "SeatNumber",
+            "rule": "`SeatNumber` is declared NOT NULL"
+          },
+          "expect": {
+            "status": 400,
+            "why": "the validator in this file has a rule on SeatNumber"
+          }
+        }
+      ],
+      "object": "Seat"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "id": "invalidflightidexception-flightid",
+  "title": "FlightId that the code refuses",
+  "kind": "invalid value",
+  "exception": "InvalidFlightIdException",
+  "base": "DomainException",
+  "thrownAt": "src/Flight/Flights/ValueObjects/FlightId.cs:19",
+  "condition": "if (value == Guid.Empty)",
+  "field": "FlightId",
+  "expect": {
+    "status": 500,
+    "error": "InvalidFlightIdException",
+    "note": "DomainException is not one of the exception types the problem-details handler maps, so the API answers 500"
+  },
+  "trigger": {
+    "call": "POST api/v1/flight/seat",
+    "body": {
+      "class": "FirstClass",
+      "flightId": "2f5ff8e3-0000-4000-8000-000000001000",
+      "seatNumber": "1A",
+      "type": "Window"
+    },
+    "from": "createseatrequestdto-1"
+  }
+}

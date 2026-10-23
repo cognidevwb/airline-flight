@@ -1,0 +1,230 @@
+{
+  "object": "Seat",
+  "table": "Seat",
+  "source": "src/Flight/Seats/Models/Seat.cs:11",
+  "columns": [
+    "Id",
+    "SeatNumber",
+    "Type",
+    "Class",
+    "FlightId",
+    "Version",
+    "CreatedAt",
+    "CreatedBy",
+    "IsDeleted",
+    "LastModified",
+    "LastModifiedBy"
+  ],
+  "rejections": [
+    {
+      "ref": "seat-rejection-1",
+      "kind": "rejection",
+      "data": {
+        "Class": "Unknown",
+        "CreatedAt": "2026-03-01T06:00:00Z",
+        "CreatedBy": 1,
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001000",
+        "Id": "f07cc888-0000-4000-8000-000000001032",
+        "IsDeleted": true,
+        "LastModified": "2026-03-01T06:00:00Z",
+        "LastModifiedBy": 1,
+        "SeatNumber": null,
+        "Type": "Unknown",
+        "Version": 1
+      },
+      "violates": {
+        "field": "SeatNumber",
+        "rule": "`SeatNumber` is declared NOT NULL"
+      }
+    },
+    {
+      "ref": "seat-rejection-2",
+      "kind": "rejection",
+      "data": {
+        "Class": "Unknown",
+        "CreatedAt": "2026-03-01T06:00:00Z",
+        "CreatedBy": 1,
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001000",
+        "Id": "f07cc888-0000-4000-8000-000000001033",
+        "IsDeleted": true,
+        "LastModified": "2026-03-01T06:00:00Z",
+        "LastModifiedBy": 1,
+        "SeatNumber": "alder-birch-cedar-dogwood-elm-fir-gum-hazel-ilex-ju",
+        "Type": "Unknown",
+        "Version": 1
+      },
+      "violates": {
+        "field": "SeatNumber",
+        "rule": "51 characters, and `SeatNumber` declares 50"
+      }
+    },
+    {
+      "ref": "seat-rejection-3",
+      "kind": "rejection",
+      "data": {
+        "Class": "Unknown",
+        "CreatedAt": "2026-03-01T06:00:00Z",
+        "CreatedBy": 1,
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001000",
+        "Id": "f07cc888-0000-4000-8000-000000001034",
+        "IsDeleted": true,
+        "LastModified": "2026-03-01T06:00:00Z",
+        "LastModifiedBy": 1,
+        "SeatNumber": "",
+        "Type": null,
+        "Version": 1
+      },
+      "violates": {
+        "field": "Type",
+        "rule": "`Type` is declared NOT NULL"
+      }
+    },
+    {
+      "ref": "seat-rejection-4",
+      "kind": "rejection",
+      "data": {
+        "Class": "Unknown",
+        "CreatedAt": "2026-03-01T06:00:00Z",
+        "CreatedBy": 1,
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001000",
+        "Id": "f07cc888-0000-4000-8000-000000001035",
+        "IsDeleted": true,
+        "LastModified": "2026-03-01T06:00:00Z",
+        "LastModifiedBy": 1,
+        "SeatNumber": "",
+        "Type": "__INVALID__",
+        "Version": 1
+      },
+      "violates": {
+        "field": "Type",
+        "rule": "violates a declared constraint on `Type`"
+      }
+    },
+    {
+      "ref": "seat-rejection-5",
+      "kind": "rejection",
+      "data": {
+        "Class": null,
+        "CreatedAt": "2026-03-01T06:00:00Z",
+        "CreatedBy": 1,
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001000",
+        "Id": "f07cc888-0000-4000-8000-000000001036",
+        "IsDeleted": true,
+        "LastModified": "2026-03-01T06:00:00Z",
+        "LastModifiedBy": 1,
+        "SeatNumber": "",
+        "Type": "Unknown",
+        "Version": 1
+      },
+      "violates": {
+        "field": "Class",
+        "rule": "`Class` is declared NOT NULL"
+      }
+    },
+    {
+      "ref": "seat-rejection-6",
+      "kind": "rejection",
+      "data": {
+        "Class": "__INVALID__",
+        "CreatedAt": "2026-03-01T06:00:00Z",
+        "CreatedBy": 1,
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001000",
+        "Id": "f07cc888-0000-4000-8000-000000001037",
+        "IsDeleted": true,
+        "LastModified": "2026-03-01T06:00:00Z",
+        "LastModifiedBy": 1,
+        "SeatNumber": "",
+        "Type": "Unknown",
+        "Version": 1
+      },
+      "violates": {
+        "field": "Class",
+        "rule": "violates a declared constraint on `Class`"
+      }
+    },
+    {
+      "ref": "seat-rejection-7",
+      "kind": "rejection",
+      "data": {
+        "Class": "Unknown",
+        "CreatedAt": "2026-03-01T06:00:00Z",
+        "CreatedBy": 1,
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001000",
+        "Id": "f07cc888-0000-4000-8000-000000001038",
+        "IsDeleted": true,
+        "LastModified": "2026-03-01T06:00:00Z",
+        "LastModifiedBy": 1,
+        "SeatNumber": "",
+        "Type": "Unknown",
+        "Version": null
+      },
+      "violates": {
+        "field": "Version",
+        "rule": "`Version` is declared NOT NULL"
+      }
+    },
+    {
+      "ref": "seat-rejection-8",
+      "kind": "rejection",
+      "data": {
+        "Class": "Unknown",
+        "CreatedAt": "not-a-date",
+        "CreatedBy": 1,
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001000",
+        "Id": "f07cc888-0000-4000-8000-000000001039",
+        "IsDeleted": true,
+        "LastModified": "2026-03-01T06:00:00Z",
+        "LastModifiedBy": 1,
+        "SeatNumber": "",
+        "Type": "Unknown",
+        "Version": 1
+      },
+      "violates": {
+        "field": "CreatedAt",
+        "rule": "not a value `DateTime?` accepts"
+      }
+    },
+    {
+      "ref": "seat-rejection-9",
+      "kind": "rejection",
+      "data": {
+        "Class": "Unknown",
+        "CreatedAt": "2026-03-01T06:00:00Z",
+        "CreatedBy": 1,
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001000",
+        "Id": "f07cc888-0000-4000-8000-000000001040",
+        "IsDeleted": null,
+        "LastModified": "2026-03-01T06:00:00Z",
+        "LastModifiedBy": 1,
+        "SeatNumber": "",
+        "Type": "Unknown",
+        "Version": 1
+      },
+      "violates": {
+        "field": "IsDeleted",
+        "rule": "`IsDeleted` is declared NOT NULL"
+      }
+    },
+    {
+      "ref": "seat-rejection-10",
+      "kind": "rejection",
+      "data": {
+        "Class": "Unknown",
+        "CreatedAt": "2026-03-01T06:00:00Z",
+        "CreatedBy": 1,
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001000",
+        "Id": "f07cc888-0000-4000-8000-000000001041",
+        "IsDeleted": true,
+        "LastModified": "not-a-date",
+        "LastModifiedBy": 1,
+        "SeatNumber": "",
+        "Type": "Unknown",
+        "Version": 1
+      },
+      "violates": {
+        "field": "LastModified",
+        "rule": "not a value `DateTime?` accepts"
+      }
+    }
+  ]
+}
