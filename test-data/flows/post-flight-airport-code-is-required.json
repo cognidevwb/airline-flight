@@ -1,0 +1,16 @@
+{
+  "id": "post-flight-airport-code-is-required",
+  "title": "Code is required",
+  "source": "staged scenario",
+  "why": "Shows an empty Code is rejected even when Name and Address are valid",
+  "setup": [],
+  "steps": [
+    {
+      "n": 1,
+      "does": "POST …/flight/airport with Name 'Heathrow Airport', Address 'London, UK', Code ''"
+    }
+  ],
+  "expect": [
+    "Rejected with a validation error on Code; nothing is stored"
+  ]
+}

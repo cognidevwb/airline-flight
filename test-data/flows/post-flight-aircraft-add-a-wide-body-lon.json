@@ -1,0 +1,16 @@
+{
+  "id": "post-flight-aircraft-add-a-wide-body-lon",
+  "title": "Add a wide-body long-haul aircraft",
+  "source": "staged scenario",
+  "why": "Confirms a second valid aircraft type with a more recent year is accepted.",
+  "setup": [],
+  "steps": [
+    {
+      "n": 1,
+      "does": "POST …/flight/aircraft with Name 'Airbus A350 Skyline', Model 'A350-900', ManufacturingYear 2021"
+    }
+  ],
+  "expect": [
+    "Success. The aircraft is created and returned with the submitted values."
+  ]
+}

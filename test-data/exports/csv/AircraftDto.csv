@@ -1,0 +1,201 @@
+Id,Name,Model,ManufacturingYear
+1010,Spirit of Dublin,Boeing 737-800,2014
+1011,Spirit of Cork,Airbus A320neo,2019
+1012,Thames Voyager,Boeing 787-9 Dreamliner,2018
+1013,Rhine Explorer,Airbus A350-900,2020
+1014,Desert Falcon,Boeing 777-300ER,2016
+1015,Liberty Bell,Boeing 737 MAX 8,2021
+1016,Emerald Isle,Airbus A321neo,2022
+1017,Alpine Crest,Airbus A220-300,2020
+1018,Golden Gate,Boeing 787-8,2013
+1019,Nile Queen,Airbus A330-300,2012
+1020,Spirit of Belfast,Embraer E190,2011
+1021,Pacific Dawn,Boeing 777-200LR,2010
+1022,Baltic Breeze,Airbus A319-100,2008
+1023,Windsor Castle,Airbus A380-800,2015
+1024,Highland Piper,ATR 72-600,2017
+1025,Sahara Star,Boeing 747-8,2014
+1026,Danube Pearl,Airbus A320-200,2009
+1027,Manhattan Skyline,Boeing 767-300ER,2007
+1028,Aegean Wind,Airbus A321-200,2015
+1029,Blue Lagoon,Bombardier CRJ900,2012
+1030,Oriental Jade,Airbus A350-1000,2023
+1031,Spirit of Galway,Boeing 737-700,2006
+1032,Cape Horn,Airbus A330-200,2011
+1033,Prairie Wind,Embraer E175,2016
+1034,Silk Road,Boeing 787-10 Dreamliner,2021
+1035,Tiber Arrow,Airbus A320neo,2017
+1036,Harbour Light,De Havilland Dash 8-400,2013
+1037,Atlas Summit,Boeing 737-900ER,2013
+1038,Spirit of Limerick,Airbus A220-100,2019
+1039,Midnight Sun,Boeing 757-200,2004
+1040,Bosphorus Bridge,Airbus A321neo,2020
+1041,Kilimanjaro,Boeing 777-200ER,2005
+1042,Coral Reef,Boeing 737 MAX 9,2023
+1043,Cotswold Rose,Embraer E195-E2,2022
+1044,Fjord Runner,ATR 42-600,2018
+1045,Spirit of Derry,Airbus A319neo,2021
+1046,Monsoon Pearl,Airbus A330-900neo,2022
+1047,Aurora Borealis,Boeing 787-9 Dreamliner,2019
+1048,Bavarian Eagle,Airbus A350-900,2017
+1049,Gateway Spirit,Boeing 737-800,2010
+1050,Lisbon Tram,Airbus A320-200,2012
+1051,Red Dragon,Boeing 777-300ER,2019
+1052,Spirit of Kerry,Bombardier CRJ700,2009
+1053,Seine Lantern,Airbus A321XLR,2024
+1054,Uluru Dreaming,Boeing 787-8,2015
+1055,Andes Condor,Airbus A330-300,2014
+1056,Spirit of Waterford,Boeing 737 MAX 8,2025
+1057,Tasman Wave,Airbus A220-300,2024
+1058,Spirit of Dublin,Airbus A320neo,2018
+1059,Cliffs of Moher,Boeing 737-800,2016
+1060,Spirit of Lisbon,Airbus A321neo,2023
+1061,Giants Causeway,Boeing 737 MAX 8,2019
+1062,Bluebird of Reykjavik,Airbus A350-900,2021
+1063,Emerald Horizon,Boeing 777-300ER,2015
+1064,Spirit of Vienna,Boeing 787-9 Dreamliner,2020
+1065,Atlantic Dawn,Airbus A330-300,2017
+1066,River Liffey,Embraer E190,2018
+1067,Spirit of Cork,Embraer E175,2019
+1068,Skerries Wind,ATR 72-600,2022
+1069,Spirit of Galway,Bombardier CRJ900,2014
+1070,Wicklow Mist,Boeing 737-900ER,2012
+1071,Spirit of Montreal,Boeing 777-200ER,2008
+1072,Harbour Light,Boeing 767-300ER,2011
+1073,Spirit of Prague,Airbus A321-200,2013
+1074,Copper Coast,Airbus A319-100,2010
+1075,Spirit of Madrid,Airbus A320-200,2014
+1076,Tara Hill,Airbus A220-300,2018
+1077,Spirit of Zurich,Airbus A220-100,2021
+1078,Dingle Bay,Boeing 747-8,2012
+1079,Spirit of Singapore,Airbus A380-800,2016
+1080,Sperrin Skies,Airbus A330-900neo,2019
+1081,Spirit of Athens,Boeing 737 MAX 8,2024
+1082,Burren Falcon,Boeing 737 MAX 9,2022
+1083,Spirit of Toronto,Boeing 787-10 Dreamliner,2020
+1084,Slieve Donard,Boeing 787-8,2015
+1085,Spirit of Aberdeen,De Havilland Dash 8-400,2016
+1086,Lough Neagh,Boeing 737-700,2009
+1087,Spirit of Cairo,Airbus A330-200,2014
+1088,Achill Head,Boeing 777-200LR,2012
+1089,Spirit of Oslo,Airbus A350-1000,2024
+1090,Howth Lantern,Airbus A321neo,2025
+1091,Spirit of Helsinki,Embraer E195-E2,2023
+1092,Shannon Swan,ATR 42-600,2019
+1093,Spirit of Brussels,Bombardier CRJ700,2008
+1094,Mourne Gate,Boeing 757-200,2007
+1095,Spirit of Nairobi,Airbus A340-600,2008
+1096,Kinsale Harbour,Boeing 737-900ER,2010
+1097,Spirit of Tallinn,Airbus A319neo,2019
+1098,Glendalough,Airbus A220-300,2025
+1099,Spirit of Doha,Airbus A350-900,2025
+1100,Boyne Valley,Boeing 777-300ER,2013
+1101,Spirit of Lima,Boeing 787-9 Dreamliner,2024
+1102,Aran Islander,Airbus A320neo,2022
+1103,Spirit of Warsaw,Airbus A321-200,2012
+1104,Donegal Tweed,Boeing 737-800,2018
+1105,Spirit of Bergen,Embraer E190-E2,2020
+1106,Connemara Pony,Embraer E190,2015
+1107,Spirit of Marrakesh,Boeing 787-10 Dreamliner,2023
+1108,Spirit of Lisbon,Boeing 737 MAX 8,2018
+1109,Emerald Isle,Boeing 737 MAX 8,2020
+1110,Cape Wrath,Boeing 737 MAX 8,2022
+1111,Golden Gate Voyager,Boeing 737 MAX 9,2021
+1112,Spirit of Cork,Boeing 737-800,2012
+1113,Northern Lights,Boeing 737-800,2008
+1114,Bluebird of Oslo,Boeing 737-800,2020
+1115,Rhine Maiden,Airbus A320-200,2013
+1116,Danube Star,Airbus A320-200,2016
+1117,Spirit of Galway,Airbus A320neo,2020
+1118,Sierra Nevada,Airbus A320neo,2021
+1119,Aurora Borealis,Airbus A320neo,2024
+1120,Pride of Bavaria,Airbus A321neo,2019
+1121,Tagus Runner,Airbus A321neo,2021
+1122,Spirit of Limerick,Airbus A321-200,2017
+1123,Silk Road,Airbus A350-900,2018
+1124,Desert Rose,Airbus A350-900,2022
+1125,Pacific Crest,Airbus A350-1000,2022
+1126,Spirit of Belfast,Boeing 787-9,2017
+1127,Monsoon Wind,Boeing 787-9,2021
+1128,Cherry Blossom,Boeing 787-8,2016
+1129,Highland Eagle,Boeing 787-10,2019
+1130,Spirit of Dubai Creek,Boeing 777-300ER,2018
+1131,Falcon of Doha,Boeing 777-300ER,2017
+1132,Atlantic Dawn,Boeing 777-200ER,2011
+1133,Spirit of Kerry,Airbus A330-300,2013
+1134,Jade Dragon,Airbus A330-900neo,2018
+1135,Coral Sea,Airbus A330-200,2010
+1136,Maple Leaf Express,Airbus A220-300,2022
+1137,Alpine Swift,Airbus A220-100,2023
+1138,Spirit of Sligo,Embraer E190,2014
+1139,Heron of Tallinn,Embraer E175,2013
+1140,Baltic Amber,Embraer E195-E2,2021
+1141,Fjord Wanderer,Embraer E190-E2,2022
+1142,Island Hopper,ATR 72-600,2015
+1143,Spirit of Aran,ATR 42-600,2020
+1144,Prairie Lark,Bombardier CRJ900,2018
+1145,Tundra Swan,Bombardier CRJ700,2011
+1146,Spirit of Shannon,De Havilland Dash 8-400,2014
+1147,Old Faithful,Airbus A319-100,2005
+1148,Cirrus Sky,Airbus A321XLR,2025
+1149,Sahara Wind,Airbus A340-600,2010
+1150,Queen of the Skies,Boeing 747-8,2018
+1151,Royal Thames,Airbus A380-800,2019
+1152,Spirit of Waterford,Boeing 767-300ER,2013
+1153,Iron Duke,Boeing 757-200,2002
+1154,Long Haul Larkspur,Boeing 777-200LR,2009
+1155,Harbour Gull,Boeing 737-700,2015
+1156,Spirit of Kilkenny,Airbus A319-100,2013
+1157,Copper Beech,Boeing 737-900ER,2016
+1158,Spirit of Lisbon,Boeing 737-800,2015
+1159,Pride of Glasgow,Boeing 737-800,2017
+1160,City of Bergen,Boeing 737-800,2019
+1161,Golden Gate,Boeing 737-800,2013
+1162,Atlantic Dawn,Boeing 737-800,2021
+1163,Emerald Isle,Airbus A320neo,2023
+1164,Northern Star,Airbus A320neo,2016
+1165,Celtic Spirit,Airbus A320neo,2026
+1166,Spirit of Seville,Airbus A321neo,2024
+1167,Lady of Lyon,Boeing 787-9 Dreamliner,2022
+1168,Baltic Breeze,Boeing 787-9 Dreamliner,2023
+1169,Silver Falcon,Boeing 787-9,2015
+1170,Spirit of Geneva,Boeing 787-9,2019
+1171,Alpine Crest,Airbus A350-900,2019
+1172,Harbour Lights,Airbus A350-900,2023
+1173,Spirit of Porto,Boeing 777-300ER,2014
+1174,Desert Rose,Boeing 777-300ER,2012
+1175,Cape Wanderer,Boeing 777-300ER,2020
+1176,Midnight Sun,Boeing 737 MAX 8,2023
+1177,Spirit of Oslo,Airbus A220-300,2017
+1178,River Thames,Airbus A220-300,2023
+1179,Monsoon Wind,Boeing 787-8,2014
+1180,Orient Pearl,Boeing 787-8,2012
+1181,Spirit of Vienna,Airbus A330-300,2018
+1182,Coral Sky,Airbus A330-300,2015
+1183,Highland Eagle,Embraer E190,2016
+1184,Aurora Borealis,Embraer E190,2012
+1185,Spirit of Naples,Boeing 777-200LR,2011
+1186,Sahara Wind,Airbus A319-100,2009
+1187,Amber Coast,Airbus A319-100,2011
+1188,Spirit of Prague,Airbus A380-800,2018
+1189,Jade Horizon,Airbus A380-800,2013
+1190,Blue Lagoon,ATR 72-600,2018
+1191,Spirit of Krakow,ATR 72-600,2019
+1192,Saffron Skies,Boeing 747-8,2016
+1193,Iron Duke,Airbus A320-200,2011
+1194,Spirit of Malta,Airbus A320-200,2010
+1195,Tulip Express,Airbus A321-200,2014
+1196,Fjord Runner,Airbus A321-200,2016
+1197,Spirit of Athens,Bombardier CRJ900,2013
+1198,Cinnamon Trail,Bombardier CRJ900,2010
+1199,Windward Isle,Airbus A350-1000,2021
+1200,Spirit of Zurich,Boeing 737-700,2008
+1201,Pacific Voyager,Airbus A330-200,2012
+1202,Granite Peak,Embraer E175,2017
+1203,Spirit of Cork,Boeing 787-10 Dreamliner,2022
+1204,Lotus Crown,De Havilland Dash 8-400,2015
+1205,Kestrel,Boeing 737-900ER,2014
+1206,Southern Cross,Boeing 737 MAX 9,2024
+1207,Spirit of Galway,Airbus A318-100,2006
+1208,Spirit of Lisbon,Embraer E170,2010
+1209,Spirit of Reykjavik,Boeing 717-200,2003

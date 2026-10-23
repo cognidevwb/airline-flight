@@ -1,0 +1,1449 @@
+{
+  "operation": "POST api/v1/flight/reserve-seat",
+  "kind": "http",
+  "handler": "src/Flight/Seats/Features/ReservingSeat/V1/ReserveSeat.cs:37",
+  "request": "ReserveSeatRequestDto",
+  "response": "ReserveSeatResponseDto",
+  "valid": [
+    {
+      "ref": "reserveseatrequestdto-1",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001028",
+        "seatNumber": "1A"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-2",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001026",
+        "seatNumber": "12C"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-3",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001037",
+        "seatNumber": "24F"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-4",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001041",
+        "seatNumber": "3D"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-5",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001036",
+        "seatNumber": "15B"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-6",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001034",
+        "seatNumber": "8A"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-7",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001029",
+        "seatNumber": "2C"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-8",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001027",
+        "seatNumber": "19E"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-9",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001045",
+        "seatNumber": "27F"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-10",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001057",
+        "seatNumber": "5A"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-11",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001030",
+        "seatNumber": "14D"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-12",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001048",
+        "seatNumber": "31B"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-13",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001044",
+        "seatNumber": "10C"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-14",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001075",
+        "seatNumber": "22A"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-15",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001062",
+        "seatNumber": "4F"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-16",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001031",
+        "seatNumber": "17D"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-17",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001042",
+        "seatNumber": "9E"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-18",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001122",
+        "seatNumber": "1F"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-19",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001078",
+        "seatNumber": "26C"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-20",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001059",
+        "seatNumber": "33A"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-21",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001063",
+        "seatNumber": "6D"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-22",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001038",
+        "seatNumber": "11B"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-23",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001056",
+        "seatNumber": "20F"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-24",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001087",
+        "seatNumber": "2A"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-25",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001140",
+        "seatNumber": "28D"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-26",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001111",
+        "seatNumber": "13E"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-27",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001100",
+        "seatNumber": "7C"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-28",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001131",
+        "seatNumber": "35F"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-29",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001174",
+        "seatNumber": "3A"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-30",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001153",
+        "seatNumber": "16B"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-31",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001123",
+        "seatNumber": "23D"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-32",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001166",
+        "seatNumber": "18A"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-33",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001076",
+        "seatNumber": "5C"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-34",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001071",
+        "seatNumber": "30E"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-35",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001104",
+        "seatNumber": "12F"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-36",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001094",
+        "seatNumber": "25C"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-37",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001133",
+        "seatNumber": "1D"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-38",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001177",
+        "seatNumber": "21B"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-39",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001119",
+        "seatNumber": "8D"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-40",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001051",
+        "seatNumber": "29A"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-41",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001058",
+        "seatNumber": "6F"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-42",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001181",
+        "seatNumber": "14E"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-43",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001190",
+        "seatNumber": "32C"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-44",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001180",
+        "seatNumber": "9A"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-45",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001060",
+        "seatNumber": "19D"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-46",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001047",
+        "seatNumber": "4C"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-47",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001115",
+        "seatNumber": "34F"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-48",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001124",
+        "seatNumber": "10A"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-49",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001097",
+        "seatNumber": "15F"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-50",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001065",
+        "seatNumber": "24B"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-51",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001074",
+        "seatNumber": "14C"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-52",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001076",
+        "seatNumber": "2D"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-53",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001077",
+        "seatNumber": "5F"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-54",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001078",
+        "seatNumber": "7A"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-55",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001048",
+        "seatNumber": "31B"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-56",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001080",
+        "seatNumber": "9D"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-57",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001081",
+        "seatNumber": "18F"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-58",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001082",
+        "seatNumber": "27E"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-59",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001028",
+        "seatNumber": "1A"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-60",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001026",
+        "seatNumber": "12C"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-61",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001085",
+        "seatNumber": "35A"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-62",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001086",
+        "seatNumber": "4D"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-63",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001087",
+        "seatNumber": "20B"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-64",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001088",
+        "seatNumber": "16E"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-65",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001089",
+        "seatNumber": "29F"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-66",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001090",
+        "seatNumber": "11A"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-67",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001091",
+        "seatNumber": "6C"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-68",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001092",
+        "seatNumber": "24D"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-69",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001093",
+        "seatNumber": "33B"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-70",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001094",
+        "seatNumber": "8F"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-71",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001095",
+        "seatNumber": "15A"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-72",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001096",
+        "seatNumber": "3F"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-73",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001057",
+        "seatNumber": "5A"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-74",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001027",
+        "seatNumber": "19E"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-75",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001099",
+        "seatNumber": "38D"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-76",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001100",
+        "seatNumber": "4A"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-77",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001101",
+        "seatNumber": "13F"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-78",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001102",
+        "seatNumber": "30C"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-79",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001177",
+        "seatNumber": "21B"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-80",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001087",
+        "seatNumber": "2A"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-81",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001105",
+        "seatNumber": "10D"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-82",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001106",
+        "seatNumber": "36E"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-83",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001107",
+        "seatNumber": "17A"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-84",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001108",
+        "seatNumber": "25F"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-85",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001190",
+        "seatNumber": "32C"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-86",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001110",
+        "seatNumber": "7D"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-87",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001058",
+        "seatNumber": "6F"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-88",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001112",
+        "seatNumber": "28B"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-89",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001113",
+        "seatNumber": "23A"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-90",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001114",
+        "seatNumber": "34D"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-91",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001133",
+        "seatNumber": "1D"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-92",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001116",
+        "seatNumber": "37F"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-93",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001042",
+        "seatNumber": "9E"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-94",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001118",
+        "seatNumber": "40C"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-95",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001034",
+        "seatNumber": "8A"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-96",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001120",
+        "seatNumber": "19A"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-97",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001181",
+        "seatNumber": "14E"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-98",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001122",
+        "seatNumber": "22D"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-99",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001076",
+        "seatNumber": "5C"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-100",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001074",
+        "seatNumber": "14C"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-101",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001087",
+        "seatNumber": "2A"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-102",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001045",
+        "seatNumber": "27F"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-103",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001119",
+        "seatNumber": "8D"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-104",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001129",
+        "seatNumber": "19B"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-105",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001130",
+        "seatNumber": "31E"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-106",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001131",
+        "seatNumber": "6A"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-107",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001122",
+        "seatNumber": "22D"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-108",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001133",
+        "seatNumber": "7F"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-109",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001134",
+        "seatNumber": "16A"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-110",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001135",
+        "seatNumber": "11E"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-111",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001094",
+        "seatNumber": "25C"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-112",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001133",
+        "seatNumber": "1D"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-113",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001051",
+        "seatNumber": "29A"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-114",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001139",
+        "seatNumber": "17F"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-115",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001140",
+        "seatNumber": "9C"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-116",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001141",
+        "seatNumber": "34B"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-117",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001142",
+        "seatNumber": "12D"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-118",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001057",
+        "seatNumber": "5A"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-119",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001144",
+        "seatNumber": "23F"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-120",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001145",
+        "seatNumber": "20C"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-121",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001036",
+        "seatNumber": "15B"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-122",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001062",
+        "seatNumber": "4F"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-123",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001148",
+        "seatNumber": "26E"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-124",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001149",
+        "seatNumber": "13A"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-125",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001150",
+        "seatNumber": "30D"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-126",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001034",
+        "seatNumber": "8A"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-127",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001152",
+        "seatNumber": "18C"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-128",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001076",
+        "seatNumber": "2D"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-129",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001154",
+        "seatNumber": "21E"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-130",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001059",
+        "seatNumber": "33A"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-131",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001156",
+        "seatNumber": "10F"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-132",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001065",
+        "seatNumber": "24B"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-133",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001091",
+        "seatNumber": "6C"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-134",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001159",
+        "seatNumber": "28F"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-135",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001160",
+        "seatNumber": "35D"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-136",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001181",
+        "seatNumber": "14E"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-137",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001120",
+        "seatNumber": "19A"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-138",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001110",
+        "seatNumber": "7D"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-139",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001190",
+        "seatNumber": "32C"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-140",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001153",
+        "seatNumber": "16B"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-141",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001077",
+        "seatNumber": "5F"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-142",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001167",
+        "seatNumber": "27A"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-143",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001168",
+        "seatNumber": "22B"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-144",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001169",
+        "seatNumber": "11C"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-145",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001170",
+        "seatNumber": "30F"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-146",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001174",
+        "seatNumber": "3A"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-147",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001172",
+        "seatNumber": "25D"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-148",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001173",
+        "seatNumber": "17E"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-149",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001174",
+        "seatNumber": "20A"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-150",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001087",
+        "seatNumber": "2A"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-151",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001074",
+        "seatNumber": "14C"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-152",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001176",
+        "seatNumber": "22F"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-153",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001177",
+        "seatNumber": "5D"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-154",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001178",
+        "seatNumber": "17B"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-155",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001179",
+        "seatNumber": "31A"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-156",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001058",
+        "seatNumber": "6F"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-157",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001181",
+        "seatNumber": "1C"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-158",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001182",
+        "seatNumber": "25E"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-159",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001142",
+        "seatNumber": "12D"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-160",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001184",
+        "seatNumber": "19F"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-161",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001112",
+        "seatNumber": "28B"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-162",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001186",
+        "seatNumber": "33C"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-163",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001124",
+        "seatNumber": "10A"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-164",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001100",
+        "seatNumber": "4A"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-165",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001189",
+        "seatNumber": "21D"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-166",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001100",
+        "seatNumber": "7C"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-167",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001106",
+        "seatNumber": "36E"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-168",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001097",
+        "seatNumber": "15F"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-169",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001193",
+        "seatNumber": "24A"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-170",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001194",
+        "seatNumber": "29C"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-171",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001096",
+        "seatNumber": "3F"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-172",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001038",
+        "seatNumber": "11B"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-173",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001197",
+        "seatNumber": "18D"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-174",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001198",
+        "seatNumber": "26F"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-175",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001119",
+        "seatNumber": "8D"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-176",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001200",
+        "seatNumber": "20E"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-177",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001201",
+        "seatNumber": "32A"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-178",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001202",
+        "seatNumber": "13C"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-179",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001203",
+        "seatNumber": "38F"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-180",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001153",
+        "seatNumber": "16B"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-181",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001123",
+        "seatNumber": "23D"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-182",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001167",
+        "seatNumber": "27A"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-183",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001057",
+        "seatNumber": "5A"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-184",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001208",
+        "seatNumber": "34E"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-185",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001102",
+        "seatNumber": "30C"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-186",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001104",
+        "seatNumber": "12F"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-187",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001211",
+        "seatNumber": "35B"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-188",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001076",
+        "seatNumber": "2D"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-189",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001213",
+        "seatNumber": "40A"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-190",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001030",
+        "seatNumber": "14D"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-191",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001129",
+        "seatNumber": "19B"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-192",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001116",
+        "seatNumber": "37F"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-193",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001217",
+        "seatNumber": "22C"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-194",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001131",
+        "seatNumber": "6A"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-195",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001219",
+        "seatNumber": "25A"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-196",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001130",
+        "seatNumber": "31E"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-197",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001221",
+        "seatNumber": "17C"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-198",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001222",
+        "seatNumber": "39D"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-199",
+      "body": {
+        "flightId": "2f5ff8e3-0000-4000-8000-000000001223",
+        "seatNumber": "10E"
+      }
+    }
+  ],
+  "invalid": [
+    {
+      "ref": "reserveseatrequestdto-rejection-1",
+      "body": {
+        "flightId": null,
+        "seatNumber": ""
+      },
+      "violates": {
+        "field": "FlightId",
+        "rule": "`FlightId` is declared NOT NULL"
+      },
+      "expect": {
+        "status": 400,
+        "why": "the validator in this file has a rule on FlightId"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-rejection-2",
+      "body": {
+        "flightId": "not-a-uuid",
+        "seatNumber": ""
+      },
+      "violates": {
+        "field": "FlightId",
+        "rule": "violates a declared constraint on `FlightId`"
+      },
+      "expect": {
+        "status": 400,
+        "why": "the validator in this file has a rule on FlightId"
+      }
+    },
+    {
+      "ref": "reserveseatrequestdto-rejection-3",
+      "body": {
+        "flightId": "00000000-0000-4000-8000-000000000000",
+        "seatNumber": null
+      },
+      "violates": {
+        "field": "SeatNumber",
+        "rule": "`SeatNumber` is declared NOT NULL"
+      },
+      "expect": {
+        "status": 400,
+        "why": "the validator in this file has a rule on SeatNumber"
+      }
+    }
+  ]
+}

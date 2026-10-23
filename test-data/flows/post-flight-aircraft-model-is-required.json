@@ -1,0 +1,16 @@
+{
+  "id": "post-flight-aircraft-model-is-required",
+  "title": "Model is required",
+  "source": "staged scenario",
+  "why": "Shows that an empty Model is rejected.",
+  "setup": [],
+  "steps": [
+    {
+      "n": 1,
+      "does": "POST …/flight/aircraft with Name 'Fleet Two', Model '' (empty), ManufacturingYear 2015"
+    }
+  ],
+  "expect": [
+    "Rejected with a validation error on Model. No aircraft is created."
+  ]
+}

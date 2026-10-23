@@ -1,0 +1,88 @@
+{
+  "id": "grpc-flightgrpcservice-getbyid-unknown-f",
+  "title": "Unknown flight Id returns not found",
+  "source": "staged scenario",
+  "why": "Shows a well-formed Id with no matching row gives a clean not-found, not a crash or an empty success.",
+  "setup": [
+    {
+      "ref": "aircraft-1",
+      "table": "Aircraft",
+      "values": {
+        "CreatedAt": "2026-01-01T00:00:00Z",
+        "CreatedBy": 1,
+        "Id": "a1000000-0000-4000-8000-000000000006",
+        "IsDeleted": false,
+        "LastModified": "2026-01-01T00:00:00Z",
+        "LastModifiedBy": 1,
+        "ManufacturingYear": 2021,
+        "Model": "737 MAX 8",
+        "Name": "Boeing 737 MAX N737MX",
+        "Version": 1
+      }
+    },
+    {
+      "ref": "airport-dep",
+      "table": "Airport",
+      "values": {
+        "Address": "Dallas, Texas",
+        "Code": "DFW",
+        "CreatedAt": "2026-01-01T00:00:00Z",
+        "CreatedBy": 1,
+        "Id": "b1000000-0000-4000-8000-000000000051",
+        "IsDeleted": false,
+        "LastModified": "2026-01-01T00:00:00Z",
+        "LastModifiedBy": 1,
+        "Name": "Dallas/Fort Worth International",
+        "Version": 1
+      }
+    },
+    {
+      "ref": "airport-arr",
+      "table": "Airport",
+      "values": {
+        "Address": "Phoenix, Arizona",
+        "Code": "PHX",
+        "CreatedAt": "2026-01-01T00:00:00Z",
+        "CreatedBy": 1,
+        "Id": "b1000000-0000-4000-8000-000000000052",
+        "IsDeleted": false,
+        "LastModified": "2026-01-01T00:00:00Z",
+        "LastModifiedBy": 1,
+        "Name": "Phoenix Sky Harbor International",
+        "Version": 1
+      }
+    },
+    {
+      "ref": "flight-other",
+      "table": "Flight",
+      "values": {
+        "AircraftId": "aircraft-1",
+        "ArriveAirportId": "airport-arr",
+        "ArriveDate": "2026-11-05T10:55:00Z",
+        "CreatedAt": "2026-01-01T00:00:00Z",
+        "CreatedBy": 1,
+        "DepartureAirportId": "airport-dep",
+        "DepartureDate": "2026-11-05T09:00:00Z",
+        "DurationMinutes": 115,
+        "FlightDate": "2026-11-05T00:00:00Z",
+        "FlightNumber": "AA600",
+        "Id": "f1000000-0000-4000-8000-000000000006",
+        "IsDeleted": false,
+        "LastModified": "2026-01-01T00:00:00Z",
+        "LastModifiedBy": 1,
+        "Price": 160.0,
+        "Status": "Flying",
+        "Version": 1
+      }
+    }
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "does": "Call FlightGrpcService/GetById with the Id 9e9e9e9e-9e9e-4e9e-8e9e-9e9e9e9e9e9e, which no Flight row has."
+    }
+  ],
+  "expect": [
+    "A NOT_FOUND error. No flight is returned, and flight-other is not returned in its place."
+  ]
+}

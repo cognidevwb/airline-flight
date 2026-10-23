@@ -1,0 +1,80 @@
+{
+  "id": "post-flight-reserve-seat-seat-id-does-no",
+  "title": "Seat id does not exist",
+  "source": "staged scenario",
+  "why": "Verifies an unknown seat id yields not-found rather than a server error",
+  "setup": [
+    {
+      "ref": "aircraft-1",
+      "table": "Aircraft",
+      "values": {
+        "IsDeleted": false,
+        "ManufacturingYear": 2018,
+        "Model": "A320",
+        "Name": "Skyliner 16",
+        "Version": 1
+      }
+    },
+    {
+      "ref": "airport-dep",
+      "table": "Airport",
+      "values": {
+        "Address": "Milan",
+        "Code": "MXP",
+        "IsDeleted": false,
+        "Name": "Milan Malpensa",
+        "Version": 1
+      }
+    },
+    {
+      "ref": "airport-arr",
+      "table": "Airport",
+      "values": {
+        "Address": "Athens",
+        "Code": "ATH",
+        "IsDeleted": false,
+        "Name": "Athens",
+        "Version": 1
+      }
+    },
+    {
+      "ref": "flight-1",
+      "table": "Flight",
+      "values": {
+        "AircraftId": "aircraft-1",
+        "ArriveAirportId": "airport-arr",
+        "ArriveDate": "2026-11-19T11:30:00Z",
+        "DepartureAirportId": "airport-dep",
+        "DepartureDate": "2026-11-19T09:00:00Z",
+        "DurationMinutes": 150,
+        "FlightDate": "2026-11-19T00:00:00Z",
+        "FlightNumber": "FL109",
+        "IsDeleted": false,
+        "Price": 140.0,
+        "Status": "Unknown",
+        "Version": 1
+      }
+    },
+    {
+      "ref": "seat-1",
+      "table": "Seat",
+      "values": {
+        "Class": "Economy",
+        "FlightId": "flight-1",
+        "IsDeleted": false,
+        "SeatNumber": "12A",
+        "Type": "Window",
+        "Version": 1
+      }
+    }
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "does": "POST /flight/reserve-seat with FlightId of flight-1, SeatNumber 12A and a random SeatId GUID that matches no Seat row"
+    }
+  ],
+  "expect": [
+    "Rejected as seat not found (404-style); seat 12A stays free"
+  ]
+}

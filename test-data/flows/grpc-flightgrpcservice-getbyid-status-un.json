@@ -1,0 +1,88 @@
+{
+  "id": "grpc-flightgrpcservice-getbyid-status-un",
+  "title": "Status Unknown",
+  "source": "staged scenario",
+  "why": "Checks the first enum value (Unknown) is returned as a real status and not treated as unset or missing.",
+  "setup": [
+    {
+      "ref": "aircraft-1",
+      "table": "Aircraft",
+      "values": {
+        "CreatedAt": "2026-01-01T00:00:00Z",
+        "CreatedBy": 1,
+        "Id": "a1000000-0000-4000-8000-000000000015",
+        "IsDeleted": false,
+        "LastModified": "2026-01-01T00:00:00Z",
+        "LastModifiedBy": 1,
+        "ManufacturingYear": 2020,
+        "Model": "A220-300",
+        "Name": "Airbus A220 N220DL",
+        "Version": 1
+      }
+    },
+    {
+      "ref": "airport-dep",
+      "table": "Airport",
+      "values": {
+        "Address": "Nashville, Tennessee",
+        "Code": "BNA",
+        "CreatedAt": "2026-01-01T00:00:00Z",
+        "CreatedBy": 1,
+        "Id": "b1000000-0000-4000-8000-000000000141",
+        "IsDeleted": false,
+        "LastModified": "2026-01-01T00:00:00Z",
+        "LastModifiedBy": 1,
+        "Name": "Nashville International",
+        "Version": 1
+      }
+    },
+    {
+      "ref": "airport-arr",
+      "table": "Airport",
+      "values": {
+        "Address": "Austin, Texas",
+        "Code": "AUS",
+        "CreatedAt": "2026-01-01T00:00:00Z",
+        "CreatedBy": 1,
+        "Id": "b1000000-0000-4000-8000-000000000142",
+        "IsDeleted": false,
+        "LastModified": "2026-01-01T00:00:00Z",
+        "LastModifiedBy": 1,
+        "Name": "Austin-Bergstrom International",
+        "Version": 1
+      }
+    },
+    {
+      "ref": "flight-1",
+      "table": "Flight",
+      "values": {
+        "AircraftId": "aircraft-1",
+        "ArriveAirportId": "airport-arr",
+        "ArriveDate": "2026-11-14T17:15:00Z",
+        "CreatedAt": "2026-01-01T00:00:00Z",
+        "CreatedBy": 1,
+        "DepartureAirportId": "airport-dep",
+        "DepartureDate": "2026-11-14T15:00:00Z",
+        "DurationMinutes": 135,
+        "FlightDate": "2026-11-14T00:00:00Z",
+        "FlightNumber": "DL1500",
+        "Id": "f1000000-0000-4000-8000-000000000015",
+        "IsDeleted": false,
+        "LastModified": "2026-01-01T00:00:00Z",
+        "LastModifiedBy": 1,
+        "Price": 150.0,
+        "Status": "Unknown",
+        "Version": 1
+      }
+    }
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "does": "Call FlightGrpcService/GetById with the Id of flight-1."
+    }
+  ],
+  "expect": [
+    "Success. Status is Unknown (the first enum value, 0). It is not an error and not omitted."
+  ]
+}

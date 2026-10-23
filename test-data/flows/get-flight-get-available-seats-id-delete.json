@@ -1,0 +1,86 @@
+{
+  "id": "get-flight-get-available-seats-id-delete",
+  "title": "Deleted seats are not listed",
+  "source": "staged scenario",
+  "why": "Verifies soft-deleted seats are excluded",
+  "setup": [
+    {
+      "ref": "aircraft-1",
+      "table": "Aircraft",
+      "values": {
+        "IsDeleted": false,
+        "ManufacturingYear": 2013,
+        "Model": "A320",
+        "Name": "Skyliner 9"
+      }
+    },
+    {
+      "ref": "airport-1",
+      "table": "Airport",
+      "values": {
+        "Address": "Zurich",
+        "Code": "ZRH",
+        "IsDeleted": false,
+        "Name": "Zurich"
+      }
+    },
+    {
+      "ref": "airport-2",
+      "table": "Airport",
+      "values": {
+        "Address": "Brussels",
+        "Code": "BRU",
+        "IsDeleted": false,
+        "Name": "Brussels"
+      }
+    },
+    {
+      "ref": "flight-1",
+      "table": "Flight",
+      "values": {
+        "AircraftId": "aircraft-1",
+        "ArriveAirportId": "airport-2",
+        "ArriveDate": "2026-12-04T11:20:00Z",
+        "DepartureAirportId": "airport-1",
+        "DepartureDate": "2026-12-04T10:00:00Z",
+        "DurationMinutes": 80,
+        "FlightDate": "2026-12-04T00:00:00Z",
+        "FlightNumber": "LX790",
+        "IsDeleted": false,
+        "Price": 100,
+        "Status": "Flying"
+      }
+    },
+    {
+      "ref": "seat-7C",
+      "table": "Seat",
+      "values": {
+        "Class": "Economy",
+        "FlightId": "flight-1",
+        "IsDeleted": true,
+        "SeatNumber": "7C",
+        "Type": "Aisle"
+      }
+    },
+    {
+      "ref": "seat-7D",
+      "table": "Seat",
+      "values": {
+        "Class": "Economy",
+        "FlightId": "flight-1",
+        "IsDeleted": false,
+        "SeatNumber": "7D",
+        "Type": "Aisle"
+      }
+    }
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "does": "GET /flight/get-available-seats/{flight-1 Id}"
+    }
+  ],
+  "expect": [
+    "200 listing only 7D; deleted seat 7C is absent"
+  ]
+}

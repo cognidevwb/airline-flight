@@ -1,0 +1,39 @@
+{
+  "id": "get-flight-get-available-flights-no-flig",
+  "title": "No flights match the route",
+  "source": "staged scenario",
+  "why": "An empty result must be a normal response, not an error.",
+  "setup": [
+    {
+      "ref": "airport-sfo",
+      "table": "Airport",
+      "values": {
+        "Address": "San Francisco, CA",
+        "Code": "SFO",
+        "IsDeleted": false,
+        "Name": "San Francisco International",
+        "Version": 1
+      }
+    },
+    {
+      "ref": "airport-ord",
+      "table": "Airport",
+      "values": {
+        "Address": "Chicago, IL",
+        "Code": "ORD",
+        "IsDeleted": false,
+        "Name": "O'Hare International",
+        "Version": 1
+      }
+    }
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "does": "GET /flight/get-available-flights from SFO to ORD on 2026-11-06."
+    }
+  ],
+  "expect": [
+    "Success with an empty list; no error."
+  ]
+}

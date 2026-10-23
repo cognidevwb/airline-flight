@@ -1,0 +1,16 @@
+{
+  "id": "get-flight-id-flight-id-must-be-a-valid-",
+  "title": "Flight Id must be a valid Guid",
+  "source": "staged scenario",
+  "why": "Shows a malformed Id is stopped at request binding or validation, not treated as not found",
+  "setup": [],
+  "steps": [
+    {
+      "n": 1,
+      "does": "Send GET …/flight/abc-123"
+    }
+  ],
+  "expect": [
+    "400 invalid Id format; the lookup never runs and the response is not a 404"
+  ]
+}

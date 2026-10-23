@@ -1,0 +1,176 @@
+{
+  "table": "Aircraft",
+  "accesses": [
+    {
+      "operation": "_flightDbContext.Aircraft.SingleOrDefaultAsync",
+      "mode": "read",
+      "in": "src/Flight/Aircrafts/Features/CreatingAircraft/V1/CreateAircraft.cs:93 Handle",
+      "given": [
+        "f057fe93-0000-4000-8000-000000001010",
+        "f057fe93-0000-4000-8000-000000001011",
+        "f057fe93-0000-4000-8000-000000001012",
+        "f057fe93-0000-4000-8000-000000001013",
+        "f057fe93-0000-4000-8000-000000001014"
+      ],
+      "lookup": {
+        "Id": "f057fe93-0000-4000-8000-000000001010"
+      },
+      "expect": {
+        "CreatedAt": "2023-02-14T09:12:00Z",
+        "CreatedBy": 3,
+        "Id": "f057fe93-0000-4000-8000-000000001010",
+        "IsDeleted": false,
+        "LastModified": null,
+        "LastModifiedBy": null,
+        "ManufacturingYear": 2014,
+        "Model": "Boeing 737-800",
+        "Name": "Spirit of Dublin",
+        "Version": 1
+      }
+    },
+    {
+      "operation": "_flightDbContext.Aircraft.AddAsync",
+      "mode": "write",
+      "in": "src/Flight/Aircrafts/Features/CreatingAircraft/V1/CreateAircraft.cs:103 Handle",
+      "insert": {
+        "CreatedAt": "2023-02-14T09:25:41Z",
+        "CreatedBy": 3,
+        "Id": "f057fe93-0000-4000-8000-000000001011",
+        "IsDeleted": false,
+        "LastModified": "2024-03-08T13:40:10Z",
+        "LastModifiedBy": 5,
+        "ManufacturingYear": 2019,
+        "Model": "Airbus A320neo",
+        "Name": "Spirit of Cork",
+        "Version": 2
+      },
+      "expect": "the row is stored and reads back equal"
+    },
+    {
+      "operation": "_flightReadDbContext.Aircraft.AsQueryable",
+      "mode": "read",
+      "in": "src/Flight/Aircrafts/Features/CreatingAircraft/V1/CreateAircraftMongo.cs:39 Handle",
+      "given": [
+        "f057fe93-0000-4000-8000-000000001010",
+        "f057fe93-0000-4000-8000-000000001011",
+        "f057fe93-0000-4000-8000-000000001012",
+        "f057fe93-0000-4000-8000-000000001013",
+        "f057fe93-0000-4000-8000-000000001014"
+      ],
+      "lookup": {
+        "Id": "f057fe93-0000-4000-8000-000000001010"
+      },
+      "expect": {
+        "CreatedAt": "2023-02-14T09:12:00Z",
+        "CreatedBy": 3,
+        "Id": "f057fe93-0000-4000-8000-000000001010",
+        "IsDeleted": false,
+        "LastModified": null,
+        "LastModifiedBy": null,
+        "ManufacturingYear": 2014,
+        "Model": "Boeing 737-800",
+        "Name": "Spirit of Dublin",
+        "Version": 1
+      }
+    },
+    {
+      "operation": "_flightReadDbContext.Aircraft.InsertOneAsync",
+      "mode": "read",
+      "in": "src/Flight/Aircrafts/Features/CreatingAircraft/V1/CreateAircraftMongo.cs:48 Handle",
+      "given": [
+        "f057fe93-0000-4000-8000-000000001010",
+        "f057fe93-0000-4000-8000-000000001011",
+        "f057fe93-0000-4000-8000-000000001012",
+        "f057fe93-0000-4000-8000-000000001013",
+        "f057fe93-0000-4000-8000-000000001014"
+      ],
+      "lookup": {
+        "Id": "f057fe93-0000-4000-8000-000000001010"
+      },
+      "expect": {
+        "CreatedAt": "2023-02-14T09:12:00Z",
+        "CreatedBy": 3,
+        "Id": "f057fe93-0000-4000-8000-000000001010",
+        "IsDeleted": false,
+        "LastModified": null,
+        "LastModifiedBy": null,
+        "ManufacturingYear": 2014,
+        "Model": "Boeing 737-800",
+        "Name": "Spirit of Dublin",
+        "Version": 1
+      }
+    },
+    {
+      "operation": "flightDbContext.Aircraft.AddRangeAsync",
+      "mode": "write",
+      "in": "src/Flight/Data/Seed/FlightDataSeeder.cs:50 SeedAircraftAsync",
+      "insert": {
+        "CreatedAt": "2023-02-14T09:25:41Z",
+        "CreatedBy": 3,
+        "Id": "f057fe93-0000-4000-8000-000000001011",
+        "IsDeleted": false,
+        "LastModified": "2024-03-08T13:40:10Z",
+        "LastModifiedBy": 5,
+        "ManufacturingYear": 2019,
+        "Model": "Airbus A320neo",
+        "Name": "Spirit of Cork",
+        "Version": 2
+      },
+      "expect": "the row is stored and reads back equal"
+    },
+    {
+      "operation": "flightReadDbContext.Aircraft.AsQueryable",
+      "mode": "read",
+      "in": "src/Flight/Data/Seed/FlightDataSeeder.cs:53 SeedAircraftAsync",
+      "given": [
+        "f057fe93-0000-4000-8000-000000001010",
+        "f057fe93-0000-4000-8000-000000001011",
+        "f057fe93-0000-4000-8000-000000001012",
+        "f057fe93-0000-4000-8000-000000001013",
+        "f057fe93-0000-4000-8000-000000001014"
+      ],
+      "lookup": {
+        "Id": "f057fe93-0000-4000-8000-000000001010"
+      },
+      "expect": {
+        "CreatedAt": "2023-02-14T09:12:00Z",
+        "CreatedBy": 3,
+        "Id": "f057fe93-0000-4000-8000-000000001010",
+        "IsDeleted": false,
+        "LastModified": null,
+        "LastModifiedBy": null,
+        "ManufacturingYear": 2014,
+        "Model": "Boeing 737-800",
+        "Name": "Spirit of Dublin",
+        "Version": 1
+      }
+    },
+    {
+      "operation": "flightReadDbContext.Aircraft.InsertManyAsync",
+      "mode": "read",
+      "in": "src/Flight/Data/Seed/FlightDataSeeder.cs:55 SeedAircraftAsync",
+      "given": [
+        "f057fe93-0000-4000-8000-000000001010",
+        "f057fe93-0000-4000-8000-000000001011",
+        "f057fe93-0000-4000-8000-000000001012",
+        "f057fe93-0000-4000-8000-000000001013",
+        "f057fe93-0000-4000-8000-000000001014"
+      ],
+      "lookup": {
+        "Id": "f057fe93-0000-4000-8000-000000001010"
+      },
+      "expect": {
+        "CreatedAt": "2023-02-14T09:12:00Z",
+        "CreatedBy": 3,
+        "Id": "f057fe93-0000-4000-8000-000000001010",
+        "IsDeleted": false,
+        "LastModified": null,
+        "LastModifiedBy": null,
+        "ManufacturingYear": 2014,
+        "Model": "Boeing 737-800",
+        "Name": "Spirit of Dublin",
+        "Version": 1
+      }
+    }
+  ]
+}

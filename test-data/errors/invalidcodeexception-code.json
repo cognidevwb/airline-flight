@@ -1,0 +1,24 @@
+{
+  "id": "invalidcodeexception-code",
+  "title": "Code that the code refuses",
+  "kind": "invalid value",
+  "exception": "InvalidCodeException",
+  "base": "DomainException",
+  "thrownAt": "src/Flight/Airports/ValueObjects/Code.cs:18",
+  "condition": "if (string.IsNullOrWhiteSpace(value))",
+  "field": "Code",
+  "expect": {
+    "status": 500,
+    "error": "InvalidCodeException",
+    "note": "DomainException is not one of the exception types the problem-details handler maps, so the API answers 500"
+  },
+  "trigger": {
+    "call": "POST api/v1/flight/airport",
+    "body": {
+      "address": "Longford TW6, Hounslow, London",
+      "code": null,
+      "name": "Heathrow Airport"
+    },
+    "from": "createairportrequestdto-1"
+  }
+}

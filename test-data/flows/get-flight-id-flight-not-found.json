@@ -1,0 +1,32 @@
+{
+  "id": "get-flight-id-flight-not-found",
+  "title": "Flight not found",
+  "source": "staged scenario",
+  "why": "Checks a request for a flight that does not exist returns a clear not-found error",
+  "setup": [
+    {
+      "ref": "aircraft-1",
+      "table": "Aircraft",
+      "values": {
+        "CreatedAt": "2026-01-10T08:00:00Z",
+        "CreatedBy": 1,
+        "IsDeleted": false,
+        "LastModified": "2026-01-10T08:00:00Z",
+        "LastModifiedBy": 1,
+        "ManufacturingYear": 2019,
+        "Model": "737-800",
+        "Name": "Boeing 737",
+        "Version": 1
+      }
+    }
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "does": "Send GET …/flight/b7e4a2d9-1c3f-4e58-8a6b-0d9f5c2e7a41, an Id that matches no flight"
+    }
+  ],
+  "expect": [
+    "404 'flight not found' error, with no partial data returned"
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "id": "get-flight-id-unknown-flight-id-returns-",
+  "title": "Unknown flight Id returns not found",
+  "source": "staged scenario",
+  "why": "Separates a well-formed but unmatched Id (404) from a malformed one (400)",
+  "setup": [
+    {
+      "ref": "aircraft-1",
+      "table": "Aircraft",
+      "values": {
+        "CreatedAt": "2026-01-10T08:00:00Z",
+        "CreatedBy": 1,
+        "IsDeleted": false,
+        "LastModified": "2026-01-10T08:00:00Z",
+        "LastModifiedBy": 1,
+        "ManufacturingYear": 2019,
+        "Model": "737-800",
+        "Name": "Boeing 737",
+        "Version": 1
+      }
+    }
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "does": "Send GET …/flight/3f2b8c1e-9a47-4d6e-b5a0-7c1d2e4f9a10, a valid uuid with no Flight row"
+    }
+  ],
+  "expect": [
+    "404 not found with no flight data"
+  ]
+}

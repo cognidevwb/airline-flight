@@ -1,0 +1,26 @@
+{
+  "id": "seatalreadyexistexception-createseat",
+  "title": "CreateSeat: the record already exists",
+  "kind": "duplicate",
+  "exception": "SeatAlreadyExistException",
+  "base": "AppException",
+  "thrownAt": "src/Flight/Seats/Features/CreatingSeat/V1/CreateSeat.cs:103",
+  "condition": "if (seat is not null)",
+  "field": null,
+  "expect": {
+    "status": 400,
+    "error": "SeatAlreadyExistException",
+    "note": null
+  },
+  "trigger": {
+    "call": "POST api/v1/flight/seat",
+    "body": {
+      "class": "FirstClass",
+      "flightId": "2f5ff8e3-0000-4000-8000-000000001028",
+      "seatNumber": "1A",
+      "type": "Window"
+    },
+    "repeat": 2,
+    "why": "the same body twice; the second is refused"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "id": "post-flight-departure-date-is-invalid",
+  "title": "Departure date is invalid",
+  "source": "staged scenario",
+  "why": "Confirms departure must be a real date and not after arrival.",
+  "setup": [
+    {
+      "ref": "aircraft-1",
+      "table": "Aircraft",
+      "values": {
+        "IsDeleted": false,
+        "ManufacturingYear": 2015,
+        "Model": "737-800",
+        "Name": "Boeing 737",
+        "Version": 1
+      }
+    },
+    {
+      "ref": "airport-jfk",
+      "table": "Airport",
+      "values": {
+        "Address": "Queens, NY",
+        "Code": "JFK",
+        "IsDeleted": false,
+        "Name": "John F. Kennedy International",
+        "Version": 1
+      }
+    },
+    {
+      "ref": "airport-bos",
+      "table": "Airport",
+      "values": {
+        "Address": "Boston, MA",
+        "Code": "BOS",
+        "IsDeleted": false,
+        "Name": "Logan International",
+        "Version": 1
+      }
+    }
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "does": "POST …/flight with DepartureDate 0001-01-01 and valid ArriveDate; then with DepartureDate 2026-11-10T12:00 after ArriveDate 2026-11-10T11:00"
+    }
+  ],
+  "expect": [
+    "Both rejected with a validation error on DepartureDate."
+  ]
+}

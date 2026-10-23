@@ -1,0 +1,2435 @@
+{
+  "name": "CreateAircraftHandler.Handle",
+  "kind": "method",
+  "layer": "unit",
+  "source": "src/Flight/Aircrafts/Features/CreatingAircraft/V1/CreateAircraft.cs:89",
+  "columns": [
+    "request"
+  ],
+  "valid": [
+    {
+      "ref": "aircraft-1",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001010",
+          "ManufacturingYear": 2014,
+          "Model": "Boeing 737-800",
+          "Name": "Spirit of Dublin"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-2",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001011",
+          "ManufacturingYear": 2019,
+          "Model": "Airbus A320neo",
+          "Name": "Spirit of Cork"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001012",
+          "ManufacturingYear": 2018,
+          "Model": "Boeing 787-9 Dreamliner",
+          "Name": "Thames Voyager"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-4",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001013",
+          "ManufacturingYear": 2020,
+          "Model": "Airbus A350-900",
+          "Name": "Rhine Explorer"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-5",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001014",
+          "ManufacturingYear": 2016,
+          "Model": "Boeing 777-300ER",
+          "Name": "Desert Falcon"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-6",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001015",
+          "ManufacturingYear": 2021,
+          "Model": "Boeing 737 MAX 8",
+          "Name": "Liberty Bell"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-7",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001016",
+          "ManufacturingYear": 2022,
+          "Model": "Airbus A321neo",
+          "Name": "Emerald Isle"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-8",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001017",
+          "ManufacturingYear": 2020,
+          "Model": "Airbus A220-300",
+          "Name": "Alpine Crest"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-9",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001018",
+          "ManufacturingYear": 2013,
+          "Model": "Boeing 787-8",
+          "Name": "Golden Gate"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-10",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001019",
+          "ManufacturingYear": 2012,
+          "Model": "Airbus A330-300",
+          "Name": "Nile Queen"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-11",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001020",
+          "ManufacturingYear": 2011,
+          "Model": "Embraer E190",
+          "Name": "Spirit of Belfast"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-12",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001021",
+          "ManufacturingYear": 2010,
+          "Model": "Boeing 777-200LR",
+          "Name": "Pacific Dawn"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-13",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001022",
+          "ManufacturingYear": 2008,
+          "Model": "Airbus A319-100",
+          "Name": "Baltic Breeze"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-14",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001023",
+          "ManufacturingYear": 2015,
+          "Model": "Airbus A380-800",
+          "Name": "Windsor Castle"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-15",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001024",
+          "ManufacturingYear": 2017,
+          "Model": "ATR 72-600",
+          "Name": "Highland Piper"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-16",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001025",
+          "ManufacturingYear": 2014,
+          "Model": "Boeing 747-8",
+          "Name": "Sahara Star"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-17",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001026",
+          "ManufacturingYear": 2009,
+          "Model": "Airbus A320-200",
+          "Name": "Danube Pearl"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-18",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001027",
+          "ManufacturingYear": 2007,
+          "Model": "Boeing 767-300ER",
+          "Name": "Manhattan Skyline"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-19",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001028",
+          "ManufacturingYear": 2015,
+          "Model": "Airbus A321-200",
+          "Name": "Aegean Wind"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-20",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001029",
+          "ManufacturingYear": 2012,
+          "Model": "Bombardier CRJ900",
+          "Name": "Blue Lagoon"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-21",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001030",
+          "ManufacturingYear": 2023,
+          "Model": "Airbus A350-1000",
+          "Name": "Oriental Jade"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-22",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001031",
+          "ManufacturingYear": 2006,
+          "Model": "Boeing 737-700",
+          "Name": "Spirit of Galway"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-23",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001032",
+          "ManufacturingYear": 2011,
+          "Model": "Airbus A330-200",
+          "Name": "Cape Horn"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-24",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001033",
+          "ManufacturingYear": 2016,
+          "Model": "Embraer E175",
+          "Name": "Prairie Wind"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-25",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001034",
+          "ManufacturingYear": 2021,
+          "Model": "Boeing 787-10 Dreamliner",
+          "Name": "Silk Road"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-26",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001035",
+          "ManufacturingYear": 2017,
+          "Model": "Airbus A320neo",
+          "Name": "Tiber Arrow"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-27",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001036",
+          "ManufacturingYear": 2013,
+          "Model": "De Havilland Dash 8-400",
+          "Name": "Harbour Light"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-28",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001037",
+          "ManufacturingYear": 2013,
+          "Model": "Boeing 737-900ER",
+          "Name": "Atlas Summit"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-29",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001038",
+          "ManufacturingYear": 2019,
+          "Model": "Airbus A220-100",
+          "Name": "Spirit of Limerick"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-30",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001039",
+          "ManufacturingYear": 2004,
+          "Model": "Boeing 757-200",
+          "Name": "Midnight Sun"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-31",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001040",
+          "ManufacturingYear": 2020,
+          "Model": "Airbus A321neo",
+          "Name": "Bosphorus Bridge"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-32",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001041",
+          "ManufacturingYear": 2005,
+          "Model": "Boeing 777-200ER",
+          "Name": "Kilimanjaro"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-33",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001042",
+          "ManufacturingYear": 2023,
+          "Model": "Boeing 737 MAX 9",
+          "Name": "Coral Reef"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-34",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001043",
+          "ManufacturingYear": 2022,
+          "Model": "Embraer E195-E2",
+          "Name": "Cotswold Rose"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-35",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001044",
+          "ManufacturingYear": 2018,
+          "Model": "ATR 42-600",
+          "Name": "Fjord Runner"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-36",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001045",
+          "ManufacturingYear": 2021,
+          "Model": "Airbus A319neo",
+          "Name": "Spirit of Derry"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-37",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001046",
+          "ManufacturingYear": 2022,
+          "Model": "Airbus A330-900neo",
+          "Name": "Monsoon Pearl"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-38",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001047",
+          "ManufacturingYear": 2019,
+          "Model": "Boeing 787-9 Dreamliner",
+          "Name": "Aurora Borealis"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-39",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001048",
+          "ManufacturingYear": 2017,
+          "Model": "Airbus A350-900",
+          "Name": "Bavarian Eagle"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-40",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001049",
+          "ManufacturingYear": 2010,
+          "Model": "Boeing 737-800",
+          "Name": "Gateway Spirit"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-41",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001050",
+          "ManufacturingYear": 2012,
+          "Model": "Airbus A320-200",
+          "Name": "Lisbon Tram"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-42",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001051",
+          "ManufacturingYear": 2019,
+          "Model": "Boeing 777-300ER",
+          "Name": "Red Dragon"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-43",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001052",
+          "ManufacturingYear": 2009,
+          "Model": "Bombardier CRJ700",
+          "Name": "Spirit of Kerry"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-44",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001053",
+          "ManufacturingYear": 2024,
+          "Model": "Airbus A321XLR",
+          "Name": "Seine Lantern"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-45",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001054",
+          "ManufacturingYear": 2015,
+          "Model": "Boeing 787-8",
+          "Name": "Uluru Dreaming"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-46",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001055",
+          "ManufacturingYear": 2014,
+          "Model": "Airbus A330-300",
+          "Name": "Andes Condor"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-47",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001056",
+          "ManufacturingYear": 2025,
+          "Model": "Boeing 737 MAX 8",
+          "Name": "Spirit of Waterford"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-48",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001057",
+          "ManufacturingYear": 2024,
+          "Model": "Airbus A220-300",
+          "Name": "Tasman Wave"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-49",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001058",
+          "ManufacturingYear": 2018,
+          "Model": "Airbus A320neo",
+          "Name": "Spirit of Dublin"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-50",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001059",
+          "ManufacturingYear": 2016,
+          "Model": "Boeing 737-800",
+          "Name": "Cliffs of Moher"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-51",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001060",
+          "ManufacturingYear": 2023,
+          "Model": "Airbus A321neo",
+          "Name": "Spirit of Lisbon"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-52",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001061",
+          "ManufacturingYear": 2019,
+          "Model": "Boeing 737 MAX 8",
+          "Name": "Giants Causeway"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-53",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001062",
+          "ManufacturingYear": 2021,
+          "Model": "Airbus A350-900",
+          "Name": "Bluebird of Reykjavik"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-54",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001063",
+          "ManufacturingYear": 2015,
+          "Model": "Boeing 777-300ER",
+          "Name": "Emerald Horizon"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-55",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001064",
+          "ManufacturingYear": 2020,
+          "Model": "Boeing 787-9 Dreamliner",
+          "Name": "Spirit of Vienna"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-56",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001065",
+          "ManufacturingYear": 2017,
+          "Model": "Airbus A330-300",
+          "Name": "Atlantic Dawn"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-57",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001066",
+          "ManufacturingYear": 2018,
+          "Model": "Embraer E190",
+          "Name": "River Liffey"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-58",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001067",
+          "ManufacturingYear": 2019,
+          "Model": "Embraer E175",
+          "Name": "Spirit of Cork"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-59",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001068",
+          "ManufacturingYear": 2022,
+          "Model": "ATR 72-600",
+          "Name": "Skerries Wind"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-60",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001069",
+          "ManufacturingYear": 2014,
+          "Model": "Bombardier CRJ900",
+          "Name": "Spirit of Galway"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-61",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001070",
+          "ManufacturingYear": 2012,
+          "Model": "Boeing 737-900ER",
+          "Name": "Wicklow Mist"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-62",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001071",
+          "ManufacturingYear": 2008,
+          "Model": "Boeing 777-200ER",
+          "Name": "Spirit of Montreal"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-63",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001072",
+          "ManufacturingYear": 2011,
+          "Model": "Boeing 767-300ER",
+          "Name": "Harbour Light"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-64",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001073",
+          "ManufacturingYear": 2013,
+          "Model": "Airbus A321-200",
+          "Name": "Spirit of Prague"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-65",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001074",
+          "ManufacturingYear": 2010,
+          "Model": "Airbus A319-100",
+          "Name": "Copper Coast"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-66",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001075",
+          "ManufacturingYear": 2014,
+          "Model": "Airbus A320-200",
+          "Name": "Spirit of Madrid"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-67",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001076",
+          "ManufacturingYear": 2018,
+          "Model": "Airbus A220-300",
+          "Name": "Tara Hill"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-68",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001077",
+          "ManufacturingYear": 2021,
+          "Model": "Airbus A220-100",
+          "Name": "Spirit of Zurich"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-69",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001078",
+          "ManufacturingYear": 2012,
+          "Model": "Boeing 747-8",
+          "Name": "Dingle Bay"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-70",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001079",
+          "ManufacturingYear": 2016,
+          "Model": "Airbus A380-800",
+          "Name": "Spirit of Singapore"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-71",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001080",
+          "ManufacturingYear": 2019,
+          "Model": "Airbus A330-900neo",
+          "Name": "Sperrin Skies"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-72",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001081",
+          "ManufacturingYear": 2024,
+          "Model": "Boeing 737 MAX 8",
+          "Name": "Spirit of Athens"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-73",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001082",
+          "ManufacturingYear": 2022,
+          "Model": "Boeing 737 MAX 9",
+          "Name": "Burren Falcon"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-74",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001083",
+          "ManufacturingYear": 2020,
+          "Model": "Boeing 787-10 Dreamliner",
+          "Name": "Spirit of Toronto"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-75",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001084",
+          "ManufacturingYear": 2015,
+          "Model": "Boeing 787-8",
+          "Name": "Slieve Donard"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-76",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001085",
+          "ManufacturingYear": 2016,
+          "Model": "De Havilland Dash 8-400",
+          "Name": "Spirit of Aberdeen"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-77",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001086",
+          "ManufacturingYear": 2009,
+          "Model": "Boeing 737-700",
+          "Name": "Lough Neagh"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-78",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001087",
+          "ManufacturingYear": 2014,
+          "Model": "Airbus A330-200",
+          "Name": "Spirit of Cairo"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-79",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001088",
+          "ManufacturingYear": 2012,
+          "Model": "Boeing 777-200LR",
+          "Name": "Achill Head"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-80",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001089",
+          "ManufacturingYear": 2024,
+          "Model": "Airbus A350-1000",
+          "Name": "Spirit of Oslo"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-81",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001090",
+          "ManufacturingYear": 2025,
+          "Model": "Airbus A321neo",
+          "Name": "Howth Lantern"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-82",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001091",
+          "ManufacturingYear": 2023,
+          "Model": "Embraer E195-E2",
+          "Name": "Spirit of Helsinki"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-83",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001092",
+          "ManufacturingYear": 2019,
+          "Model": "ATR 42-600",
+          "Name": "Shannon Swan"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-84",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001093",
+          "ManufacturingYear": 2008,
+          "Model": "Bombardier CRJ700",
+          "Name": "Spirit of Brussels"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-85",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001094",
+          "ManufacturingYear": 2007,
+          "Model": "Boeing 757-200",
+          "Name": "Mourne Gate"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-86",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001095",
+          "ManufacturingYear": 2008,
+          "Model": "Airbus A340-600",
+          "Name": "Spirit of Nairobi"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-87",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001096",
+          "ManufacturingYear": 2010,
+          "Model": "Boeing 737-900ER",
+          "Name": "Kinsale Harbour"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-88",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001097",
+          "ManufacturingYear": 2019,
+          "Model": "Airbus A319neo",
+          "Name": "Spirit of Tallinn"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-89",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001098",
+          "ManufacturingYear": 2025,
+          "Model": "Airbus A220-300",
+          "Name": "Glendalough"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-90",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001099",
+          "ManufacturingYear": 2025,
+          "Model": "Airbus A350-900",
+          "Name": "Spirit of Doha"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-91",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001100",
+          "ManufacturingYear": 2013,
+          "Model": "Boeing 777-300ER",
+          "Name": "Boyne Valley"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-92",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001101",
+          "ManufacturingYear": 2024,
+          "Model": "Boeing 787-9 Dreamliner",
+          "Name": "Spirit of Lima"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-93",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001102",
+          "ManufacturingYear": 2022,
+          "Model": "Airbus A320neo",
+          "Name": "Aran Islander"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-94",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001103",
+          "ManufacturingYear": 2012,
+          "Model": "Airbus A321-200",
+          "Name": "Spirit of Warsaw"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-95",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001104",
+          "ManufacturingYear": 2018,
+          "Model": "Boeing 737-800",
+          "Name": "Donegal Tweed"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-96",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001105",
+          "ManufacturingYear": 2020,
+          "Model": "Embraer E190-E2",
+          "Name": "Spirit of Bergen"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-97",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001106",
+          "ManufacturingYear": 2015,
+          "Model": "Embraer E190",
+          "Name": "Connemara Pony"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-98",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001107",
+          "ManufacturingYear": 2023,
+          "Model": "Boeing 787-10 Dreamliner",
+          "Name": "Spirit of Marrakesh"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-99",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001108",
+          "ManufacturingYear": 2018,
+          "Model": "Boeing 737 MAX 8",
+          "Name": "Spirit of Lisbon"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-100",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001109",
+          "ManufacturingYear": 2020,
+          "Model": "Boeing 737 MAX 8",
+          "Name": "Emerald Isle"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-101",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001110",
+          "ManufacturingYear": 2022,
+          "Model": "Boeing 737 MAX 8",
+          "Name": "Cape Wrath"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-102",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001111",
+          "ManufacturingYear": 2021,
+          "Model": "Boeing 737 MAX 9",
+          "Name": "Golden Gate Voyager"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-103",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001112",
+          "ManufacturingYear": 2012,
+          "Model": "Boeing 737-800",
+          "Name": "Spirit of Cork"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-104",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001113",
+          "ManufacturingYear": 2008,
+          "Model": "Boeing 737-800",
+          "Name": "Northern Lights"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-105",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001114",
+          "ManufacturingYear": 2020,
+          "Model": "Boeing 737-800",
+          "Name": "Bluebird of Oslo"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-106",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001115",
+          "ManufacturingYear": 2013,
+          "Model": "Airbus A320-200",
+          "Name": "Rhine Maiden"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-107",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001116",
+          "ManufacturingYear": 2016,
+          "Model": "Airbus A320-200",
+          "Name": "Danube Star"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-108",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001117",
+          "ManufacturingYear": 2020,
+          "Model": "Airbus A320neo",
+          "Name": "Spirit of Galway"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-109",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001118",
+          "ManufacturingYear": 2021,
+          "Model": "Airbus A320neo",
+          "Name": "Sierra Nevada"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-110",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001119",
+          "ManufacturingYear": 2024,
+          "Model": "Airbus A320neo",
+          "Name": "Aurora Borealis"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-111",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001120",
+          "ManufacturingYear": 2019,
+          "Model": "Airbus A321neo",
+          "Name": "Pride of Bavaria"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-112",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001121",
+          "ManufacturingYear": 2021,
+          "Model": "Airbus A321neo",
+          "Name": "Tagus Runner"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-113",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001122",
+          "ManufacturingYear": 2017,
+          "Model": "Airbus A321-200",
+          "Name": "Spirit of Limerick"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-114",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001123",
+          "ManufacturingYear": 2018,
+          "Model": "Airbus A350-900",
+          "Name": "Silk Road"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-115",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001124",
+          "ManufacturingYear": 2022,
+          "Model": "Airbus A350-900",
+          "Name": "Desert Rose"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-116",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001125",
+          "ManufacturingYear": 2022,
+          "Model": "Airbus A350-1000",
+          "Name": "Pacific Crest"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-117",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001126",
+          "ManufacturingYear": 2017,
+          "Model": "Boeing 787-9",
+          "Name": "Spirit of Belfast"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-118",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001127",
+          "ManufacturingYear": 2021,
+          "Model": "Boeing 787-9",
+          "Name": "Monsoon Wind"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-119",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001128",
+          "ManufacturingYear": 2016,
+          "Model": "Boeing 787-8",
+          "Name": "Cherry Blossom"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-120",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001129",
+          "ManufacturingYear": 2019,
+          "Model": "Boeing 787-10",
+          "Name": "Highland Eagle"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-121",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001130",
+          "ManufacturingYear": 2018,
+          "Model": "Boeing 777-300ER",
+          "Name": "Spirit of Dubai Creek"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-122",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001131",
+          "ManufacturingYear": 2017,
+          "Model": "Boeing 777-300ER",
+          "Name": "Falcon of Doha"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-123",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001132",
+          "ManufacturingYear": 2011,
+          "Model": "Boeing 777-200ER",
+          "Name": "Atlantic Dawn"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-124",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001133",
+          "ManufacturingYear": 2013,
+          "Model": "Airbus A330-300",
+          "Name": "Spirit of Kerry"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-125",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001134",
+          "ManufacturingYear": 2018,
+          "Model": "Airbus A330-900neo",
+          "Name": "Jade Dragon"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-126",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001135",
+          "ManufacturingYear": 2010,
+          "Model": "Airbus A330-200",
+          "Name": "Coral Sea"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-127",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001136",
+          "ManufacturingYear": 2022,
+          "Model": "Airbus A220-300",
+          "Name": "Maple Leaf Express"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-128",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001137",
+          "ManufacturingYear": 2023,
+          "Model": "Airbus A220-100",
+          "Name": "Alpine Swift"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-129",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001138",
+          "ManufacturingYear": 2014,
+          "Model": "Embraer E190",
+          "Name": "Spirit of Sligo"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-130",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001139",
+          "ManufacturingYear": 2013,
+          "Model": "Embraer E175",
+          "Name": "Heron of Tallinn"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-131",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001140",
+          "ManufacturingYear": 2021,
+          "Model": "Embraer E195-E2",
+          "Name": "Baltic Amber"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-132",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001141",
+          "ManufacturingYear": 2022,
+          "Model": "Embraer E190-E2",
+          "Name": "Fjord Wanderer"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-133",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001142",
+          "ManufacturingYear": 2015,
+          "Model": "ATR 72-600",
+          "Name": "Island Hopper"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-134",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001143",
+          "ManufacturingYear": 2020,
+          "Model": "ATR 42-600",
+          "Name": "Spirit of Aran"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-135",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001144",
+          "ManufacturingYear": 2018,
+          "Model": "Bombardier CRJ900",
+          "Name": "Prairie Lark"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-136",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001145",
+          "ManufacturingYear": 2011,
+          "Model": "Bombardier CRJ700",
+          "Name": "Tundra Swan"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-137",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001146",
+          "ManufacturingYear": 2014,
+          "Model": "De Havilland Dash 8-400",
+          "Name": "Spirit of Shannon"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-138",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001147",
+          "ManufacturingYear": 2005,
+          "Model": "Airbus A319-100",
+          "Name": "Old Faithful"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-139",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001148",
+          "ManufacturingYear": 2025,
+          "Model": "Airbus A321XLR",
+          "Name": "Cirrus Sky"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-140",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001149",
+          "ManufacturingYear": 2010,
+          "Model": "Airbus A340-600",
+          "Name": "Sahara Wind"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-141",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001150",
+          "ManufacturingYear": 2018,
+          "Model": "Boeing 747-8",
+          "Name": "Queen of the Skies"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-142",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001151",
+          "ManufacturingYear": 2019,
+          "Model": "Airbus A380-800",
+          "Name": "Royal Thames"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-143",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001152",
+          "ManufacturingYear": 2013,
+          "Model": "Boeing 767-300ER",
+          "Name": "Spirit of Waterford"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-144",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001153",
+          "ManufacturingYear": 2002,
+          "Model": "Boeing 757-200",
+          "Name": "Iron Duke"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-145",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001154",
+          "ManufacturingYear": 2009,
+          "Model": "Boeing 777-200LR",
+          "Name": "Long Haul Larkspur"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-146",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001155",
+          "ManufacturingYear": 2015,
+          "Model": "Boeing 737-700",
+          "Name": "Harbour Gull"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-147",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001156",
+          "ManufacturingYear": 2013,
+          "Model": "Airbus A319-100",
+          "Name": "Spirit of Kilkenny"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-148",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001157",
+          "ManufacturingYear": 2016,
+          "Model": "Boeing 737-900ER",
+          "Name": "Copper Beech"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-149",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001158",
+          "ManufacturingYear": 2015,
+          "Model": "Boeing 737-800",
+          "Name": "Spirit of Lisbon"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-150",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001159",
+          "ManufacturingYear": 2017,
+          "Model": "Boeing 737-800",
+          "Name": "Pride of Glasgow"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-151",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001160",
+          "ManufacturingYear": 2019,
+          "Model": "Boeing 737-800",
+          "Name": "City of Bergen"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-152",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001161",
+          "ManufacturingYear": 2013,
+          "Model": "Boeing 737-800",
+          "Name": "Golden Gate"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-153",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001162",
+          "ManufacturingYear": 2021,
+          "Model": "Boeing 737-800",
+          "Name": "Atlantic Dawn"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-154",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001163",
+          "ManufacturingYear": 2023,
+          "Model": "Airbus A320neo",
+          "Name": "Emerald Isle"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-155",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001164",
+          "ManufacturingYear": 2016,
+          "Model": "Airbus A320neo",
+          "Name": "Northern Star"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-156",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001165",
+          "ManufacturingYear": 2026,
+          "Model": "Airbus A320neo",
+          "Name": "Celtic Spirit"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-157",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001166",
+          "ManufacturingYear": 2024,
+          "Model": "Airbus A321neo",
+          "Name": "Spirit of Seville"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-158",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001167",
+          "ManufacturingYear": 2022,
+          "Model": "Boeing 787-9 Dreamliner",
+          "Name": "Lady of Lyon"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-159",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001168",
+          "ManufacturingYear": 2023,
+          "Model": "Boeing 787-9 Dreamliner",
+          "Name": "Baltic Breeze"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-160",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001169",
+          "ManufacturingYear": 2015,
+          "Model": "Boeing 787-9",
+          "Name": "Silver Falcon"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-161",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001170",
+          "ManufacturingYear": 2019,
+          "Model": "Boeing 787-9",
+          "Name": "Spirit of Geneva"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-162",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001171",
+          "ManufacturingYear": 2019,
+          "Model": "Airbus A350-900",
+          "Name": "Alpine Crest"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-163",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001172",
+          "ManufacturingYear": 2023,
+          "Model": "Airbus A350-900",
+          "Name": "Harbour Lights"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-164",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001173",
+          "ManufacturingYear": 2014,
+          "Model": "Boeing 777-300ER",
+          "Name": "Spirit of Porto"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-165",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001174",
+          "ManufacturingYear": 2012,
+          "Model": "Boeing 777-300ER",
+          "Name": "Desert Rose"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-166",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001175",
+          "ManufacturingYear": 2020,
+          "Model": "Boeing 777-300ER",
+          "Name": "Cape Wanderer"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-167",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001176",
+          "ManufacturingYear": 2023,
+          "Model": "Boeing 737 MAX 8",
+          "Name": "Midnight Sun"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-168",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001177",
+          "ManufacturingYear": 2017,
+          "Model": "Airbus A220-300",
+          "Name": "Spirit of Oslo"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-169",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001178",
+          "ManufacturingYear": 2023,
+          "Model": "Airbus A220-300",
+          "Name": "River Thames"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-170",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001179",
+          "ManufacturingYear": 2014,
+          "Model": "Boeing 787-8",
+          "Name": "Monsoon Wind"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-171",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001180",
+          "ManufacturingYear": 2012,
+          "Model": "Boeing 787-8",
+          "Name": "Orient Pearl"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-172",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001181",
+          "ManufacturingYear": 2018,
+          "Model": "Airbus A330-300",
+          "Name": "Spirit of Vienna"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-173",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001182",
+          "ManufacturingYear": 2015,
+          "Model": "Airbus A330-300",
+          "Name": "Coral Sky"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-174",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001183",
+          "ManufacturingYear": 2016,
+          "Model": "Embraer E190",
+          "Name": "Highland Eagle"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-175",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001184",
+          "ManufacturingYear": 2012,
+          "Model": "Embraer E190",
+          "Name": "Aurora Borealis"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-176",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001185",
+          "ManufacturingYear": 2011,
+          "Model": "Boeing 777-200LR",
+          "Name": "Spirit of Naples"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-177",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001186",
+          "ManufacturingYear": 2009,
+          "Model": "Airbus A319-100",
+          "Name": "Sahara Wind"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-178",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001187",
+          "ManufacturingYear": 2011,
+          "Model": "Airbus A319-100",
+          "Name": "Amber Coast"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-179",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001188",
+          "ManufacturingYear": 2018,
+          "Model": "Airbus A380-800",
+          "Name": "Spirit of Prague"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-180",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001189",
+          "ManufacturingYear": 2013,
+          "Model": "Airbus A380-800",
+          "Name": "Jade Horizon"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-181",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001190",
+          "ManufacturingYear": 2018,
+          "Model": "ATR 72-600",
+          "Name": "Blue Lagoon"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-182",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001191",
+          "ManufacturingYear": 2019,
+          "Model": "ATR 72-600",
+          "Name": "Spirit of Krakow"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-183",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001192",
+          "ManufacturingYear": 2016,
+          "Model": "Boeing 747-8",
+          "Name": "Saffron Skies"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-184",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001193",
+          "ManufacturingYear": 2011,
+          "Model": "Airbus A320-200",
+          "Name": "Iron Duke"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-185",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001194",
+          "ManufacturingYear": 2010,
+          "Model": "Airbus A320-200",
+          "Name": "Spirit of Malta"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-186",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001195",
+          "ManufacturingYear": 2014,
+          "Model": "Airbus A321-200",
+          "Name": "Tulip Express"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-187",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001196",
+          "ManufacturingYear": 2016,
+          "Model": "Airbus A321-200",
+          "Name": "Fjord Runner"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-188",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001197",
+          "ManufacturingYear": 2013,
+          "Model": "Bombardier CRJ900",
+          "Name": "Spirit of Athens"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-189",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001198",
+          "ManufacturingYear": 2010,
+          "Model": "Bombardier CRJ900",
+          "Name": "Cinnamon Trail"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-190",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001199",
+          "ManufacturingYear": 2021,
+          "Model": "Airbus A350-1000",
+          "Name": "Windward Isle"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-191",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001200",
+          "ManufacturingYear": 2008,
+          "Model": "Boeing 737-700",
+          "Name": "Spirit of Zurich"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-192",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001201",
+          "ManufacturingYear": 2012,
+          "Model": "Airbus A330-200",
+          "Name": "Pacific Voyager"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-193",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001202",
+          "ManufacturingYear": 2017,
+          "Model": "Embraer E175",
+          "Name": "Granite Peak"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-194",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001203",
+          "ManufacturingYear": 2022,
+          "Model": "Boeing 787-10 Dreamliner",
+          "Name": "Spirit of Cork"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-195",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001204",
+          "ManufacturingYear": 2015,
+          "Model": "De Havilland Dash 8-400",
+          "Name": "Lotus Crown"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-196",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001205",
+          "ManufacturingYear": 2014,
+          "Model": "Boeing 737-900ER",
+          "Name": "Kestrel"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-197",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001206",
+          "ManufacturingYear": 2024,
+          "Model": "Boeing 737 MAX 9",
+          "Name": "Southern Cross"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-198",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001207",
+          "ManufacturingYear": 2006,
+          "Model": "Airbus A318-100",
+          "Name": "Spirit of Galway"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-199",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001208",
+          "ManufacturingYear": 2010,
+          "Model": "Embraer E170",
+          "Name": "Spirit of Lisbon"
+        }
+      }
+    },
+    {
+      "ref": "aircraft-200",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "Id": "f057fe93-0000-4000-8000-000000001209",
+          "ManufacturingYear": 2003,
+          "Model": "Boeing 717-200",
+          "Name": "Spirit of Reykjavik"
+        }
+      }
+    }
+  ],
+  "invalid": [
+    {
+      "ref": "createaircrafthandler-handle-rejection-1",
+      "kind": "rejection",
+      "data": {
+        "request": null
+      },
+      "violates": {
+        "field": "request",
+        "rule": "`request` is declared NOT NULL"
+      }
+    }
+  ],
+  "coverage": [
+    {
+      "ref": "createaircrafthandler-handle-case-1",
+      "kind": "case",
+      "data": {
+        "Request": "{…}"
+      },
+      "case": "covering-0001"
+    }
+  ],
+  "use": "argument sets for a unit test of this method; nested objects are whole records"
+}

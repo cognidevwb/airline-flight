@@ -1,0 +1,75 @@
+{
+  "id": "get-flight-get-available-seats-id-large-",
+  "title": "Large aircraft with a full seat map",
+  "source": "staged scenario",
+  "why": "Checks a large result comes back whole, without paging or truncation",
+  "setup": [
+    {
+      "ref": "aircraft-1",
+      "table": "Aircraft",
+      "values": {
+        "IsDeleted": false,
+        "ManufacturingYear": 2014,
+        "Model": "A380",
+        "Name": "Skyliner 13"
+      }
+    },
+    {
+      "ref": "airport-1",
+      "table": "Airport",
+      "values": {
+        "Address": "London",
+        "Code": "LHR",
+        "IsDeleted": false,
+        "Name": "Heathrow"
+      }
+    },
+    {
+      "ref": "airport-2",
+      "table": "Airport",
+      "values": {
+        "Address": "Dubai",
+        "Code": "DXB",
+        "IsDeleted": false,
+        "Name": "Dubai Intl"
+      }
+    },
+    {
+      "ref": "flight-1",
+      "table": "Flight",
+      "values": {
+        "AircraftId": "aircraft-1",
+        "ArriveAirportId": "airport-2",
+        "ArriveDate": "2026-12-08T23:50:00Z",
+        "DepartureAirportId": "airport-1",
+        "DepartureDate": "2026-12-08T14:00:00Z",
+        "DurationMinutes": 410,
+        "FlightDate": "2026-12-08T00:00:00Z",
+        "FlightNumber": "EK1",
+        "IsDeleted": false,
+        "Price": 800,
+        "Status": "Flying"
+      }
+    },
+    {
+      "ref": "seat-1..500",
+      "table": "Seat",
+      "values": {
+        "Class": "Economy",
+        "FlightId": "flight-1",
+        "IsDeleted": false,
+        "SeatNumber": "1A..~55J (500 seats, mixed classes and types)",
+        "Type": "Window"
+      }
+    }
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "does": "Book 20 of the 500 seats, then GET /flight/get-available-seats/{flight-1 Id}"
+    }
+  ],
+  "expect": [
+    "200 with all 480 open seats in one list"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "post-flight-aircraft-invalid-model",
+  "title": "Invalid model",
+  "source": "staged scenario",
+  "why": "Shows that both an empty Model and an over-long Model are rejected.",
+  "setup": [],
+  "steps": [
+    {
+      "n": 1,
+      "does": "POST …/flight/aircraft with Name 'Bad Model Jet', Model '' (empty), ManufacturingYear 2015; then repeat with a 51-character Model 'ABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJK'"
+    }
+  ],
+  "expect": [
+    "Both requests are rejected with a validation error on Model. No aircraft is created."
+  ]
+}

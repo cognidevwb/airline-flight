@@ -1,0 +1,75 @@
+{
+  "id": "get-flight-get-available-seats-id-every-",
+  "title": "Every seat is already booked",
+  "source": "staged scenario",
+  "why": "Distinguishes a sold-out flight from an error",
+  "setup": [
+    {
+      "ref": "aircraft-1",
+      "table": "Aircraft",
+      "values": {
+        "IsDeleted": false,
+        "ManufacturingYear": 2017,
+        "Model": "B737",
+        "Name": "Skyliner 14"
+      }
+    },
+    {
+      "ref": "airport-1",
+      "table": "Airport",
+      "values": {
+        "Address": "Milan",
+        "Code": "MXP",
+        "IsDeleted": false,
+        "Name": "Milan Malpensa"
+      }
+    },
+    {
+      "ref": "airport-2",
+      "table": "Airport",
+      "values": {
+        "Address": "Athens",
+        "Code": "ATH",
+        "IsDeleted": false,
+        "Name": "Athens"
+      }
+    },
+    {
+      "ref": "flight-1",
+      "table": "Flight",
+      "values": {
+        "AircraftId": "aircraft-1",
+        "ArriveAirportId": "airport-2",
+        "ArriveDate": "2026-12-09T11:30:00Z",
+        "DepartureAirportId": "airport-1",
+        "DepartureDate": "2026-12-09T09:00:00Z",
+        "DurationMinutes": 150,
+        "FlightDate": "2026-12-09T00:00:00Z",
+        "FlightNumber": "A3632",
+        "IsDeleted": false,
+        "Price": 130,
+        "Status": "Flying"
+      }
+    },
+    {
+      "ref": "seat-1..150",
+      "table": "Seat",
+      "values": {
+        "Class": "Economy",
+        "FlightId": "flight-1",
+        "IsDeleted": false,
+        "SeatNumber": "1A..25F (150 seats)",
+        "Type": "Window"
+      }
+    }
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "does": "Book all 150 seats, then GET /flight/get-available-seats/{flight-1 Id}"
+    }
+  ],
+  "expect": [
+    "Empty list (200) or a clear 'no seats available' result"
+  ]
+}

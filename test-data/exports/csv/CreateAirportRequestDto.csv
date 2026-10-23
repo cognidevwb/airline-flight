@@ -1,0 +1,201 @@
+Name,Address,Code
+Heathrow Airport,"Longford TW6, Hounslow, London",LHR
+John F. Kennedy International Airport,"Jamaica, Queens, New York, NY 11430",JFK
+Frankfurt Airport,"60547 Frankfurt am Main, Germany",FRA
+Dubai International Airport,"Garhoud, Dubai, United Arab Emirates",DXB
+Dublin Airport,"Collinstown, Dublin, K67 Ireland",DUB
+Paris Charles de Gaulle Airport,"95700 Roissy-en-France, France",CDG
+Amsterdam Schiphol Airport,"Evert van de Beekstraat 202, Schiphol",AMS
+Madrid-Barajas Airport,"Av de la Hispanidad, 28042 Madrid",MAD
+Los Angeles International Airport,"1 World Way, Los Angeles, CA 90045",LAX
+O'Hare International Airport,"10000 W O'Hare Ave, Chicago, IL 60666",ORD
+Singapore Changi Airport,"Airport Blvd, Singapore 819663",SIN
+Tokyo Haneda Airport,"3 Hanedakuko, Ota City, Tokyo 144-0041",HND
+Hartsfield-Jackson Atlanta International Airport,"6000 N Terminal Pkwy, Atlanta, GA 30320",ATL
+Munich Airport,"Nordallee 25, 85356 Munich, Germany",MUC
+Zurich Airport,"Flughafenstrasse, 8058 Zurich, Switzerland",ZRH
+Istanbul Airport,"Tayakadın, 34283 Arnavutköy, Istanbul",IST
+Hamad International Airport,"Airport Rd, Doha, Qatar",DOH
+Sydney Kingsford Smith Airport,"Mascot NSW 2020, Australia",SYD
+Toronto Pearson International Airport,"6301 Silver Dart Dr, Mississauga, ON",YYZ
+San Francisco International Airport,"San Francisco, CA 94128, United States",SFO
+Hong Kong International Airport,"1 Sky Plaza Rd, Chek Lap Kok, Hong Kong",HKG
+Incheon International Airport,"272 Gonghang-ro, Jung-gu, Incheon",ICN
+Copenhagen Airport,"Lufthavnsboulevarden 6, 2770 Kastrup",CPH
+Vienna International Airport,"1300 Schwechat, Austria",VIE
+Barcelona-El Prat Airport,"08820 El Prat de Llobregat, Barcelona",BCN
+Rome Fiumicino Airport,"Via dell'Aeroporto di Fiumicino, 00054 Rome",FCO
+Dallas/Fort Worth International Airport,"2400 Aviation Dr, DFW Airport, TX 75261",DFW
+Miami International Airport,"2100 NW 42nd Ave, Miami, FL 33126",MIA
+Manchester Airport,"Wilmslow Rd, Manchester M90 1QX",MAN
+Gatwick Airport,"Horley, Gatwick RH6 0NP, West Sussex",LGW
+Edinburgh Airport,"Edinburgh EH12 9DN, Scotland",EDI
+Shannon Airport,"Shannon, Co. Clare, V14 Ireland",SNN
+Cork Airport,"Cork, T12 Ireland",ORK
+Oslo Gardermoen Airport,"Edvard Munchs veg, 2061 Gardermoen",OSL
+Stockholm Arlanda Airport,"190 45 Stockholm-Arlanda, Sweden",ARN
+Helsinki Airport,"Lentoasemantie 1, 01530 Vantaa",HEL
+Lisbon Humberto Delgado Airport,"Alameda das Comunidades Portuguesas, Lisbon",LIS
+Brussels Airport,"Leopoldlaan, 1930 Zaventem, Belgium",BRU
+Athens Eleftherios Venizelos Airport,"190 19 Spata-Artemida, Athens, Greece",ATH
+Abu Dhabi International Airport,"Khalifa City, Abu Dhabi, UAE",AUH
+Indira Gandhi International Airport,"New Delhi, Delhi 110037, India",DEL
+Chhatrapati Shivaji Maharaj International Airport,"Santacruz East, Mumbai 400099, India",BOM
+O. R. Tambo International Airport,"Kempton Park, Gauteng 1627, South Africa",JNB
+São Paulo-Guarulhos International Airport,"Rod. Hélio Smidt, Guarulhos, SP, Brazil",GRU
+Benito Juárez International Airport,"Av. Capitán Carlos León, Mexico City",MEX
+Boston Logan International Airport,"1 Harborside Dr, Boston, MA 02128",BOS
+Seattle-Tacoma International Airport,"17801 Int'l Blvd, SeaTac, WA 98158",SEA
+Newark Liberty International Airport,"3 Brewster Rd, Newark, NJ 07114",EWR
+Suvarnabhumi Airport,"999 Moo 1, Racha Thewa, Samut Prakan",BKK
+Beijing Capital International Airport,"Capital Airport Rd, Chaoyang, Beijing",PEK
+Kuala Lumpur International Airport,"64000 KLIA, Sepang, Selangor, Malaysia",KUL
+Soekarno-Hatta International Airport,"Jl. Raya Bandara, Tangerang, Banten, Indonesia",CGK
+Ninoy Aquino International Airport,"Pasay, Metro Manila 1300, Philippines",MNL
+Taiwan Taoyuan International Airport,"Dayuan District, Taoyuan City 337, Taiwan",TPE
+Shanghai Pudong International Airport,"Pudong New Area, Shanghai 201207, China",PVG
+Guangzhou Baiyun International Airport,"Huadu District, Guangzhou 510470, China",CAN
+Kansai International Airport,"1 Senshukukokita, Izumisano, Osaka 549-0001",KIX
+Gimpo International Airport,"112 Haneul-gil, Gangseo-gu, Seoul, Korea",GMP
+Noi Bai International Airport,"Phu Minh, Soc Son, Hanoi, Vietnam",HAN
+Tan Son Nhat International Airport,"Tan Binh District, Ho Chi Minh City, Vietnam",SGN
+Melbourne Airport,"Departure Dr, Tullamarine VIC 3045, Australia",MEL
+Brisbane Airport,"Airport Dr, Brisbane QLD 4008, Australia",BNE
+Perth Airport,"Airport Dr, Perth WA 6105, Australia",PER
+Auckland Airport,"Ray Emery Dr, Mangere, Auckland 2022, NZ",AKL
+Christchurch Airport,"30 Durey Rd, Harewood, Christchurch 8053, NZ",CHC
+Vancouver International Airport,"3211 Grant McConachie Way, Richmond, BC",YVR
+Montreal-Trudeau International Airport,"975 Boul. Roméo-Vachon N, Dorval, QC",YUL
+Calgary International Airport,"2000 Airport Rd NE, Calgary, AB T2E 6W5",YYC
+Denver International Airport,"8500 Peña Blvd, Denver, CO 80249",DEN
+Harry Reid International Airport,"5757 Wayne Newton Blvd, Las Vegas, NV 89119",LAS
+Phoenix Sky Harbor International Airport,"3400 E Sky Harbor Blvd, Phoenix, AZ 85034",PHX
+George Bush Intercontinental Airport,"2800 N Terminal Rd, Houston, TX 77032",IAH
+Philadelphia International Airport,"8000 Essington Ave, Philadelphia, PA 19153",PHL
+Washington Dulles International Airport,"1 Saarinen Cir, Dulles, VA 20166",IAD
+Charlotte Douglas International Airport,"5501 Josh Birmingham Pkwy, Charlotte, NC 28208",CLT
+Minneapolis-Saint Paul International Airport,"4300 Glumack Dr, St Paul, MN 55111",MSP
+Detroit Metropolitan Wayne County Airport,"Detroit Metro Airport, Romulus, MI 48242",DTW
+San Diego International Airport,"3225 N Harbor Dr, San Diego, CA 92101",SAN
+Orlando International Airport,"1 Jeff Fuqua Blvd, Orlando, FL 32827",MCO
+Daniel K. Inouye International Airport,"300 Rodgers Blvd, Honolulu, HI 96819",HNL
+El Dorado International Airport,"Av. El Dorado 103-09, Bogotá, Colombia",BOG
+Jorge Chávez International Airport,"Av. Elmer Faucett s/n, Callao 07031, Peru",LIM
+Arturo Merino Benítez International Airport,"Armando Cortínez Norte 2200, Pudahuel, Chile",SCL
+Ministro Pistarini International Airport,"Autopista Tte. Gral. Ricchieri, Ezeiza, Argentina",EZE
+Cairo International Airport,"Airport Rd, Heliopolis, Cairo 11776, Egypt",CAI
+Mohammed V International Airport,"Nouaceur, Casablanca 27000, Morocco",CMN
+Jomo Kenyatta International Airport,"Embakasi, Nairobi 00501, Kenya",NBO
+Addis Ababa Bole International Airport,"Bole Sub-City, Addis Ababa, Ethiopia",ADD
+Murtala Muhammed International Airport,"Ikeja, Lagos 100001, Nigeria",LOS
+Cape Town International Airport,"Matroosfontein, Cape Town 7490, South Africa",CPT
+King Khalid International Airport,"Airport Rd, Riyadh 11411, Saudi Arabia",RUH
+King Abdulaziz International Airport,"Jeddah 21589, Saudi Arabia",JED
+Ben Gurion Airport,"Lod 70100, Israel",TLV
+Kuwait International Airport,"Farwaniya, Airport Rd, Kuwait City, Kuwait",KWI
+Warsaw Chopin Airport,"ul. Żwirki i Wigury 1, 00-906 Warsaw, Poland",WAW
+Václav Havel Airport Prague,"Aviatická, 161 08 Prague 6, Czechia",PRG
+Budapest Ferenc Liszt International Airport,"1185 Budapest, Hungary",BUD
+Birmingham Airport,"Airport Way, Birmingham B26 3QJ, UK",BHX
+Glasgow Airport,"Paisley PA3 2SW, Scotland",GLA
+Belfast International Airport,"Belfast BT29 4AB, Northern Ireland",BFS
+London Luton Airport,"Airport Way, Luton LU2 9LY, Bedfordshire",LTN
+London Stansted Airport,"Bassingbourn Rd, Stansted CM24 1QW, Essex",STN
+London City Airport,"Hartmann Rd, Silvertown, London E16 2PX",LCY
+Bristol Airport,"Bristol BS48 3DY, Somerset, UK",BRS
+Newcastle International Airport,"Woolsington, Newcastle upon Tyne NE13 8BZ",NCL
+Liverpool John Lennon Airport,"Speke Hall Ave, Liverpool L24 1YD",LPL
+East Midlands Airport,"Castle Donington, Derby DE74 2SA",EMA
+Aberdeen International Airport,"Dyce, Aberdeen AB21 7DU, Scotland",ABZ
+Geneva Airport,"Route de l'Aéroport 21, 1215 Le Grand-Saconnex",GVA
+EuroAirport Basel Mulhouse Freiburg,"68304 Saint-Louis Cedex, France",BSL
+Milan Malpensa Airport,"21010 Ferno, Varese, Italy",MXP
+Milan Linate Airport,"Viale Enrico Forlanini, 20090 Segrate, Milan",LIN
+Venice Marco Polo Airport,"Viale Galileo Galilei 30, 30173 Tessera",VCE
+Naples Capodichino Airport,"Viale F. Ruffo di Calabria, 80144 Naples",NAP
+Bologna Guglielmo Marconi Airport,"Via del Triumvirato 84, 40132 Bologna",BLQ
+Palma de Mallorca Airport,"Carretera Ma-19, 07611 Palma, Mallorca",PMI
+Málaga-Costa del Sol Airport,"Av. Comandante García Morato, 29004 Málaga",AGP
+Valencia Airport,"Carretera del Aeropuerto, 46940 Manises",VLC
+Seville San Pablo Airport,"Autovía A-4, km 532, 41020 Seville",SVQ
+Porto Francisco Sá Carneiro Airport,"4470-558 Maia, Porto, Portugal",OPO
+Faro Airport,"8001-701 Faro, Algarve, Portugal",FAO
+Hamburg Airport,"Flughafenstraße 1-3, 22335 Hamburg",HAM
+Düsseldorf Airport,"Flughafenstraße 105, 40474 Düsseldorf",DUS
+Cologne Bonn Airport,"Kennedystraße, 51147 Köln, Germany",CGN
+Stuttgart Airport,"Flughafenstraße 32, 70629 Stuttgart",STR
+Berlin Brandenburg Airport,"Willy-Brandt-Platz, 12529 Schönefeld",BER
+Nice Côte d'Azur Airport,"Rue Costes et Bellonte, 06206 Nice",NCE
+Lyon-Saint Exupéry Airport,"69125 Colombier-Saugnieu, France",LYS
+Marseille Provence Airport,"13700 Marignane, France",MRS
+Toulouse-Blagnac Airport,"31703 Blagnac Cedex, France",TLS
+Gothenburg Landvetter Airport,"438 80 Landvetter, Sweden",GOT
+Bergen Flesland Airport,"Flyplassvegen 555, 5258 Blomsterdalen",BGO
+Trondheim Værnes Airport,"7500 Stjørdal, Norway",TRD
+Keflavík International Airport,"235 Keflavíkurflugvöllur, Iceland",KEF
+Riga International Airport,"Mārupes novads, LV-1053 Riga, Latvia",RIX
+Vilnius Airport,"Rodūnios kelias 10A, 02189 Vilnius",VNO
+Tallinn Lennart Meri Airport,"Lennujaama 2, 11101 Tallinn, Estonia",TLL
+Bucharest Henri Coandă Airport,"Calea Bucureștilor 224E, Otopeni 075150",OTP
+Sofia Airport,"1540 Sofia, Bulgaria",SOF
+Belgrade Nikola Tesla Airport,"Aerodrom Beograd 59, 11180 Surčin",BEG
+Zagreb Franjo Tuđman Airport,"Rudolfa Fizira 21, 10410 Velika Gorica",ZAG
+Ljubljana Jože Pučnik Airport,"Zgornji Brnik 130A, 4210 Brnik, Slovenia",LJU
+Dubrovnik Airport,"Konavle, 20213 Čilipi, Croatia",DBV
+Thessaloniki Makedonia Airport,"Terminal Rd, 551 03 Thessaloniki, Greece",SKG
+Malta International Airport,"Luqa LQA 4000, Malta",MLA
+Larnaca International Airport,"Larnaca 6650, Cyprus",LCA
+Ibiza Airport,"Carretera Aeropuerto, 07817 Sant Josep, Ibiza",IBZ
+Kempegowda International Airport,"Devanahalli, Bengaluru, Karnataka 560300, India",BLR
+Rajiv Gandhi International Airport,"Shamshabad, Hyderabad, Telangana 500409, India",HYD
+Chennai International Airport,"GST Rd, Meenambakkam, Chennai 600027, India",MAA
+Netaji Subhas Chandra Bose International Airport,"Netaji Subhas Rd, Dum Dum, Kolkata 700052",CCU
+Bandaranaike International Airport,"Katunayake, Negombo 11450, Sri Lanka",CMB
+Hazrat Shahjalal International Airport,"Airport Rd, Dhaka 1229, Bangladesh",DAC
+Jinnah International Airport,"Airport Rd, Karachi 75200, Pakistan",KHI
+Islamabad International Airport,"GT Rd, Fateh Jang, Islamabad, Pakistan",ISB
+Allama Iqbal International Airport,"Allama Iqbal Rd, Lahore 54810, Pakistan",LHE
+Tribhuvan International Airport,"Gauchar, Kathmandu 44600, Nepal",KTM
+Velana International Airport,"Hulhulé Island, Malé 22000, Maldives",MLE
+Penang International Airport,"Bayan Lepas, 11900 Penang, Malaysia",PEN
+Ngurah Rai International Airport,"Jl. Raya Gusti Ngurah Rai, Tuban, Bali 80362",DPS
+Phuket International Airport,"888 Moo 6, Mai Khao, Thalang, Phuket 83110",HKT
+Chiang Mai International Airport,"Suthep, Mueang, Chiang Mai 50200, Thailand",CNX
+Fukuoka Airport,"778-1 Shimousui, Hakata-ku, Fukuoka 812-0003",FUK
+Chubu Centrair International Airport,"1-1 Centrair, Tokoname, Aichi 479-0881, Japan",NGO
+New Chitose Airport,"Bibi, Chitose, Hokkaido 066-0012, Japan",CTS
+Naha Airport,"640 Kagamizu, Naha, Okinawa 901-0142, Japan",OKA
+Gimhae International Airport,"108 Gonghang-ro, Gangseo-gu, Busan, Korea",PUS
+Jeju International Airport,"2 Gonghang-ro, Jeju-si, Jeju 63208, Korea",CJU
+Shenzhen Bao'an International Airport,"Bao'an District, Shenzhen 518128, China",SZX
+Chengdu Shuangliu International Airport,"Shuangliu District, Chengdu 610202, China",CTU
+Xi'an Xianyang International Airport,"Weicheng District, Xianyang, Shaanxi, China",XIY
+Muscat International Airport,"Seeb, Muscat 111, Oman",MCT
+Bahrain International Airport,"Muharraq, Manama, Bahrain",BAH
+Queen Alia International Airport,"Queen Alia Airport Rd, Zizya, Amman, Jordan",AMM
+Beirut–Rafic Hariri International Airport,"Khalde, Airport Rd, Beirut 1107, Lebanon",BEY
+King Fahd International Airport,"King Fahd Airport, Dammam 34437, Saudi Arabia",DMM
+Sharjah International Airport,"Airport Rd, Sharjah, United Arab Emirates",SHJ
+Tunis–Carthage International Airport,"Route de l'Aéroport, Tunis 1080, Tunisia",TUN
+Houari Boumediene Airport,"Dar El Beida, Algiers 16033, Algeria",ALG
+Kotoka International Airport,"Airport Rd, Accra, Ghana",ACC
+Blaise Diagne International Airport,"Diass, Blaise Diagne, Dakar, Senegal",DKR
+Julius Nyerere International Airport,"Nyerere Rd, Ilala, Dar es Salaam, Tanzania",DAR
+Entebbe International Airport,"Entebbe Rd, Entebbe, Uganda",EBB
+Sir Seewoosagur Ramgoolam International Airport,"Plaine Magnien, SSR Intl, Mauritius",MRU
+Luxembourg Findel Airport,"Route de Trèves, 1273 Findel, Luxembourg",LUX
+Nuremberg Airport,"Flughafenstraße 100, 90411 Nuremberg, Germany",NUE
+Hannover Airport,"Petzelstraße 84, 30855 Langenhagen, Germany",HAJ
+Leipzig/Halle Airport,"04435 Schkeuditz, Leipzig, Germany",LEJ
+Kraków John Paul II Airport,"ul. Medweckiego 1, 32-083 Balice, Poland",KRK
+Gdańsk Lech Wałęsa Airport,"ul. Słowackiego 200, 80-298 Gdańsk, Poland",GDN
+Turin Airport,"Strada Aeroporto 12, 10072 Caselle, Turin",TRN
+Pisa International Airport,"Via Gino Simi, 56121 Pisa, Italy",PSA
+Catania–Fontanarossa Airport,"Via Fontanarossa, 95121 Catania, Italy",CTA
+Falcone–Borsellino Airport,"Via Francesco Crispi, 90045 Cinisi, Palermo",PMO
+Bilbao Airport,"Sondika, 48180 Loiu, Bizkaia, Spain",BIO
+Gran Canaria Airport,"Carretera GC-1, 35230 Telde, Las Palmas, Spain",LPA
+Tenerife South Airport,"38610 Granadilla de Abona, Tenerife, Spain",TFS
+Sheremetyevo International Airport,"Sheremetyevo, Khimki, Moscow Region, Russia",SVO
+Tenerife North Airport,"Camino Las Mercedes, 38206 La Laguna, Spain",TFN
+Ronald Reagan Washington National,"2401 Smith Blvd, Arlington, VA 22202",DCA

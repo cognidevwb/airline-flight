@@ -1,0 +1,39 @@
+{
+  "id": "post-flight-departure-and-arrival-at-the",
+  "title": "Departure and arrival at the same airport",
+  "source": "staged scenario",
+  "why": "Reveals whether the service rejects a flight whose origin and destination are identical.",
+  "setup": [
+    {
+      "ref": "aircraft-1",
+      "table": "Aircraft",
+      "values": {
+        "IsDeleted": false,
+        "ManufacturingYear": 2015,
+        "Model": "737-800",
+        "Name": "Boeing 737",
+        "Version": 1
+      }
+    },
+    {
+      "ref": "airport-jfk",
+      "table": "Airport",
+      "values": {
+        "Address": "Queens, NY",
+        "Code": "JFK",
+        "IsDeleted": false,
+        "Name": "John F. Kennedy International",
+        "Version": 1
+      }
+    }
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "does": "POST …/flight with otherwise valid data and both DepartureAirportId and ArriveAirportId set to airport-jfk"
+    }
+  ],
+  "expect": [
+    "Rejected with an error saying departure and arrival airports must differ; if accepted, that is a missing rule to report."
+  ]
+}

@@ -1,0 +1,2455 @@
+{
+  "name": "ReserveSeatEndpoint.ReserveSeat",
+  "kind": "method",
+  "layer": "unit",
+  "source": "src/Flight/Seats/Features/ReservingSeat/V1/ReserveSeat.cs:51",
+  "columns": [
+    "request",
+    "mediator",
+    "mapper"
+  ],
+  "valid": [
+    {
+      "ref": "seat-1-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001028",
+          "SeatNumber": "1A"
+        }
+      }
+    },
+    {
+      "ref": "seat-2-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001026",
+          "SeatNumber": "12C"
+        }
+      }
+    },
+    {
+      "ref": "seat-3-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001037",
+          "SeatNumber": "24F"
+        }
+      }
+    },
+    {
+      "ref": "seat-4-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001041",
+          "SeatNumber": "3D"
+        }
+      }
+    },
+    {
+      "ref": "seat-5-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001036",
+          "SeatNumber": "15B"
+        }
+      }
+    },
+    {
+      "ref": "seat-6-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001034",
+          "SeatNumber": "8A"
+        }
+      }
+    },
+    {
+      "ref": "seat-7-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001029",
+          "SeatNumber": "2C"
+        }
+      }
+    },
+    {
+      "ref": "seat-8-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001027",
+          "SeatNumber": "19E"
+        }
+      }
+    },
+    {
+      "ref": "seat-9-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001045",
+          "SeatNumber": "27F"
+        }
+      }
+    },
+    {
+      "ref": "seat-10-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001057",
+          "SeatNumber": "5A"
+        }
+      }
+    },
+    {
+      "ref": "seat-11-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001030",
+          "SeatNumber": "14D"
+        }
+      }
+    },
+    {
+      "ref": "seat-12-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001048",
+          "SeatNumber": "31B"
+        }
+      }
+    },
+    {
+      "ref": "seat-13-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001044",
+          "SeatNumber": "10C"
+        }
+      }
+    },
+    {
+      "ref": "seat-14-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001075",
+          "SeatNumber": "22A"
+        }
+      }
+    },
+    {
+      "ref": "seat-15-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001062",
+          "SeatNumber": "4F"
+        }
+      }
+    },
+    {
+      "ref": "seat-16-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001031",
+          "SeatNumber": "17D"
+        }
+      }
+    },
+    {
+      "ref": "seat-17-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001042",
+          "SeatNumber": "9E"
+        }
+      }
+    },
+    {
+      "ref": "seat-18-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001122",
+          "SeatNumber": "1F"
+        }
+      }
+    },
+    {
+      "ref": "seat-19-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001078",
+          "SeatNumber": "26C"
+        }
+      }
+    },
+    {
+      "ref": "seat-20-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001059",
+          "SeatNumber": "33A"
+        }
+      }
+    },
+    {
+      "ref": "seat-21-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001063",
+          "SeatNumber": "6D"
+        }
+      }
+    },
+    {
+      "ref": "seat-22-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001038",
+          "SeatNumber": "11B"
+        }
+      }
+    },
+    {
+      "ref": "seat-23-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001056",
+          "SeatNumber": "20F"
+        }
+      }
+    },
+    {
+      "ref": "seat-24-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001087",
+          "SeatNumber": "2A"
+        }
+      }
+    },
+    {
+      "ref": "seat-25-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001140",
+          "SeatNumber": "28D"
+        }
+      }
+    },
+    {
+      "ref": "seat-26-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001111",
+          "SeatNumber": "13E"
+        }
+      }
+    },
+    {
+      "ref": "seat-27-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001100",
+          "SeatNumber": "7C"
+        }
+      }
+    },
+    {
+      "ref": "seat-28-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001131",
+          "SeatNumber": "35F"
+        }
+      }
+    },
+    {
+      "ref": "seat-29-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001174",
+          "SeatNumber": "3A"
+        }
+      }
+    },
+    {
+      "ref": "seat-30-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001153",
+          "SeatNumber": "16B"
+        }
+      }
+    },
+    {
+      "ref": "seat-31-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001123",
+          "SeatNumber": "23D"
+        }
+      }
+    },
+    {
+      "ref": "seat-32-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001166",
+          "SeatNumber": "18A"
+        }
+      }
+    },
+    {
+      "ref": "seat-33-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001076",
+          "SeatNumber": "5C"
+        }
+      }
+    },
+    {
+      "ref": "seat-34-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001071",
+          "SeatNumber": "30E"
+        }
+      }
+    },
+    {
+      "ref": "seat-35-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001104",
+          "SeatNumber": "12F"
+        }
+      }
+    },
+    {
+      "ref": "seat-36-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001094",
+          "SeatNumber": "25C"
+        }
+      }
+    },
+    {
+      "ref": "seat-37-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001133",
+          "SeatNumber": "1D"
+        }
+      }
+    },
+    {
+      "ref": "seat-38-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001177",
+          "SeatNumber": "21B"
+        }
+      }
+    },
+    {
+      "ref": "seat-39-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001119",
+          "SeatNumber": "8D"
+        }
+      }
+    },
+    {
+      "ref": "seat-40-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001051",
+          "SeatNumber": "29A"
+        }
+      }
+    },
+    {
+      "ref": "seat-41-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001058",
+          "SeatNumber": "6F"
+        }
+      }
+    },
+    {
+      "ref": "seat-42-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001181",
+          "SeatNumber": "14E"
+        }
+      }
+    },
+    {
+      "ref": "seat-43-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001190",
+          "SeatNumber": "32C"
+        }
+      }
+    },
+    {
+      "ref": "seat-44-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001180",
+          "SeatNumber": "9A"
+        }
+      }
+    },
+    {
+      "ref": "seat-45-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001060",
+          "SeatNumber": "19D"
+        }
+      }
+    },
+    {
+      "ref": "seat-46-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001047",
+          "SeatNumber": "4C"
+        }
+      }
+    },
+    {
+      "ref": "seat-47-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001115",
+          "SeatNumber": "34F"
+        }
+      }
+    },
+    {
+      "ref": "seat-48-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001124",
+          "SeatNumber": "10A"
+        }
+      }
+    },
+    {
+      "ref": "seat-49-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001097",
+          "SeatNumber": "15F"
+        }
+      }
+    },
+    {
+      "ref": "seat-50-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001065",
+          "SeatNumber": "24B"
+        }
+      }
+    },
+    {
+      "ref": "seat-51-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001074",
+          "SeatNumber": "14C"
+        }
+      }
+    },
+    {
+      "ref": "seat-52-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001076",
+          "SeatNumber": "2D"
+        }
+      }
+    },
+    {
+      "ref": "seat-53-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001077",
+          "SeatNumber": "5F"
+        }
+      }
+    },
+    {
+      "ref": "seat-54-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001078",
+          "SeatNumber": "7A"
+        }
+      }
+    },
+    {
+      "ref": "seat-55-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001079",
+          "SeatNumber": "31B"
+        }
+      }
+    },
+    {
+      "ref": "seat-56-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001080",
+          "SeatNumber": "9D"
+        }
+      }
+    },
+    {
+      "ref": "seat-57-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001081",
+          "SeatNumber": "18F"
+        }
+      }
+    },
+    {
+      "ref": "seat-58-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001082",
+          "SeatNumber": "27E"
+        }
+      }
+    },
+    {
+      "ref": "seat-59-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001083",
+          "SeatNumber": "1A"
+        }
+      }
+    },
+    {
+      "ref": "seat-60-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001084",
+          "SeatNumber": "12C"
+        }
+      }
+    },
+    {
+      "ref": "seat-61-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001085",
+          "SeatNumber": "35A"
+        }
+      }
+    },
+    {
+      "ref": "seat-62-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001086",
+          "SeatNumber": "4D"
+        }
+      }
+    },
+    {
+      "ref": "seat-63-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001087",
+          "SeatNumber": "20B"
+        }
+      }
+    },
+    {
+      "ref": "seat-64-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001088",
+          "SeatNumber": "16E"
+        }
+      }
+    },
+    {
+      "ref": "seat-65-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001089",
+          "SeatNumber": "29F"
+        }
+      }
+    },
+    {
+      "ref": "seat-66-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001090",
+          "SeatNumber": "11A"
+        }
+      }
+    },
+    {
+      "ref": "seat-67-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001091",
+          "SeatNumber": "6C"
+        }
+      }
+    },
+    {
+      "ref": "seat-68-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001092",
+          "SeatNumber": "24D"
+        }
+      }
+    },
+    {
+      "ref": "seat-69-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001093",
+          "SeatNumber": "33B"
+        }
+      }
+    },
+    {
+      "ref": "seat-70-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001094",
+          "SeatNumber": "8F"
+        }
+      }
+    },
+    {
+      "ref": "seat-71-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001095",
+          "SeatNumber": "15A"
+        }
+      }
+    },
+    {
+      "ref": "seat-72-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001096",
+          "SeatNumber": "3F"
+        }
+      }
+    },
+    {
+      "ref": "seat-73-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001097",
+          "SeatNumber": "5A"
+        }
+      }
+    },
+    {
+      "ref": "seat-74-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001098",
+          "SeatNumber": "19E"
+        }
+      }
+    },
+    {
+      "ref": "seat-75-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001099",
+          "SeatNumber": "38D"
+        }
+      }
+    },
+    {
+      "ref": "seat-76-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001100",
+          "SeatNumber": "4A"
+        }
+      }
+    },
+    {
+      "ref": "seat-77-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001101",
+          "SeatNumber": "13F"
+        }
+      }
+    },
+    {
+      "ref": "seat-78-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001102",
+          "SeatNumber": "30C"
+        }
+      }
+    },
+    {
+      "ref": "seat-79-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001103",
+          "SeatNumber": "21B"
+        }
+      }
+    },
+    {
+      "ref": "seat-80-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001104",
+          "SeatNumber": "2A"
+        }
+      }
+    },
+    {
+      "ref": "seat-81-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001105",
+          "SeatNumber": "10D"
+        }
+      }
+    },
+    {
+      "ref": "seat-82-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001106",
+          "SeatNumber": "36E"
+        }
+      }
+    },
+    {
+      "ref": "seat-83-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001107",
+          "SeatNumber": "17A"
+        }
+      }
+    },
+    {
+      "ref": "seat-84-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001108",
+          "SeatNumber": "25F"
+        }
+      }
+    },
+    {
+      "ref": "seat-85-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001109",
+          "SeatNumber": "32C"
+        }
+      }
+    },
+    {
+      "ref": "seat-86-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001110",
+          "SeatNumber": "7D"
+        }
+      }
+    },
+    {
+      "ref": "seat-87-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001111",
+          "SeatNumber": "6F"
+        }
+      }
+    },
+    {
+      "ref": "seat-88-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001112",
+          "SeatNumber": "28B"
+        }
+      }
+    },
+    {
+      "ref": "seat-89-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001113",
+          "SeatNumber": "23A"
+        }
+      }
+    },
+    {
+      "ref": "seat-90-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001114",
+          "SeatNumber": "34D"
+        }
+      }
+    },
+    {
+      "ref": "seat-91-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001115",
+          "SeatNumber": "1D"
+        }
+      }
+    },
+    {
+      "ref": "seat-92-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001116",
+          "SeatNumber": "37F"
+        }
+      }
+    },
+    {
+      "ref": "seat-93-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001117",
+          "SeatNumber": "9E"
+        }
+      }
+    },
+    {
+      "ref": "seat-94-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001118",
+          "SeatNumber": "40C"
+        }
+      }
+    },
+    {
+      "ref": "seat-95-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001119",
+          "SeatNumber": "8A"
+        }
+      }
+    },
+    {
+      "ref": "seat-96-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001120",
+          "SeatNumber": "19A"
+        }
+      }
+    },
+    {
+      "ref": "seat-97-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001121",
+          "SeatNumber": "14E"
+        }
+      }
+    },
+    {
+      "ref": "seat-98-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001122",
+          "SeatNumber": "22D"
+        }
+      }
+    },
+    {
+      "ref": "seat-99-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001123",
+          "SeatNumber": "5C"
+        }
+      }
+    },
+    {
+      "ref": "seat-100-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001125",
+          "SeatNumber": "14C"
+        }
+      }
+    },
+    {
+      "ref": "seat-101-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001126",
+          "SeatNumber": "2A"
+        }
+      }
+    },
+    {
+      "ref": "seat-102-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001127",
+          "SeatNumber": "27F"
+        }
+      }
+    },
+    {
+      "ref": "seat-103-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001128",
+          "SeatNumber": "8D"
+        }
+      }
+    },
+    {
+      "ref": "seat-104-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001129",
+          "SeatNumber": "19B"
+        }
+      }
+    },
+    {
+      "ref": "seat-105-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001130",
+          "SeatNumber": "31E"
+        }
+      }
+    },
+    {
+      "ref": "seat-106-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001131",
+          "SeatNumber": "6A"
+        }
+      }
+    },
+    {
+      "ref": "seat-107-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001132",
+          "SeatNumber": "22D"
+        }
+      }
+    },
+    {
+      "ref": "seat-108-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001133",
+          "SeatNumber": "7F"
+        }
+      }
+    },
+    {
+      "ref": "seat-109-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001134",
+          "SeatNumber": "16A"
+        }
+      }
+    },
+    {
+      "ref": "seat-110-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001135",
+          "SeatNumber": "11E"
+        }
+      }
+    },
+    {
+      "ref": "seat-111-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001136",
+          "SeatNumber": "25C"
+        }
+      }
+    },
+    {
+      "ref": "seat-112-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001137",
+          "SeatNumber": "1D"
+        }
+      }
+    },
+    {
+      "ref": "seat-113-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001138",
+          "SeatNumber": "29A"
+        }
+      }
+    },
+    {
+      "ref": "seat-114-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001139",
+          "SeatNumber": "17F"
+        }
+      }
+    },
+    {
+      "ref": "seat-115-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001140",
+          "SeatNumber": "9C"
+        }
+      }
+    },
+    {
+      "ref": "seat-116-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001141",
+          "SeatNumber": "34B"
+        }
+      }
+    },
+    {
+      "ref": "seat-117-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001142",
+          "SeatNumber": "12D"
+        }
+      }
+    },
+    {
+      "ref": "seat-118-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001143",
+          "SeatNumber": "5A"
+        }
+      }
+    },
+    {
+      "ref": "seat-119-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001144",
+          "SeatNumber": "23F"
+        }
+      }
+    },
+    {
+      "ref": "seat-120-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001145",
+          "SeatNumber": "20C"
+        }
+      }
+    },
+    {
+      "ref": "seat-121-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001146",
+          "SeatNumber": "15B"
+        }
+      }
+    },
+    {
+      "ref": "seat-122-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001147",
+          "SeatNumber": "4F"
+        }
+      }
+    },
+    {
+      "ref": "seat-123-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001148",
+          "SeatNumber": "26E"
+        }
+      }
+    },
+    {
+      "ref": "seat-124-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001149",
+          "SeatNumber": "13A"
+        }
+      }
+    },
+    {
+      "ref": "seat-125-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001150",
+          "SeatNumber": "30D"
+        }
+      }
+    },
+    {
+      "ref": "seat-126-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001151",
+          "SeatNumber": "8A"
+        }
+      }
+    },
+    {
+      "ref": "seat-127-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001152",
+          "SeatNumber": "18C"
+        }
+      }
+    },
+    {
+      "ref": "seat-128-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001153",
+          "SeatNumber": "2D"
+        }
+      }
+    },
+    {
+      "ref": "seat-129-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001154",
+          "SeatNumber": "21E"
+        }
+      }
+    },
+    {
+      "ref": "seat-130-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001155",
+          "SeatNumber": "33A"
+        }
+      }
+    },
+    {
+      "ref": "seat-131-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001156",
+          "SeatNumber": "10F"
+        }
+      }
+    },
+    {
+      "ref": "seat-132-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001157",
+          "SeatNumber": "24B"
+        }
+      }
+    },
+    {
+      "ref": "seat-133-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001158",
+          "SeatNumber": "6C"
+        }
+      }
+    },
+    {
+      "ref": "seat-134-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001159",
+          "SeatNumber": "28F"
+        }
+      }
+    },
+    {
+      "ref": "seat-135-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001160",
+          "SeatNumber": "35D"
+        }
+      }
+    },
+    {
+      "ref": "seat-136-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001161",
+          "SeatNumber": "14E"
+        }
+      }
+    },
+    {
+      "ref": "seat-137-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001162",
+          "SeatNumber": "19A"
+        }
+      }
+    },
+    {
+      "ref": "seat-138-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001163",
+          "SeatNumber": "7D"
+        }
+      }
+    },
+    {
+      "ref": "seat-139-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001164",
+          "SeatNumber": "32C"
+        }
+      }
+    },
+    {
+      "ref": "seat-140-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001165",
+          "SeatNumber": "16B"
+        }
+      }
+    },
+    {
+      "ref": "seat-141-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001166",
+          "SeatNumber": "5F"
+        }
+      }
+    },
+    {
+      "ref": "seat-142-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001167",
+          "SeatNumber": "27A"
+        }
+      }
+    },
+    {
+      "ref": "seat-143-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001168",
+          "SeatNumber": "22B"
+        }
+      }
+    },
+    {
+      "ref": "seat-144-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001169",
+          "SeatNumber": "11C"
+        }
+      }
+    },
+    {
+      "ref": "seat-145-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001170",
+          "SeatNumber": "30F"
+        }
+      }
+    },
+    {
+      "ref": "seat-146-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001171",
+          "SeatNumber": "3A"
+        }
+      }
+    },
+    {
+      "ref": "seat-147-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001172",
+          "SeatNumber": "25D"
+        }
+      }
+    },
+    {
+      "ref": "seat-148-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001173",
+          "SeatNumber": "17E"
+        }
+      }
+    },
+    {
+      "ref": "seat-149-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001174",
+          "SeatNumber": "20A"
+        }
+      }
+    },
+    {
+      "ref": "seat-150-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001174",
+          "SeatNumber": "2A"
+        }
+      }
+    },
+    {
+      "ref": "seat-151-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001175",
+          "SeatNumber": "14C"
+        }
+      }
+    },
+    {
+      "ref": "seat-152-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001176",
+          "SeatNumber": "22F"
+        }
+      }
+    },
+    {
+      "ref": "seat-153-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001177",
+          "SeatNumber": "5D"
+        }
+      }
+    },
+    {
+      "ref": "seat-154-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001178",
+          "SeatNumber": "17B"
+        }
+      }
+    },
+    {
+      "ref": "seat-155-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001179",
+          "SeatNumber": "31A"
+        }
+      }
+    },
+    {
+      "ref": "seat-156-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001180",
+          "SeatNumber": "6F"
+        }
+      }
+    },
+    {
+      "ref": "seat-157-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001181",
+          "SeatNumber": "1C"
+        }
+      }
+    },
+    {
+      "ref": "seat-158-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001182",
+          "SeatNumber": "25E"
+        }
+      }
+    },
+    {
+      "ref": "seat-159-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001183",
+          "SeatNumber": "12D"
+        }
+      }
+    },
+    {
+      "ref": "seat-160-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001184",
+          "SeatNumber": "19F"
+        }
+      }
+    },
+    {
+      "ref": "seat-161-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001185",
+          "SeatNumber": "28B"
+        }
+      }
+    },
+    {
+      "ref": "seat-162-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001186",
+          "SeatNumber": "33C"
+        }
+      }
+    },
+    {
+      "ref": "seat-163-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001187",
+          "SeatNumber": "10A"
+        }
+      }
+    },
+    {
+      "ref": "seat-164-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001188",
+          "SeatNumber": "4A"
+        }
+      }
+    },
+    {
+      "ref": "seat-165-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001189",
+          "SeatNumber": "21D"
+        }
+      }
+    },
+    {
+      "ref": "seat-166-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001190",
+          "SeatNumber": "7C"
+        }
+      }
+    },
+    {
+      "ref": "seat-167-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001191",
+          "SeatNumber": "36E"
+        }
+      }
+    },
+    {
+      "ref": "seat-168-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001192",
+          "SeatNumber": "15F"
+        }
+      }
+    },
+    {
+      "ref": "seat-169-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001193",
+          "SeatNumber": "24A"
+        }
+      }
+    },
+    {
+      "ref": "seat-170-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001194",
+          "SeatNumber": "29C"
+        }
+      }
+    },
+    {
+      "ref": "seat-171-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001195",
+          "SeatNumber": "3F"
+        }
+      }
+    },
+    {
+      "ref": "seat-172-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001196",
+          "SeatNumber": "11B"
+        }
+      }
+    },
+    {
+      "ref": "seat-173-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001197",
+          "SeatNumber": "18D"
+        }
+      }
+    },
+    {
+      "ref": "seat-174-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001198",
+          "SeatNumber": "26F"
+        }
+      }
+    },
+    {
+      "ref": "seat-175-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001199",
+          "SeatNumber": "8D"
+        }
+      }
+    },
+    {
+      "ref": "seat-176-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001200",
+          "SeatNumber": "20E"
+        }
+      }
+    },
+    {
+      "ref": "seat-177-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001201",
+          "SeatNumber": "32A"
+        }
+      }
+    },
+    {
+      "ref": "seat-178-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001202",
+          "SeatNumber": "13C"
+        }
+      }
+    },
+    {
+      "ref": "seat-179-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001203",
+          "SeatNumber": "38F"
+        }
+      }
+    },
+    {
+      "ref": "seat-180-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001204",
+          "SeatNumber": "16B"
+        }
+      }
+    },
+    {
+      "ref": "seat-181-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001205",
+          "SeatNumber": "23D"
+        }
+      }
+    },
+    {
+      "ref": "seat-182-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001206",
+          "SeatNumber": "27A"
+        }
+      }
+    },
+    {
+      "ref": "seat-183-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001207",
+          "SeatNumber": "5A"
+        }
+      }
+    },
+    {
+      "ref": "seat-184-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001208",
+          "SeatNumber": "34E"
+        }
+      }
+    },
+    {
+      "ref": "seat-185-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001209",
+          "SeatNumber": "30C"
+        }
+      }
+    },
+    {
+      "ref": "seat-186-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001210",
+          "SeatNumber": "12F"
+        }
+      }
+    },
+    {
+      "ref": "seat-187-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001211",
+          "SeatNumber": "35B"
+        }
+      }
+    },
+    {
+      "ref": "seat-188-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001212",
+          "SeatNumber": "2D"
+        }
+      }
+    },
+    {
+      "ref": "seat-189-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001213",
+          "SeatNumber": "40A"
+        }
+      }
+    },
+    {
+      "ref": "seat-190-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001214",
+          "SeatNumber": "14D"
+        }
+      }
+    },
+    {
+      "ref": "seat-191-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001215",
+          "SeatNumber": "19B"
+        }
+      }
+    },
+    {
+      "ref": "seat-192-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001216",
+          "SeatNumber": "37F"
+        }
+      }
+    },
+    {
+      "ref": "seat-193-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001217",
+          "SeatNumber": "22C"
+        }
+      }
+    },
+    {
+      "ref": "seat-194-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001218",
+          "SeatNumber": "6A"
+        }
+      }
+    },
+    {
+      "ref": "seat-195-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001219",
+          "SeatNumber": "25A"
+        }
+      }
+    },
+    {
+      "ref": "seat-196-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001220",
+          "SeatNumber": "31E"
+        }
+      }
+    },
+    {
+      "ref": "seat-197-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001221",
+          "SeatNumber": "17C"
+        }
+      }
+    },
+    {
+      "ref": "seat-198-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001222",
+          "SeatNumber": "39D"
+        }
+      }
+    },
+    {
+      "ref": "seat-199-5",
+      "kind": "record",
+      "data": {
+        "Mapper": null,
+        "Mediator": null,
+        "Request": {
+          "FlightId": "2f5ff8e3-0000-4000-8000-000000001223",
+          "SeatNumber": "10E"
+        }
+      }
+    }
+  ],
+  "invalid": [
+    {
+      "ref": "reserveseatendpoint-reserveseat-rejection-1",
+      "kind": "rejection",
+      "data": {
+        "mapper": "{…}",
+        "mediator": "{…}",
+        "request": null
+      },
+      "violates": {
+        "field": "request",
+        "rule": "`request` is declared NOT NULL"
+      }
+    },
+    {
+      "ref": "reserveseatendpoint-reserveseat-rejection-2",
+      "kind": "rejection",
+      "data": {
+        "mapper": "{…}",
+        "mediator": null,
+        "request": "{…}"
+      },
+      "violates": {
+        "field": "mediator",
+        "rule": "`mediator` is declared NOT NULL"
+      }
+    },
+    {
+      "ref": "reserveseatendpoint-reserveseat-rejection-3",
+      "kind": "rejection",
+      "data": {
+        "mapper": null,
+        "mediator": "{…}",
+        "request": "{…}"
+      },
+      "violates": {
+        "field": "mapper",
+        "rule": "`mapper` is declared NOT NULL"
+      }
+    }
+  ],
+  "coverage": [
+    {
+      "ref": "reserveseatendpoint-reserveseat-case-1",
+      "kind": "case",
+      "data": {
+        "Mapper": "{…}",
+        "Mediator": "{…}",
+        "Request": "{…}"
+      },
+      "case": "covering-0001"
+    }
+  ],
+  "use": "argument sets for a unit test of this method; nested objects are whole records"
+}

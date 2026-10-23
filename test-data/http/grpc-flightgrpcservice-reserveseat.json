@@ -1,0 +1,13 @@
+{
+  "operation": "gRPC FlightGrpcService/ReserveSeat",
+  "kind": "grpc",
+  "handler": "src/Flight/GrpcServer/Protos/flight.proto:10",
+  "request": "ReserveSeatRequest",
+  "response": "ReserveSeatResult",
+  "valid": [],
+  "invalid": [],
+  "requestFields": [
+    "FlightId",
+    "SeatNumber"
+  ]
+}

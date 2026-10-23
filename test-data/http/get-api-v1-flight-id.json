@@ -1,0 +1,34 @@
+{
+  "operation": "GET api/v1/flight/{{id}}",
+  "kind": "http",
+  "handler": "src/Flight/Flights/Features/GettingFlightById/V1/GetFlightById.cs:33",
+  "request": null,
+  "response": "GetFlightByIdResponseDto",
+  "valid": [
+    {
+      "ref": "flight-ba117",
+      "params": {
+        "id": "2f5ff8e3-0000-4000-8000-000000001024"
+      }
+    },
+    {
+      "ref": "flight-lh401",
+      "params": {
+        "id": "2f5ff8e3-0000-4000-8000-000000001025"
+      }
+    },
+    {
+      "ref": "flight-ek203",
+      "params": {
+        "id": "2f5ff8e3-0000-4000-8000-000000001026"
+      }
+    },
+    {
+      "ref": "flight-aa100",
+      "params": {
+        "id": "2f5ff8e3-0000-4000-8000-000000001027"
+      }
+    }
+  ],
+  "invalid": []
+}

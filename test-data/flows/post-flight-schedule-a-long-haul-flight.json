@@ -1,0 +1,50 @@
+{
+  "id": "post-flight-schedule-a-long-haul-flight",
+  "title": "Schedule a long-haul flight",
+  "source": "staged scenario",
+  "why": "Shows that a multi-day long-haul flight is accepted when dates span days, and how the small duration/price limits interact.",
+  "setup": [
+    {
+      "ref": "aircraft-1",
+      "table": "Aircraft",
+      "values": {
+        "IsDeleted": false,
+        "ManufacturingYear": 2019,
+        "Model": "A350-900",
+        "Name": "Airbus A350",
+        "Version": 1
+      }
+    },
+    {
+      "ref": "airport-jfk",
+      "table": "Airport",
+      "values": {
+        "Address": "Queens, NY",
+        "Code": "JFK",
+        "IsDeleted": false,
+        "Name": "John F. Kennedy International",
+        "Version": 1
+      }
+    },
+    {
+      "ref": "airport-lhr",
+      "table": "Airport",
+      "values": {
+        "Address": "London, UK",
+        "Code": "LHR",
+        "IsDeleted": false,
+        "Name": "Heathrow",
+        "Version": 1
+      }
+    }
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "does": "POST …/flight with FlightNumber FL-2200, JFK to LHR, DurationMinutes 50, Price 9, Status Flying, DepartureDate 2026-11-12T22:00, ArriveDate 2026-11-13T10:00, FlightDate 2026-11-12"
+    }
+  ],
+  "expect": [
+    "Success: flight created with arrival on the following day; values 50 and 9 are within the stated maximums."
+  ]
+}

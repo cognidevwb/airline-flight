@@ -1,0 +1,84 @@
+{
+  "id": "get-flight-id-view-a-delayed-flight",
+  "title": "View a delayed flight",
+  "source": "staged scenario",
+  "why": "Checks that a departure later than the scheduled flight date is returned as stored",
+  "setup": [
+    {
+      "ref": "aircraft-1",
+      "table": "Aircraft",
+      "values": {
+        "CreatedAt": "2026-01-10T08:00:00Z",
+        "CreatedBy": 1,
+        "IsDeleted": false,
+        "LastModified": "2026-01-10T08:00:00Z",
+        "LastModifiedBy": 1,
+        "ManufacturingYear": 2016,
+        "Model": "777-300ER",
+        "Name": "Boeing 777",
+        "Version": 1
+      }
+    },
+    {
+      "ref": "airport-dep",
+      "table": "Airport",
+      "values": {
+        "Address": "Chicago, IL",
+        "Code": "ORD",
+        "CreatedAt": "2026-01-10T08:00:00Z",
+        "CreatedBy": 1,
+        "IsDeleted": false,
+        "LastModified": "2026-01-10T08:00:00Z",
+        "LastModifiedBy": 1,
+        "Name": "Chicago O'Hare International",
+        "Version": 1
+      }
+    },
+    {
+      "ref": "airport-arr",
+      "table": "Airport",
+      "values": {
+        "Address": "Roissy, France",
+        "Code": "CDG",
+        "CreatedAt": "2026-01-10T08:00:00Z",
+        "CreatedBy": 1,
+        "IsDeleted": false,
+        "LastModified": "2026-01-10T08:00:00Z",
+        "LastModifiedBy": 1,
+        "Name": "Paris Charles de Gaulle",
+        "Version": 1
+      }
+    },
+    {
+      "ref": "flight-1",
+      "table": "Flight",
+      "values": {
+        "AircraftId": "aircraft-1",
+        "ArriveAirportId": "airport-arr",
+        "ArriveDate": "2026-11-20T09:30:00Z",
+        "CreatedAt": "2026-10-01T09:00:00Z",
+        "CreatedBy": 1,
+        "DepartureAirportId": "airport-dep",
+        "DepartureDate": "2026-11-20T00:30:00Z",
+        "DurationMinutes": 9,
+        "FlightDate": "2026-11-19T22:00:00Z",
+        "FlightNumber": "FL-3003",
+        "IsDeleted": false,
+        "LastModified": "2026-10-22T09:00:00Z",
+        "LastModifiedBy": 1,
+        "Price": 8,
+        "Status": "Delay",
+        "Version": 2
+      }
+    }
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "does": "Send GET …/flight/{id} with the Id of flight-1"
+    }
+  ],
+  "expect": [
+    "200 with Status Delay and DepartureDate (2026-11-20T00:30Z) later than FlightDate (2026-11-19T22:00Z)"
+  ]
+}

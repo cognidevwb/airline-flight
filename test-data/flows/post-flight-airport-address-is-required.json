@@ -1,0 +1,16 @@
+{
+  "id": "post-flight-airport-address-is-required",
+  "title": "Address is required",
+  "source": "staged scenario",
+  "why": "Shows an empty Address is rejected even when Name and Code are valid",
+  "setup": [],
+  "steps": [
+    {
+      "n": 1,
+      "does": "POST …/flight/airport with Name 'Narita', Address '', Code 'NRT'"
+    }
+  ],
+  "expect": [
+    "Rejected with a validation error on Address; nothing is stored"
+  ]
+}

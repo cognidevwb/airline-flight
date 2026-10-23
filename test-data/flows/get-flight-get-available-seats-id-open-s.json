@@ -1,0 +1,97 @@
+{
+  "id": "get-flight-get-available-seats-id-open-s",
+  "title": "Open seats of every seat type",
+  "source": "staged scenario",
+  "why": "Checks Window, Middle and Aisle seats are all returned",
+  "setup": [
+    {
+      "ref": "aircraft-1",
+      "table": "Aircraft",
+      "values": {
+        "IsDeleted": false,
+        "ManufacturingYear": 2019,
+        "Model": "A321",
+        "Name": "Skyliner 4"
+      }
+    },
+    {
+      "ref": "airport-1",
+      "table": "Airport",
+      "values": {
+        "Address": "Paris",
+        "Code": "CDG",
+        "IsDeleted": false,
+        "Name": "Charles de Gaulle"
+      }
+    },
+    {
+      "ref": "airport-2",
+      "table": "Airport",
+      "values": {
+        "Address": "Rome",
+        "Code": "FCO",
+        "IsDeleted": false,
+        "Name": "Fiumicino"
+      }
+    },
+    {
+      "ref": "flight-1",
+      "table": "Flight",
+      "values": {
+        "AircraftId": "aircraft-1",
+        "ArriveAirportId": "airport-2",
+        "ArriveDate": "2026-11-12T14:05:00Z",
+        "DepartureAirportId": "airport-1",
+        "DepartureDate": "2026-11-12T12:00:00Z",
+        "DurationMinutes": 125,
+        "FlightDate": "2026-11-12T00:00:00Z",
+        "FlightNumber": "AF1104",
+        "IsDeleted": false,
+        "Price": 140,
+        "Status": "Flying"
+      }
+    },
+    {
+      "ref": "seat-1",
+      "table": "Seat",
+      "values": {
+        "Class": "Economy",
+        "FlightId": "flight-1",
+        "IsDeleted": false,
+        "SeatNumber": "10A",
+        "Type": "Window"
+      }
+    },
+    {
+      "ref": "seat-2",
+      "table": "Seat",
+      "values": {
+        "Class": "Economy",
+        "FlightId": "flight-1",
+        "IsDeleted": false,
+        "SeatNumber": "10B",
+        "Type": "Middle"
+      }
+    },
+    {
+      "ref": "seat-3",
+      "table": "Seat",
+      "values": {
+        "Class": "Economy",
+        "FlightId": "flight-1",
+        "IsDeleted": false,
+        "SeatNumber": "10C",
+        "Type": "Aisle"
+      }
+    }
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "does": "GET /flight/get-available-seats/{flight-1 Id}"
+    }
+  ],
+  "expect": [
+    "200 listing 10A (Window), 10B (Middle) and 10C (Aisle)"
+  ]
+}

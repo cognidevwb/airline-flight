@@ -1,0 +1,16 @@
+{
+  "id": "post-flight-aircraft-invalid-aircraft-id",
+  "title": "Invalid aircraft id",
+  "source": "staged scenario",
+  "why": "Shows that an empty GUID supplied as the Id is not accepted.",
+  "setup": [],
+  "steps": [
+    {
+      "n": 1,
+      "does": "POST …/flight/aircraft with Id 00000000-0000-0000-0000-000000000000, Name 'Empty Id Jet', Model '737-800', ManufacturingYear 2015"
+    }
+  ],
+  "expect": [
+    "Rejected with a validation error on Id. No aircraft is created."
+  ]
+}

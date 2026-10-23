@@ -1,0 +1,16 @@
+{
+  "id": "post-flight-airport-name-is-required",
+  "title": "Name is required",
+  "source": "staged scenario",
+  "why": "Shows an empty Name is rejected even when the other fields are valid",
+  "setup": [],
+  "steps": [
+    {
+      "n": 1,
+      "does": "POST …/flight/airport with Name '', Address 'London, UK', Code 'LHR'"
+    }
+  ],
+  "expect": [
+    "Rejected with a validation error on Name; nothing is stored"
+  ]
+}

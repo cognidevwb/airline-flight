@@ -1,0 +1,2088 @@
+{
+  "repository": "airline-flight",
+  "domain": "Airline flight operations management",
+  "rows": 12494,
+  "rows_in_report": 12494,
+  "matches_report": true,
+  "coverage": "pairwise",
+  "personal": "values that cannot belong to a person: example.com, reserved phone ranges, passport and card numbers that cannot be issued",
+  "model": [
+    {
+      "layer": "HTTP · endpoints",
+      "item": "GET api/v1/flight/get-available-flights",
+      "file": "http/get-api-v1-flight-get-available-flights.json",
+      "valid": 0,
+      "invalid": 0
+    },
+    {
+      "layer": "HTTP · endpoints",
+      "item": "GET api/v1/flight/get-available-seats/{{id}}",
+      "file": "http/get-api-v1-flight-get-available-seats-id.json",
+      "valid": 4,
+      "invalid": 0
+    },
+    {
+      "layer": "HTTP · endpoints",
+      "item": "GET api/v1/flight/{{id}}",
+      "file": "http/get-api-v1-flight-id.json",
+      "valid": 4,
+      "invalid": 0
+    },
+    {
+      "layer": "HTTP · endpoints",
+      "item": "POST api/v1/flight",
+      "file": "http/post-api-v1-flight.json",
+      "valid": 200,
+      "invalid": 18
+    },
+    {
+      "layer": "HTTP · endpoints",
+      "item": "POST api/v1/flight/aircraft",
+      "file": "http/post-api-v1-flight-aircraft.json",
+      "valid": 200,
+      "invalid": 3
+    },
+    {
+      "layer": "HTTP · endpoints",
+      "item": "POST api/v1/flight/airport",
+      "file": "http/post-api-v1-flight-airport.json",
+      "valid": 200,
+      "invalid": 3
+    },
+    {
+      "layer": "HTTP · endpoints",
+      "item": "POST api/v1/flight/reserve-seat",
+      "file": "http/post-api-v1-flight-reserve-seat.json",
+      "valid": 199,
+      "invalid": 3
+    },
+    {
+      "layer": "HTTP · endpoints",
+      "item": "POST api/v1/flight/seat",
+      "file": "http/post-api-v1-flight-seat.json",
+      "valid": 199,
+      "invalid": 7
+    },
+    {
+      "layer": "HTTP · gRPC",
+      "item": "gRPC FlightGrpcService/GetAvailableSeats",
+      "file": "http/grpc-flightgrpcservice-getavailableseats.json",
+      "valid": 0,
+      "invalid": 0
+    },
+    {
+      "layer": "HTTP · gRPC",
+      "item": "gRPC FlightGrpcService/GetById",
+      "file": "http/grpc-flightgrpcservice-getbyid.json",
+      "valid": 0,
+      "invalid": 0
+    },
+    {
+      "layer": "HTTP · gRPC",
+      "item": "gRPC FlightGrpcService/ReserveSeat",
+      "file": "http/grpc-flightgrpcservice-reserveseat.json",
+      "valid": 0,
+      "invalid": 0
+    },
+    {
+      "layer": "Domain · commands",
+      "item": "CreateAircraft",
+      "file": "domain/Flight.Aircrafts.Features.CreatingAircraft.V1/CreateAircraft.json",
+      "valid": 200,
+      "invalid": 7,
+      "coverage": 4
+    },
+    {
+      "layer": "Domain · commands",
+      "item": "CreateAircraftMongo",
+      "file": "domain/Flight.Aircrafts.Features.CreatingAircraft.V1/CreateAircraftMongo.json",
+      "valid": 200,
+      "invalid": 6,
+      "coverage": 9
+    },
+    {
+      "layer": "Domain · commands",
+      "item": "CreateAirport",
+      "file": "domain/Flight.Airports.Features.CreatingAirport.V1/CreateAirport.json",
+      "valid": 200,
+      "invalid": 8,
+      "coverage": 4
+    },
+    {
+      "layer": "Domain · commands",
+      "item": "CreateAirportMongo",
+      "file": "domain/Flight.Airports.Features.CreatingAirport.V1/CreateAirportMongo.json",
+      "valid": 200,
+      "invalid": 6,
+      "coverage": 9
+    },
+    {
+      "layer": "Domain · commands",
+      "item": "CreateFlight",
+      "file": "domain/Flight.Flights.Features.CreatingFlight.V1/CreateFlight.json",
+      "valid": 200,
+      "invalid": 20,
+      "coverage": 15
+    },
+    {
+      "layer": "Domain · commands",
+      "item": "CreateFlightMongo",
+      "file": "domain/Flight.Flights.Features.CreatingFlight.V1/CreateFlightMongo.json",
+      "valid": 200,
+      "invalid": 21,
+      "coverage": 15
+    },
+    {
+      "layer": "Domain · commands",
+      "item": "CreateSeat",
+      "file": "domain/Flight.Seats.Features.CreatingSeat.V1/CreateSeat.json",
+      "valid": 200,
+      "invalid": 10,
+      "coverage": 16
+    },
+    {
+      "layer": "Domain · commands",
+      "item": "CreateSeatMongo",
+      "file": "domain/Flight.Seats.Features.CreatingSeat.V1/CreateSeatMongo.json",
+      "valid": 200,
+      "invalid": 10,
+      "coverage": 16
+    },
+    {
+      "layer": "Domain · commands",
+      "item": "DeleteFlightMongo",
+      "file": "domain/Flight.Flights.Features.DeletingFlight.V1/DeleteFlightMongo.json",
+      "valid": 200,
+      "invalid": 21,
+      "coverage": 15
+    },
+    {
+      "layer": "Domain · commands",
+      "item": "GetAvailableFlights",
+      "file": "domain/Flight.Flights.Features.GettingAvailableFlights.V1/GetAvailableFlights.json",
+      "valid": 6,
+      "invalid": 2,
+      "coverage": 0
+    },
+    {
+      "layer": "Domain · commands",
+      "item": "ReserveSeat",
+      "file": "domain/Flight.Seats.Features.ReservingSeat.V1/ReserveSeat.json",
+      "valid": 199,
+      "invalid": 4,
+      "coverage": 2
+    },
+    {
+      "layer": "Domain · commands",
+      "item": "ReserveSeatMongo",
+      "file": "domain/Flight.Seats.Features.ReservingSeat.V1/ReserveSeatMongo.json",
+      "valid": 200,
+      "invalid": 10,
+      "coverage": 16
+    },
+    {
+      "layer": "Domain · commands",
+      "item": "UpdateFlight",
+      "file": "domain/Flight.Flights.Features.UpdatingFlight.V1/UpdateFlight.json",
+      "valid": 200,
+      "invalid": 22,
+      "coverage": 17
+    },
+    {
+      "layer": "Domain · commands",
+      "item": "UpdateFlightMongo",
+      "file": "domain/Flight.Flights.Features.UpdatingFlight.V1/UpdateFlightMongo.json",
+      "valid": 200,
+      "invalid": 21,
+      "coverage": 15
+    },
+    {
+      "layer": "Domain · events",
+      "item": "AircraftCreatedDomainEvent",
+      "file": "domain/Flight.Aircrafts.Features.CreatingAircraft.V1/AircraftCreatedDomainEvent.json",
+      "valid": 200,
+      "invalid": 6,
+      "coverage": 9
+    },
+    {
+      "layer": "Domain · events",
+      "item": "AirportCreatedDomainEvent",
+      "file": "domain/Flight.Airports.Features.CreatingAirport.V1/AirportCreatedDomainEvent.json",
+      "valid": 200,
+      "invalid": 6,
+      "coverage": 9
+    },
+    {
+      "layer": "Domain · events",
+      "item": "FlightCreatedDomainEvent",
+      "file": "domain/Flight.Flights.Features.CreatingFlight.V1/FlightCreatedDomainEvent.json",
+      "valid": 200,
+      "invalid": 21,
+      "coverage": 15
+    },
+    {
+      "layer": "Domain · events",
+      "item": "FlightDeletedDomainEvent",
+      "file": "domain/Flight.Flights.Features.DeletingFlight.V1/FlightDeletedDomainEvent.json",
+      "valid": 200,
+      "invalid": 21,
+      "coverage": 15
+    },
+    {
+      "layer": "Domain · events",
+      "item": "FlightUpdatedDomainEvent",
+      "file": "domain/Flight.Flights.Features.UpdatingFlight.V1/FlightUpdatedDomainEvent.json",
+      "valid": 200,
+      "invalid": 21,
+      "coverage": 15
+    },
+    {
+      "layer": "Domain · events",
+      "item": "SeatCreatedDomainEvent",
+      "file": "domain/Flight.Seats.Features.CreatingSeat.V1/SeatCreatedDomainEvent.json",
+      "valid": 200,
+      "invalid": 10,
+      "coverage": 16
+    },
+    {
+      "layer": "Domain · events",
+      "item": "SeatReservedDomainEvent",
+      "file": "domain/Flight.Seats.Features.ReservingSeat.V1/SeatReservedDomainEvent.json",
+      "valid": 200,
+      "invalid": 10,
+      "coverage": 16
+    },
+    {
+      "layer": "Domain · read models",
+      "item": "AircraftReadModel",
+      "file": "domain/Flight.Aircrafts.Models/AircraftReadModel.json",
+      "valid": 200,
+      "invalid": 8,
+      "coverage": 9
+    },
+    {
+      "layer": "Domain · read models",
+      "item": "AirportReadModel",
+      "file": "domain/Flight.Airports.Models/AirportReadModel.json",
+      "valid": 200,
+      "invalid": 8,
+      "coverage": 9
+    },
+    {
+      "layer": "Domain · read models",
+      "item": "FlightReadModel",
+      "file": "domain/Flight.Flights.Models/FlightReadModel.json",
+      "valid": 200,
+      "invalid": 23,
+      "coverage": 15
+    },
+    {
+      "layer": "Domain · read models",
+      "item": "SeatReadModel",
+      "file": "domain/Flight.Seats.Models/SeatReadModel.json",
+      "valid": 200,
+      "invalid": 12,
+      "coverage": 16
+    },
+    {
+      "layer": "Domain · requests",
+      "item": "CreateAircraftRequestDto",
+      "file": "domain/Flight.Aircrafts.Features.CreatingAircraft.V1/CreateAircraftRequestDto.json",
+      "valid": 200,
+      "invalid": 3,
+      "coverage": 9
+    },
+    {
+      "layer": "Domain · requests",
+      "item": "CreateAirportRequestDto",
+      "file": "domain/Flight.Airports.Features.CreatingAirport.V1/CreateAirportRequestDto.json",
+      "valid": 200,
+      "invalid": 3,
+      "coverage": 10
+    },
+    {
+      "layer": "Domain · requests",
+      "item": "CreateFlightRequestDto",
+      "file": "domain/Flight.Flights.Features.CreatingFlight.V1/CreateFlightRequestDto.json",
+      "valid": 200,
+      "invalid": 18,
+      "coverage": 15
+    },
+    {
+      "layer": "Domain · requests",
+      "item": "CreateSeatRequestDto",
+      "file": "domain/Flight.Seats.Features.CreatingSeat.V1/CreateSeatRequestDto.json",
+      "valid": 199,
+      "invalid": 7,
+      "coverage": 16
+    },
+    {
+      "layer": "Domain · requests",
+      "item": "ReserveSeatRequestDto",
+      "file": "domain/Flight.Seats.Features.ReservingSeat.V1/ReserveSeatRequestDto.json",
+      "valid": 199,
+      "invalid": 3,
+      "coverage": 3
+    },
+    {
+      "layer": "Domain · requests",
+      "item": "UpdateFlightRequestDto",
+      "file": "domain/Flight.Flights.Features.UpdatingFlight.V1/UpdateFlightRequestDto.json",
+      "valid": 200,
+      "invalid": 21,
+      "coverage": 15
+    },
+    {
+      "layer": "Domain · responses",
+      "item": "AircraftDto",
+      "file": "domain/Flight.Aircrafts.Dtos/AircraftDto.json",
+      "valid": 200,
+      "invalid": 5,
+      "coverage": 9
+    },
+    {
+      "layer": "Domain · responses",
+      "item": "AirportDto",
+      "file": "domain/Flight.Airports.Dtos/AirportDto.json",
+      "valid": 200,
+      "invalid": 5,
+      "coverage": 9
+    },
+    {
+      "layer": "Domain · responses",
+      "item": "FlightDto",
+      "file": "domain/Flight.Flights.Dtos/FlightDto.json",
+      "valid": 200,
+      "invalid": 20,
+      "coverage": 15
+    },
+    {
+      "layer": "Domain · responses",
+      "item": "SeatDto",
+      "file": "domain/Flight.Seats.Dtos/SeatDto.json",
+      "valid": 200,
+      "invalid": 9,
+      "coverage": 16
+    },
+    {
+      "layer": "Unit · methods",
+      "item": "CreateAircraftHandler.Handle",
+      "file": "unit/Flight.Aircrafts.Features.CreatingAircraft.V1/CreateAircraftHandler/Handle.json",
+      "valid": 200,
+      "invalid": 1,
+      "coverage": 1
+    },
+    {
+      "layer": "Unit · methods",
+      "item": "CreateAircraftMongoHandler.Handle",
+      "file": "unit/Flight.Aircrafts.Features.CreatingAircraft.V1/CreateAircraftMongoHandler/Handle.json",
+      "valid": 200,
+      "invalid": 1,
+      "coverage": 1
+    },
+    {
+      "layer": "Unit · methods",
+      "item": "CreateAirportHandler.Handle",
+      "file": "unit/Flight.Airports.Features.CreatingAirport.V1/CreateAirportHandler/Handle.json",
+      "valid": 200,
+      "invalid": 1,
+      "coverage": 1
+    },
+    {
+      "layer": "Unit · methods",
+      "item": "CreateAirportMongoHandler.Handle",
+      "file": "unit/Flight.Airports.Features.CreatingAirport.V1/CreateAirportMongoHandler/Handle.json",
+      "valid": 200,
+      "invalid": 1,
+      "coverage": 1
+    },
+    {
+      "layer": "Unit · methods",
+      "item": "CreateFlightHandler.Handle",
+      "file": "unit/Flight.Flights.Features.CreatingFlight.V1/CreateFlightHandler/Handle.json",
+      "valid": 200,
+      "invalid": 1,
+      "coverage": 1
+    },
+    {
+      "layer": "Unit · methods",
+      "item": "CreateFlightMongoHandler.Handle",
+      "file": "unit/Flight.Flights.Features.CreatingFlight.V1/CreateFlightMongoHandler/Handle.json",
+      "valid": 200,
+      "invalid": 1,
+      "coverage": 1
+    },
+    {
+      "layer": "Unit · methods",
+      "item": "CreateSeatCommandHandler.Handle",
+      "file": "unit/Flight.Seats.Features.CreatingSeat.V1/CreateSeatCommandHandler/Handle.json",
+      "valid": 200,
+      "invalid": 1,
+      "coverage": 1
+    },
+    {
+      "layer": "Unit · methods",
+      "item": "CreateSeatEndpoint.CreateSeat",
+      "file": "unit/Flight.Seats.Features.CreatingSeat.V1/CreateSeatEndpoint/CreateSeat.json",
+      "valid": 199,
+      "invalid": 3,
+      "coverage": 1
+    },
+    {
+      "layer": "Unit · methods",
+      "item": "CreateSeatMongoHandler.Handle",
+      "file": "unit/Flight.Seats.Features.CreatingSeat.V1/CreateSeatMongoHandler/Handle.json",
+      "valid": 200,
+      "invalid": 1,
+      "coverage": 1
+    },
+    {
+      "layer": "Unit · methods",
+      "item": "DeleteFlightMongoCommandHandler.Handle",
+      "file": "unit/Flight.Flights.Features.DeletingFlight.V1/DeleteFlightMongoCommandHandler/Handle.json",
+      "valid": 200,
+      "invalid": 1,
+      "coverage": 1
+    },
+    {
+      "layer": "Unit · methods",
+      "item": "Flight.Create",
+      "file": "unit/Flight.Flights.Models/Flight/Create.json",
+      "valid": 200,
+      "invalid": 22,
+      "coverage": 13
+    },
+    {
+      "layer": "Unit · methods",
+      "item": "Flight.Delete",
+      "file": "unit/Flight.Flights.Models/Flight/Delete.json",
+      "valid": 200,
+      "invalid": 22,
+      "coverage": 12
+    },
+    {
+      "layer": "Unit · methods",
+      "item": "Flight.Update",
+      "file": "unit/Flight.Flights.Models/Flight/Update.json",
+      "valid": 200,
+      "invalid": 22,
+      "coverage": 13
+    },
+    {
+      "layer": "Unit · methods",
+      "item": "GetAvailableFlightsHandler.Handle",
+      "file": "unit/Flight.Flights.Features.GettingAvailableFlights.V1/GetAvailableFlightsHandler/Handle.json",
+      "valid": 1,
+      "invalid": 1,
+      "coverage": 0
+    },
+    {
+      "layer": "Unit · methods",
+      "item": "ReserveSeatCommandHandler.Handle",
+      "file": "unit/Flight.Seats.Features.ReservingSeat.V1/ReserveSeatCommandHandler/Handle.json",
+      "valid": 199,
+      "invalid": 1,
+      "coverage": 1
+    },
+    {
+      "layer": "Unit · methods",
+      "item": "ReserveSeatEndpoint.ReserveSeat",
+      "file": "unit/Flight.Seats.Features.ReservingSeat.V1/ReserveSeatEndpoint/ReserveSeat.json",
+      "valid": 199,
+      "invalid": 3,
+      "coverage": 1
+    },
+    {
+      "layer": "Unit · methods",
+      "item": "ReserveSeatMongoHandler.Handle",
+      "file": "unit/Flight.Seats.Features.ReservingSeat.V1/ReserveSeatMongoHandler/Handle.json",
+      "valid": 200,
+      "invalid": 1,
+      "coverage": 1
+    },
+    {
+      "layer": "Unit · methods",
+      "item": "Seat.Create",
+      "file": "unit/Flight.Seats.Models/Seat/Create.json",
+      "valid": 200,
+      "invalid": 11,
+      "coverage": 16
+    },
+    {
+      "layer": "Unit · methods",
+      "item": "UpdateFlightHandler.Handle",
+      "file": "unit/Flight.Flights.Features.UpdatingFlight.V1/UpdateFlightHandler/Handle.json",
+      "valid": 200,
+      "invalid": 1,
+      "coverage": 1
+    },
+    {
+      "layer": "Unit · methods",
+      "item": "UpdateFlightMongoCommandHandler.Handle",
+      "file": "unit/Flight.Flights.Features.UpdatingFlight.V1/UpdateFlightMongoCommandHandler/Handle.json",
+      "valid": 200,
+      "invalid": 1,
+      "coverage": 1
+    },
+    {
+      "layer": "Database · data access",
+      "item": "Aircraft",
+      "file": "database/data-access/Aircraft.json",
+      "reads": 5,
+      "writes": 2
+    },
+    {
+      "layer": "Database · data access",
+      "item": "Airport",
+      "file": "database/data-access/Airport.json",
+      "reads": 1,
+      "writes": 2
+    },
+    {
+      "layer": "Database · data access",
+      "item": "Flight",
+      "file": "database/data-access/Flight.json",
+      "reads": 3,
+      "writes": 4
+    },
+    {
+      "layer": "Database · data access",
+      "item": "Seat",
+      "file": "database/data-access/Seat.json",
+      "reads": 2,
+      "writes": 3
+    },
+    {
+      "layer": "Database · stored procedures",
+      "item": "procedures",
+      "file": "database/procedures/README.json",
+      "note": "none in this repository"
+    },
+    {
+      "layer": "Database · tables",
+      "item": "Aircraft",
+      "file": "database/tables/Aircraft.json",
+      "valid": 200,
+      "invalid": 8,
+      "coverage": 10
+    },
+    {
+      "layer": "Database · tables",
+      "item": "Airport",
+      "file": "database/tables/Airport.json",
+      "valid": 200,
+      "invalid": 9,
+      "coverage": 10
+    },
+    {
+      "layer": "Database · tables",
+      "item": "Flight",
+      "file": "database/tables/Flight.json",
+      "valid": 200,
+      "invalid": 17,
+      "coverage": 24
+    },
+    {
+      "layer": "Database · tables",
+      "item": "Seat",
+      "file": "database/tables/Seat.json",
+      "valid": 200,
+      "invalid": 10,
+      "coverage": 16
+    },
+    {
+      "layer": "UI · forms",
+      "item": "forms",
+      "file": "ui/README.json",
+      "note": "none in this repository"
+    },
+    {
+      "layer": "Flows · from the tests",
+      "item": "should create new aircraft to db and publish message to broker",
+      "file": "flows/createaircrafttests-should-create-new-ai.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · from the tests",
+      "item": "should create new airport to db and publish message to broker",
+      "file": "flows/createairporttests-should-create-new-air.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · from the tests",
+      "item": "should create new flight to db and publish message to broker",
+      "file": "flows/createflighttests-should-create-new-flig.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · from the tests",
+      "item": "should create new flight to db and publish message to broker",
+      "file": "flows/createflighttests-should-create-new-flig.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · from the tests",
+      "item": "should delete flight from db",
+      "file": "flows/deleteflighttests-should-delete-flight-f.json",
+      "steps": 2
+    },
+    {
+      "layer": "Flows · from the tests",
+      "item": "should retrive a flight by id currectly",
+      "file": "flows/getflightbyidtests-should-retrive-a-flig.json",
+      "steps": 2
+    },
+    {
+      "layer": "Flows · from the tests",
+      "item": "should retrive a flight by id currectly",
+      "file": "flows/getflightbyidtests-should-retrive-a-flig.json",
+      "steps": 2
+    },
+    {
+      "layer": "Flows · from the tests",
+      "item": "should retrive a flight by id from grpc service",
+      "file": "flows/getflightbyidtests-should-retrive-a-flig.json",
+      "steps": 2
+    },
+    {
+      "layer": "Flows · from the tests",
+      "item": "should return available flights",
+      "file": "flows/getavailableflightstests-should-return-a.json",
+      "steps": 2
+    },
+    {
+      "layer": "Flows · from the tests",
+      "item": "should return available seats from grpc service",
+      "file": "flows/getavailableseatstests-should-return-ava.json",
+      "steps": 3
+    },
+    {
+      "layer": "Flows · from the tests",
+      "item": "should return valid reserve seat from grpc service",
+      "file": "flows/reserveseattests-should-return-valid-res.json",
+      "steps": 3
+    },
+    {
+      "layer": "Flows · from the tests",
+      "item": "should update flight to db and publish message to broker",
+      "file": "flows/updateflighttests-should-update-flight-t.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Add a domestic regional airport",
+      "file": "flows/post-flight-airport-add-a-domestic-regio.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Add a middle seat in first class",
+      "file": "flows/post-flight-seat-add-a-middle-seat-in-fi.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Add a second airport in the same city",
+      "file": "flows/post-flight-airport-add-a-second-airport.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Add a typical international airport",
+      "file": "flows/post-flight-airport-add-a-typical-intern.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Add a typical narrow-body aircraft",
+      "file": "flows/post-flight-aircraft-add-a-typical-narro.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Add a wide-body long-haul aircraft",
+      "file": "flows/post-flight-aircraft-add-a-wide-body-lon.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Add a window seat in economy",
+      "file": "flows/post-flight-seat-add-a-window-seat-in-ec.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Add an airport whose name has punctuation",
+      "file": "flows/post-flight-airport-add-an-airport-whose.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Add an aisle seat in business class",
+      "file": "flows/post-flight-seat-add-an-aisle-seat-in-bu.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Add an older regional aircraft",
+      "file": "flows/post-flight-aircraft-add-an-older-region.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Add several seats to the same flight",
+      "file": "flows/post-flight-seat-add-several-seats-to-th.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Address at the 50-character limit",
+      "file": "flows/post-flight-airport-address-at-the-50-ch.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Address is required",
+      "file": "flows/post-flight-airport-address-is-required.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Address one character over the limit",
+      "file": "flows/post-flight-airport-address-one-characte.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Aircraft already exists",
+      "file": "flows/post-flight-aircraft-aircraft-already-ex.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Aircraft must be supplied and exist",
+      "file": "flows/post-flight-aircraft-must-be-supplied-an.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Airport already exists",
+      "file": "flows/post-flight-airport-airport-already-exis.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Arrival airport must be supplied",
+      "file": "flows/post-flight-arrival-airport-must-be-supp.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Arrival date is invalid",
+      "file": "flows/post-flight-arrival-date-is-invalid.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Arrive date before departure",
+      "file": "flows/get-flight-get-available-flights-arrive-.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Booked seats are not listed",
+      "file": "flows/get-flight-get-available-seats-id-booked.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Brand-new flight with every seat open",
+      "file": "flows/get-flight-get-available-seats-id-brand-.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Canceled flight cannot take reservations",
+      "file": "flows/grpc-flightgrpcservice-reserveseat-cance.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Canceled flight is still retrievable with its status",
+      "file": "flows/grpc-flightgrpcservice-getbyid-canceled-.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Canceled flights are not offered",
+      "file": "flows/get-flight-get-available-flights-cancele.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Canceled or completed flight",
+      "file": "flows/grpc-flightgrpcservice-getavailableseats.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Cancelled flight offers no seats",
+      "file": "flows/get-flight-get-available-seats-id-cancel.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Code at the 50-character limit",
+      "file": "flows/post-flight-airport-code-at-the-50-chara.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Code case difference from existing airport",
+      "file": "flows/post-flight-airport-code-case-difference.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Code is required",
+      "file": "flows/post-flight-airport-code-is-required.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Completed flight cannot take reservations",
+      "file": "flows/grpc-flightgrpcservice-reserveseat-compl.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Completed flights are not offered",
+      "file": "flows/get-flight-get-available-flights-complet.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Concurrent reservations for the last seat",
+      "file": "flows/grpc-flightgrpcservice-reserveseat-concu.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Delayed flight is still listed with its status",
+      "file": "flows/get-flight-get-available-flights-delayed.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Delayed flight still takes a reservation",
+      "file": "flows/grpc-flightgrpcservice-reserveseat-delay.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Deleted airport hides its flights",
+      "file": "flows/get-flight-get-available-flights-deleted.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Deleted flight cannot be reserved on",
+      "file": "flows/grpc-flightgrpcservice-reserveseat-delet.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Deleted flight returns no seats",
+      "file": "flows/grpc-flightgrpcservice-getavailableseats.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Deleted flights are excluded",
+      "file": "flows/get-flight-get-available-flights-deleted.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Deleted seat cannot be reserved",
+      "file": "flows/grpc-flightgrpcservice-reserveseat-delet.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Deleted seat cannot be reserved",
+      "file": "flows/post-flight-reserve-seat-deleted-seat-ca.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Deleted seats are excluded",
+      "file": "flows/grpc-flightgrpcservice-getavailableseats.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Deleted seats are not listed",
+      "file": "flows/get-flight-get-available-seats-id-delete.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Departure airport must be supplied",
+      "file": "flows/post-flight-departure-airport-must-be-su.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Departure and arrival at the same airport",
+      "file": "flows/post-flight-departure-and-arrival-at-the.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Departure date is invalid",
+      "file": "flows/post-flight-departure-date-is-invalid.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Departure date missing or invalid",
+      "file": "flows/get-flight-get-available-flights-departu.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Duplicate aircraft is rejected",
+      "file": "flows/post-flight-aircraft-duplicate-aircraft-.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Duplicate airport code is rejected",
+      "file": "flows/post-flight-airport-duplicate-airport-co.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Duplicate flight number on the same date",
+      "file": "flows/get-flight-get-available-flights-duplica.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Duplicate seat number on a flight",
+      "file": "flows/get-flight-get-available-seats-id-duplic.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Duration and price at their upper limits",
+      "file": "flows/post-flight-duration-and-price-at-their-.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Duration and price just over the limit",
+      "file": "flows/post-flight-duration-and-price-just-over.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Duration is invalid",
+      "file": "flows/post-flight-duration-is-invalid.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Duration must be a positive value",
+      "file": "flows/post-flight-duration-must-be-a-positive-.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Duration zero or negative",
+      "file": "flows/get-flight-get-available-flights-duratio.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Earliest and current manufacturing year",
+      "file": "flows/post-flight-aircraft-earliest-and-curren.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Empty Id is rejected",
+      "file": "flows/grpc-flightgrpcservice-getbyid-empty-id-.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Every seat is already booked",
+      "file": "flows/get-flight-get-available-seats-id-every-.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Flight Id must be a valid Guid",
+      "file": "flows/get-flight-id-flight-id-must-be-a-valid-.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Flight Id must be provided",
+      "file": "flows/get-flight-id-flight-id-must-be-provided.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Flight already exists",
+      "file": "flows/post-flight-flight-already-exists.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Flight at the very start or end of the search day",
+      "file": "flows/get-flight-get-available-flights-flight-.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Flight date is required",
+      "file": "flows/post-flight-flight-date-is-required.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Flight has no seats left",
+      "file": "flows/post-flight-seat-flight-has-no-seats-lef.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Flight id does not exist",
+      "file": "flows/get-flight-get-available-flights-flight-.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Flight id is empty",
+      "file": "flows/get-flight-get-available-flights-flight-.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Flight id is required",
+      "file": "flows/get-flight-get-available-seats-id-flight.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Flight id is required",
+      "file": "flows/post-flight-reserve-seat-flight-id-is-re.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Flight is required",
+      "file": "flows/post-flight-seat-flight-is-required.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Flight must exist",
+      "file": "flows/get-flight-get-available-seats-id-flight.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Flight not found",
+      "file": "flows/get-flight-id-flight-not-found.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Flight not found",
+      "file": "flows/post-flight-flight-not-found.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Flight number at maximum length",
+      "file": "flows/post-flight-flight-number-at-maximum-len.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Flight number blank or too long",
+      "file": "flows/get-flight-get-available-flights-flight-.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Flight with Unknown status",
+      "file": "flows/get-flight-id-flight-with-unknown-status.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Flight with a mix of open and booked seats",
+      "file": "flows/get-flight-get-available-seats-id-flight.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Flight with a zero price",
+      "file": "flows/grpc-flightgrpcservice-reserveseat-fligh.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Flight with maximum duration and price",
+      "file": "flows/get-flight-id-flight-with-maximum-durati.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Flight with no seats",
+      "file": "flows/get-flight-id-flight-with-no-seats.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Flight with no seats",
+      "file": "flows/grpc-flightgrpcservice-getbyid-flight-wi.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Flight with no seats defined",
+      "file": "flows/grpc-flightgrpcservice-getavailableseats.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Flight with seats in all classes is returned",
+      "file": "flows/get-flight-get-available-flights-flight-.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Flight with seats of every type and class",
+      "file": "flows/get-flight-id-flight-with-seats-of-every.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Flight with the longest flight number",
+      "file": "flows/get-flight-id-flight-with-the-longest-fl.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Flight with the longest flight number",
+      "file": "flows/grpc-flightgrpcservice-reserveseat-fligh.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Invalid address",
+      "file": "flows/post-flight-airport-invalid-address.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Invalid aircraft id",
+      "file": "flows/post-flight-aircraft-invalid-aircraft-id.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Invalid airport id",
+      "file": "flows/post-flight-airport-invalid-airport-id.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Invalid code",
+      "file": "flows/post-flight-airport-invalid-code.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Invalid flight Id",
+      "file": "flows/get-flight-id-invalid-flight-id.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Invalid manufacturing year",
+      "file": "flows/post-flight-aircraft-invalid-manufacturi.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Invalid model",
+      "file": "flows/post-flight-aircraft-invalid-model.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Invalid name",
+      "file": "flows/post-flight-aircraft-invalid-name.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Invalid name",
+      "file": "flows/post-flight-airport-invalid-name.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Large aircraft with a full seat map",
+      "file": "flows/get-flight-get-available-seats-id-large-.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Last free seat on the flight",
+      "file": "flows/post-flight-reserve-seat-last-free-seat-.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Longest flight number",
+      "file": "flows/grpc-flightgrpcservice-getbyid-longest-f.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Longest seat number",
+      "file": "flows/get-flight-get-available-seats-id-longes.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Longest seat number",
+      "file": "flows/grpc-flightgrpcservice-getavailableseats.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Longest seat number accepted",
+      "file": "flows/grpc-flightgrpcservice-reserveseat-longe.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Look up a completed flight",
+      "file": "flows/grpc-flightgrpcservice-getbyid-look-up-a.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Look up a delayed flight",
+      "file": "flows/grpc-flightgrpcservice-getbyid-look-up-a.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Look up a flight that has seats of mixed class",
+      "file": "flows/grpc-flightgrpcservice-getbyid-look-up-a.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Look up a flight with its aircraft and airports",
+      "file": "flows/grpc-flightgrpcservice-getbyid-look-up-a.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Look up a scheduled domestic flight",
+      "file": "flows/grpc-flightgrpcservice-getbyid-look-up-a.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Look up by flight number's flight id",
+      "file": "flows/grpc-flightgrpcservice-getavailableseats.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Manufacturing year cannot be in the future",
+      "file": "flows/post-flight-aircraft-manufacturing-year-.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Manufacturing year must be a valid year",
+      "file": "flows/post-flight-aircraft-manufacturing-year-.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Maximum length flight number and price",
+      "file": "flows/get-flight-get-available-flights-maximum.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Maximum price and duration",
+      "file": "flows/grpc-flightgrpcservice-getbyid-maximum-p.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Model cannot exceed 50 characters",
+      "file": "flows/post-flight-aircraft-model-cannot-exceed.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Model exactly 50 characters",
+      "file": "flows/post-flight-aircraft-model-exactly-50-ch.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Model is required",
+      "file": "flows/post-flight-aircraft-model-is-required.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Model of one character",
+      "file": "flows/post-flight-aircraft-model-of-one-charac.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Name is required",
+      "file": "flows/post-flight-aircraft-name-is-required.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Name is required",
+      "file": "flows/post-flight-airport-name-is-required.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "New aircraft gets audit and version defaults",
+      "file": "flows/post-flight-aircraft-new-aircraft-gets-a.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "No flights match the route",
+      "file": "flows/get-flight-get-available-flights-no-flig.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "No seats left on the flight",
+      "file": "flows/post-flight-reserve-seat-no-seats-left-o.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "One-way search between two airports on a date",
+      "file": "flows/get-flight-get-available-flights-one-way.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Only one seat left",
+      "file": "flows/get-flight-get-available-seats-id-only-o.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Open seats across all three classes",
+      "file": "flows/get-flight-get-available-seats-id-open-s.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Open seats of every seat type",
+      "file": "flows/get-flight-get-available-seats-id-open-s.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Overnight flight crossing midnight",
+      "file": "flows/grpc-flightgrpcservice-getbyid-overnight.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Price must be a positive value",
+      "file": "flows/post-flight-price-must-be-a-positive-val.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Price zero or negative",
+      "file": "flows/get-flight-get-available-flights-price-z.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Reserve a first class seat",
+      "file": "flows/grpc-flightgrpcservice-reserveseat-reser.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Reserve a middle seat on a delayed flight",
+      "file": "flows/post-flight-reserve-seat-reserve-a-middl.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Reserve a middle seat on a scheduled flight",
+      "file": "flows/grpc-flightgrpcservice-reserveseat-reser.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Reserve a window seat in economy",
+      "file": "flows/post-flight-reserve-seat-reserve-a-windo.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Reserve an aisle seat in business class",
+      "file": "flows/grpc-flightgrpcservice-reserveseat-reser.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Reserve an aisle seat in business class",
+      "file": "flows/post-flight-reserve-seat-reserve-an-aisl.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Reserve an available window seat in economy",
+      "file": "flows/grpc-flightgrpcservice-reserveseat-reser.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Reserve first class seat on a flying flight",
+      "file": "flows/post-flight-reserve-seat-reserve-first-c.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Results show aircraft and airport details",
+      "file": "flows/get-flight-get-available-flights-results.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Same name as a soft-deleted aircraft",
+      "file": "flows/post-flight-aircraft-same-name-as-a-soft.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Same seat cannot be reserved twice",
+      "file": "flows/post-flight-reserve-seat-same-seat-canno.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Same seat number on a different flight is allowed",
+      "file": "flows/post-flight-seat-same-seat-number-on-a-d.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Schedule a flight for a future date",
+      "file": "flows/post-flight-schedule-a-flight-for-a-futu.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Schedule a flight with a different aircraft",
+      "file": "flows/post-flight-schedule-a-flight-with-a-dif.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Schedule a long-haul flight",
+      "file": "flows/post-flight-schedule-a-long-haul-flight.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Schedule a standard domestic flight",
+      "file": "flows/post-flight-schedule-a-standard-domestic.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Scheduled flight in flying status",
+      "file": "flows/grpc-flightgrpcservice-getavailableseats.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Search returns several flights on the same route",
+      "file": "flows/get-flight-get-available-flights-search-.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Seat already exists on the flight",
+      "file": "flows/post-flight-seat-seat-already-exists-on-.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Seat already taken",
+      "file": "flows/post-flight-reserve-seat-seat-already-ta.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Seat class is required",
+      "file": "flows/post-flight-seat-seat-class-is-required.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Seat class must be a known value",
+      "file": "flows/post-flight-seat-seat-class-must-be-a-kn.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Seat id does not exist",
+      "file": "flows/get-flight-get-available-seats-id-seat-i.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Seat id does not exist",
+      "file": "flows/post-flight-reserve-seat-seat-id-does-no.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Seat id is invalid",
+      "file": "flows/post-flight-seat-seat-id-is-invalid.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Seat must belong to an existing flight",
+      "file": "flows/post-flight-seat-seat-must-belong-to-an-.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Seat number at maximum length",
+      "file": "flows/post-flight-reserve-seat-seat-number-at-.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Seat number at maximum length",
+      "file": "flows/post-flight-seat-seat-number-at-maximum-.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Seat number does not match the format",
+      "file": "flows/post-flight-seat-seat-number-does-not-ma.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Seat number does not match the seat",
+      "file": "flows/post-flight-reserve-seat-seat-number-doe.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Seat number in the wrong format",
+      "file": "flows/get-flight-get-available-seats-id-seat-n.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Seat number is invalid",
+      "file": "flows/post-flight-seat-seat-number-is-invalid.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Seat number is malformed",
+      "file": "flows/get-flight-get-available-seats-id-seat-n.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Seat number is malformed",
+      "file": "flows/post-flight-reserve-seat-seat-number-is-.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Seat number is required",
+      "file": "flows/post-flight-reserve-seat-seat-number-is-.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Seat number is required",
+      "file": "flows/post-flight-seat-seat-number-is-required.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Seat number must match flight's seat plan",
+      "file": "flows/post-flight-reserve-seat-seat-number-mus.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Seat number one character long",
+      "file": "flows/post-flight-reserve-seat-seat-number-one.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Seat number one character long",
+      "file": "flows/post-flight-seat-seat-number-one-charact.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Seat number over maximum length",
+      "file": "flows/post-flight-seat-seat-number-over-maximu.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Seat number over the length limit",
+      "file": "flows/grpc-flightgrpcservice-reserveseat-seat-.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Seat of Unknown type or class is flagged",
+      "file": "flows/grpc-flightgrpcservice-reserveseat-seat-.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Seat that belongs to a different flight is refused",
+      "file": "flows/grpc-flightgrpcservice-reserveseat-seat-.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Seat that does not exist is refused",
+      "file": "flows/grpc-flightgrpcservice-reserveseat-seat-.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Seat that is already reserved is refused",
+      "file": "flows/grpc-flightgrpcservice-reserveseat-seat-.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Seat with Unknown type and class",
+      "file": "flows/post-flight-reserve-seat-seat-with-unkno.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Seat with unknown type and class",
+      "file": "flows/grpc-flightgrpcservice-getavailableseats.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Seats across all three classes",
+      "file": "flows/grpc-flightgrpcservice-getavailableseats.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Seats of every position type",
+      "file": "flows/grpc-flightgrpcservice-getavailableseats.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Seats of other flights are excluded",
+      "file": "flows/grpc-flightgrpcservice-getavailableseats.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Shortest flight number",
+      "file": "flows/grpc-flightgrpcservice-getbyid-shortest-.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Shortest seat number accepted",
+      "file": "flows/grpc-flightgrpcservice-reserveseat-short.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Single-character name and code",
+      "file": "flows/post-flight-airport-single-character-nam.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Soft-deleted aircraft or airport on a flight",
+      "file": "flows/grpc-flightgrpcservice-getbyid-soft-dele.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Soft-deleted airport with same code",
+      "file": "flows/post-flight-airport-soft-deleted-airport.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Soft-deleted flight is not returned",
+      "file": "flows/grpc-flightgrpcservice-getbyid-soft-dele.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Soft-deleted flight is not viewable",
+      "file": "flows/get-flight-id-soft-deleted-flight-is-not.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Status Unknown",
+      "file": "flows/grpc-flightgrpcservice-getbyid-status-un.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Status must be a recognised value",
+      "file": "flows/post-flight-status-must-be-a-recognised-.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Stored duration is invalid",
+      "file": "flows/get-flight-id-stored-duration-is-invalid.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Stored flight number is invalid",
+      "file": "flows/get-flight-id-stored-flight-number-is-in.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Stored price is invalid",
+      "file": "flows/get-flight-id-stored-price-is-invalid.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Two flights on same aircraft kept separate",
+      "file": "flows/get-flight-get-available-seats-id-two-fl.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Two passengers reserve different seats on same flight",
+      "file": "flows/post-flight-reserve-seat-two-passengers-.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Two passengers reserve different seats on the same flight",
+      "file": "flows/grpc-flightgrpcservice-reserveseat-two-p.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Unknown flight Id returns not found",
+      "file": "flows/get-flight-id-unknown-flight-id-returns-.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Unknown flight Id returns not found",
+      "file": "flows/grpc-flightgrpcservice-getbyid-unknown-f.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Unknown flight id",
+      "file": "flows/grpc-flightgrpcservice-getavailableseats.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Unknown seat type with a valid class",
+      "file": "flows/post-flight-seat-unknown-seat-type-with-.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Very large aircraft",
+      "file": "flows/grpc-flightgrpcservice-getavailableseats.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "View a canceled flight",
+      "file": "flows/get-flight-id-view-a-canceled-flight.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "View a completed flight",
+      "file": "flows/get-flight-id-view-a-completed-flight.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "View a delayed flight",
+      "file": "flows/get-flight-id-view-a-delayed-flight.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "View a flight with price and duration",
+      "file": "flows/get-flight-id-view-a-flight-with-price-a.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "View a scheduled flight with full details",
+      "file": "flows/get-flight-id-view-a-scheduled-flight-wi.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "View flight whose aircraft and airports are shown",
+      "file": "flows/get-flight-id-view-flight-whose-aircraft.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Zero price and zero duration",
+      "file": "flows/grpc-flightgrpcservice-getbyid-zero-pric.json",
+      "steps": 1
+    },
+    {
+      "layer": "Errors",
+      "item": "AircraftAlreadyExistException",
+      "file": "errors/aircraftalreadyexistexception-createaircraft.json",
+      "status": 400
+    },
+    {
+      "layer": "Errors",
+      "item": "AircraftAlreadyExistException",
+      "file": "errors/aircraftalreadyexistexception-createaircraftmongo.json",
+      "status": 400
+    },
+    {
+      "layer": "Errors",
+      "item": "AirportAlreadyExistException",
+      "file": "errors/airportalreadyexistexception-createairport.json",
+      "status": 400
+    },
+    {
+      "layer": "Errors",
+      "item": "AirportAlreadyExistException",
+      "file": "errors/airportalreadyexistexception-createairportmongo.json",
+      "status": 400
+    },
+    {
+      "layer": "Errors",
+      "item": "AllSeatsFullException",
+      "file": "errors/allseatsfullexception-getavailableseats.json",
+      "status": 400
+    },
+    {
+      "layer": "Errors",
+      "item": "FlightAlreadyExistException",
+      "file": "errors/flightalreadyexistexception-createflight.json",
+      "status": 400
+    },
+    {
+      "layer": "Errors",
+      "item": "FlightAlreadyExistException",
+      "file": "errors/flightalreadyexistexception-createflightmongo.json",
+      "status": 400
+    },
+    {
+      "layer": "Errors",
+      "item": "FlightNotFountException",
+      "file": "errors/flightnotfountexception-deleteflight.json",
+      "status": 400
+    },
+    {
+      "layer": "Errors",
+      "item": "FlightNotFountException",
+      "file": "errors/flightnotfountexception-deleteflightmongo.json",
+      "status": 400
+    },
+    {
+      "layer": "Errors",
+      "item": "FlightNotFountException",
+      "file": "errors/flightnotfountexception-getavailableflights.json",
+      "status": 400
+    },
+    {
+      "layer": "Errors",
+      "item": "FlightNotFountException",
+      "file": "errors/flightnotfountexception-getflightbyid.json",
+      "status": 400
+    },
+    {
+      "layer": "Errors",
+      "item": "FlightNotFountException",
+      "file": "errors/flightnotfountexception-updateflight.json",
+      "status": 400
+    },
+    {
+      "layer": "Errors",
+      "item": "FlightNotFountException",
+      "file": "errors/flightnotfountexception-updateflightmongo.json",
+      "status": 400
+    },
+    {
+      "layer": "Errors",
+      "item": "InvalidAddressException",
+      "file": "errors/invalidaddressexception-address.json",
+      "status": 500
+    },
+    {
+      "layer": "Errors",
+      "item": "InvalidAircraftIdException",
+      "file": "errors/invalidaircraftidexception-aircraftid.json",
+      "status": 500
+    },
+    {
+      "layer": "Errors",
+      "item": "InvalidAirportIdException",
+      "file": "errors/invalidairportidexception-airportid.json",
+      "status": 500
+    },
+    {
+      "layer": "Errors",
+      "item": "InvalidArriveDateException",
+      "file": "errors/invalidarrivedateexception-arrivedate.json",
+      "status": 500
+    },
+    {
+      "layer": "Errors",
+      "item": "InvalidCodeException",
+      "file": "errors/invalidcodeexception-code.json",
+      "status": 500
+    },
+    {
+      "layer": "Errors",
+      "item": "InvalidDepartureDateException",
+      "file": "errors/invaliddeparturedateexception-departuredate.json",
+      "status": 500
+    },
+    {
+      "layer": "Errors",
+      "item": "InvalidDurationException",
+      "file": "errors/invaliddurationexception-durationminutes.json",
+      "status": 500
+    },
+    {
+      "layer": "Errors",
+      "item": "InvalidFlightDateException",
+      "file": "errors/invalidflightdateexception-flightdate.json",
+      "status": 500
+    },
+    {
+      "layer": "Errors",
+      "item": "InvalidFlightIdException",
+      "file": "errors/invalidflightidexception-flightid.json",
+      "status": 500
+    },
+    {
+      "layer": "Errors",
+      "item": "InvalidFlightNumberException",
+      "file": "errors/invalidflightnumberexception-flightnumber.json",
+      "status": 500
+    },
+    {
+      "layer": "Errors",
+      "item": "InvalidManufacturingYearException",
+      "file": "errors/invalidmanufacturingyearexception-manufacturingyear.json",
+      "status": 500
+    },
+    {
+      "layer": "Errors",
+      "item": "InvalidModelException",
+      "file": "errors/invalidmodelexception-model.json",
+      "status": 500
+    },
+    {
+      "layer": "Errors",
+      "item": "InvalidNameException",
+      "file": "errors/invalidnameexception-name.json",
+      "status": 500
+    },
+    {
+      "layer": "Errors",
+      "item": "InvalidPriceException",
+      "file": "errors/invalidpriceexception-price.json",
+      "status": 500
+    },
+    {
+      "layer": "Errors",
+      "item": "InvalidSeatIdException",
+      "file": "errors/invalidseatidexception-seatid.json",
+      "status": 500
+    },
+    {
+      "layer": "Errors",
+      "item": "InvalidSeatNumberException",
+      "file": "errors/invalidseatnumberexception-seatnumber.json",
+      "status": 500
+    },
+    {
+      "layer": "Errors",
+      "item": "SeatAlreadyExistException",
+      "file": "errors/seatalreadyexistexception-createseat.json",
+      "status": 400
+    },
+    {
+      "layer": "Errors",
+      "item": "SeatAlreadyExistException",
+      "file": "errors/seatalreadyexistexception-createseatmongo.json",
+      "status": 400
+    },
+    {
+      "layer": "Errors",
+      "item": "SeatNumberIncorrectException",
+      "file": "errors/seatnumberincorrectexception-reserveseat.json",
+      "status": 400
+    }
+  ]
+}

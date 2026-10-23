@@ -1,0 +1,16 @@
+{
+  "id": "post-flight-airport-address-one-characte",
+  "title": "Address one character over the limit",
+  "source": "staged scenario",
+  "why": "Checks that the length limit is enforced and not off by one",
+  "setup": [],
+  "steps": [
+    {
+      "n": 1,
+      "does": "POST …/flight/airport with Name 'Boundary Field', Address '123456789012345678901234567890123456789012345678901' (51 characters), Code 'BND'"
+    }
+  ],
+  "expect": [
+    "Rejected with a validation error on Address length; nothing is stored"
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "id": "post-flight-aircraft-same-name-as-a-soft",
+  "title": "Same name as a soft-deleted aircraft",
+  "source": "staged scenario",
+  "why": "Shows that soft-deleted rows do not count in the duplicate check.",
+  "setup": [
+    {
+      "ref": "aircraft-deleted",
+      "table": "Aircraft",
+      "values": {
+        "CreatedAt": "2025-03-01T08:00:00Z",
+        "CreatedBy": 1,
+        "Id": "a2222222-2222-4222-8222-222222222222",
+        "IsDeleted": true,
+        "LastModified": "2025-12-01T08:00:00Z",
+        "LastModifiedBy": 1,
+        "ManufacturingYear": 1998,
+        "Model": "F-100",
+        "Name": "Retired Falcon",
+        "Version": 2
+      }
+    }
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "does": "POST …/flight/aircraft with Name 'Retired Falcon', Model 'F-100', ManufacturingYear 2010"
+    }
+  ],
+  "expect": [
+    "Success. A new aircraft is created with a new Id and IsDeleted false. The soft-deleted row stays unchanged."
+  ]
+}

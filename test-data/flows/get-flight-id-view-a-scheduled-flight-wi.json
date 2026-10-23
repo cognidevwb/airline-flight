@@ -1,0 +1,84 @@
+{
+  "id": "get-flight-id-view-a-scheduled-flight-wi",
+  "title": "View a scheduled flight with full details",
+  "source": "staged scenario",
+  "why": "Confirms the core read path returns every Flight field for an existing, active flight",
+  "setup": [
+    {
+      "ref": "aircraft-1",
+      "table": "Aircraft",
+      "values": {
+        "CreatedAt": "2026-01-10T08:00:00Z",
+        "CreatedBy": 1,
+        "IsDeleted": false,
+        "LastModified": "2026-01-10T08:00:00Z",
+        "LastModifiedBy": 1,
+        "ManufacturingYear": 2018,
+        "Model": "737-800",
+        "Name": "Boeing 737-800",
+        "Version": 1
+      }
+    },
+    {
+      "ref": "airport-dep",
+      "table": "Airport",
+      "values": {
+        "Address": "Queens, New York",
+        "Code": "JFK",
+        "CreatedAt": "2026-01-10T08:00:00Z",
+        "CreatedBy": 1,
+        "IsDeleted": false,
+        "LastModified": "2026-01-10T08:00:00Z",
+        "LastModifiedBy": 1,
+        "Name": "John F. Kennedy International",
+        "Version": 1
+      }
+    },
+    {
+      "ref": "airport-arr",
+      "table": "Airport",
+      "values": {
+        "Address": "Hounslow, London",
+        "Code": "LHR",
+        "CreatedAt": "2026-01-10T08:00:00Z",
+        "CreatedBy": 1,
+        "IsDeleted": false,
+        "LastModified": "2026-01-10T08:00:00Z",
+        "LastModifiedBy": 1,
+        "Name": "London Heathrow",
+        "Version": 1
+      }
+    },
+    {
+      "ref": "flight-1",
+      "table": "Flight",
+      "values": {
+        "AircraftId": "aircraft-1",
+        "ArriveAirportId": "airport-arr",
+        "ArriveDate": "2026-11-15T18:00:00Z",
+        "CreatedAt": "2026-10-01T09:00:00Z",
+        "CreatedBy": 1,
+        "DepartureAirportId": "airport-dep",
+        "DepartureDate": "2026-11-15T10:00:00Z",
+        "DurationMinutes": 8,
+        "FlightDate": "2026-11-15T00:00:00Z",
+        "FlightNumber": "FL-1001",
+        "IsDeleted": false,
+        "LastModified": "2026-10-01T09:00:00Z",
+        "LastModifiedBy": 1,
+        "Price": 9,
+        "Status": "Flying",
+        "Version": 1
+      }
+    }
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "does": "Send GET …/flight/{id} with the Id of flight-1"
+    }
+  ],
+  "expect": [
+    "200 with FL-1001, Status Flying, the aircraft, both airports, dates, price and duration all as stored"
+  ]
+}

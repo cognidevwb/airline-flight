@@ -1,0 +1,50 @@
+{
+  "id": "post-flight-flight-number-at-maximum-len",
+  "title": "Flight number at maximum length",
+  "source": "staged scenario",
+  "why": "Probes the 50-character boundary on FlightNumber.",
+  "setup": [
+    {
+      "ref": "aircraft-1",
+      "table": "Aircraft",
+      "values": {
+        "IsDeleted": false,
+        "ManufacturingYear": 2015,
+        "Model": "737-800",
+        "Name": "Boeing 737",
+        "Version": 1
+      }
+    },
+    {
+      "ref": "airport-jfk",
+      "table": "Airport",
+      "values": {
+        "Address": "Queens, NY",
+        "Code": "JFK",
+        "IsDeleted": false,
+        "Name": "John F. Kennedy International",
+        "Version": 1
+      }
+    },
+    {
+      "ref": "airport-bos",
+      "table": "Airport",
+      "values": {
+        "Address": "Boston, MA",
+        "Code": "BOS",
+        "IsDeleted": false,
+        "Name": "Logan International",
+        "Version": 1
+      }
+    }
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "does": "POST …/flight with otherwise valid data and FlightNumber \"FL-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\" (exactly 50 characters)"
+    }
+  ],
+  "expect": [
+    "Success: flight created and the full 50-character FlightNumber is stored without truncation."
+  ]
+}

@@ -1,0 +1,201 @@
+Name,Address,Code,Id
+Heathrow Airport,"Longford TW6, Hounslow, London",LHR,c9bc0450-0000-4000-8000-000000001010
+John F. Kennedy International Airport,"Jamaica, Queens, New York, NY 11430",JFK,c9bc0450-0000-4000-8000-000000001011
+Frankfurt Airport,"60547 Frankfurt am Main, Germany",FRA,c9bc0450-0000-4000-8000-000000001012
+Dubai International Airport,"Garhoud, Dubai, United Arab Emirates",DXB,c9bc0450-0000-4000-8000-000000001013
+Dublin Airport,"Collinstown, Dublin, K67 Ireland",DUB,c9bc0450-0000-4000-8000-000000001014
+Paris Charles de Gaulle Airport,"95700 Roissy-en-France, France",CDG,c9bc0450-0000-4000-8000-000000001015
+Amsterdam Schiphol Airport,"Evert van de Beekstraat 202, Schiphol",AMS,c9bc0450-0000-4000-8000-000000001016
+Madrid-Barajas Airport,"Av de la Hispanidad, 28042 Madrid",MAD,c9bc0450-0000-4000-8000-000000001017
+Los Angeles International Airport,"1 World Way, Los Angeles, CA 90045",LAX,c9bc0450-0000-4000-8000-000000001018
+O'Hare International Airport,"10000 W O'Hare Ave, Chicago, IL 60666",ORD,c9bc0450-0000-4000-8000-000000001019
+Singapore Changi Airport,"Airport Blvd, Singapore 819663",SIN,c9bc0450-0000-4000-8000-000000001020
+Tokyo Haneda Airport,"3 Hanedakuko, Ota City, Tokyo 144-0041",HND,c9bc0450-0000-4000-8000-000000001021
+Hartsfield-Jackson Atlanta International Airport,"6000 N Terminal Pkwy, Atlanta, GA 30320",ATL,c9bc0450-0000-4000-8000-000000001022
+Munich Airport,"Nordallee 25, 85356 Munich, Germany",MUC,c9bc0450-0000-4000-8000-000000001023
+Zurich Airport,"Flughafenstrasse, 8058 Zurich, Switzerland",ZRH,c9bc0450-0000-4000-8000-000000001024
+Istanbul Airport,"Tayakadın, 34283 Arnavutköy, Istanbul",IST,c9bc0450-0000-4000-8000-000000001025
+Hamad International Airport,"Airport Rd, Doha, Qatar",DOH,c9bc0450-0000-4000-8000-000000001026
+Sydney Kingsford Smith Airport,"Mascot NSW 2020, Australia",SYD,c9bc0450-0000-4000-8000-000000001027
+Toronto Pearson International Airport,"6301 Silver Dart Dr, Mississauga, ON",YYZ,c9bc0450-0000-4000-8000-000000001028
+San Francisco International Airport,"San Francisco, CA 94128, United States",SFO,c9bc0450-0000-4000-8000-000000001029
+Hong Kong International Airport,"1 Sky Plaza Rd, Chek Lap Kok, Hong Kong",HKG,c9bc0450-0000-4000-8000-000000001030
+Incheon International Airport,"272 Gonghang-ro, Jung-gu, Incheon",ICN,c9bc0450-0000-4000-8000-000000001031
+Copenhagen Airport,"Lufthavnsboulevarden 6, 2770 Kastrup",CPH,c9bc0450-0000-4000-8000-000000001032
+Vienna International Airport,"1300 Schwechat, Austria",VIE,c9bc0450-0000-4000-8000-000000001033
+Barcelona-El Prat Airport,"08820 El Prat de Llobregat, Barcelona",BCN,c9bc0450-0000-4000-8000-000000001034
+Rome Fiumicino Airport,"Via dell'Aeroporto di Fiumicino, 00054 Rome",FCO,c9bc0450-0000-4000-8000-000000001035
+Dallas/Fort Worth International Airport,"2400 Aviation Dr, DFW Airport, TX 75261",DFW,c9bc0450-0000-4000-8000-000000001036
+Miami International Airport,"2100 NW 42nd Ave, Miami, FL 33126",MIA,c9bc0450-0000-4000-8000-000000001037
+Manchester Airport,"Wilmslow Rd, Manchester M90 1QX",MAN,c9bc0450-0000-4000-8000-000000001038
+Gatwick Airport,"Horley, Gatwick RH6 0NP, West Sussex",LGW,c9bc0450-0000-4000-8000-000000001039
+Edinburgh Airport,"Edinburgh EH12 9DN, Scotland",EDI,c9bc0450-0000-4000-8000-000000001040
+Shannon Airport,"Shannon, Co. Clare, V14 Ireland",SNN,c9bc0450-0000-4000-8000-000000001041
+Cork Airport,"Cork, T12 Ireland",ORK,c9bc0450-0000-4000-8000-000000001042
+Oslo Gardermoen Airport,"Edvard Munchs veg, 2061 Gardermoen",OSL,c9bc0450-0000-4000-8000-000000001043
+Stockholm Arlanda Airport,"190 45 Stockholm-Arlanda, Sweden",ARN,c9bc0450-0000-4000-8000-000000001044
+Helsinki Airport,"Lentoasemantie 1, 01530 Vantaa",HEL,c9bc0450-0000-4000-8000-000000001045
+Lisbon Humberto Delgado Airport,"Alameda das Comunidades Portuguesas, Lisbon",LIS,c9bc0450-0000-4000-8000-000000001046
+Brussels Airport,"Leopoldlaan, 1930 Zaventem, Belgium",BRU,c9bc0450-0000-4000-8000-000000001047
+Athens Eleftherios Venizelos Airport,"190 19 Spata-Artemida, Athens, Greece",ATH,c9bc0450-0000-4000-8000-000000001048
+Abu Dhabi International Airport,"Khalifa City, Abu Dhabi, UAE",AUH,c9bc0450-0000-4000-8000-000000001049
+Indira Gandhi International Airport,"New Delhi, Delhi 110037, India",DEL,c9bc0450-0000-4000-8000-000000001050
+Chhatrapati Shivaji Maharaj International Airport,"Santacruz East, Mumbai 400099, India",BOM,c9bc0450-0000-4000-8000-000000001051
+O. R. Tambo International Airport,"Kempton Park, Gauteng 1627, South Africa",JNB,c9bc0450-0000-4000-8000-000000001052
+São Paulo-Guarulhos International Airport,"Rod. Hélio Smidt, Guarulhos, SP, Brazil",GRU,c9bc0450-0000-4000-8000-000000001053
+Benito Juárez International Airport,"Av. Capitán Carlos León, Mexico City",MEX,c9bc0450-0000-4000-8000-000000001054
+Boston Logan International Airport,"1 Harborside Dr, Boston, MA 02128",BOS,c9bc0450-0000-4000-8000-000000001055
+Seattle-Tacoma International Airport,"17801 Int'l Blvd, SeaTac, WA 98158",SEA,c9bc0450-0000-4000-8000-000000001056
+Newark Liberty International Airport,"3 Brewster Rd, Newark, NJ 07114",EWR,c9bc0450-0000-4000-8000-000000001057
+Suvarnabhumi Airport,"999 Moo 1, Racha Thewa, Samut Prakan",BKK,c9bc0450-0000-4000-8000-000000001058
+Beijing Capital International Airport,"Capital Airport Rd, Chaoyang, Beijing",PEK,c9bc0450-0000-4000-8000-000000001059
+Kuala Lumpur International Airport,"64000 KLIA, Sepang, Selangor, Malaysia",KUL,c9bc0450-0000-4000-8000-000000001060
+Soekarno-Hatta International Airport,"Jl. Raya Bandara, Tangerang, Banten, Indonesia",CGK,c9bc0450-0000-4000-8000-000000001061
+Ninoy Aquino International Airport,"Pasay, Metro Manila 1300, Philippines",MNL,c9bc0450-0000-4000-8000-000000001062
+Taiwan Taoyuan International Airport,"Dayuan District, Taoyuan City 337, Taiwan",TPE,c9bc0450-0000-4000-8000-000000001063
+Shanghai Pudong International Airport,"Pudong New Area, Shanghai 201207, China",PVG,c9bc0450-0000-4000-8000-000000001064
+Guangzhou Baiyun International Airport,"Huadu District, Guangzhou 510470, China",CAN,c9bc0450-0000-4000-8000-000000001065
+Kansai International Airport,"1 Senshukukokita, Izumisano, Osaka 549-0001",KIX,c9bc0450-0000-4000-8000-000000001066
+Gimpo International Airport,"112 Haneul-gil, Gangseo-gu, Seoul, Korea",GMP,c9bc0450-0000-4000-8000-000000001067
+Noi Bai International Airport,"Phu Minh, Soc Son, Hanoi, Vietnam",HAN,c9bc0450-0000-4000-8000-000000001068
+Tan Son Nhat International Airport,"Tan Binh District, Ho Chi Minh City, Vietnam",SGN,c9bc0450-0000-4000-8000-000000001069
+Melbourne Airport,"Departure Dr, Tullamarine VIC 3045, Australia",MEL,c9bc0450-0000-4000-8000-000000001070
+Brisbane Airport,"Airport Dr, Brisbane QLD 4008, Australia",BNE,c9bc0450-0000-4000-8000-000000001071
+Perth Airport,"Airport Dr, Perth WA 6105, Australia",PER,c9bc0450-0000-4000-8000-000000001072
+Auckland Airport,"Ray Emery Dr, Mangere, Auckland 2022, NZ",AKL,c9bc0450-0000-4000-8000-000000001073
+Christchurch Airport,"30 Durey Rd, Harewood, Christchurch 8053, NZ",CHC,c9bc0450-0000-4000-8000-000000001074
+Vancouver International Airport,"3211 Grant McConachie Way, Richmond, BC",YVR,c9bc0450-0000-4000-8000-000000001075
+Montreal-Trudeau International Airport,"975 Boul. Roméo-Vachon N, Dorval, QC",YUL,c9bc0450-0000-4000-8000-000000001076
+Calgary International Airport,"2000 Airport Rd NE, Calgary, AB T2E 6W5",YYC,c9bc0450-0000-4000-8000-000000001077
+Denver International Airport,"8500 Peña Blvd, Denver, CO 80249",DEN,c9bc0450-0000-4000-8000-000000001078
+Harry Reid International Airport,"5757 Wayne Newton Blvd, Las Vegas, NV 89119",LAS,c9bc0450-0000-4000-8000-000000001079
+Phoenix Sky Harbor International Airport,"3400 E Sky Harbor Blvd, Phoenix, AZ 85034",PHX,c9bc0450-0000-4000-8000-000000001080
+George Bush Intercontinental Airport,"2800 N Terminal Rd, Houston, TX 77032",IAH,c9bc0450-0000-4000-8000-000000001081
+Philadelphia International Airport,"8000 Essington Ave, Philadelphia, PA 19153",PHL,c9bc0450-0000-4000-8000-000000001082
+Washington Dulles International Airport,"1 Saarinen Cir, Dulles, VA 20166",IAD,c9bc0450-0000-4000-8000-000000001083
+Charlotte Douglas International Airport,"5501 Josh Birmingham Pkwy, Charlotte, NC 28208",CLT,c9bc0450-0000-4000-8000-000000001084
+Minneapolis-Saint Paul International Airport,"4300 Glumack Dr, St Paul, MN 55111",MSP,c9bc0450-0000-4000-8000-000000001085
+Detroit Metropolitan Wayne County Airport,"Detroit Metro Airport, Romulus, MI 48242",DTW,c9bc0450-0000-4000-8000-000000001086
+San Diego International Airport,"3225 N Harbor Dr, San Diego, CA 92101",SAN,c9bc0450-0000-4000-8000-000000001087
+Orlando International Airport,"1 Jeff Fuqua Blvd, Orlando, FL 32827",MCO,c9bc0450-0000-4000-8000-000000001088
+Daniel K. Inouye International Airport,"300 Rodgers Blvd, Honolulu, HI 96819",HNL,c9bc0450-0000-4000-8000-000000001089
+El Dorado International Airport,"Av. El Dorado 103-09, Bogotá, Colombia",BOG,c9bc0450-0000-4000-8000-000000001090
+Jorge Chávez International Airport,"Av. Elmer Faucett s/n, Callao 07031, Peru",LIM,c9bc0450-0000-4000-8000-000000001091
+Arturo Merino Benítez International Airport,"Armando Cortínez Norte 2200, Pudahuel, Chile",SCL,c9bc0450-0000-4000-8000-000000001092
+Ministro Pistarini International Airport,"Autopista Tte. Gral. Ricchieri, Ezeiza, Argentina",EZE,c9bc0450-0000-4000-8000-000000001093
+Cairo International Airport,"Airport Rd, Heliopolis, Cairo 11776, Egypt",CAI,c9bc0450-0000-4000-8000-000000001094
+Mohammed V International Airport,"Nouaceur, Casablanca 27000, Morocco",CMN,c9bc0450-0000-4000-8000-000000001095
+Jomo Kenyatta International Airport,"Embakasi, Nairobi 00501, Kenya",NBO,c9bc0450-0000-4000-8000-000000001096
+Addis Ababa Bole International Airport,"Bole Sub-City, Addis Ababa, Ethiopia",ADD,c9bc0450-0000-4000-8000-000000001097
+Murtala Muhammed International Airport,"Ikeja, Lagos 100001, Nigeria",LOS,c9bc0450-0000-4000-8000-000000001098
+Cape Town International Airport,"Matroosfontein, Cape Town 7490, South Africa",CPT,c9bc0450-0000-4000-8000-000000001099
+King Khalid International Airport,"Airport Rd, Riyadh 11411, Saudi Arabia",RUH,c9bc0450-0000-4000-8000-000000001100
+King Abdulaziz International Airport,"Jeddah 21589, Saudi Arabia",JED,c9bc0450-0000-4000-8000-000000001101
+Ben Gurion Airport,"Lod 70100, Israel",TLV,c9bc0450-0000-4000-8000-000000001102
+Kuwait International Airport,"Farwaniya, Airport Rd, Kuwait City, Kuwait",KWI,c9bc0450-0000-4000-8000-000000001103
+Warsaw Chopin Airport,"ul. Żwirki i Wigury 1, 00-906 Warsaw, Poland",WAW,c9bc0450-0000-4000-8000-000000001104
+Václav Havel Airport Prague,"Aviatická, 161 08 Prague 6, Czechia",PRG,c9bc0450-0000-4000-8000-000000001105
+Budapest Ferenc Liszt International Airport,"1185 Budapest, Hungary",BUD,c9bc0450-0000-4000-8000-000000001106
+Birmingham Airport,"Airport Way, Birmingham B26 3QJ, UK",BHX,c9bc0450-0000-4000-8000-000000001107
+Glasgow Airport,"Paisley PA3 2SW, Scotland",GLA,c9bc0450-0000-4000-8000-000000001108
+Belfast International Airport,"Belfast BT29 4AB, Northern Ireland",BFS,c9bc0450-0000-4000-8000-000000001109
+London Luton Airport,"Airport Way, Luton LU2 9LY, Bedfordshire",LTN,c9bc0450-0000-4000-8000-000000001110
+London Stansted Airport,"Bassingbourn Rd, Stansted CM24 1QW, Essex",STN,c9bc0450-0000-4000-8000-000000001111
+London City Airport,"Hartmann Rd, Silvertown, London E16 2PX",LCY,c9bc0450-0000-4000-8000-000000001112
+Bristol Airport,"Bristol BS48 3DY, Somerset, UK",BRS,c9bc0450-0000-4000-8000-000000001113
+Newcastle International Airport,"Woolsington, Newcastle upon Tyne NE13 8BZ",NCL,c9bc0450-0000-4000-8000-000000001114
+Liverpool John Lennon Airport,"Speke Hall Ave, Liverpool L24 1YD",LPL,c9bc0450-0000-4000-8000-000000001115
+East Midlands Airport,"Castle Donington, Derby DE74 2SA",EMA,c9bc0450-0000-4000-8000-000000001116
+Aberdeen International Airport,"Dyce, Aberdeen AB21 7DU, Scotland",ABZ,c9bc0450-0000-4000-8000-000000001117
+Geneva Airport,"Route de l'Aéroport 21, 1215 Le Grand-Saconnex",GVA,c9bc0450-0000-4000-8000-000000001118
+EuroAirport Basel Mulhouse Freiburg,"68304 Saint-Louis Cedex, France",BSL,c9bc0450-0000-4000-8000-000000001119
+Milan Malpensa Airport,"21010 Ferno, Varese, Italy",MXP,c9bc0450-0000-4000-8000-000000001120
+Milan Linate Airport,"Viale Enrico Forlanini, 20090 Segrate, Milan",LIN,c9bc0450-0000-4000-8000-000000001121
+Venice Marco Polo Airport,"Viale Galileo Galilei 30, 30173 Tessera",VCE,c9bc0450-0000-4000-8000-000000001122
+Naples Capodichino Airport,"Viale F. Ruffo di Calabria, 80144 Naples",NAP,c9bc0450-0000-4000-8000-000000001123
+Bologna Guglielmo Marconi Airport,"Via del Triumvirato 84, 40132 Bologna",BLQ,c9bc0450-0000-4000-8000-000000001124
+Palma de Mallorca Airport,"Carretera Ma-19, 07611 Palma, Mallorca",PMI,c9bc0450-0000-4000-8000-000000001125
+Málaga-Costa del Sol Airport,"Av. Comandante García Morato, 29004 Málaga",AGP,c9bc0450-0000-4000-8000-000000001126
+Valencia Airport,"Carretera del Aeropuerto, 46940 Manises",VLC,c9bc0450-0000-4000-8000-000000001127
+Seville San Pablo Airport,"Autovía A-4, km 532, 41020 Seville",SVQ,c9bc0450-0000-4000-8000-000000001128
+Porto Francisco Sá Carneiro Airport,"4470-558 Maia, Porto, Portugal",OPO,c9bc0450-0000-4000-8000-000000001129
+Faro Airport,"8001-701 Faro, Algarve, Portugal",FAO,c9bc0450-0000-4000-8000-000000001130
+Hamburg Airport,"Flughafenstraße 1-3, 22335 Hamburg",HAM,c9bc0450-0000-4000-8000-000000001131
+Düsseldorf Airport,"Flughafenstraße 105, 40474 Düsseldorf",DUS,c9bc0450-0000-4000-8000-000000001132
+Cologne Bonn Airport,"Kennedystraße, 51147 Köln, Germany",CGN,c9bc0450-0000-4000-8000-000000001133
+Stuttgart Airport,"Flughafenstraße 32, 70629 Stuttgart",STR,c9bc0450-0000-4000-8000-000000001134
+Berlin Brandenburg Airport,"Willy-Brandt-Platz, 12529 Schönefeld",BER,c9bc0450-0000-4000-8000-000000001135
+Nice Côte d'Azur Airport,"Rue Costes et Bellonte, 06206 Nice",NCE,c9bc0450-0000-4000-8000-000000001136
+Lyon-Saint Exupéry Airport,"69125 Colombier-Saugnieu, France",LYS,c9bc0450-0000-4000-8000-000000001137
+Marseille Provence Airport,"13700 Marignane, France",MRS,c9bc0450-0000-4000-8000-000000001138
+Toulouse-Blagnac Airport,"31703 Blagnac Cedex, France",TLS,c9bc0450-0000-4000-8000-000000001139
+Gothenburg Landvetter Airport,"438 80 Landvetter, Sweden",GOT,c9bc0450-0000-4000-8000-000000001140
+Bergen Flesland Airport,"Flyplassvegen 555, 5258 Blomsterdalen",BGO,c9bc0450-0000-4000-8000-000000001141
+Trondheim Værnes Airport,"7500 Stjørdal, Norway",TRD,c9bc0450-0000-4000-8000-000000001142
+Keflavík International Airport,"235 Keflavíkurflugvöllur, Iceland",KEF,c9bc0450-0000-4000-8000-000000001143
+Riga International Airport,"Mārupes novads, LV-1053 Riga, Latvia",RIX,c9bc0450-0000-4000-8000-000000001144
+Vilnius Airport,"Rodūnios kelias 10A, 02189 Vilnius",VNO,c9bc0450-0000-4000-8000-000000001145
+Tallinn Lennart Meri Airport,"Lennujaama 2, 11101 Tallinn, Estonia",TLL,c9bc0450-0000-4000-8000-000000001146
+Bucharest Henri Coandă Airport,"Calea Bucureștilor 224E, Otopeni 075150",OTP,c9bc0450-0000-4000-8000-000000001147
+Sofia Airport,"1540 Sofia, Bulgaria",SOF,c9bc0450-0000-4000-8000-000000001148
+Belgrade Nikola Tesla Airport,"Aerodrom Beograd 59, 11180 Surčin",BEG,c9bc0450-0000-4000-8000-000000001149
+Zagreb Franjo Tuđman Airport,"Rudolfa Fizira 21, 10410 Velika Gorica",ZAG,c9bc0450-0000-4000-8000-000000001150
+Ljubljana Jože Pučnik Airport,"Zgornji Brnik 130A, 4210 Brnik, Slovenia",LJU,c9bc0450-0000-4000-8000-000000001151
+Dubrovnik Airport,"Konavle, 20213 Čilipi, Croatia",DBV,c9bc0450-0000-4000-8000-000000001152
+Thessaloniki Makedonia Airport,"Terminal Rd, 551 03 Thessaloniki, Greece",SKG,c9bc0450-0000-4000-8000-000000001153
+Malta International Airport,"Luqa LQA 4000, Malta",MLA,c9bc0450-0000-4000-8000-000000001154
+Larnaca International Airport,"Larnaca 6650, Cyprus",LCA,c9bc0450-0000-4000-8000-000000001155
+Ibiza Airport,"Carretera Aeropuerto, 07817 Sant Josep, Ibiza",IBZ,c9bc0450-0000-4000-8000-000000001156
+Kempegowda International Airport,"Devanahalli, Bengaluru, Karnataka 560300, India",BLR,c9bc0450-0000-4000-8000-000000001157
+Rajiv Gandhi International Airport,"Shamshabad, Hyderabad, Telangana 500409, India",HYD,c9bc0450-0000-4000-8000-000000001158
+Chennai International Airport,"GST Rd, Meenambakkam, Chennai 600027, India",MAA,c9bc0450-0000-4000-8000-000000001159
+Netaji Subhas Chandra Bose International Airport,"Netaji Subhas Rd, Dum Dum, Kolkata 700052",CCU,c9bc0450-0000-4000-8000-000000001160
+Bandaranaike International Airport,"Katunayake, Negombo 11450, Sri Lanka",CMB,c9bc0450-0000-4000-8000-000000001161
+Hazrat Shahjalal International Airport,"Airport Rd, Dhaka 1229, Bangladesh",DAC,c9bc0450-0000-4000-8000-000000001162
+Jinnah International Airport,"Airport Rd, Karachi 75200, Pakistan",KHI,c9bc0450-0000-4000-8000-000000001163
+Islamabad International Airport,"GT Rd, Fateh Jang, Islamabad, Pakistan",ISB,c9bc0450-0000-4000-8000-000000001164
+Allama Iqbal International Airport,"Allama Iqbal Rd, Lahore 54810, Pakistan",LHE,c9bc0450-0000-4000-8000-000000001165
+Tribhuvan International Airport,"Gauchar, Kathmandu 44600, Nepal",KTM,c9bc0450-0000-4000-8000-000000001166
+Velana International Airport,"Hulhulé Island, Malé 22000, Maldives",MLE,c9bc0450-0000-4000-8000-000000001167
+Penang International Airport,"Bayan Lepas, 11900 Penang, Malaysia",PEN,c9bc0450-0000-4000-8000-000000001168
+Ngurah Rai International Airport,"Jl. Raya Gusti Ngurah Rai, Tuban, Bali 80362",DPS,c9bc0450-0000-4000-8000-000000001169
+Phuket International Airport,"888 Moo 6, Mai Khao, Thalang, Phuket 83110",HKT,c9bc0450-0000-4000-8000-000000001170
+Chiang Mai International Airport,"Suthep, Mueang, Chiang Mai 50200, Thailand",CNX,c9bc0450-0000-4000-8000-000000001171
+Fukuoka Airport,"778-1 Shimousui, Hakata-ku, Fukuoka 812-0003",FUK,c9bc0450-0000-4000-8000-000000001172
+Chubu Centrair International Airport,"1-1 Centrair, Tokoname, Aichi 479-0881, Japan",NGO,c9bc0450-0000-4000-8000-000000001173
+New Chitose Airport,"Bibi, Chitose, Hokkaido 066-0012, Japan",CTS,c9bc0450-0000-4000-8000-000000001174
+Naha Airport,"640 Kagamizu, Naha, Okinawa 901-0142, Japan",OKA,c9bc0450-0000-4000-8000-000000001175
+Gimhae International Airport,"108 Gonghang-ro, Gangseo-gu, Busan, Korea",PUS,c9bc0450-0000-4000-8000-000000001176
+Jeju International Airport,"2 Gonghang-ro, Jeju-si, Jeju 63208, Korea",CJU,c9bc0450-0000-4000-8000-000000001177
+Shenzhen Bao'an International Airport,"Bao'an District, Shenzhen 518128, China",SZX,c9bc0450-0000-4000-8000-000000001178
+Chengdu Shuangliu International Airport,"Shuangliu District, Chengdu 610202, China",CTU,c9bc0450-0000-4000-8000-000000001179
+Xi'an Xianyang International Airport,"Weicheng District, Xianyang, Shaanxi, China",XIY,c9bc0450-0000-4000-8000-000000001180
+Muscat International Airport,"Seeb, Muscat 111, Oman",MCT,c9bc0450-0000-4000-8000-000000001181
+Bahrain International Airport,"Muharraq, Manama, Bahrain",BAH,c9bc0450-0000-4000-8000-000000001182
+Queen Alia International Airport,"Queen Alia Airport Rd, Zizya, Amman, Jordan",AMM,c9bc0450-0000-4000-8000-000000001183
+Beirut–Rafic Hariri International Airport,"Khalde, Airport Rd, Beirut 1107, Lebanon",BEY,c9bc0450-0000-4000-8000-000000001184
+King Fahd International Airport,"King Fahd Airport, Dammam 34437, Saudi Arabia",DMM,c9bc0450-0000-4000-8000-000000001185
+Sharjah International Airport,"Airport Rd, Sharjah, United Arab Emirates",SHJ,c9bc0450-0000-4000-8000-000000001186
+Tunis–Carthage International Airport,"Route de l'Aéroport, Tunis 1080, Tunisia",TUN,c9bc0450-0000-4000-8000-000000001187
+Houari Boumediene Airport,"Dar El Beida, Algiers 16033, Algeria",ALG,c9bc0450-0000-4000-8000-000000001188
+Kotoka International Airport,"Airport Rd, Accra, Ghana",ACC,c9bc0450-0000-4000-8000-000000001189
+Blaise Diagne International Airport,"Diass, Blaise Diagne, Dakar, Senegal",DKR,c9bc0450-0000-4000-8000-000000001190
+Julius Nyerere International Airport,"Nyerere Rd, Ilala, Dar es Salaam, Tanzania",DAR,c9bc0450-0000-4000-8000-000000001191
+Entebbe International Airport,"Entebbe Rd, Entebbe, Uganda",EBB,c9bc0450-0000-4000-8000-000000001192
+Sir Seewoosagur Ramgoolam International Airport,"Plaine Magnien, SSR Intl, Mauritius",MRU,c9bc0450-0000-4000-8000-000000001193
+Luxembourg Findel Airport,"Route de Trèves, 1273 Findel, Luxembourg",LUX,c9bc0450-0000-4000-8000-000000001194
+Nuremberg Airport,"Flughafenstraße 100, 90411 Nuremberg, Germany",NUE,c9bc0450-0000-4000-8000-000000001195
+Hannover Airport,"Petzelstraße 84, 30855 Langenhagen, Germany",HAJ,c9bc0450-0000-4000-8000-000000001196
+Leipzig/Halle Airport,"04435 Schkeuditz, Leipzig, Germany",LEJ,c9bc0450-0000-4000-8000-000000001197
+Kraków John Paul II Airport,"ul. Medweckiego 1, 32-083 Balice, Poland",KRK,c9bc0450-0000-4000-8000-000000001198
+Gdańsk Lech Wałęsa Airport,"ul. Słowackiego 200, 80-298 Gdańsk, Poland",GDN,c9bc0450-0000-4000-8000-000000001199
+Turin Airport,"Strada Aeroporto 12, 10072 Caselle, Turin",TRN,c9bc0450-0000-4000-8000-000000001200
+Pisa International Airport,"Via Gino Simi, 56121 Pisa, Italy",PSA,c9bc0450-0000-4000-8000-000000001201
+Catania–Fontanarossa Airport,"Via Fontanarossa, 95121 Catania, Italy",CTA,c9bc0450-0000-4000-8000-000000001202
+Falcone–Borsellino Airport,"Via Francesco Crispi, 90045 Cinisi, Palermo",PMO,c9bc0450-0000-4000-8000-000000001203
+Bilbao Airport,"Sondika, 48180 Loiu, Bizkaia, Spain",BIO,c9bc0450-0000-4000-8000-000000001204
+Gran Canaria Airport,"Carretera GC-1, 35230 Telde, Las Palmas, Spain",LPA,c9bc0450-0000-4000-8000-000000001205
+Tenerife South Airport,"38610 Granadilla de Abona, Tenerife, Spain",TFS,c9bc0450-0000-4000-8000-000000001206
+Sheremetyevo International Airport,"Sheremetyevo, Khimki, Moscow Region, Russia",SVO,c9bc0450-0000-4000-8000-000000001207
+Tenerife North Airport,"Camino Las Mercedes, 38206 La Laguna, Spain",TFN,c9bc0450-0000-4000-8000-000000001208
+Ronald Reagan Washington National,"2401 Smith Blvd, Arlington, VA 22202",DCA,c9bc0450-0000-4000-8000-000000001209

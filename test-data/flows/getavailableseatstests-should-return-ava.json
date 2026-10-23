@@ -1,0 +1,24 @@
+{
+  "id": "getavailableseatstests-should-return-ava",
+  "title": "should return available seats from grpc service",
+  "source": "repository test",
+  "file": "tests/IntegrationTest/Seat/Features/GetAvailableSeatsTests.cs:22",
+  "steps": [
+    {
+      "n": 1,
+      "does": "await Fixture.SendAsync(flightCommand)"
+    },
+    {
+      "n": 2,
+      "does": "await Fixture.SendAsync(seatCommand)"
+    },
+    {
+      "n": 3,
+      "does": "var response = await flightGrpcClient.GetAvailableSeatsAsync(new GetAvailableSeatsRequest { FlightId = flightCommand.Id.ToString() })"
+    }
+  ],
+  "expect": [
+    "response?.Should().NotBeNull()",
+    "response?.SeatDtos?.Count.Should().BeGreaterThanOrEqualTo(1)"
+  ]
+}

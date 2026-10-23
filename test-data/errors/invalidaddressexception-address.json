@@ -1,0 +1,24 @@
+{
+  "id": "invalidaddressexception-address",
+  "title": "Address that the code refuses",
+  "kind": "invalid value",
+  "exception": "InvalidAddressException",
+  "base": "DomainException",
+  "thrownAt": "src/Flight/Airports/ValueObjects/Address.cs:18",
+  "condition": "if (string.IsNullOrWhiteSpace(value))",
+  "field": "Address",
+  "expect": {
+    "status": 500,
+    "error": "InvalidAddressException",
+    "note": "DomainException is not one of the exception types the problem-details handler maps, so the API answers 500"
+  },
+  "trigger": {
+    "call": "POST api/v1/flight/airport",
+    "body": {
+      "address": null,
+      "code": "LHR",
+      "name": "Heathrow Airport"
+    },
+    "from": "createairportrequestdto-1"
+  }
+}

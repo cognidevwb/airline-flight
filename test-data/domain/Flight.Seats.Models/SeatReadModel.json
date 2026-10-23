@@ -1,0 +1,3664 @@
+{
+  "name": "SeatReadModel",
+  "kind": "read model",
+  "layer": "domain",
+  "source": "src/Flight/Seats/Models/SeatReadModel.cs:5",
+  "columns": [
+    "Id",
+    "SeatId",
+    "SeatNumber",
+    "Type",
+    "Class",
+    "FlightId",
+    "IsDeleted"
+  ],
+  "valid": [
+    {
+      "ref": "seat-1a-21",
+      "kind": "record",
+      "data": {
+        "Class": "FirstClass",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001028",
+        "Id": "f07cc888-0000-4000-8000-000000001016",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "1A",
+        "Type": "Window"
+      },
+      "links": {
+        "FlightId": "flight-af1680"
+      }
+    },
+    {
+      "ref": "seat-12c-21",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001026",
+        "Id": "f07cc888-0000-4000-8000-000000001017",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "12C",
+        "Type": "Aisle"
+      },
+      "links": {
+        "FlightId": "flight-ek203"
+      }
+    },
+    {
+      "ref": "seat-24f-11",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001037",
+        "Id": "f07cc888-0000-4000-8000-000000001018",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "24F",
+        "Type": "Window"
+      },
+      "links": {
+        "FlightId": "flight-ac849"
+      }
+    },
+    {
+      "ref": "seat-3d-11",
+      "kind": "record",
+      "data": {
+        "Class": "Business",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001041",
+        "Id": "f07cc888-0000-4000-8000-000000001019",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "3D",
+        "Type": "Aisle"
+      },
+      "links": {
+        "FlightId": "flight-aa2456"
+      }
+    },
+    {
+      "ref": "seat-15b-21",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001036",
+        "Id": "f07cc888-0000-4000-8000-000000001020",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "15B",
+        "Type": "Middle"
+      },
+      "links": {
+        "FlightId": "flight-qf143"
+      }
+    },
+    {
+      "ref": "seat-8a-31",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001034",
+        "Id": "f07cc888-0000-4000-8000-000000001021",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "8A",
+        "Type": "Window"
+      },
+      "links": {
+        "FlightId": "flight-tk1983"
+      }
+    },
+    {
+      "ref": "seat-2c-11",
+      "kind": "record",
+      "data": {
+        "Class": "FirstClass",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001029",
+        "Id": "f07cc888-0000-4000-8000-000000001022",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "2C",
+        "Type": "Aisle"
+      },
+      "links": {
+        "FlightId": "flight-kl1001"
+      }
+    },
+    {
+      "ref": "seat-19e-21",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001027",
+        "Id": "f07cc888-0000-4000-8000-000000001023",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "19E",
+        "Type": "Middle"
+      },
+      "links": {
+        "FlightId": "flight-aa100"
+      }
+    },
+    {
+      "ref": "seat-27f-21",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001045",
+        "Id": "f07cc888-0000-4000-8000-000000001024",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "27F",
+        "Type": "Window"
+      },
+      "links": {
+        "FlightId": "flight-ay1331"
+      }
+    },
+    {
+      "ref": "seat-5a-41",
+      "kind": "record",
+      "data": {
+        "Class": "Business",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001057",
+        "Id": "f07cc888-0000-4000-8000-000000001025",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "5A",
+        "Type": "Window"
+      },
+      "links": {
+        "FlightId": "flight-mh2"
+      }
+    },
+    {
+      "ref": "seat-14d-21",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001030",
+        "Id": "f07cc888-0000-4000-8000-000000001026",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "14D",
+        "Type": "Aisle"
+      },
+      "links": {
+        "FlightId": "flight-ua901"
+      }
+    },
+    {
+      "ref": "seat-31b-21",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001048",
+        "Id": "f07cc888-0000-4000-8000-000000001027",
+        "IsDeleted": true,
+        "SeatId": null,
+        "SeatNumber": "31B",
+        "Type": "Middle"
+      },
+      "links": {
+        "FlightId": "flight-ey101"
+      }
+    },
+    {
+      "ref": "seat-10c-11",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001044",
+        "Id": "f07cc888-0000-4000-8000-000000001028",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "10C",
+        "Type": "Aisle"
+      },
+      "links": {
+        "FlightId": "flight-fr1124"
+      }
+    },
+    {
+      "ref": "seat-22a-18",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001075",
+        "Id": "f07cc888-0000-4000-8000-000000001029",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "22A",
+        "Type": "Window"
+      },
+      "links": {
+        "FlightId": "flight-sk1425"
+      }
+    },
+    {
+      "ref": "seat-4f-21",
+      "kind": "record",
+      "data": {
+        "Class": "Business",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001062",
+        "Id": "f07cc888-0000-4000-8000-000000001030",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "4F",
+        "Type": "Window"
+      },
+      "links": {
+        "FlightId": "flight-oz101"
+      }
+    },
+    {
+      "ref": "seat-17d-11",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001031",
+        "Id": "f07cc888-0000-4000-8000-000000001031",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "17D",
+        "Type": "Aisle"
+      },
+      "links": {
+        "FlightId": "flight-sq321"
+      }
+    },
+    {
+      "ref": "seat-9e-21",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001042",
+        "Id": "f07cc888-0000-4000-8000-000000001032",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "9E",
+        "Type": "Middle"
+      },
+      "links": {
+        "FlightId": "flight-vs3"
+      }
+    },
+    {
+      "ref": "seat-1f-11",
+      "kind": "record",
+      "data": {
+        "Class": "FirstClass",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001122",
+        "Id": "f07cc888-0000-4000-8000-000000001033",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "1F",
+        "Type": "Window"
+      },
+      "links": {
+        "FlightId": "flight-lh2392"
+      }
+    },
+    {
+      "ref": "seat-26c-11",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001078",
+        "Id": "f07cc888-0000-4000-8000-000000001034",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "26C",
+        "Type": "Aisle"
+      },
+      "links": {
+        "FlightId": "flight-aa106"
+      }
+    },
+    {
+      "ref": "seat-33a-21",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001059",
+        "Id": "f07cc888-0000-4000-8000-000000001035",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "33A",
+        "Type": "Window"
+      },
+      "links": {
+        "FlightId": "flight-pr100"
+      }
+    },
+    {
+      "ref": "seat-6d-11",
+      "kind": "record",
+      "data": {
+        "Class": "Business",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001063",
+        "Id": "f07cc888-0000-4000-8000-000000001036",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "6D",
+        "Type": "Aisle"
+      },
+      "links": {
+        "FlightId": "flight-qf400"
+      }
+    },
+    {
+      "ref": "seat-11b-21",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001038",
+        "Id": "f07cc888-0000-4000-8000-000000001037",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "11B",
+        "Type": "Middle"
+      },
+      "links": {
+        "FlightId": "flight-cx880"
+      }
+    },
+    {
+      "ref": "seat-20f-11",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001056",
+        "Id": "f07cc888-0000-4000-8000-000000001038",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "20F",
+        "Type": "Window"
+      },
+      "links": {
+        "FlightId": "flight-ca981"
+      }
+    },
+    {
+      "ref": "seat-2a-41",
+      "kind": "record",
+      "data": {
+        "Class": "FirstClass",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001087",
+        "Id": "f07cc888-0000-4000-8000-000000001039",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "2A",
+        "Type": "Window"
+      },
+      "links": {
+        "FlightId": "flight-dl1032"
+      }
+    },
+    {
+      "ref": "seat-28d-11",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001140",
+        "Id": "f07cc888-0000-4000-8000-000000001040",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "28D",
+        "Type": "Aisle"
+      },
+      "links": {
+        "FlightId": "flight-ke017"
+      }
+    },
+    {
+      "ref": "seat-13e-11",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001111",
+        "Id": "f07cc888-0000-4000-8000-000000001041",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "13E",
+        "Type": "Middle"
+      },
+      "links": {
+        "FlightId": "flight-tp1020"
+      }
+    },
+    {
+      "ref": "seat-7c-21",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001100",
+        "Id": "f07cc888-0000-4000-8000-000000001042",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "7C",
+        "Type": "Aisle"
+      },
+      "links": {
+        "FlightId": "flight-nh253"
+      }
+    },
+    {
+      "ref": "seat-35f-11",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001131",
+        "Id": "f07cc888-0000-4000-8000-000000001043",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "35F",
+        "Type": "Window"
+      },
+      "links": {
+        "FlightId": "flight-kl1181"
+      }
+    },
+    {
+      "ref": "seat-3a-21",
+      "kind": "record",
+      "data": {
+        "Class": "Business",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001174",
+        "Id": "f07cc888-0000-4000-8000-000000001044",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "3A",
+        "Type": "Window"
+      },
+      "links": {
+        "FlightId": "flight-aa1432"
+      }
+    },
+    {
+      "ref": "seat-16b-31",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001153",
+        "Id": "f07cc888-0000-4000-8000-000000001045",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "16B",
+        "Type": "Middle"
+      },
+      "links": {
+        "FlightId": "flight-os857"
+      }
+    },
+    {
+      "ref": "seat-23d-21",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001123",
+        "Id": "f07cc888-0000-4000-8000-000000001046",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "23D",
+        "Type": "Aisle"
+      },
+      "links": {
+        "FlightId": "flight-ac792"
+      }
+    },
+    {
+      "ref": "seat-18a-11",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001166",
+        "Id": "f07cc888-0000-4000-8000-000000001047",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "18A",
+        "Type": "Window"
+      },
+      "links": {
+        "FlightId": "flight-ei104"
+      }
+    },
+    {
+      "ref": "seat-5c-21",
+      "kind": "record",
+      "data": {
+        "Class": "Business",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001076",
+        "Id": "f07cc888-0000-4000-8000-000000001048",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "5C",
+        "Type": "Aisle"
+      },
+      "links": {
+        "FlightId": "flight-ek203-2"
+      }
+    },
+    {
+      "ref": "seat-30e-11",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001071",
+        "Id": "f07cc888-0000-4000-8000-000000001049",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "30E",
+        "Type": "Middle"
+      },
+      "links": {
+        "FlightId": "flight-ws1604"
+      }
+    },
+    {
+      "ref": "seat-12f-21",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001104",
+        "Id": "f07cc888-0000-4000-8000-000000001050",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "12F",
+        "Type": "Window"
+      },
+      "links": {
+        "FlightId": "flight-ei512"
+      }
+    },
+    {
+      "ref": "seat-25c-21",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001094",
+        "Id": "f07cc888-0000-4000-8000-000000001051",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "25C",
+        "Type": "Aisle"
+      },
+      "links": {
+        "FlightId": "flight-ba295"
+      }
+    },
+    {
+      "ref": "seat-1d-31",
+      "kind": "record",
+      "data": {
+        "Class": "FirstClass",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001133",
+        "Id": "f07cc888-0000-4000-8000-000000001052",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "1D",
+        "Type": "Aisle"
+      },
+      "links": {
+        "FlightId": "flight-ba2634"
+      }
+    },
+    {
+      "ref": "seat-21b-21",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001177",
+        "Id": "f07cc888-0000-4000-8000-000000001053",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "21B",
+        "Type": "Middle"
+      },
+      "links": {
+        "FlightId": "flight-af1048"
+      }
+    },
+    {
+      "ref": "seat-8d-31",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001119",
+        "Id": "f07cc888-0000-4000-8000-000000001054",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "8D",
+        "Type": "Aisle"
+      },
+      "links": {
+        "FlightId": "flight-nz523"
+      }
+    },
+    {
+      "ref": "seat-29a-21",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001051",
+        "Id": "f07cc888-0000-4000-8000-000000001055",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "29A",
+        "Type": "Window"
+      },
+      "links": {
+        "FlightId": "flight-la8084"
+      }
+    },
+    {
+      "ref": "seat-6f-31",
+      "kind": "record",
+      "data": {
+        "Class": "Business",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001058",
+        "Id": "f07cc888-0000-4000-8000-000000001056",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "6F",
+        "Type": "Window"
+      },
+      "links": {
+        "FlightId": "flight-ga880"
+      }
+    },
+    {
+      "ref": "seat-14e-31",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001181",
+        "Id": "f07cc888-0000-4000-8000-000000001057",
+        "IsDeleted": true,
+        "SeatId": null,
+        "SeatNumber": "14E",
+        "Type": "Middle"
+      },
+      "links": {
+        "FlightId": "flight-ba117-2"
+      }
+    },
+    {
+      "ref": "seat-32c-31",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001190",
+        "Id": "f07cc888-0000-4000-8000-000000001058",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "32C",
+        "Type": "Aisle"
+      },
+      "links": {
+        "FlightId": "flight-ac8187"
+      }
+    },
+    {
+      "ref": "seat-9a-11",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001180",
+        "Id": "f07cc888-0000-4000-8000-000000001059",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "9A",
+        "Type": "Window"
+      },
+      "links": {
+        "FlightId": "flight-ib3254"
+      }
+    },
+    {
+      "ref": "seat-19d-11",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001060",
+        "Id": "f07cc888-0000-4000-8000-000000001060",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "19D",
+        "Type": "Unknown"
+      },
+      "links": {
+        "FlightId": "flight-br189"
+      }
+    },
+    {
+      "ref": "seat-4c-11",
+      "kind": "record",
+      "data": {
+        "Class": "Unknown",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001047",
+        "Id": "f07cc888-0000-4000-8000-000000001061",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "4C",
+        "Type": "Aisle"
+      },
+      "links": {
+        "FlightId": "flight-sn2301"
+      }
+    },
+    {
+      "ref": "seat-34f-11",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001115",
+        "Id": "f07cc888-0000-4000-8000-000000001062",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "34F",
+        "Type": "Window"
+      },
+      "links": {
+        "FlightId": "flight-tg642"
+      }
+    },
+    {
+      "ref": "seat-10a-21",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001124",
+        "Id": "f07cc888-0000-4000-8000-000000001063",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "10A",
+        "Type": "Window"
+      },
+      "links": {
+        "FlightId": "flight-fz615"
+      }
+    },
+    {
+      "ref": "seat-15f-21",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001097",
+        "Id": "f07cc888-0000-4000-8000-000000001064",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "15F",
+        "Type": "Window"
+      },
+      "links": {
+        "FlightId": "flight-et302"
+      }
+    },
+    {
+      "ref": "seat-24b-21",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001065",
+        "Id": "f07cc888-0000-4000-8000-000000001065",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "24B",
+        "Type": "Middle"
+      },
+      "links": {
+        "FlightId": "flight-ba93"
+      }
+    },
+    {
+      "ref": "seat-14c-31",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001074",
+        "Id": "f07cc888-0000-4000-8000-000000001066",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "14C",
+        "Type": "Aisle"
+      },
+      "links": {
+        "FlightId": "flight-ei532"
+      }
+    },
+    {
+      "ref": "seat-22a-19",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001075",
+        "Id": "f07cc888-0000-4000-8000-000000001029",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "22A",
+        "Type": "Window"
+      },
+      "links": {
+        "FlightId": "flight-sk1425"
+      }
+    },
+    {
+      "ref": "seat-2d-31",
+      "kind": "record",
+      "data": {
+        "Class": "FirstClass",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001076",
+        "Id": "f07cc888-0000-4000-8000-000000001068",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "2D",
+        "Type": "Aisle"
+      },
+      "links": {
+        "FlightId": "flight-ek203-2"
+      }
+    },
+    {
+      "ref": "seat-5f-21",
+      "kind": "record",
+      "data": {
+        "Class": "Business",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001077",
+        "Id": "f07cc888-0000-4000-8000-000000001069",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "5F",
+        "Type": "Window"
+      },
+      "links": {
+        "FlightId": "flight-lh401-2"
+      }
+    },
+    {
+      "ref": "seat-7a-11",
+      "kind": "record",
+      "data": {
+        "Class": "Business",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001078",
+        "Id": "f07cc888-0000-4000-8000-000000001070",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "7A",
+        "Type": "Window"
+      },
+      "links": {
+        "FlightId": "flight-aa106"
+      }
+    },
+    {
+      "ref": "seat-31b-22",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001048",
+        "Id": "f07cc888-0000-4000-8000-000000001027",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "31B",
+        "Type": "Middle"
+      },
+      "links": {
+        "FlightId": "flight-ey101"
+      }
+    },
+    {
+      "ref": "seat-9d-11",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001080",
+        "Id": "f07cc888-0000-4000-8000-000000001072",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "9D",
+        "Type": "Aisle"
+      },
+      "links": {
+        "FlightId": "flight-kl1275"
+      }
+    },
+    {
+      "ref": "seat-18f-11",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001081",
+        "Id": "f07cc888-0000-4000-8000-000000001073",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "18F",
+        "Type": "Window"
+      },
+      "links": {
+        "FlightId": "flight-ba1442"
+      }
+    },
+    {
+      "ref": "seat-27e-11",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001082",
+        "Id": "f07cc888-0000-4000-8000-000000001074",
+        "IsDeleted": true,
+        "SeatId": null,
+        "SeatNumber": "27E",
+        "Type": "Middle"
+      },
+      "links": {
+        "FlightId": "flight-ei3341"
+      }
+    },
+    {
+      "ref": "seat-1a-22",
+      "kind": "record",
+      "data": {
+        "Class": "FirstClass",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001028",
+        "Id": "f07cc888-0000-4000-8000-000000001016",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "1A",
+        "Type": "Window"
+      },
+      "links": {
+        "FlightId": "flight-af1680"
+      }
+    },
+    {
+      "ref": "seat-12c-22",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001026",
+        "Id": "f07cc888-0000-4000-8000-000000001017",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "12C",
+        "Type": "Aisle"
+      },
+      "links": {
+        "FlightId": "flight-ek203"
+      }
+    },
+    {
+      "ref": "seat-35a-11",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001085",
+        "Id": "f07cc888-0000-4000-8000-000000001077",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "35A",
+        "Type": "Window"
+      },
+      "links": {
+        "FlightId": "flight-az608"
+      }
+    },
+    {
+      "ref": "seat-4d-11",
+      "kind": "record",
+      "data": {
+        "Class": "Business",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001086",
+        "Id": "f07cc888-0000-4000-8000-000000001078",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "4D",
+        "Type": "Aisle"
+      },
+      "links": {
+        "FlightId": "flight-ib6830"
+      }
+    },
+    {
+      "ref": "seat-20b-11",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001087",
+        "Id": "f07cc888-0000-4000-8000-000000001079",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "20B",
+        "Type": "Middle"
+      },
+      "links": {
+        "FlightId": "flight-dl1032"
+      }
+    },
+    {
+      "ref": "seat-16e-11",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001088",
+        "Id": "f07cc888-0000-4000-8000-000000001080",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "16E",
+        "Type": "Middle"
+      },
+      "links": {
+        "FlightId": "flight-ac871"
+      }
+    },
+    {
+      "ref": "seat-29f-11",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001089",
+        "Id": "f07cc888-0000-4000-8000-000000001081",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "29F",
+        "Type": "Window"
+      },
+      "links": {
+        "FlightId": "flight-ua1745"
+      }
+    },
+    {
+      "ref": "seat-11a-11",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001090",
+        "Id": "f07cc888-0000-4000-8000-000000001082",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "11A",
+        "Type": "Window"
+      },
+      "links": {
+        "FlightId": "flight-qf431"
+      }
+    },
+    {
+      "ref": "seat-6c-21",
+      "kind": "record",
+      "data": {
+        "Class": "Business",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001091",
+        "Id": "f07cc888-0000-4000-8000-000000001083",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "6C",
+        "Type": "Aisle"
+      },
+      "links": {
+        "FlightId": "flight-ey412"
+      }
+    },
+    {
+      "ref": "seat-24d-11",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001092",
+        "Id": "f07cc888-0000-4000-8000-000000001084",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "24D",
+        "Type": "Aisle"
+      },
+      "links": {
+        "FlightId": "flight-sv105"
+      }
+    },
+    {
+      "ref": "seat-33b-11",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001093",
+        "Id": "f07cc888-0000-4000-8000-000000001085",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "33B",
+        "Type": "Middle"
+      },
+      "links": {
+        "FlightId": "flight-lh778"
+      }
+    },
+    {
+      "ref": "seat-8f-11",
+      "kind": "record",
+      "data": {
+        "Class": "Business",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001094",
+        "Id": "f07cc888-0000-4000-8000-000000001086",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "8F",
+        "Type": "Window"
+      },
+      "links": {
+        "FlightId": "flight-ba295"
+      }
+    },
+    {
+      "ref": "seat-15a-11",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001095",
+        "Id": "f07cc888-0000-4000-8000-000000001087",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "15A",
+        "Type": "Window"
+      },
+      "links": {
+        "FlightId": "flight-ai995"
+      }
+    },
+    {
+      "ref": "seat-3f-21",
+      "kind": "record",
+      "data": {
+        "Class": "FirstClass",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001096",
+        "Id": "f07cc888-0000-4000-8000-000000001088",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "3F",
+        "Type": "Window"
+      },
+      "links": {
+        "FlightId": "flight-aa1532"
+      }
+    },
+    {
+      "ref": "seat-5a-42",
+      "kind": "record",
+      "data": {
+        "Class": "Business",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001057",
+        "Id": "f07cc888-0000-4000-8000-000000001025",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "5A",
+        "Type": "Window"
+      },
+      "links": {
+        "FlightId": "flight-mh2"
+      }
+    },
+    {
+      "ref": "seat-19e-22",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001027",
+        "Id": "f07cc888-0000-4000-8000-000000001023",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "19E",
+        "Type": "Middle"
+      },
+      "links": {
+        "FlightId": "flight-aa100"
+      }
+    },
+    {
+      "ref": "seat-38d-11",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001099",
+        "Id": "f07cc888-0000-4000-8000-000000001091",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "38D",
+        "Type": "Aisle"
+      },
+      "links": {
+        "FlightId": "flight-ac8120"
+      }
+    },
+    {
+      "ref": "seat-4a-21",
+      "kind": "record",
+      "data": {
+        "Class": "Business",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001100",
+        "Id": "f07cc888-0000-4000-8000-000000001092",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "4A",
+        "Type": "Window"
+      },
+      "links": {
+        "FlightId": "flight-nh253"
+      }
+    },
+    {
+      "ref": "seat-13f-11",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001101",
+        "Id": "f07cc888-0000-4000-8000-000000001093",
+        "IsDeleted": true,
+        "SeatId": null,
+        "SeatNumber": "13F",
+        "Type": "Window"
+      },
+      "links": {
+        "FlightId": "flight-ke023"
+      }
+    },
+    {
+      "ref": "seat-30c-21",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001102",
+        "Id": "f07cc888-0000-4000-8000-000000001094",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "30C",
+        "Type": "Aisle"
+      },
+      "links": {
+        "FlightId": "flight-cx255"
+      }
+    },
+    {
+      "ref": "seat-21b-22",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001177",
+        "Id": "f07cc888-0000-4000-8000-000000001053",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "21B",
+        "Type": "Middle"
+      },
+      "links": {
+        "FlightId": "flight-af1048"
+      }
+    },
+    {
+      "ref": "seat-2a-42",
+      "kind": "record",
+      "data": {
+        "Class": "FirstClass",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001087",
+        "Id": "f07cc888-0000-4000-8000-000000001039",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "2A",
+        "Type": "Window"
+      },
+      "links": {
+        "FlightId": "flight-dl1032"
+      }
+    },
+    {
+      "ref": "seat-10d-11",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001105",
+        "Id": "f07cc888-0000-4000-8000-000000001097",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "10D",
+        "Type": "Aisle"
+      },
+      "links": {
+        "FlightId": "flight-vy1003"
+      }
+    },
+    {
+      "ref": "seat-36e-21",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001106",
+        "Id": "f07cc888-0000-4000-8000-000000001098",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "36E",
+        "Type": "Middle"
+      },
+      "links": {
+        "FlightId": "flight-lo283"
+      }
+    },
+    {
+      "ref": "seat-17a-11",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001107",
+        "Id": "f07cc888-0000-4000-8000-000000001099",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "17A",
+        "Type": "Window"
+      },
+      "links": {
+        "FlightId": "flight-os354"
+      }
+    },
+    {
+      "ref": "seat-25f-11",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001108",
+        "Id": "f07cc888-0000-4000-8000-000000001100",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "25F",
+        "Type": "Window"
+      },
+      "links": {
+        "FlightId": "flight-lh2456"
+      }
+    },
+    {
+      "ref": "seat-32c-32",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001190",
+        "Id": "f07cc888-0000-4000-8000-000000001058",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "32C",
+        "Type": "Aisle"
+      },
+      "links": {
+        "FlightId": "flight-ac8187"
+      }
+    },
+    {
+      "ref": "seat-7d-21",
+      "kind": "record",
+      "data": {
+        "Class": "Business",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001110",
+        "Id": "f07cc888-0000-4000-8000-000000001102",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "7D",
+        "Type": "Aisle"
+      },
+      "links": {
+        "FlightId": "flight-ay873"
+      }
+    },
+    {
+      "ref": "seat-6f-32",
+      "kind": "record",
+      "data": {
+        "Class": "Business",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001058",
+        "Id": "f07cc888-0000-4000-8000-000000001056",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "6F",
+        "Type": "Window"
+      },
+      "links": {
+        "FlightId": "flight-ga880"
+      }
+    },
+    {
+      "ref": "seat-28b-21",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001112",
+        "Id": "f07cc888-0000-4000-8000-000000001104",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "28B",
+        "Type": "Middle"
+      },
+      "links": {
+        "FlightId": "flight-sn3703"
+      }
+    },
+    {
+      "ref": "seat-23a-11",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001113",
+        "Id": "f07cc888-0000-4000-8000-000000001105",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "23A",
+        "Type": "Window"
+      },
+      "links": {
+        "FlightId": "flight-ca181"
+      }
+    },
+    {
+      "ref": "seat-34d-11",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001114",
+        "Id": "f07cc888-0000-4000-8000-000000001106",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "34D",
+        "Type": "Aisle"
+      },
+      "links": {
+        "FlightId": "flight-mh123"
+      }
+    },
+    {
+      "ref": "seat-1d-32",
+      "kind": "record",
+      "data": {
+        "Class": "FirstClass",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001133",
+        "Id": "f07cc888-0000-4000-8000-000000001052",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "1D",
+        "Type": "Aisle"
+      },
+      "links": {
+        "FlightId": "flight-ba2634"
+      }
+    },
+    {
+      "ref": "seat-37f-21",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001116",
+        "Id": "f07cc888-0000-4000-8000-000000001108",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "37F",
+        "Type": "Window"
+      },
+      "links": {
+        "FlightId": "flight-jl91"
+      }
+    },
+    {
+      "ref": "seat-9e-22",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001042",
+        "Id": "f07cc888-0000-4000-8000-000000001032",
+        "IsDeleted": true,
+        "SeatId": null,
+        "SeatNumber": "9E",
+        "Type": "Middle"
+      },
+      "links": {
+        "FlightId": "flight-vs3"
+      }
+    },
+    {
+      "ref": "seat-40c-11",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001118",
+        "Id": "f07cc888-0000-4000-8000-000000001110",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "40C",
+        "Type": "Aisle"
+      },
+      "links": {
+        "FlightId": "flight-qf429"
+      }
+    },
+    {
+      "ref": "seat-8a-32",
+      "kind": "record",
+      "data": {
+        "Class": "Business",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001034",
+        "Id": "f07cc888-0000-4000-8000-000000001021",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "8A",
+        "Type": "Window"
+      },
+      "links": {
+        "FlightId": "flight-tk1983"
+      }
+    },
+    {
+      "ref": "seat-19a-21",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001120",
+        "Id": "f07cc888-0000-4000-8000-000000001112",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "19A",
+        "Type": "Window"
+      },
+      "links": {
+        "FlightId": "flight-kq481"
+      }
+    },
+    {
+      "ref": "seat-14e-32",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001181",
+        "Id": "f07cc888-0000-4000-8000-000000001057",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "14E",
+        "Type": "Middle"
+      },
+      "links": {
+        "FlightId": "flight-ba117-2"
+      }
+    },
+    {
+      "ref": "seat-22d-21",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001122",
+        "Id": "f07cc888-0000-4000-8000-000000001114",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "22D",
+        "Type": "Aisle"
+      },
+      "links": {
+        "FlightId": "flight-lh2392"
+      }
+    },
+    {
+      "ref": "seat-5c-22",
+      "kind": "record",
+      "data": {
+        "Class": "Business",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001076",
+        "Id": "f07cc888-0000-4000-8000-000000001048",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "5C",
+        "Type": "Aisle"
+      },
+      "links": {
+        "FlightId": "flight-ek203-2"
+      }
+    },
+    {
+      "ref": "seat-14c-32",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001074",
+        "Id": "f07cc888-0000-4000-8000-000000001066",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "14C",
+        "Type": "Aisle"
+      },
+      "links": {
+        "FlightId": "flight-ei532"
+      }
+    },
+    {
+      "ref": "seat-2a-43",
+      "kind": "record",
+      "data": {
+        "Class": "FirstClass",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001087",
+        "Id": "f07cc888-0000-4000-8000-000000001039",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "2A",
+        "Type": "Window"
+      },
+      "links": {
+        "FlightId": "flight-dl1032"
+      }
+    },
+    {
+      "ref": "seat-27f-22",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001045",
+        "Id": "f07cc888-0000-4000-8000-000000001024",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "27F",
+        "Type": "Window"
+      },
+      "links": {
+        "FlightId": "flight-ay1331"
+      }
+    },
+    {
+      "ref": "seat-8d-32",
+      "kind": "record",
+      "data": {
+        "Class": "Business",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001119",
+        "Id": "f07cc888-0000-4000-8000-000000001054",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "8D",
+        "Type": "Aisle"
+      },
+      "links": {
+        "FlightId": "flight-nz523"
+      }
+    },
+    {
+      "ref": "seat-19b-21",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001129",
+        "Id": "f07cc888-0000-4000-8000-000000001120",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "19B",
+        "Type": "Middle"
+      },
+      "links": {
+        "FlightId": "flight-af7650"
+      }
+    },
+    {
+      "ref": "seat-31e-21",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001130",
+        "Id": "f07cc888-0000-4000-8000-000000001121",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "31E",
+        "Type": "Middle"
+      },
+      "links": {
+        "FlightId": "flight-ib6252"
+      }
+    },
+    {
+      "ref": "seat-6a-21",
+      "kind": "record",
+      "data": {
+        "Class": "Business",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001131",
+        "Id": "f07cc888-0000-4000-8000-000000001122",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "6A",
+        "Type": "Window"
+      },
+      "links": {
+        "FlightId": "flight-kl1181"
+      }
+    },
+    {
+      "ref": "seat-22d-22",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001122",
+        "Id": "f07cc888-0000-4000-8000-000000001114",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "22D",
+        "Type": "Aisle"
+      },
+      "links": {
+        "FlightId": "flight-lh2392"
+      }
+    },
+    {
+      "ref": "seat-7f-11",
+      "kind": "record",
+      "data": {
+        "Class": "Business",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001133",
+        "Id": "f07cc888-0000-4000-8000-000000001124",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "7F",
+        "Type": "Window"
+      },
+      "links": {
+        "FlightId": "flight-ba2634"
+      }
+    },
+    {
+      "ref": "seat-16a-11",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001134",
+        "Id": "f07cc888-0000-4000-8000-000000001125",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "16A",
+        "Type": "Window"
+      },
+      "links": {
+        "FlightId": "flight-ei588"
+      }
+    },
+    {
+      "ref": "seat-11e-11",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001135",
+        "Id": "f07cc888-0000-4000-8000-000000001126",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "11E",
+        "Type": "Middle"
+      },
+      "links": {
+        "FlightId": "flight-b6421"
+      }
+    },
+    {
+      "ref": "seat-25c-22",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001094",
+        "Id": "f07cc888-0000-4000-8000-000000001051",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "25C",
+        "Type": "Aisle"
+      },
+      "links": {
+        "FlightId": "flight-ba295"
+      }
+    },
+    {
+      "ref": "seat-1d-33",
+      "kind": "record",
+      "data": {
+        "Class": "FirstClass",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001133",
+        "Id": "f07cc888-0000-4000-8000-000000001052",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "1D",
+        "Type": "Aisle"
+      },
+      "links": {
+        "FlightId": "flight-ba2634"
+      }
+    },
+    {
+      "ref": "seat-29a-22",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001051",
+        "Id": "f07cc888-0000-4000-8000-000000001055",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "29A",
+        "Type": "Window"
+      },
+      "links": {
+        "FlightId": "flight-la8084"
+      }
+    },
+    {
+      "ref": "seat-17f-11",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001139",
+        "Id": "f07cc888-0000-4000-8000-000000001130",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "17F",
+        "Type": "Window"
+      },
+      "links": {
+        "FlightId": "flight-nh8"
+      }
+    },
+    {
+      "ref": "seat-9c-11",
+      "kind": "record",
+      "data": {
+        "Class": "Business",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001140",
+        "Id": "f07cc888-0000-4000-8000-000000001131",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "9C",
+        "Type": "Aisle"
+      },
+      "links": {
+        "FlightId": "flight-ke017"
+      }
+    },
+    {
+      "ref": "seat-34b-11",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001141",
+        "Id": "f07cc888-0000-4000-8000-000000001132",
+        "IsDeleted": true,
+        "SeatId": null,
+        "SeatNumber": "34B",
+        "Type": "Middle"
+      },
+      "links": {
+        "FlightId": "flight-af007"
+      }
+    },
+    {
+      "ref": "seat-12d-21",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001142",
+        "Id": "f07cc888-0000-4000-8000-000000001133",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "12D",
+        "Type": "Aisle"
+      },
+      "links": {
+        "FlightId": "flight-tk1"
+      }
+    },
+    {
+      "ref": "seat-5a-43",
+      "kind": "record",
+      "data": {
+        "Class": "Business",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001057",
+        "Id": "f07cc888-0000-4000-8000-000000001025",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "5A",
+        "Type": "Window"
+      },
+      "links": {
+        "FlightId": "flight-mh2"
+      }
+    },
+    {
+      "ref": "seat-23f-11",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001144",
+        "Id": "f07cc888-0000-4000-8000-000000001135",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "23F",
+        "Type": "Window"
+      },
+      "links": {
+        "FlightId": "flight-cx251"
+      }
+    },
+    {
+      "ref": "seat-20c-11",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001145",
+        "Id": "f07cc888-0000-4000-8000-000000001136",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "20C",
+        "Type": "Aisle"
+      },
+      "links": {
+        "FlightId": "flight-ey11"
+      }
+    },
+    {
+      "ref": "seat-15b-22",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001036",
+        "Id": "f07cc888-0000-4000-8000-000000001020",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "15B",
+        "Type": "Middle"
+      },
+      "links": {
+        "FlightId": "flight-qf143"
+      }
+    },
+    {
+      "ref": "seat-4f-22",
+      "kind": "record",
+      "data": {
+        "Class": "FirstClass",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001062",
+        "Id": "f07cc888-0000-4000-8000-000000001030",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "4F",
+        "Type": "Window"
+      },
+      "links": {
+        "FlightId": "flight-oz101"
+      }
+    },
+    {
+      "ref": "seat-26e-11",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001148",
+        "Id": "f07cc888-0000-4000-8000-000000001139",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "26E",
+        "Type": "Middle"
+      },
+      "links": {
+        "FlightId": "flight-ek722"
+      }
+    },
+    {
+      "ref": "seat-13a-11",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001149",
+        "Id": "f07cc888-0000-4000-8000-000000001140",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "13A",
+        "Type": "Window"
+      },
+      "links": {
+        "FlightId": "flight-lx1250"
+      }
+    },
+    {
+      "ref": "seat-30d-11",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001150",
+        "Id": "f07cc888-0000-4000-8000-000000001141",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "30D",
+        "Type": "Aisle"
+      },
+      "links": {
+        "FlightId": "flight-ay932"
+      }
+    },
+    {
+      "ref": "seat-8a-33",
+      "kind": "record",
+      "data": {
+        "Class": "Business",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001034",
+        "Id": "f07cc888-0000-4000-8000-000000001021",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "8A",
+        "Type": "Window"
+      },
+      "links": {
+        "FlightId": "flight-tk1983"
+      }
+    },
+    {
+      "ref": "seat-18c-11",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001152",
+        "Id": "f07cc888-0000-4000-8000-000000001143",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "18C",
+        "Type": "Aisle"
+      },
+      "links": {
+        "FlightId": "flight-ac402"
+      }
+    },
+    {
+      "ref": "seat-2d-32",
+      "kind": "record",
+      "data": {
+        "Class": "FirstClass",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001076",
+        "Id": "f07cc888-0000-4000-8000-000000001068",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "2D",
+        "Type": "Aisle"
+      },
+      "links": {
+        "FlightId": "flight-ek203-2"
+      }
+    },
+    {
+      "ref": "seat-21e-11",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001154",
+        "Id": "f07cc888-0000-4000-8000-000000001145",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "21E",
+        "Type": "Middle"
+      },
+      "links": {
+        "FlightId": "flight-lh1693"
+      }
+    },
+    {
+      "ref": "seat-33a-22",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001059",
+        "Id": "f07cc888-0000-4000-8000-000000001035",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "33A",
+        "Type": "Window"
+      },
+      "links": {
+        "FlightId": "flight-pr100"
+      }
+    },
+    {
+      "ref": "seat-10f-11",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001156",
+        "Id": "f07cc888-0000-4000-8000-000000001147",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "10F",
+        "Type": "Window"
+      },
+      "links": {
+        "FlightId": "flight-nh1255"
+      }
+    },
+    {
+      "ref": "seat-24b-22",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001065",
+        "Id": "f07cc888-0000-4000-8000-000000001065",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "24B",
+        "Type": "Middle"
+      },
+      "links": {
+        "FlightId": "flight-ba93"
+      }
+    },
+    {
+      "ref": "seat-6c-22",
+      "kind": "record",
+      "data": {
+        "Class": "Business",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001091",
+        "Id": "f07cc888-0000-4000-8000-000000001083",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "6C",
+        "Type": "Aisle"
+      },
+      "links": {
+        "FlightId": "flight-ey412"
+      }
+    },
+    {
+      "ref": "seat-28f-11",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001159",
+        "Id": "f07cc888-0000-4000-8000-000000001150",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "28F",
+        "Type": "Window"
+      },
+      "links": {
+        "FlightId": "flight-ac8215"
+      }
+    },
+    {
+      "ref": "seat-35d-11",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001160",
+        "Id": "f07cc888-0000-4000-8000-000000001151",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "35D",
+        "Type": "Aisle"
+      },
+      "links": {
+        "FlightId": "flight-ei730"
+      }
+    },
+    {
+      "ref": "seat-14e-33",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001181",
+        "Id": "f07cc888-0000-4000-8000-000000001057",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "14E",
+        "Type": "Middle"
+      },
+      "links": {
+        "FlightId": "flight-ba117-2"
+      }
+    },
+    {
+      "ref": "seat-19a-22",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001120",
+        "Id": "f07cc888-0000-4000-8000-000000001112",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "19A",
+        "Type": "Window"
+      },
+      "links": {
+        "FlightId": "flight-kq481"
+      }
+    },
+    {
+      "ref": "seat-7d-22",
+      "kind": "record",
+      "data": {
+        "Class": "Business",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001110",
+        "Id": "f07cc888-0000-4000-8000-000000001102",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "7D",
+        "Type": "Aisle"
+      },
+      "links": {
+        "FlightId": "flight-ay873"
+      }
+    },
+    {
+      "ref": "seat-32c-33",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001190",
+        "Id": "f07cc888-0000-4000-8000-000000001058",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "32C",
+        "Type": "Aisle"
+      },
+      "links": {
+        "FlightId": "flight-ac8187"
+      }
+    },
+    {
+      "ref": "seat-16b-32",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001153",
+        "Id": "f07cc888-0000-4000-8000-000000001045",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "16B",
+        "Type": "Middle"
+      },
+      "links": {
+        "FlightId": "flight-os857"
+      }
+    },
+    {
+      "ref": "seat-5f-22",
+      "kind": "record",
+      "data": {
+        "Class": "Business",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001077",
+        "Id": "f07cc888-0000-4000-8000-000000001069",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "5F",
+        "Type": "Window"
+      },
+      "links": {
+        "FlightId": "flight-lh401-2"
+      }
+    },
+    {
+      "ref": "seat-27a-21",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001167",
+        "Id": "f07cc888-0000-4000-8000-000000001158",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "27A",
+        "Type": "Window"
+      },
+      "links": {
+        "FlightId": "flight-qr946"
+      }
+    },
+    {
+      "ref": "seat-22b-11",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001168",
+        "Id": "f07cc888-0000-4000-8000-000000001159",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "22B",
+        "Type": "Middle"
+      },
+      "links": {
+        "FlightId": "flight-aa2145"
+      }
+    },
+    {
+      "ref": "seat-11c-11",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001169",
+        "Id": "f07cc888-0000-4000-8000-000000001160",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "11C",
+        "Type": "Aisle"
+      },
+      "links": {
+        "FlightId": "flight-af1018"
+      }
+    },
+    {
+      "ref": "seat-30f-11",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001170",
+        "Id": "f07cc888-0000-4000-8000-000000001161",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "30F",
+        "Type": "Window"
+      },
+      "links": {
+        "FlightId": "flight-dl414"
+      }
+    },
+    {
+      "ref": "seat-3a-22",
+      "kind": "record",
+      "data": {
+        "Class": "FirstClass",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001174",
+        "Id": "f07cc888-0000-4000-8000-000000001044",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "3A",
+        "Type": "Window"
+      },
+      "links": {
+        "FlightId": "flight-aa1432"
+      }
+    },
+    {
+      "ref": "seat-25d-11",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001172",
+        "Id": "f07cc888-0000-4000-8000-000000001163",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "25D",
+        "Type": "Aisle"
+      },
+      "links": {
+        "FlightId": "flight-wn1177"
+      }
+    },
+    {
+      "ref": "seat-17e-11",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001173",
+        "Id": "f07cc888-0000-4000-8000-000000001164",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "17E",
+        "Type": "Middle"
+      },
+      "links": {
+        "FlightId": "flight-ua1920"
+      }
+    },
+    {
+      "ref": "seat-20a-11",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001174",
+        "Id": "f07cc888-0000-4000-8000-000000001165",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "20A",
+        "Type": "Window"
+      },
+      "links": {
+        "FlightId": "flight-aa1432"
+      }
+    },
+    {
+      "ref": "seat-2a-44",
+      "kind": "record",
+      "data": {
+        "Class": "FirstClass",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001087",
+        "Id": "f07cc888-0000-4000-8000-000000001039",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "2A",
+        "Type": "Window"
+      },
+      "links": {
+        "FlightId": "flight-dl1032"
+      }
+    },
+    {
+      "ref": "seat-14c-33",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001074",
+        "Id": "f07cc888-0000-4000-8000-000000001066",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "14C",
+        "Type": "Aisle"
+      },
+      "links": {
+        "FlightId": "flight-ei532"
+      }
+    },
+    {
+      "ref": "seat-22f-11",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001176",
+        "Id": "f07cc888-0000-4000-8000-000000001168",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "22F",
+        "Type": "Window"
+      },
+      "links": {
+        "FlightId": "flight-aa2217"
+      }
+    },
+    {
+      "ref": "seat-5d-11",
+      "kind": "record",
+      "data": {
+        "Class": "Business",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001177",
+        "Id": "f07cc888-0000-4000-8000-000000001169",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "5D",
+        "Type": "Aisle"
+      },
+      "links": {
+        "FlightId": "flight-af1048"
+      }
+    },
+    {
+      "ref": "seat-17b-11",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001178",
+        "Id": "f07cc888-0000-4000-8000-000000001170",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "17B",
+        "Type": "Middle"
+      },
+      "links": {
+        "FlightId": "flight-lh1862"
+      }
+    },
+    {
+      "ref": "seat-31a-11",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001179",
+        "Id": "f07cc888-0000-4000-8000-000000001171",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "31A",
+        "Type": "Window"
+      },
+      "links": {
+        "FlightId": "flight-lh988"
+      }
+    },
+    {
+      "ref": "seat-6f-33",
+      "kind": "record",
+      "data": {
+        "Class": "Business",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001058",
+        "Id": "f07cc888-0000-4000-8000-000000001056",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "6F",
+        "Type": "Window"
+      },
+      "links": {
+        "FlightId": "flight-ga880"
+      }
+    },
+    {
+      "ref": "seat-1c-11",
+      "kind": "record",
+      "data": {
+        "Class": "FirstClass",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001181",
+        "Id": "f07cc888-0000-4000-8000-000000001173",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "1C",
+        "Type": "Aisle"
+      },
+      "links": {
+        "FlightId": "flight-ba117-2"
+      }
+    },
+    {
+      "ref": "seat-25e-11",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001182",
+        "Id": "f07cc888-0000-4000-8000-000000001174",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "25E",
+        "Type": "Middle"
+      },
+      "links": {
+        "FlightId": "flight-ek073"
+      }
+    },
+    {
+      "ref": "seat-12d-22",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001142",
+        "Id": "f07cc888-0000-4000-8000-000000001133",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "12D",
+        "Type": "Aisle"
+      },
+      "links": {
+        "FlightId": "flight-tk1"
+      }
+    },
+    {
+      "ref": "seat-19f-11",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001184",
+        "Id": "f07cc888-0000-4000-8000-000000001176",
+        "IsDeleted": true,
+        "SeatId": null,
+        "SeatNumber": "19F",
+        "Type": "Window"
+      },
+      "links": {
+        "FlightId": "flight-nh106"
+      }
+    },
+    {
+      "ref": "seat-28b-22",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001112",
+        "Id": "f07cc888-0000-4000-8000-000000001104",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "28B",
+        "Type": "Middle"
+      },
+      "links": {
+        "FlightId": "flight-sn3703"
+      }
+    },
+    {
+      "ref": "seat-33c-11",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001186",
+        "Id": "f07cc888-0000-4000-8000-000000001178",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "33C",
+        "Type": "Aisle"
+      },
+      "links": {
+        "FlightId": "flight-cx524"
+      }
+    },
+    {
+      "ref": "seat-10a-22",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001124",
+        "Id": "f07cc888-0000-4000-8000-000000001063",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "10A",
+        "Type": "Window"
+      },
+      "links": {
+        "FlightId": "flight-fz615"
+      }
+    },
+    {
+      "ref": "seat-4a-22",
+      "kind": "record",
+      "data": {
+        "Class": "Business",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001100",
+        "Id": "f07cc888-0000-4000-8000-000000001092",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "4A",
+        "Type": "Window"
+      },
+      "links": {
+        "FlightId": "flight-nh253"
+      }
+    },
+    {
+      "ref": "seat-21d-11",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001189",
+        "Id": "f07cc888-0000-4000-8000-000000001181",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "21D",
+        "Type": "Aisle"
+      },
+      "links": {
+        "FlightId": "flight-ek047"
+      }
+    },
+    {
+      "ref": "seat-7c-22",
+      "kind": "record",
+      "data": {
+        "Class": "Business",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001100",
+        "Id": "f07cc888-0000-4000-8000-000000001042",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "7C",
+        "Type": "Aisle"
+      },
+      "links": {
+        "FlightId": "flight-nh253"
+      }
+    },
+    {
+      "ref": "seat-36e-22",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001106",
+        "Id": "f07cc888-0000-4000-8000-000000001098",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "36E",
+        "Type": "Middle"
+      },
+      "links": {
+        "FlightId": "flight-lo283"
+      }
+    },
+    {
+      "ref": "seat-15f-22",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001097",
+        "Id": "f07cc888-0000-4000-8000-000000001064",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "15F",
+        "Type": "Window"
+      },
+      "links": {
+        "FlightId": "flight-et302"
+      }
+    },
+    {
+      "ref": "seat-24a-11",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001193",
+        "Id": "f07cc888-0000-4000-8000-000000001185",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "24A",
+        "Type": "Window"
+      },
+      "links": {
+        "FlightId": "flight-ai161"
+      }
+    },
+    {
+      "ref": "seat-29c-11",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001194",
+        "Id": "f07cc888-0000-4000-8000-000000001186",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "29C",
+        "Type": "Aisle"
+      },
+      "links": {
+        "FlightId": "flight-tk001"
+      }
+    },
+    {
+      "ref": "seat-3f-22",
+      "kind": "record",
+      "data": {
+        "Class": "FirstClass",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001096",
+        "Id": "f07cc888-0000-4000-8000-000000001088",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "3F",
+        "Type": "Window"
+      },
+      "links": {
+        "FlightId": "flight-aa1532"
+      }
+    },
+    {
+      "ref": "seat-11b-22",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001038",
+        "Id": "f07cc888-0000-4000-8000-000000001037",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "11B",
+        "Type": "Middle"
+      },
+      "links": {
+        "FlightId": "flight-cx880"
+      }
+    },
+    {
+      "ref": "seat-18d-11",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001197",
+        "Id": "f07cc888-0000-4000-8000-000000001189",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "18D",
+        "Type": "Aisle"
+      },
+      "links": {
+        "FlightId": "flight-sk405"
+      }
+    },
+    {
+      "ref": "seat-26f-11",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001198",
+        "Id": "f07cc888-0000-4000-8000-000000001190",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "26F",
+        "Type": "Window"
+      },
+      "links": {
+        "FlightId": "flight-ay1105"
+      }
+    },
+    {
+      "ref": "seat-8d-33",
+      "kind": "record",
+      "data": {
+        "Class": "Business",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001119",
+        "Id": "f07cc888-0000-4000-8000-000000001054",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "8D",
+        "Type": "Aisle"
+      },
+      "links": {
+        "FlightId": "flight-nz523"
+      }
+    },
+    {
+      "ref": "seat-20e-11",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001200",
+        "Id": "f07cc888-0000-4000-8000-000000001192",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "20E",
+        "Type": "Middle"
+      },
+      "links": {
+        "FlightId": "flight-ba2543"
+      }
+    },
+    {
+      "ref": "seat-32a-11",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001201",
+        "Id": "f07cc888-0000-4000-8000-000000001193",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "32A",
+        "Type": "Window"
+      },
+      "links": {
+        "FlightId": "flight-ba1396"
+      }
+    },
+    {
+      "ref": "seat-13c-11",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001202",
+        "Id": "f07cc888-0000-4000-8000-000000001194",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "13C",
+        "Type": "Aisle"
+      },
+      "links": {
+        "FlightId": "flight-ek007"
+      }
+    },
+    {
+      "ref": "seat-38f-11",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001203",
+        "Id": "f07cc888-0000-4000-8000-000000001195",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "38F",
+        "Type": "Window"
+      },
+      "links": {
+        "FlightId": "flight-ba107"
+      }
+    },
+    {
+      "ref": "seat-16b-33",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001153",
+        "Id": "f07cc888-0000-4000-8000-000000001045",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "16B",
+        "Type": "Middle"
+      },
+      "links": {
+        "FlightId": "flight-os857"
+      }
+    },
+    {
+      "ref": "seat-23d-22",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001123",
+        "Id": "f07cc888-0000-4000-8000-000000001046",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "23D",
+        "Type": "Aisle"
+      },
+      "links": {
+        "FlightId": "flight-ac792"
+      }
+    },
+    {
+      "ref": "seat-27a-22",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001167",
+        "Id": "f07cc888-0000-4000-8000-000000001158",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "27A",
+        "Type": "Window"
+      },
+      "links": {
+        "FlightId": "flight-qr946"
+      }
+    },
+    {
+      "ref": "seat-5a-44",
+      "kind": "record",
+      "data": {
+        "Class": "Business",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001057",
+        "Id": "f07cc888-0000-4000-8000-000000001025",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "5A",
+        "Type": "Window"
+      },
+      "links": {
+        "FlightId": "flight-mh2"
+      }
+    },
+    {
+      "ref": "seat-34e-11",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001208",
+        "Id": "f07cc888-0000-4000-8000-000000001200",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "34E",
+        "Type": "Middle"
+      },
+      "links": {
+        "FlightId": "flight-tp1032"
+      }
+    },
+    {
+      "ref": "seat-30c-22",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001102",
+        "Id": "f07cc888-0000-4000-8000-000000001094",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "30C",
+        "Type": "Aisle"
+      },
+      "links": {
+        "FlightId": "flight-cx255"
+      }
+    },
+    {
+      "ref": "seat-12f-22",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001104",
+        "Id": "f07cc888-0000-4000-8000-000000001050",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "12F",
+        "Type": "Window"
+      },
+      "links": {
+        "FlightId": "flight-ei512"
+      }
+    },
+    {
+      "ref": "seat-35b-11",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001211",
+        "Id": "f07cc888-0000-4000-8000-000000001203",
+        "IsDeleted": true,
+        "SeatId": null,
+        "SeatNumber": "35B",
+        "Type": "Middle"
+      },
+      "links": {
+        "FlightId": "flight-dl4812"
+      }
+    },
+    {
+      "ref": "seat-2d-33",
+      "kind": "record",
+      "data": {
+        "Class": "FirstClass",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001076",
+        "Id": "f07cc888-0000-4000-8000-000000001068",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "2D",
+        "Type": "Aisle"
+      },
+      "links": {
+        "FlightId": "flight-ek203-2"
+      }
+    },
+    {
+      "ref": "seat-40a-11",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001213",
+        "Id": "f07cc888-0000-4000-8000-000000001205",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "40A",
+        "Type": "Window"
+      },
+      "links": {
+        "FlightId": "flight-qr069"
+      }
+    },
+    {
+      "ref": "seat-14d-22",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001030",
+        "Id": "f07cc888-0000-4000-8000-000000001026",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "14D",
+        "Type": "Aisle"
+      },
+      "links": {
+        "FlightId": "flight-ua901"
+      }
+    },
+    {
+      "ref": "seat-19b-22",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001129",
+        "Id": "f07cc888-0000-4000-8000-000000001120",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "19B",
+        "Type": "Middle"
+      },
+      "links": {
+        "FlightId": "flight-af7650"
+      }
+    },
+    {
+      "ref": "seat-37f-22",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001116",
+        "Id": "f07cc888-0000-4000-8000-000000001108",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "37F",
+        "Type": "Window"
+      },
+      "links": {
+        "FlightId": "flight-jl91"
+      }
+    },
+    {
+      "ref": "seat-22c-11",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001217",
+        "Id": "f07cc888-0000-4000-8000-000000001209",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "22C",
+        "Type": "Aisle"
+      },
+      "links": {
+        "FlightId": "flight-jl772"
+      }
+    },
+    {
+      "ref": "seat-6a-22",
+      "kind": "record",
+      "data": {
+        "Class": "Business",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001131",
+        "Id": "f07cc888-0000-4000-8000-000000001122",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "6A",
+        "Type": "Window"
+      },
+      "links": {
+        "FlightId": "flight-kl1181"
+      }
+    },
+    {
+      "ref": "seat-25a-11",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001219",
+        "Id": "f07cc888-0000-4000-8000-000000001211",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "25A",
+        "Type": "Window"
+      },
+      "links": {
+        "FlightId": "flight-ua1551"
+      }
+    },
+    {
+      "ref": "seat-31e-22",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001130",
+        "Id": "f07cc888-0000-4000-8000-000000001121",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "31E",
+        "Type": "Middle"
+      },
+      "links": {
+        "FlightId": "flight-ib6252"
+      }
+    },
+    {
+      "ref": "seat-17c-11",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001221",
+        "Id": "f07cc888-0000-4000-8000-000000001213",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "17C",
+        "Type": "Aisle"
+      },
+      "links": {
+        "FlightId": "flight-ba8731"
+      }
+    },
+    {
+      "ref": "seat-39d-11",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001222",
+        "Id": "f07cc888-0000-4000-8000-000000001214",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "39D",
+        "Type": "Aisle"
+      },
+      "links": {
+        "FlightId": "flight-lo634"
+      }
+    },
+    {
+      "ref": "seat-10e-11",
+      "kind": "record",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001223",
+        "Id": "f07cc888-0000-4000-8000-000000001215",
+        "IsDeleted": false,
+        "SeatId": null,
+        "SeatNumber": "10E",
+        "Type": "Middle"
+      },
+      "links": {
+        "FlightId": "flight-dl2230"
+      }
+    }
+  ],
+  "invalid": [
+    {
+      "ref": "seatreadmodel-rejection-1",
+      "kind": "rejection",
+      "data": {
+        "Class": "Unknown",
+        "FlightId": "00000000-0000-4000-8000-000000000000",
+        "Id": null,
+        "IsDeleted": true,
+        "SeatId": "00000000-0000-4000-8000-000000000000",
+        "SeatNumber": "",
+        "Type": "Unknown"
+      },
+      "violates": {
+        "field": "Id",
+        "rule": "`Id` is declared NOT NULL"
+      }
+    },
+    {
+      "ref": "seatreadmodel-rejection-2",
+      "kind": "rejection",
+      "data": {
+        "Class": "Unknown",
+        "FlightId": "00000000-0000-4000-8000-000000000000",
+        "Id": "not-a-uuid",
+        "IsDeleted": true,
+        "SeatId": "00000000-0000-4000-8000-000000000000",
+        "SeatNumber": "",
+        "Type": "Unknown"
+      },
+      "violates": {
+        "field": "Id",
+        "rule": "violates a declared constraint on `Id`"
+      }
+    },
+    {
+      "ref": "seatreadmodel-rejection-3",
+      "kind": "rejection",
+      "data": {
+        "Class": "Unknown",
+        "FlightId": "00000000-0000-4000-8000-000000000000",
+        "Id": "00000000-0000-4000-8000-000000000000",
+        "IsDeleted": true,
+        "SeatId": null,
+        "SeatNumber": "",
+        "Type": "Unknown"
+      },
+      "violates": {
+        "field": "SeatId",
+        "rule": "`SeatId` is declared NOT NULL"
+      }
+    },
+    {
+      "ref": "seatreadmodel-rejection-4",
+      "kind": "rejection",
+      "data": {
+        "Class": "Unknown",
+        "FlightId": "00000000-0000-4000-8000-000000000000",
+        "Id": "00000000-0000-4000-8000-000000000000",
+        "IsDeleted": true,
+        "SeatId": "not-a-uuid",
+        "SeatNumber": "",
+        "Type": "Unknown"
+      },
+      "violates": {
+        "field": "SeatId",
+        "rule": "violates a declared constraint on `SeatId`"
+      }
+    },
+    {
+      "ref": "seatreadmodel-rejection-5",
+      "kind": "rejection",
+      "data": {
+        "Class": "Unknown",
+        "FlightId": "00000000-0000-4000-8000-000000000000",
+        "Id": "00000000-0000-4000-8000-000000000000",
+        "IsDeleted": true,
+        "SeatId": "00000000-0000-4000-8000-000000000000",
+        "SeatNumber": null,
+        "Type": "Unknown"
+      },
+      "violates": {
+        "field": "SeatNumber",
+        "rule": "`SeatNumber` is declared NOT NULL"
+      }
+    },
+    {
+      "ref": "seatreadmodel-rejection-6",
+      "kind": "rejection",
+      "data": {
+        "Class": "Unknown",
+        "FlightId": "00000000-0000-4000-8000-000000000000",
+        "Id": "00000000-0000-4000-8000-000000000000",
+        "IsDeleted": true,
+        "SeatId": "00000000-0000-4000-8000-000000000000",
+        "SeatNumber": "",
+        "Type": null
+      },
+      "violates": {
+        "field": "Type",
+        "rule": "`Type` is declared NOT NULL"
+      }
+    },
+    {
+      "ref": "seatreadmodel-rejection-7",
+      "kind": "rejection",
+      "data": {
+        "Class": "Unknown",
+        "FlightId": "00000000-0000-4000-8000-000000000000",
+        "Id": "00000000-0000-4000-8000-000000000000",
+        "IsDeleted": true,
+        "SeatId": "00000000-0000-4000-8000-000000000000",
+        "SeatNumber": "",
+        "Type": "__INVALID__"
+      },
+      "violates": {
+        "field": "Type",
+        "rule": "violates a declared constraint on `Type`"
+      }
+    },
+    {
+      "ref": "seatreadmodel-rejection-8",
+      "kind": "rejection",
+      "data": {
+        "Class": null,
+        "FlightId": "00000000-0000-4000-8000-000000000000",
+        "Id": "00000000-0000-4000-8000-000000000000",
+        "IsDeleted": true,
+        "SeatId": "00000000-0000-4000-8000-000000000000",
+        "SeatNumber": "",
+        "Type": "Unknown"
+      },
+      "violates": {
+        "field": "Class",
+        "rule": "`Class` is declared NOT NULL"
+      }
+    },
+    {
+      "ref": "seatreadmodel-rejection-9",
+      "kind": "rejection",
+      "data": {
+        "Class": "__INVALID__",
+        "FlightId": "00000000-0000-4000-8000-000000000000",
+        "Id": "00000000-0000-4000-8000-000000000000",
+        "IsDeleted": true,
+        "SeatId": "00000000-0000-4000-8000-000000000000",
+        "SeatNumber": "",
+        "Type": "Unknown"
+      },
+      "violates": {
+        "field": "Class",
+        "rule": "violates a declared constraint on `Class`"
+      }
+    },
+    {
+      "ref": "seatreadmodel-rejection-10",
+      "kind": "rejection",
+      "data": {
+        "Class": "Unknown",
+        "FlightId": null,
+        "Id": "00000000-0000-4000-8000-000000000000",
+        "IsDeleted": true,
+        "SeatId": "00000000-0000-4000-8000-000000000000",
+        "SeatNumber": "",
+        "Type": "Unknown"
+      },
+      "violates": {
+        "field": "FlightId",
+        "rule": "`FlightId` is declared NOT NULL"
+      }
+    },
+    {
+      "ref": "seatreadmodel-rejection-11",
+      "kind": "rejection",
+      "data": {
+        "Class": "Unknown",
+        "FlightId": "not-a-uuid",
+        "Id": "00000000-0000-4000-8000-000000000000",
+        "IsDeleted": true,
+        "SeatId": "00000000-0000-4000-8000-000000000000",
+        "SeatNumber": "",
+        "Type": "Unknown"
+      },
+      "violates": {
+        "field": "FlightId",
+        "rule": "violates a declared constraint on `FlightId`"
+      }
+    },
+    {
+      "ref": "seatreadmodel-rejection-12",
+      "kind": "rejection",
+      "data": {
+        "Class": "Unknown",
+        "FlightId": "00000000-0000-4000-8000-000000000000",
+        "Id": "00000000-0000-4000-8000-000000000000",
+        "IsDeleted": null,
+        "SeatId": "00000000-0000-4000-8000-000000000000",
+        "SeatNumber": "",
+        "Type": "Unknown"
+      },
+      "violates": {
+        "field": "IsDeleted",
+        "rule": "`IsDeleted` is declared NOT NULL"
+      }
+    }
+  ],
+  "coverage": [
+    {
+      "ref": "seatreadmodel-case-1",
+      "kind": "case",
+      "data": {
+        "Class": "Unknown",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001000",
+        "Id": "f07cc888-0000-4000-8000-000000001000",
+        "IsDeleted": true,
+        "SeatId": "00000000-0000-4000-8000-000000000000",
+        "SeatNumber": "",
+        "Type": "Unknown"
+      },
+      "case": "covering-0001"
+    },
+    {
+      "ref": "seatreadmodel-case-2",
+      "kind": "case",
+      "data": {
+        "Class": "FirstClass",
+        "FlightId": "00000000-0000-4000-8000-000000000000",
+        "Id": "f057fe93-0000-4000-8000-000000001002",
+        "IsDeleted": true,
+        "SeatId": "00000000-0000-4000-8000-000000000000",
+        "SeatNumber": "text",
+        "Type": "Window"
+      },
+      "case": "covering-0002"
+    },
+    {
+      "ref": "seatreadmodel-case-3",
+      "kind": "case",
+      "data": {
+        "Class": "Business",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001113",
+        "Id": "f07cc888-0000-4000-8000-000000001105",
+        "IsDeleted": true,
+        "SeatId": "00000000-0000-4000-8000-000000000000",
+        "SeatNumber": "23A",
+        "Type": "Middle"
+      },
+      "case": "covering-0003",
+      "links": {
+        "FlightId": "flight-ca181"
+      }
+    },
+    {
+      "ref": "seatreadmodel-case-4",
+      "kind": "case",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001018",
+        "Id": "f07cc888-0000-4000-8000-000000001003",
+        "IsDeleted": true,
+        "SeatId": "00000000-0000-4000-8000-000000000000",
+        "SeatNumber": "",
+        "Type": "Aisle"
+      },
+      "case": "covering-0004"
+    },
+    {
+      "ref": "seatreadmodel-case-5",
+      "kind": "case",
+      "data": {
+        "Class": "Business",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001012",
+        "Id": "f07cc888-0000-4000-8000-000000001002",
+        "IsDeleted": true,
+        "SeatId": "00000000-0000-4000-8000-000000000000",
+        "SeatNumber": "",
+        "Type": "Window"
+      },
+      "case": "covering-0005"
+    },
+    {
+      "ref": "seatreadmodel-case-6",
+      "kind": "case",
+      "data": {
+        "Class": "FirstClass",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001006",
+        "Id": "f07cc888-0000-4000-8000-000000001001",
+        "IsDeleted": true,
+        "SeatId": "00000000-0000-4000-8000-000000000000",
+        "SeatNumber": "",
+        "Type": "Middle"
+      },
+      "case": "covering-0006"
+    },
+    {
+      "ref": "seatreadmodel-case-7",
+      "kind": "case",
+      "data": {
+        "Class": "Business",
+        "FlightId": "00000000-0000-4000-8000-000000000000",
+        "Id": "f057fe93-0000-4000-8000-000000001002",
+        "IsDeleted": true,
+        "SeatId": "00000000-0000-4000-8000-000000000000",
+        "SeatNumber": "text",
+        "Type": "Unknown"
+      },
+      "case": "covering-0007"
+    },
+    {
+      "ref": "seatreadmodel-case-8",
+      "kind": "case",
+      "data": {
+        "Class": "Unknown",
+        "FlightId": "00000000-0000-4000-8000-000000000000",
+        "Id": "f057fe93-0000-4000-8000-000000001002",
+        "IsDeleted": true,
+        "SeatId": "00000000-0000-4000-8000-000000000000",
+        "SeatNumber": "text",
+        "Type": "Middle"
+      },
+      "case": "covering-0008"
+    },
+    {
+      "ref": "seatreadmodel-case-9",
+      "kind": "case",
+      "data": {
+        "Class": "Unknown",
+        "FlightId": "00000000-0000-4000-8000-000000000000",
+        "Id": "f057fe93-0000-4000-8000-000000001002",
+        "IsDeleted": true,
+        "SeatId": "00000000-0000-4000-8000-000000000000",
+        "SeatNumber": "text",
+        "Type": "Aisle"
+      },
+      "case": "covering-0009"
+    },
+    {
+      "ref": "seatreadmodel-case-10",
+      "kind": "case",
+      "data": {
+        "Class": "FirstClass",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001113",
+        "Id": "f07cc888-0000-4000-8000-000000001105",
+        "IsDeleted": true,
+        "SeatId": "00000000-0000-4000-8000-000000000000",
+        "SeatNumber": "23A",
+        "Type": "Unknown"
+      },
+      "case": "covering-0010",
+      "links": {
+        "FlightId": "flight-ca181"
+      }
+    },
+    {
+      "ref": "seatreadmodel-case-11",
+      "kind": "case",
+      "data": {
+        "Class": "Unknown",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001113",
+        "Id": "f07cc888-0000-4000-8000-000000001105",
+        "IsDeleted": true,
+        "SeatId": "00000000-0000-4000-8000-000000000000",
+        "SeatNumber": "23A",
+        "Type": "Window"
+      },
+      "case": "covering-0011",
+      "links": {
+        "FlightId": "flight-ca181"
+      }
+    },
+    {
+      "ref": "seatreadmodel-case-12",
+      "kind": "case",
+      "data": {
+        "Class": "FirstClass",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001113",
+        "Id": "f07cc888-0000-4000-8000-000000001105",
+        "IsDeleted": true,
+        "SeatId": "00000000-0000-4000-8000-000000000000",
+        "SeatNumber": "23A",
+        "Type": "Aisle"
+      },
+      "case": "covering-0012",
+      "links": {
+        "FlightId": "flight-ca181"
+      }
+    },
+    {
+      "ref": "seatreadmodel-case-13",
+      "kind": "case",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "00000000-0000-4000-8000-000000000000",
+        "Id": "f057fe93-0000-4000-8000-000000001002",
+        "IsDeleted": true,
+        "SeatId": "00000000-0000-4000-8000-000000000000",
+        "SeatNumber": "text",
+        "Type": "Unknown"
+      },
+      "case": "covering-0013"
+    },
+    {
+      "ref": "seatreadmodel-case-14",
+      "kind": "case",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001113",
+        "Id": "f07cc888-0000-4000-8000-000000001105",
+        "IsDeleted": true,
+        "SeatId": "00000000-0000-4000-8000-000000000000",
+        "SeatNumber": "23A",
+        "Type": "Window"
+      },
+      "case": "covering-0014",
+      "links": {
+        "FlightId": "flight-ca181"
+      }
+    },
+    {
+      "ref": "seatreadmodel-case-15",
+      "kind": "case",
+      "data": {
+        "Class": "Economy",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001018",
+        "Id": "f07cc888-0000-4000-8000-000000001003",
+        "IsDeleted": true,
+        "SeatId": "00000000-0000-4000-8000-000000000000",
+        "SeatNumber": "",
+        "Type": "Middle"
+      },
+      "case": "covering-0015"
+    },
+    {
+      "ref": "seatreadmodel-case-16",
+      "kind": "case",
+      "data": {
+        "Class": "Business",
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001012",
+        "Id": "f07cc888-0000-4000-8000-000000001002",
+        "IsDeleted": true,
+        "SeatId": "00000000-0000-4000-8000-000000000000",
+        "SeatNumber": "",
+        "Type": "Aisle"
+      },
+      "case": "covering-0016"
+    }
+  ]
+}

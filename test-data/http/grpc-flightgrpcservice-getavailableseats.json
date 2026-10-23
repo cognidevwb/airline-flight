@@ -1,0 +1,12 @@
+{
+  "operation": "gRPC FlightGrpcService/GetAvailableSeats",
+  "kind": "grpc",
+  "handler": "src/Flight/GrpcServer/Protos/flight.proto:9",
+  "request": "GetAvailableSeatsRequest",
+  "response": "GetAvailableSeatsResult",
+  "valid": [],
+  "invalid": [],
+  "requestFields": [
+    "FlightId"
+  ]
+}

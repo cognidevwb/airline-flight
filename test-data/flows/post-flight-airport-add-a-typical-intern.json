@@ -1,0 +1,16 @@
+{
+  "id": "post-flight-airport-add-a-typical-intern",
+  "title": "Add a typical international airport",
+  "source": "staged scenario",
+  "why": "Confirms the baseline create works and returns the stored airport with a generated Id",
+  "setup": [],
+  "steps": [
+    {
+      "n": 1,
+      "does": "POST …/flight/airport with Name 'Heathrow Airport', Address 'London, UK', Code 'LHR'"
+    }
+  ],
+  "expect": [
+    "Airport created; response carries a new non-empty Id and the same Name, Address and Code"
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "id": "flightalreadyexistexception-createflight",
+  "title": "CreateFlight: the record already exists",
+  "kind": "duplicate",
+  "exception": "FlightAlreadyExistException",
+  "base": "AppException",
+  "thrownAt": "src/Flight/Flights/Features/CreatingFlight/V1/CreateFlight.cs:114",
+  "condition": "if (flight is not null)",
+  "field": null,
+  "expect": {
+    "status": 400,
+    "error": "FlightAlreadyExistException",
+    "note": null
+  },
+  "trigger": {
+    "call": "POST api/v1/flight",
+    "body": {
+      "aircraftId": "f057fe93-0000-4000-8000-000000001014",
+      "arriveAirportId": "c9bc0450-0000-4000-8000-000000001011",
+      "arriveDate": "2026-09-03T18:20:00Z",
+      "departureAirportId": "c9bc0450-0000-4000-8000-000000001010",
+      "departureDate": "2026-09-03T10:30:00Z",
+      "durationMinutes": 470.0,
+      "flightDate": "2026-09-03T00:00:00Z",
+      "flightNumber": "BA117",
+      "price": 612.5,
+      "status": "Completed"
+    },
+    "repeat": 2,
+    "why": "the same body twice; the second is refused"
+  }
+}

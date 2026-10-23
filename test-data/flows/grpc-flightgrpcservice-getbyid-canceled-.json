@@ -1,0 +1,88 @@
+{
+  "id": "grpc-flightgrpcservice-getbyid-canceled-",
+  "title": "Canceled flight is still retrievable with its status",
+  "source": "staged scenario",
+  "why": "Separates canceled flights (still visible) from deleted flights (hidden); cancellation must not be treated as an error.",
+  "setup": [
+    {
+      "ref": "aircraft-1",
+      "table": "Aircraft",
+      "values": {
+        "CreatedAt": "2026-01-01T00:00:00Z",
+        "CreatedBy": 1,
+        "Id": "a1000000-0000-4000-8000-000000000008",
+        "IsDeleted": false,
+        "LastModified": "2026-01-01T00:00:00Z",
+        "LastModifiedBy": 1,
+        "ManufacturingYear": 2010,
+        "Model": "737-700",
+        "Name": "Boeing 737-700 N700WN",
+        "Version": 1
+      }
+    },
+    {
+      "ref": "airport-dep",
+      "table": "Airport",
+      "values": {
+        "Address": "Las Vegas, Nevada",
+        "Code": "LAS",
+        "CreatedAt": "2026-01-01T00:00:00Z",
+        "CreatedBy": 1,
+        "Id": "b1000000-0000-4000-8000-000000000071",
+        "IsDeleted": false,
+        "LastModified": "2026-01-01T00:00:00Z",
+        "LastModifiedBy": 1,
+        "Name": "Las Vegas Harry Reid International",
+        "Version": 1
+      }
+    },
+    {
+      "ref": "airport-arr",
+      "table": "Airport",
+      "values": {
+        "Address": "Salt Lake City, Utah",
+        "Code": "SLC",
+        "CreatedAt": "2026-01-01T00:00:00Z",
+        "CreatedBy": 1,
+        "Id": "b1000000-0000-4000-8000-000000000072",
+        "IsDeleted": false,
+        "LastModified": "2026-01-01T00:00:00Z",
+        "LastModifiedBy": 1,
+        "Name": "Salt Lake City International",
+        "Version": 1
+      }
+    },
+    {
+      "ref": "flight-1",
+      "table": "Flight",
+      "values": {
+        "AircraftId": "aircraft-1",
+        "ArriveAirportId": "airport-arr",
+        "ArriveDate": "2026-11-07T12:25:00Z",
+        "CreatedAt": "2026-01-01T00:00:00Z",
+        "CreatedBy": 1,
+        "DepartureAirportId": "airport-dep",
+        "DepartureDate": "2026-11-07T11:00:00Z",
+        "DurationMinutes": 85,
+        "FlightDate": "2026-11-07T00:00:00Z",
+        "FlightNumber": "WN808",
+        "Id": "f1000000-0000-4000-8000-000000000008",
+        "IsDeleted": false,
+        "LastModified": "2026-10-20T00:00:00Z",
+        "LastModifiedBy": 2,
+        "Price": 99.0,
+        "Status": "Canceled",
+        "Version": 2
+      }
+    }
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "does": "Call FlightGrpcService/GetById with the Id of flight-1."
+    }
+  ],
+  "expect": [
+    "Success, not an error. The response has Status Canceled."
+  ]
+}

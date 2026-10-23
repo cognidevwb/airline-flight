@@ -1,0 +1,16 @@
+{
+  "id": "post-flight-airport-address-at-the-50-ch",
+  "title": "Address at the 50-character limit",
+  "source": "staged scenario",
+  "why": "Checks the upper bound of Address is inclusive",
+  "setup": [],
+  "steps": [
+    {
+      "n": 1,
+      "does": "POST …/flight/airport with Name 'Boundary Field', Address '12345678901234567890123456789012345678901234567890' (50 characters), Code 'BND'"
+    }
+  ],
+  "expect": [
+    "Airport created and the full 50-character Address is stored"
+  ]
+}

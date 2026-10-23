@@ -1,0 +1,16 @@
+{
+  "id": "post-flight-aircraft-model-cannot-exceed",
+  "title": "Model cannot exceed 50 characters",
+  "source": "staged scenario",
+  "why": "Shows that the 50-character limit on Model is enforced.",
+  "setup": [],
+  "steps": [
+    {
+      "n": 1,
+      "does": "POST …/flight/aircraft with Name 'Long Model Jet', Model of 51 characters 'ABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJK', ManufacturingYear 2015"
+    }
+  ],
+  "expect": [
+    "Rejected with a validation error on Model length. No aircraft is created."
+  ]
+}

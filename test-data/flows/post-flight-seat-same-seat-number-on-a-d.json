@@ -1,0 +1,98 @@
+{
+  "id": "post-flight-seat-same-seat-number-on-a-d",
+  "title": "Same seat number on a different flight is allowed",
+  "source": "staged scenario",
+  "why": "Shows seat-number uniqueness is scoped to one flight.",
+  "setup": [
+    {
+      "ref": "aircraft-1",
+      "table": "Aircraft",
+      "values": {
+        "IsDeleted": false,
+        "ManufacturingYear": 2015,
+        "Model": "737-800",
+        "Name": "G-ABCD",
+        "Version": 1
+      }
+    },
+    {
+      "ref": "airport-1",
+      "table": "Airport",
+      "values": {
+        "Address": "Longford TW6",
+        "Code": "LHR",
+        "IsDeleted": false,
+        "Name": "Heathrow",
+        "Version": 1
+      }
+    },
+    {
+      "ref": "airport-2",
+      "table": "Airport",
+      "values": {
+        "Address": "Queens NY 11430",
+        "Code": "JFK",
+        "IsDeleted": false,
+        "Name": "JFK",
+        "Version": 1
+      }
+    },
+    {
+      "ref": "flight-ba100",
+      "table": "Flight",
+      "values": {
+        "AircraftId": "aircraft-1",
+        "ArriveAirportId": "airport-2",
+        "ArriveDate": "2026-12-01T16:00:00Z",
+        "DepartureAirportId": "airport-1",
+        "DepartureDate": "2026-12-01T09:00:00Z",
+        "DurationMinutes": 420,
+        "FlightDate": "2026-12-01T00:00:00Z",
+        "FlightNumber": "BA100",
+        "IsDeleted": false,
+        "Price": 450,
+        "Status": "Flying",
+        "Version": 1
+      }
+    },
+    {
+      "ref": "flight-ba200",
+      "table": "Flight",
+      "values": {
+        "AircraftId": "aircraft-1",
+        "ArriveAirportId": "airport-1",
+        "ArriveDate": "2026-12-02T16:00:00Z",
+        "DepartureAirportId": "airport-2",
+        "DepartureDate": "2026-12-02T09:00:00Z",
+        "DurationMinutes": 400,
+        "FlightDate": "2026-12-02T00:00:00Z",
+        "FlightNumber": "BA200",
+        "IsDeleted": false,
+        "Price": 430,
+        "Status": "Flying",
+        "Version": 1
+      }
+    },
+    {
+      "ref": "seat-ba100-12a",
+      "table": "Seat",
+      "values": {
+        "Class": "Economy",
+        "FlightId": "flight-ba100",
+        "IsDeleted": false,
+        "SeatNumber": "12A",
+        "Type": "Window",
+        "Version": 1
+      }
+    }
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "does": "POST /flight/seat with SeatNumber 12A, Type Window, Class Economy, FlightId flight-ba200"
+    }
+  ],
+  "expect": [
+    "Seat is created on BA200; BA100's 12A is untouched."
+  ]
+}

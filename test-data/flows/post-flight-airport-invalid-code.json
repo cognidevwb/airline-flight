@@ -1,0 +1,16 @@
+{
+  "id": "post-flight-airport-invalid-code",
+  "title": "Invalid code",
+  "source": "staged scenario",
+  "why": "Shows a blank Code and a Code over the limit are both refused",
+  "setup": [],
+  "steps": [
+    {
+      "n": 1,
+      "does": "POST …/flight/airport with Name 'Narita', Address 'Tokyo, Japan', Code 'ABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJK' (51 characters); repeat with Code '   '"
+    }
+  ],
+  "expect": [
+    "Both requests rejected with a validation error on Code; nothing is stored"
+  ]
+}

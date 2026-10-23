@@ -1,0 +1,75 @@
+{
+  "id": "get-flight-get-available-seats-id-brand-",
+  "title": "Brand-new flight with every seat open",
+  "source": "staged scenario",
+  "why": "Confirms a flight with no bookings returns its whole seat map",
+  "setup": [
+    {
+      "ref": "aircraft-1",
+      "table": "Aircraft",
+      "values": {
+        "IsDeleted": false,
+        "ManufacturingYear": 2018,
+        "Model": "B737",
+        "Name": "Skyliner 2"
+      }
+    },
+    {
+      "ref": "airport-1",
+      "table": "Airport",
+      "values": {
+        "Address": "Amsterdam",
+        "Code": "AMS",
+        "IsDeleted": false,
+        "Name": "Schiphol"
+      }
+    },
+    {
+      "ref": "airport-2",
+      "table": "Airport",
+      "values": {
+        "Address": "Madrid",
+        "Code": "MAD",
+        "IsDeleted": false,
+        "Name": "Madrid Barajas"
+      }
+    },
+    {
+      "ref": "flight-1",
+      "table": "Flight",
+      "values": {
+        "AircraftId": "aircraft-1",
+        "ArriveAirportId": "airport-2",
+        "ArriveDate": "2026-11-05T10:30:00Z",
+        "DepartureAirportId": "airport-1",
+        "DepartureDate": "2026-11-05T08:00:00Z",
+        "DurationMinutes": 150,
+        "FlightDate": "2026-11-05T00:00:00Z",
+        "FlightNumber": "KL1701",
+        "IsDeleted": false,
+        "Price": 120,
+        "Status": "Unknown"
+      }
+    },
+    {
+      "ref": "seat-1..24",
+      "table": "Seat",
+      "values": {
+        "Class": "Economy",
+        "FlightId": "flight-1",
+        "IsDeleted": false,
+        "SeatNumber": "1A..4F (24 seats)",
+        "Type": "Aisle"
+      }
+    }
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "does": "GET /flight/get-available-seats/{flight-1 Id} with no bookings on the flight"
+    }
+  ],
+  "expect": [
+    "200 with all 24 seats returned"
+  ]
+}

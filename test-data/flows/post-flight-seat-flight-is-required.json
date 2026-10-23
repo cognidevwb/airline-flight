@@ -1,0 +1,16 @@
+{
+  "id": "post-flight-seat-flight-is-required",
+  "title": "Flight is required",
+  "source": "staged scenario",
+  "why": "Shows a seat cannot be created without a flight.",
+  "setup": [],
+  "steps": [
+    {
+      "n": 1,
+      "does": "POST /flight/seat with SeatNumber 8D, Type Aisle, Class Economy, FlightId 00000000-0000-0000-0000-000000000000"
+    }
+  ],
+  "expect": [
+    "Request is rejected with a validation error on FlightId; no seat is saved."
+  ]
+}

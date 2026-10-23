@@ -1,0 +1,33 @@
+{
+  "id": "post-flight-aircraft-aircraft-already-ex",
+  "title": "Aircraft already exists",
+  "source": "staged scenario",
+  "why": "Shows that re-sending the same request is rejected instead of creating a second row.",
+  "setup": [
+    {
+      "ref": "aircraft-1",
+      "table": "Aircraft",
+      "values": {
+        "CreatedAt": "2026-02-01T08:00:00Z",
+        "CreatedBy": 1,
+        "Id": "a3333333-3333-4333-8333-333333333333",
+        "IsDeleted": false,
+        "LastModified": "2026-02-01T08:00:00Z",
+        "LastModifiedBy": 1,
+        "ManufacturingYear": 2021,
+        "Model": "A350-900",
+        "Name": "Airbus A350 Skyline",
+        "Version": 1
+      }
+    }
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "does": "POST …/flight/aircraft again with the identical Name 'Airbus A350 Skyline', Model 'A350-900', ManufacturingYear 2021"
+    }
+  ],
+  "expect": [
+    "Rejected with an 'aircraft already exists' error. The table still holds one such aircraft."
+  ]
+}

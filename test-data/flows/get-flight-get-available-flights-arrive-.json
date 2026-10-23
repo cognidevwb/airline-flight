@@ -1,0 +1,86 @@
+{
+  "id": "get-flight-get-available-flights-arrive-",
+  "title": "Arrive date before departure",
+  "source": "staged scenario",
+  "why": "Checks that a flight cannot land before it takes off, including the default date case.",
+  "setup": [
+    {
+      "ref": "aircraft-1",
+      "table": "Aircraft",
+      "values": {
+        "IsDeleted": false,
+        "ManufacturingYear": 2019,
+        "Model": "737-800",
+        "Name": "Boeing 737",
+        "Version": 1
+      }
+    },
+    {
+      "ref": "airport-jfk",
+      "table": "Airport",
+      "values": {
+        "Address": "Queens, New York",
+        "Code": "JFK",
+        "IsDeleted": false,
+        "Name": "John F. Kennedy International",
+        "Version": 1
+      }
+    },
+    {
+      "ref": "airport-lax",
+      "table": "Airport",
+      "values": {
+        "Address": "Los Angeles, CA",
+        "Code": "LAX",
+        "IsDeleted": false,
+        "Name": "Los Angeles International",
+        "Version": 1
+      }
+    },
+    {
+      "ref": "flight-early-arrival",
+      "table": "Flight",
+      "values": {
+        "AircraftId": "aircraft-1",
+        "ArriveAirportId": "airport-lax",
+        "ArriveDate": "2026-11-06T10:00:00Z",
+        "DepartureAirportId": "airport-jfk",
+        "DepartureDate": "2026-11-06T12:00:00Z",
+        "DurationMinutes": 45,
+        "FlightDate": "2026-11-06T00:00:00Z",
+        "FlightNumber": "FL230",
+        "IsDeleted": false,
+        "Price": 250.0,
+        "Status": "Flying",
+        "Version": 1
+      }
+    },
+    {
+      "ref": "flight-default-arrival",
+      "table": "Flight",
+      "values": {
+        "AircraftId": "aircraft-1",
+        "ArriveAirportId": "airport-lax",
+        "ArriveDate": "0001-01-01T00:00:00Z",
+        "DepartureAirportId": "airport-jfk",
+        "DepartureDate": "2026-11-06T15:00:00Z",
+        "DurationMinutes": 45,
+        "FlightDate": "2026-11-06T00:00:00Z",
+        "FlightNumber": "FL231",
+        "IsDeleted": false,
+        "Price": 250.0,
+        "Status": "Flying",
+        "Version": 1
+      }
+    }
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "does": "Try to create each flight (ArriveDate 2 hours earlier than DepartureDate, and a default ArriveDate), then GET /flight/get-available-flights for JFK to LAX on 2026-11-06."
+    }
+  ],
+  "expect": [
+    "Both are rejected with an arrival date validation error, and neither is offered in search."
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "post-flight-airport-add-a-second-airport",
+  "title": "Add a second airport in the same city",
+  "source": "staged scenario",
+  "why": "Confirms that a shared city or address does not count as a duplicate when the code differs",
+  "setup": [
+    {
+      "ref": "airport-lhr",
+      "table": "Airport",
+      "values": {
+        "Address": "London, UK",
+        "Code": "LHR",
+        "IsDeleted": false,
+        "Name": "Heathrow Airport"
+      }
+    }
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "does": "POST …/flight/airport with Name 'Gatwick', Address 'London, UK', Code 'LGW'"
+    }
+  ],
+  "expect": [
+    "Airport created; LHR and LGW both exist with the same address"
+  ]
+}

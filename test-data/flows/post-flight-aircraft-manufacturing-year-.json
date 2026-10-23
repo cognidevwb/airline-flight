@@ -1,0 +1,16 @@
+{
+  "id": "post-flight-aircraft-manufacturing-year-",
+  "title": "Manufacturing year must be a valid year",
+  "source": "staged scenario",
+  "why": "Shows that zero or negative years are rejected.",
+  "setup": [],
+  "steps": [
+    {
+      "n": 1,
+      "does": "POST …/flight/aircraft with Name 'Zero Year Jet', Model '737-800', ManufacturingYear 0 (then repeat with -5)"
+    }
+  ],
+  "expect": [
+    "Rejected with a validation error on ManufacturingYear in both cases. No aircraft is created."
+  ]
+}

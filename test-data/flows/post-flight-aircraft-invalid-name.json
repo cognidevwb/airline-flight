@@ -1,0 +1,16 @@
+{
+  "id": "post-flight-aircraft-invalid-name",
+  "title": "Invalid name",
+  "source": "staged scenario",
+  "why": "Shows that both an empty and a whitespace-only Name are rejected.",
+  "setup": [],
+  "steps": [
+    {
+      "n": 1,
+      "does": "POST …/flight/aircraft with Name '' (empty), Model '737-800', ManufacturingYear 2015; then repeat with Name '     ' (whitespace only)"
+    }
+  ],
+  "expect": [
+    "Both requests are rejected with a validation error on Name. No aircraft is created."
+  ]
+}

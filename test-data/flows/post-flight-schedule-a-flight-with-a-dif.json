@@ -1,0 +1,79 @@
+{
+  "id": "post-flight-schedule-a-flight-with-a-dif",
+  "title": "Schedule a flight with a different aircraft",
+  "source": "staged scenario",
+  "why": "Verifies two flights on the same route can use different aircraft and are stored independently.",
+  "setup": [
+    {
+      "ref": "aircraft-b737",
+      "table": "Aircraft",
+      "values": {
+        "IsDeleted": false,
+        "ManufacturingYear": 2015,
+        "Model": "737-800",
+        "Name": "Boeing 737",
+        "Version": 1
+      }
+    },
+    {
+      "ref": "aircraft-a320",
+      "table": "Aircraft",
+      "values": {
+        "IsDeleted": false,
+        "ManufacturingYear": 2019,
+        "Model": "A320-200",
+        "Name": "Airbus A320",
+        "Version": 1
+      }
+    },
+    {
+      "ref": "airport-jfk",
+      "table": "Airport",
+      "values": {
+        "Address": "Queens, NY",
+        "Code": "JFK",
+        "IsDeleted": false,
+        "Name": "John F. Kennedy International",
+        "Version": 1
+      }
+    },
+    {
+      "ref": "airport-bos",
+      "table": "Airport",
+      "values": {
+        "Address": "Boston, MA",
+        "Code": "BOS",
+        "IsDeleted": false,
+        "Name": "Logan International",
+        "Version": 1
+      }
+    },
+    {
+      "ref": "flight-1",
+      "table": "Flight",
+      "values": {
+        "AircraftId": "aircraft-b737",
+        "ArriveAirportId": "airport-bos",
+        "ArriveDate": "2026-11-15T07:45:00Z",
+        "DepartureAirportId": "airport-jfk",
+        "DepartureDate": "2026-11-15T07:00:00Z",
+        "DurationMinutes": 45,
+        "FlightDate": "2026-11-15T00:00:00Z",
+        "FlightNumber": "FL-3001",
+        "IsDeleted": false,
+        "Price": 100,
+        "Status": "Unknown",
+        "Version": 1
+      }
+    }
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "does": "POST …/flight with FlightNumber FL-3002, AircraftId aircraft-a320, same JFK to BOS route, DurationMinutes 45, Price 95, Status Unknown, same day departing 12:00 and arriving 12:45"
+    }
+  ],
+  "expect": [
+    "Success: second flight created; both flights exist with different aircraft and flight numbers."
+  ]
+}

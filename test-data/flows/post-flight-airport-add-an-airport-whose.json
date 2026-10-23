@@ -1,0 +1,16 @@
+{
+  "id": "post-flight-airport-add-an-airport-whose",
+  "title": "Add an airport whose name has punctuation",
+  "source": "staged scenario",
+  "why": "Checks that hyphens and periods in the name are stored unchanged",
+  "setup": [],
+  "steps": [
+    {
+      "n": 1,
+      "does": "POST …/flight/airport with Name 'Hartsfield-Jackson Atlanta Intl.', Address 'Atlanta, Georgia', Code 'ATL'"
+    }
+  ],
+  "expect": [
+    "Airport created and the Name is stored exactly as sent, including the hyphen and the trailing period"
+  ]
+}

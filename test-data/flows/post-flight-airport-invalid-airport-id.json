@@ -1,0 +1,16 @@
+{
+  "id": "post-flight-airport-invalid-airport-id",
+  "title": "Invalid airport id",
+  "source": "staged scenario",
+  "why": "Shows an empty Guid in the request is not accepted as an Id",
+  "setup": [],
+  "steps": [
+    {
+      "n": 1,
+      "does": "POST …/flight/airport with Id 00000000-0000-0000-0000-000000000000, Name 'Narita', Address 'Tokyo, Japan', Code 'NRT'"
+    }
+  ],
+  "expect": [
+    "Rejected with a validation error on Id, or a fresh Id is generated instead of the empty one; no airport is stored under the empty Guid"
+  ]
+}

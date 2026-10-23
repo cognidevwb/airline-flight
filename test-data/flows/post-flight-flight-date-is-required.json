@@ -1,0 +1,50 @@
+{
+  "id": "post-flight-flight-date-is-required",
+  "title": "Flight date is required",
+  "source": "staged scenario",
+  "why": "Checks that a missing or default FlightDate is refused.",
+  "setup": [
+    {
+      "ref": "aircraft-1",
+      "table": "Aircraft",
+      "values": {
+        "IsDeleted": false,
+        "ManufacturingYear": 2015,
+        "Model": "737-800",
+        "Name": "Boeing 737",
+        "Version": 1
+      }
+    },
+    {
+      "ref": "airport-jfk",
+      "table": "Airport",
+      "values": {
+        "Address": "Queens, NY",
+        "Code": "JFK",
+        "IsDeleted": false,
+        "Name": "John F. Kennedy International",
+        "Version": 1
+      }
+    },
+    {
+      "ref": "airport-bos",
+      "table": "Airport",
+      "values": {
+        "Address": "Boston, MA",
+        "Code": "BOS",
+        "IsDeleted": false,
+        "Name": "Logan International",
+        "Version": 1
+      }
+    }
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "does": "POST …/flight with otherwise valid data, first omitting FlightDate, then sending FlightDate 0001-01-01T00:00:00Z"
+    }
+  ],
+  "expect": [
+    "Both rejected with a validation error on FlightDate (required)."
+  ]
+}

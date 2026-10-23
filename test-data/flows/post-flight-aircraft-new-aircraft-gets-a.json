@@ -1,0 +1,16 @@
+{
+  "id": "post-flight-aircraft-new-aircraft-gets-a",
+  "title": "New aircraft gets audit and version defaults",
+  "source": "staged scenario",
+  "why": "Shows that the system fills in the identity and audit fields, not the caller.",
+  "setup": [],
+  "steps": [
+    {
+      "n": 1,
+      "does": "POST …/flight/aircraft with Name 'Audit Check Jet', Model '737-800', ManufacturingYear 2018, then read back the saved aircraft"
+    }
+  ],
+  "expect": [
+    "Id is set (non-empty GUID), Version is 0 or 1, IsDeleted is false, and CreatedAt is set to the current time."
+  ]
+}

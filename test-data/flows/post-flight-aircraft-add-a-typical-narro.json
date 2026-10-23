@@ -1,0 +1,16 @@
+{
+  "id": "post-flight-aircraft-add-a-typical-narro",
+  "title": "Add a typical narrow-body aircraft",
+  "source": "staged scenario",
+  "why": "Confirms the basic create path stores a valid narrow-body aircraft and returns it.",
+  "setup": [],
+  "steps": [
+    {
+      "n": 1,
+      "does": "POST …/flight/aircraft with Name 'Boeing 737-800 Alpha', Model '737-800', ManufacturingYear 2015"
+    }
+  ],
+  "expect": [
+    "Success. The aircraft is created with a new Id and the same Name, Model and year."
+  ]
+}

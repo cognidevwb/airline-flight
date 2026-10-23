@@ -1,0 +1,16 @@
+{
+  "id": "post-flight-aircraft-earliest-and-curren",
+  "title": "Earliest and current manufacturing year",
+  "source": "staged scenario",
+  "why": "Tests both ends of the allowed year range.",
+  "setup": [],
+  "steps": [
+    {
+      "n": 1,
+      "does": "POST …/flight/aircraft with Name 'Vintage Jet', Model 'V-1950', ManufacturingYear 1950; then POST with Name 'Brand New Jet', Model 'N-2026', ManufacturingYear 2026"
+    }
+  ],
+  "expect": [
+    "Both requests succeed. Year 1950 and year 2026 are stored as submitted."
+  ]
+}

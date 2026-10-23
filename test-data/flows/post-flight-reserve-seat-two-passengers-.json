@@ -1,0 +1,92 @@
+{
+  "id": "post-flight-reserve-seat-two-passengers-",
+  "title": "Two passengers reserve different seats on same flight",
+  "source": "staged scenario",
+  "why": "Shows reservations on one flight are independent per seat",
+  "setup": [
+    {
+      "ref": "aircraft-1",
+      "table": "Aircraft",
+      "values": {
+        "IsDeleted": false,
+        "ManufacturingYear": 2019,
+        "Model": "A320",
+        "Name": "Skyliner 5",
+        "Version": 1
+      }
+    },
+    {
+      "ref": "airport-dep",
+      "table": "Airport",
+      "values": {
+        "Address": "Tokyo",
+        "Code": "NRT",
+        "IsDeleted": false,
+        "Name": "Narita",
+        "Version": 1
+      }
+    },
+    {
+      "ref": "airport-arr",
+      "table": "Airport",
+      "values": {
+        "Address": "Seoul",
+        "Code": "ICN",
+        "IsDeleted": false,
+        "Name": "Incheon",
+        "Version": 1
+      }
+    },
+    {
+      "ref": "flight-1",
+      "table": "Flight",
+      "values": {
+        "AircraftId": "aircraft-1",
+        "ArriveAirportId": "airport-arr",
+        "ArriveDate": "2026-11-20T12:30:00Z",
+        "DepartureAirportId": "airport-dep",
+        "DepartureDate": "2026-11-20T10:00:00Z",
+        "DurationMinutes": 150,
+        "FlightDate": "2026-11-20T00:00:00Z",
+        "FlightNumber": "FL500",
+        "IsDeleted": false,
+        "Price": 180.0,
+        "Status": "Unknown",
+        "Version": 1
+      }
+    },
+    {
+      "ref": "seat-1",
+      "table": "Seat",
+      "values": {
+        "Class": "Economy",
+        "FlightId": "flight-1",
+        "IsDeleted": false,
+        "SeatNumber": "14A",
+        "Type": "Window",
+        "Version": 1
+      }
+    },
+    {
+      "ref": "seat-2",
+      "table": "Seat",
+      "values": {
+        "Class": "Economy",
+        "FlightId": "flight-1",
+        "IsDeleted": false,
+        "SeatNumber": "14B",
+        "Type": "Middle",
+        "Version": 1
+      }
+    }
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "does": "Send two POST /flight/reserve-seat requests for flight-1, one for SeatNumber 14A and one for 14B"
+    }
+  ],
+  "expect": [
+    "Both succeed; each seat is reserved exactly once"
+  ]
+}

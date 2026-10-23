@@ -1,0 +1,80 @@
+{
+  "id": "grpc-flightgrpcservice-reserveseat-cance",
+  "title": "Canceled flight cannot take reservations",
+  "source": "staged scenario",
+  "why": "Checks flight status is enforced for canceled flights.",
+  "setup": [
+    {
+      "ref": "aircraft-1",
+      "table": "Aircraft",
+      "values": {
+        "IsDeleted": false,
+        "ManufacturingYear": 2018,
+        "Model": "A320",
+        "Name": "Skyliner 11",
+        "Version": 1
+      }
+    },
+    {
+      "ref": "airport-dep",
+      "table": "Airport",
+      "values": {
+        "Address": "Boston",
+        "Code": "BOS",
+        "IsDeleted": false,
+        "Name": "Boston Logan",
+        "Version": 1
+      }
+    },
+    {
+      "ref": "airport-arr",
+      "table": "Airport",
+      "values": {
+        "Address": "Chicago",
+        "Code": "ORD",
+        "IsDeleted": false,
+        "Name": "O'Hare",
+        "Version": 1
+      }
+    },
+    {
+      "ref": "flight-1",
+      "table": "Flight",
+      "values": {
+        "AircraftId": "aircraft-1",
+        "ArriveAirportId": "airport-arr",
+        "ArriveDate": "2026-11-14T11:45:00Z",
+        "DepartureAirportId": "airport-dep",
+        "DepartureDate": "2026-11-14T09:00:00Z",
+        "DurationMinutes": 165,
+        "FlightDate": "2026-11-14T00:00:00Z",
+        "FlightNumber": "FL-1111",
+        "IsDeleted": false,
+        "Price": 140.0,
+        "Status": "Canceled",
+        "Version": 1
+      }
+    },
+    {
+      "ref": "seat-1",
+      "table": "Seat",
+      "values": {
+        "Class": "Economy",
+        "FlightId": "flight-1",
+        "IsDeleted": false,
+        "SeatNumber": "8C",
+        "Type": "Aisle",
+        "Version": 1
+      }
+    }
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "does": "Call ReserveSeat for seat-1 on flight-1."
+    }
+  ],
+  "expect": [
+    "The request is refused because the flight is canceled, and no booking is created."
+  ]
+}

@@ -1,0 +1,207 @@
+{
+  "table": "Flight",
+  "accesses": [
+    {
+      "operation": "flightDbContext.Flights.AddRangeAsync",
+      "mode": "write",
+      "in": "src/Flight/Data/Seed/FlightDataSeeder.cs:79 SeedFlightAsync",
+      "insert": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001012",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001011",
+        "ArriveDate": "2026-09-05T16:55:00Z",
+        "CreatedAt": "2026-06-20T10:05:00Z",
+        "CreatedBy": 102,
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001012",
+        "DepartureDate": "2026-09-05T08:15:00Z",
+        "DurationMinutes": 520.0,
+        "FlightDate": "2026-09-05T00:00:00Z",
+        "FlightNumber": "LH401",
+        "Id": "2f5ff8e3-0000-4000-8000-000000001025",
+        "IsDeleted": false,
+        "LastModified": "2026-08-30T14:20:00Z",
+        "LastModifiedBy": 104,
+        "Price": 689.99,
+        "Status": "Completed",
+        "Version": 2
+      },
+      "expect": "the row is stored and reads back equal"
+    },
+    {
+      "operation": "_flightDbContext.Flights.SingleOrDefaultAsync",
+      "mode": "read",
+      "in": "src/Flight/Flights/Features/CreatingFlight/V1/CreateFlight.cs:109 Handle",
+      "given": [
+        "2f5ff8e3-0000-4000-8000-000000001024",
+        "2f5ff8e3-0000-4000-8000-000000001025",
+        "2f5ff8e3-0000-4000-8000-000000001026",
+        "2f5ff8e3-0000-4000-8000-000000001027",
+        "2f5ff8e3-0000-4000-8000-000000001028"
+      ],
+      "lookup": {
+        "Id": "2f5ff8e3-0000-4000-8000-000000001024"
+      },
+      "expect": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001014",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001011",
+        "ArriveDate": "2026-09-03T18:20:00Z",
+        "CreatedAt": "2026-06-14T09:12:00Z",
+        "CreatedBy": 101,
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001010",
+        "DepartureDate": "2026-09-03T10:30:00Z",
+        "DurationMinutes": 470.0,
+        "FlightDate": "2026-09-03T00:00:00Z",
+        "FlightNumber": "BA117",
+        "Id": "2f5ff8e3-0000-4000-8000-000000001024",
+        "IsDeleted": false,
+        "LastModified": null,
+        "LastModifiedBy": null,
+        "Price": 612.5,
+        "Status": "Completed",
+        "Version": 1
+      }
+    },
+    {
+      "operation": "_flightDbContext.Flights.AddAsync",
+      "mode": "write",
+      "in": "src/Flight/Flights/Features/CreatingFlight/V1/CreateFlight.cs:122 Handle",
+      "insert": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001012",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001011",
+        "ArriveDate": "2026-09-05T16:55:00Z",
+        "CreatedAt": "2026-06-20T10:05:00Z",
+        "CreatedBy": 102,
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001012",
+        "DepartureDate": "2026-09-05T08:15:00Z",
+        "DurationMinutes": 520.0,
+        "FlightDate": "2026-09-05T00:00:00Z",
+        "FlightNumber": "LH401",
+        "Id": "2f5ff8e3-0000-4000-8000-000000001025",
+        "IsDeleted": false,
+        "LastModified": "2026-08-30T14:20:00Z",
+        "LastModifiedBy": 104,
+        "Price": 689.99,
+        "Status": "Completed",
+        "Version": 2
+      },
+      "expect": "the row is stored and reads back equal"
+    },
+    {
+      "operation": "_flightDbContext.Flights.SingleOrDefaultAsync",
+      "mode": "read",
+      "in": "src/Flight/Flights/Features/DeletingFlight/V1/DeleteFlight.cs:86 Handle",
+      "given": [
+        "2f5ff8e3-0000-4000-8000-000000001024",
+        "2f5ff8e3-0000-4000-8000-000000001025",
+        "2f5ff8e3-0000-4000-8000-000000001026",
+        "2f5ff8e3-0000-4000-8000-000000001027",
+        "2f5ff8e3-0000-4000-8000-000000001028"
+      ],
+      "lookup": {
+        "Id": "2f5ff8e3-0000-4000-8000-000000001024"
+      },
+      "expect": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001014",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001011",
+        "ArriveDate": "2026-09-03T18:20:00Z",
+        "CreatedAt": "2026-06-14T09:12:00Z",
+        "CreatedBy": 101,
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001010",
+        "DepartureDate": "2026-09-03T10:30:00Z",
+        "DurationMinutes": 470.0,
+        "FlightDate": "2026-09-03T00:00:00Z",
+        "FlightNumber": "BA117",
+        "Id": "2f5ff8e3-0000-4000-8000-000000001024",
+        "IsDeleted": false,
+        "LastModified": null,
+        "LastModifiedBy": null,
+        "Price": 612.5,
+        "Status": "Completed",
+        "Version": 1
+      }
+    },
+    {
+      "operation": "_flightDbContext.Flights.Update",
+      "mode": "write",
+      "in": "src/Flight/Flights/Features/DeletingFlight/V1/DeleteFlight.cs:106 Handle",
+      "insert": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001012",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001011",
+        "ArriveDate": "2026-09-05T16:55:00Z",
+        "CreatedAt": "2026-06-20T10:05:00Z",
+        "CreatedBy": 102,
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001012",
+        "DepartureDate": "2026-09-05T08:15:00Z",
+        "DurationMinutes": 520.0,
+        "FlightDate": "2026-09-05T00:00:00Z",
+        "FlightNumber": "LH401",
+        "Id": "2f5ff8e3-0000-4000-8000-000000001025",
+        "IsDeleted": false,
+        "LastModified": "2026-08-30T14:20:00Z",
+        "LastModifiedBy": 104,
+        "Price": 689.99,
+        "Status": "Completed",
+        "Version": 2
+      },
+      "expect": "the row is stored and reads back equal"
+    },
+    {
+      "operation": "_flightDbContext.Flights.SingleOrDefaultAsync",
+      "mode": "read",
+      "in": "src/Flight/Flights/Features/UpdatingFlight/V1/UpdateFlight.cs:107 Handle",
+      "given": [
+        "2f5ff8e3-0000-4000-8000-000000001024",
+        "2f5ff8e3-0000-4000-8000-000000001025",
+        "2f5ff8e3-0000-4000-8000-000000001026",
+        "2f5ff8e3-0000-4000-8000-000000001027",
+        "2f5ff8e3-0000-4000-8000-000000001028"
+      ],
+      "lookup": {
+        "Id": "2f5ff8e3-0000-4000-8000-000000001024"
+      },
+      "expect": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001014",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001011",
+        "ArriveDate": "2026-09-03T18:20:00Z",
+        "CreatedAt": "2026-06-14T09:12:00Z",
+        "CreatedBy": 101,
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001010",
+        "DepartureDate": "2026-09-03T10:30:00Z",
+        "DurationMinutes": 470.0,
+        "FlightDate": "2026-09-03T00:00:00Z",
+        "FlightNumber": "BA117",
+        "Id": "2f5ff8e3-0000-4000-8000-000000001024",
+        "IsDeleted": false,
+        "LastModified": null,
+        "LastModifiedBy": null,
+        "Price": 612.5,
+        "Status": "Completed",
+        "Version": 1
+      }
+    },
+    {
+      "operation": "_flightDbContext.Flights.Update",
+      "mode": "write",
+      "in": "src/Flight/Flights/Features/UpdatingFlight/V1/UpdateFlight.cs:121 Handle",
+      "insert": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001012",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001011",
+        "ArriveDate": "2026-09-05T16:55:00Z",
+        "CreatedAt": "2026-06-20T10:05:00Z",
+        "CreatedBy": 102,
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001012",
+        "DepartureDate": "2026-09-05T08:15:00Z",
+        "DurationMinutes": 520.0,
+        "FlightDate": "2026-09-05T00:00:00Z",
+        "FlightNumber": "LH401",
+        "Id": "2f5ff8e3-0000-4000-8000-000000001025",
+        "IsDeleted": false,
+        "LastModified": "2026-08-30T14:20:00Z",
+        "LastModifiedBy": 104,
+        "Price": 689.99,
+        "Status": "Completed",
+        "Version": 2
+      },
+      "expect": "the row is stored and reads back equal"
+    }
+  ]
+}

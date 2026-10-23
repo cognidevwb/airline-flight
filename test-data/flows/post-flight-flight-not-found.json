@@ -1,0 +1,68 @@
+{
+  "id": "post-flight-flight-not-found",
+  "title": "Flight not found",
+  "source": "staged scenario",
+  "why": "Shows that a missing or soft-deleted flight is treated as nonexistent.",
+  "setup": [
+    {
+      "ref": "aircraft-1",
+      "table": "Aircraft",
+      "values": {
+        "IsDeleted": false,
+        "ManufacturingYear": 2015,
+        "Model": "737-800",
+        "Name": "Boeing 737",
+        "Version": 1
+      }
+    },
+    {
+      "ref": "airport-jfk",
+      "table": "Airport",
+      "values": {
+        "Address": "Queens, NY",
+        "Code": "JFK",
+        "IsDeleted": false,
+        "Name": "John F. Kennedy International",
+        "Version": 1
+      }
+    },
+    {
+      "ref": "airport-bos",
+      "table": "Airport",
+      "values": {
+        "Address": "Boston, MA",
+        "Code": "BOS",
+        "IsDeleted": false,
+        "Name": "Logan International",
+        "Version": 1
+      }
+    },
+    {
+      "ref": "flight-deleted",
+      "table": "Flight",
+      "values": {
+        "AircraftId": "aircraft-1",
+        "ArriveAirportId": "airport-bos",
+        "ArriveDate": "2026-11-05T08:45:00Z",
+        "DepartureAirportId": "airport-jfk",
+        "DepartureDate": "2026-11-05T08:00:00Z",
+        "DurationMinutes": 45,
+        "FlightDate": "2026-11-05T00:00:00Z",
+        "FlightNumber": "FL-9999",
+        "IsDeleted": true,
+        "Price": 9,
+        "Status": "Canceled",
+        "Version": 1
+      }
+    }
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "does": "Look up a flight by Id 33333333-3333-3333-3333-333333333333 (absent), then by the Id of flight-deleted (IsDeleted true)"
+    }
+  ],
+  "expect": [
+    "Both return a not-found error; the soft-deleted flight is not returned."
+  ]
+}

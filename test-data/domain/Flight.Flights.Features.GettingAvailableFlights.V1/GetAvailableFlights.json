@@ -1,0 +1,87 @@
+{
+  "name": "GetAvailableFlights",
+  "kind": "command",
+  "layer": "domain",
+  "source": "src/Flight/Flights/Features/GettingAvailableFlights/V1/GetAvailableFlights.cs:26",
+  "columns": [
+    "CacheKey",
+    "AbsoluteExpirationRelativeToNow"
+  ],
+  "valid": [
+    {
+      "ref": "flight-2026-03-01t06-00-00z",
+      "kind": "record",
+      "data": {
+        "AbsoluteExpirationRelativeToNow": "2026-03-01T06:00:00Z",
+        "CacheKey": ""
+      }
+    },
+    {
+      "ref": "flight-2026-03-01t06-45-00z",
+      "kind": "record",
+      "data": {
+        "AbsoluteExpirationRelativeToNow": "2026-03-01T06:45:00Z",
+        "CacheKey": ""
+      }
+    },
+    {
+      "ref": "flight-2026-03-01t06-00-00z-2",
+      "kind": "record",
+      "data": {
+        "AbsoluteExpirationRelativeToNow": "2026-03-01T06:00:00Z",
+        "CacheKey": "text"
+      }
+    },
+    {
+      "ref": "flight-2026-03-01t06-45-00z-2",
+      "kind": "record",
+      "data": {
+        "AbsoluteExpirationRelativeToNow": "2026-03-01T06:45:00Z",
+        "CacheKey": "text"
+      }
+    },
+    {
+      "ref": "flight-2026-03-01t06-00-00z-3",
+      "kind": "record",
+      "data": {
+        "AbsoluteExpirationRelativeToNow": "2026-03-01T06:00:00Z",
+        "CacheKey": "STR_0001"
+      }
+    },
+    {
+      "ref": "flight-2026-03-01t06-45-00z-3",
+      "kind": "record",
+      "data": {
+        "AbsoluteExpirationRelativeToNow": "2026-03-01T06:45:00Z",
+        "CacheKey": "STR_0001"
+      }
+    }
+  ],
+  "invalid": [
+    {
+      "ref": "getavailableflights-rejection-1",
+      "kind": "rejection",
+      "data": {
+        "AbsoluteExpirationRelativeToNow": "2026-03-01T06:00:00Z",
+        "CacheKey": null
+      },
+      "violates": {
+        "field": "CacheKey",
+        "rule": "`CacheKey` is declared NOT NULL"
+      }
+    },
+    {
+      "ref": "getavailableflights-rejection-2",
+      "kind": "rejection",
+      "data": {
+        "AbsoluteExpirationRelativeToNow": "not-a-date",
+        "CacheKey": ""
+      },
+      "violates": {
+        "field": "AbsoluteExpirationRelativeToNow",
+        "rule": "not a value `DateTime?` accepts"
+      }
+    }
+  ],
+  "coverage": []
+}

@@ -1,0 +1,15 @@
+{
+  "id": "invalidseatidexception-seatid",
+  "title": "SeatId that the code refuses",
+  "kind": "invalid value",
+  "exception": "InvalidSeatIdException",
+  "base": "DomainException",
+  "thrownAt": "src/Flight/Seats/ValueObjects/SeatId.cs:19",
+  "condition": "if (value == Guid.Empty)",
+  "field": "SeatId",
+  "expect": {
+    "status": 500,
+    "error": "InvalidSeatIdException",
+    "note": "DomainException is not one of the exception types the problem-details handler maps, so the API answers 500"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "airportalreadyexistexception-createairport",
+  "title": "CreateAirport: the record already exists",
+  "kind": "duplicate",
+  "exception": "AirportAlreadyExistException",
+  "base": "AppException",
+  "thrownAt": "src/Flight/Airports/Features/CreatingAirport/V1/CreateAirport.cs:95",
+  "condition": "if (airport is not null)",
+  "field": null,
+  "expect": {
+    "status": 400,
+    "error": "AirportAlreadyExistException",
+    "note": null
+  },
+  "trigger": {
+    "call": "POST api/v1/flight/airport",
+    "body": {
+      "address": "Longford TW6, Hounslow, London",
+      "code": "LHR",
+      "name": "Heathrow Airport"
+    },
+    "repeat": 2,
+    "why": "the same body twice; the second is refused"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "id": "post-flight-airport-airport-already-exis",
+  "title": "Airport already exists",
+  "source": "staged scenario",
+  "why": "Shows that submitting the same airport twice is refused the second time",
+  "setup": [
+    {
+      "ref": "airport-jfk",
+      "table": "Airport",
+      "values": {
+        "Address": "New York, USA",
+        "Code": "JFK",
+        "IsDeleted": false,
+        "Name": "John F. Kennedy International"
+      }
+    }
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "does": "POST …/flight/airport with Name 'John F. Kennedy International', Address 'New York, USA', Code 'JFK' (identical to the stored airport)"
+    }
+  ],
+  "expect": [
+    "Rejected as already existing; only one JFK airport remains"
+  ]
+}

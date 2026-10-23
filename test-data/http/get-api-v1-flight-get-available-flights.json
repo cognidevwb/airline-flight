@@ -1,0 +1,9 @@
+{
+  "operation": "GET api/v1/flight/get-available-flights",
+  "kind": "http",
+  "handler": "src/Flight/Flights/Features/GettingAvailableFlights/V1/GetAvailableFlights.cs:40",
+  "request": null,
+  "response": "GetAvailableFlightsResponseDto",
+  "valid": [],
+  "invalid": []
+}

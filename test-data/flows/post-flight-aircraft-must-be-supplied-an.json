@@ -1,0 +1,39 @@
+{
+  "id": "post-flight-aircraft-must-be-supplied-an",
+  "title": "Aircraft must be supplied and exist",
+  "source": "staged scenario",
+  "why": "Shows that the aircraft reference is validated for both empty and dangling values.",
+  "setup": [
+    {
+      "ref": "airport-jfk",
+      "table": "Airport",
+      "values": {
+        "Address": "Queens, NY",
+        "Code": "JFK",
+        "IsDeleted": false,
+        "Name": "John F. Kennedy International",
+        "Version": 1
+      }
+    },
+    {
+      "ref": "airport-bos",
+      "table": "Airport",
+      "values": {
+        "Address": "Boston, MA",
+        "Code": "BOS",
+        "IsDeleted": false,
+        "Name": "Logan International",
+        "Version": 1
+      }
+    }
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "does": "POST …/flight twice with otherwise valid data: first with AircraftId 00000000-0000-0000-0000-000000000000, then with AircraftId 7c9e6679-7425-40de-944b-e07fc1f90ae7 (no such Aircraft)"
+    }
+  ],
+  "expect": [
+    "Both rejected with a validation or not-found error naming AircraftId; no Flight is created."
+  ]
+}

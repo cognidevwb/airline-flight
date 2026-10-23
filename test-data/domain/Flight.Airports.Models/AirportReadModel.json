@@ -1,0 +1,2665 @@
+{
+  "name": "AirportReadModel",
+  "kind": "read model",
+  "layer": "domain",
+  "source": "src/Flight/Airports/Models/AirportReadModel.cs:5",
+  "columns": [
+    "Id",
+    "AirportId",
+    "Name",
+    "Address",
+    "Code",
+    "IsDeleted"
+  ],
+  "valid": [
+    {
+      "ref": "airport-lhr-4",
+      "kind": "record",
+      "data": {
+        "Address": "Longford TW6, Hounslow, London",
+        "AirportId": null,
+        "Code": "LHR",
+        "Id": "c9bc0450-0000-4000-8000-000000001010",
+        "IsDeleted": false,
+        "Name": "Heathrow Airport"
+      }
+    },
+    {
+      "ref": "airport-jfk-4",
+      "kind": "record",
+      "data": {
+        "Address": "Jamaica, Queens, New York, NY 11430",
+        "AirportId": null,
+        "Code": "JFK",
+        "Id": "c9bc0450-0000-4000-8000-000000001011",
+        "IsDeleted": false,
+        "Name": "John F. Kennedy International Airport"
+      }
+    },
+    {
+      "ref": "airport-fra-4",
+      "kind": "record",
+      "data": {
+        "Address": "60547 Frankfurt am Main, Germany",
+        "AirportId": null,
+        "Code": "FRA",
+        "Id": "c9bc0450-0000-4000-8000-000000001012",
+        "IsDeleted": false,
+        "Name": "Frankfurt Airport"
+      }
+    },
+    {
+      "ref": "airport-dxb-4",
+      "kind": "record",
+      "data": {
+        "Address": "Garhoud, Dubai, United Arab Emirates",
+        "AirportId": null,
+        "Code": "DXB",
+        "Id": "c9bc0450-0000-4000-8000-000000001013",
+        "IsDeleted": false,
+        "Name": "Dubai International Airport"
+      }
+    },
+    {
+      "ref": "airport-dub-4",
+      "kind": "record",
+      "data": {
+        "Address": "Collinstown, Dublin, K67 Ireland",
+        "AirportId": null,
+        "Code": "DUB",
+        "Id": "c9bc0450-0000-4000-8000-000000001014",
+        "IsDeleted": false,
+        "Name": "Dublin Airport"
+      }
+    },
+    {
+      "ref": "airport-cdg-4",
+      "kind": "record",
+      "data": {
+        "Address": "95700 Roissy-en-France, France",
+        "AirportId": null,
+        "Code": "CDG",
+        "Id": "c9bc0450-0000-4000-8000-000000001015",
+        "IsDeleted": false,
+        "Name": "Paris Charles de Gaulle Airport"
+      }
+    },
+    {
+      "ref": "airport-ams-4",
+      "kind": "record",
+      "data": {
+        "Address": "Evert van de Beekstraat 202, Schiphol",
+        "AirportId": null,
+        "Code": "AMS",
+        "Id": "c9bc0450-0000-4000-8000-000000001016",
+        "IsDeleted": false,
+        "Name": "Amsterdam Schiphol Airport"
+      }
+    },
+    {
+      "ref": "airport-mad-4",
+      "kind": "record",
+      "data": {
+        "Address": "Av de la Hispanidad, 28042 Madrid",
+        "AirportId": null,
+        "Code": "MAD",
+        "Id": "c9bc0450-0000-4000-8000-000000001017",
+        "IsDeleted": false,
+        "Name": "Madrid-Barajas Airport"
+      }
+    },
+    {
+      "ref": "airport-lax-4",
+      "kind": "record",
+      "data": {
+        "Address": "1 World Way, Los Angeles, CA 90045",
+        "AirportId": null,
+        "Code": "LAX",
+        "Id": "c9bc0450-0000-4000-8000-000000001018",
+        "IsDeleted": false,
+        "Name": "Los Angeles International Airport"
+      }
+    },
+    {
+      "ref": "airport-ord-4",
+      "kind": "record",
+      "data": {
+        "Address": "10000 W O'Hare Ave, Chicago, IL 60666",
+        "AirportId": null,
+        "Code": "ORD",
+        "Id": "c9bc0450-0000-4000-8000-000000001019",
+        "IsDeleted": false,
+        "Name": "O'Hare International Airport"
+      }
+    },
+    {
+      "ref": "airport-sin-4",
+      "kind": "record",
+      "data": {
+        "Address": "Airport Blvd, Singapore 819663",
+        "AirportId": null,
+        "Code": "SIN",
+        "Id": "c9bc0450-0000-4000-8000-000000001020",
+        "IsDeleted": false,
+        "Name": "Singapore Changi Airport"
+      }
+    },
+    {
+      "ref": "airport-hnd-4",
+      "kind": "record",
+      "data": {
+        "Address": "3 Hanedakuko, Ota City, Tokyo 144-0041",
+        "AirportId": null,
+        "Code": "HND",
+        "Id": "c9bc0450-0000-4000-8000-000000001021",
+        "IsDeleted": false,
+        "Name": "Tokyo Haneda Airport"
+      }
+    },
+    {
+      "ref": "airport-atl-4",
+      "kind": "record",
+      "data": {
+        "Address": "6000 N Terminal Pkwy, Atlanta, GA 30320",
+        "AirportId": null,
+        "Code": "ATL",
+        "Id": "c9bc0450-0000-4000-8000-000000001022",
+        "IsDeleted": false,
+        "Name": "Hartsfield-Jackson Atlanta International Airport"
+      }
+    },
+    {
+      "ref": "airport-muc-4",
+      "kind": "record",
+      "data": {
+        "Address": "Nordallee 25, 85356 Munich, Germany",
+        "AirportId": null,
+        "Code": "MUC",
+        "Id": "c9bc0450-0000-4000-8000-000000001023",
+        "IsDeleted": false,
+        "Name": "Munich Airport"
+      }
+    },
+    {
+      "ref": "airport-zrh-4",
+      "kind": "record",
+      "data": {
+        "Address": "Flughafenstrasse, 8058 Zurich, Switzerland",
+        "AirportId": null,
+        "Code": "ZRH",
+        "Id": "c9bc0450-0000-4000-8000-000000001024",
+        "IsDeleted": false,
+        "Name": "Zurich Airport"
+      }
+    },
+    {
+      "ref": "airport-ist-4",
+      "kind": "record",
+      "data": {
+        "Address": "Tayakadın, 34283 Arnavutköy, Istanbul",
+        "AirportId": null,
+        "Code": "IST",
+        "Id": "c9bc0450-0000-4000-8000-000000001025",
+        "IsDeleted": false,
+        "Name": "Istanbul Airport"
+      }
+    },
+    {
+      "ref": "airport-doh-4",
+      "kind": "record",
+      "data": {
+        "Address": "Airport Rd, Doha, Qatar",
+        "AirportId": null,
+        "Code": "DOH",
+        "Id": "c9bc0450-0000-4000-8000-000000001026",
+        "IsDeleted": false,
+        "Name": "Hamad International Airport"
+      }
+    },
+    {
+      "ref": "airport-syd-4",
+      "kind": "record",
+      "data": {
+        "Address": "Mascot NSW 2020, Australia",
+        "AirportId": null,
+        "Code": "SYD",
+        "Id": "c9bc0450-0000-4000-8000-000000001027",
+        "IsDeleted": false,
+        "Name": "Sydney Kingsford Smith Airport"
+      }
+    },
+    {
+      "ref": "airport-yyz-4",
+      "kind": "record",
+      "data": {
+        "Address": "6301 Silver Dart Dr, Mississauga, ON",
+        "AirportId": null,
+        "Code": "YYZ",
+        "Id": "c9bc0450-0000-4000-8000-000000001028",
+        "IsDeleted": false,
+        "Name": "Toronto Pearson International Airport"
+      }
+    },
+    {
+      "ref": "airport-sfo-4",
+      "kind": "record",
+      "data": {
+        "Address": "San Francisco, CA 94128, United States",
+        "AirportId": null,
+        "Code": "SFO",
+        "Id": "c9bc0450-0000-4000-8000-000000001029",
+        "IsDeleted": false,
+        "Name": "San Francisco International Airport"
+      }
+    },
+    {
+      "ref": "airport-hkg-4",
+      "kind": "record",
+      "data": {
+        "Address": "1 Sky Plaza Rd, Chek Lap Kok, Hong Kong",
+        "AirportId": null,
+        "Code": "HKG",
+        "Id": "c9bc0450-0000-4000-8000-000000001030",
+        "IsDeleted": false,
+        "Name": "Hong Kong International Airport"
+      }
+    },
+    {
+      "ref": "airport-icn-4",
+      "kind": "record",
+      "data": {
+        "Address": "272 Gonghang-ro, Jung-gu, Incheon",
+        "AirportId": null,
+        "Code": "ICN",
+        "Id": "c9bc0450-0000-4000-8000-000000001031",
+        "IsDeleted": false,
+        "Name": "Incheon International Airport"
+      }
+    },
+    {
+      "ref": "airport-cph-4",
+      "kind": "record",
+      "data": {
+        "Address": "Lufthavnsboulevarden 6, 2770 Kastrup",
+        "AirportId": null,
+        "Code": "CPH",
+        "Id": "c9bc0450-0000-4000-8000-000000001032",
+        "IsDeleted": false,
+        "Name": "Copenhagen Airport"
+      }
+    },
+    {
+      "ref": "airport-vie-4",
+      "kind": "record",
+      "data": {
+        "Address": "1300 Schwechat, Austria",
+        "AirportId": null,
+        "Code": "VIE",
+        "Id": "c9bc0450-0000-4000-8000-000000001033",
+        "IsDeleted": false,
+        "Name": "Vienna International Airport"
+      }
+    },
+    {
+      "ref": "airport-bcn-4",
+      "kind": "record",
+      "data": {
+        "Address": "08820 El Prat de Llobregat, Barcelona",
+        "AirportId": null,
+        "Code": "BCN",
+        "Id": "c9bc0450-0000-4000-8000-000000001034",
+        "IsDeleted": false,
+        "Name": "Barcelona-El Prat Airport"
+      }
+    },
+    {
+      "ref": "airport-fco-4",
+      "kind": "record",
+      "data": {
+        "Address": "Via dell'Aeroporto di Fiumicino, 00054 Rome",
+        "AirportId": null,
+        "Code": "FCO",
+        "Id": "c9bc0450-0000-4000-8000-000000001035",
+        "IsDeleted": false,
+        "Name": "Rome Fiumicino Airport"
+      }
+    },
+    {
+      "ref": "airport-dfw-4",
+      "kind": "record",
+      "data": {
+        "Address": "2400 Aviation Dr, DFW Airport, TX 75261",
+        "AirportId": null,
+        "Code": "DFW",
+        "Id": "c9bc0450-0000-4000-8000-000000001036",
+        "IsDeleted": false,
+        "Name": "Dallas/Fort Worth International Airport"
+      }
+    },
+    {
+      "ref": "airport-mia-4",
+      "kind": "record",
+      "data": {
+        "Address": "2100 NW 42nd Ave, Miami, FL 33126",
+        "AirportId": null,
+        "Code": "MIA",
+        "Id": "c9bc0450-0000-4000-8000-000000001037",
+        "IsDeleted": false,
+        "Name": "Miami International Airport"
+      }
+    },
+    {
+      "ref": "airport-man-4",
+      "kind": "record",
+      "data": {
+        "Address": "Wilmslow Rd, Manchester M90 1QX",
+        "AirportId": null,
+        "Code": "MAN",
+        "Id": "c9bc0450-0000-4000-8000-000000001038",
+        "IsDeleted": false,
+        "Name": "Manchester Airport"
+      }
+    },
+    {
+      "ref": "airport-lgw-4",
+      "kind": "record",
+      "data": {
+        "Address": "Horley, Gatwick RH6 0NP, West Sussex",
+        "AirportId": null,
+        "Code": "LGW",
+        "Id": "c9bc0450-0000-4000-8000-000000001039",
+        "IsDeleted": false,
+        "Name": "Gatwick Airport"
+      }
+    },
+    {
+      "ref": "airport-edi-4",
+      "kind": "record",
+      "data": {
+        "Address": "Edinburgh EH12 9DN, Scotland",
+        "AirportId": null,
+        "Code": "EDI",
+        "Id": "c9bc0450-0000-4000-8000-000000001040",
+        "IsDeleted": false,
+        "Name": "Edinburgh Airport"
+      }
+    },
+    {
+      "ref": "airport-snn-4",
+      "kind": "record",
+      "data": {
+        "Address": "Shannon, Co. Clare, V14 Ireland",
+        "AirportId": null,
+        "Code": "SNN",
+        "Id": "c9bc0450-0000-4000-8000-000000001041",
+        "IsDeleted": false,
+        "Name": "Shannon Airport"
+      }
+    },
+    {
+      "ref": "airport-ork-4",
+      "kind": "record",
+      "data": {
+        "Address": "Cork, T12 Ireland",
+        "AirportId": null,
+        "Code": "ORK",
+        "Id": "c9bc0450-0000-4000-8000-000000001042",
+        "IsDeleted": false,
+        "Name": "Cork Airport"
+      }
+    },
+    {
+      "ref": "airport-osl-4",
+      "kind": "record",
+      "data": {
+        "Address": "Edvard Munchs veg, 2061 Gardermoen",
+        "AirportId": null,
+        "Code": "OSL",
+        "Id": "c9bc0450-0000-4000-8000-000000001043",
+        "IsDeleted": false,
+        "Name": "Oslo Gardermoen Airport"
+      }
+    },
+    {
+      "ref": "airport-arn-4",
+      "kind": "record",
+      "data": {
+        "Address": "190 45 Stockholm-Arlanda, Sweden",
+        "AirportId": null,
+        "Code": "ARN",
+        "Id": "c9bc0450-0000-4000-8000-000000001044",
+        "IsDeleted": false,
+        "Name": "Stockholm Arlanda Airport"
+      }
+    },
+    {
+      "ref": "airport-hel-4",
+      "kind": "record",
+      "data": {
+        "Address": "Lentoasemantie 1, 01530 Vantaa",
+        "AirportId": null,
+        "Code": "HEL",
+        "Id": "c9bc0450-0000-4000-8000-000000001045",
+        "IsDeleted": false,
+        "Name": "Helsinki Airport"
+      }
+    },
+    {
+      "ref": "airport-lis-4",
+      "kind": "record",
+      "data": {
+        "Address": "Alameda das Comunidades Portuguesas, Lisbon",
+        "AirportId": null,
+        "Code": "LIS",
+        "Id": "c9bc0450-0000-4000-8000-000000001046",
+        "IsDeleted": false,
+        "Name": "Lisbon Humberto Delgado Airport"
+      }
+    },
+    {
+      "ref": "airport-bru-4",
+      "kind": "record",
+      "data": {
+        "Address": "Leopoldlaan, 1930 Zaventem, Belgium",
+        "AirportId": null,
+        "Code": "BRU",
+        "Id": "c9bc0450-0000-4000-8000-000000001047",
+        "IsDeleted": false,
+        "Name": "Brussels Airport"
+      }
+    },
+    {
+      "ref": "airport-ath-4",
+      "kind": "record",
+      "data": {
+        "Address": "190 19 Spata-Artemida, Athens, Greece",
+        "AirportId": null,
+        "Code": "ATH",
+        "Id": "c9bc0450-0000-4000-8000-000000001048",
+        "IsDeleted": false,
+        "Name": "Athens Eleftherios Venizelos Airport"
+      }
+    },
+    {
+      "ref": "airport-auh-4",
+      "kind": "record",
+      "data": {
+        "Address": "Khalifa City, Abu Dhabi, UAE",
+        "AirportId": null,
+        "Code": "AUH",
+        "Id": "c9bc0450-0000-4000-8000-000000001049",
+        "IsDeleted": false,
+        "Name": "Abu Dhabi International Airport"
+      }
+    },
+    {
+      "ref": "airport-del-4",
+      "kind": "record",
+      "data": {
+        "Address": "New Delhi, Delhi 110037, India",
+        "AirportId": null,
+        "Code": "DEL",
+        "Id": "c9bc0450-0000-4000-8000-000000001050",
+        "IsDeleted": false,
+        "Name": "Indira Gandhi International Airport"
+      }
+    },
+    {
+      "ref": "airport-bom-4",
+      "kind": "record",
+      "data": {
+        "Address": "Santacruz East, Mumbai 400099, India",
+        "AirportId": null,
+        "Code": "BOM",
+        "Id": "c9bc0450-0000-4000-8000-000000001051",
+        "IsDeleted": false,
+        "Name": "Chhatrapati Shivaji Maharaj International Airport"
+      }
+    },
+    {
+      "ref": "airport-jnb-4",
+      "kind": "record",
+      "data": {
+        "Address": "Kempton Park, Gauteng 1627, South Africa",
+        "AirportId": null,
+        "Code": "JNB",
+        "Id": "c9bc0450-0000-4000-8000-000000001052",
+        "IsDeleted": true,
+        "Name": "O. R. Tambo International Airport"
+      }
+    },
+    {
+      "ref": "airport-gru-4",
+      "kind": "record",
+      "data": {
+        "Address": "Rod. Hélio Smidt, Guarulhos, SP, Brazil",
+        "AirportId": null,
+        "Code": "GRU",
+        "Id": "c9bc0450-0000-4000-8000-000000001053",
+        "IsDeleted": false,
+        "Name": "São Paulo-Guarulhos International Airport"
+      }
+    },
+    {
+      "ref": "airport-mex-4",
+      "kind": "record",
+      "data": {
+        "Address": "Av. Capitán Carlos León, Mexico City",
+        "AirportId": null,
+        "Code": "MEX",
+        "Id": "c9bc0450-0000-4000-8000-000000001054",
+        "IsDeleted": false,
+        "Name": "Benito Juárez International Airport"
+      }
+    },
+    {
+      "ref": "airport-bos-4",
+      "kind": "record",
+      "data": {
+        "Address": "1 Harborside Dr, Boston, MA 02128",
+        "AirportId": null,
+        "Code": "BOS",
+        "Id": "c9bc0450-0000-4000-8000-000000001055",
+        "IsDeleted": false,
+        "Name": "Boston Logan International Airport"
+      }
+    },
+    {
+      "ref": "airport-sea-4",
+      "kind": "record",
+      "data": {
+        "Address": "17801 Int'l Blvd, SeaTac, WA 98158",
+        "AirportId": null,
+        "Code": "SEA",
+        "Id": "c9bc0450-0000-4000-8000-000000001056",
+        "IsDeleted": false,
+        "Name": "Seattle-Tacoma International Airport"
+      }
+    },
+    {
+      "ref": "airport-ewr-4",
+      "kind": "record",
+      "data": {
+        "Address": "3 Brewster Rd, Newark, NJ 07114",
+        "AirportId": null,
+        "Code": "EWR",
+        "Id": "c9bc0450-0000-4000-8000-000000001057",
+        "IsDeleted": true,
+        "Name": "Newark Liberty International Airport"
+      }
+    },
+    {
+      "ref": "airport-bkk-4",
+      "kind": "record",
+      "data": {
+        "Address": "999 Moo 1, Racha Thewa, Samut Prakan",
+        "AirportId": null,
+        "Code": "BKK",
+        "Id": "c9bc0450-0000-4000-8000-000000001058",
+        "IsDeleted": false,
+        "Name": "Suvarnabhumi Airport"
+      }
+    },
+    {
+      "ref": "airport-pek-4",
+      "kind": "record",
+      "data": {
+        "Address": "Capital Airport Rd, Chaoyang, Beijing",
+        "AirportId": null,
+        "Code": "PEK",
+        "Id": "c9bc0450-0000-4000-8000-000000001059",
+        "IsDeleted": false,
+        "Name": "Beijing Capital International Airport"
+      }
+    },
+    {
+      "ref": "airport-kul-4",
+      "kind": "record",
+      "data": {
+        "Address": "64000 KLIA, Sepang, Selangor, Malaysia",
+        "AirportId": null,
+        "Code": "KUL",
+        "Id": "c9bc0450-0000-4000-8000-000000001060",
+        "IsDeleted": false,
+        "Name": "Kuala Lumpur International Airport"
+      }
+    },
+    {
+      "ref": "airport-cgk-4",
+      "kind": "record",
+      "data": {
+        "Address": "Jl. Raya Bandara, Tangerang, Banten, Indonesia",
+        "AirportId": null,
+        "Code": "CGK",
+        "Id": "c9bc0450-0000-4000-8000-000000001061",
+        "IsDeleted": false,
+        "Name": "Soekarno-Hatta International Airport"
+      }
+    },
+    {
+      "ref": "airport-mnl-4",
+      "kind": "record",
+      "data": {
+        "Address": "Pasay, Metro Manila 1300, Philippines",
+        "AirportId": null,
+        "Code": "MNL",
+        "Id": "c9bc0450-0000-4000-8000-000000001062",
+        "IsDeleted": false,
+        "Name": "Ninoy Aquino International Airport"
+      }
+    },
+    {
+      "ref": "airport-tpe-4",
+      "kind": "record",
+      "data": {
+        "Address": "Dayuan District, Taoyuan City 337, Taiwan",
+        "AirportId": null,
+        "Code": "TPE",
+        "Id": "c9bc0450-0000-4000-8000-000000001063",
+        "IsDeleted": false,
+        "Name": "Taiwan Taoyuan International Airport"
+      }
+    },
+    {
+      "ref": "airport-pvg-4",
+      "kind": "record",
+      "data": {
+        "Address": "Pudong New Area, Shanghai 201207, China",
+        "AirportId": null,
+        "Code": "PVG",
+        "Id": "c9bc0450-0000-4000-8000-000000001064",
+        "IsDeleted": false,
+        "Name": "Shanghai Pudong International Airport"
+      }
+    },
+    {
+      "ref": "airport-can-4",
+      "kind": "record",
+      "data": {
+        "Address": "Huadu District, Guangzhou 510470, China",
+        "AirportId": null,
+        "Code": "CAN",
+        "Id": "c9bc0450-0000-4000-8000-000000001065",
+        "IsDeleted": false,
+        "Name": "Guangzhou Baiyun International Airport"
+      }
+    },
+    {
+      "ref": "airport-kix-4",
+      "kind": "record",
+      "data": {
+        "Address": "1 Senshukukokita, Izumisano, Osaka 549-0001",
+        "AirportId": null,
+        "Code": "KIX",
+        "Id": "c9bc0450-0000-4000-8000-000000001066",
+        "IsDeleted": false,
+        "Name": "Kansai International Airport"
+      }
+    },
+    {
+      "ref": "airport-gmp-4",
+      "kind": "record",
+      "data": {
+        "Address": "112 Haneul-gil, Gangseo-gu, Seoul, Korea",
+        "AirportId": null,
+        "Code": "GMP",
+        "Id": "c9bc0450-0000-4000-8000-000000001067",
+        "IsDeleted": false,
+        "Name": "Gimpo International Airport"
+      }
+    },
+    {
+      "ref": "airport-han-4",
+      "kind": "record",
+      "data": {
+        "Address": "Phu Minh, Soc Son, Hanoi, Vietnam",
+        "AirportId": null,
+        "Code": "HAN",
+        "Id": "c9bc0450-0000-4000-8000-000000001068",
+        "IsDeleted": false,
+        "Name": "Noi Bai International Airport"
+      }
+    },
+    {
+      "ref": "airport-sgn-4",
+      "kind": "record",
+      "data": {
+        "Address": "Tan Binh District, Ho Chi Minh City, Vietnam",
+        "AirportId": null,
+        "Code": "SGN",
+        "Id": "c9bc0450-0000-4000-8000-000000001069",
+        "IsDeleted": false,
+        "Name": "Tan Son Nhat International Airport"
+      }
+    },
+    {
+      "ref": "airport-mel-4",
+      "kind": "record",
+      "data": {
+        "Address": "Departure Dr, Tullamarine VIC 3045, Australia",
+        "AirportId": null,
+        "Code": "MEL",
+        "Id": "c9bc0450-0000-4000-8000-000000001070",
+        "IsDeleted": false,
+        "Name": "Melbourne Airport"
+      }
+    },
+    {
+      "ref": "airport-bne-4",
+      "kind": "record",
+      "data": {
+        "Address": "Airport Dr, Brisbane QLD 4008, Australia",
+        "AirportId": null,
+        "Code": "BNE",
+        "Id": "c9bc0450-0000-4000-8000-000000001071",
+        "IsDeleted": false,
+        "Name": "Brisbane Airport"
+      }
+    },
+    {
+      "ref": "airport-per-4",
+      "kind": "record",
+      "data": {
+        "Address": "Airport Dr, Perth WA 6105, Australia",
+        "AirportId": null,
+        "Code": "PER",
+        "Id": "c9bc0450-0000-4000-8000-000000001072",
+        "IsDeleted": false,
+        "Name": "Perth Airport"
+      }
+    },
+    {
+      "ref": "airport-akl-4",
+      "kind": "record",
+      "data": {
+        "Address": "Ray Emery Dr, Mangere, Auckland 2022, NZ",
+        "AirportId": null,
+        "Code": "AKL",
+        "Id": "c9bc0450-0000-4000-8000-000000001073",
+        "IsDeleted": false,
+        "Name": "Auckland Airport"
+      }
+    },
+    {
+      "ref": "airport-chc-4",
+      "kind": "record",
+      "data": {
+        "Address": "30 Durey Rd, Harewood, Christchurch 8053, NZ",
+        "AirportId": null,
+        "Code": "CHC",
+        "Id": "c9bc0450-0000-4000-8000-000000001074",
+        "IsDeleted": false,
+        "Name": "Christchurch Airport"
+      }
+    },
+    {
+      "ref": "airport-yvr-4",
+      "kind": "record",
+      "data": {
+        "Address": "3211 Grant McConachie Way, Richmond, BC",
+        "AirportId": null,
+        "Code": "YVR",
+        "Id": "c9bc0450-0000-4000-8000-000000001075",
+        "IsDeleted": false,
+        "Name": "Vancouver International Airport"
+      }
+    },
+    {
+      "ref": "airport-yul-4",
+      "kind": "record",
+      "data": {
+        "Address": "975 Boul. Roméo-Vachon N, Dorval, QC",
+        "AirportId": null,
+        "Code": "YUL",
+        "Id": "c9bc0450-0000-4000-8000-000000001076",
+        "IsDeleted": false,
+        "Name": "Montreal-Trudeau International Airport"
+      }
+    },
+    {
+      "ref": "airport-yyc-4",
+      "kind": "record",
+      "data": {
+        "Address": "2000 Airport Rd NE, Calgary, AB T2E 6W5",
+        "AirportId": null,
+        "Code": "YYC",
+        "Id": "c9bc0450-0000-4000-8000-000000001077",
+        "IsDeleted": false,
+        "Name": "Calgary International Airport"
+      }
+    },
+    {
+      "ref": "airport-den-4",
+      "kind": "record",
+      "data": {
+        "Address": "8500 Peña Blvd, Denver, CO 80249",
+        "AirportId": null,
+        "Code": "DEN",
+        "Id": "c9bc0450-0000-4000-8000-000000001078",
+        "IsDeleted": false,
+        "Name": "Denver International Airport"
+      }
+    },
+    {
+      "ref": "airport-las-4",
+      "kind": "record",
+      "data": {
+        "Address": "5757 Wayne Newton Blvd, Las Vegas, NV 89119",
+        "AirportId": null,
+        "Code": "LAS",
+        "Id": "c9bc0450-0000-4000-8000-000000001079",
+        "IsDeleted": false,
+        "Name": "Harry Reid International Airport"
+      }
+    },
+    {
+      "ref": "airport-phx-4",
+      "kind": "record",
+      "data": {
+        "Address": "3400 E Sky Harbor Blvd, Phoenix, AZ 85034",
+        "AirportId": null,
+        "Code": "PHX",
+        "Id": "c9bc0450-0000-4000-8000-000000001080",
+        "IsDeleted": false,
+        "Name": "Phoenix Sky Harbor International Airport"
+      }
+    },
+    {
+      "ref": "airport-iah-4",
+      "kind": "record",
+      "data": {
+        "Address": "2800 N Terminal Rd, Houston, TX 77032",
+        "AirportId": null,
+        "Code": "IAH",
+        "Id": "c9bc0450-0000-4000-8000-000000001081",
+        "IsDeleted": false,
+        "Name": "George Bush Intercontinental Airport"
+      }
+    },
+    {
+      "ref": "airport-phl-4",
+      "kind": "record",
+      "data": {
+        "Address": "8000 Essington Ave, Philadelphia, PA 19153",
+        "AirportId": null,
+        "Code": "PHL",
+        "Id": "c9bc0450-0000-4000-8000-000000001082",
+        "IsDeleted": false,
+        "Name": "Philadelphia International Airport"
+      }
+    },
+    {
+      "ref": "airport-iad-4",
+      "kind": "record",
+      "data": {
+        "Address": "1 Saarinen Cir, Dulles, VA 20166",
+        "AirportId": null,
+        "Code": "IAD",
+        "Id": "c9bc0450-0000-4000-8000-000000001083",
+        "IsDeleted": false,
+        "Name": "Washington Dulles International Airport"
+      }
+    },
+    {
+      "ref": "airport-clt-4",
+      "kind": "record",
+      "data": {
+        "Address": "5501 Josh Birmingham Pkwy, Charlotte, NC 28208",
+        "AirportId": null,
+        "Code": "CLT",
+        "Id": "c9bc0450-0000-4000-8000-000000001084",
+        "IsDeleted": false,
+        "Name": "Charlotte Douglas International Airport"
+      }
+    },
+    {
+      "ref": "airport-msp-4",
+      "kind": "record",
+      "data": {
+        "Address": "4300 Glumack Dr, St Paul, MN 55111",
+        "AirportId": null,
+        "Code": "MSP",
+        "Id": "c9bc0450-0000-4000-8000-000000001085",
+        "IsDeleted": false,
+        "Name": "Minneapolis-Saint Paul International Airport"
+      }
+    },
+    {
+      "ref": "airport-dtw-4",
+      "kind": "record",
+      "data": {
+        "Address": "Detroit Metro Airport, Romulus, MI 48242",
+        "AirportId": null,
+        "Code": "DTW",
+        "Id": "c9bc0450-0000-4000-8000-000000001086",
+        "IsDeleted": false,
+        "Name": "Detroit Metropolitan Wayne County Airport"
+      }
+    },
+    {
+      "ref": "airport-san-4",
+      "kind": "record",
+      "data": {
+        "Address": "3225 N Harbor Dr, San Diego, CA 92101",
+        "AirportId": null,
+        "Code": "SAN",
+        "Id": "c9bc0450-0000-4000-8000-000000001087",
+        "IsDeleted": false,
+        "Name": "San Diego International Airport"
+      }
+    },
+    {
+      "ref": "airport-mco-4",
+      "kind": "record",
+      "data": {
+        "Address": "1 Jeff Fuqua Blvd, Orlando, FL 32827",
+        "AirportId": null,
+        "Code": "MCO",
+        "Id": "c9bc0450-0000-4000-8000-000000001088",
+        "IsDeleted": false,
+        "Name": "Orlando International Airport"
+      }
+    },
+    {
+      "ref": "airport-hnl-4",
+      "kind": "record",
+      "data": {
+        "Address": "300 Rodgers Blvd, Honolulu, HI 96819",
+        "AirportId": null,
+        "Code": "HNL",
+        "Id": "c9bc0450-0000-4000-8000-000000001089",
+        "IsDeleted": false,
+        "Name": "Daniel K. Inouye International Airport"
+      }
+    },
+    {
+      "ref": "airport-bog-4",
+      "kind": "record",
+      "data": {
+        "Address": "Av. El Dorado 103-09, Bogotá, Colombia",
+        "AirportId": null,
+        "Code": "BOG",
+        "Id": "c9bc0450-0000-4000-8000-000000001090",
+        "IsDeleted": false,
+        "Name": "El Dorado International Airport"
+      }
+    },
+    {
+      "ref": "airport-lim-4",
+      "kind": "record",
+      "data": {
+        "Address": "Av. Elmer Faucett s/n, Callao 07031, Peru",
+        "AirportId": null,
+        "Code": "LIM",
+        "Id": "c9bc0450-0000-4000-8000-000000001091",
+        "IsDeleted": false,
+        "Name": "Jorge Chávez International Airport"
+      }
+    },
+    {
+      "ref": "airport-scl-4",
+      "kind": "record",
+      "data": {
+        "Address": "Armando Cortínez Norte 2200, Pudahuel, Chile",
+        "AirportId": null,
+        "Code": "SCL",
+        "Id": "c9bc0450-0000-4000-8000-000000001092",
+        "IsDeleted": false,
+        "Name": "Arturo Merino Benítez International Airport"
+      }
+    },
+    {
+      "ref": "airport-eze-4",
+      "kind": "record",
+      "data": {
+        "Address": "Autopista Tte. Gral. Ricchieri, Ezeiza, Argentina",
+        "AirportId": null,
+        "Code": "EZE",
+        "Id": "c9bc0450-0000-4000-8000-000000001093",
+        "IsDeleted": false,
+        "Name": "Ministro Pistarini International Airport"
+      }
+    },
+    {
+      "ref": "airport-cai-4",
+      "kind": "record",
+      "data": {
+        "Address": "Airport Rd, Heliopolis, Cairo 11776, Egypt",
+        "AirportId": null,
+        "Code": "CAI",
+        "Id": "c9bc0450-0000-4000-8000-000000001094",
+        "IsDeleted": false,
+        "Name": "Cairo International Airport"
+      }
+    },
+    {
+      "ref": "airport-cmn-4",
+      "kind": "record",
+      "data": {
+        "Address": "Nouaceur, Casablanca 27000, Morocco",
+        "AirportId": null,
+        "Code": "CMN",
+        "Id": "c9bc0450-0000-4000-8000-000000001095",
+        "IsDeleted": false,
+        "Name": "Mohammed V International Airport"
+      }
+    },
+    {
+      "ref": "airport-nbo-4",
+      "kind": "record",
+      "data": {
+        "Address": "Embakasi, Nairobi 00501, Kenya",
+        "AirportId": null,
+        "Code": "NBO",
+        "Id": "c9bc0450-0000-4000-8000-000000001096",
+        "IsDeleted": false,
+        "Name": "Jomo Kenyatta International Airport"
+      }
+    },
+    {
+      "ref": "airport-add-4",
+      "kind": "record",
+      "data": {
+        "Address": "Bole Sub-City, Addis Ababa, Ethiopia",
+        "AirportId": null,
+        "Code": "ADD",
+        "Id": "c9bc0450-0000-4000-8000-000000001097",
+        "IsDeleted": false,
+        "Name": "Addis Ababa Bole International Airport"
+      }
+    },
+    {
+      "ref": "airport-los-4",
+      "kind": "record",
+      "data": {
+        "Address": "Ikeja, Lagos 100001, Nigeria",
+        "AirportId": null,
+        "Code": "LOS",
+        "Id": "c9bc0450-0000-4000-8000-000000001098",
+        "IsDeleted": true,
+        "Name": "Murtala Muhammed International Airport"
+      }
+    },
+    {
+      "ref": "airport-cpt-4",
+      "kind": "record",
+      "data": {
+        "Address": "Matroosfontein, Cape Town 7490, South Africa",
+        "AirportId": null,
+        "Code": "CPT",
+        "Id": "c9bc0450-0000-4000-8000-000000001099",
+        "IsDeleted": false,
+        "Name": "Cape Town International Airport"
+      }
+    },
+    {
+      "ref": "airport-ruh-4",
+      "kind": "record",
+      "data": {
+        "Address": "Airport Rd, Riyadh 11411, Saudi Arabia",
+        "AirportId": null,
+        "Code": "RUH",
+        "Id": "c9bc0450-0000-4000-8000-000000001100",
+        "IsDeleted": false,
+        "Name": "King Khalid International Airport"
+      }
+    },
+    {
+      "ref": "airport-jed-4",
+      "kind": "record",
+      "data": {
+        "Address": "Jeddah 21589, Saudi Arabia",
+        "AirportId": null,
+        "Code": "JED",
+        "Id": "c9bc0450-0000-4000-8000-000000001101",
+        "IsDeleted": false,
+        "Name": "King Abdulaziz International Airport"
+      }
+    },
+    {
+      "ref": "airport-tlv-4",
+      "kind": "record",
+      "data": {
+        "Address": "Lod 70100, Israel",
+        "AirportId": null,
+        "Code": "TLV",
+        "Id": "c9bc0450-0000-4000-8000-000000001102",
+        "IsDeleted": false,
+        "Name": "Ben Gurion Airport"
+      }
+    },
+    {
+      "ref": "airport-kwi-4",
+      "kind": "record",
+      "data": {
+        "Address": "Farwaniya, Airport Rd, Kuwait City, Kuwait",
+        "AirportId": null,
+        "Code": "KWI",
+        "Id": "c9bc0450-0000-4000-8000-000000001103",
+        "IsDeleted": false,
+        "Name": "Kuwait International Airport"
+      }
+    },
+    {
+      "ref": "airport-waw-4",
+      "kind": "record",
+      "data": {
+        "Address": "ul. Żwirki i Wigury 1, 00-906 Warsaw, Poland",
+        "AirportId": null,
+        "Code": "WAW",
+        "Id": "c9bc0450-0000-4000-8000-000000001104",
+        "IsDeleted": false,
+        "Name": "Warsaw Chopin Airport"
+      }
+    },
+    {
+      "ref": "airport-prg-4",
+      "kind": "record",
+      "data": {
+        "Address": "Aviatická, 161 08 Prague 6, Czechia",
+        "AirportId": null,
+        "Code": "PRG",
+        "Id": "c9bc0450-0000-4000-8000-000000001105",
+        "IsDeleted": false,
+        "Name": "Václav Havel Airport Prague"
+      }
+    },
+    {
+      "ref": "airport-bud-4",
+      "kind": "record",
+      "data": {
+        "Address": "1185 Budapest, Hungary",
+        "AirportId": null,
+        "Code": "BUD",
+        "Id": "c9bc0450-0000-4000-8000-000000001106",
+        "IsDeleted": false,
+        "Name": "Budapest Ferenc Liszt International Airport"
+      }
+    },
+    {
+      "ref": "airport-bhx-4",
+      "kind": "record",
+      "data": {
+        "Address": "Airport Way, Birmingham B26 3QJ, UK",
+        "AirportId": null,
+        "Code": "BHX",
+        "Id": "c9bc0450-0000-4000-8000-000000001107",
+        "IsDeleted": false,
+        "Name": "Birmingham Airport"
+      }
+    },
+    {
+      "ref": "airport-gla-4",
+      "kind": "record",
+      "data": {
+        "Address": "Paisley PA3 2SW, Scotland",
+        "AirportId": null,
+        "Code": "GLA",
+        "Id": "c9bc0450-0000-4000-8000-000000001108",
+        "IsDeleted": false,
+        "Name": "Glasgow Airport"
+      }
+    },
+    {
+      "ref": "airport-bfs-4",
+      "kind": "record",
+      "data": {
+        "Address": "Belfast BT29 4AB, Northern Ireland",
+        "AirportId": null,
+        "Code": "BFS",
+        "Id": "c9bc0450-0000-4000-8000-000000001109",
+        "IsDeleted": false,
+        "Name": "Belfast International Airport"
+      }
+    },
+    {
+      "ref": "airport-ltn-4",
+      "kind": "record",
+      "data": {
+        "Address": "Airport Way, Luton LU2 9LY, Bedfordshire",
+        "AirportId": null,
+        "Code": "LTN",
+        "Id": "c9bc0450-0000-4000-8000-000000001110",
+        "IsDeleted": false,
+        "Name": "London Luton Airport"
+      }
+    },
+    {
+      "ref": "airport-stn-4",
+      "kind": "record",
+      "data": {
+        "Address": "Bassingbourn Rd, Stansted CM24 1QW, Essex",
+        "AirportId": null,
+        "Code": "STN",
+        "Id": "c9bc0450-0000-4000-8000-000000001111",
+        "IsDeleted": false,
+        "Name": "London Stansted Airport"
+      }
+    },
+    {
+      "ref": "airport-lcy-4",
+      "kind": "record",
+      "data": {
+        "Address": "Hartmann Rd, Silvertown, London E16 2PX",
+        "AirportId": null,
+        "Code": "LCY",
+        "Id": "c9bc0450-0000-4000-8000-000000001112",
+        "IsDeleted": false,
+        "Name": "London City Airport"
+      }
+    },
+    {
+      "ref": "airport-brs-4",
+      "kind": "record",
+      "data": {
+        "Address": "Bristol BS48 3DY, Somerset, UK",
+        "AirportId": null,
+        "Code": "BRS",
+        "Id": "c9bc0450-0000-4000-8000-000000001113",
+        "IsDeleted": false,
+        "Name": "Bristol Airport"
+      }
+    },
+    {
+      "ref": "airport-ncl-4",
+      "kind": "record",
+      "data": {
+        "Address": "Woolsington, Newcastle upon Tyne NE13 8BZ",
+        "AirportId": null,
+        "Code": "NCL",
+        "Id": "c9bc0450-0000-4000-8000-000000001114",
+        "IsDeleted": false,
+        "Name": "Newcastle International Airport"
+      }
+    },
+    {
+      "ref": "airport-lpl-4",
+      "kind": "record",
+      "data": {
+        "Address": "Speke Hall Ave, Liverpool L24 1YD",
+        "AirportId": null,
+        "Code": "LPL",
+        "Id": "c9bc0450-0000-4000-8000-000000001115",
+        "IsDeleted": false,
+        "Name": "Liverpool John Lennon Airport"
+      }
+    },
+    {
+      "ref": "airport-ema-4",
+      "kind": "record",
+      "data": {
+        "Address": "Castle Donington, Derby DE74 2SA",
+        "AirportId": null,
+        "Code": "EMA",
+        "Id": "c9bc0450-0000-4000-8000-000000001116",
+        "IsDeleted": false,
+        "Name": "East Midlands Airport"
+      }
+    },
+    {
+      "ref": "airport-abz-4",
+      "kind": "record",
+      "data": {
+        "Address": "Dyce, Aberdeen AB21 7DU, Scotland",
+        "AirportId": null,
+        "Code": "ABZ",
+        "Id": "c9bc0450-0000-4000-8000-000000001117",
+        "IsDeleted": false,
+        "Name": "Aberdeen International Airport"
+      }
+    },
+    {
+      "ref": "airport-gva-4",
+      "kind": "record",
+      "data": {
+        "Address": "Route de l'Aéroport 21, 1215 Le Grand-Saconnex",
+        "AirportId": null,
+        "Code": "GVA",
+        "Id": "c9bc0450-0000-4000-8000-000000001118",
+        "IsDeleted": false,
+        "Name": "Geneva Airport"
+      }
+    },
+    {
+      "ref": "airport-bsl-4",
+      "kind": "record",
+      "data": {
+        "Address": "68304 Saint-Louis Cedex, France",
+        "AirportId": null,
+        "Code": "BSL",
+        "Id": "c9bc0450-0000-4000-8000-000000001119",
+        "IsDeleted": false,
+        "Name": "EuroAirport Basel Mulhouse Freiburg"
+      }
+    },
+    {
+      "ref": "airport-mxp-4",
+      "kind": "record",
+      "data": {
+        "Address": "21010 Ferno, Varese, Italy",
+        "AirportId": null,
+        "Code": "MXP",
+        "Id": "c9bc0450-0000-4000-8000-000000001120",
+        "IsDeleted": false,
+        "Name": "Milan Malpensa Airport"
+      }
+    },
+    {
+      "ref": "airport-lin-4",
+      "kind": "record",
+      "data": {
+        "Address": "Viale Enrico Forlanini, 20090 Segrate, Milan",
+        "AirportId": null,
+        "Code": "LIN",
+        "Id": "c9bc0450-0000-4000-8000-000000001121",
+        "IsDeleted": false,
+        "Name": "Milan Linate Airport"
+      }
+    },
+    {
+      "ref": "airport-vce-4",
+      "kind": "record",
+      "data": {
+        "Address": "Viale Galileo Galilei 30, 30173 Tessera",
+        "AirportId": null,
+        "Code": "VCE",
+        "Id": "c9bc0450-0000-4000-8000-000000001122",
+        "IsDeleted": false,
+        "Name": "Venice Marco Polo Airport"
+      }
+    },
+    {
+      "ref": "airport-nap-4",
+      "kind": "record",
+      "data": {
+        "Address": "Viale F. Ruffo di Calabria, 80144 Naples",
+        "AirportId": null,
+        "Code": "NAP",
+        "Id": "c9bc0450-0000-4000-8000-000000001123",
+        "IsDeleted": false,
+        "Name": "Naples Capodichino Airport"
+      }
+    },
+    {
+      "ref": "airport-blq-4",
+      "kind": "record",
+      "data": {
+        "Address": "Via del Triumvirato 84, 40132 Bologna",
+        "AirportId": null,
+        "Code": "BLQ",
+        "Id": "c9bc0450-0000-4000-8000-000000001124",
+        "IsDeleted": false,
+        "Name": "Bologna Guglielmo Marconi Airport"
+      }
+    },
+    {
+      "ref": "airport-pmi-4",
+      "kind": "record",
+      "data": {
+        "Address": "Carretera Ma-19, 07611 Palma, Mallorca",
+        "AirportId": null,
+        "Code": "PMI",
+        "Id": "c9bc0450-0000-4000-8000-000000001125",
+        "IsDeleted": false,
+        "Name": "Palma de Mallorca Airport"
+      }
+    },
+    {
+      "ref": "airport-agp-4",
+      "kind": "record",
+      "data": {
+        "Address": "Av. Comandante García Morato, 29004 Málaga",
+        "AirportId": null,
+        "Code": "AGP",
+        "Id": "c9bc0450-0000-4000-8000-000000001126",
+        "IsDeleted": false,
+        "Name": "Málaga-Costa del Sol Airport"
+      }
+    },
+    {
+      "ref": "airport-vlc-4",
+      "kind": "record",
+      "data": {
+        "Address": "Carretera del Aeropuerto, 46940 Manises",
+        "AirportId": null,
+        "Code": "VLC",
+        "Id": "c9bc0450-0000-4000-8000-000000001127",
+        "IsDeleted": false,
+        "Name": "Valencia Airport"
+      }
+    },
+    {
+      "ref": "airport-svq-4",
+      "kind": "record",
+      "data": {
+        "Address": "Autovía A-4, km 532, 41020 Seville",
+        "AirportId": null,
+        "Code": "SVQ",
+        "Id": "c9bc0450-0000-4000-8000-000000001128",
+        "IsDeleted": false,
+        "Name": "Seville San Pablo Airport"
+      }
+    },
+    {
+      "ref": "airport-opo-4",
+      "kind": "record",
+      "data": {
+        "Address": "4470-558 Maia, Porto, Portugal",
+        "AirportId": null,
+        "Code": "OPO",
+        "Id": "c9bc0450-0000-4000-8000-000000001129",
+        "IsDeleted": false,
+        "Name": "Porto Francisco Sá Carneiro Airport"
+      }
+    },
+    {
+      "ref": "airport-fao-4",
+      "kind": "record",
+      "data": {
+        "Address": "8001-701 Faro, Algarve, Portugal",
+        "AirportId": null,
+        "Code": "FAO",
+        "Id": "c9bc0450-0000-4000-8000-000000001130",
+        "IsDeleted": false,
+        "Name": "Faro Airport"
+      }
+    },
+    {
+      "ref": "airport-ham-4",
+      "kind": "record",
+      "data": {
+        "Address": "Flughafenstraße 1-3, 22335 Hamburg",
+        "AirportId": null,
+        "Code": "HAM",
+        "Id": "c9bc0450-0000-4000-8000-000000001131",
+        "IsDeleted": false,
+        "Name": "Hamburg Airport"
+      }
+    },
+    {
+      "ref": "airport-dus-4",
+      "kind": "record",
+      "data": {
+        "Address": "Flughafenstraße 105, 40474 Düsseldorf",
+        "AirportId": null,
+        "Code": "DUS",
+        "Id": "c9bc0450-0000-4000-8000-000000001132",
+        "IsDeleted": false,
+        "Name": "Düsseldorf Airport"
+      }
+    },
+    {
+      "ref": "airport-cgn-4",
+      "kind": "record",
+      "data": {
+        "Address": "Kennedystraße, 51147 Köln, Germany",
+        "AirportId": null,
+        "Code": "CGN",
+        "Id": "c9bc0450-0000-4000-8000-000000001133",
+        "IsDeleted": false,
+        "Name": "Cologne Bonn Airport"
+      }
+    },
+    {
+      "ref": "airport-str-4",
+      "kind": "record",
+      "data": {
+        "Address": "Flughafenstraße 32, 70629 Stuttgart",
+        "AirportId": null,
+        "Code": "STR",
+        "Id": "c9bc0450-0000-4000-8000-000000001134",
+        "IsDeleted": false,
+        "Name": "Stuttgart Airport"
+      }
+    },
+    {
+      "ref": "airport-ber-4",
+      "kind": "record",
+      "data": {
+        "Address": "Willy-Brandt-Platz, 12529 Schönefeld",
+        "AirportId": null,
+        "Code": "BER",
+        "Id": "c9bc0450-0000-4000-8000-000000001135",
+        "IsDeleted": false,
+        "Name": "Berlin Brandenburg Airport"
+      }
+    },
+    {
+      "ref": "airport-nce-4",
+      "kind": "record",
+      "data": {
+        "Address": "Rue Costes et Bellonte, 06206 Nice",
+        "AirportId": null,
+        "Code": "NCE",
+        "Id": "c9bc0450-0000-4000-8000-000000001136",
+        "IsDeleted": false,
+        "Name": "Nice Côte d'Azur Airport"
+      }
+    },
+    {
+      "ref": "airport-lys-4",
+      "kind": "record",
+      "data": {
+        "Address": "69125 Colombier-Saugnieu, France",
+        "AirportId": null,
+        "Code": "LYS",
+        "Id": "c9bc0450-0000-4000-8000-000000001137",
+        "IsDeleted": false,
+        "Name": "Lyon-Saint Exupéry Airport"
+      }
+    },
+    {
+      "ref": "airport-mrs-4",
+      "kind": "record",
+      "data": {
+        "Address": "13700 Marignane, France",
+        "AirportId": null,
+        "Code": "MRS",
+        "Id": "c9bc0450-0000-4000-8000-000000001138",
+        "IsDeleted": false,
+        "Name": "Marseille Provence Airport"
+      }
+    },
+    {
+      "ref": "airport-tls-4",
+      "kind": "record",
+      "data": {
+        "Address": "31703 Blagnac Cedex, France",
+        "AirportId": null,
+        "Code": "TLS",
+        "Id": "c9bc0450-0000-4000-8000-000000001139",
+        "IsDeleted": false,
+        "Name": "Toulouse-Blagnac Airport"
+      }
+    },
+    {
+      "ref": "airport-got-4",
+      "kind": "record",
+      "data": {
+        "Address": "438 80 Landvetter, Sweden",
+        "AirportId": null,
+        "Code": "GOT",
+        "Id": "c9bc0450-0000-4000-8000-000000001140",
+        "IsDeleted": false,
+        "Name": "Gothenburg Landvetter Airport"
+      }
+    },
+    {
+      "ref": "airport-bgo-4",
+      "kind": "record",
+      "data": {
+        "Address": "Flyplassvegen 555, 5258 Blomsterdalen",
+        "AirportId": null,
+        "Code": "BGO",
+        "Id": "c9bc0450-0000-4000-8000-000000001141",
+        "IsDeleted": false,
+        "Name": "Bergen Flesland Airport"
+      }
+    },
+    {
+      "ref": "airport-trd-4",
+      "kind": "record",
+      "data": {
+        "Address": "7500 Stjørdal, Norway",
+        "AirportId": null,
+        "Code": "TRD",
+        "Id": "c9bc0450-0000-4000-8000-000000001142",
+        "IsDeleted": false,
+        "Name": "Trondheim Værnes Airport"
+      }
+    },
+    {
+      "ref": "airport-kef-4",
+      "kind": "record",
+      "data": {
+        "Address": "235 Keflavíkurflugvöllur, Iceland",
+        "AirportId": null,
+        "Code": "KEF",
+        "Id": "c9bc0450-0000-4000-8000-000000001143",
+        "IsDeleted": false,
+        "Name": "Keflavík International Airport"
+      }
+    },
+    {
+      "ref": "airport-rix-4",
+      "kind": "record",
+      "data": {
+        "Address": "Mārupes novads, LV-1053 Riga, Latvia",
+        "AirportId": null,
+        "Code": "RIX",
+        "Id": "c9bc0450-0000-4000-8000-000000001144",
+        "IsDeleted": false,
+        "Name": "Riga International Airport"
+      }
+    },
+    {
+      "ref": "airport-vno-4",
+      "kind": "record",
+      "data": {
+        "Address": "Rodūnios kelias 10A, 02189 Vilnius",
+        "AirportId": null,
+        "Code": "VNO",
+        "Id": "c9bc0450-0000-4000-8000-000000001145",
+        "IsDeleted": false,
+        "Name": "Vilnius Airport"
+      }
+    },
+    {
+      "ref": "airport-tll-4",
+      "kind": "record",
+      "data": {
+        "Address": "Lennujaama 2, 11101 Tallinn, Estonia",
+        "AirportId": null,
+        "Code": "TLL",
+        "Id": "c9bc0450-0000-4000-8000-000000001146",
+        "IsDeleted": false,
+        "Name": "Tallinn Lennart Meri Airport"
+      }
+    },
+    {
+      "ref": "airport-otp-4",
+      "kind": "record",
+      "data": {
+        "Address": "Calea Bucureștilor 224E, Otopeni 075150",
+        "AirportId": null,
+        "Code": "OTP",
+        "Id": "c9bc0450-0000-4000-8000-000000001147",
+        "IsDeleted": false,
+        "Name": "Bucharest Henri Coandă Airport"
+      }
+    },
+    {
+      "ref": "airport-sof-4",
+      "kind": "record",
+      "data": {
+        "Address": "1540 Sofia, Bulgaria",
+        "AirportId": null,
+        "Code": "SOF",
+        "Id": "c9bc0450-0000-4000-8000-000000001148",
+        "IsDeleted": false,
+        "Name": "Sofia Airport"
+      }
+    },
+    {
+      "ref": "airport-beg-4",
+      "kind": "record",
+      "data": {
+        "Address": "Aerodrom Beograd 59, 11180 Surčin",
+        "AirportId": null,
+        "Code": "BEG",
+        "Id": "c9bc0450-0000-4000-8000-000000001149",
+        "IsDeleted": false,
+        "Name": "Belgrade Nikola Tesla Airport"
+      }
+    },
+    {
+      "ref": "airport-zag-4",
+      "kind": "record",
+      "data": {
+        "Address": "Rudolfa Fizira 21, 10410 Velika Gorica",
+        "AirportId": null,
+        "Code": "ZAG",
+        "Id": "c9bc0450-0000-4000-8000-000000001150",
+        "IsDeleted": false,
+        "Name": "Zagreb Franjo Tuđman Airport"
+      }
+    },
+    {
+      "ref": "airport-lju-4",
+      "kind": "record",
+      "data": {
+        "Address": "Zgornji Brnik 130A, 4210 Brnik, Slovenia",
+        "AirportId": null,
+        "Code": "LJU",
+        "Id": "c9bc0450-0000-4000-8000-000000001151",
+        "IsDeleted": true,
+        "Name": "Ljubljana Jože Pučnik Airport"
+      }
+    },
+    {
+      "ref": "airport-dbv-4",
+      "kind": "record",
+      "data": {
+        "Address": "Konavle, 20213 Čilipi, Croatia",
+        "AirportId": null,
+        "Code": "DBV",
+        "Id": "c9bc0450-0000-4000-8000-000000001152",
+        "IsDeleted": false,
+        "Name": "Dubrovnik Airport"
+      }
+    },
+    {
+      "ref": "airport-skg-4",
+      "kind": "record",
+      "data": {
+        "Address": "Terminal Rd, 551 03 Thessaloniki, Greece",
+        "AirportId": null,
+        "Code": "SKG",
+        "Id": "c9bc0450-0000-4000-8000-000000001153",
+        "IsDeleted": false,
+        "Name": "Thessaloniki Makedonia Airport"
+      }
+    },
+    {
+      "ref": "airport-mla-4",
+      "kind": "record",
+      "data": {
+        "Address": "Luqa LQA 4000, Malta",
+        "AirportId": null,
+        "Code": "MLA",
+        "Id": "c9bc0450-0000-4000-8000-000000001154",
+        "IsDeleted": false,
+        "Name": "Malta International Airport"
+      }
+    },
+    {
+      "ref": "airport-lca-4",
+      "kind": "record",
+      "data": {
+        "Address": "Larnaca 6650, Cyprus",
+        "AirportId": null,
+        "Code": "LCA",
+        "Id": "c9bc0450-0000-4000-8000-000000001155",
+        "IsDeleted": false,
+        "Name": "Larnaca International Airport"
+      }
+    },
+    {
+      "ref": "airport-ibz-4",
+      "kind": "record",
+      "data": {
+        "Address": "Carretera Aeropuerto, 07817 Sant Josep, Ibiza",
+        "AirportId": null,
+        "Code": "IBZ",
+        "Id": "c9bc0450-0000-4000-8000-000000001156",
+        "IsDeleted": false,
+        "Name": "Ibiza Airport"
+      }
+    },
+    {
+      "ref": "airport-blr-4",
+      "kind": "record",
+      "data": {
+        "Address": "Devanahalli, Bengaluru, Karnataka 560300, India",
+        "AirportId": null,
+        "Code": "BLR",
+        "Id": "c9bc0450-0000-4000-8000-000000001157",
+        "IsDeleted": false,
+        "Name": "Kempegowda International Airport"
+      }
+    },
+    {
+      "ref": "airport-hyd-4",
+      "kind": "record",
+      "data": {
+        "Address": "Shamshabad, Hyderabad, Telangana 500409, India",
+        "AirportId": null,
+        "Code": "HYD",
+        "Id": "c9bc0450-0000-4000-8000-000000001158",
+        "IsDeleted": false,
+        "Name": "Rajiv Gandhi International Airport"
+      }
+    },
+    {
+      "ref": "airport-maa-4",
+      "kind": "record",
+      "data": {
+        "Address": "GST Rd, Meenambakkam, Chennai 600027, India",
+        "AirportId": null,
+        "Code": "MAA",
+        "Id": "c9bc0450-0000-4000-8000-000000001159",
+        "IsDeleted": false,
+        "Name": "Chennai International Airport"
+      }
+    },
+    {
+      "ref": "airport-ccu-4",
+      "kind": "record",
+      "data": {
+        "Address": "Netaji Subhas Rd, Dum Dum, Kolkata 700052",
+        "AirportId": null,
+        "Code": "CCU",
+        "Id": "c9bc0450-0000-4000-8000-000000001160",
+        "IsDeleted": false,
+        "Name": "Netaji Subhas Chandra Bose International Airport"
+      }
+    },
+    {
+      "ref": "airport-cmb-4",
+      "kind": "record",
+      "data": {
+        "Address": "Katunayake, Negombo 11450, Sri Lanka",
+        "AirportId": null,
+        "Code": "CMB",
+        "Id": "c9bc0450-0000-4000-8000-000000001161",
+        "IsDeleted": false,
+        "Name": "Bandaranaike International Airport"
+      }
+    },
+    {
+      "ref": "airport-dac-4",
+      "kind": "record",
+      "data": {
+        "Address": "Airport Rd, Dhaka 1229, Bangladesh",
+        "AirportId": null,
+        "Code": "DAC",
+        "Id": "c9bc0450-0000-4000-8000-000000001162",
+        "IsDeleted": false,
+        "Name": "Hazrat Shahjalal International Airport"
+      }
+    },
+    {
+      "ref": "airport-khi-4",
+      "kind": "record",
+      "data": {
+        "Address": "Airport Rd, Karachi 75200, Pakistan",
+        "AirportId": null,
+        "Code": "KHI",
+        "Id": "c9bc0450-0000-4000-8000-000000001163",
+        "IsDeleted": false,
+        "Name": "Jinnah International Airport"
+      }
+    },
+    {
+      "ref": "airport-isb-4",
+      "kind": "record",
+      "data": {
+        "Address": "GT Rd, Fateh Jang, Islamabad, Pakistan",
+        "AirportId": null,
+        "Code": "ISB",
+        "Id": "c9bc0450-0000-4000-8000-000000001164",
+        "IsDeleted": false,
+        "Name": "Islamabad International Airport"
+      }
+    },
+    {
+      "ref": "airport-lhe-4",
+      "kind": "record",
+      "data": {
+        "Address": "Allama Iqbal Rd, Lahore 54810, Pakistan",
+        "AirportId": null,
+        "Code": "LHE",
+        "Id": "c9bc0450-0000-4000-8000-000000001165",
+        "IsDeleted": false,
+        "Name": "Allama Iqbal International Airport"
+      }
+    },
+    {
+      "ref": "airport-ktm-4",
+      "kind": "record",
+      "data": {
+        "Address": "Gauchar, Kathmandu 44600, Nepal",
+        "AirportId": null,
+        "Code": "KTM",
+        "Id": "c9bc0450-0000-4000-8000-000000001166",
+        "IsDeleted": false,
+        "Name": "Tribhuvan International Airport"
+      }
+    },
+    {
+      "ref": "airport-mle-4",
+      "kind": "record",
+      "data": {
+        "Address": "Hulhulé Island, Malé 22000, Maldives",
+        "AirportId": null,
+        "Code": "MLE",
+        "Id": "c9bc0450-0000-4000-8000-000000001167",
+        "IsDeleted": false,
+        "Name": "Velana International Airport"
+      }
+    },
+    {
+      "ref": "airport-pen-4",
+      "kind": "record",
+      "data": {
+        "Address": "Bayan Lepas, 11900 Penang, Malaysia",
+        "AirportId": null,
+        "Code": "PEN",
+        "Id": "c9bc0450-0000-4000-8000-000000001168",
+        "IsDeleted": false,
+        "Name": "Penang International Airport"
+      }
+    },
+    {
+      "ref": "airport-dps-4",
+      "kind": "record",
+      "data": {
+        "Address": "Jl. Raya Gusti Ngurah Rai, Tuban, Bali 80362",
+        "AirportId": null,
+        "Code": "DPS",
+        "Id": "c9bc0450-0000-4000-8000-000000001169",
+        "IsDeleted": false,
+        "Name": "Ngurah Rai International Airport"
+      }
+    },
+    {
+      "ref": "airport-hkt-4",
+      "kind": "record",
+      "data": {
+        "Address": "888 Moo 6, Mai Khao, Thalang, Phuket 83110",
+        "AirportId": null,
+        "Code": "HKT",
+        "Id": "c9bc0450-0000-4000-8000-000000001170",
+        "IsDeleted": false,
+        "Name": "Phuket International Airport"
+      }
+    },
+    {
+      "ref": "airport-cnx-4",
+      "kind": "record",
+      "data": {
+        "Address": "Suthep, Mueang, Chiang Mai 50200, Thailand",
+        "AirportId": null,
+        "Code": "CNX",
+        "Id": "c9bc0450-0000-4000-8000-000000001171",
+        "IsDeleted": false,
+        "Name": "Chiang Mai International Airport"
+      }
+    },
+    {
+      "ref": "airport-fuk-4",
+      "kind": "record",
+      "data": {
+        "Address": "778-1 Shimousui, Hakata-ku, Fukuoka 812-0003",
+        "AirportId": null,
+        "Code": "FUK",
+        "Id": "c9bc0450-0000-4000-8000-000000001172",
+        "IsDeleted": false,
+        "Name": "Fukuoka Airport"
+      }
+    },
+    {
+      "ref": "airport-ngo-4",
+      "kind": "record",
+      "data": {
+        "Address": "1-1 Centrair, Tokoname, Aichi 479-0881, Japan",
+        "AirportId": null,
+        "Code": "NGO",
+        "Id": "c9bc0450-0000-4000-8000-000000001173",
+        "IsDeleted": false,
+        "Name": "Chubu Centrair International Airport"
+      }
+    },
+    {
+      "ref": "airport-cts-4",
+      "kind": "record",
+      "data": {
+        "Address": "Bibi, Chitose, Hokkaido 066-0012, Japan",
+        "AirportId": null,
+        "Code": "CTS",
+        "Id": "c9bc0450-0000-4000-8000-000000001174",
+        "IsDeleted": false,
+        "Name": "New Chitose Airport"
+      }
+    },
+    {
+      "ref": "airport-oka-4",
+      "kind": "record",
+      "data": {
+        "Address": "640 Kagamizu, Naha, Okinawa 901-0142, Japan",
+        "AirportId": null,
+        "Code": "OKA",
+        "Id": "c9bc0450-0000-4000-8000-000000001175",
+        "IsDeleted": false,
+        "Name": "Naha Airport"
+      }
+    },
+    {
+      "ref": "airport-pus-4",
+      "kind": "record",
+      "data": {
+        "Address": "108 Gonghang-ro, Gangseo-gu, Busan, Korea",
+        "AirportId": null,
+        "Code": "PUS",
+        "Id": "c9bc0450-0000-4000-8000-000000001176",
+        "IsDeleted": false,
+        "Name": "Gimhae International Airport"
+      }
+    },
+    {
+      "ref": "airport-cju-4",
+      "kind": "record",
+      "data": {
+        "Address": "2 Gonghang-ro, Jeju-si, Jeju 63208, Korea",
+        "AirportId": null,
+        "Code": "CJU",
+        "Id": "c9bc0450-0000-4000-8000-000000001177",
+        "IsDeleted": false,
+        "Name": "Jeju International Airport"
+      }
+    },
+    {
+      "ref": "airport-szx-4",
+      "kind": "record",
+      "data": {
+        "Address": "Bao'an District, Shenzhen 518128, China",
+        "AirportId": null,
+        "Code": "SZX",
+        "Id": "c9bc0450-0000-4000-8000-000000001178",
+        "IsDeleted": false,
+        "Name": "Shenzhen Bao'an International Airport"
+      }
+    },
+    {
+      "ref": "airport-ctu-4",
+      "kind": "record",
+      "data": {
+        "Address": "Shuangliu District, Chengdu 610202, China",
+        "AirportId": null,
+        "Code": "CTU",
+        "Id": "c9bc0450-0000-4000-8000-000000001179",
+        "IsDeleted": false,
+        "Name": "Chengdu Shuangliu International Airport"
+      }
+    },
+    {
+      "ref": "airport-xiy-4",
+      "kind": "record",
+      "data": {
+        "Address": "Weicheng District, Xianyang, Shaanxi, China",
+        "AirportId": null,
+        "Code": "XIY",
+        "Id": "c9bc0450-0000-4000-8000-000000001180",
+        "IsDeleted": false,
+        "Name": "Xi'an Xianyang International Airport"
+      }
+    },
+    {
+      "ref": "airport-mct-4",
+      "kind": "record",
+      "data": {
+        "Address": "Seeb, Muscat 111, Oman",
+        "AirportId": null,
+        "Code": "MCT",
+        "Id": "c9bc0450-0000-4000-8000-000000001181",
+        "IsDeleted": false,
+        "Name": "Muscat International Airport"
+      }
+    },
+    {
+      "ref": "airport-bah-4",
+      "kind": "record",
+      "data": {
+        "Address": "Muharraq, Manama, Bahrain",
+        "AirportId": null,
+        "Code": "BAH",
+        "Id": "c9bc0450-0000-4000-8000-000000001182",
+        "IsDeleted": false,
+        "Name": "Bahrain International Airport"
+      }
+    },
+    {
+      "ref": "airport-amm-4",
+      "kind": "record",
+      "data": {
+        "Address": "Queen Alia Airport Rd, Zizya, Amman, Jordan",
+        "AirportId": null,
+        "Code": "AMM",
+        "Id": "c9bc0450-0000-4000-8000-000000001183",
+        "IsDeleted": false,
+        "Name": "Queen Alia International Airport"
+      }
+    },
+    {
+      "ref": "airport-bey-4",
+      "kind": "record",
+      "data": {
+        "Address": "Khalde, Airport Rd, Beirut 1107, Lebanon",
+        "AirportId": null,
+        "Code": "BEY",
+        "Id": "c9bc0450-0000-4000-8000-000000001184",
+        "IsDeleted": true,
+        "Name": "Beirut–Rafic Hariri International Airport"
+      }
+    },
+    {
+      "ref": "airport-dmm-4",
+      "kind": "record",
+      "data": {
+        "Address": "King Fahd Airport, Dammam 34437, Saudi Arabia",
+        "AirportId": null,
+        "Code": "DMM",
+        "Id": "c9bc0450-0000-4000-8000-000000001185",
+        "IsDeleted": false,
+        "Name": "King Fahd International Airport"
+      }
+    },
+    {
+      "ref": "airport-shj-4",
+      "kind": "record",
+      "data": {
+        "Address": "Airport Rd, Sharjah, United Arab Emirates",
+        "AirportId": null,
+        "Code": "SHJ",
+        "Id": "c9bc0450-0000-4000-8000-000000001186",
+        "IsDeleted": false,
+        "Name": "Sharjah International Airport"
+      }
+    },
+    {
+      "ref": "airport-tun-4",
+      "kind": "record",
+      "data": {
+        "Address": "Route de l'Aéroport, Tunis 1080, Tunisia",
+        "AirportId": null,
+        "Code": "TUN",
+        "Id": "c9bc0450-0000-4000-8000-000000001187",
+        "IsDeleted": false,
+        "Name": "Tunis–Carthage International Airport"
+      }
+    },
+    {
+      "ref": "airport-alg-4",
+      "kind": "record",
+      "data": {
+        "Address": "Dar El Beida, Algiers 16033, Algeria",
+        "AirportId": null,
+        "Code": "ALG",
+        "Id": "c9bc0450-0000-4000-8000-000000001188",
+        "IsDeleted": false,
+        "Name": "Houari Boumediene Airport"
+      }
+    },
+    {
+      "ref": "airport-acc-4",
+      "kind": "record",
+      "data": {
+        "Address": "Airport Rd, Accra, Ghana",
+        "AirportId": null,
+        "Code": "ACC",
+        "Id": "c9bc0450-0000-4000-8000-000000001189",
+        "IsDeleted": false,
+        "Name": "Kotoka International Airport"
+      }
+    },
+    {
+      "ref": "airport-dkr-4",
+      "kind": "record",
+      "data": {
+        "Address": "Diass, Blaise Diagne, Dakar, Senegal",
+        "AirportId": null,
+        "Code": "DKR",
+        "Id": "c9bc0450-0000-4000-8000-000000001190",
+        "IsDeleted": false,
+        "Name": "Blaise Diagne International Airport"
+      }
+    },
+    {
+      "ref": "airport-dar-4",
+      "kind": "record",
+      "data": {
+        "Address": "Nyerere Rd, Ilala, Dar es Salaam, Tanzania",
+        "AirportId": null,
+        "Code": "DAR",
+        "Id": "c9bc0450-0000-4000-8000-000000001191",
+        "IsDeleted": false,
+        "Name": "Julius Nyerere International Airport"
+      }
+    },
+    {
+      "ref": "airport-ebb-4",
+      "kind": "record",
+      "data": {
+        "Address": "Entebbe Rd, Entebbe, Uganda",
+        "AirportId": null,
+        "Code": "EBB",
+        "Id": "c9bc0450-0000-4000-8000-000000001192",
+        "IsDeleted": false,
+        "Name": "Entebbe International Airport"
+      }
+    },
+    {
+      "ref": "airport-mru-4",
+      "kind": "record",
+      "data": {
+        "Address": "Plaine Magnien, SSR Intl, Mauritius",
+        "AirportId": null,
+        "Code": "MRU",
+        "Id": "c9bc0450-0000-4000-8000-000000001193",
+        "IsDeleted": false,
+        "Name": "Sir Seewoosagur Ramgoolam International Airport"
+      }
+    },
+    {
+      "ref": "airport-lux-4",
+      "kind": "record",
+      "data": {
+        "Address": "Route de Trèves, 1273 Findel, Luxembourg",
+        "AirportId": null,
+        "Code": "LUX",
+        "Id": "c9bc0450-0000-4000-8000-000000001194",
+        "IsDeleted": false,
+        "Name": "Luxembourg Findel Airport"
+      }
+    },
+    {
+      "ref": "airport-nue-4",
+      "kind": "record",
+      "data": {
+        "Address": "Flughafenstraße 100, 90411 Nuremberg, Germany",
+        "AirportId": null,
+        "Code": "NUE",
+        "Id": "c9bc0450-0000-4000-8000-000000001195",
+        "IsDeleted": false,
+        "Name": "Nuremberg Airport"
+      }
+    },
+    {
+      "ref": "airport-haj-4",
+      "kind": "record",
+      "data": {
+        "Address": "Petzelstraße 84, 30855 Langenhagen, Germany",
+        "AirportId": null,
+        "Code": "HAJ",
+        "Id": "c9bc0450-0000-4000-8000-000000001196",
+        "IsDeleted": false,
+        "Name": "Hannover Airport"
+      }
+    },
+    {
+      "ref": "airport-lej-4",
+      "kind": "record",
+      "data": {
+        "Address": "04435 Schkeuditz, Leipzig, Germany",
+        "AirportId": null,
+        "Code": "LEJ",
+        "Id": "c9bc0450-0000-4000-8000-000000001197",
+        "IsDeleted": false,
+        "Name": "Leipzig/Halle Airport"
+      }
+    },
+    {
+      "ref": "airport-krk-4",
+      "kind": "record",
+      "data": {
+        "Address": "ul. Medweckiego 1, 32-083 Balice, Poland",
+        "AirportId": null,
+        "Code": "KRK",
+        "Id": "c9bc0450-0000-4000-8000-000000001198",
+        "IsDeleted": false,
+        "Name": "Kraków John Paul II Airport"
+      }
+    },
+    {
+      "ref": "airport-gdn-4",
+      "kind": "record",
+      "data": {
+        "Address": "ul. Słowackiego 200, 80-298 Gdańsk, Poland",
+        "AirportId": null,
+        "Code": "GDN",
+        "Id": "c9bc0450-0000-4000-8000-000000001199",
+        "IsDeleted": false,
+        "Name": "Gdańsk Lech Wałęsa Airport"
+      }
+    },
+    {
+      "ref": "airport-trn-4",
+      "kind": "record",
+      "data": {
+        "Address": "Strada Aeroporto 12, 10072 Caselle, Turin",
+        "AirportId": null,
+        "Code": "TRN",
+        "Id": "c9bc0450-0000-4000-8000-000000001200",
+        "IsDeleted": false,
+        "Name": "Turin Airport"
+      }
+    },
+    {
+      "ref": "airport-psa-4",
+      "kind": "record",
+      "data": {
+        "Address": "Via Gino Simi, 56121 Pisa, Italy",
+        "AirportId": null,
+        "Code": "PSA",
+        "Id": "c9bc0450-0000-4000-8000-000000001201",
+        "IsDeleted": false,
+        "Name": "Pisa International Airport"
+      }
+    },
+    {
+      "ref": "airport-cta-4",
+      "kind": "record",
+      "data": {
+        "Address": "Via Fontanarossa, 95121 Catania, Italy",
+        "AirportId": null,
+        "Code": "CTA",
+        "Id": "c9bc0450-0000-4000-8000-000000001202",
+        "IsDeleted": false,
+        "Name": "Catania–Fontanarossa Airport"
+      }
+    },
+    {
+      "ref": "airport-pmo-4",
+      "kind": "record",
+      "data": {
+        "Address": "Via Francesco Crispi, 90045 Cinisi, Palermo",
+        "AirportId": null,
+        "Code": "PMO",
+        "Id": "c9bc0450-0000-4000-8000-000000001203",
+        "IsDeleted": false,
+        "Name": "Falcone–Borsellino Airport"
+      }
+    },
+    {
+      "ref": "airport-bio-4",
+      "kind": "record",
+      "data": {
+        "Address": "Sondika, 48180 Loiu, Bizkaia, Spain",
+        "AirportId": null,
+        "Code": "BIO",
+        "Id": "c9bc0450-0000-4000-8000-000000001204",
+        "IsDeleted": false,
+        "Name": "Bilbao Airport"
+      }
+    },
+    {
+      "ref": "airport-lpa-4",
+      "kind": "record",
+      "data": {
+        "Address": "Carretera GC-1, 35230 Telde, Las Palmas, Spain",
+        "AirportId": null,
+        "Code": "LPA",
+        "Id": "c9bc0450-0000-4000-8000-000000001205",
+        "IsDeleted": false,
+        "Name": "Gran Canaria Airport"
+      }
+    },
+    {
+      "ref": "airport-tfs-4",
+      "kind": "record",
+      "data": {
+        "Address": "38610 Granadilla de Abona, Tenerife, Spain",
+        "AirportId": null,
+        "Code": "TFS",
+        "Id": "c9bc0450-0000-4000-8000-000000001206",
+        "IsDeleted": false,
+        "Name": "Tenerife South Airport"
+      }
+    },
+    {
+      "ref": "airport-svo-4",
+      "kind": "record",
+      "data": {
+        "Address": "Sheremetyevo, Khimki, Moscow Region, Russia",
+        "AirportId": null,
+        "Code": "SVO",
+        "Id": "c9bc0450-0000-4000-8000-000000001207",
+        "IsDeleted": false,
+        "Name": "Sheremetyevo International Airport"
+      }
+    },
+    {
+      "ref": "airport-tfn-4",
+      "kind": "record",
+      "data": {
+        "Address": "Camino Las Mercedes, 38206 La Laguna, Spain",
+        "AirportId": null,
+        "Code": "TFN",
+        "Id": "c9bc0450-0000-4000-8000-000000001208",
+        "IsDeleted": false,
+        "Name": "Tenerife North Airport"
+      }
+    },
+    {
+      "ref": "airport-dca-4",
+      "kind": "record",
+      "data": {
+        "Address": "2401 Smith Blvd, Arlington, VA 22202",
+        "AirportId": null,
+        "Code": "DCA",
+        "Id": "c9bc0450-0000-4000-8000-000000001209",
+        "IsDeleted": true,
+        "Name": "Ronald Reagan Washington National"
+      }
+    }
+  ],
+  "invalid": [
+    {
+      "ref": "airportreadmodel-rejection-1",
+      "kind": "rejection",
+      "data": {
+        "Address": "",
+        "AirportId": "00000000-0000-4000-8000-000000000000",
+        "Code": "",
+        "Id": null,
+        "IsDeleted": true,
+        "Name": ""
+      },
+      "violates": {
+        "field": "Id",
+        "rule": "`Id` is declared NOT NULL"
+      }
+    },
+    {
+      "ref": "airportreadmodel-rejection-2",
+      "kind": "rejection",
+      "data": {
+        "Address": "",
+        "AirportId": "00000000-0000-4000-8000-000000000000",
+        "Code": "",
+        "Id": "not-a-uuid",
+        "IsDeleted": true,
+        "Name": ""
+      },
+      "violates": {
+        "field": "Id",
+        "rule": "violates a declared constraint on `Id`"
+      }
+    },
+    {
+      "ref": "airportreadmodel-rejection-3",
+      "kind": "rejection",
+      "data": {
+        "Address": "",
+        "AirportId": null,
+        "Code": "",
+        "Id": "00000000-0000-4000-8000-000000000000",
+        "IsDeleted": true,
+        "Name": ""
+      },
+      "violates": {
+        "field": "AirportId",
+        "rule": "`AirportId` is declared NOT NULL"
+      }
+    },
+    {
+      "ref": "airportreadmodel-rejection-4",
+      "kind": "rejection",
+      "data": {
+        "Address": "",
+        "AirportId": "not-a-uuid",
+        "Code": "",
+        "Id": "00000000-0000-4000-8000-000000000000",
+        "IsDeleted": true,
+        "Name": ""
+      },
+      "violates": {
+        "field": "AirportId",
+        "rule": "violates a declared constraint on `AirportId`"
+      }
+    },
+    {
+      "ref": "airportreadmodel-rejection-5",
+      "kind": "rejection",
+      "data": {
+        "Address": "",
+        "AirportId": "00000000-0000-4000-8000-000000000000",
+        "Code": "",
+        "Id": "00000000-0000-4000-8000-000000000000",
+        "IsDeleted": true,
+        "Name": null
+      },
+      "violates": {
+        "field": "Name",
+        "rule": "`Name` is declared NOT NULL"
+      }
+    },
+    {
+      "ref": "airportreadmodel-rejection-6",
+      "kind": "rejection",
+      "data": {
+        "Address": null,
+        "AirportId": "00000000-0000-4000-8000-000000000000",
+        "Code": "",
+        "Id": "00000000-0000-4000-8000-000000000000",
+        "IsDeleted": true,
+        "Name": ""
+      },
+      "violates": {
+        "field": "Address",
+        "rule": "`Address` is declared NOT NULL"
+      }
+    },
+    {
+      "ref": "airportreadmodel-rejection-7",
+      "kind": "rejection",
+      "data": {
+        "Address": "",
+        "AirportId": "00000000-0000-4000-8000-000000000000",
+        "Code": null,
+        "Id": "00000000-0000-4000-8000-000000000000",
+        "IsDeleted": true,
+        "Name": ""
+      },
+      "violates": {
+        "field": "Code",
+        "rule": "`Code` is declared NOT NULL"
+      }
+    },
+    {
+      "ref": "airportreadmodel-rejection-8",
+      "kind": "rejection",
+      "data": {
+        "Address": "",
+        "AirportId": "00000000-0000-4000-8000-000000000000",
+        "Code": "",
+        "Id": "00000000-0000-4000-8000-000000000000",
+        "IsDeleted": null,
+        "Name": ""
+      },
+      "violates": {
+        "field": "IsDeleted",
+        "rule": "`IsDeleted` is declared NOT NULL"
+      }
+    }
+  ],
+  "coverage": [
+    {
+      "ref": "airportreadmodel-case-1",
+      "kind": "case",
+      "data": {
+        "Address": "",
+        "AirportId": "00000000-0000-4000-8000-000000000000",
+        "Code": "",
+        "Id": "00000000-0000-4000-8000-000000000000",
+        "IsDeleted": true,
+        "Name": ""
+      },
+      "case": "covering-0001"
+    },
+    {
+      "ref": "airportreadmodel-case-2",
+      "kind": "case",
+      "data": {
+        "Address": "text",
+        "AirportId": "00000000-0000-4000-8000-000000000000",
+        "Code": "text",
+        "Id": "f057fe93-0000-4000-8000-000000001002",
+        "IsDeleted": true,
+        "Name": "text"
+      },
+      "case": "covering-0002"
+    },
+    {
+      "ref": "airportreadmodel-case-3",
+      "kind": "case",
+      "data": {
+        "Address": "1 Manchester Street",
+        "AirportId": "00000000-0000-4000-8000-000000000000",
+        "Code": "SKU-01000",
+        "Id": "c9bc0450-0000-4000-8000-000000001001",
+        "IsDeleted": true,
+        "Name": "Alice Whitfield"
+      },
+      "case": "covering-0003"
+    },
+    {
+      "ref": "airportreadmodel-case-4",
+      "kind": "case",
+      "data": {
+        "Address": "text",
+        "AirportId": "00000000-0000-4000-8000-000000000000",
+        "Code": "SKU-01000",
+        "Id": "c9bc0450-0000-4000-8000-000000001001",
+        "IsDeleted": true,
+        "Name": ""
+      },
+      "case": "covering-0004"
+    },
+    {
+      "ref": "airportreadmodel-case-5",
+      "kind": "case",
+      "data": {
+        "Address": "1 Manchester Street",
+        "AirportId": "00000000-0000-4000-8000-000000000000",
+        "Code": "text",
+        "Id": "f057fe93-0000-4000-8000-000000001002",
+        "IsDeleted": true,
+        "Name": ""
+      },
+      "case": "covering-0005"
+    },
+    {
+      "ref": "airportreadmodel-case-6",
+      "kind": "case",
+      "data": {
+        "Address": "",
+        "AirportId": "00000000-0000-4000-8000-000000000000",
+        "Code": "SKU-01000",
+        "Id": "c9bc0450-0000-4000-8000-000000001001",
+        "IsDeleted": true,
+        "Name": "text"
+      },
+      "case": "covering-0006"
+    },
+    {
+      "ref": "airportreadmodel-case-7",
+      "kind": "case",
+      "data": {
+        "Address": "1 Manchester Street",
+        "AirportId": "00000000-0000-4000-8000-000000000000",
+        "Code": "",
+        "Id": "f057fe93-0000-4000-8000-000000001002",
+        "IsDeleted": true,
+        "Name": "text"
+      },
+      "case": "covering-0007"
+    },
+    {
+      "ref": "airportreadmodel-case-8",
+      "kind": "case",
+      "data": {
+        "Address": "",
+        "AirportId": "00000000-0000-4000-8000-000000000000",
+        "Code": "text",
+        "Id": "f057fe93-0000-4000-8000-000000001002",
+        "IsDeleted": true,
+        "Name": "Alice Whitfield"
+      },
+      "case": "covering-0008"
+    },
+    {
+      "ref": "airportreadmodel-case-9",
+      "kind": "case",
+      "data": {
+        "Address": "text",
+        "AirportId": "00000000-0000-4000-8000-000000000000",
+        "Code": "",
+        "Id": "f057fe93-0000-4000-8000-000000001004",
+        "IsDeleted": true,
+        "Name": "Alice Whitfield"
+      },
+      "case": "covering-0009"
+    }
+  ]
+}

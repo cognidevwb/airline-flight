@@ -1,0 +1,4035 @@
+{
+  "name": "DeleteFlightMongoCommandHandler.Handle",
+  "kind": "method",
+  "layer": "unit",
+  "source": "src/Flight/Flights/Features/DeletingFlight/V1/DeleteFlightMongo.cs:34",
+  "columns": [
+    "request"
+  ],
+  "valid": [
+    {
+      "ref": "flight-1-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001014",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001011",
+          "ArriveDate": "2026-09-03T18:20:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001010",
+          "DepartureDate": "2026-09-03T10:30:00Z",
+          "DurationMinutes": 470.0,
+          "FlightDate": "2026-09-03T00:00:00Z",
+          "FlightNumber": "BA117",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001024",
+          "IsDeleted": false,
+          "Price": 612.5,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-2-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001012",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001011",
+          "ArriveDate": "2026-09-05T16:55:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001012",
+          "DepartureDate": "2026-09-05T08:15:00Z",
+          "DurationMinutes": 520.0,
+          "FlightDate": "2026-09-05T00:00:00Z",
+          "FlightNumber": "LH401",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001025",
+          "IsDeleted": false,
+          "Price": 689.99,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-3-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001023",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001010",
+          "ArriveDate": "2026-09-07T11:10:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001013",
+          "DepartureDate": "2026-09-07T03:40:00Z",
+          "DurationMinutes": 450.0,
+          "FlightDate": "2026-09-07T00:00:00Z",
+          "FlightNumber": "EK203",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001026",
+          "IsDeleted": false,
+          "Price": 540.0,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-4-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001027",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001010",
+          "ArriveDate": "2026-09-10T04:55:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001011",
+          "DepartureDate": "2026-09-09T22:00:00Z",
+          "DurationMinutes": 415.0,
+          "FlightDate": "2026-09-09T00:00:00Z",
+          "FlightNumber": "AA100",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001027",
+          "IsDeleted": false,
+          "Price": 578.4,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-5-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001022",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001016",
+          "ArriveDate": "2026-09-11T08:00:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001015",
+          "DepartureDate": "2026-09-11T06:45:00Z",
+          "DurationMinutes": 75.0,
+          "FlightDate": "2026-09-11T00:00:00Z",
+          "FlightNumber": "AF1680",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001028",
+          "IsDeleted": false,
+          "Price": 89.99,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-6-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001020",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001017",
+          "ArriveDate": "2026-09-12T16:00:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001016",
+          "DepartureDate": "2026-09-12T13:20:00Z",
+          "DurationMinutes": 160.0,
+          "FlightDate": "2026-09-12T00:00:00Z",
+          "FlightNumber": "KL1001",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001029",
+          "IsDeleted": false,
+          "Price": 129.5,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-7-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001015",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001019",
+          "ArriveDate": "2026-09-14T11:15:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001018",
+          "DepartureDate": "2026-09-14T07:05:00Z",
+          "DurationMinutes": 250.0,
+          "FlightDate": "2026-09-14T00:00:00Z",
+          "FlightNumber": "UA901",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001030",
+          "IsDeleted": false,
+          "Price": 214.0,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-8-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001013",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001021",
+          "ArriveDate": "2026-09-15T07:00:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001020",
+          "DepartureDate": "2026-09-15T00:10:00Z",
+          "DurationMinutes": 410.0,
+          "FlightDate": "2026-09-15T00:00:00Z",
+          "FlightNumber": "SQ321",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001031",
+          "IsDeleted": false,
+          "Price": 498.75,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-9-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001031",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001037",
+          "ArriveDate": "2026-09-16T18:35:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001022",
+          "DepartureDate": "2026-09-16T16:30:00Z",
+          "DurationMinutes": 125.0,
+          "FlightDate": "2026-09-16T00:00:00Z",
+          "FlightNumber": "DL401",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001032",
+          "IsDeleted": false,
+          "Price": 99.99,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-10-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001043",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001024",
+          "ArriveDate": "2026-09-18T10:05:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001023",
+          "DepartureDate": "2026-09-18T09:00:00Z",
+          "DurationMinutes": 65.0,
+          "FlightDate": "2026-09-18T00:00:00Z",
+          "FlightNumber": "LH2100",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001033",
+          "IsDeleted": false,
+          "Price": 119.0,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-11-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001016",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001026",
+          "ArriveDate": "2026-09-20T01:00:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001025",
+          "DepartureDate": "2026-09-19T20:45:00Z",
+          "DurationMinutes": 255.0,
+          "FlightDate": "2026-09-19T00:00:00Z",
+          "FlightNumber": "TK1983",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001034",
+          "IsDeleted": false,
+          "Price": 276.3,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-12-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001034",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001058",
+          "ArriveDate": "2026-09-21T07:35:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001026",
+          "DepartureDate": "2026-09-21T01:15:00Z",
+          "DurationMinutes": 380.0,
+          "FlightDate": "2026-09-21T00:00:00Z",
+          "FlightNumber": "QR908",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001035",
+          "IsDeleted": false,
+          "Price": 455.0,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-13-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001030",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001073",
+          "ArriveDate": "2026-09-22T09:05:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001027",
+          "DepartureDate": "2026-09-22T05:50:00Z",
+          "DurationMinutes": 195.0,
+          "FlightDate": "2026-09-22T00:00:00Z",
+          "FlightNumber": "QF143",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001036",
+          "IsDeleted": false,
+          "Price": 258.6,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-14-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001061",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001029",
+          "ArriveDate": "2026-09-24T19:40:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001028",
+          "DepartureDate": "2026-09-24T14:10:00Z",
+          "DurationMinutes": 330.0,
+          "FlightDate": "2026-09-24T00:00:00Z",
+          "FlightNumber": "AC849",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001037",
+          "IsDeleted": false,
+          "Price": 389.0,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-15-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001048",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001031",
+          "ArriveDate": "2026-09-25T14:00:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001030",
+          "DepartureDate": "2026-09-25T10:25:00Z",
+          "DurationMinutes": 215.0,
+          "FlightDate": "2026-09-25T00:00:00Z",
+          "FlightNumber": "CX880",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001038",
+          "IsDeleted": false,
+          "Price": 312.45,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-16-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001017",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001033",
+          "ArriveDate": "2026-09-27T13:20:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001032",
+          "DepartureDate": "2026-09-27T11:35:00Z",
+          "DurationMinutes": 105.0,
+          "FlightDate": "2026-09-27T00:00:00Z",
+          "FlightNumber": "SK1500",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001039",
+          "IsDeleted": false,
+          "Price": 142.2,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-17-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001028",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001035",
+          "ArriveDate": "2026-09-28T19:45:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001034",
+          "DepartureDate": "2026-09-28T17:50:00Z",
+          "DurationMinutes": 115.0,
+          "FlightDate": "2026-09-28T00:00:00Z",
+          "FlightNumber": "IB3166",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001040",
+          "IsDeleted": false,
+          "Price": 87.5,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-18-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001108",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001055",
+          "ArriveDate": "2026-09-30T10:25:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001036",
+          "DepartureDate": "2026-09-30T06:30:00Z",
+          "DurationMinutes": 235.0,
+          "FlightDate": "2026-09-30T00:00:00Z",
+          "FlightNumber": "AA2456",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001041",
+          "IsDeleted": false,
+          "Price": 245.8,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-19-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001064",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001011",
+          "ArriveDate": "2026-10-01T18:55:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001038",
+          "DepartureDate": "2026-10-01T11:05:00Z",
+          "DurationMinutes": 470.0,
+          "FlightDate": "2026-10-01T00:00:00Z",
+          "FlightNumber": "VS3",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001042",
+          "IsDeleted": false,
+          "Price": 530.0,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-20-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001045",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001040",
+          "ArriveDate": "2026-10-02T09:05:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001039",
+          "DepartureDate": "2026-10-02T07:40:00Z",
+          "DurationMinutes": 85.0,
+          "FlightDate": "2026-10-02T00:00:00Z",
+          "FlightNumber": "EZY8812",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001043",
+          "IsDeleted": false,
+          "Price": 49.99,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-21-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001049",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001046",
+          "ArriveDate": "2026-10-03T15:10:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001014",
+          "DepartureDate": "2026-10-03T12:15:00Z",
+          "DurationMinutes": 175.0,
+          "FlightDate": "2026-10-03T00:00:00Z",
+          "FlightNumber": "FR1124",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001044",
+          "IsDeleted": false,
+          "Price": 64.99,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-22-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001024",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001044",
+          "ArriveDate": "2026-10-04T09:50:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001045",
+          "DepartureDate": "2026-10-04T08:55:00Z",
+          "DurationMinutes": 55.0,
+          "FlightDate": "2026-10-04T00:00:00Z",
+          "FlightNumber": "AY1331",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001045",
+          "IsDeleted": false,
+          "Price": 79.0,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-23-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001042",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001010",
+          "ArriveDate": "2026-10-05T17:25:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001043",
+          "DepartureDate": "2026-10-05T15:20:00Z",
+          "DurationMinutes": 125.0,
+          "FlightDate": "2026-10-05T00:00:00Z",
+          "FlightNumber": "DY1302",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001046",
+          "IsDeleted": false,
+          "Price": 134.5,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-24-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001073",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001048",
+          "ArriveDate": "2026-10-06T13:15:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001047",
+          "DepartureDate": "2026-10-06T10:00:00Z",
+          "DurationMinutes": 195.0,
+          "FlightDate": "2026-10-06T00:00:00Z",
+          "FlightNumber": "SN2301",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001047",
+          "IsDeleted": false,
+          "Price": 188.0,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-25-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001126",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001010",
+          "ArriveDate": "2026-10-07T10:00:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001049",
+          "DepartureDate": "2026-10-07T02:30:00Z",
+          "DurationMinutes": 450.0,
+          "FlightDate": "2026-10-07T00:00:00Z",
+          "FlightNumber": "EY101",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001048",
+          "IsDeleted": false,
+          "Price": 612.0,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-26-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001097",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001051",
+          "ArriveDate": "2026-10-08T08:25:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001050",
+          "DepartureDate": "2026-10-08T06:15:00Z",
+          "DurationMinutes": 130.0,
+          "FlightDate": "2026-10-08T00:00:00Z",
+          "FlightNumber": "AI101",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001049",
+          "IsDeleted": false,
+          "Price": 74.25,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-27-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001086",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001099",
+          "ArriveDate": "2026-10-09T11:35:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001052",
+          "DepartureDate": "2026-10-09T09:30:00Z",
+          "DurationMinutes": 125.0,
+          "FlightDate": "2026-10-09T00:00:00Z",
+          "FlightNumber": "SA201",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001050",
+          "IsDeleted": false,
+          "Price": 98.4,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-28-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001117",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001092",
+          "ArriveDate": "2026-10-10T17:15:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001053",
+          "DepartureDate": "2026-10-10T13:10:00Z",
+          "DurationMinutes": 245.0,
+          "FlightDate": "2026-10-10T00:00:00Z",
+          "FlightNumber": "LA8084",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001051",
+          "IsDeleted": false,
+          "Price": 304.0,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-29-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001160",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001018",
+          "ArriveDate": "2026-10-11T12:30:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001054",
+          "DepartureDate": "2026-10-11T08:45:00Z",
+          "DurationMinutes": 225.0,
+          "FlightDate": "2026-10-11T00:00:00Z",
+          "FlightNumber": "AM1",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001052",
+          "IsDeleted": false,
+          "Price": 267.9,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-30-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001139",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001029",
+          "ArriveDate": "2026-10-12T20:30:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001056",
+          "DepartureDate": "2026-10-12T18:25:00Z",
+          "DurationMinutes": 125.0,
+          "FlightDate": "2026-10-12T00:00:00Z",
+          "FlightNumber": "AS330",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001053",
+          "IsDeleted": false,
+          "Price": 118.0,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-31-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001109",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001019",
+          "ArriveDate": "2026-10-13T14:30:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001057",
+          "DepartureDate": "2026-10-13T12:00:00Z",
+          "DurationMinutes": 150.0,
+          "FlightDate": "2026-10-13T00:00:00Z",
+          "FlightNumber": "UA123",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001054",
+          "IsDeleted": false,
+          "Price": 176.5,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-32-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001152",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001020",
+          "ArriveDate": "2026-10-14T23:30:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001058",
+          "DepartureDate": "2026-10-14T21:00:00Z",
+          "DurationMinutes": 150.0,
+          "FlightDate": "2026-10-14T00:00:00Z",
+          "FlightNumber": "TG911",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001055",
+          "IsDeleted": false,
+          "Price": 138.75,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-33-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001062",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001021",
+          "ArriveDate": "2026-10-15T11:20:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001059",
+          "DepartureDate": "2026-10-15T07:50:00Z",
+          "DurationMinutes": 210.0,
+          "FlightDate": "2026-10-15T00:00:00Z",
+          "FlightNumber": "CA981",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001056",
+          "IsDeleted": false,
+          "Price": 289.0,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-34-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001057",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001020",
+          "ArriveDate": "2026-10-16T15:35:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001060",
+          "DepartureDate": "2026-10-16T14:35:00Z",
+          "DurationMinutes": 60.0,
+          "FlightDate": "2026-10-16T00:00:00Z",
+          "FlightNumber": "MH2",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001057",
+          "IsDeleted": false,
+          "Price": 69.99,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-35-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001090",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001060",
+          "ArriveDate": "2026-10-17T12:10:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001061",
+          "DepartureDate": "2026-10-17T10:10:00Z",
+          "DurationMinutes": 120.0,
+          "FlightDate": "2026-10-17T00:00:00Z",
+          "FlightNumber": "GA880",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001058",
+          "IsDeleted": false,
+          "Price": 92.3,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-36-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001080",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001030",
+          "ArriveDate": "2026-10-18T07:45:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001062",
+          "DepartureDate": "2026-10-18T05:25:00Z",
+          "DurationMinutes": 140.0,
+          "FlightDate": "2026-10-18T00:00:00Z",
+          "FlightNumber": "PR100",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001059",
+          "IsDeleted": false,
+          "Price": 156.0,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-37-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001119",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001064",
+          "ArriveDate": "2026-10-19T11:45:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001063",
+          "DepartureDate": "2026-10-19T09:40:00Z",
+          "DurationMinutes": 125.0,
+          "FlightDate": "2026-10-19T00:00:00Z",
+          "FlightNumber": "BR189",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001060",
+          "IsDeleted": false,
+          "Price": 143.2,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-38-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001163",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001059",
+          "ArriveDate": "2026-10-20T19:15:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001065",
+          "DepartureDate": "2026-10-20T16:05:00Z",
+          "DurationMinutes": 190.0,
+          "FlightDate": "2026-10-20T00:00:00Z",
+          "FlightNumber": "CZ3081",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001061",
+          "IsDeleted": false,
+          "Price": 201.0,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-39-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001105",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001066",
+          "ArriveDate": "2026-10-21T09:25:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001031",
+          "DepartureDate": "2026-10-21T07:20:00Z",
+          "DurationMinutes": 125.0,
+          "FlightDate": "2026-10-21T00:00:00Z",
+          "FlightNumber": "OZ101",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001062",
+          "IsDeleted": false,
+          "Price": 163.4,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-40-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001037",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001071",
+          "ArriveDate": "2026-10-22T08:10:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001070",
+          "DepartureDate": "2026-10-22T06:10:00Z",
+          "DurationMinutes": 120.0,
+          "FlightDate": "2026-10-22T00:00:00Z",
+          "FlightNumber": "QF400",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001063",
+          "IsDeleted": false,
+          "Price": 109.0,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-41-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001044",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001074",
+          "ArriveDate": "2026-10-22T21:10:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001073",
+          "DepartureDate": "2026-10-22T19:45:00Z",
+          "DurationMinutes": 85.0,
+          "FlightDate": "2026-10-22T00:00:00Z",
+          "FlightNumber": "NZ175",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001064",
+          "IsDeleted": false,
+          "Price": 94.5,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-42-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001167",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001028",
+          "ArriveDate": "2026-10-23T17:30:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001010",
+          "DepartureDate": "2026-10-23T09:30:00Z",
+          "DurationMinutes": 480.0,
+          "FlightDate": "2026-10-23T00:00:00Z",
+          "FlightNumber": "BA93",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001065",
+          "IsDeleted": false,
+          "Price": 701.25,
+          "Status": "Flying"
+        }
+      }
+    },
+    {
+      "ref": "flight-43-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001176",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001057",
+          "ArriveDate": "2026-10-23T16:15:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001029",
+          "DepartureDate": "2026-10-23T10:45:00Z",
+          "DurationMinutes": 330.0,
+          "FlightDate": "2026-10-23T00:00:00Z",
+          "FlightNumber": "UA16",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001066",
+          "IsDeleted": false,
+          "Price": 412.0,
+          "Status": "Flying"
+        }
+      }
+    },
+    {
+      "ref": "flight-44-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001166",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001046",
+          "ArriveDate": "2026-10-24T10:35:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001012",
+          "DepartureDate": "2026-10-24T07:30:00Z",
+          "DurationMinutes": 185.0,
+          "FlightDate": "2026-10-24T00:00:00Z",
+          "FlightNumber": "LH1130",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001067",
+          "IsDeleted": false,
+          "Price": 227.0,
+          "Status": "Delay"
+        }
+      }
+    },
+    {
+      "ref": "flight-45-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001046",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001051",
+          "ArriveDate": "2026-10-25T17:20:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001013",
+          "DepartureDate": "2026-10-25T13:55:00Z",
+          "DurationMinutes": 205.0,
+          "FlightDate": "2026-10-25T00:00:00Z",
+          "FlightNumber": "EK500",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001068",
+          "IsDeleted": false,
+          "Price": 332.5,
+          "Status": "Delay"
+        }
+      }
+    },
+    {
+      "ref": "flight-46-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001033",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001023",
+          "ArriveDate": "2026-10-26T07:10:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001135",
+          "DepartureDate": "2026-10-26T06:00:00Z",
+          "DurationMinutes": 70.0,
+          "FlightDate": "2026-10-26T00:00:00Z",
+          "FlightNumber": "LH1971",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001069",
+          "IsDeleted": true,
+          "Price": 98.0,
+          "Status": "Canceled"
+        }
+      }
+    },
+    {
+      "ref": "flight-47-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001101",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001027",
+          "ArriveDate": "2026-10-29T05:05:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001020",
+          "DepartureDate": "2026-10-28T21:15:00Z",
+          "DurationMinutes": 470.0,
+          "FlightDate": "2026-10-28T00:00:00Z",
+          "FlightNumber": "SQ231",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001070",
+          "IsDeleted": false,
+          "Price": 805.0,
+          "Status": "Canceled"
+        }
+      }
+    },
+    {
+      "ref": "flight-48-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001110",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001037",
+          "ArriveDate": "2026-10-30T14:05:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001028",
+          "DepartureDate": "2026-10-30T11:00:00Z",
+          "DurationMinutes": 185.0,
+          "FlightDate": "2026-10-30T00:00:00Z",
+          "FlightNumber": "WS1604",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001071",
+          "IsDeleted": false,
+          "Price": 289.99,
+          "Status": "Unknown"
+        }
+      }
+    },
+    {
+      "ref": "flight-49-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001083",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001018",
+          "ArriveDate": "2026-11-02T15:10:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001031",
+          "DepartureDate": "2026-11-02T04:20:00Z",
+          "DurationMinutes": 650.0,
+          "FlightDate": "2026-11-02T00:00:00Z",
+          "FlightNumber": "KE17",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001072",
+          "IsDeleted": false,
+          "Price": 912.0,
+          "Status": "Delay"
+        }
+      }
+    },
+    {
+      "ref": "flight-50-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001051",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001010",
+          "ArriveDate": "2026-09-30T12:30:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001020",
+          "DepartureDate": "2026-09-29T23:30:00Z",
+          "DurationMinutes": 780.0,
+          "FlightDate": "2026-09-29T00:00:00Z",
+          "FlightNumber": "SQ322",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001073",
+          "IsDeleted": false,
+          "Price": 940.0,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-51-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001060",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001010",
+          "ArriveDate": "2026-10-02T08:00:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001014",
+          "DepartureDate": "2026-10-02T06:40:00Z",
+          "DurationMinutes": 80.0,
+          "FlightDate": "2026-10-02T00:00:00Z",
+          "FlightNumber": "EI532",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001074",
+          "IsDeleted": false,
+          "Price": 89.99,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-52-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001061",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001044",
+          "ArriveDate": "2026-10-03T10:40:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001032",
+          "DepartureDate": "2026-10-03T09:15:00Z",
+          "DurationMinutes": 85.0,
+          "FlightDate": "2026-10-03T00:00:00Z",
+          "FlightNumber": "SK1425",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001075",
+          "IsDeleted": false,
+          "Price": 74.5,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-53-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001062",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001010",
+          "ArriveDate": "2026-10-04T10:05:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001013",
+          "DepartureDate": "2026-10-04T02:50:00Z",
+          "DurationMinutes": 435.0,
+          "FlightDate": "2026-10-04T00:00:00Z",
+          "FlightNumber": "EK203",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001076",
+          "IsDeleted": false,
+          "Price": 612.4,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-54-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001063",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001011",
+          "ArriveDate": "2026-10-05T19:10:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001012",
+          "DepartureDate": "2026-10-05T10:20:00Z",
+          "DurationMinutes": 530.0,
+          "FlightDate": "2026-10-05T00:00:00Z",
+          "FlightNumber": "LH401",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001077",
+          "IsDeleted": false,
+          "Price": 684.0,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-55-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001064",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001010",
+          "ArriveDate": "2026-10-07T05:15:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001055",
+          "DepartureDate": "2026-10-06T22:30:00Z",
+          "DurationMinutes": 405.0,
+          "FlightDate": "2026-10-06T00:00:00Z",
+          "FlightNumber": "AA106",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001078",
+          "IsDeleted": false,
+          "Price": 548.9,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-56-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001065",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001094",
+          "ArriveDate": "2026-10-07T11:50:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001015",
+          "DepartureDate": "2026-10-07T07:45:00Z",
+          "DurationMinutes": 245.0,
+          "FlightDate": "2026-10-07T00:00:00Z",
+          "FlightNumber": "AF1180",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001079",
+          "IsDeleted": false,
+          "Price": 329.99,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-57-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001066",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001032",
+          "ArriveDate": "2026-10-08T13:30:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001016",
+          "DepartureDate": "2026-10-08T12:05:00Z",
+          "DurationMinutes": 85.0,
+          "FlightDate": "2026-10-08T00:00:00Z",
+          "FlightNumber": "KL1275",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001080",
+          "IsDeleted": false,
+          "Price": 119.0,
+          "Status": "Canceled"
+        }
+      }
+    },
+    {
+      "ref": "flight-58-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001067",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001040",
+          "ArriveDate": "2026-10-09T17:05:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001010",
+          "DepartureDate": "2026-10-09T15:40:00Z",
+          "DurationMinutes": 85.0,
+          "FlightDate": "2026-10-09T00:00:00Z",
+          "FlightNumber": "BA1442",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001081",
+          "IsDeleted": false,
+          "Price": 94.2,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-59-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001068",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001014",
+          "ArriveDate": "2026-10-10T09:00:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001041",
+          "DepartureDate": "2026-10-10T08:10:00Z",
+          "DurationMinutes": 50.0,
+          "FlightDate": "2026-10-10T00:00:00Z",
+          "FlightNumber": "EI3341",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001082",
+          "IsDeleted": false,
+          "Price": 49.99,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-60-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001069",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001034",
+          "ArriveDate": "2026-10-11T15:10:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001024",
+          "DepartureDate": "2026-10-11T13:25:00Z",
+          "DurationMinutes": 105.0,
+          "FlightDate": "2026-10-11T00:00:00Z",
+          "FlightNumber": "LX1204",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001083",
+          "IsDeleted": false,
+          "Price": 138.75,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-61-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001070",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001048",
+          "ArriveDate": "2026-10-12T07:15:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001025",
+          "DepartureDate": "2026-10-12T05:30:00Z",
+          "DurationMinutes": 105.0,
+          "FlightDate": "2026-10-12T00:00:00Z",
+          "FlightNumber": "TK1983",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001084",
+          "IsDeleted": false,
+          "Price": 104.3,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-62-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001071",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001011",
+          "ArriveDate": "2026-10-13T19:15:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001035",
+          "DepartureDate": "2026-10-13T09:55:00Z",
+          "DurationMinutes": 560.0,
+          "FlightDate": "2026-10-13T00:00:00Z",
+          "FlightNumber": "AZ608",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001085",
+          "IsDeleted": false,
+          "Price": 702.5,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-63-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001072",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001053",
+          "ArriveDate": "2026-10-15T10:30:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001017",
+          "DepartureDate": "2026-10-14T23:50:00Z",
+          "DurationMinutes": 640.0,
+          "FlightDate": "2026-10-14T00:00:00Z",
+          "FlightNumber": "IB6830",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001086",
+          "IsDeleted": false,
+          "Price": 566.0,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-64-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001073",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001037",
+          "ArriveDate": "2026-10-16T16:00:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001022",
+          "DepartureDate": "2026-10-16T14:00:00Z",
+          "DurationMinutes": 120.0,
+          "FlightDate": "2026-10-16T00:00:00Z",
+          "FlightNumber": "DL1032",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001087",
+          "IsDeleted": false,
+          "Price": 164.0,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-65-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001074",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001076",
+          "ArriveDate": "2026-10-17T12:40:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001028",
+          "DepartureDate": "2026-10-17T11:20:00Z",
+          "DurationMinutes": 80.0,
+          "FlightDate": "2026-10-17T00:00:00Z",
+          "FlightNumber": "AC871",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001088",
+          "IsDeleted": false,
+          "Price": 132.6,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-66-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001075",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001018",
+          "ArriveDate": "2026-10-18T18:10:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001029",
+          "DepartureDate": "2026-10-18T16:45:00Z",
+          "DurationMinutes": 85.0,
+          "FlightDate": "2026-10-18T00:00:00Z",
+          "FlightNumber": "UA1745",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001089",
+          "IsDeleted": false,
+          "Price": 88.4,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-67-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001076",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001070",
+          "ArriveDate": "2026-10-19T22:00:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001027",
+          "DepartureDate": "2026-10-19T20:30:00Z",
+          "DurationMinutes": 90.0,
+          "FlightDate": "2026-10-19T00:00:00Z",
+          "FlightNumber": "QF431",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001090",
+          "IsDeleted": false,
+          "Price": 112.9,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-68-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001077",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001013",
+          "ArriveDate": "2026-10-20T05:00:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001049",
+          "DepartureDate": "2026-10-20T04:10:00Z",
+          "DurationMinutes": 50.0,
+          "FlightDate": "2026-10-20T00:00:00Z",
+          "FlightNumber": "EY412",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001091",
+          "IsDeleted": false,
+          "Price": 79.0,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-69-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001078",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001010",
+          "ArriveDate": "2026-10-21T02:20:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001100",
+          "DepartureDate": "2026-10-20T18:20:00Z",
+          "DurationMinutes": 480.0,
+          "FlightDate": "2026-10-20T00:00:00Z",
+          "FlightNumber": "SV105",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001092",
+          "IsDeleted": false,
+          "Price": 640.0,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-70-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001079",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001020",
+          "ArriveDate": "2026-10-22T08:55:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001012",
+          "DepartureDate": "2026-10-21T20:05:00Z",
+          "DurationMinutes": 770.0,
+          "FlightDate": "2026-10-21T00:00:00Z",
+          "FlightNumber": "LH778",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001093",
+          "IsDeleted": false,
+          "Price": 905.3,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-71-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001080",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001019",
+          "ArriveDate": "2026-10-21T17:30:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001010",
+          "DepartureDate": "2026-10-21T08:40:00Z",
+          "DurationMinutes": 530.0,
+          "FlightDate": "2026-10-21T00:00:00Z",
+          "FlightNumber": "BA295",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001094",
+          "IsDeleted": false,
+          "Price": 598.75,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-72-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001081",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001013",
+          "ArriveDate": "2026-10-22T06:50:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001050",
+          "DepartureDate": "2026-10-22T03:15:00Z",
+          "DurationMinutes": 215.0,
+          "FlightDate": "2026-10-22T00:00:00Z",
+          "FlightNumber": "AI995",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001095",
+          "IsDeleted": false,
+          "Price": 215.4,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-73-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001082",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001022",
+          "ArriveDate": "2026-10-22T15:15:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001036",
+          "DepartureDate": "2026-10-22T13:10:00Z",
+          "DurationMinutes": 125.0,
+          "FlightDate": "2026-10-22T00:00:00Z",
+          "FlightNumber": "AA1532",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001096",
+          "IsDeleted": true,
+          "Price": 187.3,
+          "Status": "Canceled"
+        }
+      }
+    },
+    {
+      "ref": "flight-74-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001083",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001096",
+          "ArriveDate": "2026-10-22T11:35:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001097",
+          "DepartureDate": "2026-10-22T09:25:00Z",
+          "DurationMinutes": 130.0,
+          "FlightDate": "2026-10-22T00:00:00Z",
+          "FlightNumber": "ET302",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001097",
+          "IsDeleted": false,
+          "Price": 176.0,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-75-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001084",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001099",
+          "ArriveDate": "2026-10-22T08:05:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001052",
+          "DepartureDate": "2026-10-22T06:00:00Z",
+          "DurationMinutes": 125.0,
+          "FlightDate": "2026-10-22T00:00:00Z",
+          "FlightNumber": "SA333",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001098",
+          "IsDeleted": false,
+          "Price": 120.45,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-76-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001085",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001077",
+          "ArriveDate": "2026-10-22T19:00:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001075",
+          "DepartureDate": "2026-10-22T17:35:00Z",
+          "DurationMinutes": 85.0,
+          "FlightDate": "2026-10-22T00:00:00Z",
+          "FlightNumber": "AC8120",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001099",
+          "IsDeleted": false,
+          "Price": 149.99,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-77-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001086",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001172",
+          "ArriveDate": "2026-10-23T02:20:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001021",
+          "DepartureDate": "2026-10-23T00:30:00Z",
+          "DurationMinutes": 110.0,
+          "FlightDate": "2026-10-23T00:00:00Z",
+          "FlightNumber": "NH253",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001100",
+          "IsDeleted": false,
+          "Price": 210.0,
+          "Status": "Flying"
+        }
+      }
+    },
+    {
+      "ref": "flight-78-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001087",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001029",
+          "ArriveDate": "2026-10-23T11:50:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001031",
+          "DepartureDate": "2026-10-23T01:10:00Z",
+          "DurationMinutes": 640.0,
+          "FlightDate": "2026-10-23T00:00:00Z",
+          "FlightNumber": "KE023",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001101",
+          "IsDeleted": false,
+          "Price": 760.0,
+          "Status": "Flying"
+        }
+      }
+    },
+    {
+      "ref": "flight-79-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001088",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001010",
+          "ArriveDate": "2026-10-24T03:30:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001030",
+          "DepartureDate": "2026-10-23T14:40:00Z",
+          "DurationMinutes": 770.0,
+          "FlightDate": "2026-10-23T00:00:00Z",
+          "FlightNumber": "CX255",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001102",
+          "IsDeleted": false,
+          "Price": 889.0,
+          "Status": "Delay"
+        }
+      }
+    },
+    {
+      "ref": "flight-80-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001089",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001024",
+          "ArriveDate": "2026-10-24T08:25:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001026",
+          "DepartureDate": "2026-10-24T02:05:00Z",
+          "DurationMinutes": 380.0,
+          "FlightDate": "2026-10-24T00:00:00Z",
+          "FlightNumber": "QR95",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001103",
+          "IsDeleted": false,
+          "Price": 478.2,
+          "Status": "Unknown"
+        }
+      }
+    },
+    {
+      "ref": "flight-81-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001090",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001034",
+          "ArriveDate": "2026-10-25T09:40:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001014",
+          "DepartureDate": "2026-10-25T06:50:00Z",
+          "DurationMinutes": 170.0,
+          "FlightDate": "2026-10-25T00:00:00Z",
+          "FlightNumber": "EI512",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001104",
+          "IsDeleted": false,
+          "Price": 156.8,
+          "Status": "Delay"
+        }
+      }
+    },
+    {
+      "ref": "flight-82-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001091",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001017",
+          "ArriveDate": "2026-09-15T08:20:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001034",
+          "DepartureDate": "2026-09-15T07:00:00Z",
+          "DurationMinutes": 80.0,
+          "FlightDate": "2026-09-15T00:00:00Z",
+          "FlightNumber": "VY1003",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001105",
+          "IsDeleted": false,
+          "Price": 69.9,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-83-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001092",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001198",
+          "ArriveDate": "2026-09-16T11:25:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001104",
+          "DepartureDate": "2026-09-16T10:30:00Z",
+          "DurationMinutes": 55.0,
+          "FlightDate": "2026-09-16T00:00:00Z",
+          "FlightNumber": "LO283",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001106",
+          "IsDeleted": false,
+          "Price": 59.5,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-84-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001093",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001024",
+          "ArriveDate": "2026-09-17T13:50:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001033",
+          "DepartureDate": "2026-09-17T12:15:00Z",
+          "DurationMinutes": 95.0,
+          "FlightDate": "2026-09-17T00:00:00Z",
+          "FlightNumber": "OS354",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001107",
+          "IsDeleted": false,
+          "Price": 117.2,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-85-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001094",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001025",
+          "ArriveDate": "2026-09-18T17:00:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001023",
+          "DepartureDate": "2026-09-18T14:05:00Z",
+          "DurationMinutes": 175.0,
+          "FlightDate": "2026-09-18T00:00:00Z",
+          "FlightNumber": "LH2456",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001108",
+          "IsDeleted": false,
+          "Price": 203.4,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-86-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001095",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001011",
+          "ArriveDate": "2026-09-19T19:30:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001044",
+          "DepartureDate": "2026-09-19T10:50:00Z",
+          "DurationMinutes": 520.0,
+          "FlightDate": "2026-09-19T00:00:00Z",
+          "FlightNumber": "SK903",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001109",
+          "IsDeleted": false,
+          "Price": 574.1,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-87-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001096",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001015",
+          "ArriveDate": "2026-09-20T11:40:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001045",
+          "DepartureDate": "2026-09-20T08:20:00Z",
+          "DurationMinutes": 200.0,
+          "FlightDate": "2026-09-20T00:00:00Z",
+          "FlightNumber": "AY873",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001110",
+          "IsDeleted": false,
+          "Price": 188.8,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-88-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001097",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001017",
+          "ArriveDate": "2026-09-21T17:25:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001046",
+          "DepartureDate": "2026-09-21T16:10:00Z",
+          "DurationMinutes": 75.0,
+          "FlightDate": "2026-09-21T00:00:00Z",
+          "FlightNumber": "TP1020",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001111",
+          "IsDeleted": false,
+          "Price": 84.6,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-89-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001098",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001010",
+          "ArriveDate": "2026-09-22T07:55:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001047",
+          "DepartureDate": "2026-09-22T06:35:00Z",
+          "DurationMinutes": 80.0,
+          "FlightDate": "2026-09-22T00:00:00Z",
+          "FlightNumber": "SN3703",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001112",
+          "IsDeleted": false,
+          "Price": 109.3,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-90-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001099",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001021",
+          "ArriveDate": "2026-09-23T04:55:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001059",
+          "DepartureDate": "2026-09-23T01:20:00Z",
+          "DurationMinutes": 215.0,
+          "FlightDate": "2026-09-23T00:00:00Z",
+          "FlightNumber": "CA181",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001113",
+          "IsDeleted": false,
+          "Price": 288.0,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-91-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001100",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001027",
+          "ArriveDate": "2026-09-24T22:35:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001060",
+          "DepartureDate": "2026-09-24T14:45:00Z",
+          "DurationMinutes": 470.0,
+          "FlightDate": "2026-09-24T00:00:00Z",
+          "FlightNumber": "MH123",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001114",
+          "IsDeleted": false,
+          "Price": 612.0,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-92-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001101",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001021",
+          "ArriveDate": "2026-09-25T05:30:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001058",
+          "DepartureDate": "2026-09-25T00:55:00Z",
+          "DurationMinutes": 275.0,
+          "FlightDate": "2026-09-25T00:00:00Z",
+          "FlightNumber": "TG642",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001115",
+          "IsDeleted": false,
+          "Price": 410.25,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-93-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001102",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001031",
+          "ArriveDate": "2026-09-26T06:10:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001021",
+          "DepartureDate": "2026-09-26T03:40:00Z",
+          "DurationMinutes": 150.0,
+          "FlightDate": "2026-09-26T00:00:00Z",
+          "FlightNumber": "JL91",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001116",
+          "IsDeleted": false,
+          "Price": 235.9,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-94-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001103",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001058",
+          "ArriveDate": "2026-09-27T11:35:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001020",
+          "DepartureDate": "2026-09-27T09:05:00Z",
+          "DurationMinutes": 150.0,
+          "FlightDate": "2026-09-27T00:00:00Z",
+          "FlightNumber": "SQ976",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001117",
+          "IsDeleted": false,
+          "Price": 176.4,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-95-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001104",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001027",
+          "ArriveDate": "2026-09-28T21:05:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001070",
+          "DepartureDate": "2026-09-28T19:30:00Z",
+          "DurationMinutes": 95.0,
+          "FlightDate": "2026-09-28T00:00:00Z",
+          "FlightNumber": "QF429",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001118",
+          "IsDeleted": false,
+          "Price": 129.99,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-96-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001105",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001074",
+          "ArriveDate": "2026-09-29T22:25:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001073",
+          "DepartureDate": "2026-09-29T21:00:00Z",
+          "DurationMinutes": 85.0,
+          "FlightDate": "2026-09-29T00:00:00Z",
+          "FlightNumber": "NZ523",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001119",
+          "IsDeleted": false,
+          "Price": 99.0,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-97-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001106",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001191",
+          "ArriveDate": "2026-09-30T07:10:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001096",
+          "DepartureDate": "2026-09-30T05:40:00Z",
+          "DurationMinutes": 90.0,
+          "FlightDate": "2026-09-30T00:00:00Z",
+          "FlightNumber": "KQ481",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001120",
+          "IsDeleted": false,
+          "Price": 142.35,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-98-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001107",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001050",
+          "ArriveDate": "2026-10-01T14:25:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001013",
+          "DepartureDate": "2026-10-01T11:00:00Z",
+          "DurationMinutes": 205.0,
+          "FlightDate": "2026-10-01T00:00:00Z",
+          "FlightNumber": "EK510",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001121",
+          "IsDeleted": false,
+          "Price": 297.8,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-99-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001108",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001024",
+          "ArriveDate": "2026-10-01T19:20:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001023",
+          "DepartureDate": "2026-10-01T18:25:00Z",
+          "DurationMinutes": 55.0,
+          "FlightDate": "2026-10-01T00:00:00Z",
+          "FlightNumber": "LH2392",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001122",
+          "IsDeleted": false,
+          "Price": 91.7,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-100-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001109",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001082",
+          "ArriveDate": "2026-10-02T22:40:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001028",
+          "DepartureDate": "2026-10-02T21:10:00Z",
+          "DurationMinutes": 90.0,
+          "FlightDate": "2026-10-02T00:00:00Z",
+          "FlightNumber": "AC792",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001123",
+          "IsDeleted": false,
+          "Price": 158.5,
+          "Status": "Canceled"
+        }
+      }
+    },
+    {
+      "ref": "flight-101-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001111",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001026",
+          "ArriveDate": "2026-02-04T06:45:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001013",
+          "DepartureDate": "2026-02-04T05:20:00Z",
+          "DurationMinutes": 85.0,
+          "FlightDate": "2026-02-04T00:00:00Z",
+          "FlightNumber": "FZ615",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001124",
+          "IsDeleted": false,
+          "Price": 129.99,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-102-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001112",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001014",
+          "ArriveDate": "2026-03-12T08:35:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001010",
+          "DepartureDate": "2026-03-12T07:05:00Z",
+          "DurationMinutes": 90.0,
+          "FlightDate": "2026-03-12T00:00:00Z",
+          "FlightNumber": "EI155",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001125",
+          "IsDeleted": false,
+          "Price": 89.5,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-103-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001113",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001029",
+          "ArriveDate": "2026-04-08T17:03:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001018",
+          "DepartureDate": "2026-04-08T15:40:00Z",
+          "DurationMinutes": 83.0,
+          "FlightDate": "2026-04-08T00:00:00Z",
+          "FlightNumber": "UA1264",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001126",
+          "IsDeleted": false,
+          "Price": 119.0,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-104-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001114",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001037",
+          "ArriveDate": "2026-05-19T13:15:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001022",
+          "DepartureDate": "2026-05-19T11:15:00Z",
+          "DurationMinutes": 120.0,
+          "FlightDate": "2026-05-19T00:00:00Z",
+          "FlightNumber": "DL1831",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001127",
+          "IsDeleted": false,
+          "Price": 164.2,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-105-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001115",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001023",
+          "ArriveDate": "2026-06-02T07:30:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001012",
+          "DepartureDate": "2026-06-02T06:30:00Z",
+          "DurationMinutes": 60.0,
+          "FlightDate": "2026-06-02T00:00:00Z",
+          "FlightNumber": "LH112",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001128",
+          "IsDeleted": false,
+          "Price": 99.0,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-106-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001116",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001136",
+          "ArriveDate": "2026-07-14T10:42:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001015",
+          "DepartureDate": "2026-07-14T09:10:00Z",
+          "DurationMinutes": 92.0,
+          "FlightDate": "2026-07-14T00:00:00Z",
+          "FlightNumber": "AF7650",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001129",
+          "IsDeleted": false,
+          "Price": 142.75,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-107-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001117",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001034",
+          "ArriveDate": "2026-08-21T14:20:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001017",
+          "DepartureDate": "2026-08-21T13:00:00Z",
+          "DurationMinutes": 80.0,
+          "FlightDate": "2026-08-21T00:00:00Z",
+          "FlightNumber": "IB6252",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001130",
+          "IsDeleted": false,
+          "Price": 74.99,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-108-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001118",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001032",
+          "ArriveDate": "2026-09-09T18:12:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001016",
+          "DepartureDate": "2026-09-09T16:45:00Z",
+          "DurationMinutes": 87.0,
+          "FlightDate": "2026-09-09T00:00:00Z",
+          "FlightNumber": "KL1181",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001131",
+          "IsDeleted": false,
+          "Price": 133.4,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-109-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001119",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001046",
+          "ArriveDate": "2026-01-27T13:15:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001035",
+          "DepartureDate": "2026-01-27T10:20:00Z",
+          "DurationMinutes": 175.0,
+          "FlightDate": "2026-01-27T00:00:00Z",
+          "FlightNumber": "TP837",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001132",
+          "IsDeleted": false,
+          "Price": 188.0,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-110-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001120",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001125",
+          "ArriveDate": "2026-07-03T08:10:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001039",
+          "DepartureDate": "2026-07-03T05:55:00Z",
+          "DurationMinutes": 135.0,
+          "FlightDate": "2026-07-03T00:00:00Z",
+          "FlightNumber": "BA2634",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001133",
+          "IsDeleted": false,
+          "Price": 156.99,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-111-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001121",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001017",
+          "ArriveDate": "2026-10-02T11:10:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001014",
+          "DepartureDate": "2026-10-02T08:30:00Z",
+          "DurationMinutes": 160.0,
+          "FlightDate": "2026-10-02T00:00:00Z",
+          "FlightNumber": "EI588",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001134",
+          "IsDeleted": false,
+          "Price": 201.5,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-112-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001122",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001057",
+          "ArriveDate": "2026-10-15T20:22:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001055",
+          "DepartureDate": "2026-10-15T19:10:00Z",
+          "DurationMinutes": 72.0,
+          "FlightDate": "2026-10-15T00:00:00Z",
+          "FlightNumber": "B6421",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001135",
+          "IsDeleted": false,
+          "Price": 79.0,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-113-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001123",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001027",
+          "ArriveDate": "2026-04-23T06:05:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001020",
+          "DepartureDate": "2026-04-22T22:10:00Z",
+          "DurationMinutes": 475.0,
+          "FlightDate": "2026-04-22T00:00:00Z",
+          "FlightNumber": "SQ231",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001136",
+          "IsDeleted": false,
+          "Price": 689.0,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-114-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001124",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001010",
+          "ArriveDate": "2026-05-30T15:35:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001013",
+          "DepartureDate": "2026-05-30T08:05:00Z",
+          "DurationMinutes": 450.0,
+          "FlightDate": "2026-05-30T00:00:00Z",
+          "FlightNumber": "EK3",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001137",
+          "IsDeleted": false,
+          "Price": 742.3,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-115-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001125",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001010",
+          "ArriveDate": "2026-08-08T09:10:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001026",
+          "DepartureDate": "2026-08-08T02:25:00Z",
+          "DurationMinutes": 405.0,
+          "FlightDate": "2026-08-08T00:00:00Z",
+          "FlightNumber": "QR7",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001138",
+          "IsDeleted": false,
+          "Price": 612.0,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-116-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001126",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001029",
+          "ArriveDate": "2026-03-26T03:20:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001021",
+          "DepartureDate": "2026-03-25T17:50:00Z",
+          "DurationMinutes": 570.0,
+          "FlightDate": "2026-03-25T00:00:00Z",
+          "FlightNumber": "NH8",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001139",
+          "IsDeleted": false,
+          "Price": 845.0,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-117-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001127",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001018",
+          "ArriveDate": "2026-09-18T01:00:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001031",
+          "DepartureDate": "2026-09-17T14:20:00Z",
+          "DurationMinutes": 640.0,
+          "FlightDate": "2026-09-17T00:00:00Z",
+          "FlightNumber": "KE017",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001140",
+          "IsDeleted": false,
+          "Price": 902.75,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-118-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001128",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001015",
+          "ArriveDate": "2026-06-27T05:50:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001011",
+          "DepartureDate": "2026-06-26T22:30:00Z",
+          "DurationMinutes": 440.0,
+          "FlightDate": "2026-06-26T00:00:00Z",
+          "FlightNumber": "AF007",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001141",
+          "IsDeleted": false,
+          "Price": 574.6,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-119-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001129",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001011",
+          "ArriveDate": "2026-10-11T19:40:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001025",
+          "DepartureDate": "2026-10-11T09:40:00Z",
+          "DurationMinutes": 600.0,
+          "FlightDate": "2026-10-11T00:00:00Z",
+          "FlightNumber": "TK1",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001142",
+          "IsDeleted": false,
+          "Price": 868.0,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-120-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001130",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001020",
+          "ArriveDate": "2026-02-18T10:35:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001013",
+          "DepartureDate": "2026-02-18T03:15:00Z",
+          "DurationMinutes": 440.0,
+          "FlightDate": "2026-02-18T00:00:00Z",
+          "FlightNumber": "EK354",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001143",
+          "IsDeleted": false,
+          "Price": 520.4,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-121-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001131",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001010",
+          "ArriveDate": "2026-07-26T12:45:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001030",
+          "DepartureDate": "2026-07-25T23:55:00Z",
+          "DurationMinutes": 770.0,
+          "FlightDate": "2026-07-25T00:00:00Z",
+          "FlightNumber": "CX251",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001144",
+          "IsDeleted": false,
+          "Price": 931.0,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-122-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001132",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001010",
+          "ArriveDate": "2026-04-03T16:20:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001049",
+          "DepartureDate": "2026-04-03T09:05:00Z",
+          "DurationMinutes": 435.0,
+          "FlightDate": "2026-04-03T00:00:00Z",
+          "FlightNumber": "EY11",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001145",
+          "IsDeleted": false,
+          "Price": 705.5,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-123-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001133",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001013",
+          "ArriveDate": "2026-09-28T07:30:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001050",
+          "DepartureDate": "2026-09-28T03:50:00Z",
+          "DurationMinutes": 220.0,
+          "FlightDate": "2026-09-28T00:00:00Z",
+          "FlightNumber": "AI995",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001146",
+          "IsDeleted": false,
+          "Price": 259.0,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-124-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001134",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001026",
+          "ArriveDate": "2026-05-12T08:20:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001051",
+          "DepartureDate": "2026-05-12T04:30:00Z",
+          "DurationMinutes": 230.0,
+          "FlightDate": "2026-05-12T00:00:00Z",
+          "FlightNumber": "QR557",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001147",
+          "IsDeleted": false,
+          "Price": 311.2,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-125-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001135",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001013",
+          "ArriveDate": "2026-08-17T01:40:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001096",
+          "DepartureDate": "2026-08-16T20:10:00Z",
+          "DurationMinutes": 330.0,
+          "FlightDate": "2026-08-16T00:00:00Z",
+          "FlightNumber": "EK722",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001148",
+          "IsDeleted": false,
+          "Price": 436.0,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-126-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001136",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001044",
+          "ArriveDate": "2026-03-06T14:55:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001024",
+          "DepartureDate": "2026-03-06T12:25:00Z",
+          "DurationMinutes": 150.0,
+          "FlightDate": "2026-03-06T00:00:00Z",
+          "FlightNumber": "LX1250",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001149",
+          "IsDeleted": false,
+          "Price": 217.8,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-127-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001137",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001045",
+          "ArriveDate": "2026-06-19T09:00:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001043",
+          "DepartureDate": "2026-06-19T07:15:00Z",
+          "DurationMinutes": 105.0,
+          "FlightDate": "2026-06-19T00:00:00Z",
+          "FlightNumber": "AY932",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001150",
+          "IsDeleted": false,
+          "Price": 148.0,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-128-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001138",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001081",
+          "ArriveDate": "2026-01-13T19:38:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001054",
+          "DepartureDate": "2026-01-13T17:30:00Z",
+          "DurationMinutes": 128.0,
+          "FlightDate": "2026-01-13T00:00:00Z",
+          "FlightNumber": "AM404",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001151",
+          "IsDeleted": false,
+          "Price": 176.9,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-129-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001139",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001076",
+          "ArriveDate": "2026-10-19T07:15:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001028",
+          "DepartureDate": "2026-10-19T06:00:00Z",
+          "DurationMinutes": 75.0,
+          "FlightDate": "2026-10-19T00:00:00Z",
+          "FlightNumber": "AC402",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001152",
+          "IsDeleted": false,
+          "Price": 112.0,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-130-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001140",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001104",
+          "ArriveDate": "2026-07-09T13:08:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001033",
+          "DepartureDate": "2026-07-09T11:40:00Z",
+          "DurationMinutes": 88.0,
+          "FlightDate": "2026-07-09T00:00:00Z",
+          "FlightNumber": "OS857",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001153",
+          "IsDeleted": false,
+          "Price": 108.45,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-131-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001141",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001023",
+          "ArriveDate": "2026-02-26T16:15:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001105",
+          "DepartureDate": "2026-02-26T15:10:00Z",
+          "DurationMinutes": 65.0,
+          "FlightDate": "2026-02-26T00:00:00Z",
+          "FlightNumber": "LH1693",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001154",
+          "IsDeleted": false,
+          "Price": 96.0,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-132-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001142",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001117",
+          "ArriveDate": "2026-09-04T08:35:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001040",
+          "DepartureDate": "2026-09-04T07:45:00Z",
+          "DurationMinutes": 50.0,
+          "FlightDate": "2026-09-04T00:00:00Z",
+          "FlightNumber": "BE6012",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001155",
+          "IsDeleted": false,
+          "Price": 69.99,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-133-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001143",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001175",
+          "ArriveDate": "2026-05-27T03:00:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001172",
+          "DepartureDate": "2026-05-27T01:20:00Z",
+          "DurationMinutes": 100.0,
+          "FlightDate": "2026-05-27T00:00:00Z",
+          "FlightNumber": "NH1255",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001156",
+          "IsDeleted": false,
+          "Price": 154.0,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-134-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001144",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001019",
+          "ArriveDate": "2026-08-30T11:28:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001086",
+          "DepartureDate": "2026-08-30T10:20:00Z",
+          "DurationMinutes": 68.0,
+          "FlightDate": "2026-08-30T00:00:00Z",
+          "FlightNumber": "DL5832",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001157",
+          "IsDeleted": false,
+          "Price": 94.0,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-135-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001145",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001078",
+          "ArriveDate": "2026-10-26T20:23:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001085",
+          "DepartureDate": "2026-10-26T18:20:00Z",
+          "DurationMinutes": 123.0,
+          "FlightDate": "2026-10-26T00:00:00Z",
+          "FlightNumber": "DL2290",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001158",
+          "IsDeleted": false,
+          "Price": 183.0,
+          "Status": "Delay"
+        }
+      }
+    },
+    {
+      "ref": "flight-136-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001146",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001077",
+          "ArriveDate": "2026-10-23T10:48:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001075",
+          "DepartureDate": "2026-10-23T09:30:00Z",
+          "DurationMinutes": 78.0,
+          "FlightDate": "2026-10-23T00:00:00Z",
+          "FlightNumber": "AC8215",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001159",
+          "IsDeleted": false,
+          "Price": 118.0,
+          "Status": "Flying"
+        }
+      }
+    },
+    {
+      "ref": "flight-137-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001147",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001039",
+          "ArriveDate": "2026-10-28T07:32:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001042",
+          "DepartureDate": "2026-10-28T06:10:00Z",
+          "DurationMinutes": 82.0,
+          "FlightDate": "2026-10-28T00:00:00Z",
+          "FlightNumber": "EI730",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001160",
+          "IsDeleted": false,
+          "Price": 87.0,
+          "Status": "Canceled"
+        }
+      }
+    },
+    {
+      "ref": "flight-138-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001148",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001046",
+          "ArriveDate": "2026-10-25T06:10:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001055",
+          "DepartureDate": "2026-10-24T23:30:00Z",
+          "DurationMinutes": 400.0,
+          "FlightDate": "2026-10-24T00:00:00Z",
+          "FlightNumber": "TP212",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001161",
+          "IsDeleted": false,
+          "Price": 459.0,
+          "Status": "Delay"
+        }
+      }
+    },
+    {
+      "ref": "flight-139-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001149",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001013",
+          "ArriveDate": "2026-04-16T04:20:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001052",
+          "DepartureDate": "2026-04-15T19:45:00Z",
+          "DurationMinutes": 515.0,
+          "FlightDate": "2026-04-15T00:00:00Z",
+          "FlightNumber": "EK762",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001162",
+          "IsDeleted": false,
+          "Price": 647.5,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-140-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001150",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001029",
+          "ArriveDate": "2026-10-23T19:25:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001012",
+          "DepartureDate": "2026-10-23T07:50:00Z",
+          "DurationMinutes": 695.0,
+          "FlightDate": "2026-10-23T00:00:00Z",
+          "FlightNumber": "LH454",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001163",
+          "IsDeleted": false,
+          "Price": 905.0,
+          "Status": "Flying"
+        }
+      }
+    },
+    {
+      "ref": "flight-141-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001151",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001010",
+          "ArriveDate": "2026-06-05T13:35:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001020",
+          "DepartureDate": "2026-06-05T00:45:00Z",
+          "DurationMinutes": 770.0,
+          "FlightDate": "2026-06-05T00:00:00Z",
+          "FlightNumber": "SQ318",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001164",
+          "IsDeleted": false,
+          "Price": 934.99,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-142-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001152",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001011",
+          "ArriveDate": "2026-11-03T19:05:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001046",
+          "DepartureDate": "2026-11-03T11:00:00Z",
+          "DurationMinutes": 485.0,
+          "FlightDate": "2026-11-03T00:00:00Z",
+          "FlightNumber": "TP207",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001165",
+          "IsDeleted": false,
+          "Price": 512.0,
+          "Status": "Canceled"
+        }
+      }
+    },
+    {
+      "ref": "flight-143-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001153",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001041",
+          "ArriveDate": "2026-08-03T03:55:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001011",
+          "DepartureDate": "2026-08-02T21:15:00Z",
+          "DurationMinutes": 400.0,
+          "FlightDate": "2026-08-02T00:00:00Z",
+          "FlightNumber": "EI104",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001166",
+          "IsDeleted": false,
+          "Price": 398.0,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-144-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001154",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001020",
+          "ArriveDate": "2026-10-25T16:25:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001026",
+          "DepartureDate": "2026-10-25T08:50:00Z",
+          "DurationMinutes": 455.0,
+          "FlightDate": "2026-10-25T00:00:00Z",
+          "FlightNumber": "QR946",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001167",
+          "IsDeleted": false,
+          "Price": 604.9,
+          "Status": "Delay"
+        }
+      }
+    },
+    {
+      "ref": "flight-145-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001155",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001019",
+          "ArriveDate": "2026-03-31T16:05:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001036",
+          "DepartureDate": "2026-03-31T13:35:00Z",
+          "DurationMinutes": 150.0,
+          "FlightDate": "2026-03-31T00:00:00Z",
+          "FlightNumber": "AA2145",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001168",
+          "IsDeleted": true,
+          "Price": 138.0,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-146-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001156",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001023",
+          "ArriveDate": "2026-09-23T20:00:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001015",
+          "DepartureDate": "2026-09-23T18:25:00Z",
+          "DurationMinutes": 95.0,
+          "FlightDate": "2026-09-23T00:00:00Z",
+          "FlightNumber": "AF1018",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001169",
+          "IsDeleted": false,
+          "Price": 127.3,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-147-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001157",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001018",
+          "ArriveDate": "2026-10-30T18:25:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001022",
+          "DepartureDate": "2026-10-30T14:00:00Z",
+          "DurationMinutes": 265.0,
+          "FlightDate": "2026-10-30T00:00:00Z",
+          "FlightNumber": "DL414",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001170",
+          "IsDeleted": false,
+          "Price": 311.0,
+          "Status": "Canceled"
+        }
+      }
+    },
+    {
+      "ref": "flight-148-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001158",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001056",
+          "ArriveDate": "2026-10-24T19:20:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001079",
+          "DepartureDate": "2026-10-24T16:40:00Z",
+          "DurationMinutes": 160.0,
+          "FlightDate": "2026-10-24T00:00:00Z",
+          "FlightNumber": "AS1325",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001171",
+          "IsDeleted": false,
+          "Price": 149.99,
+          "Status": "Delay"
+        }
+      }
+    },
+    {
+      "ref": "flight-149-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001159",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001078",
+          "ArriveDate": "2026-11-12T11:50:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001080",
+          "DepartureDate": "2026-11-12T10:05:00Z",
+          "DurationMinutes": 105.0,
+          "FlightDate": "2026-11-12T00:00:00Z",
+          "FlightNumber": "WN1177",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001172",
+          "IsDeleted": false,
+          "Price": 98.0,
+          "Status": "Unknown"
+        }
+      }
+    },
+    {
+      "ref": "flight-150-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001160",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001055",
+          "ArriveDate": "2026-10-07T15:35:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001081",
+          "DepartureDate": "2026-10-07T12:00:00Z",
+          "DurationMinutes": 215.0,
+          "FlightDate": "2026-10-07T00:00:00Z",
+          "FlightNumber": "UA1920",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001173",
+          "IsDeleted": false,
+          "Price": 247.0,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-151-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001160",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001037",
+          "ArriveDate": "2026-03-14T14:15:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001084",
+          "DepartureDate": "2026-03-14T12:10:00Z",
+          "DurationMinutes": 125.0,
+          "FlightDate": "2026-03-14T00:00:00Z",
+          "FlightNumber": "AA1432",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001174",
+          "IsDeleted": false,
+          "Price": 189.5,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-152-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001161",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001010",
+          "ArriveDate": "2026-04-02T08:10:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001014",
+          "DepartureDate": "2026-04-02T06:45:00Z",
+          "DurationMinutes": 85.0,
+          "FlightDate": "2026-04-02T00:00:00Z",
+          "FlightNumber": "EI154",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001175",
+          "IsDeleted": false,
+          "Price": 119.99,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-153-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001162",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001036",
+          "ArriveDate": "2026-05-11T17:35:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001022",
+          "DepartureDate": "2026-05-11T15:20:00Z",
+          "DurationMinutes": 135.0,
+          "FlightDate": "2026-05-11T00:00:00Z",
+          "FlightNumber": "AA2217",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001176",
+          "IsDeleted": false,
+          "Price": 164.0,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-154-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001163",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001034",
+          "ArriveDate": "2026-06-08T10:55:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001015",
+          "DepartureDate": "2026-06-08T09:05:00Z",
+          "DurationMinutes": 110.0,
+          "FlightDate": "2026-06-08T00:00:00Z",
+          "FlightNumber": "AF1048",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001177",
+          "IsDeleted": false,
+          "Price": 129.4,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-155-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001164",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001035",
+          "ArriveDate": "2026-07-19T15:10:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001023",
+          "DepartureDate": "2026-07-19T13:30:00Z",
+          "DurationMinutes": 100.0,
+          "FlightDate": "2026-07-19T00:00:00Z",
+          "FlightNumber": "LH1862",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001178",
+          "IsDeleted": false,
+          "Price": 142.75,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-156-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001165",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001016",
+          "ArriveDate": "2026-11-05T08:20:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001012",
+          "DepartureDate": "2026-11-05T07:15:00Z",
+          "DurationMinutes": 65.0,
+          "FlightDate": "2026-11-05T00:00:00Z",
+          "FlightNumber": "LH988",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001179",
+          "IsDeleted": false,
+          "Price": 98.2,
+          "Status": "Unknown"
+        }
+      }
+    },
+    {
+      "ref": "flight-157-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001166",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001024",
+          "ArriveDate": "2026-10-30T12:58:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001017",
+          "DepartureDate": "2026-10-30T10:40:00Z",
+          "DurationMinutes": 138.0,
+          "FlightDate": "2026-10-30T00:00:00Z",
+          "FlightNumber": "IB3254",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001180",
+          "IsDeleted": false,
+          "Price": 176.3,
+          "Status": "Delay"
+        }
+      }
+    },
+    {
+      "ref": "flight-158-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001167",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001011",
+          "ArriveDate": "2026-02-17T17:50:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001010",
+          "DepartureDate": "2026-02-17T10:00:00Z",
+          "DurationMinutes": 470.0,
+          "FlightDate": "2026-02-17T00:00:00Z",
+          "FlightNumber": "BA117",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001181",
+          "IsDeleted": false,
+          "Price": 640.0,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-159-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001168",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001015",
+          "ArriveDate": "2026-08-23T10:15:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001013",
+          "DepartureDate": "2026-08-23T02:50:00Z",
+          "DurationMinutes": 445.0,
+          "FlightDate": "2026-08-23T00:00:00Z",
+          "FlightNumber": "EK073",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001182",
+          "IsDeleted": false,
+          "Price": 520.6,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-160-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001169",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001010",
+          "ArriveDate": "2026-09-12T15:28:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001026",
+          "DepartureDate": "2026-09-12T08:30:00Z",
+          "DurationMinutes": 418.0,
+          "FlightDate": "2026-09-12T00:00:00Z",
+          "FlightNumber": "QR003",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001183",
+          "IsDeleted": false,
+          "Price": 610.0,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-161-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001170",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001029",
+          "ArriveDate": "2026-01-27T04:20:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001021",
+          "DepartureDate": "2026-01-26T17:55:00Z",
+          "DurationMinutes": 625.0,
+          "FlightDate": "2026-01-26T00:00:00Z",
+          "FlightNumber": "NH106",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001184",
+          "IsDeleted": false,
+          "Price": 780.45,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-162-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001171",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001027",
+          "ArriveDate": "2026-03-30T08:43:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001020",
+          "DepartureDate": "2026-03-30T00:55:00Z",
+          "DurationMinutes": 468.0,
+          "FlightDate": "2026-03-30T00:00:00Z",
+          "FlightNumber": "SQ231",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001185",
+          "IsDeleted": false,
+          "Price": 585.2,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-163-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001172",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001021",
+          "ArriveDate": "2026-12-04T07:15:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001030",
+          "DepartureDate": "2026-12-04T03:10:00Z",
+          "DurationMinutes": 245.0,
+          "FlightDate": "2026-12-04T00:00:00Z",
+          "FlightNumber": "CX524",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001186",
+          "IsDeleted": false,
+          "Price": 340.0,
+          "Status": "Canceled"
+        }
+      }
+    },
+    {
+      "ref": "flight-164-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001173",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001010",
+          "ArriveDate": "2026-10-23T08:30:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001011",
+          "DepartureDate": "2026-10-23T01:30:00Z",
+          "DurationMinutes": 420.0,
+          "FlightDate": "2026-10-23T00:00:00Z",
+          "FlightNumber": "AA100",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001187",
+          "IsDeleted": false,
+          "Price": 735.99,
+          "Status": "Flying"
+        }
+      }
+    },
+    {
+      "ref": "flight-165-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001174",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001021",
+          "ArriveDate": "2026-05-27T23:25:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001018",
+          "DepartureDate": "2026-05-27T11:45:00Z",
+          "DurationMinutes": 700.0,
+          "FlightDate": "2026-05-27T00:00:00Z",
+          "FlightNumber": "JL061",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001188",
+          "IsDeleted": false,
+          "Price": 745.0,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-166-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001175",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001012",
+          "ArriveDate": "2026-06-30T16:00:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001013",
+          "DepartureDate": "2026-06-30T09:15:00Z",
+          "DurationMinutes": 405.0,
+          "FlightDate": "2026-06-30T00:00:00Z",
+          "FlightNumber": "EK047",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001189",
+          "IsDeleted": false,
+          "Price": 495.9,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-167-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001176",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001019",
+          "ArriveDate": "2026-08-05T20:12:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001028",
+          "DepartureDate": "2026-08-05T18:20:00Z",
+          "DurationMinutes": 112.0,
+          "FlightDate": "2026-08-05T00:00:00Z",
+          "FlightNumber": "AC8187",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001190",
+          "IsDeleted": false,
+          "Price": 154.99,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-168-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001177",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001032",
+          "ArriveDate": "2026-09-03T15:23:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001016",
+          "DepartureDate": "2026-09-03T14:00:00Z",
+          "DurationMinutes": 83.0,
+          "FlightDate": "2026-09-03T00:00:00Z",
+          "FlightNumber": "KL1175",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001191",
+          "IsDeleted": false,
+          "Price": 109.0,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-169-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001178",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001014",
+          "ArriveDate": "2026-11-14T13:58:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001024",
+          "DepartureDate": "2026-11-14T11:25:00Z",
+          "DurationMinutes": 153.0,
+          "FlightDate": "2026-11-14T00:00:00Z",
+          "FlightNumber": "LX358",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001192",
+          "IsDeleted": false,
+          "Price": 187.6,
+          "Status": "Delay"
+        }
+      }
+    },
+    {
+      "ref": "flight-170-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001179",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001010",
+          "ArriveDate": "2026-04-18T11:40:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001050",
+          "DepartureDate": "2026-04-18T02:40:00Z",
+          "DurationMinutes": 540.0,
+          "FlightDate": "2026-04-18T00:00:00Z",
+          "FlightNumber": "AI161",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001193",
+          "IsDeleted": false,
+          "Price": 690.0,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-171-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001180",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001011",
+          "ArriveDate": "2026-02-10T08:15:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001025",
+          "DepartureDate": "2026-02-09T21:30:00Z",
+          "DurationMinutes": 645.0,
+          "FlightDate": "2026-02-09T00:00:00Z",
+          "FlightNumber": "TK001",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001194",
+          "IsDeleted": false,
+          "Price": 720.8,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-172-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001181",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001063",
+          "ArriveDate": "2026-07-07T02:55:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001031",
+          "DepartureDate": "2026-07-07T00:20:00Z",
+          "DurationMinutes": 155.0,
+          "FlightDate": "2026-07-07T00:00:00Z",
+          "FlightNumber": "KE691",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001195",
+          "IsDeleted": false,
+          "Price": 215.0,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-173-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001182",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001058",
+          "ArriveDate": "2026-05-02T07:28:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001020",
+          "DepartureDate": "2026-05-02T05:00:00Z",
+          "DurationMinutes": 148.0,
+          "FlightDate": "2026-05-02T00:00:00Z",
+          "FlightNumber": "SQ978",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001196",
+          "IsDeleted": false,
+          "Price": 198.3,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-174-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001183",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001043",
+          "ArriveDate": "2026-12-10T07:10:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001044",
+          "DepartureDate": "2026-12-10T06:10:00Z",
+          "DurationMinutes": 60.0,
+          "FlightDate": "2026-12-10T00:00:00Z",
+          "FlightNumber": "SK405",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001197",
+          "IsDeleted": false,
+          "Price": 89.5,
+          "Status": "Delay"
+        }
+      }
+    },
+    {
+      "ref": "flight-175-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001184",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001032",
+          "ArriveDate": "2026-03-03T18:30:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001045",
+          "DepartureDate": "2026-03-03T16:45:00Z",
+          "DurationMinutes": 105.0,
+          "FlightDate": "2026-03-03T00:00:00Z",
+          "FlightNumber": "AY1105",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001198",
+          "IsDeleted": false,
+          "Price": 132.4,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-176-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001185",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001020",
+          "ArriveDate": "2026-09-27T09:05:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001026",
+          "DepartureDate": "2026-09-27T01:50:00Z",
+          "DurationMinutes": 435.0,
+          "FlightDate": "2026-09-27T00:00:00Z",
+          "FlightNumber": "QR638",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001199",
+          "IsDeleted": false,
+          "Price": 560.0,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-177-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001186",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001040",
+          "ArriveDate": "2026-04-21T09:02:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001039",
+          "DepartureDate": "2026-04-21T07:35:00Z",
+          "DurationMinutes": 87.0,
+          "FlightDate": "2026-04-21T00:00:00Z",
+          "FlightNumber": "BA2543",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001200",
+          "IsDeleted": false,
+          "Price": 74.99,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-178-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001187",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001034",
+          "ArriveDate": "2026-06-16T12:42:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001038",
+          "DepartureDate": "2026-06-16T10:10:00Z",
+          "DurationMinutes": 152.0,
+          "FlightDate": "2026-06-16T00:00:00Z",
+          "FlightNumber": "BA1396",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001201",
+          "IsDeleted": false,
+          "Price": 112.8,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-179-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001188",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001010",
+          "ArriveDate": "2026-10-12T16:07:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001013",
+          "DepartureDate": "2026-10-12T08:40:00Z",
+          "DurationMinutes": 447.0,
+          "FlightDate": "2026-10-12T00:00:00Z",
+          "FlightNumber": "EK007",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001202",
+          "IsDeleted": false,
+          "Price": 685.0,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-180-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001189",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001013",
+          "ArriveDate": "2026-01-15T04:45:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001010",
+          "DepartureDate": "2026-01-14T21:55:00Z",
+          "DurationMinutes": 410.0,
+          "FlightDate": "2026-01-14T00:00:00Z",
+          "FlightNumber": "BA107",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001203",
+          "IsDeleted": false,
+          "Price": 590.25,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-181-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001190",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001117",
+          "ArriveDate": "2026-05-19T08:55:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001108",
+          "DepartureDate": "2026-05-19T08:00:00Z",
+          "DurationMinutes": 55.0,
+          "FlightDate": "2026-05-19T00:00:00Z",
+          "FlightNumber": "BE1426",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001204",
+          "IsDeleted": false,
+          "Price": 79.0,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-182-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001191",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001041",
+          "ArriveDate": "2026-08-14T18:15:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001014",
+          "DepartureDate": "2026-08-14T17:30:00Z",
+          "DurationMinutes": 45.0,
+          "FlightDate": "2026-08-14T00:00:00Z",
+          "FlightNumber": "EI3342",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001205",
+          "IsDeleted": false,
+          "Price": 49.99,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-183-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001192",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001011",
+          "ArriveDate": "2026-02-25T18:30:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001012",
+          "DepartureDate": "2026-02-25T09:50:00Z",
+          "DurationMinutes": 520.0,
+          "FlightDate": "2026-02-25T00:00:00Z",
+          "FlightNumber": "LH400",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001206",
+          "IsDeleted": false,
+          "Price": 610.4,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-184-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001193",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001048",
+          "ArriveDate": "2026-09-21T08:27:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001033",
+          "DepartureDate": "2026-09-21T06:20:00Z",
+          "DurationMinutes": 127.0,
+          "FlightDate": "2026-09-21T00:00:00Z",
+          "FlightNumber": "OS857",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001207",
+          "IsDeleted": false,
+          "Price": 138.0,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-185-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001194",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001034",
+          "ArriveDate": "2026-11-22T15:00:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001046",
+          "DepartureDate": "2026-11-22T13:05:00Z",
+          "DurationMinutes": 115.0,
+          "FlightDate": "2026-11-22T00:00:00Z",
+          "FlightNumber": "TP1032",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001208",
+          "IsDeleted": false,
+          "Price": 131.99,
+          "Status": "Canceled"
+        }
+      }
+    },
+    {
+      "ref": "flight-186-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001195",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001025",
+          "ArriveDate": "2026-03-27T22:35:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001035",
+          "DepartureDate": "2026-03-27T19:45:00Z",
+          "DurationMinutes": 170.0,
+          "FlightDate": "2026-03-27T00:00:00Z",
+          "FlightNumber": "TK1862",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001209",
+          "IsDeleted": false,
+          "Price": 218.7,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-187-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001196",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001015",
+          "ArriveDate": "2026-07-30T13:18:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001017",
+          "DepartureDate": "2026-07-30T11:10:00Z",
+          "DurationMinutes": 128.0,
+          "FlightDate": "2026-07-30T00:00:00Z",
+          "FlightNumber": "IB3418",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001210",
+          "IsDeleted": false,
+          "Price": 147.5,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-188-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001197",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001019",
+          "ArriveDate": "2026-04-09T15:10:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001085",
+          "DepartureDate": "2026-04-09T13:40:00Z",
+          "DurationMinutes": 90.0,
+          "FlightDate": "2026-04-09T00:00:00Z",
+          "FlightNumber": "DL4812",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001211",
+          "IsDeleted": false,
+          "Price": 138.2,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-189-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001198",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001055",
+          "ArriveDate": "2026-10-02T08:20:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001082",
+          "DepartureDate": "2026-10-02T07:05:00Z",
+          "DurationMinutes": 75.0,
+          "FlightDate": "2026-10-02T00:00:00Z",
+          "FlightNumber": "AA5324",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001212",
+          "IsDeleted": false,
+          "Price": 99.0,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-190-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001199",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001012",
+          "ArriveDate": "2026-12-18T08:45:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001026",
+          "DepartureDate": "2026-12-18T02:20:00Z",
+          "DurationMinutes": 385.0,
+          "FlightDate": "2026-12-18T00:00:00Z",
+          "FlightNumber": "QR069",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001213",
+          "IsDeleted": false,
+          "Price": 575.0,
+          "Status": "Delay"
+        }
+      }
+    },
+    {
+      "ref": "flight-191-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001200",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001018",
+          "ArriveDate": "2026-06-04T21:25:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001079",
+          "DepartureDate": "2026-06-04T20:15:00Z",
+          "DurationMinutes": 70.0,
+          "FlightDate": "2026-06-04T00:00:00Z",
+          "FlightNumber": "WN1893",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001214",
+          "IsDeleted": false,
+          "Price": 89.0,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-192-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001201",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001093",
+          "ArriveDate": "2026-08-30T01:02:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001053",
+          "DepartureDate": "2026-08-29T22:10:00Z",
+          "DurationMinutes": 172.0,
+          "FlightDate": "2026-08-29T00:00:00Z",
+          "FlightNumber": "LA8014",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001215",
+          "IsDeleted": false,
+          "Price": 245.0,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-193-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001202",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001081",
+          "ArriveDate": "2026-05-23T07:36:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001036",
+          "DepartureDate": "2026-05-23T06:30:00Z",
+          "DurationMinutes": 66.0,
+          "FlightDate": "2026-05-23T00:00:00Z",
+          "FlightNumber": "AA3921",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001216",
+          "IsDeleted": false,
+          "Price": 94.3,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-194-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001203",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001021",
+          "ArriveDate": "2026-01-09T04:55:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001027",
+          "DepartureDate": "2026-01-08T19:25:00Z",
+          "DurationMinutes": 570.0,
+          "FlightDate": "2026-01-08T00:00:00Z",
+          "FlightNumber": "JL772",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001217",
+          "IsDeleted": false,
+          "Price": 710.0,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-195-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001204",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001077",
+          "ArriveDate": "2026-09-09T17:22:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001075",
+          "DepartureDate": "2026-09-09T15:50:00Z",
+          "DurationMinutes": 92.0,
+          "FlightDate": "2026-09-09T00:00:00Z",
+          "FlightNumber": "QK8120",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001218",
+          "IsDeleted": false,
+          "Price": 128.0,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-196-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001205",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001089",
+          "ArriveDate": "2026-03-21T21:30:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001029",
+          "DepartureDate": "2026-03-21T16:00:00Z",
+          "DurationMinutes": 330.0,
+          "FlightDate": "2026-03-21T00:00:00Z",
+          "FlightNumber": "UA1551",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001219",
+          "IsDeleted": false,
+          "Price": 395.99,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-197-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001206",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001018",
+          "ArriveDate": "2026-11-02T13:30:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001022",
+          "DepartureDate": "2026-11-02T08:50:00Z",
+          "DurationMinutes": 280.0,
+          "FlightDate": "2026-11-02T00:00:00Z",
+          "FlightNumber": "DL1054",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001220",
+          "IsDeleted": false,
+          "Price": 305.0,
+          "Status": "Delay"
+        }
+      }
+    },
+    {
+      "ref": "flight-198-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001207",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001014",
+          "ArriveDate": "2026-04-14T08:25:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001112",
+          "DepartureDate": "2026-04-14T06:55:00Z",
+          "DurationMinutes": 90.0,
+          "FlightDate": "2026-04-14T00:00:00Z",
+          "FlightNumber": "BA8731",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001221",
+          "IsDeleted": true,
+          "Price": 129.0,
+          "Status": "Canceled"
+        }
+      }
+    },
+    {
+      "ref": "flight-199-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001208",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001104",
+          "ArriveDate": "2026-05-28T13:55:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001106",
+          "DepartureDate": "2026-05-28T12:20:00Z",
+          "DurationMinutes": 95.0,
+          "FlightDate": "2026-05-28T00:00:00Z",
+          "FlightNumber": "LO634",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001222",
+          "IsDeleted": false,
+          "Price": 118.4,
+          "Status": "Completed"
+        }
+      }
+    },
+    {
+      "ref": "flight-200-3",
+      "kind": "record",
+      "data": {
+        "Request": {
+          "AircraftId": "f057fe93-0000-4000-8000-000000001209",
+          "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001080",
+          "ArriveDate": "2026-07-13T10:08:00Z",
+          "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001079",
+          "DepartureDate": "2026-07-13T09:00:00Z",
+          "DurationMinutes": 68.0,
+          "FlightDate": "2026-07-13T00:00:00Z",
+          "FlightNumber": "DL2230",
+          "Id": "2f5ff8e3-0000-4000-8000-000000001223",
+          "IsDeleted": false,
+          "Price": 84.5,
+          "Status": "Completed"
+        }
+      }
+    }
+  ],
+  "invalid": [
+    {
+      "ref": "deleteflightmongocommandhandler-handle-rejection-1",
+      "kind": "rejection",
+      "data": {
+        "request": null
+      },
+      "violates": {
+        "field": "request",
+        "rule": "`request` is declared NOT NULL"
+      }
+    }
+  ],
+  "coverage": [
+    {
+      "ref": "deleteflightmongocommandhandler-handle-case-1",
+      "kind": "case",
+      "data": {
+        "Request": "{…}"
+      },
+      "case": "covering-0001"
+    }
+  ],
+  "use": "argument sets for a unit test of this method; nested objects are whole records"
+}

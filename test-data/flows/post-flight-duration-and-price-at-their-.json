@@ -1,0 +1,50 @@
+{
+  "id": "post-flight-duration-and-price-at-their-",
+  "title": "Duration and price at their upper limits",
+  "source": "staged scenario",
+  "why": "Probes the inclusive upper boundaries of DurationMinutes (50) and Price (10).",
+  "setup": [
+    {
+      "ref": "aircraft-1",
+      "table": "Aircraft",
+      "values": {
+        "IsDeleted": false,
+        "ManufacturingYear": 2015,
+        "Model": "737-800",
+        "Name": "Boeing 737",
+        "Version": 1
+      }
+    },
+    {
+      "ref": "airport-jfk",
+      "table": "Airport",
+      "values": {
+        "Address": "Queens, NY",
+        "Code": "JFK",
+        "IsDeleted": false,
+        "Name": "John F. Kennedy International",
+        "Version": 1
+      }
+    },
+    {
+      "ref": "airport-bos",
+      "table": "Airport",
+      "values": {
+        "Address": "Boston, MA",
+        "Code": "BOS",
+        "IsDeleted": false,
+        "Name": "Logan International",
+        "Version": 1
+      }
+    }
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "does": "POST …/flight with otherwise valid data, DurationMinutes 50, Price 10, DepartureDate 2026-11-20T08:00, ArriveDate 2026-11-20T08:50"
+    }
+  ],
+  "expect": [
+    "Success: both boundary values are accepted and stored exactly."
+  ]
+}

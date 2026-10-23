@@ -1,0 +1,15 @@
+{
+  "id": "airportalreadyexistexception-createairportmongo",
+  "title": "CreateAirportMongo: the record already exists",
+  "kind": "duplicate",
+  "exception": "AirportAlreadyExistException",
+  "base": "AppException",
+  "thrownAt": "src/Flight/Airports/Features/CreatingAirport/V1/CreateAirportMongo.cs:44",
+  "condition": "if (aircraft is not null)",
+  "field": null,
+  "expect": {
+    "status": 400,
+    "error": "AirportAlreadyExistException",
+    "note": null
+  }
+}

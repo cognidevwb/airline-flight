@@ -1,0 +1,84 @@
+{
+  "id": "get-flight-id-view-a-completed-flight",
+  "title": "View a completed flight",
+  "source": "staged scenario",
+  "why": "Shows past flights stay viewable and keep their Completed status",
+  "setup": [
+    {
+      "ref": "aircraft-1",
+      "table": "Aircraft",
+      "values": {
+        "CreatedAt": "2025-01-10T08:00:00Z",
+        "CreatedBy": 1,
+        "IsDeleted": false,
+        "LastModified": "2025-01-10T08:00:00Z",
+        "LastModifiedBy": 1,
+        "ManufacturingYear": 2015,
+        "Model": "A320",
+        "Name": "Airbus A320",
+        "Version": 1
+      }
+    },
+    {
+      "ref": "airport-dep",
+      "table": "Airport",
+      "values": {
+        "Address": "Los Angeles, CA",
+        "Code": "LAX",
+        "CreatedAt": "2025-01-10T08:00:00Z",
+        "CreatedBy": 1,
+        "IsDeleted": false,
+        "LastModified": "2025-01-10T08:00:00Z",
+        "LastModifiedBy": 1,
+        "Name": "Los Angeles International",
+        "Version": 1
+      }
+    },
+    {
+      "ref": "airport-arr",
+      "table": "Airport",
+      "values": {
+        "Address": "SeaTac, WA",
+        "Code": "SEA",
+        "CreatedAt": "2025-01-10T08:00:00Z",
+        "CreatedBy": 1,
+        "IsDeleted": false,
+        "LastModified": "2025-01-10T08:00:00Z",
+        "LastModifiedBy": 1,
+        "Name": "Seattle-Tacoma International",
+        "Version": 1
+      }
+    },
+    {
+      "ref": "flight-1",
+      "table": "Flight",
+      "values": {
+        "AircraftId": "aircraft-1",
+        "ArriveAirportId": "airport-arr",
+        "ArriveDate": "2026-09-01T14:00:00Z",
+        "CreatedAt": "2026-08-01T09:00:00Z",
+        "CreatedBy": 1,
+        "DepartureAirportId": "airport-dep",
+        "DepartureDate": "2026-09-01T11:00:00Z",
+        "DurationMinutes": 3,
+        "FlightDate": "2026-09-01T00:00:00Z",
+        "FlightNumber": "FL-2002",
+        "IsDeleted": false,
+        "LastModified": "2026-09-01T15:00:00Z",
+        "LastModifiedBy": 1,
+        "Price": 5,
+        "Status": "Completed",
+        "Version": 2
+      }
+    }
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "does": "Send GET …/flight/{id} with the Id of flight-1"
+    }
+  ],
+  "expect": [
+    "200 with Status Completed and ArriveDate 2026-09-01, which is in the past"
+  ]
+}

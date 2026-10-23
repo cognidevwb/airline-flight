@@ -1,0 +1,68 @@
+{
+  "id": "get-flight-get-available-flights-results",
+  "title": "Results show aircraft and airport details",
+  "source": "staged scenario",
+  "why": "Verifies the response includes the related aircraft and airport data, not only ids.",
+  "setup": [
+    {
+      "ref": "aircraft-b737",
+      "table": "Aircraft",
+      "values": {
+        "IsDeleted": false,
+        "ManufacturingYear": 2019,
+        "Model": "737-800",
+        "Name": "Boeing 737",
+        "Version": 1
+      }
+    },
+    {
+      "ref": "airport-jfk",
+      "table": "Airport",
+      "values": {
+        "Address": "Queens, New York",
+        "Code": "JFK",
+        "IsDeleted": false,
+        "Name": "John F. Kennedy International",
+        "Version": 1
+      }
+    },
+    {
+      "ref": "airport-lax",
+      "table": "Airport",
+      "values": {
+        "Address": "Los Angeles, CA",
+        "Code": "LAX",
+        "IsDeleted": false,
+        "Name": "Los Angeles International",
+        "Version": 1
+      }
+    },
+    {
+      "ref": "flight-1",
+      "table": "Flight",
+      "values": {
+        "AircraftId": "aircraft-b737",
+        "ArriveAirportId": "airport-lax",
+        "ArriveDate": "2026-11-06T10:45:00Z",
+        "DepartureAirportId": "airport-jfk",
+        "DepartureDate": "2026-11-06T10:00:00Z",
+        "DurationMinutes": 45,
+        "FlightDate": "2026-11-06T00:00:00Z",
+        "FlightNumber": "FL110",
+        "IsDeleted": false,
+        "Price": 275.0,
+        "Status": "Flying",
+        "Version": 1
+      }
+    }
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "does": "GET /flight/get-available-flights for JFK to LAX on 2026-11-06."
+    }
+  ],
+  "expect": [
+    "FL110 is returned with aircraft Boeing 737 (model 737-800, 2019) and airport codes JFK and LAX."
+  ]
+}

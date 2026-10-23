@@ -1,0 +1,31 @@
+{
+  "id": "invalidflightnumberexception-flightnumber",
+  "title": "FlightNumber that the code refuses",
+  "kind": "invalid value",
+  "exception": "InvalidFlightNumberException",
+  "base": "DomainException",
+  "thrownAt": "src/Flight/Flights/ValueObjects/FlightNumber.cs:18",
+  "condition": "if (string.IsNullOrWhiteSpace(value))",
+  "field": "FlightNumber",
+  "expect": {
+    "status": 500,
+    "error": "InvalidFlightNumberException",
+    "note": "DomainException is not one of the exception types the problem-details handler maps, so the API answers 500"
+  },
+  "trigger": {
+    "call": "POST api/v1/flight",
+    "body": {
+      "aircraftId": "f057fe93-0000-4000-8000-000000001014",
+      "arriveAirportId": "c9bc0450-0000-4000-8000-000000001011",
+      "arriveDate": "2026-09-03T18:20:00Z",
+      "departureAirportId": "c9bc0450-0000-4000-8000-000000001010",
+      "departureDate": "2026-09-03T10:30:00Z",
+      "durationMinutes": 470.0,
+      "flightDate": "2026-09-03T00:00:00Z",
+      "flightNumber": null,
+      "price": 612.5,
+      "status": "Completed"
+    },
+    "from": "createflightrequestdto-1"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "id": "allseatsfullexception-getavailableseats",
+  "title": "GetAvailableSeats: AllSeatsFullException",
+  "kind": "rule broken",
+  "exception": "AllSeatsFullException",
+  "base": "AppException",
+  "thrownAt": "src/Flight/Seats/Features/GettingAvailableSeats/V1/GetAvailableSeats.cs:89",
+  "condition": "if (!seats.Any())",
+  "field": null,
+  "expect": {
+    "status": 400,
+    "error": "AllSeatsFullException",
+    "note": null
+  }
+}

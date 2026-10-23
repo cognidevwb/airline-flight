@@ -1,0 +1,88 @@
+{
+  "id": "grpc-flightgrpcservice-getbyid-look-up-a",
+  "title": "Look up a scheduled domestic flight",
+  "source": "staged scenario",
+  "why": "Confirms the basic lookup returns every Flight field exactly as stored.",
+  "setup": [
+    {
+      "ref": "aircraft-1",
+      "table": "Aircraft",
+      "values": {
+        "CreatedAt": "2026-01-01T00:00:00Z",
+        "CreatedBy": 1,
+        "Id": "a1000000-0000-4000-8000-000000000001",
+        "IsDeleted": false,
+        "LastModified": "2026-01-01T00:00:00Z",
+        "LastModifiedBy": 1,
+        "ManufacturingYear": 2015,
+        "Model": "737-800",
+        "Name": "Boeing 737-800 N801AA",
+        "Version": 1
+      }
+    },
+    {
+      "ref": "airport-dep",
+      "table": "Airport",
+      "values": {
+        "Address": "Queens, New York",
+        "Code": "JFK",
+        "CreatedAt": "2026-01-01T00:00:00Z",
+        "CreatedBy": 1,
+        "Id": "b1000000-0000-4000-8000-000000000001",
+        "IsDeleted": false,
+        "LastModified": "2026-01-01T00:00:00Z",
+        "LastModifiedBy": 1,
+        "Name": "John F. Kennedy International",
+        "Version": 1
+      }
+    },
+    {
+      "ref": "airport-arr",
+      "table": "Airport",
+      "values": {
+        "Address": "Los Angeles, California",
+        "Code": "LAX",
+        "CreatedAt": "2026-01-01T00:00:00Z",
+        "CreatedBy": 1,
+        "Id": "b1000000-0000-4000-8000-000000000002",
+        "IsDeleted": false,
+        "LastModified": "2026-01-01T00:00:00Z",
+        "LastModifiedBy": 1,
+        "Name": "Los Angeles International",
+        "Version": 1
+      }
+    },
+    {
+      "ref": "flight-1",
+      "table": "Flight",
+      "values": {
+        "AircraftId": "aircraft-1",
+        "ArriveAirportId": "airport-arr",
+        "ArriveDate": "2026-11-01T13:30:00Z",
+        "CreatedAt": "2026-01-01T00:00:00Z",
+        "CreatedBy": 1,
+        "DepartureAirportId": "airport-dep",
+        "DepartureDate": "2026-11-01T08:00:00Z",
+        "DurationMinutes": 330,
+        "FlightDate": "2026-11-01T00:00:00Z",
+        "FlightNumber": "AA100",
+        "Id": "f1000000-0000-4000-8000-000000000001",
+        "IsDeleted": false,
+        "LastModified": "2026-01-01T00:00:00Z",
+        "LastModifiedBy": 1,
+        "Price": 250.0,
+        "Status": "Flying",
+        "Version": 1
+      }
+    }
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "does": "Call FlightGrpcService/GetById with the Id of flight-1."
+    }
+  ],
+  "expect": [
+    "Success. The response holds the flight with FlightNumber AA100, Status Flying, Price 250.00 and the stored dates and airport/aircraft ids."
+  ]
+}

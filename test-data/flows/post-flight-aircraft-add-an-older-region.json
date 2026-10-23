@@ -1,0 +1,16 @@
+{
+  "id": "post-flight-aircraft-add-an-older-region",
+  "title": "Add an older regional aircraft",
+  "source": "staged scenario",
+  "why": "Confirms older but valid manufacturing years are not rejected.",
+  "setup": [],
+  "steps": [
+    {
+      "n": 1,
+      "does": "POST …/flight/aircraft with Name 'Embraer Regional One', Model 'E175', ManufacturingYear 2005"
+    }
+  ],
+  "expect": [
+    "Success. The aircraft is created with year 2005."
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "post-flight-seat-seat-must-belong-to-an-",
+  "title": "Seat must belong to an existing flight",
+  "source": "staged scenario",
+  "why": "Checks the code verifies the flight exists, not just that the GUID is well-formed.",
+  "setup": [],
+  "steps": [
+    {
+      "n": 1,
+      "does": "POST /flight/seat with SeatNumber 12A, Type Window, Class Economy, FlightId 7d3f2c1e-5b8a-4e6f-9a10-2c4d6e8f0a1b (no such flight)"
+    }
+  ],
+  "expect": [
+    "Request fails with a not-found or validation error for the flight; no seat is saved."
+  ]
+}

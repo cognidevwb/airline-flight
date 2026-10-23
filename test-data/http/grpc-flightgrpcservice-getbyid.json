@@ -1,0 +1,12 @@
+{
+  "operation": "gRPC FlightGrpcService/GetById",
+  "kind": "grpc",
+  "handler": "src/Flight/GrpcServer/Protos/flight.proto:8",
+  "request": "GetByIdRequest",
+  "response": "GetFlightByIdResult",
+  "valid": [],
+  "invalid": [],
+  "requestFields": [
+    "Id"
+  ]
+}

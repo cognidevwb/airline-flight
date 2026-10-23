@@ -1,0 +1,33 @@
+{
+  "name": "GetAvailableFlightsHandler.Handle",
+  "kind": "method",
+  "layer": "unit",
+  "source": "src/Flight/Flights/Features/GettingAvailableFlights/V1/GetAvailableFlights.cs:74",
+  "columns": [
+    "request"
+  ],
+  "valid": [
+    {
+      "ref": "flight-x",
+      "kind": "record",
+      "data": {
+        "Request": "{…}"
+      }
+    }
+  ],
+  "invalid": [
+    {
+      "ref": "getavailableflightshandler-handle-rejection-1",
+      "kind": "rejection",
+      "data": {
+        "request": null
+      },
+      "violates": {
+        "field": "request",
+        "rule": "`request` is declared NOT NULL"
+      }
+    }
+  ],
+  "coverage": [],
+  "use": "argument sets for a unit test of this method; nested objects are whole records"
+}

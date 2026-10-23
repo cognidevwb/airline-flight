@@ -1,0 +1,84 @@
+{
+  "id": "get-flight-id-soft-deleted-flight-is-not",
+  "title": "Soft-deleted flight is not viewable",
+  "source": "staged scenario",
+  "why": "Verifies the IsDeleted filter hides removed rows from reads",
+  "setup": [
+    {
+      "ref": "aircraft-1",
+      "table": "Aircraft",
+      "values": {
+        "CreatedAt": "2026-01-10T08:00:00Z",
+        "CreatedBy": 1,
+        "IsDeleted": false,
+        "LastModified": "2026-01-10T08:00:00Z",
+        "LastModifiedBy": 1,
+        "ManufacturingYear": 2017,
+        "Model": "A321",
+        "Name": "Airbus A321",
+        "Version": 1
+      }
+    },
+    {
+      "ref": "airport-dep",
+      "table": "Airport",
+      "values": {
+        "Address": "Atlanta, GA",
+        "Code": "ATL",
+        "CreatedAt": "2026-01-10T08:00:00Z",
+        "CreatedBy": 1,
+        "IsDeleted": false,
+        "LastModified": "2026-01-10T08:00:00Z",
+        "LastModifiedBy": 1,
+        "Name": "Atlanta Hartsfield-Jackson",
+        "Version": 1
+      }
+    },
+    {
+      "ref": "airport-arr",
+      "table": "Airport",
+      "values": {
+        "Address": "DFW, TX",
+        "Code": "DFW",
+        "CreatedAt": "2026-01-10T08:00:00Z",
+        "CreatedBy": 1,
+        "IsDeleted": false,
+        "LastModified": "2026-01-10T08:00:00Z",
+        "LastModifiedBy": 1,
+        "Name": "Dallas/Fort Worth International",
+        "Version": 1
+      }
+    },
+    {
+      "ref": "flight-1",
+      "table": "Flight",
+      "values": {
+        "AircraftId": "aircraft-1",
+        "ArriveAirportId": "airport-arr",
+        "ArriveDate": "2026-11-08T15:00:00Z",
+        "CreatedAt": "2026-10-01T09:00:00Z",
+        "CreatedBy": 1,
+        "DepartureAirportId": "airport-dep",
+        "DepartureDate": "2026-11-08T12:00:00Z",
+        "DurationMinutes": 3,
+        "FlightDate": "2026-11-08T00:00:00Z",
+        "FlightNumber": "FL-7007",
+        "IsDeleted": true,
+        "LastModified": "2026-10-15T09:00:00Z",
+        "LastModifiedBy": 1,
+        "Price": 6,
+        "Status": "Flying",
+        "Version": 2
+      }
+    }
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "does": "Send GET …/flight/{id} with the Id of flight-1"
+    }
+  ],
+  "expect": [
+    "404 not found, the same as for a flight that does not exist"
+  ]
+}

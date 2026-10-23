@@ -1,0 +1,39 @@
+{
+  "id": "post-flight-arrival-airport-must-be-supp",
+  "title": "Arrival airport must be supplied",
+  "source": "staged scenario",
+  "why": "Verifies the arrival airport reference is mandatory and must resolve to an Airport.",
+  "setup": [
+    {
+      "ref": "aircraft-1",
+      "table": "Aircraft",
+      "values": {
+        "IsDeleted": false,
+        "ManufacturingYear": 2015,
+        "Model": "737-800",
+        "Name": "Boeing 737",
+        "Version": 1
+      }
+    },
+    {
+      "ref": "airport-jfk",
+      "table": "Airport",
+      "values": {
+        "Address": "Queens, NY",
+        "Code": "JFK",
+        "IsDeleted": false,
+        "Name": "John F. Kennedy International",
+        "Version": 1
+      }
+    }
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "does": "POST …/flight with otherwise valid data and ArriveAirportId set first to the empty guid, then to an unknown guid 22222222-2222-2222-2222-222222222222"
+    }
+  ],
+  "expect": [
+    "Both rejected with an error on ArriveAirportId; nothing is saved."
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "id": "get-flight-get-available-flights-search-",
+  "title": "Search returns several flights on the same route",
+  "source": "staged scenario",
+  "why": "Checks that all matching flights are listed, each with its own time and price.",
+  "setup": [
+    {
+      "ref": "aircraft-1",
+      "table": "Aircraft",
+      "values": {
+        "IsDeleted": false,
+        "ManufacturingYear": 2018,
+        "Model": "737-800",
+        "Name": "Boeing 737-800",
+        "Version": 1
+      }
+    },
+    {
+      "ref": "airport-jfk",
+      "table": "Airport",
+      "values": {
+        "Address": "Queens, New York",
+        "Code": "JFK",
+        "IsDeleted": false,
+        "Name": "John F. Kennedy International",
+        "Version": 1
+      }
+    },
+    {
+      "ref": "airport-lax",
+      "table": "Airport",
+      "values": {
+        "Address": "Los Angeles, CA",
+        "Code": "LAX",
+        "IsDeleted": false,
+        "Name": "Los Angeles International",
+        "Version": 1
+      }
+    },
+    {
+      "ref": "flight-morning",
+      "table": "Flight",
+      "values": {
+        "AircraftId": "aircraft-1",
+        "ArriveAirportId": "airport-lax",
+        "ArriveDate": "2026-11-06T07:45:00Z",
+        "DepartureAirportId": "airport-jfk",
+        "DepartureDate": "2026-11-06T07:00:00Z",
+        "DurationMinutes": 45,
+        "FlightDate": "2026-11-06T00:00:00Z",
+        "FlightNumber": "FL101",
+        "IsDeleted": false,
+        "Price": 220.0,
+        "Status": "Flying",
+        "Version": 1
+      }
+    },
+    {
+      "ref": "flight-noon",
+      "table": "Flight",
+      "values": {
+        "AircraftId": "aircraft-1",
+        "ArriveAirportId": "airport-lax",
+        "ArriveDate": "2026-11-06T12:45:00Z",
+        "DepartureAirportId": "airport-jfk",
+        "DepartureDate": "2026-11-06T12:00:00Z",
+        "DurationMinutes": 45,
+        "FlightDate": "2026-11-06T00:00:00Z",
+        "FlightNumber": "FL102",
+        "IsDeleted": false,
+        "Price": 260.0,
+        "Status": "Flying",
+        "Version": 1
+      }
+    },
+    {
+      "ref": "flight-evening",
+      "table": "Flight",
+      "values": {
+        "AircraftId": "aircraft-1",
+        "ArriveAirportId": "airport-lax",
+        "ArriveDate": "2026-11-06T18:45:00Z",
+        "DepartureAirportId": "airport-jfk",
+        "DepartureDate": "2026-11-06T18:00:00Z",
+        "DurationMinutes": 45,
+        "FlightDate": "2026-11-06T00:00:00Z",
+        "FlightNumber": "FL103",
+        "IsDeleted": false,
+        "Price": 310.0,
+        "Status": "Flying",
+        "Version": 1
+      }
+    }
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "does": "GET /flight/get-available-flights for JFK to LAX on 2026-11-06."
+    }
+  ],
+  "expect": [
+    "Three results (FL101, FL102, FL103) with their own departure times and prices 220, 260 and 310."
+  ]
+}

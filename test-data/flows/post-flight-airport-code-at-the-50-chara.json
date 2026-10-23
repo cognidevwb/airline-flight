@@ -1,0 +1,16 @@
+{
+  "id": "post-flight-airport-code-at-the-50-chara",
+  "title": "Code at the 50-character limit",
+  "source": "staged scenario",
+  "why": "Checks the upper bound of Code is inclusive",
+  "setup": [],
+  "steps": [
+    {
+      "n": 1,
+      "does": "POST …/flight/airport with Name 'Long Code Field', Address 'Test City', Code 'ABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJ' (50 characters)"
+    }
+  ],
+  "expect": [
+    "Airport created and the full 50-character Code is stored"
+  ]
+}

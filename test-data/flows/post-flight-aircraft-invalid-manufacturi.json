@@ -1,0 +1,16 @@
+{
+  "id": "post-flight-aircraft-invalid-manufacturi",
+  "title": "Invalid manufacturing year",
+  "source": "staged scenario",
+  "why": "Shows that years at both bad extremes (zero and after the current year) fail.",
+  "setup": [],
+  "steps": [
+    {
+      "n": 1,
+      "does": "POST …/flight/aircraft with Name 'Bad Year Jet', Model '737-800', ManufacturingYear 0; then repeat with ManufacturingYear 2027"
+    }
+  ],
+  "expect": [
+    "Both requests are rejected with a validation error on ManufacturingYear. No aircraft is created."
+  ]
+}

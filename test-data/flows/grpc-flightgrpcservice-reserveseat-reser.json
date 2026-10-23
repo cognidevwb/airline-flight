@@ -1,0 +1,80 @@
+{
+  "id": "grpc-flightgrpcservice-reserveseat-reser",
+  "title": "Reserve an available window seat in economy",
+  "source": "staged scenario",
+  "why": "Confirms the basic reservation path works for an active, flying flight and a valid passenger.",
+  "setup": [
+    {
+      "ref": "aircraft-1",
+      "table": "Aircraft",
+      "values": {
+        "IsDeleted": false,
+        "ManufacturingYear": 2018,
+        "Model": "A320",
+        "Name": "Skyliner 1",
+        "Version": 1
+      }
+    },
+    {
+      "ref": "airport-dep",
+      "table": "Airport",
+      "values": {
+        "Address": "London",
+        "Code": "LHR",
+        "IsDeleted": false,
+        "Name": "Heathrow",
+        "Version": 1
+      }
+    },
+    {
+      "ref": "airport-arr",
+      "table": "Airport",
+      "values": {
+        "Address": "New York",
+        "Code": "JFK",
+        "IsDeleted": false,
+        "Name": "JFK",
+        "Version": 1
+      }
+    },
+    {
+      "ref": "flight-1",
+      "table": "Flight",
+      "values": {
+        "AircraftId": "aircraft-1",
+        "ArriveAirportId": "airport-arr",
+        "ArriveDate": "2026-10-30T16:00:00Z",
+        "DepartureAirportId": "airport-dep",
+        "DepartureDate": "2026-10-30T09:00:00Z",
+        "DurationMinutes": 420,
+        "FlightDate": "2026-10-30T00:00:00Z",
+        "FlightNumber": "FL-1001",
+        "IsDeleted": false,
+        "Price": 300.0,
+        "Status": "Flying",
+        "Version": 1
+      }
+    },
+    {
+      "ref": "seat-1",
+      "table": "Seat",
+      "values": {
+        "Class": "Economy",
+        "FlightId": "flight-1",
+        "IsDeleted": false,
+        "SeatNumber": "12A",
+        "Type": "Window",
+        "Version": 1
+      }
+    }
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "does": "Call FlightGrpcService/ReserveSeat with seat-1's Id, flight-1's Id and a valid passenger with a passport."
+    }
+  ],
+  "expect": [
+    "The reservation succeeds and a booking is returned for seat 12A on FL-1001."
+  ]
+}

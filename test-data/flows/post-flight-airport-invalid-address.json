@@ -1,0 +1,16 @@
+{
+  "id": "post-flight-airport-invalid-address",
+  "title": "Invalid address",
+  "source": "staged scenario",
+  "why": "Shows a whitespace-only Address is treated as missing",
+  "setup": [],
+  "steps": [
+    {
+      "n": 1,
+      "does": "POST …/flight/airport with Name 'Narita', Address '   ', Code 'NRT'"
+    }
+  ],
+  "expect": [
+    "Rejected with a validation error on Address; nothing is stored"
+  ]
+}

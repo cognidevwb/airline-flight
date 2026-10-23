@@ -1,0 +1,27 @@
+{
+  "id": "post-flight-airport-soft-deleted-airport",
+  "title": "Soft-deleted airport with same code",
+  "source": "staged scenario",
+  "why": "Shows whether a soft-deleted airport still holds its code or the code can be reused",
+  "setup": [
+    {
+      "ref": "airport-dxb-old",
+      "table": "Airport",
+      "values": {
+        "Address": "Dubai, UAE",
+        "Code": "DXB",
+        "IsDeleted": true,
+        "Name": "Dubai International"
+      }
+    }
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "does": "POST …/flight/airport with Name 'Dubai International', Address 'Dubai, UAE', Code 'DXB'"
+    }
+  ],
+  "expect": [
+    "Created as a new airport, because soft-deleted rows are ignored by the duplicate check; the old row stays deleted"
+  ]
+}

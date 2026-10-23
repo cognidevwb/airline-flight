@@ -1,0 +1,4839 @@
+{
+  "name": "CreateFlightRequestDto",
+  "kind": "request",
+  "layer": "domain",
+  "source": "src/Flight/Flights/Features/CreatingFlight/V1/CreateFlight.cs:39",
+  "columns": [
+    "FlightNumber",
+    "AircraftId",
+    "DepartureAirportId",
+    "DepartureDate",
+    "ArriveDate",
+    "ArriveAirportId",
+    "DurationMinutes",
+    "FlightDate",
+    "Status",
+    "Price"
+  ],
+  "valid": [
+    {
+      "ref": "flight-ba117-7",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001014",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001011",
+        "ArriveDate": "2026-09-03T18:20:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001010",
+        "DepartureDate": "2026-09-03T10:30:00Z",
+        "DurationMinutes": 470.0,
+        "FlightDate": "2026-09-03T00:00:00Z",
+        "FlightNumber": "BA117",
+        "Price": 612.5,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-desert-falcon",
+        "ArriveAirportId": "airport-jfk",
+        "DepartureAirportId": "airport-lhr"
+      }
+    },
+    {
+      "ref": "flight-lh401-7",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001012",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001011",
+        "ArriveDate": "2026-09-05T16:55:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001012",
+        "DepartureDate": "2026-09-05T08:15:00Z",
+        "DurationMinutes": 520.0,
+        "FlightDate": "2026-09-05T00:00:00Z",
+        "FlightNumber": "LH401",
+        "Price": 689.99,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-thames-voyager",
+        "ArriveAirportId": "airport-jfk",
+        "DepartureAirportId": "airport-fra"
+      }
+    },
+    {
+      "ref": "flight-ek203-7",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001023",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001010",
+        "ArriveDate": "2026-09-07T11:10:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001013",
+        "DepartureDate": "2026-09-07T03:40:00Z",
+        "DurationMinutes": 450.0,
+        "FlightDate": "2026-09-07T00:00:00Z",
+        "FlightNumber": "EK203",
+        "Price": 540.0,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-windsor-castle",
+        "ArriveAirportId": "airport-lhr",
+        "DepartureAirportId": "airport-dxb"
+      }
+    },
+    {
+      "ref": "flight-aa100-7",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001027",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001010",
+        "ArriveDate": "2026-09-10T04:55:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001011",
+        "DepartureDate": "2026-09-09T22:00:00Z",
+        "DurationMinutes": 415.0,
+        "FlightDate": "2026-09-09T00:00:00Z",
+        "FlightNumber": "AA100",
+        "Price": 578.4,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-manhattan-skyline",
+        "ArriveAirportId": "airport-lhr",
+        "DepartureAirportId": "airport-jfk"
+      }
+    },
+    {
+      "ref": "flight-af1680-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001022",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001016",
+        "ArriveDate": "2026-09-11T08:00:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001015",
+        "DepartureDate": "2026-09-11T06:45:00Z",
+        "DurationMinutes": 75.0,
+        "FlightDate": "2026-09-11T00:00:00Z",
+        "FlightNumber": "AF1680",
+        "Price": 89.99,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-baltic-breeze",
+        "ArriveAirportId": "airport-ams",
+        "DepartureAirportId": "airport-cdg"
+      }
+    },
+    {
+      "ref": "flight-kl1001-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001020",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001017",
+        "ArriveDate": "2026-09-12T16:00:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001016",
+        "DepartureDate": "2026-09-12T13:20:00Z",
+        "DurationMinutes": 160.0,
+        "FlightDate": "2026-09-12T00:00:00Z",
+        "FlightNumber": "KL1001",
+        "Price": 129.5,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-spirit-of-belfast",
+        "ArriveAirportId": "airport-mad",
+        "DepartureAirportId": "airport-ams"
+      }
+    },
+    {
+      "ref": "flight-ua901-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001015",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001019",
+        "ArriveDate": "2026-09-14T11:15:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001018",
+        "DepartureDate": "2026-09-14T07:05:00Z",
+        "DurationMinutes": 250.0,
+        "FlightDate": "2026-09-14T00:00:00Z",
+        "FlightNumber": "UA901",
+        "Price": 214.0,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-liberty-bell",
+        "ArriveAirportId": "airport-ord",
+        "DepartureAirportId": "airport-lax"
+      }
+    },
+    {
+      "ref": "flight-sq321-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001013",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001021",
+        "ArriveDate": "2026-09-15T07:00:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001020",
+        "DepartureDate": "2026-09-15T00:10:00Z",
+        "DurationMinutes": 410.0,
+        "FlightDate": "2026-09-15T00:00:00Z",
+        "FlightNumber": "SQ321",
+        "Price": 498.75,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-rhine-explorer",
+        "ArriveAirportId": "airport-hnd",
+        "DepartureAirportId": "airport-sin"
+      }
+    },
+    {
+      "ref": "flight-dl401-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001031",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001037",
+        "ArriveDate": "2026-09-16T18:35:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001022",
+        "DepartureDate": "2026-09-16T16:30:00Z",
+        "DurationMinutes": 125.0,
+        "FlightDate": "2026-09-16T00:00:00Z",
+        "FlightNumber": "DL401",
+        "Price": 99.99,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-spirit-of-galway",
+        "ArriveAirportId": "airport-mia",
+        "DepartureAirportId": "airport-atl"
+      }
+    },
+    {
+      "ref": "flight-lh2100-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001043",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001024",
+        "ArriveDate": "2026-09-18T10:05:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001023",
+        "DepartureDate": "2026-09-18T09:00:00Z",
+        "DurationMinutes": 65.0,
+        "FlightDate": "2026-09-18T00:00:00Z",
+        "FlightNumber": "LH2100",
+        "Price": 119.0,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-cotswold-rose",
+        "ArriveAirportId": "airport-zrh",
+        "DepartureAirportId": "airport-muc"
+      }
+    },
+    {
+      "ref": "flight-tk1983-7",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001016",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001026",
+        "ArriveDate": "2026-09-20T01:00:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001025",
+        "DepartureDate": "2026-09-19T20:45:00Z",
+        "DurationMinutes": 255.0,
+        "FlightDate": "2026-09-19T00:00:00Z",
+        "FlightNumber": "TK1983",
+        "Price": 276.3,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-emerald-isle",
+        "ArriveAirportId": "airport-doh",
+        "DepartureAirportId": "airport-ist"
+      }
+    },
+    {
+      "ref": "flight-qr908-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001034",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001058",
+        "ArriveDate": "2026-09-21T07:35:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001026",
+        "DepartureDate": "2026-09-21T01:15:00Z",
+        "DurationMinutes": 380.0,
+        "FlightDate": "2026-09-21T00:00:00Z",
+        "FlightNumber": "QR908",
+        "Price": 455.0,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-silk-road",
+        "ArriveAirportId": "airport-bkk",
+        "DepartureAirportId": "airport-doh"
+      }
+    },
+    {
+      "ref": "flight-qf143-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001030",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001073",
+        "ArriveDate": "2026-09-22T09:05:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001027",
+        "DepartureDate": "2026-09-22T05:50:00Z",
+        "DurationMinutes": 195.0,
+        "FlightDate": "2026-09-22T00:00:00Z",
+        "FlightNumber": "QF143",
+        "Price": 258.6,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-oriental-jade",
+        "ArriveAirportId": "airport-akl",
+        "DepartureAirportId": "airport-syd"
+      }
+    },
+    {
+      "ref": "flight-ac849-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001061",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001029",
+        "ArriveDate": "2026-09-24T19:40:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001028",
+        "DepartureDate": "2026-09-24T14:10:00Z",
+        "DurationMinutes": 330.0,
+        "FlightDate": "2026-09-24T00:00:00Z",
+        "FlightNumber": "AC849",
+        "Price": 389.0,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-giants-causeway",
+        "ArriveAirportId": "airport-sfo",
+        "DepartureAirportId": "airport-yyz"
+      }
+    },
+    {
+      "ref": "flight-cx880-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001048",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001031",
+        "ArriveDate": "2026-09-25T14:00:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001030",
+        "DepartureDate": "2026-09-25T10:25:00Z",
+        "DurationMinutes": 215.0,
+        "FlightDate": "2026-09-25T00:00:00Z",
+        "FlightNumber": "CX880",
+        "Price": 312.45,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-bavarian-eagle",
+        "ArriveAirportId": "airport-icn",
+        "DepartureAirportId": "airport-hkg"
+      }
+    },
+    {
+      "ref": "flight-sk1500-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001017",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001033",
+        "ArriveDate": "2026-09-27T13:20:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001032",
+        "DepartureDate": "2026-09-27T11:35:00Z",
+        "DurationMinutes": 105.0,
+        "FlightDate": "2026-09-27T00:00:00Z",
+        "FlightNumber": "SK1500",
+        "Price": 142.2,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-alpine-crest",
+        "ArriveAirportId": "airport-vie",
+        "DepartureAirportId": "airport-cph"
+      }
+    },
+    {
+      "ref": "flight-ib3166-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001028",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001035",
+        "ArriveDate": "2026-09-28T19:45:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001034",
+        "DepartureDate": "2026-09-28T17:50:00Z",
+        "DurationMinutes": 115.0,
+        "FlightDate": "2026-09-28T00:00:00Z",
+        "FlightNumber": "IB3166",
+        "Price": 87.5,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-aegean-wind",
+        "ArriveAirportId": "airport-fco",
+        "DepartureAirportId": "airport-bcn"
+      }
+    },
+    {
+      "ref": "flight-aa2456-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001108",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001055",
+        "ArriveDate": "2026-09-30T10:25:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001036",
+        "DepartureDate": "2026-09-30T06:30:00Z",
+        "DurationMinutes": 235.0,
+        "FlightDate": "2026-09-30T00:00:00Z",
+        "FlightNumber": "AA2456",
+        "Price": 245.8,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-spirit-of-lisbon-2",
+        "ArriveAirportId": "airport-bos",
+        "DepartureAirportId": "airport-dfw"
+      }
+    },
+    {
+      "ref": "flight-vs3-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001064",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001011",
+        "ArriveDate": "2026-10-01T18:55:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001038",
+        "DepartureDate": "2026-10-01T11:05:00Z",
+        "DurationMinutes": 470.0,
+        "FlightDate": "2026-10-01T00:00:00Z",
+        "FlightNumber": "VS3",
+        "Price": 530.0,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-spirit-of-vienna",
+        "ArriveAirportId": "airport-jfk",
+        "DepartureAirportId": "airport-man"
+      }
+    },
+    {
+      "ref": "flight-ezy8812-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001045",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001040",
+        "ArriveDate": "2026-10-02T09:05:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001039",
+        "DepartureDate": "2026-10-02T07:40:00Z",
+        "DurationMinutes": 85.0,
+        "FlightDate": "2026-10-02T00:00:00Z",
+        "FlightNumber": "EZY8812",
+        "Price": 49.99,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-spirit-of-derry",
+        "ArriveAirportId": "airport-edi",
+        "DepartureAirportId": "airport-lgw"
+      }
+    },
+    {
+      "ref": "flight-fr1124-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001049",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001046",
+        "ArriveDate": "2026-10-03T15:10:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001014",
+        "DepartureDate": "2026-10-03T12:15:00Z",
+        "DurationMinutes": 175.0,
+        "FlightDate": "2026-10-03T00:00:00Z",
+        "FlightNumber": "FR1124",
+        "Price": 64.99,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-gateway-spirit",
+        "ArriveAirportId": "airport-lis",
+        "DepartureAirportId": "airport-dub"
+      }
+    },
+    {
+      "ref": "flight-ay1331-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001024",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001044",
+        "ArriveDate": "2026-10-04T09:50:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001045",
+        "DepartureDate": "2026-10-04T08:55:00Z",
+        "DurationMinutes": 55.0,
+        "FlightDate": "2026-10-04T00:00:00Z",
+        "FlightNumber": "AY1331",
+        "Price": 79.0,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-highland-piper",
+        "ArriveAirportId": "airport-arn",
+        "DepartureAirportId": "airport-hel"
+      }
+    },
+    {
+      "ref": "flight-dy1302-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001042",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001010",
+        "ArriveDate": "2026-10-05T17:25:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001043",
+        "DepartureDate": "2026-10-05T15:20:00Z",
+        "DurationMinutes": 125.0,
+        "FlightDate": "2026-10-05T00:00:00Z",
+        "FlightNumber": "DY1302",
+        "Price": 134.5,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-coral-reef",
+        "ArriveAirportId": "airport-lhr",
+        "DepartureAirportId": "airport-osl"
+      }
+    },
+    {
+      "ref": "flight-sn2301-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001073",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001048",
+        "ArriveDate": "2026-10-06T13:15:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001047",
+        "DepartureDate": "2026-10-06T10:00:00Z",
+        "DurationMinutes": 195.0,
+        "FlightDate": "2026-10-06T00:00:00Z",
+        "FlightNumber": "SN2301",
+        "Price": 188.0,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-spirit-of-prague",
+        "ArriveAirportId": "airport-ath",
+        "DepartureAirportId": "airport-bru"
+      }
+    },
+    {
+      "ref": "flight-ey101-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001126",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001010",
+        "ArriveDate": "2026-10-07T10:00:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001049",
+        "DepartureDate": "2026-10-07T02:30:00Z",
+        "DurationMinutes": 450.0,
+        "FlightDate": "2026-10-07T00:00:00Z",
+        "FlightNumber": "EY101",
+        "Price": 612.0,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-spirit-of-belfast-2",
+        "ArriveAirportId": "airport-lhr",
+        "DepartureAirportId": "airport-auh"
+      }
+    },
+    {
+      "ref": "flight-ai101-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001097",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001051",
+        "ArriveDate": "2026-10-08T08:25:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001050",
+        "DepartureDate": "2026-10-08T06:15:00Z",
+        "DurationMinutes": 130.0,
+        "FlightDate": "2026-10-08T00:00:00Z",
+        "FlightNumber": "AI101",
+        "Price": 74.25,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-spirit-of-tallinn",
+        "ArriveAirportId": "airport-bom",
+        "DepartureAirportId": "airport-del"
+      }
+    },
+    {
+      "ref": "flight-sa201-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001086",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001099",
+        "ArriveDate": "2026-10-09T11:35:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001052",
+        "DepartureDate": "2026-10-09T09:30:00Z",
+        "DurationMinutes": 125.0,
+        "FlightDate": "2026-10-09T00:00:00Z",
+        "FlightNumber": "SA201",
+        "Price": 98.4,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-lough-neagh",
+        "ArriveAirportId": "airport-cpt",
+        "DepartureAirportId": "airport-jnb"
+      }
+    },
+    {
+      "ref": "flight-la8084-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001117",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001092",
+        "ArriveDate": "2026-10-10T17:15:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001053",
+        "DepartureDate": "2026-10-10T13:10:00Z",
+        "DurationMinutes": 245.0,
+        "FlightDate": "2026-10-10T00:00:00Z",
+        "FlightNumber": "LA8084",
+        "Price": 304.0,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-spirit-of-galway-3",
+        "ArriveAirportId": "airport-scl",
+        "DepartureAirportId": "airport-gru"
+      }
+    },
+    {
+      "ref": "flight-am1-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001160",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001018",
+        "ArriveDate": "2026-10-11T12:30:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001054",
+        "DepartureDate": "2026-10-11T08:45:00Z",
+        "DurationMinutes": 225.0,
+        "FlightDate": "2026-10-11T00:00:00Z",
+        "FlightNumber": "AM1",
+        "Price": 267.9,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-city-of-bergen",
+        "ArriveAirportId": "airport-lax",
+        "DepartureAirportId": "airport-mex"
+      }
+    },
+    {
+      "ref": "flight-as330-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001139",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001029",
+        "ArriveDate": "2026-10-12T20:30:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001056",
+        "DepartureDate": "2026-10-12T18:25:00Z",
+        "DurationMinutes": 125.0,
+        "FlightDate": "2026-10-12T00:00:00Z",
+        "FlightNumber": "AS330",
+        "Price": 118.0,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-heron-of-tallinn",
+        "ArriveAirportId": "airport-sfo",
+        "DepartureAirportId": "airport-sea"
+      }
+    },
+    {
+      "ref": "flight-ua123-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001109",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001019",
+        "ArriveDate": "2026-10-13T14:30:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001057",
+        "DepartureDate": "2026-10-13T12:00:00Z",
+        "DurationMinutes": 150.0,
+        "FlightDate": "2026-10-13T00:00:00Z",
+        "FlightNumber": "UA123",
+        "Price": 176.5,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-emerald-isle-2",
+        "ArriveAirportId": "airport-ord",
+        "DepartureAirportId": "airport-ewr"
+      }
+    },
+    {
+      "ref": "flight-tg911-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001152",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001020",
+        "ArriveDate": "2026-10-14T23:30:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001058",
+        "DepartureDate": "2026-10-14T21:00:00Z",
+        "DurationMinutes": 150.0,
+        "FlightDate": "2026-10-14T00:00:00Z",
+        "FlightNumber": "TG911",
+        "Price": 138.75,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-spirit-of-waterford-2",
+        "ArriveAirportId": "airport-sin",
+        "DepartureAirportId": "airport-bkk"
+      }
+    },
+    {
+      "ref": "flight-ca981-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001062",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001021",
+        "ArriveDate": "2026-10-15T11:20:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001059",
+        "DepartureDate": "2026-10-15T07:50:00Z",
+        "DurationMinutes": 210.0,
+        "FlightDate": "2026-10-15T00:00:00Z",
+        "FlightNumber": "CA981",
+        "Price": 289.0,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-bluebird-of-reykjavik",
+        "ArriveAirportId": "airport-hnd",
+        "DepartureAirportId": "airport-pek"
+      }
+    },
+    {
+      "ref": "flight-mh2-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001057",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001020",
+        "ArriveDate": "2026-10-16T15:35:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001060",
+        "DepartureDate": "2026-10-16T14:35:00Z",
+        "DurationMinutes": 60.0,
+        "FlightDate": "2026-10-16T00:00:00Z",
+        "FlightNumber": "MH2",
+        "Price": 69.99,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-tasman-wave",
+        "ArriveAirportId": "airport-sin",
+        "DepartureAirportId": "airport-kul"
+      }
+    },
+    {
+      "ref": "flight-ga880-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001090",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001060",
+        "ArriveDate": "2026-10-17T12:10:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001061",
+        "DepartureDate": "2026-10-17T10:10:00Z",
+        "DurationMinutes": 120.0,
+        "FlightDate": "2026-10-17T00:00:00Z",
+        "FlightNumber": "GA880",
+        "Price": 92.3,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-howth-lantern",
+        "ArriveAirportId": "airport-kul",
+        "DepartureAirportId": "airport-cgk"
+      }
+    },
+    {
+      "ref": "flight-pr100-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001080",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001030",
+        "ArriveDate": "2026-10-18T07:45:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001062",
+        "DepartureDate": "2026-10-18T05:25:00Z",
+        "DurationMinutes": 140.0,
+        "FlightDate": "2026-10-18T00:00:00Z",
+        "FlightNumber": "PR100",
+        "Price": 156.0,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-sperrin-skies",
+        "ArriveAirportId": "airport-hkg",
+        "DepartureAirportId": "airport-mnl"
+      }
+    },
+    {
+      "ref": "flight-br189-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001119",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001064",
+        "ArriveDate": "2026-10-19T11:45:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001063",
+        "DepartureDate": "2026-10-19T09:40:00Z",
+        "DurationMinutes": 125.0,
+        "FlightDate": "2026-10-19T00:00:00Z",
+        "FlightNumber": "BR189",
+        "Price": 143.2,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-aurora-borealis-2",
+        "ArriveAirportId": "airport-pvg",
+        "DepartureAirportId": "airport-tpe"
+      }
+    },
+    {
+      "ref": "flight-cz3081-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001163",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001059",
+        "ArriveDate": "2026-10-20T19:15:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001065",
+        "DepartureDate": "2026-10-20T16:05:00Z",
+        "DurationMinutes": 190.0,
+        "FlightDate": "2026-10-20T00:00:00Z",
+        "FlightNumber": "CZ3081",
+        "Price": 201.0,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-emerald-isle-3",
+        "ArriveAirportId": "airport-pek",
+        "DepartureAirportId": "airport-can"
+      }
+    },
+    {
+      "ref": "flight-oz101-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001105",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001066",
+        "ArriveDate": "2026-10-21T09:25:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001031",
+        "DepartureDate": "2026-10-21T07:20:00Z",
+        "DurationMinutes": 125.0,
+        "FlightDate": "2026-10-21T00:00:00Z",
+        "FlightNumber": "OZ101",
+        "Price": 163.4,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-spirit-of-bergen",
+        "ArriveAirportId": "airport-kix",
+        "DepartureAirportId": "airport-icn"
+      }
+    },
+    {
+      "ref": "flight-qf400-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001037",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001071",
+        "ArriveDate": "2026-10-22T08:10:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001070",
+        "DepartureDate": "2026-10-22T06:10:00Z",
+        "DurationMinutes": 120.0,
+        "FlightDate": "2026-10-22T00:00:00Z",
+        "FlightNumber": "QF400",
+        "Price": 109.0,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-atlas-summit",
+        "ArriveAirportId": "airport-bne",
+        "DepartureAirportId": "airport-mel"
+      }
+    },
+    {
+      "ref": "flight-nz175-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001044",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001074",
+        "ArriveDate": "2026-10-22T21:10:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001073",
+        "DepartureDate": "2026-10-22T19:45:00Z",
+        "DurationMinutes": 85.0,
+        "FlightDate": "2026-10-22T00:00:00Z",
+        "FlightNumber": "NZ175",
+        "Price": 94.5,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-fjord-runner",
+        "ArriveAirportId": "airport-chc",
+        "DepartureAirportId": "airport-akl"
+      }
+    },
+    {
+      "ref": "flight-ba93-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001167",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001028",
+        "ArriveDate": "2026-10-23T17:30:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001010",
+        "DepartureDate": "2026-10-23T09:30:00Z",
+        "DurationMinutes": 480.0,
+        "FlightDate": "2026-10-23T00:00:00Z",
+        "FlightNumber": "BA93",
+        "Price": 701.25,
+        "Status": "Flying"
+      },
+      "links": {
+        "AircraftId": "aircraft-lady-of-lyon",
+        "ArriveAirportId": "airport-yyz",
+        "DepartureAirportId": "airport-lhr"
+      }
+    },
+    {
+      "ref": "flight-ua16-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001176",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001057",
+        "ArriveDate": "2026-10-23T16:15:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001029",
+        "DepartureDate": "2026-10-23T10:45:00Z",
+        "DurationMinutes": 330.0,
+        "FlightDate": "2026-10-23T00:00:00Z",
+        "FlightNumber": "UA16",
+        "Price": 412.0,
+        "Status": "Flying"
+      },
+      "links": {
+        "AircraftId": "aircraft-midnight-sun-2",
+        "ArriveAirportId": "airport-ewr",
+        "DepartureAirportId": "airport-sfo"
+      }
+    },
+    {
+      "ref": "flight-lh1130-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001166",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001046",
+        "ArriveDate": "2026-10-24T10:35:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001012",
+        "DepartureDate": "2026-10-24T07:30:00Z",
+        "DurationMinutes": 185.0,
+        "FlightDate": "2026-10-24T00:00:00Z",
+        "FlightNumber": "LH1130",
+        "Price": 227.0,
+        "Status": "Delay"
+      },
+      "links": {
+        "AircraftId": "aircraft-spirit-of-seville",
+        "ArriveAirportId": "airport-lis",
+        "DepartureAirportId": "airport-fra"
+      }
+    },
+    {
+      "ref": "flight-ek500-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001046",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001051",
+        "ArriveDate": "2026-10-25T17:20:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001013",
+        "DepartureDate": "2026-10-25T13:55:00Z",
+        "DurationMinutes": 205.0,
+        "FlightDate": "2026-10-25T00:00:00Z",
+        "FlightNumber": "EK500",
+        "Price": 332.5,
+        "Status": "Delay"
+      },
+      "links": {
+        "AircraftId": "aircraft-monsoon-pearl",
+        "ArriveAirportId": "airport-bom",
+        "DepartureAirportId": "airport-dxb"
+      }
+    },
+    {
+      "ref": "flight-lh1971-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001033",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001023",
+        "ArriveDate": "2026-10-26T07:10:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001135",
+        "DepartureDate": "2026-10-26T06:00:00Z",
+        "DurationMinutes": 70.0,
+        "FlightDate": "2026-10-26T00:00:00Z",
+        "FlightNumber": "LH1971",
+        "Price": 98.0,
+        "Status": "Canceled"
+      },
+      "links": {
+        "AircraftId": "aircraft-prairie-wind",
+        "ArriveAirportId": "airport-muc",
+        "DepartureAirportId": "airport-ber"
+      }
+    },
+    {
+      "ref": "flight-sq231-10",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001101",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001027",
+        "ArriveDate": "2026-10-29T05:05:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001020",
+        "DepartureDate": "2026-10-28T21:15:00Z",
+        "DurationMinutes": 470.0,
+        "FlightDate": "2026-10-28T00:00:00Z",
+        "FlightNumber": "SQ231",
+        "Price": 805.0,
+        "Status": "Canceled"
+      },
+      "links": {
+        "AircraftId": "aircraft-spirit-of-lima",
+        "ArriveAirportId": "airport-syd",
+        "DepartureAirportId": "airport-sin"
+      }
+    },
+    {
+      "ref": "flight-ws1604-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001110",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001037",
+        "ArriveDate": "2026-10-30T14:05:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001028",
+        "DepartureDate": "2026-10-30T11:00:00Z",
+        "DurationMinutes": 185.0,
+        "FlightDate": "2026-10-30T00:00:00Z",
+        "FlightNumber": "WS1604",
+        "Price": 289.99,
+        "Status": "Unknown"
+      },
+      "links": {
+        "AircraftId": "aircraft-cape-wrath",
+        "ArriveAirportId": "airport-mia",
+        "DepartureAirportId": "airport-yyz"
+      }
+    },
+    {
+      "ref": "flight-ke17-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001083",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001018",
+        "ArriveDate": "2026-11-02T15:10:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001031",
+        "DepartureDate": "2026-11-02T04:20:00Z",
+        "DurationMinutes": 650.0,
+        "FlightDate": "2026-11-02T00:00:00Z",
+        "FlightNumber": "KE17",
+        "Price": 912.0,
+        "Status": "Delay"
+      },
+      "links": {
+        "AircraftId": "aircraft-spirit-of-toronto",
+        "ArriveAirportId": "airport-lax",
+        "DepartureAirportId": "airport-icn"
+      }
+    },
+    {
+      "ref": "flight-sq322-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001051",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001010",
+        "ArriveDate": "2026-09-30T12:30:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001020",
+        "DepartureDate": "2026-09-29T23:30:00Z",
+        "DurationMinutes": 780.0,
+        "FlightDate": "2026-09-29T00:00:00Z",
+        "FlightNumber": "SQ322",
+        "Price": 940.0,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-red-dragon",
+        "ArriveAirportId": "airport-lhr",
+        "DepartureAirportId": "airport-sin"
+      }
+    },
+    {
+      "ref": "flight-ei532-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001060",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001010",
+        "ArriveDate": "2026-10-02T08:00:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001014",
+        "DepartureDate": "2026-10-02T06:40:00Z",
+        "DurationMinutes": 80.0,
+        "FlightDate": "2026-10-02T00:00:00Z",
+        "FlightNumber": "EI532",
+        "Price": 89.99,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-spirit-of-lisbon",
+        "ArriveAirportId": "airport-lhr",
+        "DepartureAirportId": "airport-dub"
+      }
+    },
+    {
+      "ref": "flight-sk1425-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001061",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001044",
+        "ArriveDate": "2026-10-03T10:40:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001032",
+        "DepartureDate": "2026-10-03T09:15:00Z",
+        "DurationMinutes": 85.0,
+        "FlightDate": "2026-10-03T00:00:00Z",
+        "FlightNumber": "SK1425",
+        "Price": 74.5,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-giants-causeway",
+        "ArriveAirportId": "airport-arn",
+        "DepartureAirportId": "airport-cph"
+      }
+    },
+    {
+      "ref": "flight-ek203-8",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001023",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001010",
+        "ArriveDate": "2026-10-04T10:05:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001013",
+        "DepartureDate": "2026-10-04T02:50:00Z",
+        "DurationMinutes": 435.0,
+        "FlightDate": "2026-10-04T00:00:00Z",
+        "FlightNumber": "EK203",
+        "Price": 612.4,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-windsor-castle",
+        "ArriveAirportId": "airport-lhr",
+        "DepartureAirportId": "airport-dxb"
+      }
+    },
+    {
+      "ref": "flight-lh401-8",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001012",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001011",
+        "ArriveDate": "2026-10-05T19:10:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001012",
+        "DepartureDate": "2026-10-05T10:20:00Z",
+        "DurationMinutes": 530.0,
+        "FlightDate": "2026-10-05T00:00:00Z",
+        "FlightNumber": "LH401",
+        "Price": 684.0,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-thames-voyager",
+        "ArriveAirportId": "airport-jfk",
+        "DepartureAirportId": "airport-fra"
+      }
+    },
+    {
+      "ref": "flight-aa106-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001064",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001010",
+        "ArriveDate": "2026-10-07T05:15:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001055",
+        "DepartureDate": "2026-10-06T22:30:00Z",
+        "DurationMinutes": 405.0,
+        "FlightDate": "2026-10-06T00:00:00Z",
+        "FlightNumber": "AA106",
+        "Price": 548.9,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-spirit-of-vienna",
+        "ArriveAirportId": "airport-lhr",
+        "DepartureAirportId": "airport-bos"
+      }
+    },
+    {
+      "ref": "flight-af1180-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001065",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001094",
+        "ArriveDate": "2026-10-07T11:50:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001015",
+        "DepartureDate": "2026-10-07T07:45:00Z",
+        "DurationMinutes": 245.0,
+        "FlightDate": "2026-10-07T00:00:00Z",
+        "FlightNumber": "AF1180",
+        "Price": 329.99,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-atlantic-dawn",
+        "ArriveAirportId": "airport-cai",
+        "DepartureAirportId": "airport-cdg"
+      }
+    },
+    {
+      "ref": "flight-kl1275-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001066",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001032",
+        "ArriveDate": "2026-10-08T13:30:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001016",
+        "DepartureDate": "2026-10-08T12:05:00Z",
+        "DurationMinutes": 85.0,
+        "FlightDate": "2026-10-08T00:00:00Z",
+        "FlightNumber": "KL1275",
+        "Price": 119.0,
+        "Status": "Canceled"
+      },
+      "links": {
+        "AircraftId": "aircraft-river-liffey",
+        "ArriveAirportId": "airport-cph",
+        "DepartureAirportId": "airport-ams"
+      }
+    },
+    {
+      "ref": "flight-ba1442-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001067",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001040",
+        "ArriveDate": "2026-10-09T17:05:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001010",
+        "DepartureDate": "2026-10-09T15:40:00Z",
+        "DurationMinutes": 85.0,
+        "FlightDate": "2026-10-09T00:00:00Z",
+        "FlightNumber": "BA1442",
+        "Price": 94.2,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-spirit-of-cork-2",
+        "ArriveAirportId": "airport-edi",
+        "DepartureAirportId": "airport-lhr"
+      }
+    },
+    {
+      "ref": "flight-ei3341-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001068",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001014",
+        "ArriveDate": "2026-10-10T09:00:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001041",
+        "DepartureDate": "2026-10-10T08:10:00Z",
+        "DurationMinutes": 50.0,
+        "FlightDate": "2026-10-10T00:00:00Z",
+        "FlightNumber": "EI3341",
+        "Price": 49.99,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-skerries-wind",
+        "ArriveAirportId": "airport-dub",
+        "DepartureAirportId": "airport-snn"
+      }
+    },
+    {
+      "ref": "flight-lx1204-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001069",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001034",
+        "ArriveDate": "2026-10-11T15:10:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001024",
+        "DepartureDate": "2026-10-11T13:25:00Z",
+        "DurationMinutes": 105.0,
+        "FlightDate": "2026-10-11T00:00:00Z",
+        "FlightNumber": "LX1204",
+        "Price": 138.75,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-spirit-of-galway-2",
+        "ArriveAirportId": "airport-bcn",
+        "DepartureAirportId": "airport-zrh"
+      }
+    },
+    {
+      "ref": "flight-tk1983-8",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001016",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001026",
+        "ArriveDate": "2026-10-12T07:15:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001025",
+        "DepartureDate": "2026-10-12T05:30:00Z",
+        "DurationMinutes": 105.0,
+        "FlightDate": "2026-10-12T00:00:00Z",
+        "FlightNumber": "TK1983",
+        "Price": 104.3,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-emerald-isle",
+        "ArriveAirportId": "airport-doh",
+        "DepartureAirportId": "airport-ist"
+      }
+    },
+    {
+      "ref": "flight-az608-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001071",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001011",
+        "ArriveDate": "2026-10-13T19:15:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001035",
+        "DepartureDate": "2026-10-13T09:55:00Z",
+        "DurationMinutes": 560.0,
+        "FlightDate": "2026-10-13T00:00:00Z",
+        "FlightNumber": "AZ608",
+        "Price": 702.5,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-spirit-of-montreal",
+        "ArriveAirportId": "airport-jfk",
+        "DepartureAirportId": "airport-fco"
+      }
+    },
+    {
+      "ref": "flight-ib6830-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001072",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001053",
+        "ArriveDate": "2026-10-15T10:30:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001017",
+        "DepartureDate": "2026-10-14T23:50:00Z",
+        "DurationMinutes": 640.0,
+        "FlightDate": "2026-10-14T00:00:00Z",
+        "FlightNumber": "IB6830",
+        "Price": 566.0,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-harbour-light-2",
+        "ArriveAirportId": "airport-gru",
+        "DepartureAirportId": "airport-mad"
+      }
+    },
+    {
+      "ref": "flight-dl1032-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001073",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001037",
+        "ArriveDate": "2026-10-16T16:00:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001022",
+        "DepartureDate": "2026-10-16T14:00:00Z",
+        "DurationMinutes": 120.0,
+        "FlightDate": "2026-10-16T00:00:00Z",
+        "FlightNumber": "DL1032",
+        "Price": 164.0,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-spirit-of-prague",
+        "ArriveAirportId": "airport-mia",
+        "DepartureAirportId": "airport-atl"
+      }
+    },
+    {
+      "ref": "flight-ac871-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001074",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001076",
+        "ArriveDate": "2026-10-17T12:40:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001028",
+        "DepartureDate": "2026-10-17T11:20:00Z",
+        "DurationMinutes": 80.0,
+        "FlightDate": "2026-10-17T00:00:00Z",
+        "FlightNumber": "AC871",
+        "Price": 132.6,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-copper-coast",
+        "ArriveAirportId": "airport-yul",
+        "DepartureAirportId": "airport-yyz"
+      }
+    },
+    {
+      "ref": "flight-ua1745-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001075",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001018",
+        "ArriveDate": "2026-10-18T18:10:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001029",
+        "DepartureDate": "2026-10-18T16:45:00Z",
+        "DurationMinutes": 85.0,
+        "FlightDate": "2026-10-18T00:00:00Z",
+        "FlightNumber": "UA1745",
+        "Price": 88.4,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-spirit-of-madrid",
+        "ArriveAirportId": "airport-lax",
+        "DepartureAirportId": "airport-sfo"
+      }
+    },
+    {
+      "ref": "flight-qf431-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001076",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001070",
+        "ArriveDate": "2026-10-19T22:00:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001027",
+        "DepartureDate": "2026-10-19T20:30:00Z",
+        "DurationMinutes": 90.0,
+        "FlightDate": "2026-10-19T00:00:00Z",
+        "FlightNumber": "QF431",
+        "Price": 112.9,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-tara-hill",
+        "ArriveAirportId": "airport-mel",
+        "DepartureAirportId": "airport-syd"
+      }
+    },
+    {
+      "ref": "flight-ey412-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001077",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001013",
+        "ArriveDate": "2026-10-20T05:00:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001049",
+        "DepartureDate": "2026-10-20T04:10:00Z",
+        "DurationMinutes": 50.0,
+        "FlightDate": "2026-10-20T00:00:00Z",
+        "FlightNumber": "EY412",
+        "Price": 79.0,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-spirit-of-zurich",
+        "ArriveAirportId": "airport-dxb",
+        "DepartureAirportId": "airport-auh"
+      }
+    },
+    {
+      "ref": "flight-sv105-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001078",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001010",
+        "ArriveDate": "2026-10-21T02:20:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001100",
+        "DepartureDate": "2026-10-20T18:20:00Z",
+        "DurationMinutes": 480.0,
+        "FlightDate": "2026-10-20T00:00:00Z",
+        "FlightNumber": "SV105",
+        "Price": 640.0,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-dingle-bay",
+        "ArriveAirportId": "airport-lhr",
+        "DepartureAirportId": "airport-ruh"
+      }
+    },
+    {
+      "ref": "flight-lh778-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001079",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001020",
+        "ArriveDate": "2026-10-22T08:55:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001012",
+        "DepartureDate": "2026-10-21T20:05:00Z",
+        "DurationMinutes": 770.0,
+        "FlightDate": "2026-10-21T00:00:00Z",
+        "FlightNumber": "LH778",
+        "Price": 905.3,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-spirit-of-singapore",
+        "ArriveAirportId": "airport-sin",
+        "DepartureAirportId": "airport-fra"
+      }
+    },
+    {
+      "ref": "flight-ba295-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001080",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001019",
+        "ArriveDate": "2026-10-21T17:30:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001010",
+        "DepartureDate": "2026-10-21T08:40:00Z",
+        "DurationMinutes": 530.0,
+        "FlightDate": "2026-10-21T00:00:00Z",
+        "FlightNumber": "BA295",
+        "Price": 598.75,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-sperrin-skies",
+        "ArriveAirportId": "airport-ord",
+        "DepartureAirportId": "airport-lhr"
+      }
+    },
+    {
+      "ref": "flight-ai995-7",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001081",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001013",
+        "ArriveDate": "2026-10-22T06:50:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001050",
+        "DepartureDate": "2026-10-22T03:15:00Z",
+        "DurationMinutes": 215.0,
+        "FlightDate": "2026-10-22T00:00:00Z",
+        "FlightNumber": "AI995",
+        "Price": 215.4,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-spirit-of-athens",
+        "ArriveAirportId": "airport-dxb",
+        "DepartureAirportId": "airport-del"
+      }
+    },
+    {
+      "ref": "flight-aa1532-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001082",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001022",
+        "ArriveDate": "2026-10-22T15:15:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001036",
+        "DepartureDate": "2026-10-22T13:10:00Z",
+        "DurationMinutes": 125.0,
+        "FlightDate": "2026-10-22T00:00:00Z",
+        "FlightNumber": "AA1532",
+        "Price": 187.3,
+        "Status": "Canceled"
+      },
+      "links": {
+        "AircraftId": "aircraft-burren-falcon",
+        "ArriveAirportId": "airport-atl",
+        "DepartureAirportId": "airport-dfw"
+      }
+    },
+    {
+      "ref": "flight-et302-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001083",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001096",
+        "ArriveDate": "2026-10-22T11:35:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001097",
+        "DepartureDate": "2026-10-22T09:25:00Z",
+        "DurationMinutes": 130.0,
+        "FlightDate": "2026-10-22T00:00:00Z",
+        "FlightNumber": "ET302",
+        "Price": 176.0,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-spirit-of-toronto",
+        "ArriveAirportId": "airport-nbo",
+        "DepartureAirportId": "airport-add"
+      }
+    },
+    {
+      "ref": "flight-sa333-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001084",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001099",
+        "ArriveDate": "2026-10-22T08:05:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001052",
+        "DepartureDate": "2026-10-22T06:00:00Z",
+        "DurationMinutes": 125.0,
+        "FlightDate": "2026-10-22T00:00:00Z",
+        "FlightNumber": "SA333",
+        "Price": 120.45,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-slieve-donard",
+        "ArriveAirportId": "airport-cpt",
+        "DepartureAirportId": "airport-jnb"
+      }
+    },
+    {
+      "ref": "flight-ac8120-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001085",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001077",
+        "ArriveDate": "2026-10-22T19:00:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001075",
+        "DepartureDate": "2026-10-22T17:35:00Z",
+        "DurationMinutes": 85.0,
+        "FlightDate": "2026-10-22T00:00:00Z",
+        "FlightNumber": "AC8120",
+        "Price": 149.99,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-spirit-of-aberdeen",
+        "ArriveAirportId": "airport-yyc",
+        "DepartureAirportId": "airport-yvr"
+      }
+    },
+    {
+      "ref": "flight-nh253-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001086",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001172",
+        "ArriveDate": "2026-10-23T02:20:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001021",
+        "DepartureDate": "2026-10-23T00:30:00Z",
+        "DurationMinutes": 110.0,
+        "FlightDate": "2026-10-23T00:00:00Z",
+        "FlightNumber": "NH253",
+        "Price": 210.0,
+        "Status": "Flying"
+      },
+      "links": {
+        "AircraftId": "aircraft-lough-neagh",
+        "ArriveAirportId": "airport-fuk",
+        "DepartureAirportId": "airport-hnd"
+      }
+    },
+    {
+      "ref": "flight-ke023-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001087",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001029",
+        "ArriveDate": "2026-10-23T11:50:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001031",
+        "DepartureDate": "2026-10-23T01:10:00Z",
+        "DurationMinutes": 640.0,
+        "FlightDate": "2026-10-23T00:00:00Z",
+        "FlightNumber": "KE023",
+        "Price": 760.0,
+        "Status": "Flying"
+      },
+      "links": {
+        "AircraftId": "aircraft-spirit-of-cairo",
+        "ArriveAirportId": "airport-sfo",
+        "DepartureAirportId": "airport-icn"
+      }
+    },
+    {
+      "ref": "flight-cx255-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001088",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001010",
+        "ArriveDate": "2026-10-24T03:30:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001030",
+        "DepartureDate": "2026-10-23T14:40:00Z",
+        "DurationMinutes": 770.0,
+        "FlightDate": "2026-10-23T00:00:00Z",
+        "FlightNumber": "CX255",
+        "Price": 889.0,
+        "Status": "Delay"
+      },
+      "links": {
+        "AircraftId": "aircraft-achill-head",
+        "ArriveAirportId": "airport-lhr",
+        "DepartureAirportId": "airport-hkg"
+      }
+    },
+    {
+      "ref": "flight-qr95-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001089",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001024",
+        "ArriveDate": "2026-10-24T08:25:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001026",
+        "DepartureDate": "2026-10-24T02:05:00Z",
+        "DurationMinutes": 380.0,
+        "FlightDate": "2026-10-24T00:00:00Z",
+        "FlightNumber": "QR95",
+        "Price": 478.2,
+        "Status": "Unknown"
+      },
+      "links": {
+        "AircraftId": "aircraft-spirit-of-oslo",
+        "ArriveAirportId": "airport-zrh",
+        "DepartureAirportId": "airport-doh"
+      }
+    },
+    {
+      "ref": "flight-ei512-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001090",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001034",
+        "ArriveDate": "2026-10-25T09:40:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001014",
+        "DepartureDate": "2026-10-25T06:50:00Z",
+        "DurationMinutes": 170.0,
+        "FlightDate": "2026-10-25T00:00:00Z",
+        "FlightNumber": "EI512",
+        "Price": 156.8,
+        "Status": "Delay"
+      },
+      "links": {
+        "AircraftId": "aircraft-howth-lantern",
+        "ArriveAirportId": "airport-bcn",
+        "DepartureAirportId": "airport-dub"
+      }
+    },
+    {
+      "ref": "flight-vy1003-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001091",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001017",
+        "ArriveDate": "2026-09-15T08:20:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001034",
+        "DepartureDate": "2026-09-15T07:00:00Z",
+        "DurationMinutes": 80.0,
+        "FlightDate": "2026-09-15T00:00:00Z",
+        "FlightNumber": "VY1003",
+        "Price": 69.9,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-spirit-of-helsinki",
+        "ArriveAirportId": "airport-mad",
+        "DepartureAirportId": "airport-bcn"
+      }
+    },
+    {
+      "ref": "flight-lo283-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001092",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001198",
+        "ArriveDate": "2026-09-16T11:25:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001104",
+        "DepartureDate": "2026-09-16T10:30:00Z",
+        "DurationMinutes": 55.0,
+        "FlightDate": "2026-09-16T00:00:00Z",
+        "FlightNumber": "LO283",
+        "Price": 59.5,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-shannon-swan",
+        "ArriveAirportId": "airport-krk",
+        "DepartureAirportId": "airport-waw"
+      }
+    },
+    {
+      "ref": "flight-os354-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001093",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001024",
+        "ArriveDate": "2026-09-17T13:50:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001033",
+        "DepartureDate": "2026-09-17T12:15:00Z",
+        "DurationMinutes": 95.0,
+        "FlightDate": "2026-09-17T00:00:00Z",
+        "FlightNumber": "OS354",
+        "Price": 117.2,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-spirit-of-brussels",
+        "ArriveAirportId": "airport-zrh",
+        "DepartureAirportId": "airport-vie"
+      }
+    },
+    {
+      "ref": "flight-lh2456-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001094",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001025",
+        "ArriveDate": "2026-09-18T17:00:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001023",
+        "DepartureDate": "2026-09-18T14:05:00Z",
+        "DurationMinutes": 175.0,
+        "FlightDate": "2026-09-18T00:00:00Z",
+        "FlightNumber": "LH2456",
+        "Price": 203.4,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-mourne-gate",
+        "ArriveAirportId": "airport-ist",
+        "DepartureAirportId": "airport-muc"
+      }
+    },
+    {
+      "ref": "flight-sk903-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001095",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001011",
+        "ArriveDate": "2026-09-19T19:30:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001044",
+        "DepartureDate": "2026-09-19T10:50:00Z",
+        "DurationMinutes": 520.0,
+        "FlightDate": "2026-09-19T00:00:00Z",
+        "FlightNumber": "SK903",
+        "Price": 574.1,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-spirit-of-nairobi",
+        "ArriveAirportId": "airport-jfk",
+        "DepartureAirportId": "airport-arn"
+      }
+    },
+    {
+      "ref": "flight-ay873-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001096",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001015",
+        "ArriveDate": "2026-09-20T11:40:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001045",
+        "DepartureDate": "2026-09-20T08:20:00Z",
+        "DurationMinutes": 200.0,
+        "FlightDate": "2026-09-20T00:00:00Z",
+        "FlightNumber": "AY873",
+        "Price": 188.8,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-kinsale-harbour",
+        "ArriveAirportId": "airport-cdg",
+        "DepartureAirportId": "airport-hel"
+      }
+    },
+    {
+      "ref": "flight-tp1020-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001097",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001017",
+        "ArriveDate": "2026-09-21T17:25:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001046",
+        "DepartureDate": "2026-09-21T16:10:00Z",
+        "DurationMinutes": 75.0,
+        "FlightDate": "2026-09-21T00:00:00Z",
+        "FlightNumber": "TP1020",
+        "Price": 84.6,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-spirit-of-tallinn",
+        "ArriveAirportId": "airport-mad",
+        "DepartureAirportId": "airport-lis"
+      }
+    },
+    {
+      "ref": "flight-sn3703-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001098",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001010",
+        "ArriveDate": "2026-09-22T07:55:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001047",
+        "DepartureDate": "2026-09-22T06:35:00Z",
+        "DurationMinutes": 80.0,
+        "FlightDate": "2026-09-22T00:00:00Z",
+        "FlightNumber": "SN3703",
+        "Price": 109.3,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-glendalough",
+        "ArriveAirportId": "airport-lhr",
+        "DepartureAirportId": "airport-bru"
+      }
+    },
+    {
+      "ref": "flight-ca181-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001099",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001021",
+        "ArriveDate": "2026-09-23T04:55:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001059",
+        "DepartureDate": "2026-09-23T01:20:00Z",
+        "DurationMinutes": 215.0,
+        "FlightDate": "2026-09-23T00:00:00Z",
+        "FlightNumber": "CA181",
+        "Price": 288.0,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-spirit-of-doha",
+        "ArriveAirportId": "airport-hnd",
+        "DepartureAirportId": "airport-pek"
+      }
+    },
+    {
+      "ref": "flight-mh123-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001100",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001027",
+        "ArriveDate": "2026-09-24T22:35:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001060",
+        "DepartureDate": "2026-09-24T14:45:00Z",
+        "DurationMinutes": 470.0,
+        "FlightDate": "2026-09-24T00:00:00Z",
+        "FlightNumber": "MH123",
+        "Price": 612.0,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-boyne-valley",
+        "ArriveAirportId": "airport-syd",
+        "DepartureAirportId": "airport-kul"
+      }
+    },
+    {
+      "ref": "flight-tg642-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001101",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001021",
+        "ArriveDate": "2026-09-25T05:30:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001058",
+        "DepartureDate": "2026-09-25T00:55:00Z",
+        "DurationMinutes": 275.0,
+        "FlightDate": "2026-09-25T00:00:00Z",
+        "FlightNumber": "TG642",
+        "Price": 410.25,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-spirit-of-lima",
+        "ArriveAirportId": "airport-hnd",
+        "DepartureAirportId": "airport-bkk"
+      }
+    },
+    {
+      "ref": "flight-jl91-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001102",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001031",
+        "ArriveDate": "2026-09-26T06:10:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001021",
+        "DepartureDate": "2026-09-26T03:40:00Z",
+        "DurationMinutes": 150.0,
+        "FlightDate": "2026-09-26T00:00:00Z",
+        "FlightNumber": "JL91",
+        "Price": 235.9,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-aran-islander",
+        "ArriveAirportId": "airport-icn",
+        "DepartureAirportId": "airport-hnd"
+      }
+    },
+    {
+      "ref": "flight-sq976-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001103",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001058",
+        "ArriveDate": "2026-09-27T11:35:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001020",
+        "DepartureDate": "2026-09-27T09:05:00Z",
+        "DurationMinutes": 150.0,
+        "FlightDate": "2026-09-27T00:00:00Z",
+        "FlightNumber": "SQ976",
+        "Price": 176.4,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-spirit-of-warsaw",
+        "ArriveAirportId": "airport-bkk",
+        "DepartureAirportId": "airport-sin"
+      }
+    },
+    {
+      "ref": "flight-qf429-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001104",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001027",
+        "ArriveDate": "2026-09-28T21:05:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001070",
+        "DepartureDate": "2026-09-28T19:30:00Z",
+        "DurationMinutes": 95.0,
+        "FlightDate": "2026-09-28T00:00:00Z",
+        "FlightNumber": "QF429",
+        "Price": 129.99,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-donegal-tweed",
+        "ArriveAirportId": "airport-syd",
+        "DepartureAirportId": "airport-mel"
+      }
+    },
+    {
+      "ref": "flight-nz523-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001105",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001074",
+        "ArriveDate": "2026-09-29T22:25:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001073",
+        "DepartureDate": "2026-09-29T21:00:00Z",
+        "DurationMinutes": 85.0,
+        "FlightDate": "2026-09-29T00:00:00Z",
+        "FlightNumber": "NZ523",
+        "Price": 99.0,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-spirit-of-bergen",
+        "ArriveAirportId": "airport-chc",
+        "DepartureAirportId": "airport-akl"
+      }
+    },
+    {
+      "ref": "flight-kq481-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001106",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001191",
+        "ArriveDate": "2026-09-30T07:10:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001096",
+        "DepartureDate": "2026-09-30T05:40:00Z",
+        "DurationMinutes": 90.0,
+        "FlightDate": "2026-09-30T00:00:00Z",
+        "FlightNumber": "KQ481",
+        "Price": 142.35,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-connemara-pony",
+        "ArriveAirportId": "airport-dar",
+        "DepartureAirportId": "airport-nbo"
+      }
+    },
+    {
+      "ref": "flight-ek510-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001107",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001050",
+        "ArriveDate": "2026-10-01T14:25:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001013",
+        "DepartureDate": "2026-10-01T11:00:00Z",
+        "DurationMinutes": 205.0,
+        "FlightDate": "2026-10-01T00:00:00Z",
+        "FlightNumber": "EK510",
+        "Price": 297.8,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-spirit-of-marrakesh",
+        "ArriveAirportId": "airport-del",
+        "DepartureAirportId": "airport-dxb"
+      }
+    },
+    {
+      "ref": "flight-lh2392-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001108",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001024",
+        "ArriveDate": "2026-10-01T19:20:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001023",
+        "DepartureDate": "2026-10-01T18:25:00Z",
+        "DurationMinutes": 55.0,
+        "FlightDate": "2026-10-01T00:00:00Z",
+        "FlightNumber": "LH2392",
+        "Price": 91.7,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-spirit-of-lisbon-2",
+        "ArriveAirportId": "airport-zrh",
+        "DepartureAirportId": "airport-muc"
+      }
+    },
+    {
+      "ref": "flight-ac792-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001109",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001082",
+        "ArriveDate": "2026-10-02T22:40:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001028",
+        "DepartureDate": "2026-10-02T21:10:00Z",
+        "DurationMinutes": 90.0,
+        "FlightDate": "2026-10-02T00:00:00Z",
+        "FlightNumber": "AC792",
+        "Price": 158.5,
+        "Status": "Canceled"
+      },
+      "links": {
+        "AircraftId": "aircraft-emerald-isle-2",
+        "ArriveAirportId": "airport-phl",
+        "DepartureAirportId": "airport-yyz"
+      }
+    },
+    {
+      "ref": "flight-fz615-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001111",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001026",
+        "ArriveDate": "2026-02-04T06:45:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001013",
+        "DepartureDate": "2026-02-04T05:20:00Z",
+        "DurationMinutes": 85.0,
+        "FlightDate": "2026-02-04T00:00:00Z",
+        "FlightNumber": "FZ615",
+        "Price": 129.99,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-golden-gate-voyager",
+        "ArriveAirportId": "airport-doh",
+        "DepartureAirportId": "airport-dxb"
+      }
+    },
+    {
+      "ref": "flight-ei155-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001112",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001014",
+        "ArriveDate": "2026-03-12T08:35:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001010",
+        "DepartureDate": "2026-03-12T07:05:00Z",
+        "DurationMinutes": 90.0,
+        "FlightDate": "2026-03-12T00:00:00Z",
+        "FlightNumber": "EI155",
+        "Price": 89.5,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-spirit-of-cork-3",
+        "ArriveAirportId": "airport-dub",
+        "DepartureAirportId": "airport-lhr"
+      }
+    },
+    {
+      "ref": "flight-ua1264-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001113",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001029",
+        "ArriveDate": "2026-04-08T17:03:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001018",
+        "DepartureDate": "2026-04-08T15:40:00Z",
+        "DurationMinutes": 83.0,
+        "FlightDate": "2026-04-08T00:00:00Z",
+        "FlightNumber": "UA1264",
+        "Price": 119.0,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-northern-lights",
+        "ArriveAirportId": "airport-sfo",
+        "DepartureAirportId": "airport-lax"
+      }
+    },
+    {
+      "ref": "flight-dl1831-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001114",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001037",
+        "ArriveDate": "2026-05-19T13:15:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001022",
+        "DepartureDate": "2026-05-19T11:15:00Z",
+        "DurationMinutes": 120.0,
+        "FlightDate": "2026-05-19T00:00:00Z",
+        "FlightNumber": "DL1831",
+        "Price": 164.2,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-bluebird-of-oslo",
+        "ArriveAirportId": "airport-mia",
+        "DepartureAirportId": "airport-atl"
+      }
+    },
+    {
+      "ref": "flight-lh112-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001115",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001023",
+        "ArriveDate": "2026-06-02T07:30:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001012",
+        "DepartureDate": "2026-06-02T06:30:00Z",
+        "DurationMinutes": 60.0,
+        "FlightDate": "2026-06-02T00:00:00Z",
+        "FlightNumber": "LH112",
+        "Price": 99.0,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-rhine-maiden",
+        "ArriveAirportId": "airport-muc",
+        "DepartureAirportId": "airport-fra"
+      }
+    },
+    {
+      "ref": "flight-af7650-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001116",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001136",
+        "ArriveDate": "2026-07-14T10:42:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001015",
+        "DepartureDate": "2026-07-14T09:10:00Z",
+        "DurationMinutes": 92.0,
+        "FlightDate": "2026-07-14T00:00:00Z",
+        "FlightNumber": "AF7650",
+        "Price": 142.75,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-danube-star",
+        "ArriveAirportId": "airport-nce",
+        "DepartureAirportId": "airport-cdg"
+      }
+    },
+    {
+      "ref": "flight-ib6252-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001117",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001034",
+        "ArriveDate": "2026-08-21T14:20:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001017",
+        "DepartureDate": "2026-08-21T13:00:00Z",
+        "DurationMinutes": 80.0,
+        "FlightDate": "2026-08-21T00:00:00Z",
+        "FlightNumber": "IB6252",
+        "Price": 74.99,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-spirit-of-galway-3",
+        "ArriveAirportId": "airport-bcn",
+        "DepartureAirportId": "airport-mad"
+      }
+    },
+    {
+      "ref": "flight-kl1181-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001118",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001032",
+        "ArriveDate": "2026-09-09T18:12:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001016",
+        "DepartureDate": "2026-09-09T16:45:00Z",
+        "DurationMinutes": 87.0,
+        "FlightDate": "2026-09-09T00:00:00Z",
+        "FlightNumber": "KL1181",
+        "Price": 133.4,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-sierra-nevada",
+        "ArriveAirportId": "airport-cph",
+        "DepartureAirportId": "airport-ams"
+      }
+    },
+    {
+      "ref": "flight-tp837-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001119",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001046",
+        "ArriveDate": "2026-01-27T13:15:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001035",
+        "DepartureDate": "2026-01-27T10:20:00Z",
+        "DurationMinutes": 175.0,
+        "FlightDate": "2026-01-27T00:00:00Z",
+        "FlightNumber": "TP837",
+        "Price": 188.0,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-aurora-borealis-2",
+        "ArriveAirportId": "airport-lis",
+        "DepartureAirportId": "airport-fco"
+      }
+    },
+    {
+      "ref": "flight-ba2634-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001120",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001125",
+        "ArriveDate": "2026-07-03T08:10:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001039",
+        "DepartureDate": "2026-07-03T05:55:00Z",
+        "DurationMinutes": 135.0,
+        "FlightDate": "2026-07-03T00:00:00Z",
+        "FlightNumber": "BA2634",
+        "Price": 156.99,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-pride-of-bavaria",
+        "ArriveAirportId": "airport-pmi",
+        "DepartureAirportId": "airport-lgw"
+      }
+    },
+    {
+      "ref": "flight-ei588-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001121",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001017",
+        "ArriveDate": "2026-10-02T11:10:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001014",
+        "DepartureDate": "2026-10-02T08:30:00Z",
+        "DurationMinutes": 160.0,
+        "FlightDate": "2026-10-02T00:00:00Z",
+        "FlightNumber": "EI588",
+        "Price": 201.5,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-tagus-runner",
+        "ArriveAirportId": "airport-mad",
+        "DepartureAirportId": "airport-dub"
+      }
+    },
+    {
+      "ref": "flight-b6421-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001122",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001057",
+        "ArriveDate": "2026-10-15T20:22:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001055",
+        "DepartureDate": "2026-10-15T19:10:00Z",
+        "DurationMinutes": 72.0,
+        "FlightDate": "2026-10-15T00:00:00Z",
+        "FlightNumber": "B6421",
+        "Price": 79.0,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-spirit-of-limerick-2",
+        "ArriveAirportId": "airport-ewr",
+        "DepartureAirportId": "airport-bos"
+      }
+    },
+    {
+      "ref": "flight-sq231-11",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001101",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001027",
+        "ArriveDate": "2026-04-23T06:05:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001020",
+        "DepartureDate": "2026-04-22T22:10:00Z",
+        "DurationMinutes": 475.0,
+        "FlightDate": "2026-04-22T00:00:00Z",
+        "FlightNumber": "SQ231",
+        "Price": 689.0,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-spirit-of-lima",
+        "ArriveAirportId": "airport-syd",
+        "DepartureAirportId": "airport-sin"
+      }
+    },
+    {
+      "ref": "flight-ek3-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001124",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001010",
+        "ArriveDate": "2026-05-30T15:35:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001013",
+        "DepartureDate": "2026-05-30T08:05:00Z",
+        "DurationMinutes": 450.0,
+        "FlightDate": "2026-05-30T00:00:00Z",
+        "FlightNumber": "EK3",
+        "Price": 742.3,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-desert-rose",
+        "ArriveAirportId": "airport-lhr",
+        "DepartureAirportId": "airport-dxb"
+      }
+    },
+    {
+      "ref": "flight-qr7-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001125",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001010",
+        "ArriveDate": "2026-08-08T09:10:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001026",
+        "DepartureDate": "2026-08-08T02:25:00Z",
+        "DurationMinutes": 405.0,
+        "FlightDate": "2026-08-08T00:00:00Z",
+        "FlightNumber": "QR7",
+        "Price": 612.0,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-pacific-crest",
+        "ArriveAirportId": "airport-lhr",
+        "DepartureAirportId": "airport-doh"
+      }
+    },
+    {
+      "ref": "flight-nh8-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001126",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001029",
+        "ArriveDate": "2026-03-26T03:20:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001021",
+        "DepartureDate": "2026-03-25T17:50:00Z",
+        "DurationMinutes": 570.0,
+        "FlightDate": "2026-03-25T00:00:00Z",
+        "FlightNumber": "NH8",
+        "Price": 845.0,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-spirit-of-belfast-2",
+        "ArriveAirportId": "airport-sfo",
+        "DepartureAirportId": "airport-hnd"
+      }
+    },
+    {
+      "ref": "flight-ke017-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001127",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001018",
+        "ArriveDate": "2026-09-18T01:00:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001031",
+        "DepartureDate": "2026-09-17T14:20:00Z",
+        "DurationMinutes": 640.0,
+        "FlightDate": "2026-09-17T00:00:00Z",
+        "FlightNumber": "KE017",
+        "Price": 902.75,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-monsoon-wind",
+        "ArriveAirportId": "airport-lax",
+        "DepartureAirportId": "airport-icn"
+      }
+    },
+    {
+      "ref": "flight-af007-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001128",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001015",
+        "ArriveDate": "2026-06-27T05:50:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001011",
+        "DepartureDate": "2026-06-26T22:30:00Z",
+        "DurationMinutes": 440.0,
+        "FlightDate": "2026-06-26T00:00:00Z",
+        "FlightNumber": "AF007",
+        "Price": 574.6,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-cherry-blossom",
+        "ArriveAirportId": "airport-cdg",
+        "DepartureAirportId": "airport-jfk"
+      }
+    },
+    {
+      "ref": "flight-tk1-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001129",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001011",
+        "ArriveDate": "2026-10-11T19:40:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001025",
+        "DepartureDate": "2026-10-11T09:40:00Z",
+        "DurationMinutes": 600.0,
+        "FlightDate": "2026-10-11T00:00:00Z",
+        "FlightNumber": "TK1",
+        "Price": 868.0,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-highland-eagle",
+        "ArriveAirportId": "airport-jfk",
+        "DepartureAirportId": "airport-ist"
+      }
+    },
+    {
+      "ref": "flight-ek354-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001130",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001020",
+        "ArriveDate": "2026-02-18T10:35:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001013",
+        "DepartureDate": "2026-02-18T03:15:00Z",
+        "DurationMinutes": 440.0,
+        "FlightDate": "2026-02-18T00:00:00Z",
+        "FlightNumber": "EK354",
+        "Price": 520.4,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-spirit-of-dubai-creek",
+        "ArriveAirportId": "airport-sin",
+        "DepartureAirportId": "airport-dxb"
+      }
+    },
+    {
+      "ref": "flight-cx251-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001131",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001010",
+        "ArriveDate": "2026-07-26T12:45:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001030",
+        "DepartureDate": "2026-07-25T23:55:00Z",
+        "DurationMinutes": 770.0,
+        "FlightDate": "2026-07-25T00:00:00Z",
+        "FlightNumber": "CX251",
+        "Price": 931.0,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-falcon-of-doha",
+        "ArriveAirportId": "airport-lhr",
+        "DepartureAirportId": "airport-hkg"
+      }
+    },
+    {
+      "ref": "flight-ey11-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001132",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001010",
+        "ArriveDate": "2026-04-03T16:20:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001049",
+        "DepartureDate": "2026-04-03T09:05:00Z",
+        "DurationMinutes": 435.0,
+        "FlightDate": "2026-04-03T00:00:00Z",
+        "FlightNumber": "EY11",
+        "Price": 705.5,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-atlantic-dawn-2",
+        "ArriveAirportId": "airport-lhr",
+        "DepartureAirportId": "airport-auh"
+      }
+    },
+    {
+      "ref": "flight-ai995-8",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001081",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001013",
+        "ArriveDate": "2026-09-28T07:30:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001050",
+        "DepartureDate": "2026-09-28T03:50:00Z",
+        "DurationMinutes": 220.0,
+        "FlightDate": "2026-09-28T00:00:00Z",
+        "FlightNumber": "AI995",
+        "Price": 259.0,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-spirit-of-athens",
+        "ArriveAirportId": "airport-dxb",
+        "DepartureAirportId": "airport-del"
+      }
+    },
+    {
+      "ref": "flight-qr557-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001134",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001026",
+        "ArriveDate": "2026-05-12T08:20:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001051",
+        "DepartureDate": "2026-05-12T04:30:00Z",
+        "DurationMinutes": 230.0,
+        "FlightDate": "2026-05-12T00:00:00Z",
+        "FlightNumber": "QR557",
+        "Price": 311.2,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-jade-dragon",
+        "ArriveAirportId": "airport-doh",
+        "DepartureAirportId": "airport-bom"
+      }
+    },
+    {
+      "ref": "flight-ek722-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001135",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001013",
+        "ArriveDate": "2026-08-17T01:40:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001096",
+        "DepartureDate": "2026-08-16T20:10:00Z",
+        "DurationMinutes": 330.0,
+        "FlightDate": "2026-08-16T00:00:00Z",
+        "FlightNumber": "EK722",
+        "Price": 436.0,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-coral-sea",
+        "ArriveAirportId": "airport-dxb",
+        "DepartureAirportId": "airport-nbo"
+      }
+    },
+    {
+      "ref": "flight-lx1250-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001136",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001044",
+        "ArriveDate": "2026-03-06T14:55:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001024",
+        "DepartureDate": "2026-03-06T12:25:00Z",
+        "DurationMinutes": 150.0,
+        "FlightDate": "2026-03-06T00:00:00Z",
+        "FlightNumber": "LX1250",
+        "Price": 217.8,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-maple-leaf-express",
+        "ArriveAirportId": "airport-arn",
+        "DepartureAirportId": "airport-zrh"
+      }
+    },
+    {
+      "ref": "flight-ay932-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001137",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001045",
+        "ArriveDate": "2026-06-19T09:00:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001043",
+        "DepartureDate": "2026-06-19T07:15:00Z",
+        "DurationMinutes": 105.0,
+        "FlightDate": "2026-06-19T00:00:00Z",
+        "FlightNumber": "AY932",
+        "Price": 148.0,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-alpine-swift",
+        "ArriveAirportId": "airport-hel",
+        "DepartureAirportId": "airport-osl"
+      }
+    },
+    {
+      "ref": "flight-am404-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001138",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001081",
+        "ArriveDate": "2026-01-13T19:38:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001054",
+        "DepartureDate": "2026-01-13T17:30:00Z",
+        "DurationMinutes": 128.0,
+        "FlightDate": "2026-01-13T00:00:00Z",
+        "FlightNumber": "AM404",
+        "Price": 176.9,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-spirit-of-sligo",
+        "ArriveAirportId": "airport-iah",
+        "DepartureAirportId": "airport-mex"
+      }
+    },
+    {
+      "ref": "flight-ac402-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001139",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001076",
+        "ArriveDate": "2026-10-19T07:15:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001028",
+        "DepartureDate": "2026-10-19T06:00:00Z",
+        "DurationMinutes": 75.0,
+        "FlightDate": "2026-10-19T00:00:00Z",
+        "FlightNumber": "AC402",
+        "Price": 112.0,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-heron-of-tallinn",
+        "ArriveAirportId": "airport-yul",
+        "DepartureAirportId": "airport-yyz"
+      }
+    },
+    {
+      "ref": "flight-os857-7",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001140",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001104",
+        "ArriveDate": "2026-07-09T13:08:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001033",
+        "DepartureDate": "2026-07-09T11:40:00Z",
+        "DurationMinutes": 88.0,
+        "FlightDate": "2026-07-09T00:00:00Z",
+        "FlightNumber": "OS857",
+        "Price": 108.45,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-baltic-amber",
+        "ArriveAirportId": "airport-waw",
+        "DepartureAirportId": "airport-vie"
+      }
+    },
+    {
+      "ref": "flight-lh1693-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001141",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001023",
+        "ArriveDate": "2026-02-26T16:15:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001105",
+        "DepartureDate": "2026-02-26T15:10:00Z",
+        "DurationMinutes": 65.0,
+        "FlightDate": "2026-02-26T00:00:00Z",
+        "FlightNumber": "LH1693",
+        "Price": 96.0,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-fjord-wanderer",
+        "ArriveAirportId": "airport-muc",
+        "DepartureAirportId": "airport-prg"
+      }
+    },
+    {
+      "ref": "flight-be6012-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001142",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001117",
+        "ArriveDate": "2026-09-04T08:35:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001040",
+        "DepartureDate": "2026-09-04T07:45:00Z",
+        "DurationMinutes": 50.0,
+        "FlightDate": "2026-09-04T00:00:00Z",
+        "FlightNumber": "BE6012",
+        "Price": 69.99,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-island-hopper",
+        "ArriveAirportId": "airport-abz",
+        "DepartureAirportId": "airport-edi"
+      }
+    },
+    {
+      "ref": "flight-nh1255-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001143",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001175",
+        "ArriveDate": "2026-05-27T03:00:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001172",
+        "DepartureDate": "2026-05-27T01:20:00Z",
+        "DurationMinutes": 100.0,
+        "FlightDate": "2026-05-27T00:00:00Z",
+        "FlightNumber": "NH1255",
+        "Price": 154.0,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-spirit-of-aran",
+        "ArriveAirportId": "airport-oka",
+        "DepartureAirportId": "airport-fuk"
+      }
+    },
+    {
+      "ref": "flight-dl5832-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001144",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001019",
+        "ArriveDate": "2026-08-30T11:28:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001086",
+        "DepartureDate": "2026-08-30T10:20:00Z",
+        "DurationMinutes": 68.0,
+        "FlightDate": "2026-08-30T00:00:00Z",
+        "FlightNumber": "DL5832",
+        "Price": 94.0,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-prairie-lark",
+        "ArriveAirportId": "airport-ord",
+        "DepartureAirportId": "airport-dtw"
+      }
+    },
+    {
+      "ref": "flight-dl2290-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001145",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001078",
+        "ArriveDate": "2026-10-26T20:23:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001085",
+        "DepartureDate": "2026-10-26T18:20:00Z",
+        "DurationMinutes": 123.0,
+        "FlightDate": "2026-10-26T00:00:00Z",
+        "FlightNumber": "DL2290",
+        "Price": 183.0,
+        "Status": "Delay"
+      },
+      "links": {
+        "AircraftId": "aircraft-tundra-swan",
+        "ArriveAirportId": "airport-den",
+        "DepartureAirportId": "airport-msp"
+      }
+    },
+    {
+      "ref": "flight-ac8215-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001146",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001077",
+        "ArriveDate": "2026-10-23T10:48:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001075",
+        "DepartureDate": "2026-10-23T09:30:00Z",
+        "DurationMinutes": 78.0,
+        "FlightDate": "2026-10-23T00:00:00Z",
+        "FlightNumber": "AC8215",
+        "Price": 118.0,
+        "Status": "Flying"
+      },
+      "links": {
+        "AircraftId": "aircraft-spirit-of-shannon",
+        "ArriveAirportId": "airport-yyc",
+        "DepartureAirportId": "airport-yvr"
+      }
+    },
+    {
+      "ref": "flight-ei730-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001147",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001039",
+        "ArriveDate": "2026-10-28T07:32:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001042",
+        "DepartureDate": "2026-10-28T06:10:00Z",
+        "DurationMinutes": 82.0,
+        "FlightDate": "2026-10-28T00:00:00Z",
+        "FlightNumber": "EI730",
+        "Price": 87.0,
+        "Status": "Canceled"
+      },
+      "links": {
+        "AircraftId": "aircraft-old-faithful",
+        "ArriveAirportId": "airport-lgw",
+        "DepartureAirportId": "airport-ork"
+      }
+    },
+    {
+      "ref": "flight-tp212-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001148",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001046",
+        "ArriveDate": "2026-10-25T06:10:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001055",
+        "DepartureDate": "2026-10-24T23:30:00Z",
+        "DurationMinutes": 400.0,
+        "FlightDate": "2026-10-24T00:00:00Z",
+        "FlightNumber": "TP212",
+        "Price": 459.0,
+        "Status": "Delay"
+      },
+      "links": {
+        "AircraftId": "aircraft-cirrus-sky",
+        "ArriveAirportId": "airport-lis",
+        "DepartureAirportId": "airport-bos"
+      }
+    },
+    {
+      "ref": "flight-ek762-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001149",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001013",
+        "ArriveDate": "2026-04-16T04:20:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001052",
+        "DepartureDate": "2026-04-15T19:45:00Z",
+        "DurationMinutes": 515.0,
+        "FlightDate": "2026-04-15T00:00:00Z",
+        "FlightNumber": "EK762",
+        "Price": 647.5,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-sahara-wind",
+        "ArriveAirportId": "airport-dxb",
+        "DepartureAirportId": "airport-jnb"
+      }
+    },
+    {
+      "ref": "flight-lh454-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001150",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001029",
+        "ArriveDate": "2026-10-23T19:25:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001012",
+        "DepartureDate": "2026-10-23T07:50:00Z",
+        "DurationMinutes": 695.0,
+        "FlightDate": "2026-10-23T00:00:00Z",
+        "FlightNumber": "LH454",
+        "Price": 905.0,
+        "Status": "Flying"
+      },
+      "links": {
+        "AircraftId": "aircraft-queen-of-the-skies",
+        "ArriveAirportId": "airport-sfo",
+        "DepartureAirportId": "airport-fra"
+      }
+    },
+    {
+      "ref": "flight-sq318-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001151",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001010",
+        "ArriveDate": "2026-06-05T13:35:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001020",
+        "DepartureDate": "2026-06-05T00:45:00Z",
+        "DurationMinutes": 770.0,
+        "FlightDate": "2026-06-05T00:00:00Z",
+        "FlightNumber": "SQ318",
+        "Price": 934.99,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-royal-thames",
+        "ArriveAirportId": "airport-lhr",
+        "DepartureAirportId": "airport-sin"
+      }
+    },
+    {
+      "ref": "flight-tp207-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001152",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001011",
+        "ArriveDate": "2026-11-03T19:05:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001046",
+        "DepartureDate": "2026-11-03T11:00:00Z",
+        "DurationMinutes": 485.0,
+        "FlightDate": "2026-11-03T00:00:00Z",
+        "FlightNumber": "TP207",
+        "Price": 512.0,
+        "Status": "Canceled"
+      },
+      "links": {
+        "AircraftId": "aircraft-spirit-of-waterford-2",
+        "ArriveAirportId": "airport-jfk",
+        "DepartureAirportId": "airport-lis"
+      }
+    },
+    {
+      "ref": "flight-ei104-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001153",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001041",
+        "ArriveDate": "2026-08-03T03:55:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001011",
+        "DepartureDate": "2026-08-02T21:15:00Z",
+        "DurationMinutes": 400.0,
+        "FlightDate": "2026-08-02T00:00:00Z",
+        "FlightNumber": "EI104",
+        "Price": 398.0,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-iron-duke",
+        "ArriveAirportId": "airport-snn",
+        "DepartureAirportId": "airport-jfk"
+      }
+    },
+    {
+      "ref": "flight-qr946-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001154",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001020",
+        "ArriveDate": "2026-10-25T16:25:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001026",
+        "DepartureDate": "2026-10-25T08:50:00Z",
+        "DurationMinutes": 455.0,
+        "FlightDate": "2026-10-25T00:00:00Z",
+        "FlightNumber": "QR946",
+        "Price": 604.9,
+        "Status": "Delay"
+      },
+      "links": {
+        "AircraftId": "aircraft-long-haul-larkspur",
+        "ArriveAirportId": "airport-sin",
+        "DepartureAirportId": "airport-doh"
+      }
+    },
+    {
+      "ref": "flight-aa2145-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001155",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001019",
+        "ArriveDate": "2026-03-31T16:05:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001036",
+        "DepartureDate": "2026-03-31T13:35:00Z",
+        "DurationMinutes": 150.0,
+        "FlightDate": "2026-03-31T00:00:00Z",
+        "FlightNumber": "AA2145",
+        "Price": 138.0,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-harbour-gull",
+        "ArriveAirportId": "airport-ord",
+        "DepartureAirportId": "airport-dfw"
+      }
+    },
+    {
+      "ref": "flight-af1018-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001156",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001023",
+        "ArriveDate": "2026-09-23T20:00:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001015",
+        "DepartureDate": "2026-09-23T18:25:00Z",
+        "DurationMinutes": 95.0,
+        "FlightDate": "2026-09-23T00:00:00Z",
+        "FlightNumber": "AF1018",
+        "Price": 127.3,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-spirit-of-kilkenny",
+        "ArriveAirportId": "airport-muc",
+        "DepartureAirportId": "airport-cdg"
+      }
+    },
+    {
+      "ref": "flight-dl414-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001157",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001018",
+        "ArriveDate": "2026-10-30T18:25:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001022",
+        "DepartureDate": "2026-10-30T14:00:00Z",
+        "DurationMinutes": 265.0,
+        "FlightDate": "2026-10-30T00:00:00Z",
+        "FlightNumber": "DL414",
+        "Price": 311.0,
+        "Status": "Canceled"
+      },
+      "links": {
+        "AircraftId": "aircraft-copper-beech",
+        "ArriveAirportId": "airport-lax",
+        "DepartureAirportId": "airport-atl"
+      }
+    },
+    {
+      "ref": "flight-as1325-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001158",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001056",
+        "ArriveDate": "2026-10-24T19:20:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001079",
+        "DepartureDate": "2026-10-24T16:40:00Z",
+        "DurationMinutes": 160.0,
+        "FlightDate": "2026-10-24T00:00:00Z",
+        "FlightNumber": "AS1325",
+        "Price": 149.99,
+        "Status": "Delay"
+      },
+      "links": {
+        "AircraftId": "aircraft-spirit-of-lisbon-3",
+        "ArriveAirportId": "airport-sea",
+        "DepartureAirportId": "airport-las"
+      }
+    },
+    {
+      "ref": "flight-wn1177-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001159",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001078",
+        "ArriveDate": "2026-11-12T11:50:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001080",
+        "DepartureDate": "2026-11-12T10:05:00Z",
+        "DurationMinutes": 105.0,
+        "FlightDate": "2026-11-12T00:00:00Z",
+        "FlightNumber": "WN1177",
+        "Price": 98.0,
+        "Status": "Unknown"
+      },
+      "links": {
+        "AircraftId": "aircraft-pride-of-glasgow",
+        "ArriveAirportId": "airport-den",
+        "DepartureAirportId": "airport-phx"
+      }
+    },
+    {
+      "ref": "flight-ua1920-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001160",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001055",
+        "ArriveDate": "2026-10-07T15:35:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001081",
+        "DepartureDate": "2026-10-07T12:00:00Z",
+        "DurationMinutes": 215.0,
+        "FlightDate": "2026-10-07T00:00:00Z",
+        "FlightNumber": "UA1920",
+        "Price": 247.0,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-city-of-bergen",
+        "ArriveAirportId": "airport-bos",
+        "DepartureAirportId": "airport-iah"
+      }
+    },
+    {
+      "ref": "flight-aa1432-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001160",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001037",
+        "ArriveDate": "2026-03-14T14:15:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001084",
+        "DepartureDate": "2026-03-14T12:10:00Z",
+        "DurationMinutes": 125.0,
+        "FlightDate": "2026-03-14T00:00:00Z",
+        "FlightNumber": "AA1432",
+        "Price": 189.5,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-city-of-bergen",
+        "ArriveAirportId": "airport-mia",
+        "DepartureAirportId": "airport-clt"
+      }
+    },
+    {
+      "ref": "flight-ei154-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001161",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001010",
+        "ArriveDate": "2026-04-02T08:10:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001014",
+        "DepartureDate": "2026-04-02T06:45:00Z",
+        "DurationMinutes": 85.0,
+        "FlightDate": "2026-04-02T00:00:00Z",
+        "FlightNumber": "EI154",
+        "Price": 119.99,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-golden-gate-2",
+        "ArriveAirportId": "airport-lhr",
+        "DepartureAirportId": "airport-dub"
+      }
+    },
+    {
+      "ref": "flight-aa2217-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001162",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001036",
+        "ArriveDate": "2026-05-11T17:35:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001022",
+        "DepartureDate": "2026-05-11T15:20:00Z",
+        "DurationMinutes": 135.0,
+        "FlightDate": "2026-05-11T00:00:00Z",
+        "FlightNumber": "AA2217",
+        "Price": 164.0,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-atlantic-dawn-3",
+        "ArriveAirportId": "airport-dfw",
+        "DepartureAirportId": "airport-atl"
+      }
+    },
+    {
+      "ref": "flight-af1048-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001163",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001034",
+        "ArriveDate": "2026-06-08T10:55:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001015",
+        "DepartureDate": "2026-06-08T09:05:00Z",
+        "DurationMinutes": 110.0,
+        "FlightDate": "2026-06-08T00:00:00Z",
+        "FlightNumber": "AF1048",
+        "Price": 129.4,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-emerald-isle-3",
+        "ArriveAirportId": "airport-bcn",
+        "DepartureAirportId": "airport-cdg"
+      }
+    },
+    {
+      "ref": "flight-lh1862-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001164",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001035",
+        "ArriveDate": "2026-07-19T15:10:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001023",
+        "DepartureDate": "2026-07-19T13:30:00Z",
+        "DurationMinutes": 100.0,
+        "FlightDate": "2026-07-19T00:00:00Z",
+        "FlightNumber": "LH1862",
+        "Price": 142.75,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-northern-star",
+        "ArriveAirportId": "airport-fco",
+        "DepartureAirportId": "airport-muc"
+      }
+    },
+    {
+      "ref": "flight-lh988-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001165",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001016",
+        "ArriveDate": "2026-11-05T08:20:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001012",
+        "DepartureDate": "2026-11-05T07:15:00Z",
+        "DurationMinutes": 65.0,
+        "FlightDate": "2026-11-05T00:00:00Z",
+        "FlightNumber": "LH988",
+        "Price": 98.2,
+        "Status": "Unknown"
+      },
+      "links": {
+        "AircraftId": "aircraft-celtic-spirit",
+        "ArriveAirportId": "airport-ams",
+        "DepartureAirportId": "airport-fra"
+      }
+    },
+    {
+      "ref": "flight-ib3254-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001166",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001024",
+        "ArriveDate": "2026-10-30T12:58:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001017",
+        "DepartureDate": "2026-10-30T10:40:00Z",
+        "DurationMinutes": 138.0,
+        "FlightDate": "2026-10-30T00:00:00Z",
+        "FlightNumber": "IB3254",
+        "Price": 176.3,
+        "Status": "Delay"
+      },
+      "links": {
+        "AircraftId": "aircraft-spirit-of-seville",
+        "ArriveAirportId": "airport-zrh",
+        "DepartureAirportId": "airport-mad"
+      }
+    },
+    {
+      "ref": "flight-ba117-8",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001014",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001011",
+        "ArriveDate": "2026-02-17T17:50:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001010",
+        "DepartureDate": "2026-02-17T10:00:00Z",
+        "DurationMinutes": 470.0,
+        "FlightDate": "2026-02-17T00:00:00Z",
+        "FlightNumber": "BA117",
+        "Price": 640.0,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-desert-falcon",
+        "ArriveAirportId": "airport-jfk",
+        "DepartureAirportId": "airport-lhr"
+      }
+    },
+    {
+      "ref": "flight-ek073-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001168",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001015",
+        "ArriveDate": "2026-08-23T10:15:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001013",
+        "DepartureDate": "2026-08-23T02:50:00Z",
+        "DurationMinutes": 445.0,
+        "FlightDate": "2026-08-23T00:00:00Z",
+        "FlightNumber": "EK073",
+        "Price": 520.6,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-baltic-breeze-2",
+        "ArriveAirportId": "airport-cdg",
+        "DepartureAirportId": "airport-dxb"
+      }
+    },
+    {
+      "ref": "flight-qr003-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001169",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001010",
+        "ArriveDate": "2026-09-12T15:28:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001026",
+        "DepartureDate": "2026-09-12T08:30:00Z",
+        "DurationMinutes": 418.0,
+        "FlightDate": "2026-09-12T00:00:00Z",
+        "FlightNumber": "QR003",
+        "Price": 610.0,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-silver-falcon",
+        "ArriveAirportId": "airport-lhr",
+        "DepartureAirportId": "airport-doh"
+      }
+    },
+    {
+      "ref": "flight-nh106-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001170",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001029",
+        "ArriveDate": "2026-01-27T04:20:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001021",
+        "DepartureDate": "2026-01-26T17:55:00Z",
+        "DurationMinutes": 625.0,
+        "FlightDate": "2026-01-26T00:00:00Z",
+        "FlightNumber": "NH106",
+        "Price": 780.45,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-spirit-of-geneva",
+        "ArriveAirportId": "airport-sfo",
+        "DepartureAirportId": "airport-hnd"
+      }
+    },
+    {
+      "ref": "flight-sq231-12",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001101",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001027",
+        "ArriveDate": "2026-03-30T08:43:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001020",
+        "DepartureDate": "2026-03-30T00:55:00Z",
+        "DurationMinutes": 468.0,
+        "FlightDate": "2026-03-30T00:00:00Z",
+        "FlightNumber": "SQ231",
+        "Price": 585.2,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-spirit-of-lima",
+        "ArriveAirportId": "airport-syd",
+        "DepartureAirportId": "airport-sin"
+      }
+    },
+    {
+      "ref": "flight-cx524-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001172",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001021",
+        "ArriveDate": "2026-12-04T07:15:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001030",
+        "DepartureDate": "2026-12-04T03:10:00Z",
+        "DurationMinutes": 245.0,
+        "FlightDate": "2026-12-04T00:00:00Z",
+        "FlightNumber": "CX524",
+        "Price": 340.0,
+        "Status": "Canceled"
+      },
+      "links": {
+        "AircraftId": "aircraft-harbour-lights",
+        "ArriveAirportId": "airport-hnd",
+        "DepartureAirportId": "airport-hkg"
+      }
+    },
+    {
+      "ref": "flight-aa100-8",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001027",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001010",
+        "ArriveDate": "2026-10-23T08:30:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001011",
+        "DepartureDate": "2026-10-23T01:30:00Z",
+        "DurationMinutes": 420.0,
+        "FlightDate": "2026-10-23T00:00:00Z",
+        "FlightNumber": "AA100",
+        "Price": 735.99,
+        "Status": "Flying"
+      },
+      "links": {
+        "AircraftId": "aircraft-manhattan-skyline",
+        "ArriveAirportId": "airport-lhr",
+        "DepartureAirportId": "airport-jfk"
+      }
+    },
+    {
+      "ref": "flight-jl061-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001174",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001021",
+        "ArriveDate": "2026-05-27T23:25:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001018",
+        "DepartureDate": "2026-05-27T11:45:00Z",
+        "DurationMinutes": 700.0,
+        "FlightDate": "2026-05-27T00:00:00Z",
+        "FlightNumber": "JL061",
+        "Price": 745.0,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-desert-rose-2",
+        "ArriveAirportId": "airport-hnd",
+        "DepartureAirportId": "airport-lax"
+      }
+    },
+    {
+      "ref": "flight-ek047-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001175",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001012",
+        "ArriveDate": "2026-06-30T16:00:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001013",
+        "DepartureDate": "2026-06-30T09:15:00Z",
+        "DurationMinutes": 405.0,
+        "FlightDate": "2026-06-30T00:00:00Z",
+        "FlightNumber": "EK047",
+        "Price": 495.9,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-cape-wanderer",
+        "ArriveAirportId": "airport-fra",
+        "DepartureAirportId": "airport-dxb"
+      }
+    },
+    {
+      "ref": "flight-ac8187-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001176",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001019",
+        "ArriveDate": "2026-08-05T20:12:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001028",
+        "DepartureDate": "2026-08-05T18:20:00Z",
+        "DurationMinutes": 112.0,
+        "FlightDate": "2026-08-05T00:00:00Z",
+        "FlightNumber": "AC8187",
+        "Price": 154.99,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-midnight-sun-2",
+        "ArriveAirportId": "airport-ord",
+        "DepartureAirportId": "airport-yyz"
+      }
+    },
+    {
+      "ref": "flight-kl1175-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001177",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001032",
+        "ArriveDate": "2026-09-03T15:23:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001016",
+        "DepartureDate": "2026-09-03T14:00:00Z",
+        "DurationMinutes": 83.0,
+        "FlightDate": "2026-09-03T00:00:00Z",
+        "FlightNumber": "KL1175",
+        "Price": 109.0,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-spirit-of-oslo-2",
+        "ArriveAirportId": "airport-cph",
+        "DepartureAirportId": "airport-ams"
+      }
+    },
+    {
+      "ref": "flight-lx358-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001178",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001014",
+        "ArriveDate": "2026-11-14T13:58:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001024",
+        "DepartureDate": "2026-11-14T11:25:00Z",
+        "DurationMinutes": 153.0,
+        "FlightDate": "2026-11-14T00:00:00Z",
+        "FlightNumber": "LX358",
+        "Price": 187.6,
+        "Status": "Delay"
+      },
+      "links": {
+        "AircraftId": "aircraft-river-thames",
+        "ArriveAirportId": "airport-dub",
+        "DepartureAirportId": "airport-zrh"
+      }
+    },
+    {
+      "ref": "flight-ai161-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001179",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001010",
+        "ArriveDate": "2026-04-18T11:40:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001050",
+        "DepartureDate": "2026-04-18T02:40:00Z",
+        "DurationMinutes": 540.0,
+        "FlightDate": "2026-04-18T00:00:00Z",
+        "FlightNumber": "AI161",
+        "Price": 690.0,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-monsoon-wind-2",
+        "ArriveAirportId": "airport-lhr",
+        "DepartureAirportId": "airport-del"
+      }
+    },
+    {
+      "ref": "flight-tk001-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001180",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001011",
+        "ArriveDate": "2026-02-10T08:15:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001025",
+        "DepartureDate": "2026-02-09T21:30:00Z",
+        "DurationMinutes": 645.0,
+        "FlightDate": "2026-02-09T00:00:00Z",
+        "FlightNumber": "TK001",
+        "Price": 720.8,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-orient-pearl",
+        "ArriveAirportId": "airport-jfk",
+        "DepartureAirportId": "airport-ist"
+      }
+    },
+    {
+      "ref": "flight-ke691-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001181",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001063",
+        "ArriveDate": "2026-07-07T02:55:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001031",
+        "DepartureDate": "2026-07-07T00:20:00Z",
+        "DurationMinutes": 155.0,
+        "FlightDate": "2026-07-07T00:00:00Z",
+        "FlightNumber": "KE691",
+        "Price": 215.0,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-spirit-of-vienna-2",
+        "ArriveAirportId": "airport-tpe",
+        "DepartureAirportId": "airport-icn"
+      }
+    },
+    {
+      "ref": "flight-sq978-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001182",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001058",
+        "ArriveDate": "2026-05-02T07:28:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001020",
+        "DepartureDate": "2026-05-02T05:00:00Z",
+        "DurationMinutes": 148.0,
+        "FlightDate": "2026-05-02T00:00:00Z",
+        "FlightNumber": "SQ978",
+        "Price": 198.3,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-coral-sky",
+        "ArriveAirportId": "airport-bkk",
+        "DepartureAirportId": "airport-sin"
+      }
+    },
+    {
+      "ref": "flight-sk405-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001183",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001043",
+        "ArriveDate": "2026-12-10T07:10:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001044",
+        "DepartureDate": "2026-12-10T06:10:00Z",
+        "DurationMinutes": 60.0,
+        "FlightDate": "2026-12-10T00:00:00Z",
+        "FlightNumber": "SK405",
+        "Price": 89.5,
+        "Status": "Delay"
+      },
+      "links": {
+        "AircraftId": "aircraft-highland-eagle-2",
+        "ArriveAirportId": "airport-osl",
+        "DepartureAirportId": "airport-arn"
+      }
+    },
+    {
+      "ref": "flight-ay1105-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001184",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001032",
+        "ArriveDate": "2026-03-03T18:30:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001045",
+        "DepartureDate": "2026-03-03T16:45:00Z",
+        "DurationMinutes": 105.0,
+        "FlightDate": "2026-03-03T00:00:00Z",
+        "FlightNumber": "AY1105",
+        "Price": 132.4,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-aurora-borealis-3",
+        "ArriveAirportId": "airport-cph",
+        "DepartureAirportId": "airport-hel"
+      }
+    },
+    {
+      "ref": "flight-qr638-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001185",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001020",
+        "ArriveDate": "2026-09-27T09:05:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001026",
+        "DepartureDate": "2026-09-27T01:50:00Z",
+        "DurationMinutes": 435.0,
+        "FlightDate": "2026-09-27T00:00:00Z",
+        "FlightNumber": "QR638",
+        "Price": 560.0,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-spirit-of-naples",
+        "ArriveAirportId": "airport-sin",
+        "DepartureAirportId": "airport-doh"
+      }
+    },
+    {
+      "ref": "flight-ba2543-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001186",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001040",
+        "ArriveDate": "2026-04-21T09:02:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001039",
+        "DepartureDate": "2026-04-21T07:35:00Z",
+        "DurationMinutes": 87.0,
+        "FlightDate": "2026-04-21T00:00:00Z",
+        "FlightNumber": "BA2543",
+        "Price": 74.99,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-sahara-wind-2",
+        "ArriveAirportId": "airport-edi",
+        "DepartureAirportId": "airport-lgw"
+      }
+    },
+    {
+      "ref": "flight-ba1396-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001187",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001034",
+        "ArriveDate": "2026-06-16T12:42:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001038",
+        "DepartureDate": "2026-06-16T10:10:00Z",
+        "DurationMinutes": 152.0,
+        "FlightDate": "2026-06-16T00:00:00Z",
+        "FlightNumber": "BA1396",
+        "Price": 112.8,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-amber-coast",
+        "ArriveAirportId": "airport-bcn",
+        "DepartureAirportId": "airport-man"
+      }
+    },
+    {
+      "ref": "flight-ek007-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001188",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001010",
+        "ArriveDate": "2026-10-12T16:07:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001013",
+        "DepartureDate": "2026-10-12T08:40:00Z",
+        "DurationMinutes": 447.0,
+        "FlightDate": "2026-10-12T00:00:00Z",
+        "FlightNumber": "EK007",
+        "Price": 685.0,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-spirit-of-prague-2",
+        "ArriveAirportId": "airport-lhr",
+        "DepartureAirportId": "airport-dxb"
+      }
+    },
+    {
+      "ref": "flight-ba107-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001189",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001013",
+        "ArriveDate": "2026-01-15T04:45:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001010",
+        "DepartureDate": "2026-01-14T21:55:00Z",
+        "DurationMinutes": 410.0,
+        "FlightDate": "2026-01-14T00:00:00Z",
+        "FlightNumber": "BA107",
+        "Price": 590.25,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-jade-horizon",
+        "ArriveAirportId": "airport-dxb",
+        "DepartureAirportId": "airport-lhr"
+      }
+    },
+    {
+      "ref": "flight-be1426-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001190",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001117",
+        "ArriveDate": "2026-05-19T08:55:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001108",
+        "DepartureDate": "2026-05-19T08:00:00Z",
+        "DurationMinutes": 55.0,
+        "FlightDate": "2026-05-19T00:00:00Z",
+        "FlightNumber": "BE1426",
+        "Price": 79.0,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-blue-lagoon-2",
+        "ArriveAirportId": "airport-abz",
+        "DepartureAirportId": "airport-gla"
+      }
+    },
+    {
+      "ref": "flight-ei3342-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001191",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001041",
+        "ArriveDate": "2026-08-14T18:15:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001014",
+        "DepartureDate": "2026-08-14T17:30:00Z",
+        "DurationMinutes": 45.0,
+        "FlightDate": "2026-08-14T00:00:00Z",
+        "FlightNumber": "EI3342",
+        "Price": 49.99,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-spirit-of-krakow",
+        "ArriveAirportId": "airport-snn",
+        "DepartureAirportId": "airport-dub"
+      }
+    },
+    {
+      "ref": "flight-lh400-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001192",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001011",
+        "ArriveDate": "2026-02-25T18:30:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001012",
+        "DepartureDate": "2026-02-25T09:50:00Z",
+        "DurationMinutes": 520.0,
+        "FlightDate": "2026-02-25T00:00:00Z",
+        "FlightNumber": "LH400",
+        "Price": 610.4,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-saffron-skies",
+        "ArriveAirportId": "airport-jfk",
+        "DepartureAirportId": "airport-fra"
+      }
+    },
+    {
+      "ref": "flight-os857-8",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001140",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001104",
+        "ArriveDate": "2026-09-21T08:27:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001033",
+        "DepartureDate": "2026-09-21T06:20:00Z",
+        "DurationMinutes": 127.0,
+        "FlightDate": "2026-09-21T00:00:00Z",
+        "FlightNumber": "OS857",
+        "Price": 138.0,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-baltic-amber",
+        "ArriveAirportId": "airport-waw",
+        "DepartureAirportId": "airport-vie"
+      }
+    },
+    {
+      "ref": "flight-tp1032-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001194",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001034",
+        "ArriveDate": "2026-11-22T15:00:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001046",
+        "DepartureDate": "2026-11-22T13:05:00Z",
+        "DurationMinutes": 115.0,
+        "FlightDate": "2026-11-22T00:00:00Z",
+        "FlightNumber": "TP1032",
+        "Price": 131.99,
+        "Status": "Canceled"
+      },
+      "links": {
+        "AircraftId": "aircraft-spirit-of-malta",
+        "ArriveAirportId": "airport-bcn",
+        "DepartureAirportId": "airport-lis"
+      }
+    },
+    {
+      "ref": "flight-tk1862-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001195",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001025",
+        "ArriveDate": "2026-03-27T22:35:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001035",
+        "DepartureDate": "2026-03-27T19:45:00Z",
+        "DurationMinutes": 170.0,
+        "FlightDate": "2026-03-27T00:00:00Z",
+        "FlightNumber": "TK1862",
+        "Price": 218.7,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-tulip-express",
+        "ArriveAirportId": "airport-ist",
+        "DepartureAirportId": "airport-fco"
+      }
+    },
+    {
+      "ref": "flight-ib3418-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001196",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001015",
+        "ArriveDate": "2026-07-30T13:18:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001017",
+        "DepartureDate": "2026-07-30T11:10:00Z",
+        "DurationMinutes": 128.0,
+        "FlightDate": "2026-07-30T00:00:00Z",
+        "FlightNumber": "IB3418",
+        "Price": 147.5,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-fjord-runner-2",
+        "ArriveAirportId": "airport-cdg",
+        "DepartureAirportId": "airport-mad"
+      }
+    },
+    {
+      "ref": "flight-dl4812-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001197",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001019",
+        "ArriveDate": "2026-04-09T15:10:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001085",
+        "DepartureDate": "2026-04-09T13:40:00Z",
+        "DurationMinutes": 90.0,
+        "FlightDate": "2026-04-09T00:00:00Z",
+        "FlightNumber": "DL4812",
+        "Price": 138.2,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-spirit-of-athens-2",
+        "ArriveAirportId": "airport-ord",
+        "DepartureAirportId": "airport-msp"
+      }
+    },
+    {
+      "ref": "flight-aa5324-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001198",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001055",
+        "ArriveDate": "2026-10-02T08:20:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001082",
+        "DepartureDate": "2026-10-02T07:05:00Z",
+        "DurationMinutes": 75.0,
+        "FlightDate": "2026-10-02T00:00:00Z",
+        "FlightNumber": "AA5324",
+        "Price": 99.0,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-cinnamon-trail",
+        "ArriveAirportId": "airport-bos",
+        "DepartureAirportId": "airport-phl"
+      }
+    },
+    {
+      "ref": "flight-qr069-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001199",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001012",
+        "ArriveDate": "2026-12-18T08:45:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001026",
+        "DepartureDate": "2026-12-18T02:20:00Z",
+        "DurationMinutes": 385.0,
+        "FlightDate": "2026-12-18T00:00:00Z",
+        "FlightNumber": "QR069",
+        "Price": 575.0,
+        "Status": "Delay"
+      },
+      "links": {
+        "AircraftId": "aircraft-windward-isle",
+        "ArriveAirportId": "airport-fra",
+        "DepartureAirportId": "airport-doh"
+      }
+    },
+    {
+      "ref": "flight-wn1893-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001200",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001018",
+        "ArriveDate": "2026-06-04T21:25:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001079",
+        "DepartureDate": "2026-06-04T20:15:00Z",
+        "DurationMinutes": 70.0,
+        "FlightDate": "2026-06-04T00:00:00Z",
+        "FlightNumber": "WN1893",
+        "Price": 89.0,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-spirit-of-zurich-2",
+        "ArriveAirportId": "airport-lax",
+        "DepartureAirportId": "airport-las"
+      }
+    },
+    {
+      "ref": "flight-la8014-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001201",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001093",
+        "ArriveDate": "2026-08-30T01:02:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001053",
+        "DepartureDate": "2026-08-29T22:10:00Z",
+        "DurationMinutes": 172.0,
+        "FlightDate": "2026-08-29T00:00:00Z",
+        "FlightNumber": "LA8014",
+        "Price": 245.0,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-pacific-voyager",
+        "ArriveAirportId": "airport-eze",
+        "DepartureAirportId": "airport-gru"
+      }
+    },
+    {
+      "ref": "flight-aa3921-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001202",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001081",
+        "ArriveDate": "2026-05-23T07:36:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001036",
+        "DepartureDate": "2026-05-23T06:30:00Z",
+        "DurationMinutes": 66.0,
+        "FlightDate": "2026-05-23T00:00:00Z",
+        "FlightNumber": "AA3921",
+        "Price": 94.3,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-granite-peak",
+        "ArriveAirportId": "airport-iah",
+        "DepartureAirportId": "airport-dfw"
+      }
+    },
+    {
+      "ref": "flight-jl772-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001203",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001021",
+        "ArriveDate": "2026-01-09T04:55:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001027",
+        "DepartureDate": "2026-01-08T19:25:00Z",
+        "DurationMinutes": 570.0,
+        "FlightDate": "2026-01-08T00:00:00Z",
+        "FlightNumber": "JL772",
+        "Price": 710.0,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-spirit-of-cork-4",
+        "ArriveAirportId": "airport-hnd",
+        "DepartureAirportId": "airport-syd"
+      }
+    },
+    {
+      "ref": "flight-qk8120-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001204",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001077",
+        "ArriveDate": "2026-09-09T17:22:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001075",
+        "DepartureDate": "2026-09-09T15:50:00Z",
+        "DurationMinutes": 92.0,
+        "FlightDate": "2026-09-09T00:00:00Z",
+        "FlightNumber": "QK8120",
+        "Price": 128.0,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-lotus-crown",
+        "ArriveAirportId": "airport-yyc",
+        "DepartureAirportId": "airport-yvr"
+      }
+    },
+    {
+      "ref": "flight-ua1551-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001205",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001089",
+        "ArriveDate": "2026-03-21T21:30:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001029",
+        "DepartureDate": "2026-03-21T16:00:00Z",
+        "DurationMinutes": 330.0,
+        "FlightDate": "2026-03-21T00:00:00Z",
+        "FlightNumber": "UA1551",
+        "Price": 395.99,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-kestrel",
+        "ArriveAirportId": "airport-hnl",
+        "DepartureAirportId": "airport-sfo"
+      }
+    },
+    {
+      "ref": "flight-dl1054-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001206",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001018",
+        "ArriveDate": "2026-11-02T13:30:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001022",
+        "DepartureDate": "2026-11-02T08:50:00Z",
+        "DurationMinutes": 280.0,
+        "FlightDate": "2026-11-02T00:00:00Z",
+        "FlightNumber": "DL1054",
+        "Price": 305.0,
+        "Status": "Delay"
+      },
+      "links": {
+        "AircraftId": "aircraft-southern-cross",
+        "ArriveAirportId": "airport-lax",
+        "DepartureAirportId": "airport-atl"
+      }
+    },
+    {
+      "ref": "flight-ba8731-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001207",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001014",
+        "ArriveDate": "2026-04-14T08:25:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001112",
+        "DepartureDate": "2026-04-14T06:55:00Z",
+        "DurationMinutes": 90.0,
+        "FlightDate": "2026-04-14T00:00:00Z",
+        "FlightNumber": "BA8731",
+        "Price": 129.0,
+        "Status": "Canceled"
+      },
+      "links": {
+        "AircraftId": "aircraft-spirit-of-galway-4",
+        "ArriveAirportId": "airport-dub",
+        "DepartureAirportId": "airport-lcy"
+      }
+    },
+    {
+      "ref": "flight-lo634-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001208",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001104",
+        "ArriveDate": "2026-05-28T13:55:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001106",
+        "DepartureDate": "2026-05-28T12:20:00Z",
+        "DurationMinutes": 95.0,
+        "FlightDate": "2026-05-28T00:00:00Z",
+        "FlightNumber": "LO634",
+        "Price": 118.4,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-spirit-of-lisbon-4",
+        "ArriveAirportId": "airport-waw",
+        "DepartureAirportId": "airport-bud"
+      }
+    },
+    {
+      "ref": "flight-dl2230-4",
+      "kind": "record",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001209",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001080",
+        "ArriveDate": "2026-07-13T10:08:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001079",
+        "DepartureDate": "2026-07-13T09:00:00Z",
+        "DurationMinutes": 68.0,
+        "FlightDate": "2026-07-13T00:00:00Z",
+        "FlightNumber": "DL2230",
+        "Price": 84.5,
+        "Status": "Completed"
+      },
+      "links": {
+        "AircraftId": "aircraft-spirit-of-reykjavik",
+        "ArriveAirportId": "airport-phx",
+        "DepartureAirportId": "airport-las"
+      }
+    }
+  ],
+  "invalid": [
+    {
+      "ref": "createflightrequestdto-rejection-1",
+      "kind": "rejection",
+      "data": {
+        "AircraftId": "00000000-0000-4000-8000-000000000000",
+        "ArriveAirportId": "00000000-0000-4000-8000-000000000000",
+        "ArriveDate": "2026-03-01T07:30:00Z",
+        "DepartureAirportId": "00000000-0000-4000-8000-000000000000",
+        "DepartureDate": "2026-03-01T06:00:00Z",
+        "DurationMinutes": 1.0,
+        "FlightDate": "2026-03-01T09:00:00Z",
+        "FlightNumber": null,
+        "Price": 100.0,
+        "Status": "Unknown"
+      },
+      "violates": {
+        "field": "FlightNumber",
+        "rule": "`FlightNumber` is declared NOT NULL"
+      }
+    },
+    {
+      "ref": "createflightrequestdto-rejection-2",
+      "kind": "rejection",
+      "data": {
+        "AircraftId": null,
+        "ArriveAirportId": "00000000-0000-4000-8000-000000000000",
+        "ArriveDate": "2026-03-01T07:30:00Z",
+        "DepartureAirportId": "00000000-0000-4000-8000-000000000000",
+        "DepartureDate": "2026-03-01T06:00:00Z",
+        "DurationMinutes": 1.0,
+        "FlightDate": "2026-03-01T09:00:00Z",
+        "FlightNumber": "",
+        "Price": 100.0,
+        "Status": "Unknown"
+      },
+      "violates": {
+        "field": "AircraftId",
+        "rule": "`AircraftId` is declared NOT NULL"
+      }
+    },
+    {
+      "ref": "createflightrequestdto-rejection-3",
+      "kind": "rejection",
+      "data": {
+        "AircraftId": "not-a-uuid",
+        "ArriveAirportId": "00000000-0000-4000-8000-000000000000",
+        "ArriveDate": "2026-03-01T07:30:00Z",
+        "DepartureAirportId": "00000000-0000-4000-8000-000000000000",
+        "DepartureDate": "2026-03-01T06:00:00Z",
+        "DurationMinutes": 1.0,
+        "FlightDate": "2026-03-01T09:00:00Z",
+        "FlightNumber": "",
+        "Price": 100.0,
+        "Status": "Unknown"
+      },
+      "violates": {
+        "field": "AircraftId",
+        "rule": "violates a declared constraint on `AircraftId`"
+      }
+    },
+    {
+      "ref": "createflightrequestdto-rejection-4",
+      "kind": "rejection",
+      "data": {
+        "AircraftId": "00000000-0000-4000-8000-000000000000",
+        "ArriveAirportId": "00000000-0000-4000-8000-000000000000",
+        "ArriveDate": "2026-03-01T07:30:00Z",
+        "DepartureAirportId": null,
+        "DepartureDate": "2026-03-01T06:00:00Z",
+        "DurationMinutes": 1.0,
+        "FlightDate": "2026-03-01T09:00:00Z",
+        "FlightNumber": "",
+        "Price": 100.0,
+        "Status": "Unknown"
+      },
+      "violates": {
+        "field": "DepartureAirportId",
+        "rule": "`DepartureAirportId` is declared NOT NULL"
+      }
+    },
+    {
+      "ref": "createflightrequestdto-rejection-5",
+      "kind": "rejection",
+      "data": {
+        "AircraftId": "00000000-0000-4000-8000-000000000000",
+        "ArriveAirportId": "00000000-0000-4000-8000-000000000000",
+        "ArriveDate": "2026-03-01T07:30:00Z",
+        "DepartureAirportId": "not-a-uuid",
+        "DepartureDate": "2026-03-01T06:00:00Z",
+        "DurationMinutes": 1.0,
+        "FlightDate": "2026-03-01T09:00:00Z",
+        "FlightNumber": "",
+        "Price": 100.0,
+        "Status": "Unknown"
+      },
+      "violates": {
+        "field": "DepartureAirportId",
+        "rule": "violates a declared constraint on `DepartureAirportId`"
+      }
+    },
+    {
+      "ref": "createflightrequestdto-rejection-6",
+      "kind": "rejection",
+      "data": {
+        "AircraftId": "00000000-0000-4000-8000-000000000000",
+        "ArriveAirportId": "00000000-0000-4000-8000-000000000000",
+        "ArriveDate": "2026-03-01T07:30:00Z",
+        "DepartureAirportId": "00000000-0000-4000-8000-000000000000",
+        "DepartureDate": null,
+        "DurationMinutes": 1.0,
+        "FlightDate": "2026-03-01T09:00:00Z",
+        "FlightNumber": "",
+        "Price": 100.0,
+        "Status": "Unknown"
+      },
+      "violates": {
+        "field": "DepartureDate",
+        "rule": "`DepartureDate` is declared NOT NULL"
+      }
+    },
+    {
+      "ref": "createflightrequestdto-rejection-7",
+      "kind": "rejection",
+      "data": {
+        "AircraftId": "00000000-0000-4000-8000-000000000000",
+        "ArriveAirportId": "00000000-0000-4000-8000-000000000000",
+        "ArriveDate": "2026-03-01T07:30:00Z",
+        "DepartureAirportId": "00000000-0000-4000-8000-000000000000",
+        "DepartureDate": "not-a-date",
+        "DurationMinutes": 1.0,
+        "FlightDate": "2026-03-01T09:00:00Z",
+        "FlightNumber": "",
+        "Price": 100.0,
+        "Status": "Unknown"
+      },
+      "violates": {
+        "field": "DepartureDate",
+        "rule": "not a value `DateTime` accepts"
+      }
+    },
+    {
+      "ref": "createflightrequestdto-rejection-8",
+      "kind": "rejection",
+      "data": {
+        "AircraftId": "00000000-0000-4000-8000-000000000000",
+        "ArriveAirportId": "00000000-0000-4000-8000-000000000000",
+        "ArriveDate": null,
+        "DepartureAirportId": "00000000-0000-4000-8000-000000000000",
+        "DepartureDate": "2026-03-01T06:00:00Z",
+        "DurationMinutes": 1.0,
+        "FlightDate": "2026-03-01T09:00:00Z",
+        "FlightNumber": "",
+        "Price": 100.0,
+        "Status": "Unknown"
+      },
+      "violates": {
+        "field": "ArriveDate",
+        "rule": "`ArriveDate` is declared NOT NULL"
+      }
+    },
+    {
+      "ref": "createflightrequestdto-rejection-9",
+      "kind": "rejection",
+      "data": {
+        "AircraftId": "00000000-0000-4000-8000-000000000000",
+        "ArriveAirportId": "00000000-0000-4000-8000-000000000000",
+        "ArriveDate": "not-a-date",
+        "DepartureAirportId": "00000000-0000-4000-8000-000000000000",
+        "DepartureDate": "2026-03-01T06:00:00Z",
+        "DurationMinutes": 1.0,
+        "FlightDate": "2026-03-01T09:00:00Z",
+        "FlightNumber": "",
+        "Price": 100.0,
+        "Status": "Unknown"
+      },
+      "violates": {
+        "field": "ArriveDate",
+        "rule": "not a value `DateTime` accepts"
+      }
+    },
+    {
+      "ref": "createflightrequestdto-rejection-10",
+      "kind": "rejection",
+      "data": {
+        "AircraftId": "00000000-0000-4000-8000-000000000000",
+        "ArriveAirportId": null,
+        "ArriveDate": "2026-03-01T07:30:00Z",
+        "DepartureAirportId": "00000000-0000-4000-8000-000000000000",
+        "DepartureDate": "2026-03-01T06:00:00Z",
+        "DurationMinutes": 1.0,
+        "FlightDate": "2026-03-01T09:00:00Z",
+        "FlightNumber": "",
+        "Price": 100.0,
+        "Status": "Unknown"
+      },
+      "violates": {
+        "field": "ArriveAirportId",
+        "rule": "`ArriveAirportId` is declared NOT NULL"
+      }
+    },
+    {
+      "ref": "createflightrequestdto-rejection-11",
+      "kind": "rejection",
+      "data": {
+        "AircraftId": "00000000-0000-4000-8000-000000000000",
+        "ArriveAirportId": "not-a-uuid",
+        "ArriveDate": "2026-03-01T07:30:00Z",
+        "DepartureAirportId": "00000000-0000-4000-8000-000000000000",
+        "DepartureDate": "2026-03-01T06:00:00Z",
+        "DurationMinutes": 1.0,
+        "FlightDate": "2026-03-01T09:00:00Z",
+        "FlightNumber": "",
+        "Price": 100.0,
+        "Status": "Unknown"
+      },
+      "violates": {
+        "field": "ArriveAirportId",
+        "rule": "violates a declared constraint on `ArriveAirportId`"
+      }
+    },
+    {
+      "ref": "createflightrequestdto-rejection-12",
+      "kind": "rejection",
+      "data": {
+        "AircraftId": "00000000-0000-4000-8000-000000000000",
+        "ArriveAirportId": "00000000-0000-4000-8000-000000000000",
+        "ArriveDate": "2026-03-01T07:30:00Z",
+        "DepartureAirportId": "00000000-0000-4000-8000-000000000000",
+        "DepartureDate": "2026-03-01T06:00:00Z",
+        "DurationMinutes": null,
+        "FlightDate": "2026-03-01T09:00:00Z",
+        "FlightNumber": "",
+        "Price": 100.0,
+        "Status": "Unknown"
+      },
+      "violates": {
+        "field": "DurationMinutes",
+        "rule": "`DurationMinutes` is declared NOT NULL"
+      }
+    },
+    {
+      "ref": "createflightrequestdto-rejection-13",
+      "kind": "rejection",
+      "data": {
+        "AircraftId": "00000000-0000-4000-8000-000000000000",
+        "ArriveAirportId": "00000000-0000-4000-8000-000000000000",
+        "ArriveDate": "2026-03-01T07:30:00Z",
+        "DepartureAirportId": "00000000-0000-4000-8000-000000000000",
+        "DepartureDate": "2026-03-01T06:00:00Z",
+        "DurationMinutes": 1.0,
+        "FlightDate": null,
+        "FlightNumber": "",
+        "Price": 100.0,
+        "Status": "Unknown"
+      },
+      "violates": {
+        "field": "FlightDate",
+        "rule": "`FlightDate` is declared NOT NULL"
+      }
+    },
+    {
+      "ref": "createflightrequestdto-rejection-14",
+      "kind": "rejection",
+      "data": {
+        "AircraftId": "00000000-0000-4000-8000-000000000000",
+        "ArriveAirportId": "00000000-0000-4000-8000-000000000000",
+        "ArriveDate": "2026-03-01T07:30:00Z",
+        "DepartureAirportId": "00000000-0000-4000-8000-000000000000",
+        "DepartureDate": "2026-03-01T06:00:00Z",
+        "DurationMinutes": 1.0,
+        "FlightDate": "not-a-date",
+        "FlightNumber": "",
+        "Price": 100.0,
+        "Status": "Unknown"
+      },
+      "violates": {
+        "field": "FlightDate",
+        "rule": "not a value `DateTime` accepts"
+      }
+    },
+    {
+      "ref": "createflightrequestdto-rejection-15",
+      "kind": "rejection",
+      "data": {
+        "AircraftId": "00000000-0000-4000-8000-000000000000",
+        "ArriveAirportId": "00000000-0000-4000-8000-000000000000",
+        "ArriveDate": "2026-03-01T07:30:00Z",
+        "DepartureAirportId": "00000000-0000-4000-8000-000000000000",
+        "DepartureDate": "2026-03-01T06:00:00Z",
+        "DurationMinutes": 1.0,
+        "FlightDate": "2026-03-01T09:00:00Z",
+        "FlightNumber": "",
+        "Price": 100.0,
+        "Status": null
+      },
+      "violates": {
+        "field": "Status",
+        "rule": "`Status` is declared NOT NULL"
+      }
+    },
+    {
+      "ref": "createflightrequestdto-rejection-16",
+      "kind": "rejection",
+      "data": {
+        "AircraftId": "00000000-0000-4000-8000-000000000000",
+        "ArriveAirportId": "00000000-0000-4000-8000-000000000000",
+        "ArriveDate": "2026-03-01T07:30:00Z",
+        "DepartureAirportId": "00000000-0000-4000-8000-000000000000",
+        "DepartureDate": "2026-03-01T06:00:00Z",
+        "DurationMinutes": 1.0,
+        "FlightDate": "2026-03-01T09:00:00Z",
+        "FlightNumber": "",
+        "Price": 100.0,
+        "Status": "__INVALID__"
+      },
+      "violates": {
+        "field": "Status",
+        "rule": "violates a declared constraint on `Status`"
+      }
+    },
+    {
+      "ref": "createflightrequestdto-rejection-17",
+      "kind": "rejection",
+      "data": {
+        "AircraftId": "00000000-0000-4000-8000-000000000000",
+        "ArriveAirportId": "00000000-0000-4000-8000-000000000000",
+        "ArriveDate": "2026-03-01T07:30:00Z",
+        "DepartureAirportId": "00000000-0000-4000-8000-000000000000",
+        "DepartureDate": "2026-03-01T06:00:00Z",
+        "DurationMinutes": 1.0,
+        "FlightDate": "2026-03-01T09:00:00Z",
+        "FlightNumber": "",
+        "Price": null,
+        "Status": "Unknown"
+      },
+      "violates": {
+        "field": "Price",
+        "rule": "`Price` is declared NOT NULL"
+      }
+    },
+    {
+      "ref": "createflightrequestdto-rejection-18",
+      "kind": "rejection",
+      "data": {
+        "AircraftId": "00000000-0000-4000-8000-000000000000",
+        "ArriveAirportId": "00000000-0000-4000-8000-000000000000",
+        "ArriveDate": "2026-03-01T07:30:00Z",
+        "DepartureAirportId": "00000000-0000-4000-8000-000000000000",
+        "DepartureDate": "2026-03-01T06:00:00Z",
+        "DurationMinutes": 1.0,
+        "FlightDate": "2026-03-01T09:00:00Z",
+        "FlightNumber": "",
+        "Price": -0.01,
+        "Status": "Unknown"
+      },
+      "violates": {
+        "field": "Price",
+        "rule": "outside the range `decimal` accepts"
+      }
+    }
+  ],
+  "coverage": [
+    {
+      "ref": "createflightrequestdto-case-1",
+      "kind": "case",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001000",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001005",
+        "ArriveDate": "2026-03-01T07:30:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001000",
+        "DepartureDate": "2026-03-01T06:00:00Z",
+        "DurationMinutes": 1.0,
+        "FlightDate": "2026-03-01T09:00:00Z",
+        "FlightNumber": "",
+        "Price": 100.0,
+        "Status": "Unknown"
+      },
+      "case": "covering-0001"
+    },
+    {
+      "ref": "createflightrequestdto-case-2",
+      "kind": "case",
+      "data": {
+        "AircraftId": "00000000-0000-4000-8000-000000000000",
+        "ArriveAirportId": "00000000-0000-4000-8000-000000000000",
+        "ArriveDate": "2026-03-01T08:15:00Z",
+        "DepartureAirportId": "00000000-0000-4000-8000-000000000000",
+        "DepartureDate": "2026-03-01T06:45:00Z",
+        "DurationMinutes": 12.5,
+        "FlightDate": "2026-03-01T09:45:00Z",
+        "FlightNumber": "text",
+        "Price": 12.5,
+        "Status": "Flying"
+      },
+      "case": "covering-0002"
+    },
+    {
+      "ref": "createflightrequestdto-case-3",
+      "kind": "case",
+      "data": {
+        "AircraftId": "00000000-0000-4000-8000-000000000000",
+        "ArriveAirportId": "00000000-0000-4000-8000-000000000000",
+        "ArriveDate": "2026-03-01T08:15:00Z",
+        "DepartureAirportId": "00000000-0000-4000-8000-000000000000",
+        "DepartureDate": "2026-03-01T06:00:00Z",
+        "DurationMinutes": 1.0,
+        "FlightDate": "2026-03-01T09:45:00Z",
+        "FlightNumber": "STR_0001",
+        "Price": 100.0,
+        "Status": "Delay"
+      },
+      "case": "covering-0003"
+    },
+    {
+      "ref": "createflightrequestdto-case-4",
+      "kind": "case",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001000",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001005",
+        "ArriveDate": "2026-03-01T07:30:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001000",
+        "DepartureDate": "2026-03-01T06:45:00Z",
+        "DurationMinutes": 12.5,
+        "FlightDate": "2026-03-01T09:00:00Z",
+        "FlightNumber": "",
+        "Price": 12.5,
+        "Status": "Canceled"
+      },
+      "case": "covering-0004"
+    },
+    {
+      "ref": "createflightrequestdto-case-5",
+      "kind": "case",
+      "data": {
+        "AircraftId": "00000000-0000-4000-8000-000000000000",
+        "ArriveAirportId": "00000000-0000-4000-8000-000000000000",
+        "ArriveDate": "2026-03-01T07:30:00Z",
+        "DepartureAirportId": "00000000-0000-4000-8000-000000000000",
+        "DepartureDate": "2026-03-01T06:00:00Z",
+        "DurationMinutes": 1.0,
+        "FlightDate": "2026-03-01T09:00:00Z",
+        "FlightNumber": "text",
+        "Price": 12.5,
+        "Status": "Completed"
+      },
+      "case": "covering-0005"
+    },
+    {
+      "ref": "createflightrequestdto-case-6",
+      "kind": "case",
+      "data": {
+        "AircraftId": "00000000-0000-4000-8000-000000000000",
+        "ArriveAirportId": "00000000-0000-4000-8000-000000000000",
+        "ArriveDate": "2026-03-01T07:30:00Z",
+        "DepartureAirportId": "00000000-0000-4000-8000-000000000000",
+        "DepartureDate": "2026-03-01T06:45:00Z",
+        "DurationMinutes": 1.0,
+        "FlightDate": "2026-03-01T09:00:00Z",
+        "FlightNumber": "STR_0001",
+        "Price": 100.0,
+        "Status": "Flying"
+      },
+      "case": "covering-0006"
+    },
+    {
+      "ref": "createflightrequestdto-case-7",
+      "kind": "case",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001002",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001007",
+        "ArriveDate": "2026-03-01T08:15:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001002",
+        "DepartureDate": "2026-03-01T06:45:00Z",
+        "DurationMinutes": 1.0,
+        "FlightDate": "2026-03-01T09:00:00Z",
+        "FlightNumber": "",
+        "Price": 12.5,
+        "Status": "Delay"
+      },
+      "case": "covering-0007"
+    },
+    {
+      "ref": "createflightrequestdto-case-8",
+      "kind": "case",
+      "data": {
+        "AircraftId": "00000000-0000-4000-8000-000000000000",
+        "ArriveAirportId": "00000000-0000-4000-8000-000000000000",
+        "ArriveDate": "2026-03-01T08:15:00Z",
+        "DepartureAirportId": "00000000-0000-4000-8000-000000000000",
+        "DepartureDate": "2026-03-01T06:00:00Z",
+        "DurationMinutes": 12.5,
+        "FlightDate": "2026-03-01T09:00:00Z",
+        "FlightNumber": "STR_0001",
+        "Price": 12.5,
+        "Status": "Unknown"
+      },
+      "case": "covering-0008"
+    },
+    {
+      "ref": "createflightrequestdto-case-9",
+      "kind": "case",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001000",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001005",
+        "ArriveDate": "2026-03-01T07:30:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001000",
+        "DepartureDate": "2026-03-01T06:45:00Z",
+        "DurationMinutes": 12.5,
+        "FlightDate": "2026-03-01T09:45:00Z",
+        "FlightNumber": "",
+        "Price": 100.0,
+        "Status": "Completed"
+      },
+      "case": "covering-0009"
+    },
+    {
+      "ref": "createflightrequestdto-case-10",
+      "kind": "case",
+      "data": {
+        "AircraftId": "f057fe93-0000-4000-8000-000000001000",
+        "ArriveAirportId": "c9bc0450-0000-4000-8000-000000001005",
+        "ArriveDate": "2026-03-01T07:30:00Z",
+        "DepartureAirportId": "c9bc0450-0000-4000-8000-000000001000",
+        "DepartureDate": "2026-03-01T06:00:00Z",
+        "DurationMinutes": 1.0,
+        "FlightDate": "2026-03-01T09:00:00Z",
+        "FlightNumber": "",
+        "Price": 100.0,
+        "Status": "Flying"
+      },
+      "case": "covering-0010"
+    },
+    {
+      "ref": "createflightrequestdto-case-11",
+      "kind": "case",
+      "data": {
+        "AircraftId": "00000000-0000-4000-8000-000000000000",
+        "ArriveAirportId": "00000000-0000-4000-8000-000000000000",
+        "ArriveDate": "2026-03-01T07:30:00Z",
+        "DepartureAirportId": "00000000-0000-4000-8000-000000000000",
+        "DepartureDate": "2026-03-01T06:45:00Z",
+        "DurationMinutes": 1.0,
+        "FlightDate": "2026-03-01T09:45:00Z",
+        "FlightNumber": "text",
+        "Price": 100.0,
+        "Status": "Unknown"
+      },
+      "case": "covering-0011"
+    },
+    {
+      "ref": "createflightrequestdto-case-12",
+      "kind": "case",
+      "data": {
+        "AircraftId": "00000000-0000-4000-8000-000000000000",
+        "ArriveAirportId": "00000000-0000-4000-8000-000000000000",
+        "ArriveDate": "2026-03-01T07:30:00Z",
+        "DepartureAirportId": "00000000-0000-4000-8000-000000000000",
+        "DepartureDate": "2026-03-01T06:00:00Z",
+        "DurationMinutes": 12.5,
+        "FlightDate": "2026-03-01T09:00:00Z",
+        "FlightNumber": "text",
+        "Price": 100.0,
+        "Status": "Delay"
+      },
+      "case": "covering-0012"
+    },
+    {
+      "ref": "createflightrequestdto-case-13",
+      "kind": "case",
+      "data": {
+        "AircraftId": "00000000-0000-4000-8000-000000000000",
+        "ArriveAirportId": "00000000-0000-4000-8000-000000000000",
+        "ArriveDate": "2026-03-01T08:15:00Z",
+        "DepartureAirportId": "00000000-0000-4000-8000-000000000000",
+        "DepartureDate": "2026-03-01T06:00:00Z",
+        "DurationMinutes": 1.0,
+        "FlightDate": "2026-03-01T09:45:00Z",
+        "FlightNumber": "text",
+        "Price": 100.0,
+        "Status": "Canceled"
+      },
+      "case": "covering-0013"
+    },
+    {
+      "ref": "createflightrequestdto-case-14",
+      "kind": "case",
+      "data": {
+        "AircraftId": "00000000-0000-4000-8000-000000000000",
+        "ArriveAirportId": "00000000-0000-4000-8000-000000000000",
+        "ArriveDate": "2026-03-01T07:30:00Z",
+        "DepartureAirportId": "00000000-0000-4000-8000-000000000000",
+        "DepartureDate": "2026-03-01T06:00:00Z",
+        "DurationMinutes": 1.0,
+        "FlightDate": "2026-03-01T09:00:00Z",
+        "FlightNumber": "STR_0001",
+        "Price": 100.0,
+        "Status": "Canceled"
+      },
+      "case": "covering-0014"
+    },
+    {
+      "ref": "createflightrequestdto-case-15",
+      "kind": "case",
+      "data": {
+        "AircraftId": "00000000-0000-4000-8000-000000000000",
+        "ArriveAirportId": "00000000-0000-4000-8000-000000000000",
+        "ArriveDate": "2026-03-01T08:15:00Z",
+        "DepartureAirportId": "00000000-0000-4000-8000-000000000000",
+        "DepartureDate": "2026-03-01T06:00:00Z",
+        "DurationMinutes": 1.0,
+        "FlightDate": "2026-03-01T09:00:00Z",
+        "FlightNumber": "STR_0001",
+        "Price": 100.0,
+        "Status": "Completed"
+      },
+      "case": "covering-0015"
+    }
+  ]
+}

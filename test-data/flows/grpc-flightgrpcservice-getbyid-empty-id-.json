@@ -1,0 +1,88 @@
+{
+  "id": "grpc-flightgrpcservice-getbyid-empty-id-",
+  "title": "Empty Id is rejected",
+  "source": "staged scenario",
+  "why": "Checks the all-zero uuid is refused as invalid input rather than searched for or treated as not found.",
+  "setup": [
+    {
+      "ref": "aircraft-1",
+      "table": "Aircraft",
+      "values": {
+        "CreatedAt": "2026-01-01T00:00:00Z",
+        "CreatedBy": 1,
+        "Id": "a1000000-0000-4000-8000-000000000009",
+        "IsDeleted": false,
+        "LastModified": "2026-01-01T00:00:00Z",
+        "LastModifiedBy": 1,
+        "ManufacturingYear": 2014,
+        "Model": "A319",
+        "Name": "Airbus A319 N319FR",
+        "Version": 1
+      }
+    },
+    {
+      "ref": "airport-dep",
+      "table": "Airport",
+      "values": {
+        "Address": "Minneapolis, Minnesota",
+        "Code": "MSP",
+        "CreatedAt": "2026-01-01T00:00:00Z",
+        "CreatedBy": 1,
+        "Id": "b1000000-0000-4000-8000-000000000081",
+        "IsDeleted": false,
+        "LastModified": "2026-01-01T00:00:00Z",
+        "LastModifiedBy": 1,
+        "Name": "Minneapolis-Saint Paul International",
+        "Version": 1
+      }
+    },
+    {
+      "ref": "airport-arr",
+      "table": "Airport",
+      "values": {
+        "Address": "Detroit, Michigan",
+        "Code": "DTW",
+        "CreatedAt": "2026-01-01T00:00:00Z",
+        "CreatedBy": 1,
+        "Id": "b1000000-0000-4000-8000-000000000082",
+        "IsDeleted": false,
+        "LastModified": "2026-01-01T00:00:00Z",
+        "LastModifiedBy": 1,
+        "Name": "Detroit Metropolitan Wayne County",
+        "Version": 1
+      }
+    },
+    {
+      "ref": "flight-1",
+      "table": "Flight",
+      "values": {
+        "AircraftId": "aircraft-1",
+        "ArriveAirportId": "airport-arr",
+        "ArriveDate": "2026-11-08T07:40:00Z",
+        "CreatedAt": "2026-01-01T00:00:00Z",
+        "CreatedBy": 1,
+        "DepartureAirportId": "airport-dep",
+        "DepartureDate": "2026-11-08T06:00:00Z",
+        "DurationMinutes": 100,
+        "FlightDate": "2026-11-08T00:00:00Z",
+        "FlightNumber": "FR909",
+        "Id": "f1000000-0000-4000-8000-000000000009",
+        "IsDeleted": false,
+        "LastModified": "2026-01-01T00:00:00Z",
+        "LastModifiedBy": 1,
+        "Price": 110.0,
+        "Status": "Flying",
+        "Version": 1
+      }
+    }
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "does": "Call FlightGrpcService/GetById with Id 00000000-0000-0000-0000-000000000000."
+    }
+  ],
+  "expect": [
+    "An INVALID_ARGUMENT error saying the Id is required or empty. It is distinct from NOT_FOUND, and no flight is returned."
+  ]
+}

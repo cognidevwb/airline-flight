@@ -1,0 +1,39 @@
+{
+  "id": "post-flight-departure-airport-must-be-su",
+  "title": "Departure airport must be supplied",
+  "source": "staged scenario",
+  "why": "Verifies the departure airport reference is mandatory and must resolve to an Airport.",
+  "setup": [
+    {
+      "ref": "aircraft-1",
+      "table": "Aircraft",
+      "values": {
+        "IsDeleted": false,
+        "ManufacturingYear": 2015,
+        "Model": "737-800",
+        "Name": "Boeing 737",
+        "Version": 1
+      }
+    },
+    {
+      "ref": "airport-bos",
+      "table": "Airport",
+      "values": {
+        "Address": "Boston, MA",
+        "Code": "BOS",
+        "IsDeleted": false,
+        "Name": "Logan International",
+        "Version": 1
+      }
+    }
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "does": "POST …/flight with otherwise valid data and DepartureAirportId set first to the empty guid, then to an unknown guid 11111111-1111-1111-1111-111111111111"
+    }
+  ],
+  "expect": [
+    "Both rejected with an error on DepartureAirportId; nothing is saved."
+  ]
+}

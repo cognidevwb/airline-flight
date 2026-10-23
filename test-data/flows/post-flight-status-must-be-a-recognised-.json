@@ -1,0 +1,50 @@
+{
+  "id": "post-flight-status-must-be-a-recognised-",
+  "title": "Status must be a recognised value",
+  "source": "staged scenario",
+  "why": "Shows that an out-of-range FlightStatus is not silently accepted.",
+  "setup": [
+    {
+      "ref": "aircraft-1",
+      "table": "Aircraft",
+      "values": {
+        "IsDeleted": false,
+        "ManufacturingYear": 2015,
+        "Model": "737-800",
+        "Name": "Boeing 737",
+        "Version": 1
+      }
+    },
+    {
+      "ref": "airport-jfk",
+      "table": "Airport",
+      "values": {
+        "Address": "Queens, NY",
+        "Code": "JFK",
+        "IsDeleted": false,
+        "Name": "John F. Kennedy International",
+        "Version": 1
+      }
+    },
+    {
+      "ref": "airport-bos",
+      "table": "Airport",
+      "values": {
+        "Address": "Boston, MA",
+        "Code": "BOS",
+        "IsDeleted": false,
+        "Name": "Logan International",
+        "Version": 1
+      }
+    }
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "does": "POST …/flight with otherwise valid data and Status 99 (and separately the text \"Boarding\"), neither being one of Unknown, Flying, Delay, Canceled, Completed"
+    }
+  ],
+  "expect": [
+    "Rejected with a validation error on Status; no Flight is created."
+  ]
+}

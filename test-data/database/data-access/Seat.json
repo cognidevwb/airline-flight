@@ -1,0 +1,118 @@
+{
+  "table": "Seat",
+  "accesses": [
+    {
+      "operation": "flightDbContext.Seats.AddRangeAsync",
+      "mode": "write",
+      "in": "src/Flight/Data/Seed/FlightDataSeeder.cs:65 SeedSeatAsync",
+      "insert": {
+        "Class": "Economy",
+        "CreatedAt": "2026-01-12T08:15:41Z",
+        "CreatedBy": 3,
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001026",
+        "Id": "f07cc888-0000-4000-8000-000000001017",
+        "IsDeleted": false,
+        "LastModified": null,
+        "LastModifiedBy": null,
+        "SeatNumber": "12C",
+        "Type": "Aisle",
+        "Version": 1
+      },
+      "expect": "the row is stored and reads back equal"
+    },
+    {
+      "operation": "_flightDbContext.Seats.SingleOrDefaultAsync",
+      "mode": "read",
+      "in": "src/Flight/Seats/Features/CreatingSeat/V1/CreateSeat.cs:99 Handle",
+      "given": [
+        "f07cc888-0000-4000-8000-000000001016",
+        "f07cc888-0000-4000-8000-000000001017",
+        "f07cc888-0000-4000-8000-000000001018",
+        "f07cc888-0000-4000-8000-000000001019",
+        "f07cc888-0000-4000-8000-000000001020"
+      ],
+      "lookup": {
+        "Id": "f07cc888-0000-4000-8000-000000001016"
+      },
+      "expect": {
+        "Class": "FirstClass",
+        "CreatedAt": "2026-01-12T08:14:22Z",
+        "CreatedBy": 3,
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001028",
+        "Id": "f07cc888-0000-4000-8000-000000001016",
+        "IsDeleted": false,
+        "LastModified": null,
+        "LastModifiedBy": null,
+        "SeatNumber": "1A",
+        "Type": "Window",
+        "Version": 1
+      }
+    },
+    {
+      "operation": "_flightDbContext.Seats.AddAsync",
+      "mode": "write",
+      "in": "src/Flight/Seats/Features/CreatingSeat/V1/CreateSeat.cs:108 Handle",
+      "insert": {
+        "Class": "Economy",
+        "CreatedAt": "2026-01-12T08:15:41Z",
+        "CreatedBy": 3,
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001026",
+        "Id": "f07cc888-0000-4000-8000-000000001017",
+        "IsDeleted": false,
+        "LastModified": null,
+        "LastModifiedBy": null,
+        "SeatNumber": "12C",
+        "Type": "Aisle",
+        "Version": 1
+      },
+      "expect": "the row is stored and reads back equal"
+    },
+    {
+      "operation": "_flightDbContext.Seats.SingleOrDefaultAsync",
+      "mode": "read",
+      "in": "src/Flight/Seats/Features/ReservingSeat/V1/ReserveSeat.cs:86 Handle",
+      "given": [
+        "f07cc888-0000-4000-8000-000000001016",
+        "f07cc888-0000-4000-8000-000000001017",
+        "f07cc888-0000-4000-8000-000000001018",
+        "f07cc888-0000-4000-8000-000000001019",
+        "f07cc888-0000-4000-8000-000000001020"
+      ],
+      "lookup": {
+        "Id": "f07cc888-0000-4000-8000-000000001016"
+      },
+      "expect": {
+        "Class": "FirstClass",
+        "CreatedAt": "2026-01-12T08:14:22Z",
+        "CreatedBy": 3,
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001028",
+        "Id": "f07cc888-0000-4000-8000-000000001016",
+        "IsDeleted": false,
+        "LastModified": null,
+        "LastModifiedBy": null,
+        "SeatNumber": "1A",
+        "Type": "Window",
+        "Version": 1
+      }
+    },
+    {
+      "operation": "_flightDbContext.Seats.Update",
+      "mode": "write",
+      "in": "src/Flight/Seats/Features/ReservingSeat/V1/ReserveSeat.cs:97 Handle",
+      "insert": {
+        "Class": "Economy",
+        "CreatedAt": "2026-01-12T08:15:41Z",
+        "CreatedBy": 3,
+        "FlightId": "2f5ff8e3-0000-4000-8000-000000001026",
+        "Id": "f07cc888-0000-4000-8000-000000001017",
+        "IsDeleted": false,
+        "LastModified": null,
+        "LastModifiedBy": null,
+        "SeatNumber": "12C",
+        "Type": "Aisle",
+        "Version": 1
+      },
+      "expect": "the row is stored and reads back equal"
+    }
+  ]
+}

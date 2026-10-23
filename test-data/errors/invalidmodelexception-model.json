@@ -1,0 +1,24 @@
+{
+  "id": "invalidmodelexception-model",
+  "title": "Model that the code refuses",
+  "kind": "invalid value",
+  "exception": "InvalidModelException",
+  "base": "DomainException",
+  "thrownAt": "src/Flight/Aircrafts/ValueObjects/Model.cs:18",
+  "condition": "if (string.IsNullOrWhiteSpace(value))",
+  "field": "Model",
+  "expect": {
+    "status": 500,
+    "error": "InvalidModelException",
+    "note": "DomainException is not one of the exception types the problem-details handler maps, so the API answers 500"
+  },
+  "trigger": {
+    "call": "POST api/v1/flight/aircraft",
+    "body": {
+      "manufacturingYear": 2014,
+      "model": null,
+      "name": "Spirit of Dublin"
+    },
+    "from": "createaircraftrequestdto-1"
+  }
+}

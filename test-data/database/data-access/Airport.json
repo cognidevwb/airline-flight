@@ -1,0 +1,68 @@
+{
+  "table": "Airport",
+  "accesses": [
+    {
+      "operation": "_flightDbContext.Airports.SingleOrDefaultAsync",
+      "mode": "read",
+      "in": "src/Flight/Airports/Features/CreatingAirport/V1/CreateAirport.cs:91 Handle",
+      "given": [
+        "c9bc0450-0000-4000-8000-000000001010",
+        "c9bc0450-0000-4000-8000-000000001011",
+        "c9bc0450-0000-4000-8000-000000001012",
+        "c9bc0450-0000-4000-8000-000000001013",
+        "c9bc0450-0000-4000-8000-000000001014"
+      ],
+      "lookup": {
+        "Id": "c9bc0450-0000-4000-8000-000000001010"
+      },
+      "expect": {
+        "Address": "Longford TW6, Hounslow, London",
+        "Code": "LHR",
+        "CreatedAt": "2023-01-09T08:14:22Z",
+        "CreatedBy": 1,
+        "Id": "c9bc0450-0000-4000-8000-000000001010",
+        "IsDeleted": false,
+        "LastModified": "2024-06-18T13:40:05Z",
+        "LastModifiedBy": 3,
+        "Name": "Heathrow Airport",
+        "Version": 4
+      }
+    },
+    {
+      "operation": "_flightDbContext.Airports.AddAsync",
+      "mode": "write",
+      "in": "src/Flight/Airports/Features/CreatingAirport/V1/CreateAirport.cs:100 Handle",
+      "insert": {
+        "Address": "Jamaica, Queens, New York, NY 11430",
+        "Code": "JFK",
+        "CreatedAt": "2023-01-09T08:21:47Z",
+        "CreatedBy": 1,
+        "Id": "c9bc0450-0000-4000-8000-000000001011",
+        "IsDeleted": false,
+        "LastModified": "2024-02-27T10:12:33Z",
+        "LastModifiedBy": 2,
+        "Name": "John F. Kennedy International Airport",
+        "Version": 3
+      },
+      "expect": "the row is stored and reads back equal"
+    },
+    {
+      "operation": "flightDbContext.Airports.AddRangeAsync",
+      "mode": "write",
+      "in": "src/Flight/Data/Seed/FlightDataSeeder.cs:36 SeedAirportAsync",
+      "insert": {
+        "Address": "Jamaica, Queens, New York, NY 11430",
+        "Code": "JFK",
+        "CreatedAt": "2023-01-09T08:21:47Z",
+        "CreatedBy": 1,
+        "Id": "c9bc0450-0000-4000-8000-000000001011",
+        "IsDeleted": false,
+        "LastModified": "2024-02-27T10:12:33Z",
+        "LastModifiedBy": 2,
+        "Name": "John F. Kennedy International Airport",
+        "Version": 3
+      },
+      "expect": "the row is stored and reads back equal"
+    }
+  ]
+}

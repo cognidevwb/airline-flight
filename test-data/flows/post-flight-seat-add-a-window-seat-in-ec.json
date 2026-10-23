@@ -1,0 +1,76 @@
+{
+  "id": "post-flight-seat-add-a-window-seat-in-ec",
+  "title": "Add a window seat in economy",
+  "source": "staged scenario",
+  "why": "Confirms the basic create path stores the seat with the right type, class and flight link.",
+  "setup": [
+    {
+      "ref": "aircraft-1",
+      "table": "Aircraft",
+      "values": {
+        "CreatedAt": "2026-01-01T00:00:00Z",
+        "CreatedBy": 1,
+        "IsDeleted": false,
+        "ManufacturingYear": 2015,
+        "Model": "737-800",
+        "Name": "G-ABCD",
+        "Version": 1
+      }
+    },
+    {
+      "ref": "airport-1",
+      "table": "Airport",
+      "values": {
+        "Address": "Longford TW6",
+        "Code": "LHR",
+        "CreatedAt": "2026-01-01T00:00:00Z",
+        "CreatedBy": 1,
+        "IsDeleted": false,
+        "Name": "Heathrow",
+        "Version": 1
+      }
+    },
+    {
+      "ref": "airport-2",
+      "table": "Airport",
+      "values": {
+        "Address": "Queens NY 11430",
+        "Code": "JFK",
+        "CreatedAt": "2026-01-01T00:00:00Z",
+        "CreatedBy": 1,
+        "IsDeleted": false,
+        "Name": "JFK",
+        "Version": 1
+      }
+    },
+    {
+      "ref": "flight-1",
+      "table": "Flight",
+      "values": {
+        "AircraftId": "aircraft-1",
+        "ArriveAirportId": "airport-2",
+        "ArriveDate": "2026-12-01T16:00:00Z",
+        "CreatedAt": "2026-01-01T00:00:00Z",
+        "CreatedBy": 1,
+        "DepartureAirportId": "airport-1",
+        "DepartureDate": "2026-12-01T09:00:00Z",
+        "DurationMinutes": 420,
+        "FlightDate": "2026-12-01T00:00:00Z",
+        "FlightNumber": "BA100",
+        "IsDeleted": false,
+        "Price": 450,
+        "Status": "Flying",
+        "Version": 1
+      }
+    }
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "does": "POST /flight/seat with SeatNumber 12A, Type Window, Class Economy, FlightId flight-1"
+    }
+  ],
+  "expect": [
+    "Seat is created and returned with a new Id, number 12A, Window, Economy, linked to flight-1."
+  ]
+}

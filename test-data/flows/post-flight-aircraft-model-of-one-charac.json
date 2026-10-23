@@ -1,0 +1,16 @@
+{
+  "id": "post-flight-aircraft-model-of-one-charac",
+  "title": "Model of one character",
+  "source": "staged scenario",
+  "why": "Tests the lower boundary: the shortest non-empty Model is accepted.",
+  "setup": [],
+  "steps": [
+    {
+      "n": 1,
+      "does": "POST …/flight/aircraft with Name 'Short Model Jet', Model 'A', ManufacturingYear 2015"
+    }
+  ],
+  "expect": [
+    "Success. The aircraft is created with Model 'A'."
+  ]
+}

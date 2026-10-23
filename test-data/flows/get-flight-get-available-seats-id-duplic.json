@@ -1,0 +1,86 @@
+{
+  "id": "get-flight-get-available-seats-id-duplic",
+  "title": "Duplicate seat number on a flight",
+  "source": "staged scenario",
+  "why": "Checks a second seat with the same number on one flight is refused, so a seat cannot be listed twice",
+  "setup": [
+    {
+      "ref": "aircraft-1",
+      "table": "Aircraft",
+      "values": {
+        "IsDeleted": false,
+        "ManufacturingYear": 2019,
+        "Model": "B737",
+        "Name": "Skyliner 17"
+      }
+    },
+    {
+      "ref": "airport-1",
+      "table": "Airport",
+      "values": {
+        "Address": "Lisbon",
+        "Code": "LIS",
+        "IsDeleted": false,
+        "Name": "Lisbon"
+      }
+    },
+    {
+      "ref": "airport-2",
+      "table": "Airport",
+      "values": {
+        "Address": "Porto",
+        "Code": "OPO",
+        "IsDeleted": false,
+        "Name": "Porto"
+      }
+    },
+    {
+      "ref": "flight-1",
+      "table": "Flight",
+      "values": {
+        "AircraftId": "aircraft-1",
+        "ArriveAirportId": "airport-2",
+        "ArriveDate": "2026-12-12T09:55:00Z",
+        "DepartureAirportId": "airport-1",
+        "DepartureDate": "2026-12-12T09:00:00Z",
+        "DurationMinutes": 55,
+        "FlightDate": "2026-12-12T00:00:00Z",
+        "FlightNumber": "TP1900",
+        "IsDeleted": false,
+        "Price": 60,
+        "Status": "Flying"
+      }
+    },
+    {
+      "ref": "seat-1",
+      "table": "Seat",
+      "values": {
+        "Class": "Economy",
+        "FlightId": "flight-1",
+        "IsDeleted": false,
+        "SeatNumber": "14C",
+        "Type": "Aisle"
+      }
+    },
+    {
+      "ref": "seat-2",
+      "table": "Seat",
+      "values": {
+        "Class": "Economy",
+        "FlightId": "flight-1",
+        "IsDeleted": false,
+        "SeatNumber": "14C",
+        "Type": "Aisle"
+      }
+    }
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "does": "Create seat-2 with the same number on the same flight, then GET /flight/get-available-seats/{flight-1 Id}"
+    }
+  ],
+  "expect": [
+    "Second 14C is rejected as a duplicate; the list shows 14C once"
+  ]
+}

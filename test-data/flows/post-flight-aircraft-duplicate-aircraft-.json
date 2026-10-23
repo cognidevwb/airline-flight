@@ -1,0 +1,33 @@
+{
+  "id": "post-flight-aircraft-duplicate-aircraft-",
+  "title": "Duplicate aircraft is rejected",
+  "source": "staged scenario",
+  "why": "Shows that two live aircraft cannot share the same Name and Model.",
+  "setup": [
+    {
+      "ref": "aircraft-1",
+      "table": "Aircraft",
+      "values": {
+        "CreatedAt": "2026-01-10T08:00:00Z",
+        "CreatedBy": 1,
+        "Id": "a1111111-1111-4111-8111-111111111111",
+        "IsDeleted": false,
+        "LastModified": "2026-01-10T08:00:00Z",
+        "LastModifiedBy": 1,
+        "ManufacturingYear": 2015,
+        "Model": "737-800",
+        "Name": "Boeing 737-800 Alpha",
+        "Version": 1
+      }
+    }
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "does": "POST …/flight/aircraft with Name 'Boeing 737-800 Alpha', Model '737-800', ManufacturingYear 2016"
+    }
+  ],
+  "expect": [
+    "Rejected as a duplicate (aircraft already exists). Only the original row remains."
+  ]
+}

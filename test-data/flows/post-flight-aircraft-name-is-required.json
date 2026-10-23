@@ -1,0 +1,16 @@
+{
+  "id": "post-flight-aircraft-name-is-required",
+  "title": "Name is required",
+  "source": "staged scenario",
+  "why": "Shows that a blank Name is rejected before anything is saved.",
+  "setup": [],
+  "steps": [
+    {
+      "n": 1,
+      "does": "POST …/flight/aircraft with Name '   ' (blank), Model '737-800', ManufacturingYear 2015"
+    }
+  ],
+  "expect": [
+    "Rejected with a validation error on Name. No aircraft is created."
+  ]
+}

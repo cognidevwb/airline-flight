@@ -1,0 +1,88 @@
+{
+  "id": "grpc-flightgrpcservice-getbyid-soft-dele",
+  "title": "Soft-deleted flight is not returned",
+  "source": "staged scenario",
+  "why": "Verifies the IsDeleted flag hides a flight from lookups even though the row still exists.",
+  "setup": [
+    {
+      "ref": "aircraft-1",
+      "table": "Aircraft",
+      "values": {
+        "CreatedAt": "2026-01-01T00:00:00Z",
+        "CreatedBy": 1,
+        "Id": "a1000000-0000-4000-8000-000000000007",
+        "IsDeleted": false,
+        "LastModified": "2026-01-01T00:00:00Z",
+        "LastModifiedBy": 1,
+        "ManufacturingYear": 2020,
+        "Model": "A321neo",
+        "Name": "Airbus A321 N321JB",
+        "Version": 1
+      }
+    },
+    {
+      "ref": "airport-dep",
+      "table": "Airport",
+      "values": {
+        "Address": "Newark, New Jersey",
+        "Code": "EWR",
+        "CreatedAt": "2026-01-01T00:00:00Z",
+        "CreatedBy": 1,
+        "Id": "b1000000-0000-4000-8000-000000000061",
+        "IsDeleted": false,
+        "LastModified": "2026-01-01T00:00:00Z",
+        "LastModifiedBy": 1,
+        "Name": "Newark Liberty International",
+        "Version": 1
+      }
+    },
+    {
+      "ref": "airport-arr",
+      "table": "Airport",
+      "values": {
+        "Address": "Orlando, Florida",
+        "Code": "MCO",
+        "CreatedAt": "2026-01-01T00:00:00Z",
+        "CreatedBy": 1,
+        "Id": "b1000000-0000-4000-8000-000000000062",
+        "IsDeleted": false,
+        "LastModified": "2026-01-01T00:00:00Z",
+        "LastModifiedBy": 1,
+        "Name": "Orlando International",
+        "Version": 1
+      }
+    },
+    {
+      "ref": "flight-1",
+      "table": "Flight",
+      "values": {
+        "AircraftId": "aircraft-1",
+        "ArriveAirportId": "airport-arr",
+        "ArriveDate": "2026-11-06T09:50:00Z",
+        "CreatedAt": "2026-01-01T00:00:00Z",
+        "CreatedBy": 1,
+        "DepartureAirportId": "airport-dep",
+        "DepartureDate": "2026-11-06T07:00:00Z",
+        "DurationMinutes": 170,
+        "FlightDate": "2026-11-06T00:00:00Z",
+        "FlightNumber": "JB700",
+        "Id": "f1000000-0000-4000-8000-000000000007",
+        "IsDeleted": true,
+        "LastModified": "2026-10-01T00:00:00Z",
+        "LastModifiedBy": 2,
+        "Price": 130.0,
+        "Status": "Flying",
+        "Version": 2
+      }
+    }
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "does": "Call FlightGrpcService/GetById with the Id of flight-1, which has IsDeleted true."
+    }
+  ],
+  "expect": [
+    "A NOT_FOUND error, the same as for an Id that does not exist. The soft-deleted flight is not returned."
+  ]
+}

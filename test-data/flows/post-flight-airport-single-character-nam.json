@@ -1,0 +1,16 @@
+{
+  "id": "post-flight-airport-single-character-nam",
+  "title": "Single-character name and code",
+  "source": "staged scenario",
+  "why": "Shows there is no minimum length beyond non-empty",
+  "setup": [],
+  "steps": [
+    {
+      "n": 1,
+      "does": "POST …/flight/airport with Name 'A', Address 'Test City', Code 'A'"
+    }
+  ],
+  "expect": [
+    "Airport created with Name 'A' and Code 'A'"
+  ]
+}

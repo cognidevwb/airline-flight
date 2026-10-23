@@ -1,0 +1,188 @@
+{
+  "id": "grpc-flightgrpcservice-getavailableseats",
+  "title": "Very large aircraft",
+  "source": "staged scenario",
+  "why": "Checks a large flight returns its whole seat list with no paging cap or truncation. Scaled down from 850 seats to 10 here; raise the Seat count to 850 for a true volume run.",
+  "setup": [
+    {
+      "ref": "aircraft-1",
+      "table": "Aircraft",
+      "values": {
+        "IsDeleted": false,
+        "ManufacturingYear": 2014,
+        "Model": "A380-800",
+        "Name": "Airbus Superjumbo",
+        "Version": 1
+      }
+    },
+    {
+      "ref": "airport-dep",
+      "table": "Airport",
+      "values": {
+        "Address": "London",
+        "Code": "LHR",
+        "IsDeleted": false,
+        "Name": "Heathrow",
+        "Version": 1
+      }
+    },
+    {
+      "ref": "airport-arr",
+      "table": "Airport",
+      "values": {
+        "Address": "Los Angeles",
+        "Code": "LAX",
+        "IsDeleted": false,
+        "Name": "Los Angeles Intl",
+        "Version": 1
+      }
+    },
+    {
+      "ref": "flight-1",
+      "table": "Flight",
+      "values": {
+        "AircraftId": "aircraft-1",
+        "ArriveAirportId": "airport-arr",
+        "ArriveDate": "2026-12-05T22:30:00Z",
+        "DepartureAirportId": "airport-dep",
+        "DepartureDate": "2026-12-05T11:00:00Z",
+        "DurationMinutes": 690,
+        "FlightDate": "2026-12-05T00:00:00Z",
+        "FlightNumber": "BA117",
+        "IsDeleted": false,
+        "Price": 700,
+        "Status": "Unknown",
+        "Version": 1
+      }
+    },
+    {
+      "ref": "seat-1",
+      "table": "Seat",
+      "values": {
+        "Class": "Economy",
+        "FlightId": "flight-1",
+        "IsDeleted": false,
+        "SeatNumber": "40A",
+        "Type": "Window",
+        "Version": 1
+      }
+    },
+    {
+      "ref": "seat-2",
+      "table": "Seat",
+      "values": {
+        "Class": "Economy",
+        "FlightId": "flight-1",
+        "IsDeleted": false,
+        "SeatNumber": "40B",
+        "Type": "Middle",
+        "Version": 1
+      }
+    },
+    {
+      "ref": "seat-3",
+      "table": "Seat",
+      "values": {
+        "Class": "Economy",
+        "FlightId": "flight-1",
+        "IsDeleted": false,
+        "SeatNumber": "40C",
+        "Type": "Aisle",
+        "Version": 1
+      }
+    },
+    {
+      "ref": "seat-4",
+      "table": "Seat",
+      "values": {
+        "Class": "Economy",
+        "FlightId": "flight-1",
+        "IsDeleted": false,
+        "SeatNumber": "41A",
+        "Type": "Window",
+        "Version": 1
+      }
+    },
+    {
+      "ref": "seat-5",
+      "table": "Seat",
+      "values": {
+        "Class": "Economy",
+        "FlightId": "flight-1",
+        "IsDeleted": false,
+        "SeatNumber": "41B",
+        "Type": "Middle",
+        "Version": 1
+      }
+    },
+    {
+      "ref": "seat-6",
+      "table": "Seat",
+      "values": {
+        "Class": "Economy",
+        "FlightId": "flight-1",
+        "IsDeleted": false,
+        "SeatNumber": "41C",
+        "Type": "Aisle",
+        "Version": 1
+      }
+    },
+    {
+      "ref": "seat-7",
+      "table": "Seat",
+      "values": {
+        "Class": "Economy",
+        "FlightId": "flight-1",
+        "IsDeleted": false,
+        "SeatNumber": "42A",
+        "Type": "Window",
+        "Version": 1
+      }
+    },
+    {
+      "ref": "seat-8",
+      "table": "Seat",
+      "values": {
+        "Class": "Economy",
+        "FlightId": "flight-1",
+        "IsDeleted": false,
+        "SeatNumber": "42B",
+        "Type": "Middle",
+        "Version": 1
+      }
+    },
+    {
+      "ref": "seat-9",
+      "table": "Seat",
+      "values": {
+        "Class": "Economy",
+        "FlightId": "flight-1",
+        "IsDeleted": false,
+        "SeatNumber": "42C",
+        "Type": "Aisle",
+        "Version": 1
+      }
+    },
+    {
+      "ref": "seat-10",
+      "table": "Seat",
+      "values": {
+        "Class": "Economy",
+        "FlightId": "flight-1",
+        "IsDeleted": false,
+        "SeatNumber": "43A",
+        "Type": "Window",
+        "Version": 1
+      }
+    }
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "does": "Call FlightGrpcService/GetAvailableSeats with the Id of flight-1."
+    }
+  ],
+  "expect": [
+    "All 10 seats are returned with none dropped. At full size, all 850 seats come back."
+  ]
+}

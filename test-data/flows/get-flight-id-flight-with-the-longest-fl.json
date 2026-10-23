@@ -1,0 +1,84 @@
+{
+  "id": "get-flight-id-flight-with-the-longest-fl",
+  "title": "Flight with the longest flight number",
+  "source": "staged scenario",
+  "why": "Checks the 50-character boundary is stored and displayed whole",
+  "setup": [
+    {
+      "ref": "aircraft-1",
+      "table": "Aircraft",
+      "values": {
+        "CreatedAt": "2026-01-10T08:00:00Z",
+        "CreatedBy": 1,
+        "IsDeleted": false,
+        "LastModified": "2026-01-10T08:00:00Z",
+        "LastModifiedBy": 1,
+        "ManufacturingYear": 2019,
+        "Model": "737-800",
+        "Name": "Boeing 737",
+        "Version": 1
+      }
+    },
+    {
+      "ref": "airport-dep",
+      "table": "Airport",
+      "values": {
+        "Address": "San Francisco, CA",
+        "Code": "SFO",
+        "CreatedAt": "2026-01-10T08:00:00Z",
+        "CreatedBy": 1,
+        "IsDeleted": false,
+        "LastModified": "2026-01-10T08:00:00Z",
+        "LastModifiedBy": 1,
+        "Name": "San Francisco International",
+        "Version": 1
+      }
+    },
+    {
+      "ref": "airport-arr",
+      "table": "Airport",
+      "values": {
+        "Address": "Ota, Tokyo",
+        "Code": "HND",
+        "CreatedAt": "2026-01-10T08:00:00Z",
+        "CreatedBy": 1,
+        "IsDeleted": false,
+        "LastModified": "2026-01-10T08:00:00Z",
+        "LastModifiedBy": 1,
+        "Name": "Tokyo Haneda",
+        "Version": 1
+      }
+    },
+    {
+      "ref": "flight-1",
+      "table": "Flight",
+      "values": {
+        "AircraftId": "aircraft-1",
+        "ArriveAirportId": "airport-arr",
+        "ArriveDate": "2026-11-18T20:00:00Z",
+        "CreatedAt": "2026-10-01T09:00:00Z",
+        "CreatedBy": 1,
+        "DepartureAirportId": "airport-dep",
+        "DepartureDate": "2026-11-18T10:00:00Z",
+        "DurationMinutes": 10,
+        "FlightDate": "2026-11-18T00:00:00Z",
+        "FlightNumber": "ABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJ",
+        "IsDeleted": false,
+        "LastModified": "2026-10-01T09:00:00Z",
+        "LastModifiedBy": 1,
+        "Price": 9,
+        "Status": "Flying",
+        "Version": 1
+      }
+    }
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "does": "Send GET …/flight/{id} with the Id of flight-1"
+    }
+  ],
+  "expect": [
+    "200 with the full 50-character FlightNumber, untruncated"
+  ]
+}

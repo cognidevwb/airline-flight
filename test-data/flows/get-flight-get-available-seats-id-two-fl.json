@@ -1,0 +1,103 @@
+{
+  "id": "get-flight-get-available-seats-id-two-fl",
+  "title": "Two flights on same aircraft kept separate",
+  "source": "staged scenario",
+  "why": "Catches queries that join by aircraft rather than by flight",
+  "setup": [
+    {
+      "ref": "aircraft-1",
+      "table": "Aircraft",
+      "values": {
+        "IsDeleted": false,
+        "ManufacturingYear": 2020,
+        "Model": "B787",
+        "Name": "Skyliner 5"
+      }
+    },
+    {
+      "ref": "airport-1",
+      "table": "Airport",
+      "values": {
+        "Address": "Tokyo",
+        "Code": "NRT",
+        "IsDeleted": false,
+        "Name": "Narita"
+      }
+    },
+    {
+      "ref": "airport-2",
+      "table": "Airport",
+      "values": {
+        "Address": "Los Angeles",
+        "Code": "LAX",
+        "IsDeleted": false,
+        "Name": "LAX"
+      }
+    },
+    {
+      "ref": "flight-1",
+      "table": "Flight",
+      "values": {
+        "AircraftId": "aircraft-1",
+        "ArriveAirportId": "airport-2",
+        "ArriveDate": "2026-11-15T10:00:00Z",
+        "DepartureAirportId": "airport-1",
+        "DepartureDate": "2026-11-15T17:00:00Z",
+        "DurationMinutes": 600,
+        "FlightDate": "2026-11-15T00:00:00Z",
+        "FlightNumber": "JL62",
+        "IsDeleted": false,
+        "Price": 900,
+        "Status": "Flying"
+      }
+    },
+    {
+      "ref": "flight-2",
+      "table": "Flight",
+      "values": {
+        "AircraftId": "aircraft-1",
+        "ArriveAirportId": "airport-1",
+        "ArriveDate": "2026-11-17T14:00:00Z",
+        "DepartureAirportId": "airport-2",
+        "DepartureDate": "2026-11-16T12:00:00Z",
+        "DurationMinutes": 690,
+        "FlightDate": "2026-11-16T00:00:00Z",
+        "FlightNumber": "JL63",
+        "IsDeleted": false,
+        "Price": 920,
+        "Status": "Flying"
+      }
+    },
+    {
+      "ref": "seat-1",
+      "table": "Seat",
+      "values": {
+        "Class": "Business",
+        "FlightId": "flight-1",
+        "IsDeleted": false,
+        "SeatNumber": "3A",
+        "Type": "Window"
+      }
+    },
+    {
+      "ref": "seat-2",
+      "table": "Seat",
+      "values": {
+        "Class": "Business",
+        "FlightId": "flight-2",
+        "IsDeleted": false,
+        "SeatNumber": "3B",
+        "Type": "Aisle"
+      }
+    }
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "does": "GET /flight/get-available-seats/{flight-1 Id}, then the same for flight-2"
+    }
+  ],
+  "expect": [
+    "flight-1 returns only 3A; flight-2 returns only 3B"
+  ]
+}

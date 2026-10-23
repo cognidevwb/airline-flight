@@ -1,0 +1,16 @@
+{
+  "id": "get-flight-id-flight-id-must-be-provided",
+  "title": "Flight Id must be provided",
+  "source": "staged scenario",
+  "why": "Shows the empty Guid is rejected as a missing Id before any lookup",
+  "setup": [],
+  "steps": [
+    {
+      "n": 1,
+      "does": "Send GET …/flight/00000000-0000-0000-0000-000000000000"
+    }
+  ],
+  "expect": [
+    "Rejected as a validation failure (400) saying the flight Id is required; no database lookup is made"
+  ]
+}

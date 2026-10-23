@@ -1,0 +1,50 @@
+{
+  "id": "post-flight-schedule-a-standard-domestic",
+  "title": "Schedule a standard domestic flight",
+  "source": "staged scenario",
+  "why": "Confirms a fully valid flight is accepted and stored with the supplied route, price, and status.",
+  "setup": [
+    {
+      "ref": "aircraft-1",
+      "table": "Aircraft",
+      "values": {
+        "IsDeleted": false,
+        "ManufacturingYear": 2015,
+        "Model": "737-800",
+        "Name": "Boeing 737-800",
+        "Version": 1
+      }
+    },
+    {
+      "ref": "airport-jfk",
+      "table": "Airport",
+      "values": {
+        "Address": "Queens, NY",
+        "Code": "JFK",
+        "IsDeleted": false,
+        "Name": "John F. Kennedy International",
+        "Version": 1
+      }
+    },
+    {
+      "ref": "airport-bos",
+      "table": "Airport",
+      "values": {
+        "Address": "Boston, MA",
+        "Code": "BOS",
+        "IsDeleted": false,
+        "Name": "Logan International",
+        "Version": 1
+      }
+    }
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "does": "POST …/flight with FlightNumber FL-1001, AircraftId aircraft-1, DepartureAirportId airport-jfk, ArriveAirportId airport-bos, DurationMinutes 75, Price 120.50, Status Flying, DepartureDate 2026-11-10T08:00, ArriveDate 2026-11-10T09:15, FlightDate 2026-11-10"
+    }
+  ],
+  "expect": [
+    "Success: a Flight is created with a new Id and the submitted values, and the response echoes them."
+  ]
+}

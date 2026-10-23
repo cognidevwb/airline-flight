@@ -1,0 +1,80 @@
+{
+  "id": "post-flight-reserve-seat-reserve-an-aisl",
+  "title": "Reserve an aisle seat in business class",
+  "source": "staged scenario",
+  "why": "Shows a higher-priced business seat can be reserved like any other",
+  "setup": [
+    {
+      "ref": "aircraft-1",
+      "table": "Aircraft",
+      "values": {
+        "IsDeleted": false,
+        "ManufacturingYear": 2020,
+        "Model": "B787",
+        "Name": "Skyliner 2",
+        "Version": 1
+      }
+    },
+    {
+      "ref": "airport-dep",
+      "table": "Airport",
+      "values": {
+        "Address": "Frankfurt",
+        "Code": "FRA",
+        "IsDeleted": false,
+        "Name": "Frankfurt",
+        "Version": 1
+      }
+    },
+    {
+      "ref": "airport-arr",
+      "table": "Airport",
+      "values": {
+        "Address": "Dubai",
+        "Code": "DXB",
+        "IsDeleted": false,
+        "Name": "Dubai",
+        "Version": 1
+      }
+    },
+    {
+      "ref": "flight-1",
+      "table": "Flight",
+      "values": {
+        "AircraftId": "aircraft-1",
+        "ArriveAirportId": "airport-arr",
+        "ArriveDate": "2026-11-12T14:20:00Z",
+        "DepartureAirportId": "airport-dep",
+        "DepartureDate": "2026-11-12T08:00:00Z",
+        "DurationMinutes": 380,
+        "FlightDate": "2026-11-12T00:00:00Z",
+        "FlightNumber": "FL210",
+        "IsDeleted": false,
+        "Price": 450.0,
+        "Status": "Unknown",
+        "Version": 1
+      }
+    },
+    {
+      "ref": "seat-1",
+      "table": "Seat",
+      "values": {
+        "Class": "Business",
+        "FlightId": "flight-1",
+        "IsDeleted": false,
+        "SeatNumber": "4C",
+        "Type": "Aisle",
+        "Version": 1
+      }
+    }
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "does": "POST /flight/reserve-seat with FlightId of flight-1 and SeatNumber 4C"
+    }
+  ],
+  "expect": [
+    "Success; seat 4C is reserved and the business fare of 450.00 applies"
+  ]
+}

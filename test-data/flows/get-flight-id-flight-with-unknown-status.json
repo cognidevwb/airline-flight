@@ -1,0 +1,84 @@
+{
+  "id": "get-flight-id-flight-with-unknown-status",
+  "title": "Flight with Unknown status",
+  "source": "staged scenario",
+  "why": "Checks the enum default value is displayed instead of being treated as an error",
+  "setup": [
+    {
+      "ref": "aircraft-1",
+      "table": "Aircraft",
+      "values": {
+        "CreatedAt": "2026-01-10T08:00:00Z",
+        "CreatedBy": 1,
+        "IsDeleted": false,
+        "LastModified": "2026-01-10T08:00:00Z",
+        "LastModifiedBy": 1,
+        "ManufacturingYear": 2019,
+        "Model": "737-800",
+        "Name": "Boeing 737",
+        "Version": 1
+      }
+    },
+    {
+      "ref": "airport-dep",
+      "table": "Airport",
+      "values": {
+        "Address": "Phoenix, AZ",
+        "Code": "PHX",
+        "CreatedAt": "2026-01-10T08:00:00Z",
+        "CreatedBy": 1,
+        "IsDeleted": false,
+        "LastModified": "2026-01-10T08:00:00Z",
+        "LastModifiedBy": 1,
+        "Name": "Phoenix Sky Harbor",
+        "Version": 1
+      }
+    },
+    {
+      "ref": "airport-arr",
+      "table": "Airport",
+      "values": {
+        "Address": "Las Vegas, NV",
+        "Code": "LAS",
+        "CreatedAt": "2026-01-10T08:00:00Z",
+        "CreatedBy": 1,
+        "IsDeleted": false,
+        "LastModified": "2026-01-10T08:00:00Z",
+        "LastModifiedBy": 1,
+        "Name": "Las Vegas Harry Reid",
+        "Version": 1
+      }
+    },
+    {
+      "ref": "flight-1",
+      "table": "Flight",
+      "values": {
+        "AircraftId": "aircraft-1",
+        "ArriveAirportId": "airport-arr",
+        "ArriveDate": "2026-11-30T11:00:00Z",
+        "CreatedAt": "2026-10-01T09:00:00Z",
+        "CreatedBy": 1,
+        "DepartureAirportId": "airport-dep",
+        "DepartureDate": "2026-11-30T10:00:00Z",
+        "DurationMinutes": 1,
+        "FlightDate": "2026-11-30T00:00:00Z",
+        "FlightNumber": "FL-9009",
+        "IsDeleted": false,
+        "LastModified": "2026-10-01T09:00:00Z",
+        "LastModifiedBy": 1,
+        "Price": 3,
+        "Status": "Unknown",
+        "Version": 1
+      }
+    }
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "does": "Send GET …/flight/{id} with the Id of flight-1"
+    }
+  ],
+  "expect": [
+    "200 with Status Unknown shown as-is"
+  ]
+}

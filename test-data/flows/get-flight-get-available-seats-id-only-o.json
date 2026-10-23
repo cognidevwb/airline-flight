@@ -1,0 +1,75 @@
+{
+  "id": "get-flight-get-available-seats-id-only-o",
+  "title": "Only one seat left",
+  "source": "staged scenario",
+  "why": "Checks the boundary where the list has a single item",
+  "setup": [
+    {
+      "ref": "aircraft-1",
+      "table": "Aircraft",
+      "values": {
+        "IsDeleted": false,
+        "ManufacturingYear": 2018,
+        "Model": "A321",
+        "Name": "Skyliner 12"
+      }
+    },
+    {
+      "ref": "airport-1",
+      "table": "Airport",
+      "values": {
+        "Address": "Barcelona",
+        "Code": "BCN",
+        "IsDeleted": false,
+        "Name": "Barcelona El Prat"
+      }
+    },
+    {
+      "ref": "airport-2",
+      "table": "Airport",
+      "values": {
+        "Address": "London",
+        "Code": "LGW",
+        "IsDeleted": false,
+        "Name": "Gatwick"
+      }
+    },
+    {
+      "ref": "flight-1",
+      "table": "Flight",
+      "values": {
+        "AircraftId": "aircraft-1",
+        "ArriveAirportId": "airport-2",
+        "ArriveDate": "2026-12-07T08:15:00Z",
+        "DepartureAirportId": "airport-1",
+        "DepartureDate": "2026-12-07T06:00:00Z",
+        "DurationMinutes": 135,
+        "FlightDate": "2026-12-07T00:00:00Z",
+        "FlightNumber": "VY6601",
+        "IsDeleted": false,
+        "Price": 75,
+        "Status": "Flying"
+      }
+    },
+    {
+      "ref": "seat-1..180",
+      "table": "Seat",
+      "values": {
+        "Class": "Economy",
+        "FlightId": "flight-1",
+        "IsDeleted": false,
+        "SeatNumber": "1A..30F (180 seats)",
+        "Type": "Window"
+      }
+    }
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "does": "Book 179 of the 180 seats, leaving 30F open, then GET /flight/get-available-seats/{flight-1 Id}"
+    }
+  ],
+  "expect": [
+    "200 with exactly one seat, 30F"
+  ]
+}

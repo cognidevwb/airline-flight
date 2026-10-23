@@ -1,0 +1,20 @@
+{
+  "id": "getavailableflightstests-should-return-a",
+  "title": "should return available flights",
+  "source": "repository test",
+  "file": "tests/IntegrationTest/Flight/Features/GetAvailableFlightsTests.cs:22",
+  "steps": [
+    {
+      "n": 1,
+      "does": "await Fixture.SendAsync(command)"
+    },
+    {
+      "n": 2,
+      "does": "var response = (await Fixture.SendAsync(query))?.FlightDtos?.ToList()"
+    }
+  ],
+  "expect": [
+    "response?.Should().NotBeNull()",
+    "response?.Count.Should().BeGreaterThanOrEqualTo(2)"
+  ]
+}

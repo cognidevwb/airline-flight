@@ -1,0 +1,25 @@
+{
+  "id": "aircraftalreadyexistexception-createaircraft",
+  "title": "CreateAircraft: the record already exists",
+  "kind": "duplicate",
+  "exception": "AircraftAlreadyExistException",
+  "base": "AppException",
+  "thrownAt": "src/Flight/Aircrafts/Features/CreatingAircraft/V1/CreateAircraft.cs:98",
+  "condition": "if (aircraft is not null)",
+  "field": null,
+  "expect": {
+    "status": 400,
+    "error": "AircraftAlreadyExistException",
+    "note": null
+  },
+  "trigger": {
+    "call": "POST api/v1/flight/aircraft",
+    "body": {
+      "manufacturingYear": 2014,
+      "model": "Boeing 737-800",
+      "name": "Spirit of Dublin"
+    },
+    "repeat": 2,
+    "why": "the same body twice; the second is refused"
+  }
+}

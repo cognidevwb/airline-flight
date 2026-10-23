@@ -1,0 +1,86 @@
+{
+  "id": "get-flight-get-available-seats-id-seat-n",
+  "title": "Seat number is malformed",
+  "source": "staged scenario",
+  "why": "Checks blank or off-layout seat numbers are rejected",
+  "setup": [
+    {
+      "ref": "aircraft-1",
+      "table": "Aircraft",
+      "values": {
+        "IsDeleted": false,
+        "ManufacturingYear": 2016,
+        "Model": "A320",
+        "Name": "Skyliner 16"
+      }
+    },
+    {
+      "ref": "airport-1",
+      "table": "Airport",
+      "values": {
+        "Address": "Prague",
+        "Code": "PRG",
+        "IsDeleted": false,
+        "Name": "Prague"
+      }
+    },
+    {
+      "ref": "airport-2",
+      "table": "Airport",
+      "values": {
+        "Address": "Warsaw",
+        "Code": "WAW",
+        "IsDeleted": false,
+        "Name": "Warsaw Chopin"
+      }
+    },
+    {
+      "ref": "flight-1",
+      "table": "Flight",
+      "values": {
+        "AircraftId": "aircraft-1",
+        "ArriveAirportId": "airport-2",
+        "ArriveDate": "2026-12-11T10:25:00Z",
+        "DepartureAirportId": "airport-1",
+        "DepartureDate": "2026-12-11T09:00:00Z",
+        "DurationMinutes": 85,
+        "FlightDate": "2026-12-11T00:00:00Z",
+        "FlightNumber": "LO520",
+        "IsDeleted": false,
+        "Price": 85,
+        "Status": "Flying"
+      }
+    },
+    {
+      "ref": "seat-blank",
+      "table": "Seat",
+      "values": {
+        "Class": "Economy",
+        "FlightId": "flight-1",
+        "IsDeleted": false,
+        "SeatNumber": "",
+        "Type": "Window"
+      }
+    },
+    {
+      "ref": "seat-99Z",
+      "table": "Seat",
+      "values": {
+        "Class": "Economy",
+        "FlightId": "flight-1",
+        "IsDeleted": false,
+        "SeatNumber": "99Z",
+        "Type": "Window"
+      }
+    }
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "does": "Create each seat, then GET /flight/get-available-seats/{flight-1 Id}"
+    }
+  ],
+  "expect": [
+    "Both seats are rejected on creation; neither appears in the open-seat list"
+  ]
+}

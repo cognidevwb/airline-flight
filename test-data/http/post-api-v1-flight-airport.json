@@ -1,0 +1,1659 @@
+{
+  "operation": "POST api/v1/flight/airport",
+  "kind": "http",
+  "handler": "src/Flight/Airports/Features/CreatingAirport/V1/CreateAirport.cs:41",
+  "request": "CreateAirportRequestDto",
+  "response": "CreateAirportResponseDto",
+  "valid": [
+    {
+      "ref": "createairportrequestdto-1",
+      "body": {
+        "address": "Longford TW6, Hounslow, London",
+        "code": "LHR",
+        "name": "Heathrow Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-2",
+      "body": {
+        "address": "Jamaica, Queens, New York, NY 11430",
+        "code": "JFK",
+        "name": "John F. Kennedy International Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-3",
+      "body": {
+        "address": "60547 Frankfurt am Main, Germany",
+        "code": "FRA",
+        "name": "Frankfurt Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-4",
+      "body": {
+        "address": "Garhoud, Dubai, United Arab Emirates",
+        "code": "DXB",
+        "name": "Dubai International Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-5",
+      "body": {
+        "address": "Collinstown, Dublin, K67 Ireland",
+        "code": "DUB",
+        "name": "Dublin Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-6",
+      "body": {
+        "address": "95700 Roissy-en-France, France",
+        "code": "CDG",
+        "name": "Paris Charles de Gaulle Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-7",
+      "body": {
+        "address": "Evert van de Beekstraat 202, Schiphol",
+        "code": "AMS",
+        "name": "Amsterdam Schiphol Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-8",
+      "body": {
+        "address": "Av de la Hispanidad, 28042 Madrid",
+        "code": "MAD",
+        "name": "Madrid-Barajas Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-9",
+      "body": {
+        "address": "1 World Way, Los Angeles, CA 90045",
+        "code": "LAX",
+        "name": "Los Angeles International Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-10",
+      "body": {
+        "address": "10000 W O'Hare Ave, Chicago, IL 60666",
+        "code": "ORD",
+        "name": "O'Hare International Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-11",
+      "body": {
+        "address": "Airport Blvd, Singapore 819663",
+        "code": "SIN",
+        "name": "Singapore Changi Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-12",
+      "body": {
+        "address": "3 Hanedakuko, Ota City, Tokyo 144-0041",
+        "code": "HND",
+        "name": "Tokyo Haneda Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-13",
+      "body": {
+        "address": "6000 N Terminal Pkwy, Atlanta, GA 30320",
+        "code": "ATL",
+        "name": "Hartsfield-Jackson Atlanta International Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-14",
+      "body": {
+        "address": "Nordallee 25, 85356 Munich, Germany",
+        "code": "MUC",
+        "name": "Munich Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-15",
+      "body": {
+        "address": "Flughafenstrasse, 8058 Zurich, Switzerland",
+        "code": "ZRH",
+        "name": "Zurich Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-16",
+      "body": {
+        "address": "Tayakadın, 34283 Arnavutköy, Istanbul",
+        "code": "IST",
+        "name": "Istanbul Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-17",
+      "body": {
+        "address": "Airport Rd, Doha, Qatar",
+        "code": "DOH",
+        "name": "Hamad International Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-18",
+      "body": {
+        "address": "Mascot NSW 2020, Australia",
+        "code": "SYD",
+        "name": "Sydney Kingsford Smith Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-19",
+      "body": {
+        "address": "6301 Silver Dart Dr, Mississauga, ON",
+        "code": "YYZ",
+        "name": "Toronto Pearson International Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-20",
+      "body": {
+        "address": "San Francisco, CA 94128, United States",
+        "code": "SFO",
+        "name": "San Francisco International Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-21",
+      "body": {
+        "address": "1 Sky Plaza Rd, Chek Lap Kok, Hong Kong",
+        "code": "HKG",
+        "name": "Hong Kong International Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-22",
+      "body": {
+        "address": "272 Gonghang-ro, Jung-gu, Incheon",
+        "code": "ICN",
+        "name": "Incheon International Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-23",
+      "body": {
+        "address": "Lufthavnsboulevarden 6, 2770 Kastrup",
+        "code": "CPH",
+        "name": "Copenhagen Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-24",
+      "body": {
+        "address": "1300 Schwechat, Austria",
+        "code": "VIE",
+        "name": "Vienna International Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-25",
+      "body": {
+        "address": "08820 El Prat de Llobregat, Barcelona",
+        "code": "BCN",
+        "name": "Barcelona-El Prat Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-26",
+      "body": {
+        "address": "Via dell'Aeroporto di Fiumicino, 00054 Rome",
+        "code": "FCO",
+        "name": "Rome Fiumicino Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-27",
+      "body": {
+        "address": "2400 Aviation Dr, DFW Airport, TX 75261",
+        "code": "DFW",
+        "name": "Dallas/Fort Worth International Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-28",
+      "body": {
+        "address": "2100 NW 42nd Ave, Miami, FL 33126",
+        "code": "MIA",
+        "name": "Miami International Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-29",
+      "body": {
+        "address": "Wilmslow Rd, Manchester M90 1QX",
+        "code": "MAN",
+        "name": "Manchester Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-30",
+      "body": {
+        "address": "Horley, Gatwick RH6 0NP, West Sussex",
+        "code": "LGW",
+        "name": "Gatwick Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-31",
+      "body": {
+        "address": "Edinburgh EH12 9DN, Scotland",
+        "code": "EDI",
+        "name": "Edinburgh Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-32",
+      "body": {
+        "address": "Shannon, Co. Clare, V14 Ireland",
+        "code": "SNN",
+        "name": "Shannon Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-33",
+      "body": {
+        "address": "Cork, T12 Ireland",
+        "code": "ORK",
+        "name": "Cork Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-34",
+      "body": {
+        "address": "Edvard Munchs veg, 2061 Gardermoen",
+        "code": "OSL",
+        "name": "Oslo Gardermoen Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-35",
+      "body": {
+        "address": "190 45 Stockholm-Arlanda, Sweden",
+        "code": "ARN",
+        "name": "Stockholm Arlanda Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-36",
+      "body": {
+        "address": "Lentoasemantie 1, 01530 Vantaa",
+        "code": "HEL",
+        "name": "Helsinki Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-37",
+      "body": {
+        "address": "Alameda das Comunidades Portuguesas, Lisbon",
+        "code": "LIS",
+        "name": "Lisbon Humberto Delgado Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-38",
+      "body": {
+        "address": "Leopoldlaan, 1930 Zaventem, Belgium",
+        "code": "BRU",
+        "name": "Brussels Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-39",
+      "body": {
+        "address": "190 19 Spata-Artemida, Athens, Greece",
+        "code": "ATH",
+        "name": "Athens Eleftherios Venizelos Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-40",
+      "body": {
+        "address": "Khalifa City, Abu Dhabi, UAE",
+        "code": "AUH",
+        "name": "Abu Dhabi International Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-41",
+      "body": {
+        "address": "New Delhi, Delhi 110037, India",
+        "code": "DEL",
+        "name": "Indira Gandhi International Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-42",
+      "body": {
+        "address": "Santacruz East, Mumbai 400099, India",
+        "code": "BOM",
+        "name": "Chhatrapati Shivaji Maharaj International Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-43",
+      "body": {
+        "address": "Kempton Park, Gauteng 1627, South Africa",
+        "code": "JNB",
+        "name": "O. R. Tambo International Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-44",
+      "body": {
+        "address": "Rod. Hélio Smidt, Guarulhos, SP, Brazil",
+        "code": "GRU",
+        "name": "São Paulo-Guarulhos International Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-45",
+      "body": {
+        "address": "Av. Capitán Carlos León, Mexico City",
+        "code": "MEX",
+        "name": "Benito Juárez International Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-46",
+      "body": {
+        "address": "1 Harborside Dr, Boston, MA 02128",
+        "code": "BOS",
+        "name": "Boston Logan International Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-47",
+      "body": {
+        "address": "17801 Int'l Blvd, SeaTac, WA 98158",
+        "code": "SEA",
+        "name": "Seattle-Tacoma International Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-48",
+      "body": {
+        "address": "3 Brewster Rd, Newark, NJ 07114",
+        "code": "EWR",
+        "name": "Newark Liberty International Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-49",
+      "body": {
+        "address": "999 Moo 1, Racha Thewa, Samut Prakan",
+        "code": "BKK",
+        "name": "Suvarnabhumi Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-50",
+      "body": {
+        "address": "Capital Airport Rd, Chaoyang, Beijing",
+        "code": "PEK",
+        "name": "Beijing Capital International Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-51",
+      "body": {
+        "address": "64000 KLIA, Sepang, Selangor, Malaysia",
+        "code": "KUL",
+        "name": "Kuala Lumpur International Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-52",
+      "body": {
+        "address": "Jl. Raya Bandara, Tangerang, Banten, Indonesia",
+        "code": "CGK",
+        "name": "Soekarno-Hatta International Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-53",
+      "body": {
+        "address": "Pasay, Metro Manila 1300, Philippines",
+        "code": "MNL",
+        "name": "Ninoy Aquino International Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-54",
+      "body": {
+        "address": "Dayuan District, Taoyuan City 337, Taiwan",
+        "code": "TPE",
+        "name": "Taiwan Taoyuan International Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-55",
+      "body": {
+        "address": "Pudong New Area, Shanghai 201207, China",
+        "code": "PVG",
+        "name": "Shanghai Pudong International Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-56",
+      "body": {
+        "address": "Huadu District, Guangzhou 510470, China",
+        "code": "CAN",
+        "name": "Guangzhou Baiyun International Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-57",
+      "body": {
+        "address": "1 Senshukukokita, Izumisano, Osaka 549-0001",
+        "code": "KIX",
+        "name": "Kansai International Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-58",
+      "body": {
+        "address": "112 Haneul-gil, Gangseo-gu, Seoul, Korea",
+        "code": "GMP",
+        "name": "Gimpo International Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-59",
+      "body": {
+        "address": "Phu Minh, Soc Son, Hanoi, Vietnam",
+        "code": "HAN",
+        "name": "Noi Bai International Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-60",
+      "body": {
+        "address": "Tan Binh District, Ho Chi Minh City, Vietnam",
+        "code": "SGN",
+        "name": "Tan Son Nhat International Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-61",
+      "body": {
+        "address": "Departure Dr, Tullamarine VIC 3045, Australia",
+        "code": "MEL",
+        "name": "Melbourne Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-62",
+      "body": {
+        "address": "Airport Dr, Brisbane QLD 4008, Australia",
+        "code": "BNE",
+        "name": "Brisbane Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-63",
+      "body": {
+        "address": "Airport Dr, Perth WA 6105, Australia",
+        "code": "PER",
+        "name": "Perth Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-64",
+      "body": {
+        "address": "Ray Emery Dr, Mangere, Auckland 2022, NZ",
+        "code": "AKL",
+        "name": "Auckland Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-65",
+      "body": {
+        "address": "30 Durey Rd, Harewood, Christchurch 8053, NZ",
+        "code": "CHC",
+        "name": "Christchurch Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-66",
+      "body": {
+        "address": "3211 Grant McConachie Way, Richmond, BC",
+        "code": "YVR",
+        "name": "Vancouver International Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-67",
+      "body": {
+        "address": "975 Boul. Roméo-Vachon N, Dorval, QC",
+        "code": "YUL",
+        "name": "Montreal-Trudeau International Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-68",
+      "body": {
+        "address": "2000 Airport Rd NE, Calgary, AB T2E 6W5",
+        "code": "YYC",
+        "name": "Calgary International Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-69",
+      "body": {
+        "address": "8500 Peña Blvd, Denver, CO 80249",
+        "code": "DEN",
+        "name": "Denver International Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-70",
+      "body": {
+        "address": "5757 Wayne Newton Blvd, Las Vegas, NV 89119",
+        "code": "LAS",
+        "name": "Harry Reid International Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-71",
+      "body": {
+        "address": "3400 E Sky Harbor Blvd, Phoenix, AZ 85034",
+        "code": "PHX",
+        "name": "Phoenix Sky Harbor International Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-72",
+      "body": {
+        "address": "2800 N Terminal Rd, Houston, TX 77032",
+        "code": "IAH",
+        "name": "George Bush Intercontinental Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-73",
+      "body": {
+        "address": "8000 Essington Ave, Philadelphia, PA 19153",
+        "code": "PHL",
+        "name": "Philadelphia International Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-74",
+      "body": {
+        "address": "1 Saarinen Cir, Dulles, VA 20166",
+        "code": "IAD",
+        "name": "Washington Dulles International Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-75",
+      "body": {
+        "address": "5501 Josh Birmingham Pkwy, Charlotte, NC 28208",
+        "code": "CLT",
+        "name": "Charlotte Douglas International Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-76",
+      "body": {
+        "address": "4300 Glumack Dr, St Paul, MN 55111",
+        "code": "MSP",
+        "name": "Minneapolis-Saint Paul International Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-77",
+      "body": {
+        "address": "Detroit Metro Airport, Romulus, MI 48242",
+        "code": "DTW",
+        "name": "Detroit Metropolitan Wayne County Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-78",
+      "body": {
+        "address": "3225 N Harbor Dr, San Diego, CA 92101",
+        "code": "SAN",
+        "name": "San Diego International Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-79",
+      "body": {
+        "address": "1 Jeff Fuqua Blvd, Orlando, FL 32827",
+        "code": "MCO",
+        "name": "Orlando International Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-80",
+      "body": {
+        "address": "300 Rodgers Blvd, Honolulu, HI 96819",
+        "code": "HNL",
+        "name": "Daniel K. Inouye International Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-81",
+      "body": {
+        "address": "Av. El Dorado 103-09, Bogotá, Colombia",
+        "code": "BOG",
+        "name": "El Dorado International Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-82",
+      "body": {
+        "address": "Av. Elmer Faucett s/n, Callao 07031, Peru",
+        "code": "LIM",
+        "name": "Jorge Chávez International Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-83",
+      "body": {
+        "address": "Armando Cortínez Norte 2200, Pudahuel, Chile",
+        "code": "SCL",
+        "name": "Arturo Merino Benítez International Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-84",
+      "body": {
+        "address": "Autopista Tte. Gral. Ricchieri, Ezeiza, Argentina",
+        "code": "EZE",
+        "name": "Ministro Pistarini International Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-85",
+      "body": {
+        "address": "Airport Rd, Heliopolis, Cairo 11776, Egypt",
+        "code": "CAI",
+        "name": "Cairo International Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-86",
+      "body": {
+        "address": "Nouaceur, Casablanca 27000, Morocco",
+        "code": "CMN",
+        "name": "Mohammed V International Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-87",
+      "body": {
+        "address": "Embakasi, Nairobi 00501, Kenya",
+        "code": "NBO",
+        "name": "Jomo Kenyatta International Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-88",
+      "body": {
+        "address": "Bole Sub-City, Addis Ababa, Ethiopia",
+        "code": "ADD",
+        "name": "Addis Ababa Bole International Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-89",
+      "body": {
+        "address": "Ikeja, Lagos 100001, Nigeria",
+        "code": "LOS",
+        "name": "Murtala Muhammed International Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-90",
+      "body": {
+        "address": "Matroosfontein, Cape Town 7490, South Africa",
+        "code": "CPT",
+        "name": "Cape Town International Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-91",
+      "body": {
+        "address": "Airport Rd, Riyadh 11411, Saudi Arabia",
+        "code": "RUH",
+        "name": "King Khalid International Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-92",
+      "body": {
+        "address": "Jeddah 21589, Saudi Arabia",
+        "code": "JED",
+        "name": "King Abdulaziz International Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-93",
+      "body": {
+        "address": "Lod 70100, Israel",
+        "code": "TLV",
+        "name": "Ben Gurion Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-94",
+      "body": {
+        "address": "Farwaniya, Airport Rd, Kuwait City, Kuwait",
+        "code": "KWI",
+        "name": "Kuwait International Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-95",
+      "body": {
+        "address": "ul. Żwirki i Wigury 1, 00-906 Warsaw, Poland",
+        "code": "WAW",
+        "name": "Warsaw Chopin Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-96",
+      "body": {
+        "address": "Aviatická, 161 08 Prague 6, Czechia",
+        "code": "PRG",
+        "name": "Václav Havel Airport Prague"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-97",
+      "body": {
+        "address": "1185 Budapest, Hungary",
+        "code": "BUD",
+        "name": "Budapest Ferenc Liszt International Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-98",
+      "body": {
+        "address": "Airport Way, Birmingham B26 3QJ, UK",
+        "code": "BHX",
+        "name": "Birmingham Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-99",
+      "body": {
+        "address": "Paisley PA3 2SW, Scotland",
+        "code": "GLA",
+        "name": "Glasgow Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-100",
+      "body": {
+        "address": "Belfast BT29 4AB, Northern Ireland",
+        "code": "BFS",
+        "name": "Belfast International Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-101",
+      "body": {
+        "address": "Airport Way, Luton LU2 9LY, Bedfordshire",
+        "code": "LTN",
+        "name": "London Luton Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-102",
+      "body": {
+        "address": "Bassingbourn Rd, Stansted CM24 1QW, Essex",
+        "code": "STN",
+        "name": "London Stansted Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-103",
+      "body": {
+        "address": "Hartmann Rd, Silvertown, London E16 2PX",
+        "code": "LCY",
+        "name": "London City Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-104",
+      "body": {
+        "address": "Bristol BS48 3DY, Somerset, UK",
+        "code": "BRS",
+        "name": "Bristol Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-105",
+      "body": {
+        "address": "Woolsington, Newcastle upon Tyne NE13 8BZ",
+        "code": "NCL",
+        "name": "Newcastle International Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-106",
+      "body": {
+        "address": "Speke Hall Ave, Liverpool L24 1YD",
+        "code": "LPL",
+        "name": "Liverpool John Lennon Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-107",
+      "body": {
+        "address": "Castle Donington, Derby DE74 2SA",
+        "code": "EMA",
+        "name": "East Midlands Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-108",
+      "body": {
+        "address": "Dyce, Aberdeen AB21 7DU, Scotland",
+        "code": "ABZ",
+        "name": "Aberdeen International Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-109",
+      "body": {
+        "address": "Route de l'Aéroport 21, 1215 Le Grand-Saconnex",
+        "code": "GVA",
+        "name": "Geneva Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-110",
+      "body": {
+        "address": "68304 Saint-Louis Cedex, France",
+        "code": "BSL",
+        "name": "EuroAirport Basel Mulhouse Freiburg"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-111",
+      "body": {
+        "address": "21010 Ferno, Varese, Italy",
+        "code": "MXP",
+        "name": "Milan Malpensa Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-112",
+      "body": {
+        "address": "Viale Enrico Forlanini, 20090 Segrate, Milan",
+        "code": "LIN",
+        "name": "Milan Linate Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-113",
+      "body": {
+        "address": "Viale Galileo Galilei 30, 30173 Tessera",
+        "code": "VCE",
+        "name": "Venice Marco Polo Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-114",
+      "body": {
+        "address": "Viale F. Ruffo di Calabria, 80144 Naples",
+        "code": "NAP",
+        "name": "Naples Capodichino Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-115",
+      "body": {
+        "address": "Via del Triumvirato 84, 40132 Bologna",
+        "code": "BLQ",
+        "name": "Bologna Guglielmo Marconi Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-116",
+      "body": {
+        "address": "Carretera Ma-19, 07611 Palma, Mallorca",
+        "code": "PMI",
+        "name": "Palma de Mallorca Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-117",
+      "body": {
+        "address": "Av. Comandante García Morato, 29004 Málaga",
+        "code": "AGP",
+        "name": "Málaga-Costa del Sol Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-118",
+      "body": {
+        "address": "Carretera del Aeropuerto, 46940 Manises",
+        "code": "VLC",
+        "name": "Valencia Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-119",
+      "body": {
+        "address": "Autovía A-4, km 532, 41020 Seville",
+        "code": "SVQ",
+        "name": "Seville San Pablo Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-120",
+      "body": {
+        "address": "4470-558 Maia, Porto, Portugal",
+        "code": "OPO",
+        "name": "Porto Francisco Sá Carneiro Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-121",
+      "body": {
+        "address": "8001-701 Faro, Algarve, Portugal",
+        "code": "FAO",
+        "name": "Faro Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-122",
+      "body": {
+        "address": "Flughafenstraße 1-3, 22335 Hamburg",
+        "code": "HAM",
+        "name": "Hamburg Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-123",
+      "body": {
+        "address": "Flughafenstraße 105, 40474 Düsseldorf",
+        "code": "DUS",
+        "name": "Düsseldorf Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-124",
+      "body": {
+        "address": "Kennedystraße, 51147 Köln, Germany",
+        "code": "CGN",
+        "name": "Cologne Bonn Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-125",
+      "body": {
+        "address": "Flughafenstraße 32, 70629 Stuttgart",
+        "code": "STR",
+        "name": "Stuttgart Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-126",
+      "body": {
+        "address": "Willy-Brandt-Platz, 12529 Schönefeld",
+        "code": "BER",
+        "name": "Berlin Brandenburg Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-127",
+      "body": {
+        "address": "Rue Costes et Bellonte, 06206 Nice",
+        "code": "NCE",
+        "name": "Nice Côte d'Azur Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-128",
+      "body": {
+        "address": "69125 Colombier-Saugnieu, France",
+        "code": "LYS",
+        "name": "Lyon-Saint Exupéry Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-129",
+      "body": {
+        "address": "13700 Marignane, France",
+        "code": "MRS",
+        "name": "Marseille Provence Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-130",
+      "body": {
+        "address": "31703 Blagnac Cedex, France",
+        "code": "TLS",
+        "name": "Toulouse-Blagnac Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-131",
+      "body": {
+        "address": "438 80 Landvetter, Sweden",
+        "code": "GOT",
+        "name": "Gothenburg Landvetter Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-132",
+      "body": {
+        "address": "Flyplassvegen 555, 5258 Blomsterdalen",
+        "code": "BGO",
+        "name": "Bergen Flesland Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-133",
+      "body": {
+        "address": "7500 Stjørdal, Norway",
+        "code": "TRD",
+        "name": "Trondheim Værnes Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-134",
+      "body": {
+        "address": "235 Keflavíkurflugvöllur, Iceland",
+        "code": "KEF",
+        "name": "Keflavík International Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-135",
+      "body": {
+        "address": "Mārupes novads, LV-1053 Riga, Latvia",
+        "code": "RIX",
+        "name": "Riga International Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-136",
+      "body": {
+        "address": "Rodūnios kelias 10A, 02189 Vilnius",
+        "code": "VNO",
+        "name": "Vilnius Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-137",
+      "body": {
+        "address": "Lennujaama 2, 11101 Tallinn, Estonia",
+        "code": "TLL",
+        "name": "Tallinn Lennart Meri Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-138",
+      "body": {
+        "address": "Calea Bucureștilor 224E, Otopeni 075150",
+        "code": "OTP",
+        "name": "Bucharest Henri Coandă Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-139",
+      "body": {
+        "address": "1540 Sofia, Bulgaria",
+        "code": "SOF",
+        "name": "Sofia Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-140",
+      "body": {
+        "address": "Aerodrom Beograd 59, 11180 Surčin",
+        "code": "BEG",
+        "name": "Belgrade Nikola Tesla Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-141",
+      "body": {
+        "address": "Rudolfa Fizira 21, 10410 Velika Gorica",
+        "code": "ZAG",
+        "name": "Zagreb Franjo Tuđman Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-142",
+      "body": {
+        "address": "Zgornji Brnik 130A, 4210 Brnik, Slovenia",
+        "code": "LJU",
+        "name": "Ljubljana Jože Pučnik Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-143",
+      "body": {
+        "address": "Konavle, 20213 Čilipi, Croatia",
+        "code": "DBV",
+        "name": "Dubrovnik Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-144",
+      "body": {
+        "address": "Terminal Rd, 551 03 Thessaloniki, Greece",
+        "code": "SKG",
+        "name": "Thessaloniki Makedonia Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-145",
+      "body": {
+        "address": "Luqa LQA 4000, Malta",
+        "code": "MLA",
+        "name": "Malta International Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-146",
+      "body": {
+        "address": "Larnaca 6650, Cyprus",
+        "code": "LCA",
+        "name": "Larnaca International Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-147",
+      "body": {
+        "address": "Carretera Aeropuerto, 07817 Sant Josep, Ibiza",
+        "code": "IBZ",
+        "name": "Ibiza Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-148",
+      "body": {
+        "address": "Devanahalli, Bengaluru, Karnataka 560300, India",
+        "code": "BLR",
+        "name": "Kempegowda International Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-149",
+      "body": {
+        "address": "Shamshabad, Hyderabad, Telangana 500409, India",
+        "code": "HYD",
+        "name": "Rajiv Gandhi International Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-150",
+      "body": {
+        "address": "GST Rd, Meenambakkam, Chennai 600027, India",
+        "code": "MAA",
+        "name": "Chennai International Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-151",
+      "body": {
+        "address": "Netaji Subhas Rd, Dum Dum, Kolkata 700052",
+        "code": "CCU",
+        "name": "Netaji Subhas Chandra Bose International Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-152",
+      "body": {
+        "address": "Katunayake, Negombo 11450, Sri Lanka",
+        "code": "CMB",
+        "name": "Bandaranaike International Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-153",
+      "body": {
+        "address": "Airport Rd, Dhaka 1229, Bangladesh",
+        "code": "DAC",
+        "name": "Hazrat Shahjalal International Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-154",
+      "body": {
+        "address": "Airport Rd, Karachi 75200, Pakistan",
+        "code": "KHI",
+        "name": "Jinnah International Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-155",
+      "body": {
+        "address": "GT Rd, Fateh Jang, Islamabad, Pakistan",
+        "code": "ISB",
+        "name": "Islamabad International Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-156",
+      "body": {
+        "address": "Allama Iqbal Rd, Lahore 54810, Pakistan",
+        "code": "LHE",
+        "name": "Allama Iqbal International Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-157",
+      "body": {
+        "address": "Gauchar, Kathmandu 44600, Nepal",
+        "code": "KTM",
+        "name": "Tribhuvan International Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-158",
+      "body": {
+        "address": "Hulhulé Island, Malé 22000, Maldives",
+        "code": "MLE",
+        "name": "Velana International Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-159",
+      "body": {
+        "address": "Bayan Lepas, 11900 Penang, Malaysia",
+        "code": "PEN",
+        "name": "Penang International Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-160",
+      "body": {
+        "address": "Jl. Raya Gusti Ngurah Rai, Tuban, Bali 80362",
+        "code": "DPS",
+        "name": "Ngurah Rai International Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-161",
+      "body": {
+        "address": "888 Moo 6, Mai Khao, Thalang, Phuket 83110",
+        "code": "HKT",
+        "name": "Phuket International Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-162",
+      "body": {
+        "address": "Suthep, Mueang, Chiang Mai 50200, Thailand",
+        "code": "CNX",
+        "name": "Chiang Mai International Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-163",
+      "body": {
+        "address": "778-1 Shimousui, Hakata-ku, Fukuoka 812-0003",
+        "code": "FUK",
+        "name": "Fukuoka Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-164",
+      "body": {
+        "address": "1-1 Centrair, Tokoname, Aichi 479-0881, Japan",
+        "code": "NGO",
+        "name": "Chubu Centrair International Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-165",
+      "body": {
+        "address": "Bibi, Chitose, Hokkaido 066-0012, Japan",
+        "code": "CTS",
+        "name": "New Chitose Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-166",
+      "body": {
+        "address": "640 Kagamizu, Naha, Okinawa 901-0142, Japan",
+        "code": "OKA",
+        "name": "Naha Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-167",
+      "body": {
+        "address": "108 Gonghang-ro, Gangseo-gu, Busan, Korea",
+        "code": "PUS",
+        "name": "Gimhae International Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-168",
+      "body": {
+        "address": "2 Gonghang-ro, Jeju-si, Jeju 63208, Korea",
+        "code": "CJU",
+        "name": "Jeju International Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-169",
+      "body": {
+        "address": "Bao'an District, Shenzhen 518128, China",
+        "code": "SZX",
+        "name": "Shenzhen Bao'an International Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-170",
+      "body": {
+        "address": "Shuangliu District, Chengdu 610202, China",
+        "code": "CTU",
+        "name": "Chengdu Shuangliu International Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-171",
+      "body": {
+        "address": "Weicheng District, Xianyang, Shaanxi, China",
+        "code": "XIY",
+        "name": "Xi'an Xianyang International Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-172",
+      "body": {
+        "address": "Seeb, Muscat 111, Oman",
+        "code": "MCT",
+        "name": "Muscat International Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-173",
+      "body": {
+        "address": "Muharraq, Manama, Bahrain",
+        "code": "BAH",
+        "name": "Bahrain International Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-174",
+      "body": {
+        "address": "Queen Alia Airport Rd, Zizya, Amman, Jordan",
+        "code": "AMM",
+        "name": "Queen Alia International Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-175",
+      "body": {
+        "address": "Khalde, Airport Rd, Beirut 1107, Lebanon",
+        "code": "BEY",
+        "name": "Beirut–Rafic Hariri International Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-176",
+      "body": {
+        "address": "King Fahd Airport, Dammam 34437, Saudi Arabia",
+        "code": "DMM",
+        "name": "King Fahd International Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-177",
+      "body": {
+        "address": "Airport Rd, Sharjah, United Arab Emirates",
+        "code": "SHJ",
+        "name": "Sharjah International Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-178",
+      "body": {
+        "address": "Route de l'Aéroport, Tunis 1080, Tunisia",
+        "code": "TUN",
+        "name": "Tunis–Carthage International Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-179",
+      "body": {
+        "address": "Dar El Beida, Algiers 16033, Algeria",
+        "code": "ALG",
+        "name": "Houari Boumediene Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-180",
+      "body": {
+        "address": "Airport Rd, Accra, Ghana",
+        "code": "ACC",
+        "name": "Kotoka International Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-181",
+      "body": {
+        "address": "Diass, Blaise Diagne, Dakar, Senegal",
+        "code": "DKR",
+        "name": "Blaise Diagne International Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-182",
+      "body": {
+        "address": "Nyerere Rd, Ilala, Dar es Salaam, Tanzania",
+        "code": "DAR",
+        "name": "Julius Nyerere International Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-183",
+      "body": {
+        "address": "Entebbe Rd, Entebbe, Uganda",
+        "code": "EBB",
+        "name": "Entebbe International Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-184",
+      "body": {
+        "address": "Plaine Magnien, SSR Intl, Mauritius",
+        "code": "MRU",
+        "name": "Sir Seewoosagur Ramgoolam International Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-185",
+      "body": {
+        "address": "Route de Trèves, 1273 Findel, Luxembourg",
+        "code": "LUX",
+        "name": "Luxembourg Findel Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-186",
+      "body": {
+        "address": "Flughafenstraße 100, 90411 Nuremberg, Germany",
+        "code": "NUE",
+        "name": "Nuremberg Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-187",
+      "body": {
+        "address": "Petzelstraße 84, 30855 Langenhagen, Germany",
+        "code": "HAJ",
+        "name": "Hannover Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-188",
+      "body": {
+        "address": "04435 Schkeuditz, Leipzig, Germany",
+        "code": "LEJ",
+        "name": "Leipzig/Halle Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-189",
+      "body": {
+        "address": "ul. Medweckiego 1, 32-083 Balice, Poland",
+        "code": "KRK",
+        "name": "Kraków John Paul II Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-190",
+      "body": {
+        "address": "ul. Słowackiego 200, 80-298 Gdańsk, Poland",
+        "code": "GDN",
+        "name": "Gdańsk Lech Wałęsa Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-191",
+      "body": {
+        "address": "Strada Aeroporto 12, 10072 Caselle, Turin",
+        "code": "TRN",
+        "name": "Turin Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-192",
+      "body": {
+        "address": "Via Gino Simi, 56121 Pisa, Italy",
+        "code": "PSA",
+        "name": "Pisa International Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-193",
+      "body": {
+        "address": "Via Fontanarossa, 95121 Catania, Italy",
+        "code": "CTA",
+        "name": "Catania–Fontanarossa Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-194",
+      "body": {
+        "address": "Via Francesco Crispi, 90045 Cinisi, Palermo",
+        "code": "PMO",
+        "name": "Falcone–Borsellino Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-195",
+      "body": {
+        "address": "Sondika, 48180 Loiu, Bizkaia, Spain",
+        "code": "BIO",
+        "name": "Bilbao Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-196",
+      "body": {
+        "address": "Carretera GC-1, 35230 Telde, Las Palmas, Spain",
+        "code": "LPA",
+        "name": "Gran Canaria Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-197",
+      "body": {
+        "address": "38610 Granadilla de Abona, Tenerife, Spain",
+        "code": "TFS",
+        "name": "Tenerife South Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-198",
+      "body": {
+        "address": "Sheremetyevo, Khimki, Moscow Region, Russia",
+        "code": "SVO",
+        "name": "Sheremetyevo International Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-199",
+      "body": {
+        "address": "Camino Las Mercedes, 38206 La Laguna, Spain",
+        "code": "TFN",
+        "name": "Tenerife North Airport"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-200",
+      "body": {
+        "address": "2401 Smith Blvd, Arlington, VA 22202",
+        "code": "DCA",
+        "name": "Ronald Reagan Washington National"
+      }
+    }
+  ],
+  "invalid": [
+    {
+      "ref": "createairportrequestdto-rejection-1",
+      "body": {
+        "address": "",
+        "code": "",
+        "name": null
+      },
+      "violates": {
+        "field": "Name",
+        "rule": "`Name` is declared NOT NULL"
+      },
+      "expect": {
+        "status": 400,
+        "why": "the validator in this file has a rule on Name"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-rejection-2",
+      "body": {
+        "address": null,
+        "code": "",
+        "name": ""
+      },
+      "violates": {
+        "field": "Address",
+        "rule": "`Address` is declared NOT NULL"
+      },
+      "expect": {
+        "status": 400,
+        "why": "the validator in this file has a rule on Address"
+      }
+    },
+    {
+      "ref": "createairportrequestdto-rejection-3",
+      "body": {
+        "address": "",
+        "code": null,
+        "name": ""
+      },
+      "violates": {
+        "field": "Code",
+        "rule": "`Code` is declared NOT NULL"
+      },
+      "expect": {
+        "status": 400,
+        "why": "the validator in this file has a rule on Code"
+      }
+    }
+  ]
+}

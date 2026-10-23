@@ -1,0 +1,75 @@
+{
+  "id": "get-flight-get-available-seats-id-flight",
+  "title": "Flight with a mix of open and booked seats",
+  "source": "staged scenario",
+  "why": "Shows the endpoint returns only the unbooked subset of a flight's seats",
+  "setup": [
+    {
+      "ref": "aircraft-1",
+      "table": "Aircraft",
+      "values": {
+        "IsDeleted": false,
+        "ManufacturingYear": 2015,
+        "Model": "A320",
+        "Name": "Skyliner 1"
+      }
+    },
+    {
+      "ref": "airport-1",
+      "table": "Airport",
+      "values": {
+        "Address": "London",
+        "Code": "LHR",
+        "IsDeleted": false,
+        "Name": "Heathrow"
+      }
+    },
+    {
+      "ref": "airport-2",
+      "table": "Airport",
+      "values": {
+        "Address": "New York",
+        "Code": "JFK",
+        "IsDeleted": false,
+        "Name": "JFK"
+      }
+    },
+    {
+      "ref": "flight-1",
+      "table": "Flight",
+      "values": {
+        "AircraftId": "aircraft-1",
+        "ArriveAirportId": "airport-2",
+        "ArriveDate": "2026-11-01T17:00:00Z",
+        "DepartureAirportId": "airport-1",
+        "DepartureDate": "2026-11-01T09:00:00Z",
+        "DurationMinutes": 480,
+        "FlightDate": "2026-11-01T00:00:00Z",
+        "FlightNumber": "BA117",
+        "IsDeleted": false,
+        "Price": 450,
+        "Status": "Flying"
+      }
+    },
+    {
+      "ref": "seat-1..30",
+      "table": "Seat",
+      "values": {
+        "Class": "Economy",
+        "FlightId": "flight-1",
+        "IsDeleted": false,
+        "SeatNumber": "1A..5F (30 seats)",
+        "Type": "Window"
+      }
+    }
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "does": "Reserve 12 of the 30 seats with bookings, then GET /flight/get-available-seats/{flight-1 Id}"
+    }
+  ],
+  "expect": [
+    "200 with the 18 unbooked seats; the 12 booked seats are absent"
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "id": "post-flight-reserve-seat-reserve-a-middl",
+  "title": "Reserve a middle seat on a delayed flight",
+  "source": "staged scenario",
+  "why": "Shows a Delay status does not block booking",
+  "setup": [
+    {
+      "ref": "aircraft-1",
+      "table": "Aircraft",
+      "values": {
+        "IsDeleted": false,
+        "ManufacturingYear": 2017,
+        "Model": "A321",
+        "Name": "Skyliner 4",
+        "Version": 1
+      }
+    },
+    {
+      "ref": "airport-dep",
+      "table": "Airport",
+      "values": {
+        "Address": "Amsterdam",
+        "Code": "AMS",
+        "IsDeleted": false,
+        "Name": "Schiphol",
+        "Version": 1
+      }
+    },
+    {
+      "ref": "airport-arr",
+      "table": "Airport",
+      "values": {
+        "Address": "Madrid",
+        "Code": "MAD",
+        "IsDeleted": false,
+        "Name": "Madrid Barajas",
+        "Version": 1
+      }
+    },
+    {
+      "ref": "flight-1",
+      "table": "Flight",
+      "values": {
+        "AircraftId": "aircraft-1",
+        "ArriveAirportId": "airport-arr",
+        "ArriveDate": "2026-11-15T13:30:00Z",
+        "DepartureAirportId": "airport-dep",
+        "DepartureDate": "2026-11-15T11:00:00Z",
+        "DurationMinutes": 150,
+        "FlightDate": "2026-11-15T00:00:00Z",
+        "FlightNumber": "FL410",
+        "IsDeleted": false,
+        "Price": 120.0,
+        "Status": "Delay",
+        "Version": 1
+      }
+    },
+    {
+      "ref": "seat-1",
+      "table": "Seat",
+      "values": {
+        "Class": "Economy",
+        "FlightId": "flight-1",
+        "IsDeleted": false,
+        "SeatNumber": "22B",
+        "Type": "Middle",
+        "Version": 1
+      }
+    }
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "does": "POST /flight/reserve-seat with FlightId of flight-1 and SeatNumber 22B"
+    }
+  ],
+  "expect": [
+    "Success; seat 22B is reserved on the delayed flight"
+  ]
+}

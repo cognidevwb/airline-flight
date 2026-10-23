@@ -1,0 +1,84 @@
+{
+  "id": "get-flight-id-flight-with-maximum-durati",
+  "title": "Flight with maximum duration and price",
+  "source": "staged scenario",
+  "why": "Checks the upper limits (50 and 10) are accepted and shown rather than rejected",
+  "setup": [
+    {
+      "ref": "aircraft-1",
+      "table": "Aircraft",
+      "values": {
+        "CreatedAt": "2026-01-10T08:00:00Z",
+        "CreatedBy": 1,
+        "IsDeleted": false,
+        "LastModified": "2026-01-10T08:00:00Z",
+        "LastModifiedBy": 1,
+        "ManufacturingYear": 2021,
+        "Model": "A350-900",
+        "Name": "Airbus A350",
+        "Version": 1
+      }
+    },
+    {
+      "ref": "airport-dep",
+      "table": "Airport",
+      "values": {
+        "Address": "Changi, Singapore",
+        "Code": "SIN",
+        "CreatedAt": "2026-01-10T08:00:00Z",
+        "CreatedBy": 1,
+        "IsDeleted": false,
+        "LastModified": "2026-01-10T08:00:00Z",
+        "LastModifiedBy": 1,
+        "Name": "Singapore Changi",
+        "Version": 1
+      }
+    },
+    {
+      "ref": "airport-arr",
+      "table": "Airport",
+      "values": {
+        "Address": "Newark, NJ",
+        "Code": "EWR",
+        "CreatedAt": "2026-01-10T08:00:00Z",
+        "CreatedBy": 1,
+        "IsDeleted": false,
+        "LastModified": "2026-01-10T08:00:00Z",
+        "LastModifiedBy": 1,
+        "Name": "Newark Liberty International",
+        "Version": 1
+      }
+    },
+    {
+      "ref": "flight-1",
+      "table": "Flight",
+      "values": {
+        "AircraftId": "aircraft-1",
+        "ArriveAirportId": "airport-arr",
+        "ArriveDate": "2026-11-25T18:00:00Z",
+        "CreatedAt": "2026-10-01T09:00:00Z",
+        "CreatedBy": 1,
+        "DepartureAirportId": "airport-dep",
+        "DepartureDate": "2026-11-24T16:00:00Z",
+        "DurationMinutes": 50,
+        "FlightDate": "2026-11-24T00:00:00Z",
+        "FlightNumber": "FL-8008",
+        "IsDeleted": false,
+        "LastModified": "2026-10-01T09:00:00Z",
+        "LastModifiedBy": 1,
+        "Price": 10,
+        "Status": "Flying",
+        "Version": 1
+      }
+    }
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "does": "Send GET …/flight/{id} with the Id of flight-1"
+    }
+  ],
+  "expect": [
+    "200 with DurationMinutes 50 and Price 10 exactly as stored"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "get-flight-id-invalid-flight-id",
+  "title": "Invalid flight Id",
+  "source": "staged scenario",
+  "why": "Checks the empty Guid is reported as an invalid Id, not as a missing flight",
+  "setup": [],
+  "steps": [
+    {
+      "n": 1,
+      "does": "Send GET …/flight/00000000-0000-0000-0000-000000000000"
+    }
+  ],
+  "expect": [
+    "400 validation error for the flight Id, distinct from the 404 not-found response"
+  ]
+}

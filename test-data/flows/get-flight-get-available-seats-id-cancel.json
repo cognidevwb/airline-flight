@@ -1,0 +1,86 @@
+{
+  "id": "get-flight-get-available-seats-id-cancel",
+  "title": "Cancelled flight offers no seats",
+  "source": "staged scenario",
+  "why": "Shows flight status gates availability even when seats are unbooked",
+  "setup": [
+    {
+      "ref": "aircraft-1",
+      "table": "Aircraft",
+      "values": {
+        "IsDeleted": false,
+        "ManufacturingYear": 2012,
+        "Model": "B737",
+        "Name": "Skyliner 10"
+      }
+    },
+    {
+      "ref": "airport-1",
+      "table": "Airport",
+      "values": {
+        "Address": "Boston",
+        "Code": "BOS",
+        "IsDeleted": false,
+        "Name": "Boston Logan"
+      }
+    },
+    {
+      "ref": "airport-2",
+      "table": "Airport",
+      "values": {
+        "Address": "Chicago",
+        "Code": "ORD",
+        "IsDeleted": false,
+        "Name": "Chicago O'Hare"
+      }
+    },
+    {
+      "ref": "flight-1",
+      "table": "Flight",
+      "values": {
+        "AircraftId": "aircraft-1",
+        "ArriveAirportId": "airport-2",
+        "ArriveDate": "2026-12-05T12:45:00Z",
+        "DepartureAirportId": "airport-1",
+        "DepartureDate": "2026-12-05T10:00:00Z",
+        "DurationMinutes": 165,
+        "FlightDate": "2026-12-05T00:00:00Z",
+        "FlightNumber": "UA201",
+        "IsDeleted": false,
+        "Price": 200,
+        "Status": "Canceled"
+      }
+    },
+    {
+      "ref": "seat-1",
+      "table": "Seat",
+      "values": {
+        "Class": "Economy",
+        "FlightId": "flight-1",
+        "IsDeleted": false,
+        "SeatNumber": "2A",
+        "Type": "Window"
+      }
+    },
+    {
+      "ref": "seat-2",
+      "table": "Seat",
+      "values": {
+        "Class": "Economy",
+        "FlightId": "flight-1",
+        "IsDeleted": false,
+        "SeatNumber": "2B",
+        "Type": "Middle"
+      }
+    }
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "does": "GET /flight/get-available-seats/{flight-1 Id}"
+    }
+  ],
+  "expect": [
+    "Empty list, or a rejection that the flight is cancelled; 2A and 2B are not offered"
+  ]
+}

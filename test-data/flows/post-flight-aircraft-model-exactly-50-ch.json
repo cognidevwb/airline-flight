@@ -1,0 +1,16 @@
+{
+  "id": "post-flight-aircraft-model-exactly-50-ch",
+  "title": "Model exactly 50 characters",
+  "source": "staged scenario",
+  "why": "Tests the upper boundary: 50 characters must still be accepted.",
+  "setup": [],
+  "steps": [
+    {
+      "n": 1,
+      "does": "POST …/flight/aircraft with Name 'Boundary Jet', Model of exactly 50 characters 'ABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJ', ManufacturingYear 2015"
+    }
+  ],
+  "expect": [
+    "Success. The aircraft is created and the full 50-character Model is stored."
+  ]
+}
